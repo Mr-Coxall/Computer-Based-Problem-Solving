@@ -131,7 +131,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = "images/toga.png"
+html_logo = "images/cs-logo.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -211,7 +211,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'toga.tex', u'Computer Based Problem Solving Documentation',
+  ('index', 'toga.tex', u'Computer Based Problem Solving Textbook',
    u'Patrick Coxall', 'manual'),
 ]
 
@@ -241,7 +241,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'toga', u'Computer Based Problem Solving Documentation',
+    ('index', 'toga', u'Computer Based Problem Solving Textbook',
      [u'Patrick Coxall'], 1)
 ]
 
@@ -255,7 +255,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'toga', u'Computer Based Problem Solving Documentation',
+  ('index', 'toga', u'Computer Based Problem Solving Textbook',
    u'Patrick Coxall', 'Toga', 'A Python native, OS native GUI toolkit.',
    'Miscellaneous'),
 ]
