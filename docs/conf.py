@@ -48,16 +48,16 @@ copyright = u'2013, Russell Keith-Magee'
 # built documents.
 #
 # The full version, including alpha/beta/rc tags.
-import io, re
-with io.open('../src/core/toga/__init__.py', encoding='utf8') as version_file:
-    version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]", version_file.read(), re.M)
-    if version_match:
-        release = version_match.group(1)
-    else:
-        raise RuntimeError("Unable to find version string.")
+#import io, re
+#with io.open('../src/core/toga/__init__.py', encoding='utf8') as version_file:
+#    version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]", version_file.read(), re.M)
+#    if version_match:
+#        release = version_match.group(1)
+#    else:
+#        raise RuntimeError("Unable to find version string.")
 
 # The short X.Y version.
-version = '.'.join(release.split('.')[:2])
+#version = '.'.join(release.split('.')[:2])
 
 # Fix the autodoc import issues
 os.environ['TOGA_PLATFORM'] = 'dummy'
