@@ -25,14 +25,61 @@
     </style>
 
 
-==============================
-Computer Based Problem Solving
-==============================
+====
+Toga
+====
 
 Toga is a Python native, OS native, cross platform GUI toolkit. Toga consists of a library of base components with a shared
 interface to simplify platform-agnostic GUI development.
 
 Toga is available on Mac OS, Windows, Linux (GTK), and mobile platforms such as Android and iOS.
+
+.. figure:: tutorial/screenshots/tutorial-2.png
+    :align: center
+    :width: 500
+
+
+.. rst-class::  row
+
+Table of contents
+=================
+
+.. rst-class:: clearfix row
+
+.. rst-class:: column column2
+
+
+:ref:`Tutorial <tutorial>`
+------------------------------
+
+Get started with a hands-on introduction to Toga for beginners
+
+.. rst-class:: column column2
+
+
+:ref:`How-to guides <how-to>`
+-----------------------------
+
+Guides and recipes for common problems and tasks
+
+
+.. rst-class:: column column2
+
+:ref:`Background <background>`
+------------------------------
+
+Explanation and discussion of key topics and concepts
+
+
+.. rst-class:: column column2
+
+:ref:`Reference <reference>`
+------------------------------
+
+Technical reference - commands, modules, classes, methods
+
+
+.. rst-class:: clearfix row
 
 
 Community
@@ -42,10 +89,12 @@ Toga is part of the `BeeWare suite`_. You can talk to the community through:
 
  * `@pybeeware on Twitter`_
 
- * `pybee/general on Gitter`_
+ * `beeware/general on Gitter`_
 
-.. _BeeWare suite: http://pybee.org
+.. _BeeWare suite: http://beeware.org
 .. _Read The Docs: https://toga.readthedocs.io
+.. _@pybeeware on Twitter: https://twitter.com/pybeeware
+.. _beeware/general on Gitter: https://gitter.im/beeware/general
 
 
 .. toctree::
@@ -54,7 +103,7 @@ Toga is part of the `BeeWare suite`_. You can talk to the community through:
    :titlesonly:
 
 
-   preface/index
-   chapter0/index
-   chapter1/index
-   chapter2/index
+   tutorial/index
+   how-to/index
+   reference/index
+   background/index

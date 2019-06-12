@@ -40,25 +40,24 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Computer Based Problem Solving'
-copyright = u'2020, Patrick Coxall'
-author = u'Patrick Coxall' 
+project = u'Toga'
+copyright = u'2013, Russell Keith-Magee'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The full version, including alpha/beta/rc tags.
-#import io, re
-#with io.open('../src/core/toga/__init__.py', encoding='utf8') as version_file:
-#    version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]", version_file.read(), re.M)
-#    if version_match:
-#        release = version_match.group(1)
-#    else:
-#        raise RuntimeError("Unable to find version string.")
+import io, re
+with io.open('../src/core/toga/__init__.py', encoding='utf8') as version_file:
+    version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]", version_file.read(), re.M)
+    if version_match:
+        release = version_match.group(1)
+    else:
+        raise RuntimeError("Unable to find version string.")
 
 # The short X.Y version.
-#version = '.'.join(release.split('.')[:2])
+version = '.'.join(release.split('.')[:2])
 
 # Fix the autodoc import issues
 os.environ['TOGA_PLATFORM'] = 'dummy'
@@ -131,7 +130,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = "images/cs-logo.png"
+html_logo = "images/toga.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -211,8 +210,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'toga.tex', u'Computer Based Problem Solving Textbook',
-   u'Patrick Coxall', 'manual'),
+  ('index', 'toga.tex', u'Toga Documentation',
+   u'Russell Keith-Magee', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -241,8 +240,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'toga', u'Computer Based Problem Solving Textbook',
-     [u'Patrick Coxall'], 1)
+    ('index', 'toga', u'Toga Documentation',
+     [u'Russell Keith-Magee'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -255,8 +254,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'toga', u'Computer Based Problem Solving Textbook',
-   u'Patrick Coxall', 'Toga', 'A Python native, OS native GUI toolkit.',
+  ('index', 'toga', u'Toga Documentation',
+   u'Russell Keith-Magee', 'Toga', 'A Python native, OS native GUI toolkit.',
    'Miscellaneous'),
 ]
 
