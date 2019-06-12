@@ -211,7 +211,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'toga.tex', u'Computer Based Problem Solving Textbook',
+  ('index', 'toga.tex', u'Computer Based Problem Solving',
    u'Patrick Coxall', 'manual'),
 ]
 
@@ -241,7 +241,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'CBPS', u'Computer Based Problem Solving Textbook',
+    ('index', 'CBPS', u'Computer Based Problem Solving',
      [u'Patrick Coxall'], 1)
 ]
 
@@ -255,7 +255,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'CBPS', u'Computer Based Problem Solving Textbook',
+  ('index', 'CBPS', u'Computer Based Problem Solving',
    u'Patrick Coxall', 'CBPS', 'Computer Based Problem Solving Textbook.',
    'Miscellaneous'),
 ]
