@@ -45,3 +45,11 @@ The goal of this book is to take students from the point of never having done an
    introduction/index
    problem-solving/index
    structured-problem-solving/index
+   procedures-and-functions/index
+   holding-data/index
+   representing-and-sorting-data/index
+   using-oop/index
+   creating-objects/index
+   introduction/index
+   problem-solving/index
+   structured-problem-solving/index
