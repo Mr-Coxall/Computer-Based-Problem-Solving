@@ -1,8 +1,8 @@
-.. _reference:
+.. problem-solving:
 
-=========
-Reference
-=========
+===============
+Problem Solving
+===============
 
 .. toctree::
    :maxdepth: 1

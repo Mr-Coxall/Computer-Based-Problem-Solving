@@ -1,8 +1,8 @@
-.. _background:
+.. _structured-problem-solving:
 
-=============
-Background
-=============
+==========================
+Structured Problem Solving
+==========================
 
 .. toctree::
    :maxdepth: 1
