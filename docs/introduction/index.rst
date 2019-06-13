@@ -10,5 +10,5 @@ Problems have been around for as long as people have been around. The process of
    :maxdepth: 1
    :glob:
 
-   Get started <get-started>
+   What is programming <what-is-programming>
    Contribute to Toga <contribute>
