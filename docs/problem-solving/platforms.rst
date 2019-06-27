@@ -132,8 +132,8 @@ Eventually, the Toga project would like to provide support for the following pla
 If you are interested in these platforms and would like to contribute, please
 get in touch on Twitter_ or Gitter_.
 
-.. _Twitter: https://twitter.com/pybeeware
-.. _Gitter: https://gitter.im/beeware/general
+.. _Twitter: https://twitter.com/pybeeware?target=_blank
+.. _Gitter: https://gitter.im/beeware/general?target=_blank
 
 Unofficial platform support
 ===========================
