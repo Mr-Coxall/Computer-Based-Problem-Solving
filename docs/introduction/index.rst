@@ -13,4 +13,4 @@ Problems have been around for as long as people have been around. The process of
    :glob:
 
    What is programming <what-is-programming>
-   Goal of this bool <goal-of-this-book>
+   Goal of this book <goal-of-this-book>
