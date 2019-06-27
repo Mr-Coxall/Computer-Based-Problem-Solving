@@ -49,6 +49,3 @@ The goal of this book is to take students from the point of never having done an
    representing-and-sorting-data/index
    using-oop/index
    creating-objects/index
-   introduction/index
-   problem-solving/index
-   structured-problem-solving/index
