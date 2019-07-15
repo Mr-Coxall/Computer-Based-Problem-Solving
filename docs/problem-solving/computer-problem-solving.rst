@@ -1,9 +1,20 @@
-.. _goal-of-this-book:
+.. _computer-problem-solving:
 
-=================
-Goal of this book
-=================
+Computer Problem Solving
+========================
 
-The goal of this book is to make you a “good” programmer. Despite the fact that a normal high school semester courses only run for about 90 days, you will not become an expert programmer in just one semester. It has been said that it takes around `10,000 hours <https://en.wikipedia.org/wiki/Outliers_(book)>`_ to really become proficient at anything and programming is no different. By the end of the book you will be very much on your way and have a good foundation in the skills you will need. The important thing to remember is that the point is not to teach you a specific programming language, since programming languages come and go and change over time. This is just like real languages. 
+The initial goal of learning problem solving was to help us to solve problems that a computer program could be used for to help solve. The initial six step problem solving model that was presented can be used to help solve any type of problem. If we know that we are going to use a computer program to help solve the problem, the six steps can be translated into six steps that are more tailored for computer programming problems. They are the same basic six steps; they are just more focused on computer programming problems.
 
-Although it is the official language of the Catholic Church, not too many people go around on the streets and speak Latin to their friends. Many years ago, it might have been common but not today. The tools you will learn from this book are good programming techniques. These tools will be useful no matter what programming language you are using. Just like in the real world, you cannot be called a “linguist” if you only know one language. The same thing is true for a programmer; knowing more than one language is essential. The fortunate thing is that if you know how to program and know one programming language, picking up a second one is much easier. The cornerstone of being a good programmer is to be able to solve problems in a logical and systematic way and hopefully have fun in the process.
+The table below shows the initial six steps that we have been using for generic problems. They are then translated into the six steps we will be following for computer programming problems.
+
+===  =========================  =========================
+     Generic Step               Computer Programming Step
+#1   What is the problem        Top-Down Chart
+#2   Make a model               Flow Chart & StoryBoard
+#3   Analyze the model          Pseudocode
+#4   Find the solution          Actually type in the code
+#5   Check the solution         Style check & test for errors
+#6   Document the solution      Document the code – comments & GitHub
+===  =========================  =========================
+
+These six steps are here to help you. Most people have the urge when they are given a programming assignment to just go to the computers and start coding. This is *NOT* a good idea. If you have not thought through the problem first and worked through these steps, you will make too many mistakes, get lost and waste too much time.
