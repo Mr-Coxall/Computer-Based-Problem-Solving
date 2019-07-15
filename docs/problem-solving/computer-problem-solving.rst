@@ -8,7 +8,7 @@ The initial goal of learning problem solving was to help us to solve problems th
 The table below shows the initial six steps that we have been using for generic problems. They are then translated into the six steps we will be following for computer programming problems.
 
 ===  =========================  =========================
-___  Generic Step               Computer Programming Step
+_    Generic Step               Computer Programming Step
 #1   What is the problem        Top-Down Chart
 #2   Make a model               Flow Chart & StoryBoard
 #3   Analyze the model          Pseudocode

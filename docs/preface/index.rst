@@ -4,7 +4,7 @@
 Preface
 *******
 
-.. image:: ../images/cartoons/only_the_code_tells_the_truth.png
+.. image:: ../images/cartoons/the_art_of_programming.png
    :height: 600 px
    :alt: cartoon
    :align: center

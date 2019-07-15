@@ -4,10 +4,12 @@
 Structured Problem Solving
 **************************
 
-.. image:: ../images/cartoons/the_art_of_programming_1.png
+.. image:: ../images/cartoons/the_art_of_programming.png
    :height: 600 px
    :alt: cartoon
    :align: center
+
+xxx
 
 .. toctree::
    :maxdepth: 1

@@ -4,8 +4,7 @@
 Problem Solving
 ***************
 
-.. image:: ../images/cartoons/geeks_love_to_save_the_best_for_the_very_end.png
-   :height: 600 px
+.. image:: ../images/cartoons/the_art_of_programming.png
    :alt: cartoon
    :align: center
 
