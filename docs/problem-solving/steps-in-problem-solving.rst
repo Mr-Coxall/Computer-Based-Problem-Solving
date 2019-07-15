@@ -1,6 +1,5 @@
 .. _steps-in-problem-solving:
 
-========================
 Steps in Problem Solving
 ========================
 

@@ -1,6 +1,5 @@
 .. _goal-of-this-book:
 
-=================
 Goal of this book
 =================
 

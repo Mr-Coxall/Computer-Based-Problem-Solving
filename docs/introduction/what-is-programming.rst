@@ -1,6 +1,5 @@
 .. _what-is-programming:
 
-===================
 What is programming
 ===================
 

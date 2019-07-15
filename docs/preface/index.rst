@@ -1,8 +1,8 @@
 .. _preface:
 
-=======
+*******
 Preface
-=======
+*******
 
 It should be remembered that the focus of this book is to teach students how to program, not to just teach them a programming language. To do this the focus is on “Problem Solving”, using a computer program as a problem solving aid. Programming languages change over time and come and go but a good foundation of programming concepts and how to solve a problem will allow anyone to get over the syntax of a new programming language.
 

@@ -1,8 +1,8 @@
 .. _problem-solving:
 
-===============
+***************
 Problem Solving
-===============
+***************
 
 As previously mentioned problems have been around forever. The use of a computer to help in solving problems is new but computers do not solve problems, people still solve problems. Computers can be used to aid in solving problems but they are just a tool. People have been creating tools to help them solve problems for 1,000’s of years. The key to remember is that a computer is just a tool, just like a hammer is a tool to help people put nails in a board.
 
