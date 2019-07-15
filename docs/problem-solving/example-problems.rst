@@ -53,11 +53,13 @@ The first thing that should be asked is, does the fish swim up 3 km during the d
 2) Make a model.
 ^^^^^^^^^^^^^^^^
 For this problem our model will be a picture of a piece of what is happening.
+
 .. image:: ./images/salmon_swimming.png
 
 3) Analyze the model.
 ^^^^^^^^^^^^^^^^^^^^^
 You should check to make sure that your model will be correct. We will follow what is going on in a table:
+
 ==========  =======================  ===============================
 Day Number  Distance at end of Swim  Distance after being moved back
 1           3                        1
@@ -68,3 +70,13 @@ Day Number  Distance at end of Swim  Distance after being moved back
 4) Find the solution
 ^^^^^^^^^^^^^^^^^^^^
 In this case to find the solution we need to know how many days it took to get to 100 km. Your first reaction might be 100 days BUT if you look at the table on day 98 after the fish swam the 3 km, it is actually at 100 km, so that is the answer, 98 days not 100 days.
+
+5) Check the solution
+^^^^^^^^^^^^^^^^^^^^^
+It is always important to check your solution. In this case since our solution came from the table, check to make sure there is no error in the table. It might be a good idea to let it sit for a few days and then come back to look at it or get somebody else to look at your solution and see if it is correct.
+
+6) Document the solution
+^^^^^^^^^^^^^^^^^^^^^^^^
+Now that you have proven that the answer is 98 days, make sure you document it, so that someone else does not have to figure it out but can just refer to your answer and check your solution.
+
+Remember not to always go with your gut instinct and thing because it is following a patter you know the answer instantly without following through with the steps. Do all six steps and always check your answer.
