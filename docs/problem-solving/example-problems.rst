@@ -48,7 +48,7 @@ links to also look at:
 
 1) What is the problem?
 ^^^^^^^^^^^^^^^^^^^^^^^
-The first thing that should be asked is, does the fish swim up 3 km during the day and fall back 2 km at night or does she swim continuously all day and would go 3 km if it was not for the 2 km current so she only ever gets 1 km? Once again you will have to go back to the source of the problem to find out. We will say she swims 3 km and then drifts back 2 km.
+The first thing that should be asked is, does the fish swim up stream 3 km during the day and fall back 2 km at night or does she swim continuously all day and would go 3 km if it was not for the 2 km current so she only ever gets 1 km? Once again you will have to go back to the source of the problem to find out. We will say she swims 3 km during the day and then drifts back 2 km at night.
 
 2) Make a model.
 ^^^^^^^^^^^^^^^^
@@ -65,11 +65,19 @@ Day Number  Distance at end of Swim  Distance after being moved back
 1           3                        1
 2           4                        2
 3           5                        3
+4           6                        4
+5           7                        5
+...         ...                      ...
+96          98                       96
+97          99                       97
+98          100                      98
+99          101                      99
+100         102                      100
 ==========  =======================  ===============================
 
 4) Find the solution
 ^^^^^^^^^^^^^^^^^^^^
-In this case to find the solution we need to know how many days it took to get to 100 km. Your first reaction might be 100 days BUT if you look at the table on day 98 after the fish swam the 3 km, it is actually at 100 km, so that is the answer, 98 days not 100 days.
+In this case to find the solution we need to know how many days it took to get to 100 km. Your first reaction might be 100 days *BUT* if you look at the table on day 98 after the fish swam the 3 km, it is actually at 100 km mark, so that is the answer, 98 days not 100 days.
 
 5) Check the solution
 ^^^^^^^^^^^^^^^^^^^^^
