@@ -1,16 +1,11 @@
 .. _structured-problem-solving:
-
 **************************
 Structured Problem Solving
 **************************
-
-.. image:: ../images/cartoons/the_art_of_programming.png
-   :height: 600 px
+.. image:: ../images/cartoons/only_the_code_tells_the_truth.png
    :alt: cartoon
    :align: center
-
 xxx
-
 .. toctree::
    :maxdepth: 1
    :glob:
