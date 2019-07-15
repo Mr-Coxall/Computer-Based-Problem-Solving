@@ -61,7 +61,7 @@ Here are things to remember:
 
 6. Document the Solution
 ========================
-So you have come up with a brilliant solution to a problem. If you do not share the solution with anyone, what was the point? You have to ensure that you answer is verifiable and reproducible, so anyone can use it.  
-Here are things to remember:  
+So you have come up with a brilliant solution to a problem. If you do not share the solution with anyone, what was the point? You have to ensure that you answer is verifiable and reproducible, so anyone can use it.<br/>
+Here are things to remember:<br/>
 * Document what the problem and solution is.
 * Ensure anyone can follow your steps.
