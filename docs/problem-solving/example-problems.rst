@@ -54,7 +54,7 @@ The first thing that should be asked is, does the fish swim up stream 3 km durin
 ^^^^^^^^^^^^^^^^
 For this problem our model will be a picture of a piece of what is happening.
 
-.. image:: ../images/cartoons/geeks_love_to_save_the_best_for_the_very_end.png
+.. image:: ./images/salmon_swimming.png
 
 3) Analyze the model.
 ^^^^^^^^^^^^^^^^^^^^^
