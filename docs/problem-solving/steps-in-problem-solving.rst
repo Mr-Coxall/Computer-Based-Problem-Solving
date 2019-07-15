@@ -53,15 +53,16 @@ Here are things to remember:
 
 5. Check the Solution
 =====================
-You now (hopefully) have a solution to the original problem that you are pretty sure works. The next step is to ensure it actually solves exactly what the problem was. You might need to go through, step by step,to ensure it works. You might need to work through the solution and confirm the answer you get is correct. You might have to work through the solution several times and ensure you always get the same (or similar) answer.  
-Here are things to remember:  
-* Is the answer reasonable?
-* Work through the solution and check for errors.
-* Go through the solution several times and compare results.
+| You now (hopefully) have a solution to the original problem that you are pretty sure works. The next step is to ensure it actually solves exactly what the problem was. You might need to go through, step by step,to ensure it works. You might need to work through the solution and confirm the answer you get is correct. You might have to work through the solution several times and ensure you always get the same (or similar) answer.  
+| Here are things to remember:  
+| * Is the answer reasonable?
+| * Work through the solution and check for errors.
+| * Go through the solution several times and compare results.
 
 6. Document the Solution
 ========================
-So you have come up with a brilliant solution to a problem. If you do not share the solution with anyone, what was the point? You have to ensure that you answer is verifiable and reproducible, so anyone can use it.<br/>
-Here are things to remember:<br/>
+| So you have come up with a brilliant solution to a problem. If you do not share the solution with anyone, what was the point? You have to ensure that you answer is verifiable and reproducible, so anyone can use it.
+| Here are things to remember:
+
 * Document what the problem and solution is.
 * Ensure anyone can follow your steps.
