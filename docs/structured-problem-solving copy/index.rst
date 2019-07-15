@@ -11,11 +11,13 @@ Structured Problem Solving
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
-   Top-Down Design in Programming <top-down-design-in-programming>
-   Variables <variables>
-   Constants <constants>
-   Sequence <sequence>
-   Selection <selection>
-   Repetition <repetition>
+   philosophy
+   faq
+   success
+   releases
+   roadmap
+   architecture
+   layout
+   commands
+   data-sources
