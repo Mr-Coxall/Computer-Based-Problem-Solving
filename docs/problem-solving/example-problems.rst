@@ -1,14 +1,24 @@
 .. _example-problems:
 
+*********
+Chapter
+*********
+
+================
+Example Problems
+================
+
 ================
 Example Problems
 ================
 
 Here are some examples of problems and a possible solution using the six step method. Note that these problems are not necessarily problems that you would use a computer to help you solve. Latter on these six steps will be translated into six step used to solve problems that a computer program will be used to help solve.
 
-.. toctree::
-   :maxdepth: 1
-   :glob:
+1. Folding Paper
+----------------
 
-   Problem: Folding Paper <problem-folding-paper>
-   Problem: The Salmon Swimming <problem-the-salmon-swimming>
+1. What is the problem?
+^^^^^^^^^^^^^^^^^^^^^^^
+
+2. The Salmon Swimming
+----------------------
