@@ -20,5 +20,5 @@ Computers have also revolutionized many of the ways people solve problems from, 
    Example Problems <example-problems>
    Top-Down Design <top-down-design>
    Flow-Charts <flow-charts>
-   Pseudo Code <pseudo-code>
+   Pseudocode <pseudo-code>
    Computer Problem Solving<computer-problem-solving>

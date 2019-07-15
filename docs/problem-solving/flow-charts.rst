@@ -15,6 +15,6 @@ A flow-chart is a set of different shapes that each represent a certain type of 
 Here is an example of a flowchart for a none-computer based problem:
 
 .. image:: ./images/lamp_flow-chart.png
-   :width: 500 px
+   :width: 400 px
    :alt: none-computer flow-chart
    :align: center
