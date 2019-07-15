@@ -17,7 +17,7 @@ Computers have also revolutionized many of the ways people have solved problems 
    :glob:
 
    Steps in Problem Solving <steps-in-problem-solving>
-   Top-Down Design <top-down-design>
+   Example Problems <example-problems>
    Flow-Charts <flow-charts>
    Pseudo Code <pseudo-code>
    Computer Problem Solving<computer-problem-solving>
