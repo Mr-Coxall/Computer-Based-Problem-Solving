@@ -5,8 +5,8 @@ Example Problems
 
 Here are some examples of problems and a possible solution using the six step method. Note that these problems are not necessarily problems that you would use a computer to help you solve. This is an important thing to remember, not all problems should be solved with a computer. Although this book is about solving problems using a computer, there are many problems that are better solved not using a computer and that is perfectly ok. Sometimes your job as a programmer might be to identify that you should not be solving the problem on a computer. Latter on these six steps will be translated into six step used to solve problems that a computer program will be used to help solve.
 
-1. Folding Paper
-----------------
+Folding Paper
+-------------
 
 **How small can a piece of paper be made?**  
 
@@ -41,8 +41,8 @@ links to also look at:
 *  `Can you really only fold a piece of paper 7 times <https://www.scienceabc.com/eyeopeners/can-you-really-fold-a-piece-of-paper-only-7-times.html>`_
 
 
-2. The Salmon Swimming
-----------------------
+The Salmon Swimming
+-------------------
 
 **A salmon swims 3 km upstream and the current brings her back 2 km each day. How long does it take her to swim 100 km?**
 
@@ -55,6 +55,9 @@ The first thing that should be asked is, does the fish swim up stream 3 km durin
 For this problem our model will be a picture of a piece of what is happening.
 
 .. image:: ./images/salmon_swimming.png
+   :width: 500 px
+   :alt: salmon swimming
+   :align: center
 
 3) Analyze the model.
 ^^^^^^^^^^^^^^^^^^^^^

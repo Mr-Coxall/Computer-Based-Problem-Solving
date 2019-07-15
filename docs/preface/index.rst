@@ -9,3 +9,8 @@ It should be remembered that the focus of this book is to teach students how to 
 This book does not include any instructions on how to load, use, create GUIs or any other housekeeping of any particular language. There are many other resources that can aid both students and teachers alike for this. 
 
 Within the text you will see words or groups of words that are hyperlinked to `Wikipedia <https://en.wikipedia.org/wiki>`_. The point of linking to Wikipedia is to give additional information about a topic if the reader is unsure about the concept. Please note that I do not have control over what is placed on Wikipedia and although it seemed useful and correct when I looked at the link, these pages are changing all the time. Despite this, the information is usually correct and can be very helpful.
+
+.. image:: ../images/cartoons/only_the_code_tells_the_truth.png
+   :width: 500 px
+   :alt: cartoon
+   :align: center

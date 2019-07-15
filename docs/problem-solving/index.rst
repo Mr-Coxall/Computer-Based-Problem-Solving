@@ -11,6 +11,9 @@ My father is a `joiner <https://en.wikipedia.org/wiki/Joiner>`_ by trade but wor
 Computers have also revolutionized many of the ways people solve problems from, as compared to the past. The first modern electronic computer the `ENIAC <https://en.wikipedia.org/wiki/ENIAC>`_ was built to calculate tables for firing artillery shells. (Some, and maybe correctly, argue that the first electronic computer was actually the `Colossus <https://en.wikipedia.org/wiki/Colossus_computer>`_). The ENIAC was developed because it took too long and there were too many mistakes when people were doing the mathematics to calculate the firing tables by hand. The ENICA could do the calculations in 30 seconds that it would have taken one person 20 hours to do! Today the same book of firing tables could be produced in a modern computer in a few seconds!
 
 .. image:: ../images/cartoons/geeks_love_to_save_the_best_for_the_very_end.png
+   :width: 500 px
+   :alt: cartoon
+   :align: center
 
 .. toctree::
    :maxdepth: 1
