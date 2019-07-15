@@ -54,7 +54,7 @@ The first thing that should be asked is, does the fish swim up stream 3 km durin
 ^^^^^^^^^^^^^^^^
 For this problem our model will be a picture of a piece of what is happening.
 
-.. image:: ./images/salmon_swimming.png
+.. image:: ../images/cartoons/geeks_love_to_save_the_best_for_the_very_end.png
 
 3) Analyze the model.
 ^^^^^^^^^^^^^^^^^^^^^
@@ -62,17 +62,17 @@ You should check to make sure that your model will be correct. We will follow wh
 
 ==========  =======================  ===============================
 Day Number  Distance at end of Swim  Distance after being moved back
-1           3                        1
-2           4                        2
-3           5                        3
-4           6                        4
-5           7                        5
+#1          3                        1
+#2          4                        2
+#3          5                        3
+#4          6                        4
+#5          7                        5
 ...         ...                      ...
-96          98                       96
-97          99                       97
-98          100                      98
-99          101                      99
-100         102                      100
+#96         98                       96
+#97         99                       97
+#98         100                      98
+#99         101                      99
+#100        102                      100
 ==========  =======================  ===============================
 
 4) Find the solution
