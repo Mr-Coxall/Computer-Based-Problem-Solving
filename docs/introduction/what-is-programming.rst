@@ -10,4 +10,6 @@ To communicate with your friends, one way for them to understand what you mean i
 
 ![programming language levels](./images/programming_language_levels.png)
 
+.. image:: /images/programming_language_levels.png
+
 A person that uses a programming language to instruct a computer what to do is called a `programmer <https://en.wikipedia.org/wiki/Programmer>`_. The programmer solves whatever problem they are working on, then writes the instructions that the computer is to follow in the programming language that they have chosen. Then the computer translates the instructions into machine language (the language that the computer actually understands) and the computer performs the actions.
