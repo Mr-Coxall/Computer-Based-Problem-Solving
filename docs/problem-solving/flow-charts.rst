@@ -18,3 +18,5 @@ Here is an example of a flowchart for a none-computer based problem:
    :width: 400 px
    :alt: none-computer flow-chart
    :align: center
+
+Flow-chart from `Wikipedia <https://en.wikipedia.org/wiki/Flowchart>`_
