@@ -13,7 +13,7 @@ Computers have also revolutionized many of the ways people have solved problems 
 .. image:: ../images/cartoons/geeks_love_to_save_the_best_for_the_very_end.png
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :glob:
 
    Steps in Problem Solving <steps-in-problem-solving>
