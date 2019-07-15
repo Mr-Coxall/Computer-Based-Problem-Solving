@@ -1,9 +1,23 @@
-.. _goal-of-this-book:
+.. _steps-in-problem-solving:
 
-=================
-Goal of this book
-=================
+========================
+Steps in Problem Solving
+========================
 
-The goal of this book is to make you a “good” programmer. Despite the fact that a normal high school semester courses only run for about 90 days, you will not become an expert programmer in just one semester. It has been said that it takes around `10,000 hours <https://en.wikipedia.org/wiki/Outliers_(book)>`_ to really become proficient at anything and programming is no different. By the end of the book you will be very much on your way and have a good foundation in the skills you will need. The important thing to remember is that the point is not to teach you a specific programming language, since programming languages come and go and change over time. This is just like real languages. 
+There are many ways to solve a problem but having a process to follow can help make problem solving easier. If you do not think through a problem logically, then you end up just going around in circles and never solving it. The following is just one of many `Six Step Problem Solving Systems <https://www.google.com/search?q=six+step+problem+solving+system>`_, which can be used to solve any type of problem, not just ones that will be solved on a computer. The good thing is that the system translates nicely to computer problems, which is very useful, since the focus of the book is to solve problems on a computer. The six steps in this system are:
+1. What is the problem
+2. Make a model
+3. Analyze the model
+4. Find the solution
+5. Check the solution
+6. Document the solution
 
-Although it is the official language of the Catholic Church, not too many people go around on the streets and speak Latin to their friends. Many years ago, it might have been common but not today. The tools you will learn from this book are good programming techniques. These tools will be useful no matter what programming language you are using. Just like in the real world, you cannot be called a “linguist” if you only know one language. The same thing is true for a programmer; knowing more than one language is essential. The fortunate thing is that if you know how to program and know one programming language, picking up a second one is much easier. The cornerstone of being a good programmer is to be able to solve problems in a logical and systematic way and hopefully have fun in the process.
+1. What is the Prolem
+========================
+Before you can solve a problem correctly, you have to ensure that you understand the problem thoroughly. Many times you will have to go back to the source of the problem and confirm information or ask additional questions. You might have to have them restate the problem so that it is very clear what they are asking.
+
+Here are things to remember:
+* What am I trying to find?
+* What do I know / don’t know?
+* State the problem in your own words.
+* Get them to restate the problem.
