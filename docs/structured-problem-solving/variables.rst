@@ -27,15 +27,19 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
     .. code-block:: C++
 
-      $ python3 --version
-      $ pip3 --version
+      // variable definition and initialization
+      int age=32;
+      char letter='A';
+      float area;
+      string input;
 
   .. group-tab:: Go
 
     .. code-block:: Go
 
-      $ python3 --version
-      $ pip3 --version
+      // variable definition and initialization
+      var someWords string = "Hello World"
+      var age int = 32
 
   .. group-tab:: Java
 
