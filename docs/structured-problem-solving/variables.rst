@@ -28,25 +28,30 @@ Variable declaration usually should be grouped at the beginning of a section of 
     .. code-block:: C++
 
       // variable definition and initialization
-      int age=32;
-      char letter='A';
+      bool is_current = true;
+      int age = 32;
       float area;
-      string input;
+      string some_words = "Hello, Wordl!";
 
   .. group-tab:: Go
 
     .. code-block:: Go
 
       // variable definition and initialization
-      var someWords string = "Hello World"
+      var isCurrent bool = true
       var age int = 32
+      var float32 area
+      var someWords string = "Hello, World!"
 
   .. group-tab:: Java
 
     .. code-block:: Java
 
-      C:\...>python3 --version
-      C:\...>pip3 --version
+       // variable definition and initialization
+       boolean isCurrent = true;
+       int age = 32;
+       float area;
+       String someWords = "Hello, World!";
 
   .. group-tab:: JavaScript
 
@@ -75,3 +80,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
       C:\...>python3 --version
       C:\...>pip3 --version
+
+
+// Declare and set a value for a constant
+const pi float32 = 3.14
