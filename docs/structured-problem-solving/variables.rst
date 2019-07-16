@@ -27,8 +27,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
     .. code-block:: C++
 
-      // variable definition and initialization
-      // C++ is a statically typed language
+      // variable definition
       bool is_current = true;
       int age = 32;
       float area;
@@ -38,8 +37,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
     .. code-block:: Go
 
-      // variable definition and initialization
-      // Go is a statically typed language
+      // variable definition
       var isCurrent bool = true
       var age int = 32
       var float32 area
@@ -49,8 +47,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
     .. code-block:: Java
 
-       // variable definition and initialization
-       // Java is a statically typed language
+       // variable definition
        boolean isCurrent = true;
        int age = 32;
        float area;
@@ -60,8 +57,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
     .. code-block:: JavaScript
 
-       // variable definition and initialization
-       // JavaScript is a dynamically typed language
+       // variable definition
        let isCurrent = true;
        let age = 32;
        float area;
@@ -71,8 +67,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
     .. code-block:: Python
 
-       // variable definition and initialization
-       // Python is a dynamically typed language
+       // variable definition
        is_current = True
        age = 32
        area = 32.45
@@ -82,8 +77,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
     .. code-block:: Ruby
 
-       # variable definition and initialization
-       # Ruby is a dynamically typed language
+       # variable definition
        is_current = true
        age = 32
        area = 32.45
@@ -93,8 +87,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
     .. code-block:: Swift
 
-      // variable definition and initialization
-      // Swift is a statically typed language
+      // variable definition
       var isCurrent: Bool = true
       var age: Int = 32
       var area: Float = 32.45
