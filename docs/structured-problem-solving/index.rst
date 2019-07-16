@@ -4,7 +4,7 @@ Structured Problem Solving
 **************************
 
 .. image:: ../images/cartoons/only_the_code_tells_the_truth.png
-   :height: 500 px
+   :height: 550 px
    :alt: cartoon
    :align: center
 

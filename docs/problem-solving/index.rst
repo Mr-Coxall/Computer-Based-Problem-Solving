@@ -4,7 +4,7 @@ Problem Solving
 ***************
 
 .. image:: ../images/cartoons/the_art_of_programming_2.png
-   :height: 500 px
+   :height: 550 px
    :alt: cartoon
    :align: center
    
