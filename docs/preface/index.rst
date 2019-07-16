@@ -2,10 +2,12 @@
 *******
 Preface
 *******
+
 .. image:: ../images/cartoons/geeks_love_to_save_the_best_for_the_very_end.png
-   :height: 600 px
+   :height: 500 px
    :alt: cartoon
    :align: center
+
 It should be remembered that the focus of this book is to teach students how to program, not to just teach them a programming language. To do this the focus is on “Problem Solving”, using a computer program as a problem solving aid. Programming languages change over time and come and go but a good foundation of programming concepts and how to solve a problem will allow anyone to get over the syntax of a new programming language.
 
 This book does not include any instructions on how to load, use, create GUIs or any other housekeeping of any particular language. There are many other resources that can aid both students and teachers alike for this. 

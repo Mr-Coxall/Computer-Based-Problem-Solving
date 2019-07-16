@@ -27,6 +27,7 @@
 ==============================
 Computer Based Problem Solving
 ==============================
+
 .. image:: /images/ComputerBasedProblemSolving.png
    :alt: Computer Based Problem Solving
    :align: center
@@ -36,7 +37,7 @@ The goal of this book is to take students from the point of never having done an
 A PDF version of this textbook can be downloaded `here <https://readthedocs.org/projects/computer-based-problem-solving/downloads/pdf/latest/>`_, for offline reading.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :hidden:
    :titlesonly:
 
