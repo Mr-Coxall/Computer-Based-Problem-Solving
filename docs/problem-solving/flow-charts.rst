@@ -8,14 +8,14 @@ Some people think that there is no need to do `flow-charts <https://en.wikipedia
 A flow-chart is a set of different shapes that each represent a certain type of action. These shapes are connected together with arrows so that you can see the flow of logic. The shapes are:
 
 .. image:: ./images/flow-chart-symbols.png
-   :width: 500 px
+   :width: 300 px
    :alt: flow-chart symbols
    :align: center
 
 Here is an example of a flowchart for a none-computer based problem:
 
 .. image:: ./images/lamp_flow-chart.png
-   :width: 400 px
+   :width: 250 px
    :alt: none-computer flow-chart
    :align: center
 
