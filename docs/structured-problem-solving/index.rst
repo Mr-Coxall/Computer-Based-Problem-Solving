@@ -14,7 +14,7 @@ Teachers often hear students complain that they "...don't know where to begin." 
    :maxdepth: 1
    :glob:
 
-   Top-Down Design in Programming <top-down-design-in-programming>
+   Top-Down Design in Programming <top-down-design>
    Variables <variables>
    Constants <constants>
    Sequence <sequence>
