@@ -18,7 +18,7 @@ Character        A single character (like A or % or @)
 String           Variable length number of characters
 ===============  ========================================
 
-Variable declaration usually should be grouped at the beginning of a section of code (sub, procedure, function, method...), after the initial comments. A blank line follows the declaration and separates the declaration from the rest of your code. This makes it easy to see where the declaration starts and ends. Ensuring that your code is easy to read and understand is as important in computer science as it is in English. It is important to remember that your code has two audiences, the computer that needs to compile (or interprete) it so that the computer can run your program and even more important, you and everyone else that looks at your source code that are trying to figure out how your program works. Here are some examples of declaring a variable:
+Variable declaration usually should be grouped at the beginning of a section of code (sub, procedure, function, method...), after the initial `comments <https://en.wikipedia.org/wiki/Comment_%28computer_programming%29>`_. A blank line follows the declaration and separates the declaration from the rest of your code. This makes it easy to see where the declaration starts and ends. Ensuring that your code is easy to read and understand is as important in computer science as it is in English. It is important to remember that your code has two audiences, the computer that needs to `compile <https://en.wikipedia.org/wiki/Compiler>`_or `interprete <https://en.wikipedia.org/wiki/Interpreter_(computing)>`_ it so that the computer can run your program and even more important, you and everyone else that looks at your source code that are trying to figure out how your program works. Here are some examples of declaring a variable:
 
 
 .. tabs::
@@ -28,10 +28,10 @@ Variable declaration usually should be grouped at the beginning of a section of 
     .. code-block:: C++
 
       // variable definition
-      bool is_current = true;
+      bool isCurrent = true;
       int age = 32;
       float area;
-      string some_words = "Hello, Wordl!";
+      string someWords = "Hello, Wordl!";
 
   .. group-tab:: Go
 
@@ -92,7 +92,3 @@ Variable declaration usually should be grouped at the beginning of a section of 
       var age: Int = 32
       var area: Float = 32.45
       var someWords: String = "Hello, World!"
-
-
-// Declare and set a value for a constant
-const pi float32 = 3.14
