@@ -71,7 +71,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
        is_current = True
        age = 32
        area = 32.45
-       some_words = "Hello, World!";
+       some_words = "Hello, World!"
 
   .. group-tab:: Ruby
 
