@@ -24,59 +24,48 @@ Constants just like variables hold a particular value in memory for a programmer
 
     .. code-block:: Go
 
-      // variable definition
-      var isCurrent bool = true
-      var age int = 32
-      var float32 area
-      var someWords string = "Hello, World!"
+      // constant definition
+      const int NUMBER_OF_LIVES = 3
+      const float32 HST = 0.13
 
   .. group-tab:: Java
 
     .. code-block:: Java
 
-       // variable definition
-       boolean isCurrent = true;
-       int age = 32;
-       float area;
-       String someWords = "Hello, World!";
+       // constant definition
+       private static int NUMBER_OF_LIVES = 3;
+       private static double HST = 0.13;
 
   .. group-tab:: JavaScript
 
     .. code-block:: JavaScript
 
-       // variable definition
-       let isCurrent = true;
-       let age = 32;
-       float area;
-       let someWords = "Hello, World!";
+       // constant definition
+       const NUMBER_OF_LIVES = 3;
+       const HST = 0.13;
 
   .. group-tab:: Python3
 
     .. code-block:: Python
 
-       // variable definition
-       is_current = True
-       age = 32
-       area = 32.45
-       some_words = "Hello, World!";
+       # constant definition
+       # Note: in python ususally constants are declared in a seperate module
+       #   In this example the module is called "constants"
+       constants.NUMBER_OF_LIVES = 3;
+       constants.HST = 0.13;
 
   .. group-tab:: Ruby
 
     .. code-block:: Ruby
 
-       # variable definition
-       is_current = true
-       age = 32
-       area = 32.45
-       some_words = "Hello, World!"
+       // constant definition
+       NUMBER_OF_LIVES = 3
+       HST = 0.13
 
   .. group-tab:: Swift
 
     .. code-block:: Swift
 
-      // variable definition
-      var isCurrent: Bool = true
-      var age: Int = 32
-      var area: Float = 32.45
-      var someWords: String = "Hello, World!"
-
+       // constant definition
+       let numberOfLives = 3
+       let HST = 0.13
