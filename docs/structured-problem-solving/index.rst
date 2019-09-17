@@ -17,7 +17,7 @@ Teachers often hear students complain that they "...don't know where to begin." 
    Top-Down Design in Programming <top-down-design>
    Variables <variables>
    Constants <constants>
-   Assignment Statement <assignment-statement>
+   Assignment Statements <assignment-statements>
    Scope of Variables <scope-of-variables>
    Sequence <sequence>
    Selection <selection>

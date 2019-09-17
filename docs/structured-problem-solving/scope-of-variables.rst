@@ -1,21 +1,8 @@
-.. _top-down-design-in-programming:
+.. _scope-of-variables:
 
-Top Down Design in Programming
+Scope of Variables
 ==============================
 
-As we have seen above, top-down design is a process of breaking a complicated problem down into simpler steps that actually can be solved. In programming one of the easiest models to follow for beginner programmers is the `Input-Process-Output Model <https://en.wikipedia.org/wiki/IPO_model>`_ (IPO Model). You are most likely already familiar with this model, even if you do not realize you are using it. In life there are many examples of getting information, doing something with it and then returning the result. The most common example is probable the problems you do in math class every day. You get information, do calculations and then return the answer. We are going to use this model to help us solve our computer problems. The first step in our top-down design will always be to break the problem up into input-process-output.
+Where a variable is declared is important because it determines its `scope <https://en.wikipedia.org/wiki/Scope_(computer_science)>`_. The scope refers to where it is visible or can be used within a program. Usually you would declare a variable at the beginning of a function (for example a click event on a button or menu or the "main" function). Since it is declared at the beginning of a function, it can only be used within that funtion. Once the flow of your program exits this funtion, the variable is removed from memory (actually it is just `de-allocate <https://en.wikipedia.org/wiki/Garbage_%28computer_science%29>`_ most likely) and can no longer be used. This type of variable is referred to as a `local variable <https://en.wikipedia.org/wiki/Local_variable>`_. Any other function in your program can not use or refer to this variable. 
 
-.. image:: ./images/IPO.png
-   :alt: Input-Process-Output
-   :align: center
-
-Sometimes I need to Store Something
------------------------------------
-
-As mention above, “Input-Process-Output” is a very useful model to help solve problems. It is kind of misleading though because one very important point is missing, storage. What actually really happens is that we get information and then place it somewhere (write it down in a math problem or use a variable like *x* to hold some important number), we then process it (do some calculations), we get the answer and then give it back. We need storage as a temporary location to keep information. In really long problems many pieces of information might be kept, we might even have information that we just need to keep for some intermediate step. The real model looks more like:
-
-.. image:: ./images/IPO-storage.png
-   :alt: Input-Process-Output with Storage
-   :align: center
-
-In computer science programmers call these temporary storage locations varaibles.   
+What if for some reason you needed a variable to be accessible to several different functions within a single program. In this case declaring it within a single function is no good. Another option is to declare the variable at the top of the form class or module, just before any function. If this is done then any function within that program can see and use this variable. This type of variable is called a `global variable <https://en.wikipedia.org/wiki/Global_variable>`_. Global variables should only be used when absolutely necessary; if only one function needs a variable, it should be declared within the function. This is good programming style and also saves computer memory. The following is an example where you can see variables with the same name, being used as global and local variables. Type it in and follow the variables by stepping through the program.
