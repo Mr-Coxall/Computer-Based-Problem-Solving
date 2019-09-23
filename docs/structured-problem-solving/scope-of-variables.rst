@@ -7,6 +7,122 @@ Where a variable is declared is important because it determines its `scope <http
 
 What if for some reason you needed a variable to be accessible to several different functions within a single program. In this case declaring it within a single function is no good. Another option is to declare the variable at the top of the form class or module, just before any function. If this is done then any function within that program can see and use this variable. This type of variable is called a `global variable <https://en.wikipedia.org/wiki/Global_variable>`_. Global variables should only be used when absolutely necessary; if only one function needs a variable, it should be declared within the function. This is good programming style and also saves computer memory. The following is an example where you can see variables with the same name, being used as global and local variables. Type it in and follow the variables by stepping through the program.
 
+.. tabs::
+
+  .. group-tab:: C++
+
+    .. code-block:: C++
+
+	// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
+	//
+	// Created by: Mr. Coxall
+	// Created on: Sep 2019
+	// This program shows how local and global variables work
+
+	#include <iostream>
+
+	// global variable
+	int variableX = 25;
+
+	void localVariable() {
+	    // this shows what happens with local variables
+
+	    int variableX = 10;
+	    int variableY = 30;
+	    int variableZ = variableX + variableY;
+	    std::cout << "Local variableX, variableY, variableZ: " << variableX
+	              << " + " << variableY << " = " << variableZ << std::endl;
+	}
+
+
+	void globalVariable() {
+	    // this shows what happens with global variables
+
+	    variableX = variableX + 1;
+	    int variableY = 30;
+	    int variableZ = variableX + variableY;
+	    std::cout << "Local variableX, variableY, variableZ: " << variableX
+	              << " + " << variableY << " = " << variableZ << std::endl;
+	}
+
+	int main() {
+	    // this function calls local and global
+
+	    localVariable();
+	    globalVariable();
+	}
+
+
+  .. group-tab:: Go
+
+    .. code-block:: Go
+
+      // This program shows how local and global variables work
+
+  .. group-tab:: Java
+
+    .. code-block:: Java
+
+       // This program shows how local and global variables work
+
+  .. group-tab:: JavaScript
+
+    .. code-block:: JavaScript
+
+       // This program shows how local and global variables work
+
+  .. group-tab:: Python3
+
+    .. code-block:: Python
+
+	#!/usr/bin/env python3
+
+	# Created by: Mr. Coxall
+	# Created on: Sept 2019
+	# This program shows how local and global variables work
+
+	# global variable
+	variable_X = 25
+
+
+	def local_variable():
+	    # this shows what happens with local variables
+
+	    variable_X = 10
+	    variable_Y = 30
+	    variable_Z = variable_X + variable_Y
+	    print("Local variable_X, variable_Y, variable_Z: {0} + {1} = {2}".
+	          format(variable_X, variable_Y, variable_Z))
+
+
+	def global_variable():
+	    # this shows what happens with global variables
+
+	    global variable_X
+	    variable_X = variable_X + 1
+	    variable_Y = 30
+	    variable_Z = variable_X + variable_Y
+	    print("Global variable_X, variable_Y, variable_Z: {0} + {1} = {2}".
+	          format(variable_X, variable_Y, variable_Z))
+
+
+	local_variable()
+	global_variable()
+
+
+  .. group-tab:: Ruby
+
+    .. code-block:: Ruby
+
+       # This program shows how local and global variables work
+
+  .. group-tab:: Swift
+
+    .. code-block:: Swift
+
+      // This program shows how local and global variables work
+
+
 .. image:: ./images/global-and-local-variables.png
    :alt: Global and Local Variables
    :align: center

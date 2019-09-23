@@ -8,8 +8,6 @@ There are times in a computer program where you have a value that you need the c
 Constants just like variables hold a particular value in memory for a programmer that will be used in the program. The difference is that the computer will not let the programmer change the value of a constant during the running of the program. This prevents errors from happening if the programmer accidently tries to change the value of a constant. It should always be declared, just as a variable is declared to warn the computer and people reading your code that it exists. Constants should be declared right before variables, so that they are prominent and easy to notice. Here are some examples of declaring constants:
 
 
-
-
 .. tabs::
 
   .. group-tab:: C++
@@ -51,8 +49,12 @@ Constants just like variables hold a particular value in memory for a programmer
        # constant definition
        # Note: in python ususally constants are declared in a seperate module
        #   In this example the module is called "constants"
-       constants.NUMBER_OF_LIVES = 3;
-       constants.HST = 0.13;
+       NUMBER_OF_LIVES = 3
+       HST = 0.13
+
+       # then in main program
+       constants.NUMBER_OF_LIVES
+       constants.HST
 
   .. group-tab:: Ruby
 
