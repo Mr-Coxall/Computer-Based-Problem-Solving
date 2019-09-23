@@ -10,4 +10,3 @@ Teachers often hear students complain that they "...don't know where to begin." 
    :glob:
 
    Example Sequence Problem <example-sequence-problem>
-   Boolean Expressions <boolean-expressions>
