@@ -106,8 +106,15 @@ What if for some reason you needed a variable to be accessible to several differ
 	          format(variable_X, variable_Y, variable_Z))
 
 
-	local_variable()
-	global_variable()
+	def main():
+	    # this function shows how local and global variables work
+
+	    local_variable()
+	    global_variable()
+
+
+	if __name__ == "__main__":
+	    main()
 
 
   .. group-tab:: Ruby
@@ -122,7 +129,3 @@ What if for some reason you needed a variable to be accessible to several differ
 
       // This program shows how local and global variables work
 
-
-.. image:: ./images/global-and-local-variables.png
-   :alt: Global and Local Variables
-   :align: center
