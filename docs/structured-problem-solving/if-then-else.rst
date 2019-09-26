@@ -26,6 +26,7 @@ An example of what this would look like in a specific programming language is:
     } else {
         print("Not 30 students!")
 		}
+    
 
   .. group-tab:: Go
 
@@ -54,6 +55,7 @@ An example of what this would look like in a specific programming language is:
         print("Exactly 30 students!")
     else:
         print("Not 30 students!")
+
 
   .. group-tab:: Ruby
 
