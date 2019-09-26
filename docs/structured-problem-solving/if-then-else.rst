@@ -26,7 +26,6 @@ An example of what this would look like in a specific programming language is:
           print("Exactly 30 students!")
       }
 
-
   .. group-tab:: Go
 
     .. code-block:: Go
@@ -52,6 +51,9 @@ An example of what this would look like in a specific programming language is:
       # if ... then ... else example
       if number_of_students > 30 :
           print("Too many students!")
+      else:
+          print("Exactly 30 students!")
+      
 
   .. group-tab:: Ruby
 
