@@ -30,10 +30,15 @@ The next step is to convert the top-down design into a flowchart. To help create
 3. **Pseudo-code**
 
 Pseudo-code converts your flowchart into something that more resembles the final code you will write. Once again though it is not code (hence the name pseudo-code), so it is generically written so that it can be translated into any language. It should be understood by anyone that can write a computer program, not just people that use the same programming language that you do. The first word on each line should be a verb (an action word), since you want the computer to do something for you. By convention the first verb is also in all caps (capital letters). Here is the pseudo-code for the problem:
+
 **GET** subtotal from user
+
 **CALCULATE** tax ← subTotal * HST
+
 **CALCULATE** total ← subTotal + tax
+
 **SHOW** taxes back to user
+
 **SHOW** total back to user
 
 4. **Code**
