@@ -31,11 +31,11 @@ The next step is to convert the top-down design into a flowchart. To help create
 
 Pseudo-code converts your flowchart into something that more resembles the final code you will write. Once again though it is not code (hence the name pseudo-code), so it is generically written so that it can be translated into any language. It should be understood by anyone that can write a computer program, not just people that use the same programming language that you do. The first word on each line should be a verb (an action word), since you want the computer to do something for you. By convention the first verb is also in all caps (capital letters). Here is the pseudo-code for the problem:
 
-|**GET** subtotal from user
-|**CALCULATE** tax ← subTotal * HST
-|**CALCULATE** total ← subTotal + tax
-|**SHOW** taxes back to user
-|**SHOW** total back to user
+| **GET** subtotal from user
+| **CALCULATE** tax ← subTotal * HST
+| **CALCULATE** total ← subTotal + tax
+| **SHOW** taxes back to user
+| **SHOW** total back to user
 
 4. **Code**
 Once you have the pseudo-code done, the hardest part of solving the problem should be finished. Now you just convert your pseudo-code into the specific programming language you have chosen:
@@ -51,40 +51,31 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 	//
 	// Created by: Mr. Coxall
 	// Created on: Sep 2019
-	// This program shows how local and global variables work
+	// This program calculates total from subtotal and tax
 
 	#include <iostream>
-
-	// global variable
-	int variableX = 25;
-
-	void localVariable() {
-	    // this shows what happens with local variables
-
-	    int variableX = 10;
-	    int variableY = 30;
-	    int variableZ = variableX + variableY;
-	    std::cout << "Local variableX, variableY, variableZ: " << variableX
-	              << " + " << variableY << " = " << variableZ << std::endl;
-	}
-
-
-	void globalVariable() {
-	    // this shows what happens with global variables
-
-	    variableX = variableX + 1;
-	    int variableY = 30;
-	    int variableZ = variableX + variableY;
-	    std::cout << "Local variableX, variableY, variableZ: " << variableX
-	              << " + " << variableY << " = " << variableZ << std::endl;
-	}
+	#include <iomanip>
 
 	int main() {
-	    // this function calls local and global
+	    // this function calculates total from subtotal and tax
+	    const float HST = 0.13;
+	    float subTotal;
+	    float total;
 
-	    localVariable();
-	    globalVariable();
+	    // input
+	    std::cout << "Enter the subtotal ($): ";
+	    std::cin >> subTotal;
+
+	    // process
+	    total = subTotal + (subTotal * HST);
+
+	    // output
+	    std::cout << "" << std::endl;
+	    std::cout << "The total cost is: $"
+	              << std::fixed << std::setprecision(2) << std::setfill('0')
+	              << total << "." << std::endl;
 	}
+
 
 
   .. group-tab:: Go
