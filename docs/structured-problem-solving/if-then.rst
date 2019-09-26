@@ -5,7 +5,6 @@ If…Then
 
 The If…Then structure is a conditional statement, or sometimes referred to as a decision structure. It is used to perform a section of code if and only if the condition is true. The condition is checked by using a Boolean statement. If the condition is not true (meaning false), then the section of code is not performed it is just passed over. The If…Then statement (in most computer programming languages) takes the generic form of:
 
-
 | **If** (boolean expression) **Then** 
 |    Statements to be performed
 | **End If**
@@ -59,6 +58,7 @@ The indentation (usually 4 spaces, **NOT A TAB**) used in the If…Then statemen
   .. group-tab:: Swift
 
     .. code-block:: Swift
+    
        // if ... then example
 
 

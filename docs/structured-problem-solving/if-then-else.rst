@@ -5,11 +5,10 @@ If…Then…Else
 
 In the previous section we looked at the If…Then statement that is used for making a decision. When used a section of code is either performed or not performed, depending if the boolean statement is true or not. In some situations, if the statement is false and the section of code is not performed you would like an **alternative** piece of code to be performed instead. In this case an optional Else statement can be used. The If…Then…Else statement (in most computer programming languages) takes the generic form of:
 
-
 | **If** (boolean expression) **Then** 
 |    Statements to be performed
 | **Else**
-|    Alternate Statements to be performed
+|    Alternate statements to be performed
 | **End If**
 
 An example of what this would look like in a specific programming language is:
@@ -20,12 +19,12 @@ An example of what this would look like in a specific programming language is:
 
     .. code-block:: C++
 
-    // if ... then ... else example
-    if (numberOfStudents > 30) {
-        print("Too many students!")
-    } else {
-        print("Exactly 30 students!")
-    }
+      // if ... then ... else example
+      if (numberOfStudents > 30) {
+          print("Too many students!")
+      } else {
+          print("Exactly 30 students!")
+      }
 
 
   .. group-tab:: Go
@@ -50,9 +49,9 @@ An example of what this would look like in a specific programming language is:
 
     .. code-block:: Python
 
-    # if ... then ... else example
-    if number_of_students > 30 :
-        print("Too many students!")
+      # if ... then ... else example
+      if number_of_students > 30 :
+          print("Too many students!")
 
   .. group-tab:: Ruby
 
@@ -63,6 +62,7 @@ An example of what this would look like in a specific programming language is:
   .. group-tab:: Swift
 
     .. code-block:: Swift
+
        // if ... then ... else example
 
 
