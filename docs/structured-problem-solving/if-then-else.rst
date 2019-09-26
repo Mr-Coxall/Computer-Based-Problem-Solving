@@ -31,18 +31,33 @@ An example of what this would look like in a specific programming language is:
     .. code-block:: Go
 
       // if ... then ... else example
+      if numberOfStudents > 30 {
+          fmt.Println("Too many students!")
+      } else {
+          fmt.Println("Exactly 30 students!")
+      }
 
   .. group-tab:: Java
 
     .. code-block:: Java
 
-       // if ... then ... else example
+      // if ... then ... else example
+      if (numberOfStudents > 30) {
+          print("Too many students!");
+      } else {
+          print("Exactly 30 students!");
+      }
 
   .. group-tab:: JavaScript
 
     .. code-block:: JavaScript
 
-       // if ... then ... else example
+      // if ... then ... else example
+      if (numberOfStudents > 30) {
+          print("Too many students!");
+      } else {
+          print("Exactly 30 students!");
+      }
 
   .. group-tab:: Python3
 
@@ -53,19 +68,29 @@ An example of what this would look like in a specific programming language is:
           print("Too many students!")
       else:
           print("Exactly 30 students!")
-      
+
 
   .. group-tab:: Ruby
 
     .. code-block:: Ruby
 
-       # if ... then ... else example
+      // if ... then ... else example
+      if numberOfStudents > 30
+          puts "Too many students!"
+      else
+          puts "Exactly 30 students!"
+
 
   .. group-tab:: Swift
 
     .. code-block:: Swift
 
-       // if ... then ... else example
+      // if ... then ... else example
+      if numberOfStudents > 30 {
+          print("Too many students!")
+      } else {
+          print("Exactly 30 students!")
+      }
 
 
 In the above examples, if the variable numberOfStudents happens to be exactly equal to 30, the next line of code is performed (print("Exactly 30 students!")). If the variable is not equal to 30 (say it is 32 or 17), then the next line of code is skipped over and **NOT** performed but the following line of code will be performed (print("Exactly 30 students!")). Once again the diamond shape represented decision, even if it has a statement if it is true and a different one if it is false. The above examples would look like the following in a flow-chart:
