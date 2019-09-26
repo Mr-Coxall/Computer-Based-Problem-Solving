@@ -48,35 +48,36 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 
     .. code-block:: C++
 
-	// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-	//
-	// Created by: Mr. Coxall
-	// Created on: Sep 2019
-	// This program calculates total from subtotal and tax
+		// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
+		//
+		// Created by: Mr. Coxall
+		// Created on: Sep 2019
+		// This program calculates total from subtotal and tax
 
-	#include <iostream>
-	#include <iomanip>
+		#include <iostream>
+		#include <iomanip>
 
-	int main() {
-	    // this function calculates total from subtotal and tax
-	    const float HST = 0.13;
-	    float subTotal;
-	    float total;
+		int main() {
+		    // this function calculates total from subtotal and tax
+		    const float HST = 0.13;
+		    float subTotal;
+		    float total;
 
-	    // input
-	    std::cout << "Enter the subtotal ($): ";
-	    std::cin >> subTotal;
+		    // input
+		    std::cout << "Enter the subtotal: $";
+		    std::cin >> subTotal;
 
-	    // process
-	    total = subTotal + (subTotal * HST);
+		    // process
+		    total = subTotal + (subTotal * HST);
 
-	    // output
-	    std::cout << "" << std::endl;
-	    std::cout << "The total cost is: $"
-	              << std::fixed << std::setprecision(2) << std::setfill('0')
-	              << total << "." << std::endl;
-	}
-
+		    // output
+		    std::cout << "" << std::endl;
+		    std::cout << "If the subtotal is: $" 
+		              << std::fixed << std::setprecision(2) << std::setfill('0')
+		              << subTotal << ", then total cost is: $"
+		              << std::fixed << std::setprecision(2) << std::setfill('0')
+		              << total << "." << std::endl;
+		}
 
 
   .. group-tab:: Go
@@ -101,32 +102,34 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 
     .. code-block:: Python
 
-	#!/usr/bin/env python3
+		#!/usr/bin/env python3
 
-	# Created by: Mr. Coxall
-	# Created on: Sep 2019
-	# This program calculates total from subtotal and tax
-
-
-	import constants
+		# Created by: Mr. Coxall
+		# Created on: Sep 2019
+		# This program calculates total from subtotal and tax
 
 
-	def main():
-	    # this function calculates total from subtotal and tax
-
-	    # input
-	    sub_total = float(input("Enter the subtotal ($): "))
-
-	    # process
-	    total = sub_total + (sub_total * constants.HST)
-
-	    # output
-	    print("")
-	    print("The total cost is: ${0:,.2f}".format(total))
+		import constants
 
 
-	if __name__ == "__main__":
-	    main()
+		def main():
+		    # this function calculates total from subtotal and tax
+
+		    # input
+		    sub_total = float(input("Enter the subtotal: $"))
+
+		    # process
+		    total = sub_total + (sub_total * constants.HST)
+
+		    # output
+		    print("")
+		    print("If the subtotal is ${0:,.2f}, then the total cost is: ${1:,.2f}"
+		        .format(sub_total, total))
+
+
+		if __name__ == "__main__":
+		    main()
+
 
 
 
