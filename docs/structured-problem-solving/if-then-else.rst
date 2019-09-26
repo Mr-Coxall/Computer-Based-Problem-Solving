@@ -27,7 +27,6 @@ An example of what this would look like in a specific programming language is:
         print("Not 30 students!")
 		}
 
-
   .. group-tab:: Go
 
     .. code-block:: Go
