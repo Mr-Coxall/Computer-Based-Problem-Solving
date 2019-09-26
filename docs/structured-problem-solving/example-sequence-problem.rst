@@ -31,14 +31,11 @@ The next step is to convert the top-down design into a flowchart. To help create
 
 Pseudo-code converts your flowchart into something that more resembles the final code you will write. Once again though it is not code (hence the name pseudo-code), so it is generically written so that it can be translated into any language. It should be understood by anyone that can write a computer program, not just people that use the same programming language that you do. The first word on each line should be a verb (an action word), since you want the computer to do something for you. By convention the first verb is also in all caps (capital letters). Here is the pseudo-code for the problem:
 
-**GET** subtotal from user
-
-**CALCULATE** tax ← subTotal * HST
-
-**CALCULATE** total ← subTotal + tax
-**SHOW** taxes back to user
-
-**SHOW** total back to user
+|**GET** subtotal from user
+|**CALCULATE** tax ← subTotal * HST
+|**CALCULATE** total ← subTotal + tax
+|**SHOW** taxes back to user
+|**SHOW** total back to user
 
 4. **Code**
 Once you have the pseudo-code done, the hardest part of solving the problem should be finished. Now you just convert your pseudo-code into the specific programming language you have chosen:
@@ -116,22 +113,24 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 
 	# Created by: Mr. Coxall
 	# Created on: Sep 2019
-	# This program adds 2 numbers together
+	# This program calculates total from subtotal and tax
+
+
+	import constants
 
 
 	def main():
-	    # this function adds 2 numbers together
+	    # this function calculates total from subtotal and tax
 
 	    # input
-	    first_number = int(input("Enter the first number to add (integer): "))
-	    second_number = int(input("Enter the second number to add (integer): "))
+	    sub_total = float(input("Enter the subtotal ($): "))
 
 	    # process
-	    sum = first_number + second_number
+	    total = sub_total + (sub_total * constants.HST)
 
 	    # output
 	    print("")
-	    print("{0} + {1} = {2}".format(first_number, second_number, sum))
+	    print("The total cost is: ${0:,.2f}".format(total))
 
 
 	if __name__ == "__main__":
