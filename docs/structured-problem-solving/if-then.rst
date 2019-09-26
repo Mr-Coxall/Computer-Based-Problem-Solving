@@ -24,37 +24,26 @@ The indentation (usually 4 spaces, **NOT A TAB**) used in the If…Then statemen
       // if ... then example
 
   .. group-tab:: Java
-
     .. code-block:: Java
-
        // if ... then example
 
   .. group-tab:: JavaScript
-
     .. code-block:: JavaScript
-
        // if ... then example
 
   .. group-tab:: Python3
-
     .. code-block:: Python
-
 		# if ... then example
 		if number_of_students > 30 :
 		    print("Too many students!")
 
   .. group-tab:: Ruby
-
     .. code-block:: Ruby
-
        # if ... then example
 
   .. group-tab:: Swift
-
     .. code-block:: Swift
-
        // if ... then example
-
 
 In the above examples, if the variable numberOfStudents (or number_of_students) happens to be a number that is greater than 30 (say 32), the next line of code is performed (print("Too many Students!")). If the variable is not greater than 30 (say it is exactly 30), then the next line of code is skipped over and NOT performed. Remember from the section on flowcharts, the diamond shape represented decision. The If…Then statement is the translation of a decision in a flowchart to code. The above examples would look like the following in a flowchart:
 
