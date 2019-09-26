@@ -36,13 +36,14 @@ Pseudo-code converts your flowchart into something that more resembles the final
 **CALCULATE** tax ← subTotal * HST
 
 **CALCULATE** total ← subTotal + tax
-
 **SHOW** taxes back to user
 
 **SHOW** total back to user
 
 4. **Code**
 Once you have the pseudo-code done, the hardest part of solving the problem should be finished. Now you just convert your pseudo-code into the specific programming language you have chosen:
+
+
 .. tabs::
 
   .. group-tab:: C++
@@ -114,43 +115,28 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 	#!/usr/bin/env python3
 
 	# Created by: Mr. Coxall
-	# Created on: Sept 2019
-	# This program shows how local and global variables work
-
-	# global variable
-	variable_X = 25
-
-
-	def local_variable():
-	    # this shows what happens with local variables
-
-	    variable_X = 10
-	    variable_Y = 30
-	    variable_Z = variable_X + variable_Y
-	    print("Local variable_X, variable_Y, variable_Z: {0} + {1} = {2}".
-	          format(variable_X, variable_Y, variable_Z))
-
-
-	def global_variable():
-	    # this shows what happens with global variables
-
-	    global variable_X
-	    variable_X = variable_X + 1
-	    variable_Y = 30
-	    variable_Z = variable_X + variable_Y
-	    print("Global variable_X, variable_Y, variable_Z: {0} + {1} = {2}".
-	          format(variable_X, variable_Y, variable_Z))
+	# Created on: Sep 2019
+	# This program adds 2 numbers together
 
 
 	def main():
-	    # this function shows how local and global variables work
+	    # this function adds 2 numbers together
 
-	    local_variable()
-	    global_variable()
+	    # input
+	    first_number = int(input("Enter the first number to add (integer): "))
+	    second_number = int(input("Enter the second number to add (integer): "))
+
+	    # process
+	    sum = first_number + second_number
+
+	    # output
+	    print("")
+	    print("{0} + {1} = {2}".format(first_number, second_number, sum))
 
 
 	if __name__ == "__main__":
 	    main()
+
 
 
   .. group-tab:: Ruby
