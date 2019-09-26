@@ -143,6 +143,7 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
   .. group-tab:: Swift
 
     .. code-block:: Swift
+
 This program calculates total from subtotal and tax
 
 5. **Debug**
