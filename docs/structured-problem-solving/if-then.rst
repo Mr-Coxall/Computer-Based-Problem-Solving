@@ -12,21 +12,15 @@ The If…Then structure is a conditional statement, or sometimes referred to as 
 The indentation (usually 4 spaces, **NOT A TAB**) used in the If…Then statement is a coding convention used in almost every language. It is there to make the statement easier to read. It has no effect on how the code works and could be ignored; however, it is **REALLY BAD** programming style not to have it. Here is what an If…Then statement looks like in specific programming languages:
 
 .. tabs::
-
   .. group-tab:: C++
-
     .. code-block:: C++
-
 		// if ... then example
 		if (numberOfStudents > 30) {
 		    print("Too many students!")
 		}
 
-
   .. group-tab:: Go
-
     .. code-block:: Go
-
       // if ... then example
 
   .. group-tab:: Java
@@ -58,7 +52,7 @@ The indentation (usually 4 spaces, **NOT A TAB**) used in the If…Then statemen
   .. group-tab:: Swift
 
     .. code-block:: Swift
-    
+
        // if ... then example
 
 
