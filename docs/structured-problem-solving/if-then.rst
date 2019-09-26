@@ -20,7 +20,7 @@ The indentation (usually 4 spaces, **NOT A TAB**) used in the If…Then statemen
 
 		// if ... then example
 		if (numberOfStudents > 30) {
-		    print("Too many Students!")
+		    print("Too many students!")
 		}
 
 
@@ -48,7 +48,7 @@ The indentation (usually 4 spaces, **NOT A TAB**) used in the If…Then statemen
 
 		# if ... then example
 		if number_of_students > 30 :
-		    print("Too many Students!")
+		    print("Too many students!")
 
   .. group-tab:: Ruby
 

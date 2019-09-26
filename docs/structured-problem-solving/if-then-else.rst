@@ -20,9 +20,11 @@ An example of what this would look like in a specific programming language is:
 
     .. code-block:: C++
 
-    // if ... then example
+    // if ... then ... else example
     if (numberOfStudents > 30) {
-        print("Too many Students!")
+        print("Too many students!")
+    } else {
+        print("Exactly 30 students!")
     }
 
 
@@ -30,38 +32,38 @@ An example of what this would look like in a specific programming language is:
 
     .. code-block:: Go
 
-      // if ... then example
+      // if ... then ... else example
 
   .. group-tab:: Java
 
     .. code-block:: Java
 
-       // if ... then example
+       // if ... then ... else example
 
   .. group-tab:: JavaScript
 
     .. code-block:: JavaScript
 
-       // if ... then example
+       // if ... then ... else example
 
   .. group-tab:: Python3
 
     .. code-block:: Python
 
-    # if ... then example
+    # if ... then ... else example
     if number_of_students > 30 :
-        print("Too many Students!")
+        print("Too many students!")
 
   .. group-tab:: Ruby
 
     .. code-block:: Ruby
 
-       # if ... then example
+       # if ... then ... else example
 
   .. group-tab:: Swift
 
     .. code-block:: Swift
-       // if ... then example
+       // if ... then ... else example
 
 
 In the above examples, if the variable numberOfStudents happens to be exactly equal to 30, the next line of code is performed (print("Exactly 30 students!")). If the variable is not equal to 30 (say it is 32 or 17), then the next line of code is skipped over and **NOT** performed but the following line of code will be performed (print("Exactly 30 students!")). Once again the diamond shape represented decision, even if it has a statement if it is true and a different one if it is false. The above examples would look like the following in a flow-chart:
