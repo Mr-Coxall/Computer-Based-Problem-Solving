@@ -10,4 +10,10 @@ If computer programs could only do just a linear sequence of steps and nothing e
    :glob:
 
    Boolean Expressions <boolean-expressions>
-   If ... Then <if-then>
+   If…Then <if-then>
+   If…Then…Else <if-then-else>
+   If…Then…ElseIf…Else <if-then-elseif-else>
+   Select Case <select-case>
+   Try…Catch <try-catch>
+   Compound Boolean Expressions <compound-boolean-expressions>
+   Nested If Statements <nested-if-statements>
