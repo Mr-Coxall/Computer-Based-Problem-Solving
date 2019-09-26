@@ -60,6 +60,7 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 		int main() {
 		    // this function calculates total from subtotal and tax
 		    const float HST = 0.13;
+		    float tax;
 		    float subTotal;
 		    float total;
 
@@ -68,13 +69,14 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 		    std::cin >> subTotal;
 
 		    // process
-		    total = subTotal + (subTotal * HST);
+		    tax = + subTotal * HST;
+		    total = subTotal + tax;
 
 		    // output
 		    std::cout << "" << std::endl;
-		    std::cout << "If the subtotal is: $" 
+		    std::cout << "The HST is: $" 
 		              << std::fixed << std::setprecision(2) << std::setfill('0')
-		              << subTotal << ", then total cost is: $"
+		              << tax << ", and the total cost is: $"
 		              << std::fixed << std::setprecision(2) << std::setfill('0')
 		              << total << "." << std::endl;
 		}
@@ -119,19 +121,18 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 		    sub_total = float(input("Enter the subtotal: $"))
 
 		    # process
-		    total = sub_total + (sub_total * constants.HST)
+		    tax = sub_total * constants.HST
+		    total = sub_total + tax
 
 		    # output
 		    print("")
-		    print("If the subtotal is ${0:,.2f}, then the total cost is: ${1:,.2f}"
-		        .format(sub_total, total))
+		    print("The HST is ${0:,.2f}, and the total cost is: ${1:,.2f}"
+		        .format(tax, total))
 
 
 		if __name__ == "__main__":
 		    main()
-
-
-
+        
 
   .. group-tab:: Ruby
 
