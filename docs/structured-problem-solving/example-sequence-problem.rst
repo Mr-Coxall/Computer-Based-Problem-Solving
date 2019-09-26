@@ -38,6 +38,7 @@ Pseudo-code converts your flowchart into something that more resembles the final
 | **SHOW** total back to user
 
 4. **Code**
+
 Once you have the pseudo-code done, the hardest part of solving the problem should be finished. Now you just convert your pseudo-code into the specific programming language you have chosen:
 
 
@@ -82,13 +83,13 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 
     .. code-block:: Go
 
-      // This program shows how local and global variables work
+      // This program calculates total from subtotal and tax
 
   .. group-tab:: Java
 
     .. code-block:: Java
 
-       // This program shows how local and global variables work
+       // This program calculates total from subtotal and tax
 
   .. group-tab:: JavaScript
 
@@ -133,13 +134,12 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 
     .. code-block:: Ruby
 
-       # This program shows how local and global variables work
+       # This program calculates total from subtotal and tax
 
   .. group-tab:: Swift
 
     .. code-block:: Swift
-
-      // This program shows how local and global variables work
+This program calculates total from subtotal and tax
 
 5. **Debug**
 
