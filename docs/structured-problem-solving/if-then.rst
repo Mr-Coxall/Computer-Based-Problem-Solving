@@ -9,7 +9,7 @@ The If…Then structure is a conditional statement, or sometimes referred to as 
 |    Statements to be performed
 | **End If**
 
-The indentation (usually 4 spaces, **NOT A TAB**) used in the If…Then statement is a coding convention used in almost every language. It is there to make the statement easier to read. It has no effect on how the code works and could be ignored; however, it is **REALLY BAD** programming style not to have it. Here is what an If…Then statement looks like in specific programming languages:
+The indentation (usually 4 spaces, **NOT A TAB**) used in the If…Then statement is a coding convention used in almost every language. It is there to make the statement easier to read. It has no effect on how the code works and could be ignored; however, it is **REALLY BAD** programming style not to have it. You will also notice that some programming languages like to place the Boolean expression in brackets, while others do not. It is just style, but you should follow the languages style. Here is what an If…Then statement looks like in specific programming languages:
 
 .. tabs::
 
