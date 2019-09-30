@@ -8,7 +8,7 @@ A `boolean expression <https://en.wikipedia.org/wiki/Boolean_expression>`_ is an
 +------------+-------------------------+
 | Operator   | Meaning                 | 
 +============+=========================+ 
-| = or eq    | Equal to                | 
+| == or eq   | Equal to                | 
 +------------+-------------------------+ 
 | <          | Less than               | 
 +------------+-------------------------+ 

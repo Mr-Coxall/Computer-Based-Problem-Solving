@@ -20,10 +20,10 @@ An example of what this would look like in a specific programming language is:
     .. code-block:: C++
 
       // if ... then ... else example
-      if (numberOfStudents > 30) {
-          print("Too many students!")
+      if (numberOfStudents == 30) {
+          std::cout << "Exactly 30 students!"
       } else {
-          print("30 or more students.")
+          std::cout << "Not 30 students."
       }
 
   .. group-tab:: Go
@@ -31,10 +31,10 @@ An example of what this would look like in a specific programming language is:
     .. code-block:: Go
 
       // if ... then ... else example
-      if numberOfStudents > 30 {
-          fmt.Println("Too many students!")
+      if numberOfStudents == 30 {
+          fmt.Println("Exactly 30 students!")
       } else {
-          fmt.Println("30 or more students.")
+          fmt.Println("Not 30 students")
       }
 
   .. group-tab:: Java
@@ -42,10 +42,10 @@ An example of what this would look like in a specific programming language is:
     .. code-block:: Java
 
       // if ... then ... else example
-      if (numberOfStudents > 30) {
-          print("Too many students!");
+      if (numberOfStudents == 30) {
+          print("Exactly 30 students!");
       } else {
-          print("30 or more students.");
+          print("Not 30 students");
       }
 
   .. group-tab:: JavaScript
@@ -53,10 +53,10 @@ An example of what this would look like in a specific programming language is:
     .. code-block:: JavaScript
 
       // if ... then ... else example
-      if (numberOfStudents > 30) {
-          print("Too many students!");
+      if (numberOfStudents == 30) {
+          print("Exactly 30 students!");
       } else {
-          print("30 or more students.");
+          print("Not 30 students.");
       }
 
   .. group-tab:: Python3
@@ -64,10 +64,10 @@ An example of what this would look like in a specific programming language is:
     .. code-block:: Python
 
       # if ... then ... else example
-      if number_of_students > 30 :
-          print("Too many students!")
+      if number_of_students == 30 :
+          print("Exactly 30 students!")
       else:
-          print("30 or more students.")
+          print("Not 30 students.")
 
 
   .. group-tab:: Ruby
@@ -75,10 +75,10 @@ An example of what this would look like in a specific programming language is:
     .. code-block:: Ruby
 
       // if ... then ... else example
-      if numberOfStudents > 30
-          puts "Too many students!"
+      if numberOfStudents == 30
+          puts "Exactly 30 students!"
       else
-          puts "30 or more students."
+          puts "Not 30 students."
 
 
   .. group-tab:: Swift
@@ -86,10 +86,10 @@ An example of what this would look like in a specific programming language is:
     .. code-block:: Swift
 
       // if ... then ... else example
-      if numberOfStudents > 30 {
-          print("Too many students!")
+      if numberOfStudents == 30 {
+          print("Exactly 30 students!")
       } else {
-          print("30 or more students.")
+          print("Not 30 students.")
       }
 
 
