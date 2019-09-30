@@ -23,7 +23,7 @@ An example of what this would look like in a specific programming language is:
       if (numberOfStudents > 30) {
           print("Too many students!")
       } else {
-          print("Exactly 30 students!")
+          print("30 or more students.")
       }
 
   .. group-tab:: Go
@@ -34,7 +34,7 @@ An example of what this would look like in a specific programming language is:
       if numberOfStudents > 30 {
           fmt.Println("Too many students!")
       } else {
-          fmt.Println("Exactly 30 students!")
+          fmt.Println("30 or more students.")
       }
 
   .. group-tab:: Java
@@ -45,7 +45,7 @@ An example of what this would look like in a specific programming language is:
       if (numberOfStudents > 30) {
           print("Too many students!");
       } else {
-          print("Exactly 30 students!");
+          print("30 or more students.");
       }
 
   .. group-tab:: JavaScript
@@ -56,7 +56,7 @@ An example of what this would look like in a specific programming language is:
       if (numberOfStudents > 30) {
           print("Too many students!");
       } else {
-          print("Exactly 30 students!");
+          print("30 or more students.");
       }
 
   .. group-tab:: Python3
@@ -67,7 +67,7 @@ An example of what this would look like in a specific programming language is:
       if number_of_students > 30 :
           print("Too many students!")
       else:
-          print("Exactly 30 students!")
+          print("30 or more students.")
 
 
   .. group-tab:: Ruby
@@ -78,7 +78,7 @@ An example of what this would look like in a specific programming language is:
       if numberOfStudents > 30
           puts "Too many students!"
       else
-          puts "Exactly 30 students!"
+          puts "30 or more students."
 
 
   .. group-tab:: Swift
@@ -89,7 +89,7 @@ An example of what this would look like in a specific programming language is:
       if numberOfStudents > 30 {
           print("Too many students!")
       } else {
-          print("Exactly 30 students!")
+          print("30 or more students.")
       }
 
 
