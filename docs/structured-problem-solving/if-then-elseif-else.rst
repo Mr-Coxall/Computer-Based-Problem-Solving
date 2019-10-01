@@ -8,18 +8,18 @@ In some problems there are not just two different outcomes but more than two. If
 The structure can contain many ElseIfs, as many as the programmer needs. Another optional piece of the structure is the “Else”. If none of the above boolean conditions are met, the programmer might want a section of code to be executed. If this is the case, then the code is placed in the else section. Any code in the else section is run if and only if none of the Boolean expressions were met. It should also be noted that there is no Boolean condition associated with the else. That is because it is run only if all the above boolean conditions are not met. The If…Then…ElseIf…Else statement (in most computer programming languages) takes the generic form of:
 
 
-| **If** (boolean expression #1) **Then** 
+| **IF** (boolean expression #1) **THEN** 
 |    First potential statement to be performed
-| **ElseIf** (boolean expression #2) **Then** 
+| **ELSEIF** (boolean expression #2) **THEN** 
 |    Second potential statement to be performed
-| **ElseIf** (boolean expression #3) **Then** 
+| **ELSEIF** (boolean expression #3) **THEN** 
 |    Third potential statement to be performed
 | ...
-| **ElseIf** (boolean expression #n) **Then** 
+| **ELSEIF** (boolean expression #n) **THEN** 
 |    Nth potential statement to be performed
-| **Else**
+| **ELSE**
 |    Alternate statements to be performed
-| **End If**
+| **ENDIF**
 
 An example of what this would look like in a specific programming language is:
 
