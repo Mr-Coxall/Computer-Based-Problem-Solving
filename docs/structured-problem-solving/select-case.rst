@@ -8,16 +8,16 @@ As you have seen from the If…Elseif…Elseif…Else statement, when there are 
 The Select Case structure takes a variable and then compares it to a list of expressions. The first expressions that is evaluated as “True” is executed and the remaining of the select case structure is skipped over, just like an If…ElseIf… statement. There are several different ways to create your expression. You can just use a value (a single digit for example), several digits, a range or having a regular expression (Is < 10). Just like the If structure, there is an optional “Else” that can be placed at the end as a catch all. If none of the expressions is evaluated to “True”, then the flow will go to the else. The general form of a Select…Case statement (in most computer programming languages) takes the generic form of:
 
 
-|**SELECT**(variable) { 
-|      **CASE** valueOne 
-|          //statements 
-|      **CASE** valueTwo
-|          //statements
-|      **CASE** valueThree
-|          //statements
-|      ...      
-|      **ELSE**  //optional
-|         //statements
+| **SELECT**(variable) { 
+|       **CASE** valueOne 
+|           //statements 
+|       **CASE** valueTwo
+|           //statements
+|       **CASE** valueThree
+|           //statements
+|       ...      
+|       **ELSE**  //optional
+|           //statements
 
 An example of what this would look like in a specific programming language is:
 
