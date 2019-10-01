@@ -32,9 +32,9 @@ An example of what this would look like in a specific programming language is:
       // if ... then ... elseif ... else example
       if (colourOfLight == “red”) {
           std::cout << "Stop!";
-      } else if (colourOfLight = “yellow") {
+      } else if (colourOfLight == “yellow") {
           std::cout << "Slow Down.";
-      } else if (colourOfLight = green") {
+      } else if (colourOfLight == green") {
           std::cout << "Go, if all clear.";
       } else {
           std::cout << "No idea!";
@@ -65,9 +65,9 @@ An example of what this would look like in a specific programming language is:
       # if ... then ... elseif ... else example
       if colour_of_light == “red”) {
           print("Stop!")
-      } elif (colour_of_light = “yellow") {
+      } elif (colour_of_light == “yellow") {
           print("Slow Down.")
-      } elif (colour_of_light = green") {
+      } elif (colour_of_light == green") {
           print("Go, if all clear.")
       } else {
           print("No idea!")
