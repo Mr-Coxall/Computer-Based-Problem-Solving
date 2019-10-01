@@ -9,15 +9,15 @@ The Select Case structure takes a variable and then compares it to a list of exp
 
 
 | **SELECT**(variable) { 
-      **CASE** valueOne 
-          //statements 
-      **CASE** valueTwo
-          //statements
-      **CASE** valueThree
-          //statements
-      ...      
-      **ELSE**  //optional
-         //statements
+|      **CASE** valueOne 
+|          //statements 
+|      **CASE** valueTwo
+|          //statements
+|      **CASE** valueThree
+|          //statements
+|      ...      
+|      **ELSE**  //optional
+|         //statements
 
 An example of what this would look like in a specific programming language is:
 
