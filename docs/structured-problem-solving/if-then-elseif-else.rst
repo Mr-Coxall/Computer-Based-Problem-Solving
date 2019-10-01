@@ -64,11 +64,11 @@ An example of what this would look like in a specific programming language is:
     .. code-block:: Python
 
       # if ... then ... elseif ... else example
-      if colour_of_light == “red”) {
+      if colour_of_light == “red” {
           print("Stop!")
-      } elif (colour_of_light == “yellow") {
+      } elif colour_of_light == “yellow" {
           print("Slow Down.")
-      } elif (colour_of_light == green") {
+      } elif colour_of_light == green" {
           print("Go, if all clear.")
       } else {
           print("No idea!")
