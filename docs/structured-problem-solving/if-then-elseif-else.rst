@@ -23,6 +23,7 @@ The structure can contain many ElseIfs, as many as the programmer needs. Another
 
 An example of what this would look like in a specific programming language is:
 
+
 .. tabs::
 
   .. group-tab:: C++
