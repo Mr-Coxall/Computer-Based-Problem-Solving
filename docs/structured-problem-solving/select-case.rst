@@ -3,23 +3,23 @@
 Select Case
 ===========
 
-In some problems there are not just two different outcomes but more than two. If this 
+As you have seen from the If…Elseif…Elseif… statement, when there are many choices, the structure can be hard to follow. Some programming languages have an alternative structure when this happens. A Select Case or Switch Case is used to test a variable's equality from a list of values, where each value is a case. When the variable is equal to one of the cases, the line(s) of code following the case are executed. The optional default or else case might be included for when the variable does not equal any of the provided cases. 
 
-. The Select…Case statement (in most computer programming languages) takes the generic form of:
+As you have seen from the If…Elseif…Elseif…Else statement, when there are many choices, the structure can be hard to follow. Some programming languages have an alternative structure when this happens. The Select Case or Switch Case statement is also a decision structure that is sometimes preferred because code might be easier to read and understand, by people. 
+
+The Select Case structure takes a variable and then compares it to a list of expressions. The first expressions that is evaluated as “True” is executed and the remaining of the select case structure is skipped over, just like an If…ElseIf… statement. There are several different ways to create your expression. You can just use a value (a single digit for example), several digits, a range or having a regular expression (Is < 10). Just like the If structure, there is an optional “Else” that can be placed at the end as a catch all. If none of the expressions is evaluated to “True”, then the flow will go to the else. The general form of a Select…Case statement (in most computer programming languages) takes the generic form of:
 
 
-| **IF** (boolean expression #1) **THEN** 
-|    First potential statement to be performed
-| **ELSEIF** (boolean expression #2) **THEN** 
-|    Second potential statement to be performed
-| **ELSEIF** (boolean expression #3) **THEN** 
-|    Third potential statement to be performed
-| ...
-| **ELSEIF** (boolean expression #n) **THEN** 
-|    Nth potential statement to be performed
-| **ELSE**
-|    Alternate statements to be performed
-| **ENDIF**
+| **SELECT**(variable) { 
+      **CASE** valueOne 
+          //statements 
+      **CASE** valueTwo
+          //statements
+      **CASE** valueThree
+          //statements
+      ...      
+      **ELSE**  //optional
+         //statements
 
 An example of what this would look like in a specific programming language is:
 
@@ -29,61 +29,87 @@ An example of what this would look like in a specific programming language is:
 
     .. code-block:: C++
 
-      // if ... then ... elseif ... else example
-      if (colourOfLight == “red”) {
-          std::cout << "Stop!";
-      } else if (colourOfLight == “yellow") {
-          std::cout << "Slow Down.";
-      } else if (colourOfLight == green") {
-          std::cout << "Go, if all clear.";
-      } else {
-          std::cout << "No idea!";
-      }
+      // select ...case example
+        char choice;
+        switch(choice) { 
+            case 'Y' : 
+                cout << "Yes"; 
+                break; 
+            case 'M' : 
+                cout << "Maybe"; 
+                break; 
+            case 'N' : 
+                cout << "No"; 
+                break; 
+            default: 
+                cout << "Invalid response"; 
+        }
 
   .. group-tab:: Go
 
     .. code-block:: Go
 
-      // if ... then ... elseif ... else example
+      // select ...case example
 
   .. group-tab:: Java
 
     .. code-block:: Java
 
-      // if ... then ... elseif ... else example
+      // select ...case example
 
   .. group-tab:: JavaScript
 
     .. code-block:: JavaScript
 
-      // if ... then ... elseif ... else example
+      // select ...case example
 
   .. group-tab:: Python3
 
     .. code-block:: Python
 
-      # if ... then ... elseif ... else example
-      if colour_of_light == “red”) {
-          print("Stop!")
-      } elif (colour_of_light == “yellow") {
-          print("Slow Down.")
-      } elif (colour_of_light == green") {
-          print("Go, if all clear.")
-      } else {
-          print("No idea!")
-      }
+      # select ...case example
+        int month = 8;
+        String monthString;
+        switch (month) {
+            case 1:  monthString = "January";
+                     break;
+            case 2:  monthString = "February";
+                     break;
+            case 3:  monthString = "March";
+                     break;
+            case 4:  monthString = "April";
+                     break;
+            case 5:  monthString = "May";
+                     break;
+            case 6:  monthString = "June";
+                     break;
+            case 7:  monthString = "July";
+                     break;
+            case 8:  monthString = "August";
+                     break;
+            case 9:  monthString = "September";
+                     break;
+            case 10: monthString = "October";
+                     break;
+            case 11: monthString = "November";
+                     break;
+            case 12: monthString = "December";
+                     break;
+            default: monthString = "Invalid month";
+                     break;
+        }
 
   .. group-tab:: Ruby
 
     .. code-block:: Ruby
 
-      // if ... then ... elseif ... else example
+      // select ...case example
 
   .. group-tab:: Swift
 
     .. code-block:: Swift
 
-      // if ... then ... elseif ... else example
+      // select ...case example
 
 
 In the above examples, if the variable colourOfLight is red, yellow or green than the appropriate section of code is executed. If the variable does not equal any of these, then the last statement is executed, “No idea!” The above examples would look like the following in a flow-chart:
