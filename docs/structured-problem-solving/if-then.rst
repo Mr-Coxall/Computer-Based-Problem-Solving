@@ -88,4 +88,9 @@ You might also have to have a decision in your top-down design. You **do not** u
    :alt: Top-Down Design for If…Then statement
    :align: center 
 
-You will also be using If…Then statements in pseudo-code. 
+You will also be using If…Then statements in pseudo-code. The above problem looks like this in pseudo-code:
+
+| **GET** number_of_students
+| **IF (number_of_students > 30) THEN**
+|     **SHOW** "Too many students!"
+| **ENDIF**
