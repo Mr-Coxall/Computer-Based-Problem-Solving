@@ -3,8 +3,6 @@
 Select Case
 ===========
 
-As you have seen from the If…Elseif…Elseif… statement, when there are many choices, the structure can be hard to follow. Some programming languages have an alternative structure when this happens. A Select Case or Switch Case is used to test a variable's equality from a list of values, where each value is a case. When the variable is equal to one of the cases, the line(s) of code following the case are executed. The optional default or else case might be included for when the variable does not equal any of the provided cases. 
-
 As you have seen from the If…Elseif…Elseif…Else statement, when there are many choices, the structure can be hard to follow. Some programming languages have an alternative structure when this happens. The Select Case or Switch Case statement is also a decision structure that is sometimes preferred because code might be easier to read and understand, by people. 
 
 The Select Case structure takes a variable and then compares it to a list of expressions. The first expressions that is evaluated as “True” is executed and the remaining of the select case structure is skipped over, just like an If…ElseIf… statement. There are several different ways to create your expression. You can just use a value (a single digit for example), several digits, a range or having a regular expression (Is < 10). Just like the If structure, there is an optional “Else” that can be placed at the end as a catch all. If none of the expressions is evaluated to “True”, then the flow will go to the else. The general form of a Select…Case statement (in most computer programming languages) takes the generic form of:
