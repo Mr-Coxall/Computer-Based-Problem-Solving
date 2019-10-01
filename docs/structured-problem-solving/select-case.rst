@@ -114,6 +114,6 @@ An example of what this would look like in a specific programming language is:
 
 In the above examples, if the variable colourOfLight is red, yellow or green than the appropriate section of code is executed. If the variable does not equal any of these, then the last statement is executed, “No idea!” The above examples would look like the following in a flow-chart:
 
-.. image:: ./images/if-then-elseif-else.png
-   :alt: If…Then…ElseIf…Else flowchart
+.. image:: ./images/select-case.png
+   :alt: Select…Case flowchart
    :align: center 
