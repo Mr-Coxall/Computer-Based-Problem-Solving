@@ -65,13 +65,13 @@ An example of what this would look like in a specific programming language is:
 
       # if ... then ... elseif ... else example
       if colour_of_light == "red":
-        print("Stop!")
+          print("Stop!")
       elif colour_of_light == "yellow":
-        print("Slow Down.")
+          print("Slow Down.")
       elif colour_of_light == "green":
-        print("Go, if all clear.")
+          print("Go, if all clear.")
       else:
-        print("No idea!")
+          print("No idea!")
 
 
   .. group-tab:: Ruby
