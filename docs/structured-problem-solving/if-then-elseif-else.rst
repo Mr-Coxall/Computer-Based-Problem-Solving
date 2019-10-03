@@ -31,11 +31,11 @@ An example of what this would look like in a specific programming language is:
     .. code-block:: C++
 
       // if ... then ... elseif ... else example
-      if (colourOfLight == “red”) {
+      if (colourOfLight == "red") {
           std::cout << "Stop!";
-      } else if (colourOfLight == “yellow") {
+      } else if (colourOfLight == "yellow") {
           std::cout << "Slow Down.";
-      } else if (colourOfLight == green") {
+      } else if (colourOfLight == "green") {
           std::cout << "Go, if all clear.";
       } else {
           std::cout << "No idea!";
@@ -64,14 +64,14 @@ An example of what this would look like in a specific programming language is:
     .. code-block:: Python
 
       # if ... then ... elseif ... else example
-      if colour_of_light == “red”:
-          print("Stop!")
-      elif colour_of_light == “yellow":
-          print("Slow Down.")
-      elif colour_of_light == green":
-          print("Go, if all clear.")
+      if colour_of_light == "red":
+        print("Stop!")
+      elif colour_of_light == "yellow":
+        print("Slow Down.")
+      elif colour_of_light == "green":
+        print("Go, if all clear.")
       else:
-          print("No idea!")
+        print("No idea!")
 
 
   .. group-tab:: Ruby
