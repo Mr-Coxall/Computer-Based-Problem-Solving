@@ -41,6 +41,7 @@ An example of what this would look like in a specific programming language is:
           std::cout << "No idea!";
       }
 
+
   .. group-tab:: Go
 
     .. code-block:: Go
@@ -72,7 +73,7 @@ An example of what this would look like in a specific programming language is:
           print("Go, if all clear.")
       else:
           print("No idea!")
-
+      
 
   .. group-tab:: Ruby
 
