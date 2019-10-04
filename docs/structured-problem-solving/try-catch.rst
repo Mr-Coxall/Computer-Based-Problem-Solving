@@ -80,7 +80,7 @@ An example of what this would look like in a specific programming language is:
 
       if __name__ == "__main__":
           main()
-      
+
 
 
   .. group-tab:: Ruby
