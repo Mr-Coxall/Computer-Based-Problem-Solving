@@ -26,21 +26,46 @@ An example of what this would look like in a specific programming language is:
 
     .. code-block:: C++
 
-      // select ...case example
-        char choice;
-        switch(choice) { 
-            case 'Y' : 
-                cout << "Yes"; 
-                break; 
-            case 'M' : 
-                cout << "Maybe"; 
-                break; 
-            case 'N' : 
-                cout << "No"; 
-                break; 
-            default: 
-                cout << "Invalid response"; 
-        }
+      // Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
+      //
+      // Created by: Mr. Coxall
+      // Created on: Sep 2019
+      // This program checks your grade
+
+      #include <iostream>
+
+      int main() {
+          // this function checks your grade
+          char gradeLevel;  // a single character
+
+          // input
+          std::cout << "Enter grade mark as a single character(ex: A, B, ...): ";
+          std::cin >> gradeLevel;
+
+          // switch in C++ can not support strings, only numbers and char
+          // also note you need the break in C++ or it will move to next
+          // line in switch statement and might be true again
+          switch (gradeLevel) {
+              case 'A' :
+                  std::cout << "Excellent!" << std::endl;
+                  break;
+              case 'B' :
+                  std::cout << "Really good!" << std::endl;
+                  break;
+              case 'C' :
+                  std::cout << "Well done" << std::endl;
+                  break;
+              case 'D' :
+                  std::cout << "You passed" << std::endl;
+                  break;
+              case 'F' :
+                  std::cout << "Better try again" << std::endl;
+                  break;
+              default :
+                  std::cout << "Invalid grade" << std::endl;
+          }
+      }
+
 
   .. group-tab:: Go
 
@@ -65,36 +90,7 @@ An example of what this would look like in a specific programming language is:
     .. code-block:: Python
 
       # select ...case example
-        int month = 8;
-        String monthString;
-        switch (month) {
-            case 1:  monthString = "January";
-                     break;
-            case 2:  monthString = "February";
-                     break;
-            case 3:  monthString = "March";
-                     break;
-            case 4:  monthString = "April";
-                     break;
-            case 5:  monthString = "May";
-                     break;
-            case 6:  monthString = "June";
-                     break;
-            case 7:  monthString = "July";
-                     break;
-            case 8:  monthString = "August";
-                     break;
-            case 9:  monthString = "September";
-                     break;
-            case 10: monthString = "October";
-                     break;
-            case 11: monthString = "November";
-                     break;
-            case 12: monthString = "December";
-                     break;
-            default: monthString = "Invalid month";
-                     break;
-        }
+      # python does not actually have a select ... case structure
 
   .. group-tab:: Ruby
 
