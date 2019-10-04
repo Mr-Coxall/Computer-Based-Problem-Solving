@@ -124,6 +124,6 @@ An example of what this would look like in a specific programming language is:
 
 In the above examples, if you do enter in an integer, it will let you know. If you enter in a string for example, the program will not crash, but give you a warning. The above examples would look like the following in a flow-chart:
 
-.. image:: ./images/try-except.jpg
-   :alt: Try…Except flowchart
+.. image:: ./images/try-catch.jpg
+   :alt: Try…Catch flowchart
    :align: center 
