@@ -30,7 +30,33 @@ An example of what this would look like in a specific programming language is:
 
     .. code-block:: C++
 
-      // try statement
+      // Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
+      //
+      // Created by: Mr. Coxall
+      // Created on: Sep 2019
+      // This program uses a try statement
+
+      #include <iostream>
+      #include <string>
+
+      main() {
+          // this function uses a try statement
+          std::string integer_as_string;
+          int integer_as_number;
+
+          // input
+          std::cout << "Enter a number: ";
+          std::cin >> integer_as_string;
+
+          // process & output
+          try {
+              integer_as_number = std::stoi(integer_as_string);
+              std::cout << "That number as an integer is " << integer_as_number;
+          } catch (std::invalid_argument) {
+              std::cout << "That was not a valid integer";
+          }
+      }
+
 
   .. group-tab:: Go
 
@@ -70,12 +96,12 @@ An example of what this would look like in a specific programming language is:
 
           # process & output
           try:
-            integer_as_number = int(integer_as_string)
-            print("You entered an integer correctly")
+              integer_as_number = int(integer_as_string)
+              print("You entered an integer correctly")
           except:
-            print("This was not an integer")
+              print("This was not an integer")
           finally:
-            print("Thanks for playing")
+              print("Thanks for playing")
 
 
       if __name__ == "__main__":
