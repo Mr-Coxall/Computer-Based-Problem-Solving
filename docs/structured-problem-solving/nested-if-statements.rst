@@ -95,6 +95,6 @@ An example of what this would look like in a specific programming language is:
 
 Note: notice how the second if statement is indented within the first one. This is because each if statement is a “structure” and gets indented, within the structure it is already in.
 
-.. image:: ./images/nested-is-statement.png
+.. image:: ./images/nested-if-statement.png
    :alt: Nested If Statement Flowchart
    :align: center 
