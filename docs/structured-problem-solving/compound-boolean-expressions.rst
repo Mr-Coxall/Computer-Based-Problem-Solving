@@ -65,7 +65,31 @@ In some programming languages the operators are simpley the words â€œAND and ORâ
 
     .. code-block:: Python
 
-      # compound boolean expressions
+      #!/usr/bin/env python3
+
+      # Created by: Mr. Coxall
+      # Created on: Sep 2019
+      # This program uses a compound boolean statement
+
+
+      def main():
+          # this function uses a compound boolean statement
+
+          # input
+          term_mark = int(input("Enter term mark: "))
+          project_mark = int(input("Enter project mark: "))
+          print("")
+
+          # process & output
+          if term_mark > 50 and project_mark > 50:
+              print("You passed the course")
+          else:
+              print("You did not pass the course")
+
+
+      if __name__ == "__main__":
+          main()
+
 
 
   .. group-tab:: Ruby
