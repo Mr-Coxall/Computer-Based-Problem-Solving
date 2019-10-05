@@ -3,7 +3,14 @@
 Nested If Statements
 ====================
 
-In some problems there are not just two different outcomes but more than two. If this 
+Sometimes a single if statement, even a long If…Then…ElseIf…ElseIf…Else is not a suitable structure to model your problem. Sometimes after one decision is made, there is another second decision that must follow. In these cases, if statements can be nested within if statements (or other structures as we will see later). Here is a problem:
+
+A school is going to sell chocolate bars to raise money. If a student sells over 20 boxes, they get a prize. If they sell 20 to 10, they get a “small” prize. If they sell less than 10, they get honorable mention. Create a program that will let the user input the number of boxes sold and then state what the reward would be and use nested if statements.
+The flowchart for this type of problem will look something like this:
+
+
+
+
 
 . The Select…Case statement (in most computer programming languages) takes the generic form of:
 
@@ -86,8 +93,8 @@ An example of what this would look like in a specific programming language is:
       // if ... then ... elseif ... else example
 
 
-In the above examples, if the variable colourOfLight is red, yellow or green than the appropriate section of code is executed. If the variable does not equal any of these, then the last statement is executed, “No idea!” The above examples would look like the following in a flow-chart:
+Note: notice how the second if statement is indented within the first one. This is because each if statement is a “structure” and gets indented, within the structure it is already in.
 
-.. image:: ./images/if-then-elseif-else.png
-   :alt: If…Then…ElseIf…Else flowchart
+.. image:: ./images/nested-is-statement.png
+   :alt: Nested If Statement Flowchart
    :align: center 
