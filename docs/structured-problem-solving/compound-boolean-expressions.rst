@@ -114,7 +114,7 @@ NOT Truth Table
 +=======+========+ 
 | True  | False  |
 +-------+--------+ 
-| False  | True  | 
+| False | True   | 
 +-------+--------+ 
 
 For example:
