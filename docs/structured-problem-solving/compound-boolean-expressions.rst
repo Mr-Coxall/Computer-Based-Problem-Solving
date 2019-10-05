@@ -105,7 +105,19 @@ In some programming languages the operators are simpley the words â€œAND and ORâ
       // compound boolean expressions
 
 
-Besides these two logical operators, there is one more, the Not. Not is used most often at the beginning of a Boolean expression to invert its evaluation. For example:
+Besides these two logical operators, there is one more, the NOT. NOT is used most often at the beginning of a Boolean expression to invert its evaluation. It does not compare 2 values but just inversts a single one.
+
+NOT Truth Table
+
++-------+--------+
+|   A   | NOT(A) | 
++=======+========+ 
+| True  | False  |
++-------+--------+ 
+| False  | True  | 
++-------+--------+ 
+
+For example:
 
 .. tabs::
 
