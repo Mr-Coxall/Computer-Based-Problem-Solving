@@ -80,7 +80,7 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 		              << std::fixed << std::setprecision(2) << std::setfill('0')
 		              << total << "." << std::endl;
 		}
-
+        
 
   .. group-tab:: Go
 
@@ -132,7 +132,7 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 
 		if __name__ == "__main__":
 		    main()
-        
+		    
 
   .. group-tab:: Ruby
 
