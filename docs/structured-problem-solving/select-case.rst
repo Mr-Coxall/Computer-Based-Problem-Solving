@@ -132,7 +132,7 @@ An example of what this would look like in a specific programming language is:
       // select ...case example
 
 
-In the above examples, if the variable colourOfLight is red, yellow or green than the appropriate section of code is executed. If the variable does not equal any of these, then the last statement is executed, “No idea!” The above examples would look like the following in a flow-chart:
+In the above examples, if the variable gradeLevel is "A" it will print out "Excellent!", and so on for each letter of grades. If the variable does not equal any of these, then the last statement is executed, Invalid grade”. The above examples would look like the following in a flow-chart:
 
 .. image:: ./images/select-case.png
    :alt: Select…Case flowchart
