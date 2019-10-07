@@ -100,7 +100,7 @@ An example of what this would look like in a specific programming language is:
 
       # Created by: Mr. Coxall
       # Created on: Sep 2019
-      # This program uses a try statement
+      # This program checks your grade
 
 
       # input
