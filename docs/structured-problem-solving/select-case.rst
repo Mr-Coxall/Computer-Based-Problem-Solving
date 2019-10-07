@@ -96,7 +96,34 @@ An example of what this would look like in a specific programming language is:
 
     .. code-block:: Ruby
 
-      // select ...case example
+      #!/usr/bin/env ruby
+
+      # Created by: Mr. Coxall
+      # Created on: Sep 2019
+      # This program uses a try statement
+
+
+      # input
+      puts "Enter grade mark as a single character(ex: A, B, ...): "
+      gradeLevel = gets
+      gradeLevel = gradeLevel.chomp
+
+      # process & output
+      case gradeLevel
+          when "A"
+              puts "Excellent!"
+          when "B"
+              puts "Really good!"
+          when "C"
+              puts "Well done"
+          when "D"
+              puts "You passed"
+          when "F"
+              puts "Better try again"
+          else
+              puts "Invalid grade"
+      end
+
 
   .. group-tab:: Swift
 
