@@ -90,7 +90,7 @@ An example of what this would look like in a specific programming language is:
     .. code-block:: Python
 
       # select ...case example
-      # python does not actually have a select ... case structur
+      # python does not actually have a select ... case structure
 
   .. group-tab:: Ruby
 
