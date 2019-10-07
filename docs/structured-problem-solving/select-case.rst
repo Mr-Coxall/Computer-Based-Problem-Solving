@@ -104,7 +104,7 @@ An example of what this would look like in a specific programming language is:
 
 
       # input
-      puts "Enter grade mark as a single character(ex: A, B, ...): "
+      print "Enter grade mark as a single character(ex: A, B, ...): "
       gradeLevel = gets
       gradeLevel = gradeLevel.chomp
 
