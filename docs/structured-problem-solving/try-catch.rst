@@ -98,7 +98,7 @@ An example of what this would look like in a specific programming language is:
           try:
               integer_as_number = int(integer_as_string)
               print("You entered an integer correctly")
-          except:
+          except Exception:
               print("This was not an integer")
           finally:
               print("Thanks for playing")
