@@ -1,12 +1,18 @@
 .. _sequence:
 
 Sequence
-=================
+========
 
-Teachers often hear students complain that they "...don't know where to begin." when they are expected to solve what seem to be straightforward problems. Obviously they are not straightforward to the students for reasons that we are now beginning to understand, knowing where to begin is usually the hardest part. Structured problem solving is a set of tools to help you guide yourself though the process of solving computer related problems that seem to be impossible to solve.
+A loop is a sequence of instructions that are repeated until a certain boolean condition is true (or false). When looping, the program must have an instruction to allow the loop to stop. If the instruction is missing (or present but never triggered), the repetitions will go on forever. This is known as an infinite loop. If you accidentally create an infinite loop, you will have logical error in you program. The program will compile but when you run it, it will most likely give you an overflow error. The condition that must be triggered can either be at the beginning or the end of the repletion structure. There are several repletion structures, just like there were several different conditional structures, each for a different purpose.
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   Example Sequence Problem <example-sequence-problem>
+   While Loop <while-loop>
+   Do…While Loop <do-while-loop>
+   For Loop <for-loop>
+   Break Statement <break-statement>
+   Continue Statement <continue-statement>
+   Nested Loops <nested-loops>
+   Loops and If Statements <loops-and-if-statements>
