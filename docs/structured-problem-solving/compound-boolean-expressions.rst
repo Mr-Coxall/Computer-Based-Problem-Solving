@@ -41,7 +41,35 @@ In some programming languages the operators are simpley the words â€œAND and ORâ
 
     .. code-block:: C++
 
-      // compound boolean expressions
+      // Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
+      //
+      // Created by: Mr. Coxall
+      // Created on: Oct 2019
+      // This program uses a compound boolean statement
+
+      #include <iostream>
+
+      main() {
+          // this function uses a compound boolean statement
+          std::string integer_as_string;
+          int term_mark;
+          int project_mark;
+
+          // input
+          std::cout << "Enter term mark: ";
+          std::cin >> term_mark;
+          
+          std::cout << "Enter project mark: ";
+          std::cin >> project_mark;
+
+          // process & output
+          if (term_mark > 50 && project_mark > 50) {
+              std::cout << "You passed the course.";
+          } else {
+              std::cout << "You did not pass the course.";
+          }
+      }
+
 
   .. group-tab:: Go
 
@@ -82,9 +110,9 @@ In some programming languages the operators are simpley the words â€œAND and ORâ
 
           # process & output
           if term_mark > 50 and project_mark > 50:
-              print("You passed the course")
+              print("You passed the course.")
           else:
-              print("You did not pass the course")
+              print("You did not pass the course.")
 
 
       if __name__ == "__main__":
@@ -125,7 +153,26 @@ For example:
 
     .. code-block:: C++
 
-      // NOT boolean expressions
+      // Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
+      //
+      // Created by: Mr. Coxall
+      // Created on: Oct 2019
+      // This program uses a NOT boolean statement
+
+      #include <iostream>
+
+      main() {
+          // this function uses a NOT boolean statement
+          bool isSunday = true;
+          bool isHoliday = false;
+          
+          if (!isHoliday == true) {
+              std::cout << "Please start working, it is not holiday.";
+          } else {
+              std::cout << "Today is holiday!!";
+          }
+      }
+
 
   .. group-tab:: Go
 
@@ -149,7 +196,28 @@ For example:
 
     .. code-block:: Python
 
-      # NOT boolean expressions
+      #!/usr/bin/env python3
+
+      # Created by: Mr. Coxall
+      # Created on: Sep 2019
+      # This program uses a NOT boolean statement
+
+
+      def main():
+          # this function uses a NOT boolean statement
+
+          is_sunday = True
+          is_holiday = False
+          
+          if not is_holiday:
+              print('Please start working, it is not holiday')
+          else:
+              print('Today is holiday!!')
+
+
+      if __name__ == "__main__":
+          main()
+
 
   .. group-tab:: Ruby
 
