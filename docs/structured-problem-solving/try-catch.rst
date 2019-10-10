@@ -41,21 +41,22 @@ An example of what this would look like in a specific programming language is:
 
       main() {
           // this function uses a try statement
-          std::string integer_as_string;
-          int integer_as_number;
+          std::string integerAsString;
+          int integerAsNumber;
 
           // input
           std::cout << "Enter a number: ";
-          std::cin >> integer_as_string;
+          std::cin >> integerAsString;
 
           // process & output
           try {
-              integer_as_number = std::stoi(integer_as_string);
-              std::cout << "That number as an integer is " << integer_as_number;
+              integerAsNumber = std::stoi(integerAsString);
+              std::cout << "That number as an integer is " << integerAsNumber;
           } catch (std::invalid_argument) {
               std::cout << "That was not a valid integer";
           }
       }
+
 
 
   .. group-tab:: Go

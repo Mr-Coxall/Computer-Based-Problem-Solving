@@ -5,12 +5,6 @@ Nested If Statements
 
 Sometimes a single if statement, even a long If…Then…ElseIf…ElseIf…Else is not a suitable structure to model your problem. Sometimes after one decision is made, there is another second decision that must follow. In these cases, if statements can be nested within if statements (or other structures as we will see later). Here is a problem:
 
-A school is going to sell chocolate bars to raise money. If a student sells over 20 boxes, they get a prize. If they sell 20 to 10, they get a “small” prize. If they sell less than 10, they get honorable mention. Create a program that will let the user input the number of boxes sold and then state what the reward would be and use nested if statements.
-
-
-
-
-
 The nested if statements (in most computer programming languages) takes the generic form of:
 
 | **IF** expression1:
@@ -23,6 +17,8 @@ The nested if statements (in most computer programming languages) takes the gene
 |     Alternate statements to be performed
 | **ENDIF**
 
+A school is going to sell chocolate bars to raise money. If a student sells 20 or more boxes, they get a prize. If they sell less than 30, they get a “small” prize. If they sell more than 30, they get a "large" prize. (Yes you could use an If…Then…ElseIf… statement.)
+
 An example of what this would look like in a specific programming language is:
 
 .. tabs::
@@ -31,16 +27,35 @@ An example of what this would look like in a specific programming language is:
 
     .. code-block:: C++
 
-      // if ... then ... elseif ... else example
-      if (colourOfLight == “red”) {
-          std::cout << "Stop!";
-      } else if (colourOfLight == “yellow") {
-          std::cout << "Slow Down.";
-      } else if (colourOfLight == green") {
-          std::cout << "Go, if all clear.";
-      } else {
-          std::cout << "No idea!";
+      // Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
+      //
+      // Created by: Mr. Coxall
+      // Created on: Sep 2019
+      // This program uses a nested if statement
+
+      #include <iostream>
+      #include <string>
+
+      main() {
+          // this function uses a nested if statement
+          int cookiesSold;
+
+          // input
+          std::cout << "Enter the number of boxes of cookies you sold: ";
+          std::cin >> cookiesSold;
+
+          // process & output
+          if (cookiesSold >= 20) {
+              if (cookiesSold < 30) {
+                  std::cout << "You get a small prize";
+              } else {
+                  std::cout << "You get a large prize";
+              }
+          } else{
+              std::cout << "No prize";
+          }
       }
+
 
   .. group-tab:: Go
 
@@ -64,7 +79,33 @@ An example of what this would look like in a specific programming language is:
 
     .. code-block:: Python
 
-      # nested if example
+      #!/usr/bin/env python3
+
+      # Created by: Mr. Coxall
+      # Created on: Sep 2019
+      # This program uses a nested if statement
+
+
+      def main():
+          # this function uses a nested if statement
+
+          # input
+          cookies_sold = int(input("Enter the number of boxes of cookies you sold: "))
+          print("")
+
+          # process & output
+          if cookies_sold >= 20:
+              if cookies_sold < 30:
+                  print("You get a small prize")
+              else:
+                  print("You get a large prize")
+          else:
+              print("No prize")
+
+
+      if __name__ == "__main__":
+          main()
+
 
   .. group-tab:: Ruby
 
