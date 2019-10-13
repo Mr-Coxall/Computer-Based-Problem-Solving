@@ -19,7 +19,7 @@ The flowchart for a While Loop will look like this:
 
 It is a common occurrence to have an accumulator or counter within a looping structure. The counter, usually, is incremented (1 is added) or decremented (1 is subtracted) each time the condition is meet and the statements inside the loop are performed. When the counter reaches a certain number that is expressed inside the boolean statement, then the loop is exited. Ensure you use proper style and do not do what is very common in programming, just declare the variable as i, j or x. Always name a variable for what it is actually doing and holding.
 
-The following code snippet, show an adding program. The program takes all the positive integer values, staring at 1 and adds them together until you reach the number you have chosen to end at. For example, if you select 5 then the answer is equal to 1+2+3+4+5 = 15
+The following code snippet, a repetition program. The user enters a positive integer and the program prints out that many lines:
 
 .. tabs::
 
@@ -39,22 +39,18 @@ The following code snippet, show an adding program. The program takes all the po
 		    // this function uses a while loop
 		    int positiveInteger;
 		    int loopCounter = 0;
-		    int sum = 0;
 
 		    // input
-		    std::cout << "Enter an positive integer: ";
+		    std::cout << "Enter how many times to repeat: ";
 		    std::cin >> positiveInteger;
 
 		    // process
 		    while (loopCounter <= positiveInteger) {
-		        sum = sum + loopCounter;
+		        std::cout << loopCounter <<" time through loop." << std::endl;
 		        loopCounter = loopCounter + 1;
 		    }
-
-		    // output
-		    std::cout << "The sum of all positive numbers from 1 to " <<
-		                 positiveInteger << " is " << sum << std::endl;
 		}
+
 
 
 
@@ -90,23 +86,20 @@ The following code snippet, show an adding program. The program takes all the po
 		def main():
 		    # this function uses a while loop
 		    loop_counter = 0
-		    sum = 0
 
 		    # input
-		    positive_integer = int(input("Enter an positive integer: "))
+		    positive_integer = int(input("Enter how many times to repeat: "))
 		    print("")
 
 		    # process & output
-		    while loop_counter <= positive_integer:
-		        sum = sum + loop_counter
+		    while loop_counter < positive_integer:
+		        print("{0} time through loop.".format(loop_counter))
 		        loop_counter = loop_counter + 1
-
-		    print("The sum of all positive numbers from 1 to {0} is {1}"
-		          .format(positive_integer, sum))
 
 
 		if __name__ == "__main__":
 		    main()
+
 
 
 
