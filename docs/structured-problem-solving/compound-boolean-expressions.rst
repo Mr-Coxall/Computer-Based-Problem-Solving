@@ -63,7 +63,7 @@ In some programming languages the operators are simpley the words â€œAND and ORâ
           std::cin >> project_mark;
 
           // process & output
-          if (term_mark > 50 && project_mark > 50) {
+          if (term_mark >= 50 && project_mark >= 50) {
               std::cout << "You passed the course.";
           } else {
               std::cout << "You did not pass the course.";
@@ -109,7 +109,7 @@ In some programming languages the operators are simpley the words â€œAND and ORâ
           print("")
 
           # process & output
-          if term_mark > 50 and project_mark > 50:
+          if term_mark >= 50 and project_mark >= 50:
               print("You passed the course.")
           else:
               print("You did not pass the course.")
@@ -209,7 +209,7 @@ For example:
           is_sunday = True
           is_holiday = False
           
-          if not is_holiday:
+          if not is_holiday == True:
               print('Please start working, it is not holiday')
           else:
               print('Today is holiday!!')
