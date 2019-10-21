@@ -7,7 +7,7 @@ The Do…While loop is a repetition structure where the statements inside the lo
 
 The do...while loop (in most computer programming languages) takes the generic form of:
 
-| **do**:
+| **DO**:
 |    statement(s)
 | **WHILE** boolean expression
 
