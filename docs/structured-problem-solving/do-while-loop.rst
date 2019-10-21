@@ -29,7 +29,7 @@ The following code snippet is a repetition program. The user enters a positive i
 		//
 		// Created by: Mr. Coxall
 		// Created on: Oct 2019
-		// This program uses a while loop
+		// This program uses a do...while loop
 
 		#include <iostream>
 
@@ -53,19 +53,46 @@ The following code snippet is a repetition program. The user enters a positive i
 
     .. code-block:: Go
 
-      // while loop
+      // do...while loop
 
   .. group-tab:: Java
 
     .. code-block:: Java
 
-      // while loop
+      /**
+       * Class do-while
+       * 
+       * Created by: Mr. Coxall
+       * Created on: Oct 2019
+       * This program uses a do while loop
+       */
+
+      public class do_while {
+        public static void main(String[] args) {
+          // this function uses a while loop
+          String positiveIntegerAsString;
+          int positiveInteger;
+          int loopCounter = 0;
+
+            // input
+            System.out.println("Enter how many times to repeat: ");
+            positiveIntegerAsString = System.console().readLine();
+            positiveInteger = Integer.valueOf(positiveIntegerAsString);
+        
+            // process & output
+            do {
+                System.out.println(" time through loop.");
+                loopCounter = loopCounter + 1;
+            } while (loopCounter <= positiveInteger);
+        }
+      }
+
 
   .. group-tab:: JavaScript
 
     .. code-block:: JavaScript
 
-      // while loop
+      // do...while loop
 
   .. group-tab:: Python3
 
@@ -77,11 +104,11 @@ The following code snippet is a repetition program. The user enters a positive i
 
     .. code-block:: Ruby
 
-      // while loop
+      // do...while loop
 
   .. group-tab:: Swift
 
     .. code-block:: Swift
 
-      // while loop
+      // do...while loop
 
