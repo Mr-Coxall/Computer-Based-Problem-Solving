@@ -12,7 +12,9 @@ The for loop (in most computer programming languages) takes the generic form of:
 | **FOR** (counter = 1 to 5, increment 1)
 |    statement(s)
 | **END** 
+
 or
+
 | **FOR** (counter = 0; boolean expresion; counter++)
 |    statement(s)
 | **END** 
