@@ -9,7 +9,7 @@ To use the For…Next loop, there will also be a loop counter that keeps track o
 
 The for loop (in most computer programming languages) takes the generic form of:
 
-| **FOR** (counter = 1 to 5, increment 1)
+| **FOR** (counter = 1 to 5)
 |    statement(s)
 | **END** 
 
