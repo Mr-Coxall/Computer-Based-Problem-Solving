@@ -7,7 +7,7 @@ The Do…While loop is a repetition structure where the statements inside the lo
 
 The do...while loop (in most computer programming languages) takes the generic form of:
 
-| **DO**:
+| **DO**
 |    statement(s)
 | **WHILE** boolean expression
 
@@ -68,11 +68,11 @@ The following code snippet is a repetition program. The user enters a positive i
        */
 
       public class do_while {
-        public static void main(String[] args) {
-          // this function uses a while loop
-          String positiveIntegerAsString;
-          int positiveInteger;
-          int loopCounter = 0;
+          public static void main(String[] args) {
+            // this function uses a while loop
+            String positiveIntegerAsString;
+            int positiveInteger;
+            int loopCounter = 0;
 
             // input
             System.out.println("Enter how many times to repeat: ");
@@ -84,7 +84,7 @@ The following code snippet is a repetition program. The user enters a positive i
                 System.out.println(" time through loop.");
                 loopCounter = loopCounter + 1;
             } while (loopCounter <= positiveInteger);
-        }
+          }
       }
 
 

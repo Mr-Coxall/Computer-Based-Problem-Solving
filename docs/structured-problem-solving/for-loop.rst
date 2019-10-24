@@ -9,11 +9,15 @@ To use the For…Next loop, there will also be a loop counter that keeps track o
 
 The for loop (in most computer programming languages) takes the generic form of:
 
-| **FOR**(counter = 1 to 5, increment 1)
+| **FOR** (counter = 1 to 5, increment 1)
+|    statement(s)
+| **END** 
+or
+| **FOR** (counter = 0; boolean expresion; counter++)
 |    statement(s)
 | **END** 
 
-The flowchart for a Do...While Loop will look like this:
+The flowchart for a For Loop will look like this:
 
 .. image:: ./images/for-loop.png
    :alt: For Loop
@@ -108,5 +112,3 @@ The following code snippet is a repetition program. The user enters a positive i
     .. code-block:: Swift
 
       // for loop
-
-
