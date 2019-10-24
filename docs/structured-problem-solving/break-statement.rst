@@ -1,6 +1,6 @@
 .. _break-statement:
 
-Break and Continue Statements
+Break Statements
 =============================
 
 In Python, the break statement can alter the flow of a normal loop. Loops iterate over a block of code until test expression is false, but sometimes we wish to terminate the current iteration or even the whole loop without checking test expression. The break statement is used in these cases.
