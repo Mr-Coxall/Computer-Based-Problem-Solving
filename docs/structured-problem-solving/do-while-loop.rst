@@ -81,7 +81,7 @@ The following code snippet is a repetition program. The user enters a positive i
         
             // process & output
             do {
-                System.out.println(" time through loop.");
+                System.out.println(loopCounter + " time through loop.");
                 loopCounter = loopCounter + 1;
             } while (loopCounter < positiveInteger);
           }
