@@ -46,7 +46,7 @@ The following code snippet is a repetition program. The user enters a positive i
 		    do {
 		        std::cout << loopCounter <<" time through loop." << std::endl;
 		        loopCounter = loopCounter + 1;
-		    } while (loopCounter <= positiveInteger);
+		    } while (loopCounter < positiveInteger);
 		}
 
   .. group-tab:: Go
@@ -83,7 +83,7 @@ The following code snippet is a repetition program. The user enters a positive i
             do {
                 System.out.println(" time through loop.");
                 loopCounter = loopCounter + 1;
-            } while (loopCounter <= positiveInteger);
+            } while (loopCounter < positiveInteger);
           }
       }
 
