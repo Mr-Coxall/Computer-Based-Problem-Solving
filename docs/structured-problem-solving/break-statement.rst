@@ -10,21 +10,22 @@ The break statement terminates the loop containing it. Control of the program fl
 The break statement (in most computer programming languages) takes the generic form of:
 
 | **WHILE** bolean expression
-|     statement_1 
-|     statement_2
-|     ...
-|     **IF** bolean expression **THEN**
-|         **BREAK**
-|     **ENDIF**
+|    statement_1 
+|    statement_2
+|    ...
+|    **IF** bolean expression **THEN**
+|        **BREAK**
+|    **ENDIF**
+|    counter = counter + 1
 | **END**
 
 | **FOR** counter in range(n)
-|     statement_1 
-|     statement_2
-|     ...
-|     **IF** bolean expression **THEN**
-|         **BREAK**
-|     **ENDIF**
+|    statement_1 
+|    statement_2
+|    ...
+|    **IF** bolean expression **THEN**
+|        **BREAK**
+|    **ENDIF**
 | **END**
 
 The flowchart for a Break statement will look like this:

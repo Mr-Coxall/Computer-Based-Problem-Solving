@@ -9,6 +9,7 @@ The do...while loop (in most computer programming languages) takes the generic f
 
 | **DO**
 |    statement(s)
+|    counter = counter + 1
 | **WHILE** boolean expression
 
 The flowchart for a Do...While Loop will look like this:

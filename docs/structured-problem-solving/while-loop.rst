@@ -9,6 +9,7 @@ The while loop (in most computer programming languages) takes the generic form o
 
 | **WHILE** boolean expression:
 |    statement(s)
+|    counter = counter + 1
 | **END**
 
 The flowchart for a While Loop will look like this:
