@@ -3,9 +3,7 @@
 Nested Loops
 ============
 
-We have seen the advantages of using various methods of iteration, or looping. Now let's take a look at what happens when we combine looping procedures.
-
-The placing of one loop inside the body of another loop is called nesting. When you "nest" two loops, the outer loop takes control of the number of complete repetitions of the inner loop. While all types of loops may be nested, the most commonly nested loops are for loops. How this works is that the first pass of the outer loop triggers the inner loop, which executes to completion. Then the second pass of the outer loop triggers the inner loop again. This repeats until the outer loop finishes. In a flow chart it looks like:
+The placing of one loop inside the body of another loop is called nesting. When you "nest" two loops, the outer loop takes control of the number of complete repetitions of the inner loop. How this works is that the first pass of the outer loop triggers the inner loop, which executes to completion. Then the second pass of the outer loop triggers the inner loop again. This repeats until the outer loop finishes. 
 
 A Nested for loop (in most computer programming languages) takes the generic form of:
 
@@ -27,7 +25,13 @@ or using While loops:
 |     counter1 = counter1 + 1
 | **END**
 
-The following code snippet is a repetition program. The user enters a positive integer and the program prints out that many lines:
+In a flow chart it looks like:
+
+.. image:: ./images/nested-loops.png
+   :alt: Nested Loops
+   :align: center 
+
+The following code snippet is a nested loop example of a 2 digit odometer:
 
 .. tabs::
 
