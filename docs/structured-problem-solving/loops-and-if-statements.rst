@@ -26,7 +26,7 @@ or using While loops:
 Here is one of the most well-known examples of the exercises that you might be given as the opening question in a junior data scientist job interview.
 
 The task is:
-*Go through all the numbers up until 99. Print ‘fizz’ for every number that’s divisible by 3, print ‘buzz’ for every number divisible by 5, and print ‘fizzbuzz’ for every number divisible by 3 and by 5! If the number is not divisible either by 3 or 5, print a dash (‘-‘)!*
+*Go through all the whole numbers up until 100. Print ‘fizz’ for every number that’s divisible by 3, print ‘buzz’ for every number divisible by 5, and print ‘fizzbuzz’ for every number divisible by 3 and by 5! If the number is not divisible either by 3 or 5, print a dash (‘-‘)!*
 
 In a flow chart it looks like:
 
@@ -34,7 +34,7 @@ In a flow chart it looks like:
    :alt: Loops and If Statements
    :align: center 
 
-The following code snippet is a nested loop example of a 2 digit odometer:
+The following code snippet is the solution to the above problem:
 
 .. tabs::
 
@@ -45,23 +45,30 @@ The following code snippet is a nested loop example of a 2 digit odometer:
 		// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
 		//
 		// Created by: Mr. Coxall
-		// Created on: Oct 2019
-		// This program uses a nested loop
+		// Created on: Nov 2019
+		// This program uses a loop and an if statement
+		//   It is also the famous Fizz-Buzz problem
 
 		#include <iostream>
 
 		main() {
-		    // this function uses a nested loop
-		    int counter1;
-		    int counter2;
+		    // this function is the the famous Fizz-Buzz problem
+		    
+		    int counter;
 
-		    // process & output
-		    for (counter1 = 0; counter1 < 10; counter1++) {
-		        for (counter2 = 0; counter2 < 10; counter2++) {
-		            std::cout << "Odometer reading: " << counter1 << counter2 << std::endl;
+		    for (counter = 0; counter < 100 + 1; counter++) {
+		        if (counter % 3 == 0 && counter % 5 == 0) {
+		            std::cout << counter <<" → fizzbuzz" << std::endl;
+		        } else if (counter % 3 == 0) {
+		            std::cout << counter <<" → fizz" << std::endl;
+		        } else if (counter % 5 == 0) {
+		            std::cout << counter <<" → buzz" << std::endl;
+		        } else {
+		            std::cout << counter <<" → -" << std::endl;
 		        }
 		    }
 		}
+
 
   .. group-tab:: Go
 
@@ -89,24 +96,28 @@ The following code snippet is a nested loop example of a 2 digit odometer:
 		#!/usr/bin/env python3
 
 		# Created by: Mr. Coxall
-		# Created on: Oct 2019
-		# This program uses a nested loop
+		# Created on: Nov 2019
+		# This program uses a loop and an if statement
+		#   It is also the famous Fizz-Buzz problem
 
 
 		def main():
-		    # this function uses a nested loop
-		    
-		    counter1 = 0
-		    counter2 = 0
+		    # this function is the the famous Fizz-Buzz problem
 
-		    # process & output
-		    for counter1 in range(10):
-		        for counter2 in range(10):
-		            print("Odometer {0}{1}".format(counter1, counter2))
+		    for counter in range(100 + 1):
+		        if counter % 3 == 0 and counter % 5 == 0:
+		            print('{0} → fizzbuzz'.format(counter))
+		        elif counter % 3 == 0:
+		            print('{0} → fizz'.format(counter))
+		        elif counter % 5 == 0:
+		            print('{0} → buzz'.format(counter))
+		        else:
+		            print('{0} → -'.format(counter))
 
 
 		if __name__ == "__main__":
 		    main()
+
 
   .. group-tab:: Ruby
 
