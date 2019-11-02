@@ -8,6 +8,7 @@ A `Subroutine <https://en.wikipedia.org/wiki/Subroutine>`_ or what we will just 
 Functions need to have two (2) seperate mechanisms to work correctly. You need a way to create the function in your program and you also need a way to then "call" the function and get the code inside of it to run. Although not normally needed for the computer, we usually place the function definition before we call the function, so that when people are actually reading the code they have seen the function and know what it will do *before* they see it being called.
 
 This is a good template for keeping all the parts of your program organized:
+
 1. comment header
 2. global (to the file) constants
 3. global (to the file) variables
@@ -22,4 +23,4 @@ Each programming language has its own syntax to create a function. Here is an ex
 Calling a Function
 ------------------
 
-
+Each programming language has its own syntax to create a function. Here is an example:
