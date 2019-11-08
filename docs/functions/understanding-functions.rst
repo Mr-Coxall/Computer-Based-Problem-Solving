@@ -15,12 +15,127 @@ This is a good template for keeping all the parts of your program organized:
 4. functions
 5. main body of code
 
-Creating a Function
--------------------
+Creating and Calling a  Function
+--------------------------------
 
-Each programming language has its own syntax to create a function. Here is an example:
+Each programming language has its own syntax to create and call a function. Here is an example:
 
-Calling a Function
-------------------
+.. tabs::
 
-Each programming language has its own syntax to create a function. Here is an example:
+  .. group-tab:: C++
+
+    .. code-block:: C++
+
+      // if ... then ... else example
+      if (numberOfStudents == 30) {
+          std::cout << "Exactly 30 students!"
+      } else {
+          std::cout << "Not 30 students."
+      }
+
+  .. group-tab:: Go
+
+    .. code-block:: Go
+
+      // if ... then ... else example
+      if numberOfStudents == 30 {
+          fmt.Println("Exactly 30 students!")
+      } else {
+          fmt.Println("Not 30 students")
+      }
+
+  .. group-tab:: Java
+
+    .. code-block:: Java
+
+      // if ... then ... else example
+      if (numberOfStudents == 30) {
+          print("Exactly 30 students!");
+      } else {
+          print("Not 30 students");
+      }
+
+  .. group-tab:: JavaScript
+
+    .. code-block:: JavaScript
+
+      // if ... then ... else example
+      if (numberOfStudents == 30) {
+          print("Exactly 30 students!");
+      } else {
+          print("Not 30 students.");
+      }
+
+  .. group-tab:: Python3
+
+    .. code-block:: Python
+
+		#!/usr/bin/env python3
+
+		# Created by: Mr. Coxall
+		# Created on: Oct 2019
+		# This program uses user defined functions
+
+
+		def calculate_area():
+		    # calculate area
+		    
+		    # input
+		    length = int(input("Enter the length of a rectangle (cm): "))
+		    witdh = int(input("Enter the width of a rectangle (cm): "))
+		    
+		    # process
+		    area = length * witdh
+		    
+		    # output
+		    print("The area is {0} cm²".format(area))
+
+
+		def calculate_perimeter():
+		    # calculate perimeter
+		    
+		    # input
+		    length = int(input("Enter the length of a rectangle (cm): "))
+		    witdh = int(input("Enter the width of a rectangle (cm): "))
+		    
+		    # process
+		    perimeter = 2 * (length + witdh)
+		    
+		    # output
+		    print("The perimeter is {0} cm".format(perimeter))
+		    
+		def main():
+		    # this function just calls other functions
+		    
+		    # call functions
+		    calculate_area()
+		    calculate_perimeter()
+
+
+		if __name__ == "__main__":
+		    main()
+
+
+
+  .. group-tab:: Ruby
+
+    .. code-block:: Ruby
+
+      // if ... then ... else example
+      if numberOfStudents == 30
+          puts "Exactly 30 students!"
+      else
+          puts "Not 30 students."
+
+
+  .. group-tab:: Swift
+
+    .. code-block:: Swift
+
+      // if ... then ... else example
+      if numberOfStudents == 30 {
+          print("Exactly 30 students!")
+      } else {
+          print("Not 30 students.")
+      }
+
