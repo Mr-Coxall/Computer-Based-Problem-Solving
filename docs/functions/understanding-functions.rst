@@ -26,12 +26,63 @@ Each programming language has its own syntax to create and call a function. Here
 
     .. code-block:: C++
 
-      // if ... then ... else example
-      if (numberOfStudents == 30) {
-          std::cout << "Exactly 30 students!"
-      } else {
-          std::cout << "Not 30 students."
-      }
+		// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
+		//
+		// Created by: Mr. Coxall
+		// Created on: Oct 2019
+		// This program uses user defined functions
+
+		#include <iostream>
+
+		void calculate_area() {
+		    // calculate area
+		    
+		    int length;
+		    int width;
+		    int area;
+		    
+		    // input
+		    std::cout << "Enter the length of a rectangle (cm): ";
+		    std::cin >> length;
+		    std::cout << "Enter the width of a rectangle (cm): ";
+		    std::cin >> width;
+		    
+		    // process
+		    area = length * width;
+		    
+		    // output
+		    std::cout << "The area is " << area << "cm^2" << std::endl << std::endl;
+		}
+
+
+		void calculate_perimeter() {
+		    // calculate perimeter
+		    
+		    int length;
+		    int width;
+		    int perimeter;
+		    
+		    // input
+		    std::cout << "Enter the length of a rectangle (cm): ";
+		    std::cin >> length;
+		    std::cout << "Enter the width of a rectangle (cm): ";
+		    std::cin >> width;
+		    
+		    // process
+		    perimeter = 2 * (length + width);
+		    
+		    // output
+		    std::cout << "The perimeter is "<< perimeter << "cm" << std::endl << std::endl;
+		}
+
+		main() {
+		    // this function just calls other functions
+		    
+		    // call functions
+		    calculate_area();
+		    calculate_perimeter();
+		}
+
 
   .. group-tab:: Go
 
