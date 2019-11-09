@@ -18,7 +18,7 @@ This is a good template for keeping all the parts of your program organized in a
 Creating and Calling a  Function
 --------------------------------
 
-Each programming language has its own syntax to create and call a function. Here is an example:
+Each programming language has its own syntax to create and call a function. Here is an example program that uses functions to calculate area and perimeter (I know there are many ways to improve this code, we will be doing that in the next sections!(:
 
 .. tabs::
 
