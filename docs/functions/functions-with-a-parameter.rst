@@ -69,7 +69,7 @@ The following is the function declaration line for the examples above:
     .. code-block:: C++
 
 		// declaring a function
-		void CalculateArea() {
+		void CalculateArea(int length, int width) {
 		    ...
 
   .. group-tab:: Go
