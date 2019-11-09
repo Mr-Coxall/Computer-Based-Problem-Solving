@@ -8,14 +8,14 @@ A function often needs pieces of information to be able to complete its work. In
 Passing By Value
 ----------------
 
-The first method of transferring information to a function is to pass it `“By Value” <https://www.mathwarehouse.com/programming/passing-by-value-vs-by-reference-visual-explanation.php>`_. This means that a copy of the data is made and it is passed over to the function to do with it what it pleases. Since it is a **copy** of the data, any changes to the data are not reflected in the original variable. A variable or value passed along inside a function call is called an `parameter <https://en.wikipedia.org/wiki/Parameter_(computer_programming)>`_ . 
+The first method of transferring information to a function is to pass it `“By Value” <https://www.mathwarehouse.com/programming/passing-by-value-vs-by-reference-visual-explanation.php>`_. This means that a copy of the data is made and it is passed over to the function to do with it what it pleases. Since it is a **copy** of the data, any changes to the data are not reflected in the original variable. From the animation below you can see that when the cup is passed "By Value" to the function and then filled up, the original cup is still empty. This is because the variable passed to the function is a copy, not the original variable. If the function changes this variable, nothing happens to the original one. 
 
 .. image:: ./images/pass-by-reference-vs-pass-by-value-animation.gif
    :alt: Pass by value or reference
    :align: center
 
 
-Parameter(s) are usually placed inside a bracket when you invoke the function. For example:
+A variable or value passed along inside a function call is called an `parameter <https://en.wikipedia.org/wiki/Parameter_(computer_programming)>`_ . Parameter(s) are usually placed inside a bracket when you invoke the function. For example:
 
 .. tabs::
 
@@ -65,7 +65,7 @@ Parameter(s) are usually placed inside a bracket when you invoke the function. F
       // calling a function
 
 
-When you are creating your function, you must also tell the program that the function is expecting these two values. To do this after the function name you place in brackets the two declaration statements declaring that the function must be passed in two variable (just like when a regular variable is being declared). If your programming language requires that you declare what type the variables will be normally, you will most like have to do that to. 
+When you are creating your function, you must also tell the program that the function is expecting these two values. To do this after the function name declaration you place in brackets the two declaration statements declaring that the function must be passed in two variable (just like when a regular variable is being declared). If your programming language requires that you declare what type the variables will be normally, you will most like have to do that to. 
 
 The following is the function declaration line for the examples above:
 
@@ -119,7 +119,7 @@ The following is the function declaration line for the examples above:
       // declaring a function
 
 
-Here is a full example of the previous sections program, but now passing the length and width to each function:
+Here is a full example of the previous sections program, but now the main function takes care of gettin gthe length and width. This way it only have to ask you the information once and it passes the length and width to each function:
 
 .. tabs::
 
