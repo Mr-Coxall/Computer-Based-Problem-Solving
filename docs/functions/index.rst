@@ -10,6 +10,7 @@ Functions
    :align: center
 
 The goal of the previous section was to introduce you to the concept of structured programming design. The reasons programs are designed using this method are to:
+
 - easier to develop accurately
 - develop in less time
 - easier to read and understand
