@@ -34,88 +34,77 @@ Each programming language has its own syntax to create and call a function. Here
 
 		#include <iostream>
 
-		void calculate_area() {
+		// note: the style for the function name is following Google's style guide
+		//       https://google.github.io/styleguide/cppguide.html#Function_Names
+		void CalculateArea() {
 		    // calculate area
-		    
+
 		    int length;
 		    int width;
 		    int area;
-		    
+
 		    // input
 		    std::cout << "Enter the length of a rectangle (cm): ";
 		    std::cin >> length;
 		    std::cout << "Enter the width of a rectangle (cm): ";
 		    std::cin >> width;
-		    
+
 		    // process
 		    area = length * width;
-		    
+
 		    // output
 		    std::cout << "The area is " << area << "cm^2" << std::endl << std::endl;
 		}
 
 
-		void calculate_perimeter() {
+		void CalculatePerimeter() {
 		    // calculate perimeter
-		    
+
 		    int length;
 		    int width;
 		    int perimeter;
-		    
+
 		    // input
 		    std::cout << "Enter the length of a rectangle (cm): ";
 		    std::cin >> length;
 		    std::cout << "Enter the width of a rectangle (cm): ";
 		    std::cin >> width;
-		    
+
 		    // process
 		    perimeter = 2 * (length + width);
-		    
+
 		    // output
-		    std::cout << "The perimeter is "<< perimeter << "cm" << std::endl << std::endl;
+		    std::cout << "The perimeter is "<< perimeter << "cm"
+		              << std::endl << std::endl;
 		}
 
 		main() {
 		    // this function just calls other functions
-		    
+
 		    // call functions
-		    calculate_area();
-		    calculate_perimeter();
+		    CalculateArea();
+		    CalculatePerimeter();
 		}
+
 
 
   .. group-tab:: Go
 
     .. code-block:: Go
 
-      // if ... then ... else example
-      if numberOfStudents == 30 {
-          fmt.Println("Exactly 30 students!")
-      } else {
-          fmt.Println("Not 30 students")
-      }
+      // functions
 
   .. group-tab:: Java
 
     .. code-block:: Java
 
-      // if ... then ... else example
-      if (numberOfStudents == 30) {
-          print("Exactly 30 students!");
-      } else {
-          print("Not 30 students");
-      }
+      // functions
 
   .. group-tab:: JavaScript
 
     .. code-block:: JavaScript
 
-      // if ... then ... else example
-      if (numberOfStudents == 30) {
-          print("Exactly 30 students!");
-      } else {
-          print("Not 30 students.");
-      }
+      // functions
 
   .. group-tab:: Python3
 
@@ -133,7 +122,7 @@ Each programming language has its own syntax to create and call a function. Here
 		    
 		    # input
 		    length = int(input("Enter the length of a rectangle (cm): "))
-		    witdh = int(input("Enter the width of a rectangle (cm): "))
+		    width = int(input("Enter the width of a rectangle (cm): "))
 		    
 		    # process
 		    area = length * witdh
@@ -147,10 +136,10 @@ Each programming language has its own syntax to create and call a function. Here
 		    
 		    # input
 		    length = int(input("Enter the length of a rectangle (cm): "))
-		    witdh = int(input("Enter the width of a rectangle (cm): "))
+		    width = int(input("Enter the width of a rectangle (cm): "))
 		    
 		    # process
-		    perimeter = 2 * (length + witdh)
+		    perimeter = 2 * (length + width)
 		    
 		    # output
 		    print("The perimeter is {0} cm".format(perimeter))
@@ -172,21 +161,12 @@ Each programming language has its own syntax to create and call a function. Here
 
     .. code-block:: Ruby
 
-      // if ... then ... else example
-      if numberOfStudents == 30
-          puts "Exactly 30 students!"
-      else
-          puts "Not 30 students."
+      // functions
 
 
   .. group-tab:: Swift
 
     .. code-block:: Swift
 
-      // if ... then ... else example
-      if numberOfStudents == 30 {
-          print("Exactly 30 students!")
-      } else {
-          print("Not 30 students.")
-      }
+      // functions
 
