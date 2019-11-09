@@ -112,7 +112,7 @@ The following is the function declaration line for the examples above:
       // declaring a function
 
 
-Each programming language has its own syntax to create and call a function. Here is an example:
+Here is a full example of the previous sections program, but now passing the length and width to each function:
 
 .. tabs::
 
@@ -128,54 +128,47 @@ Each programming language has its own syntax to create and call a function. Here
 
 		#include <iostream>
 
-		void calculate_area() {
+		void CalculateArea(int length, int width) {
 		    // calculate area
-		    
-		    int length;
-		    int width;
 		    int area;
-		    
-		    // input
-		    std::cout << "Enter the length of a rectangle (cm): ";
-		    std::cin >> length;
-		    std::cout << "Enter the width of a rectangle (cm): ";
-		    std::cin >> width;
-		    
+
 		    // process
 		    area = length * width;
-		    
+
 		    // output
-		    std::cout << "The area is " << area << "cm^2" << std::endl << std::endl;
+		    std::cout << "The area is " << area << "cm^2" << std::endl;
 		}
 
 
-		void calculate_perimeter() {
+		void CalculatePerimeter(int length, int width) {
 		    // calculate perimeter
-		    
-		    int length;
-		    int width;
 		    int perimeter;
-		    
-		    // input
-		    std::cout << "Enter the length of a rectangle (cm): ";
-		    std::cin >> length;
-		    std::cout << "Enter the width of a rectangle (cm): ";
-		    std::cin >> width;
-		    
+
 		    // process
 		    perimeter = 2 * (length + width);
-		    
+
 		    // output
-		    std::cout << "The perimeter is "<< perimeter << "cm" << std::endl << std::endl;
+		    std::cout << "The perimeter is "<< perimeter << "cm" << std::endl;
 		}
 
 		main() {
-		    // this function just calls other functions
+		    // this function gets length and width
 		    
+		    int lengthFromUser;
+		    int widthFromUser;
+
+		    // input
+		    std::cout << "Enter the length of a rectangle (cm): ";
+		    std::cin >> lengthFromUser;
+		    std::cout << "Enter the width of a rectangle (cm): ";
+		    std::cin >> widthFromUser;
+		    std::cout << std::endl;
+
 		    // call functions
-		    calculate_area();
-		    calculate_perimeter();
+		    CalculateArea(lengthFromUser, widthFromUser);
+		    CalculatePerimeter(lengthFromUser, widthFromUser);
 		}
+
 
 
   .. group-tab:: Go
@@ -227,11 +220,12 @@ Each programming language has its own syntax to create and call a function. Here
 		    print("The perimeter is {0} cm".format(perimeter))
 		    
 		def main():
-		    # this function just calls other functions
+		    # this function gets length and width
 		    
 		    # input
 		    length_from_user = int(input("Enter the length of a rectangle (cm): "))
 		    width_from_user = int(input("Enter the width of a rectangle (cm): "))
+		    print("")
 		    
 		    #call functions
 		    calculate_area(length_from_user, width_from_user)
@@ -240,9 +234,7 @@ Each programming language has its own syntax to create and call a function. Here
 
 		if __name__ == "__main__":
 		    main()
-
-
-
+		    
 
   .. group-tab:: Ruby
 
