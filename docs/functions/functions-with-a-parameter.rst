@@ -10,11 +10,106 @@ Passing By Value
 
 The first method of transferring information to a function is to pass it `“By Value” <https://www.mathwarehouse.com/programming/passing-by-value-vs-by-reference-visual-explanation.php>`_. This means that a copy of the data is made and it is passed over to the function to do with it what it pleases. Since it is a **copy** of the data, any changes to the data are not reflected in the original variable. A variable or value passed along inside a function call is called an `parameter <https://en.wikipedia.org/wiki/Parameter_(computer_programming)>`_ . Parameter(s) are usually placed inside a bracket when you invoke the function. For example:
 
-.. code-block:: Python
-    calculate_area(length_from_user, width_from_user)
+.. tabs::
 
-.. code-block:: C++
-    CalculateArea(lengthFromUser, widthFromUser);
+  .. group-tab:: C++
+
+    .. code-block:: C++
+
+		// calling a function
+		CalculateArea(lengthFromUser, widthFromUser);
+
+  .. group-tab:: Go
+
+    .. code-block:: Go
+
+      // calling a function
+
+  .. group-tab:: Java
+
+    .. code-block:: Java
+
+      // calling a function
+
+  .. group-tab:: JavaScript
+
+    .. code-block:: JavaScript
+
+      // calling a function
+
+  .. group-tab:: Python3
+
+    .. code-block:: Python
+
+		# calling a function
+		calculate_area(length_from_user, width_from_user)
+
+  .. group-tab:: Ruby
+
+    .. code-block:: Ruby
+
+      // calling a function
+
+
+  .. group-tab:: Swift
+
+    .. code-block:: Swift
+
+      // calling a function
+
+
+When you are creating your function, you must also tell the program that the function is expecting these two values. To do this after the function name you place in brackets two declaration statements declaring that the function must be passed in two variable (just like when a regular variable is being declared). If your programming language requires that you declare what type the variables will be normally, you will most like have to do that to. 
+
+The following is the function declaration line for the examples above:
+
+.. tabs::
+
+  .. group-tab:: C++
+
+    .. code-block:: C++
+
+		// declaring a function
+		void CalculateArea() {
+		    ...
+
+  .. group-tab:: Go
+
+    .. code-block:: Go
+
+      // declaring a function
+
+  .. group-tab:: Java
+
+    .. code-block:: Java
+
+      // declaring a function
+
+  .. group-tab:: JavaScript
+
+    .. code-block:: JavaScript
+
+      // declaring a function
+
+  .. group-tab:: Python3
+
+    .. code-block:: Python
+
+		# declaring a function
+		def calculate_area(length, width):
+		    ...
+
+  .. group-tab:: Ruby
+
+    .. code-block:: Ruby
+
+      // declaring a function
+
+
+  .. group-tab:: Swift
+
+    .. code-block:: Swift
+
+      // declaring a function
 
 
 Each programming language has its own syntax to create and call a function. Here is an example:
