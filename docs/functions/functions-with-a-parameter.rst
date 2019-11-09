@@ -11,7 +11,6 @@ Passing By Value
 The first method of transferring information to a function is to pass it `“By Value” <https://www.mathwarehouse.com/programming/passing-by-value-vs-by-reference-visual-explanation.php>`_. This means that a copy of the data is made and it is passed over to the function to do with it what it pleases. Since it is a **copy** of the data, any changes to the data are not reflected in the original variable. A variable or value passed along inside a function call is called an `parameter <https://en.wikipedia.org/wiki/Parameter_(computer_programming)>`_ . 
 
 .. image:: ./images/pass-by-reference-vs-pass-by-value-animation.gif
-   :height: 500 px
    :alt: Pass by value or reference
    :align: center
 
