@@ -58,7 +58,7 @@ The first method of transferring information to a function is to pass it `“By 
       // calling a function
 
 
-When you are creating your function, you must also tell the program that the function is expecting these two values. To do this after the function name you place in brackets two declaration statements declaring that the function must be passed in two variable (just like when a regular variable is being declared). If your programming language requires that you declare what type the variables will be normally, you will most like have to do that to. 
+When you are creating your function, you must also tell the program that the function is expecting these two values. To do this after the function name you place in brackets the two declaration statements declaring that the function must be passed in two variable (just like when a regular variable is being declared). If your programming language requires that you declare what type the variables will be normally, you will most like have to do that to. 
 
 The following is the function declaration line for the examples above:
 
@@ -234,7 +234,7 @@ Here is a full example of the previous sections program, but now passing the len
 
 		if __name__ == "__main__":
 		    main()
-		    
+
 
   .. group-tab:: Ruby
 
