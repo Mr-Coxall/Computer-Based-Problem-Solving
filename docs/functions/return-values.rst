@@ -100,7 +100,7 @@ You will notice that the function is now on the right hand side of an assignment
 
 		    area = length * width
 		    
-	    	return area
+	    	    return area
 
   .. group-tab:: Ruby
 
