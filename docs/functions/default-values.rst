@@ -19,7 +19,8 @@ Here is the definition for random.randrange():
 .. code-block:: python
 
 	random.randrange(start, stop[, step])
-	// The positional argument pattern matches that of range(). Keyword arguments should not be used because the function may use them in unexpected ways.
+	// The positional argument pattern matches that of range(). 
+	Keyword arguments should not be used because the function may use them in unexpected ways.
 
 First off there is actually 2 seperate ways we could call this function:
 
