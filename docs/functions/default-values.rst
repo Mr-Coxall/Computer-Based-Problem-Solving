@@ -8,6 +8,7 @@ All of the functions that we have looked at to this point, you had to ensure tha
 Some built in functions we have been using can be accessed in multiple different ways though. For example in Python there is a built in function called random.randrange(). It is kind of like random.ranint() that we have used in the past. Here is the definition for random.ranint():
 
 .. code-block:: python
+
 	random.randint(a, b)
 	// Return a random integer N such that a <= N <= b. Alias for randrange(a, b+1).
 
@@ -16,6 +17,7 @@ Notice that "a & b" are our starting and ending points.
 Here is the definition for random.randrange():
 
 .. code-block:: python
+
 	random.randrange(start, stop[, step])
 	// The positional argument pattern matches that of range(). Keyword arguments should not be used because the function may use them in unexpected ways.
 
