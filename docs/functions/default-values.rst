@@ -9,15 +9,15 @@ Some built in functions we have been using can be accessed in multiple different
 
 .. code-block:: python
 	random.randint(a, b)
-	Return a random integer N such that a <= N <= b. Alias for randrange(a, b+1).
+	// Return a random integer N such that a <= N <= b. Alias for randrange(a, b+1).
 
 Notice that "a & b" are our starting and ending points. 
 
 Here is the definition for random.randrange():
 
-random.randrange(start, stop[, step])
-
-The positional argument pattern matches that of range(). Keyword arguments should not be used because the function may use them in unexpected ways.
+.. code-block:: python
+	random.randrange(start, stop[, step])
+	// The positional argument pattern matches that of range(). Keyword arguments should not be used because the function may use them in unexpected ways.
 
 First off there is actually 2 seperate ways we could call this function:
 
