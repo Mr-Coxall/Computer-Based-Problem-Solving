@@ -35,100 +35,26 @@ Notice that right in the declaration of the function, the "default optional para
 
     .. code-block:: C++
 
-		// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-		//
-		// Created by: Mr. Coxall
-		// Created on: Oct 2019
-		// This program uses quadratic formula
-
-		#include <iostream>
-		#include <math.h>
-
-		double QuadraticFormula (int a, int b, int c, bool add){
-		    // calculates the quadratic formula
-		    
-		    double x1;
-		    double x2;
-		    
-		    x1 = -b / (2*a);
-		    x2 = sqrt(pow(b,2) - 4*a*c) / (2*a);
-		    
-		    if (add == true) {
-		        return x1 + x2;
-		    } else {
-		        return x1 - x2;
-		    }
-		}
-
-
-		main() {
-		    // This program uses quadratic formula
-
-		    int aValue;
-		    int bValue;
-		    int cValue;
-		    int aValueAsInt;
-		    int bValueAsInt;
-		    int cValueAsInt;
-		    int discriminant;
-		    double solution;
-		    double solution1;
-		    double solution2;
-
-		    // input
-		    std::cout << "Enter a: ";
-		    std::cin >> aValue;
-		    std::cout << "Enter b: ";
-		    std::cin >> bValue;
-		    std::cout << "Enter c: ";
-		    std::cin >> cValue;
-		    std::cout << std::endl;
-		    
-		    // process
-		    try{
-		        aValueAsInt = int(aValue);
-		        bValueAsInt = int(bValue);
-		        cValueAsInt = int(cValue);
-		        
-		        discriminant = pow(bValueAsInt, 2) - 4*aValueAsInt*cValueAsInt;
-		        
-		        if (discriminant < 0) {
-		            std::cout << "There is no solution";
-		        } else if (discriminant == 0) {
-		            solution = QuadraticFormula(aValueAsInt, bValueAsInt, 
-		                                        cValueAsInt, true);
-		            std::cout << "The solution is " << solution << std::endl;
-		        } else {
-		            solution1 = QuadraticFormula(aValueAsInt, bValueAsInt, 
-		                                         cValueAsInt, true);
-		            solution2 = QuadraticFormula(aValueAsInt, bValueAsInt, 
-		                                         cValueAsInt, false);
-		            std::cout << "The solutions are " << solution1 << " and " 
-		                      << solution2;
-		        }
-		    } catch (...) {
-		        std::cout << "Theses are not integers";
-		    }
-		}
+		// default function parameters
 
 
   .. group-tab:: Go
 
     .. code-block:: Go
 
-      // return values
+      // default function parameters
 
   .. group-tab:: Java
 
     .. code-block:: Java
 
-      // return values
+      // default function parameters
 
   .. group-tab:: JavaScript
 
     .. code-block:: JavaScript
 
-      // return values
+      // default function parameters
 
   .. group-tab:: Python3
 
@@ -138,7 +64,7 @@ Notice that right in the declaration of the function, the "default optional para
 
 		# Created by : Mr. Coxall
 		# Created on : October 2019
-		# This program prints out your name
+		# This program prints out your name, using default function parameters
 
 
 		def full_name(first_name,last_name, middle_name = None):
@@ -172,16 +98,15 @@ Notice that right in the declaration of the function, the "default optional para
 		    main()
 
 
-
   .. group-tab:: Ruby
 
     .. code-block:: Ruby
 
-      // return values
+      // default function parameters
 
 
   .. group-tab:: Swift
 
     .. code-block:: Swift
 
-      // return values
+      // default function parameters
