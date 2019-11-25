@@ -20,16 +20,17 @@ Here is the definition for random.randrange():
 
 	random.randrange(start, stop[, step])
 	// The positional argument pattern matches that of range(). 
-	Keyword arguments should not be used because the function may use them in unexpected ways.
 
 First off there is actually 2 seperate ways we could call this function:
 
 - random.randrange(start, stop)
 - random.randrange(start, stop, step)
 
-It seems that step is "optional", which it is. By default, if you do not provide it, then python assumes the value is just 1. You can choose for example to place in 2, and then only even numbers will be chosen. Here is how we would define the function random.randrange() to get this optional parameter:
+It seems that step is "optional", which it is. By default, if you do not provide it, then python assumes the value is just 1. You can choose for example to place a in 2, and then only even numbers will be chosen. Here is how we would define the function random.randrange() to get this optional parameter:
 
-def randrange(start, stop, step = 1):
+.. code-block:: python
+
+	def randrange(start, stop, step = 1):
 
 Notice that right in the declaration of the function, the "default optional parameter" is being set. If it is not provided as a parameter, the default value is just used. Each programming language has its own syntax to make this kind of optional parameter work. Here is an example:
 
