@@ -39,7 +39,59 @@ Notice that right in the declaration of the function, the "default optional para
 
     .. code-block:: C++
 
-		// default function parameters
+		// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
+		//
+		// Created by: Mr. Coxall
+		// Created on: Oct 2019
+		// This program prints out your name, using default function parameters
+
+		#include <iostream>
+
+		std::string FullName(std::string firstName, std::string lastName, 
+		                     std::string middleName = "") {
+		    // return the full formal name
+		    
+		    std::string fullName;
+
+		    fullName = firstName;
+		    if (middleName.size() != 0) {
+		        fullName = fullName + " " + middleName[0];
+		    }
+		    fullName = fullName + " " + lastName;
+
+		    return fullName;
+		}
+
+
+		main() {
+		    // gets a users name and prints out their formal name
+		    
+		    std::string firstName;
+		    std::string question;
+		    std::string middleName = "";
+		    std::string lastName;
+		    std::string fullName;
+
+		    // input
+		    std::cout << "Enter your first name: ";
+		    std::cin >> firstName;
+		    std::cout << "Do you have a middle name? (y/n): ";
+		    std::cin >> question;
+		    if (question == "Y" || question == "YES") {
+		        std::cout << "Enter your middle name: ";
+		        std::cin >> middleName;
+		    }
+		    std::cout << "Enter your last name: ";
+		    std::cin >> lastName;
+
+		    // call functions
+		    if (middleName != "") {
+		        fullName = FullName(firstName, lastName, middleName);
+		    } else {
+		        fullName = FullName(firstName, lastName);
+		    }
+		    std::cout << fullName;
+		}
 
 
   .. group-tab:: Go
@@ -72,7 +124,7 @@ Notice that right in the declaration of the function, the "default optional para
 
 
 		def full_name(first_name,last_name, middle_name = None):
-		    # return the full NameError
+		    # return the full formal name
 
 		    full_name = first_name
 		    if middle_name != None:
