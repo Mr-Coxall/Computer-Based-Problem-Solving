@@ -64,11 +64,11 @@ Each language has its own syntax on how to declare you are going to accept a val
 
 		// declaring a function to accept parameter, by reference
 
-		func foo(inout i: Int) {
-			i++
+		func addOne(inout someVaraible: Int) {
+			someVaraible++
 		}
-		
+
 		// ...
-		var x = 1
-		foo(&x)
-		println(x)
+		var startValue = 1
+		addOne(&startValue)
+		println(startValue) // startValue = 2
