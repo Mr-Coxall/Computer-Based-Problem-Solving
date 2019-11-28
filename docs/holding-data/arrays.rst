@@ -116,7 +116,37 @@ This will create our student mark array and ensure 5 student marks can be held. 
 
     .. code-block:: C++
 
-      // array
+      // Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
+      //
+      // Created by: Mr. Coxall
+      // Created on: Dec 2019
+      // This program uses an array
+
+      #include <iostream>
+
+
+      main() {
+          // this function uses an array
+
+          int studentMarks[5];
+          int aSingleMark;
+
+          // input
+          for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
+              std::cout << "Enter a mark (percentage): ";
+              std::cin >> aSingleMark;
+              studentMarks[loop_counter] = aSingleMark;
+          }
+          std::cout << "";
+          
+          std::cout << "Here are the 5 marks:" << std::endl;
+          
+          for (int loop_counter; loop_counter < 5; loop_counter++) {
+              std::cout << studentMarks[loop_counter] << "% ";
+          }
+          std::cout << "" << std::endl;
+      }
+
 
   .. group-tab:: Go
 
