@@ -18,7 +18,7 @@ This array has 5 `elements <https://en.wikipedia.org/wiki/Element_(mathematics)>
     .. code-block:: C++
 
       // array index
-      studentMarks(3);
+      studentMarks[3];
 
   .. group-tab:: Go
 
@@ -31,7 +31,6 @@ This array has 5 `elements <https://en.wikipedia.org/wiki/Element_(mathematics)>
     .. code-block:: Java
 
       // array index
-      studentMarks(3);
 
   .. group-tab:: JavaScript
 
@@ -44,7 +43,7 @@ This array has 5 `elements <https://en.wikipedia.org/wiki/Element_(mathematics)>
     .. code-block:: Python
 
       # list index (because python does not have arrays!)
-      studentMarks[3]
+      student_marks[3]
 
   .. group-tab:: Ruby
 
@@ -57,7 +56,6 @@ This array has 5 `elements <https://en.wikipedia.org/wiki/Element_(mathematics)>
     .. code-block:: Swift
 
       // array index
-      studentMarks(3)
 
 
 Arrays are an important programming concept because they allow a collection of related objects to be stored within a single variable. To declare an array, you usually must specify how many elements will be in the array during the declaration. Here we are declaring the variable studentMarks and allowing 5 items in it:
@@ -82,7 +80,6 @@ Arrays are an important programming concept because they allow a collection of r
     .. code-block:: Java
 
       // declaring an array
-      int studentMarks[5];
 
   .. group-tab:: JavaScript
 
@@ -97,7 +94,7 @@ Arrays are an important programming concept because they allow a collection of r
       # declaring a list (because python does not have arrays!)
       #   also, since it is a list, you do not specify how many elements are in it
       #   since it can shrink and grow as needed
-      studentMarks[]
+      student_marks = []
 
   .. group-tab:: Ruby
 
@@ -143,7 +140,35 @@ This will create our student mark array and ensure 5 student marks can be held. 
 
     .. code-block:: Python
 
-      #array
+      #!/usr/bin/env python3
+
+      # Created by: Mr. Coxall
+      # Created on: Dec 2019
+      # This program uses an array
+
+          
+      def main():
+          # this function uses an array
+          
+          student_marks = []
+          
+          # input
+          for loop_counter in range(0, 5):
+              a_single_mark = int(input("Enter a mark (percentage): "))
+              student_marks.append(a_single_mark)
+          print("")
+              
+          print("Here are the 5 marks:")
+          
+          for loop_counter in range(0, 5):
+              print("{0}% ".format(student_marks[loop_counter]), end="")
+              
+          print("")
+
+
+      if __name__ == "__main__":
+          main()
+
 
   .. group-tab:: Ruby
 
