@@ -13,12 +13,36 @@ Each language has its own syntax on how to declare you are going to accept a val
 
     .. code-block:: C++
 
-		// declaring a function to accept parameter, by reference
-		void addOne(int &someVariable) {
-		    // someVariable is a reference variable
+      // Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
+      //
+      // Created by: Mr. Coxall
+      // Created on: Oct 2019
+      // This program uses a function by reference
 
-		    someVariable = someVariable + 1;
-		}
+      #include <iostream>
+
+
+      void AddOne(int &someVariable) {
+          // function adds 1, by reference
+
+          someVariable = someVariable + 1;
+      }
+
+      main() {
+          // this function gets a number and calls the AddOne function
+
+          int someNumber;
+
+          // input
+          std::cout << "Enter a number: ";
+          std::cin >> someNumber;
+          
+          AddOne(someNumber);
+          
+          std::cout << "New number: " << someNumber;
+          
+      }
+
 
   .. group-tab:: Go
 
@@ -43,12 +67,31 @@ Each language has its own syntax on how to declare you are going to accept a val
 
     .. code-block:: Python
 
-		# in Python you can not pass a value by reference, unless it is mutable
-		# lists are mutable!
-		def add_one(the_list):
-		    # since lists are mutable, it can be changed
+      #!/usr/bin/env python3
 
-		    the_list[0] = the_list[0] + 1
+      # Created by: Mr. Coxall
+      # Created on: Oct 2019
+      # This program uses a function by reference
+
+
+      def add_one(someVariable):
+          # function adds 1, by reference
+
+          someVariable[0] = someVariable[0] + 1
+          
+      def main():
+          # this function gets a number and calls the add_one function
+          
+          someNumber = []
+          # input
+          temp_var = int(input("Enter a number: "))
+          someNumber.append(temp_var)
+          add_one(someNumber)
+          print(someNumber[0])
+
+      if __name__ == "__main__":
+          main()
+
 
 
   .. group-tab:: Ruby
