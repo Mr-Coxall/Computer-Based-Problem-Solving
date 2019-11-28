@@ -9,7 +9,7 @@ An `array <https://en.wikipedia.org/wiki/Array_data_structure>`_ stores many pie
    :alt: array
    :align: center
 
-This array has 5 elements (note that you usually start counting at 0 with arrays!) but they all have just one variable name (studentMarks). To refer to a specific mark you place the index of the mark after the variable name, usually in brackets. For example, you would refer to the mark of 84 as:
+This array has 5 `elements <https://en.wikipedia.org/wiki/Element_(mathematics)>`_ (note that you usually start counting at 0 with arrays!) but they all have just one variable name (studentMarks). To refer to a specific mark you place the `index <https://en.wikipedia.org/wiki/Array_data_structure#Element_identifier_and_addressing_formulas>`_ of the mark after the variable name, usually in brackets. For example, you would refer to the mark of 84 as:
 
 .. tabs::
 
@@ -17,7 +17,8 @@ This array has 5 elements (note that you usually start counting at 0 with arrays
 
     .. code-block:: C++
 
-      // array
+      // array index
+      studentMarks(3);
 
   .. group-tab:: Go
 
@@ -29,7 +30,8 @@ This array has 5 elements (note that you usually start counting at 0 with arrays
 
     .. code-block:: Java
 
-      // array
+      // array index
+      studentMarks(3);
 
   .. group-tab:: JavaScript
 
@@ -41,7 +43,8 @@ This array has 5 elements (note that you usually start counting at 0 with arrays
 
     .. code-block:: Python
 
-      #array
+      # list index (because python does not have arrays!)
+      studentMarks[3]
 
   .. group-tab:: Ruby
 
@@ -53,10 +56,11 @@ This array has 5 elements (note that you usually start counting at 0 with arrays
 
     .. code-block:: Swift
 
-      // array
+      // array index
+      studentMarks(3)
 
 
-Arrays are an important programming concept because they allow a collection of related objects to be stored within a single variable. To declare an array, you usually must specify how many elements will be in the array during the declaration.
+Arrays are an important programming concept because they allow a collection of related objects to be stored within a single variable. To declare an array, you usually must specify how many elements will be in the array during the declaration. Here we are declaring the variable studentMarks and allowing 5 items in it:
 
 .. tabs::
 
@@ -64,7 +68,8 @@ Arrays are an important programming concept because they allow a collection of r
 
     .. code-block:: C++
 
-      // array
+      // declaring an array
+      int studentMarks[5];
 
   .. group-tab:: Go
 
@@ -76,7 +81,8 @@ Arrays are an important programming concept because they allow a collection of r
 
     .. code-block:: Java
 
-      // array
+      // declaring an array
+      int studentMarks[5];
 
   .. group-tab:: JavaScript
 
@@ -88,7 +94,10 @@ Arrays are an important programming concept because they allow a collection of r
 
     .. code-block:: Python
 
-      #array
+      # declaring a list (because python does not have arrays!)
+      #   also, since it is a list, you do not specify how many elements are in it
+      #   since it can shrink and grow as needed
+      studentMarks[]
 
   .. group-tab:: Ruby
 
