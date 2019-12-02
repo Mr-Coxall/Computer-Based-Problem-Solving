@@ -115,7 +115,7 @@ You will notice that the function is now on the right hand side of an assignment
 
       // function definition with a return value
 
-Here is the example from last section, this time using return values:
+Now that we know how to use a return statement, we should no longer print out results inside a function like in the last few chapters. It is much better style to retrun the value from a funstion and let the calling process decide what to do with it. Here is the example from last section, this time using return values:
 
 .. tabs::
 
