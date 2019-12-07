@@ -41,6 +41,7 @@ A PDF version of this textbook can be downloaded `here <https://readthedocs.org/
    :hidden:
    :titlesonly:
 
+   self
    preface/index
    introduction/index
    problem-solving/index
