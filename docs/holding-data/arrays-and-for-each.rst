@@ -11,12 +11,19 @@ If you think way back to when we did different types of looping structures, one 
 
     .. code-block:: C++
 
-	    // add up each element in an array, randomNumbers
-	    for (int aSingleElement : randomNumbers){
-	        sum += aSingleElement;
-	    }
-	    
-	    std::cout << "The sum of all the numbers is: " << sum << std::endl;
+		template<size_t N>
+		int SumOfNumbers(std::array<int, N> listOfNumbers) {
+		    // this functions add up all the numbers in the list
+
+		    int total = 0;
+		    
+		    // add up each element in an array, randomNumbers
+		    for (int aSingleElement : listOfNumbers){
+		        total += aSingleElement;
+		    }
+
+		    return total;
+		}
 
   .. group-tab:: Go
 
