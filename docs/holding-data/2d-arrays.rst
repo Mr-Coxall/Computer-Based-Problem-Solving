@@ -24,6 +24,94 @@ in computer science you move up and down in the rows first and then across to th
 
 There are many applications of 2-D arrays, like a game board (tic-tac-toe), adventure games and business applications like spreadsheets.
 
+.. tabs::
+
+  .. group-tab:: C++
+
+    .. code-block:: C++
+
+      // 2-D array
+
+  .. group-tab:: Go
+
+    .. code-block:: Go
+
+      // arr2-D arrayay
+
+  .. group-tab:: Java
+
+    .. code-block:: Java
+
+      // 2-D array
+
+  .. group-tab:: JavaScript
+
+    .. code-block:: JavaScript
+
+      // 2-D array
+
+  .. group-tab:: Python3
+
+    .. code-block:: Python
+
+		#!/usr/bin/env python3
+
+		# Created by: Mr. Coxall
+		# Created on: Dec 2019
+		# This program uses a 2D array
+
+		import random
+
+
+		def sum_of_numbers(passed_in_2D_list):
+		    # this function adds up all the elements in  a 2D array
+		    
+		    total = 0
+		    for row_value in passed_in_2D_list:
+		        for single_element in row_value:
+		            total += single_element
+		        
+		    return total
+		    
+
+		def main():
+		    # this function uses a 2D array
+		    
+		    a_2d_list = []
+		    
+		    # input
+		    rows = int(input("How many row would you like: "))
+		    columns = int(input("How many columns would you like: "))
+		    
+		    for loop_counter_rows in range(0, rows):
+		        temp_column = []
+		        for loop_counter_columns in range(0, columns):
+		            a_random_number = random.randint(0,10)
+		            temp_column.append(a_random_number)
+		            print("{0} ".format(a_random_number), end="")
+		        a_2d_list.append(temp_column)
+		        print("")
+		    
+		    sum = sum_of_numbers(a_2d_list)
+		    print("The sum of all the numbers is: {0} ".format(sum))
+
+
+		if __name__ == "__main__":
+		    main()
+
+
+  .. group-tab:: Ruby
+
+    .. code-block:: Ruby
+
+      // 2-D array
+
+  .. group-tab:: Swift
+
+    .. code-block:: Swift
+
+      // 2-D array
+
 
 
 
