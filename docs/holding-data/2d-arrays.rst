@@ -3,3 +3,27 @@
 2D Arrays
 =========
 
+All the arrays that we have used thus far have been to represent a collection of information. This is a very powerful tool and can save the programmer a lot of time and confusion when dealing with items that are somehow related to each other. Not all things can be represented with a single collection though. Several times we use a grid or `spreadsheet <https://en.wikipedia.org/wiki/Spreadsheet>`_ to keep information in rows and columns. This `matrix <https://en.wikipedia.org/wiki/Matrix_(math)>`_ of information can not be represented in a single array. In these situations we represent our data with a 2-dimensional (or `multi-dimensional array <https://en.wikipedia.org/wiki/Index_notation#Multi-dimensional_arrays>`_ ). 
+
+A 2-D array can just be thought of an array of arrays.
+
+.. image:: ./images/2-d_array.png
+   :alt: 2D-array
+   :align: center
+
+We represent a given element with 2 indices now, instead of 1 when we
+had a single dimension. Unlike in math class where you used the
+`Cartesian plane <https://en.wikipedia.org/wiki/Cartesian_coordinate_system>`_, and moved in the X direction and then the Y direction,
+
+.. image:: ./images/Cartesian-coordinate-system.png
+   :alt: Cartesian-coordinate-system
+   :height: 250 px
+   :align: center
+
+in computer science you move up and down in the rows first and then across to the column position. Thus if we want to refer to the element in the above array that has a value of 8, we would say, studentMarks(2, 1).
+
+There are many applications of 2-D arrays, like a game board (tic-tac-toe), adventure games and business applications like spreadsheets.
+
+
+
+
