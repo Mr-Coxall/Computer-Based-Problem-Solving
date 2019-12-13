@@ -30,7 +30,67 @@ There are many applications of 2-D arrays, like a game board (tic-tac-toe), adve
 
     .. code-block:: C++
 
-      // 2-D array
+		// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
+		//
+		// Created by: Mr. Coxall
+		// Created on: Dec 2019
+		// This program uses an array as a parameter
+
+		#include <iostream>
+		#include <time.h>
+
+
+		template <size_t rows, size_t cols>
+		int sumOfNumbers(int (&passedIn2DList)[rows][cols]) {
+		    // add up all the numbers in the array
+		    int total = 0;
+		        
+		    for (size_t rowElement = 0; rowElement < rows; ++rowElement) {
+		        for (size_t columnElement = 0; columnElement < cols; ++columnElement)
+		            total += passedIn2DList[rowElement][columnElement];
+		    }
+		    
+		    return total;
+		}
+
+		int main()
+		{
+		    // this function uses a 2D array
+
+		    int aSingleRandomNumber = 0;
+		    int sum = 0;
+		    const int rows = 2;
+		    const int columns = 5;
+		    
+		    srand(time(NULL));
+
+		    // input
+		    
+		    // So, ...
+		    //   In C++ you can't define array's size using variable.
+		    //   this is why you see const int rows = 2; above, so the size of the array can never change
+		    
+		    //std::cout << "How many row would you like: ";
+		    //std::cin >> rows;
+		    //std::cout << "How many columns would you like: ";
+		    //std::cin >> columns;
+		    
+		    int a2DArray[rows][columns];
+
+		    for(int rowElement = 0; rowElement < rows; rowElement++) {
+		        for(int columnElement = 0; columnElement < columns; columnElement++ ) {
+		            aSingleRandomNumber = (rand() % 10) + 1;
+		            a2DArray[rowElement][columnElement] = aSingleRandomNumber;
+		            std::cout << aSingleRandomNumber << ", ";
+		        }
+		        std::cout << std::endl;
+		    }
+
+		    sum = sumOfNumbers(a2DArray);
+		    std::cout << "The sum of all the numbers is: " << sum << std::endl;
+
+		}
+
 
   .. group-tab:: Go
 
