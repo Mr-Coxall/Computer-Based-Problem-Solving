@@ -40,7 +40,7 @@ There are many applications of 2-D arrays, like a game board (tic-tac-toe), adve
 		#include <time.h>
 
 
-		template <size_t rows, size_t cols>
+		template <int rows, int cols>
 		int sumOfNumbers(int (&passedIn2DList)[rows][cols]) {
 		    // this function adds up all the elements in  a 2D array
 		    
