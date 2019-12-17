@@ -20,7 +20,7 @@ To solve these problems, there are several different type of `data structures <h
    Arrays <arrays>
    Lists <lists>
    Tuple <tuple>
-   Dictionaries <dictionaries>
+   Associative Array <associative_array>
    Sets <sets>
    Stacks <stacks>
    Queue <queue>
