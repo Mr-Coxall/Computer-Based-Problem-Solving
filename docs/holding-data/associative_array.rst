@@ -27,8 +27,58 @@ Associative arrays have two important properties. Every key can only appear once
 
     .. code-block:: C++
 
-      // associative array
+		// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
+		//
+		// Created by: Mr. Coxall
+		// Created on: Dec 2019
+		// This program uses an associative array
 
+		#include <iostream>
+		#include <map>
+
+
+		main() {
+		    // this function uses an associative array
+		    
+		    std::string airportName = "";
+		    
+		    // an empty map
+		    std::map<std::string,std::string> airports;
+		    // a map filled with data
+		    std::map<char, int> someInfo = {
+		        {'a', 1},
+		        {'b', 2},
+		        {'c', 3},
+		    };
+		    
+		    
+		    // adding items
+		    airports.insert(std::pair<std::string, std::string>("YYZ", "Toronto Pearson"));
+		    airports.insert(std::pair<std::string, std::string>("YOW", "Ottawa Canada"));
+		    airports["DUB"] = "Dublin Ireland";
+		    airports["LHR"] = "London Heathrow";
+		    
+		    std::cout << "Type in an airport code: ";
+		    std::cin >> airportName;
+		    std::cout << " " << std::endl;
+		    
+		    if (airports.count(airportName) > 0) {
+		        std::cout << "The name of the airport you chose is " << airports[airportName];
+		    } else {
+		        std::cout << "That airport is not in the airport's dictionary.";
+		    }
+		    std::cout << " " << std::endl;
+		    std::cout << " " << std::endl;
+
+
+		    std::cout << "All the airports:" << std::endl;
+		    for (auto const& pair: airports) {
+		        std::cout << "The airport code is " << pair.first << " for " << pair.second << std::endl;
+		    }
+
+		    std::cout << " " << std::endl;
+		}
+		
 
   .. group-tab:: Go
 
@@ -74,15 +124,9 @@ Associative arrays have two important properties. Every key can only appear once
 		    airports['LHR'] = "London Heathrow"
 		    
 
-		    airport_name = input("Type in an airport name: ")
-		    if airport_name == airports['YYZ']:
-		        print("The name of the airport you chose is {0}.".format(airports["YYZ"]))
-		    elif airport_name == airports['YOW']:
-		        print("The name of the airport you chose is {0}.".format(airports["YOW"]))
-		    elif airport_name == airports['DUB']:
-		        print("The name of the airport you chose is {0}.".format(airports["DUB"]))
-		    elif airport_name == airports['LHR']:
-		        print("The name of the airport you chose is {0}.".format(airports["LHR"]))
+		    airport_name = input("Type in an airport code: ")
+		    if airport_name in airports.keys():
+		        print("The name of the airport you chose is {0}.".format(airports[airport_name]))
 		    else:
 		        print("That airport is not in the airport's dictionary.")
 		    print("")
@@ -94,7 +138,7 @@ Associative arrays have two important properties. Every key can only appear once
 
 		if __name__ == "__main__":
 		    main()
-		
+
 
   .. group-tab:: Ruby
 
