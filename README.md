@@ -10,4 +10,4 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/mr-coxall/Computer-Based-Problem-Solving.svg)
 
 The online version can be found at: 
-https://www.google.com/url?q=https%3A%2F%2Fcomputer-based-problem-solving.readthedocs.io%2F&sa=D&sntz=1&usg=AFQjCNFJ6mYi7l-yR3SkSkqQr7wzw_1-DA
+https://computer-based-problem-solving.readthedocs.io/en/latest/
