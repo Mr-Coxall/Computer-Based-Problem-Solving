@@ -48,21 +48,42 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
     .. code-block:: Go
 
-      // variable definition
-      var isCurrent bool = true
-      var age int = 32
-      var float32 area
-      var someWords string = "Hello, World!"
+      // Created by: Mr. Coxall
+      // Created on: June 2020
+      // This program shows declaring variables
+      
+      package main
+      	
+      func main() {
+      	var isCurrent = true // bool
+          var age = 32 // int
+          var area float32
+          var someWords = "Hello, World!" // string
+      }
 
   .. group-tab:: Java
 
     .. code-block:: Java
 
-       // variable definition
-       boolean isCurrent = true;
-       int age = 32;
-       float area;
-       String someWords = "Hello, World!";
+      /**
+       * Class Variables.
+       * Created by: Mr. Coxall
+       * Created on: June 2020
+       * This program shows declaring variables
+       */
+      public class Variables {
+        /**
+         * This is the main method.
+         */
+        public static void main(String[] args) {
+          // variable definition
+          boolean isCurrent = true;
+          int age = 32;
+          float area;
+          String someWords = "Hello, World!";
+        }
+      }
+
 
   .. group-tab:: JavaScript
 
