@@ -66,7 +66,7 @@ Programs can have many variables. Usually information is gathered from the user,
 
     .. code-block:: Ruby
 
-      // assignment statement
+      # assignment statement
       number_of_students = number_of_students + 5
       width = 32
       length = 10
