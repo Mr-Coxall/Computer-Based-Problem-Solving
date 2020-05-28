@@ -67,7 +67,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
     .. code-block:: Python
 
-       // variable definition
+       # variable definition
        is_current = True
        age = 32
        area = 32.45
