@@ -48,11 +48,13 @@ Constants just like variables hold a particular value in memory for a programmer
 
        # constant definition
        # Note: in python ususally constants are declared in a seperate module
-       #   In this example the module is called "constants"
+       #   In this example the module is called "constants" and would have the following lines of code:
        NUMBER_OF_LIVES = 3
        HST = 0.13
 
-       # then in main program
+       # then in the main program
+       import constants
+       
        constants.NUMBER_OF_LIVES
        constants.HST
 
