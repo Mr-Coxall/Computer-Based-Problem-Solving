@@ -62,7 +62,7 @@ Constants just like variables hold a particular value in memory for a programmer
 
     .. code-block:: Ruby
 
-       // constant definition
+       # constant definition
        NUMBER_OF_LIVES = 3
        HST = 0.13
 
