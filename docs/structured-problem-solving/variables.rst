@@ -94,6 +94,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
        * Created on: June 2020
        * This program shows declaring variables
        */
+      
       var isCurrent = true;
       var age = 32;
       var someWords = "Hello, World!";
