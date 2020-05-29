@@ -55,7 +55,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       package main
       	
       func main() {
-      	var isCurrent = true // bool
+      	  var isCurrent = true // bool
           var age = 32 // int
           var area float32
           var someWords = "Hello, World!" // string
@@ -89,21 +89,38 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
     .. code-block:: JavaScript
 
-       // variable definition
-       let isCurrent = true;
-       let age = 32;
-       float area;
-       let someWords = "Hello, World!";
+      /**
+       * Created by: Mr. Coxall
+       * Created on: June 2020
+       * This program shows declaring variables
+       */
+      var isCurrent = true;
+      var age = 32;
+      var someWords = "Hello, World!";
+
 
   .. group-tab:: Python3
 
     .. code-block:: Python
 
-       # variable definition
-       is_current = True
-       age = 32
-       area = 32.45
-       some_words = "Hello, World!"
+      #!/usr/bin/env python3
+      
+      # Created by: Mr. Coxall
+      # Created on: June 2020
+      # This program shows declaring variables
+      
+      
+      def main():
+          # variable definition
+          is_current = True
+          age = 32
+          area = 32.45
+          some_words = "Hello, World!"
+      
+      
+      if __name__ == "__main__":
+          main()
+
 
   .. group-tab:: Ruby
 
