@@ -1,0 +1,8 @@
+CPP: sudo pip3 install cpplint -> cpplint ./hello_world.cpp
+Java: https://sites.google.com/a/ocsb.ca/teh-2019-ics4ur-1-2/introduction/intro-04
+    java -jar /home/ubuntu/environment/code_examples/style/checkstyle-8.32-all.jar -c /home/ubuntu/environment/code_examples/style/google_checks.xml ./Variables.java
+Go: sudo apt install golint -> golint ./hello_world.go
+Python3: sudo pip3 install pycodestyle -> pycodestyle hello_world.py
+JS: npm install -g jslint
+Ruby:
+Swift:
