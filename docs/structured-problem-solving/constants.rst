@@ -14,62 +14,132 @@ Constants just like variables hold a particular value in memory for a programmer
 
     .. code-block:: C++
 
-      // constant definition
-      const int NUMBER_OF_LIVES = 3;
-      const double HST = 0.13;
+      // Copyright (c) 2020 Mr. Coxall All rights reserved.
+      //
+      // Created by: Mr. Coxall
+      // Created on: June 2020
+      // This program shows declaring constants
+      
+      #include <stdio.h>
+      
+      int main() {
+          // constant definition
+          const int NUMBER_OF_LIVES = 3;
+          const double HST = 0.13;
+      }
+
 
   .. group-tab:: Go
 
     .. code-block:: Go
 
-      // constant definition
-      const int NUMBER_OF_LIVES = 3
-      const float32 HST = 0.13
+      // Created by: Mr. Coxall
+      // Created on: June 2020
+      // This program shows declaring constants
+      
+      package main
+      	
+      func main() {
+          // constant definition
+          const NUMBER_OF_LIVES int = 3
+          const HST float32 = 0.13
+      }
+
 
   .. group-tab:: Java
 
     .. code-block:: Java
 
-       // constant definition
-       private static int NUMBER_OF_LIVES = 3;
-       private static double HST = 0.13;
+      /**
+       * Class Constants.
+       * Created by: Mr. Coxall
+       * Created on: June 2020
+       * This program shows declaring constants
+       */
+      public class Constants {
+        // constant definition
+        private static int NUMBER_OF_LIVES = 3;
+        private static double HST = 0.13;
+        
+        public static void main(String[] args) {
+          // some code ...  
+        }
+      }
+
 
   .. group-tab:: JavaScript
 
     .. code-block:: JavaScript
 
-       // constant definition
-       const NUMBER_OF_LIVES = 3;
-       const HST = 0.13;
+      /**
+       * Created by: Mr. Coxall
+       * Created on: June 2020
+       * This program shows declaring constants
+       */
+      
+      // constant definition
+      const NUMBER_OF_LIVES = 3;
+      const HST = 0.13;
+
 
   .. group-tab:: Python3
 
     .. code-block:: Python
 
-       # constant definition
-       # Note: in python ususally constants are declared in a seperate module
-       #   In this example the module is called "constants" and would have the following lines of code:
-       NUMBER_OF_LIVES = 3
-       HST = 0.13
+      --> file named: constants.py
+      # constant definition
+      # Note: in python ususally constants are declared in a seperate module
+      #   In this example the module is called "constants" and would have the following lines of code:
+      
+      NUMBER_OF_LIVES = 3
+      HST = 0.13
 
-       # then in the main program
-       import constants
-       
-       constants.NUMBER_OF_LIVES
-       constants.HST
+      --> file named: constants_example_code.py
+      #!/usr/bin/env python3
+      
+      # Created by: Mr. Coxall
+      # Created on: June 2020
+      # This program shows declaring constants
+      
+      import constants
+      
+      
+      def main():
+          # then in the main program
+          
+          constants.NUMBER_OF_LIVES
+          constants.HST
+      
+      
+      if __name__ == "__main__":
+          main()
+
 
   .. group-tab:: Ruby
 
     .. code-block:: Ruby
 
-       # constant definition
-       NUMBER_OF_LIVES = 3
-       HST = 0.13
+      #!/usr/bin/env ruby
+      
+      # Created by: Mr. Coxall
+      # Created on: June 2020
+      # This program shows declaring constants
+      
+      NUMBER_OF_LIVES = 3
+      HST = 0.13
+
 
   .. group-tab:: Swift
 
     .. code-block:: Swift
 
-       // constant definition
-       let numberOfLives = 3
-       let HST = 0.13
+      /**
+       * Class Constants.
+       * Created by: Mr. Coxall
+       * Created on: June 2020
+       * This program shows declaring constants
+       */
+      
+      let numberOfLives = 3
+      let HST = 0.13
+
