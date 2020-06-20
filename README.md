@@ -9,4 +9,4 @@
 ![GitHub forks](https://img.shields.io/github/forks/mr-coxall/Computer-Based-Problem-Solving.svg?style=social)
 
 The online version can be found at:
-[Context: "https://computer-based-problem-solving.readthedocs.io/en/latest/"]
+[https://computer-based-problem-solving.readthedocs.io/en/latest/](https://computer-based-problem-solving.readthedocs.io/en/latest/)
