@@ -48,6 +48,5 @@ A PDF version of this textbook can be downloaded `here <https://readthedocs.org/
    structured-problem-solving/index
    functions/index
    holding-data/index
-   representing-and-sorting-data/index
    using-oop/index
    creating-objects/index
