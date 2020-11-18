@@ -1,0 +1,15 @@
+######################################
+# Run Sphinx Build                   #
+######################################
+
+name: "Pull Request Docs Check"
+on: push
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: ammaraskar/sphinx-action@master
+      with:
+        docs-folder: "docs/"
