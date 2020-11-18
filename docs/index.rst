@@ -1,28 +1,7 @@
-.. raw:: html
-
-    <style>
-        .row {clear: both}
-
-        .column img {border: 1px solid black;}
-
-        @media only screen and (min-width: 1000px),
-               only screen and (min-width: 500px) and (max-width: 768px){
-
-            .column {
-                padding-left: 5px;
-                padding-right: 5px;
-                float: left;
-            }
-
-            .column3  {
-                width: 33.3%;
-            }
-
-            .column2  {
-                width: 50%;
-            }
-        }
-    </style>
+.. Computer Based Problem Solving documentation master file, created by
+   sphinx-quickstart on Tue Nov 17 10:10:53 2020.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
 
 ==============================
 Computer Based Problem Solving
@@ -38,6 +17,7 @@ A PDF version of this textbook can be downloaded `here <https://readthedocs.org/
 
 .. toctree::
    :maxdepth: 2
+   :caption: Contents:
    :hidden:
    :titlesonly:
 
