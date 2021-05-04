@@ -126,8 +126,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
   .. group-tab:: PythonX
     .. code-block:: Python
       .. literalinclude:: variables.py
-        :language: ruby
-        :emphasize-lines: 12,15-18
+        :language: python
         :linenos:
 
   .. group-tab:: Ruby
