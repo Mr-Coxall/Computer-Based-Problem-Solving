@@ -124,7 +124,8 @@ Variable declaration usually should be grouped at the beginning of a section of 
           main()
 
   .. group-tab:: PythonX
-    .. code-block:: Ruby
+    .. code-block:: Python
+      :linenos:
       .. literalinclude:: variables.py
 
   .. group-tab:: Ruby
