@@ -40,7 +40,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
           bool isCurrent = true;
           int age = 32;
           float area;
-          string someWords = "Hello, Wordl!";
+          string someWords = "Hello, World!";
       }
 
 
@@ -103,6 +103,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
   .. group-tab:: Python3
 
     .. code-block:: Python
+      :linenos:
 
       #!/usr/bin/env python3
       
