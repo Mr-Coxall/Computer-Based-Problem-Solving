@@ -123,7 +123,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       if __name__ == "__main__":
           main()
 
-  .. group-tab:: PythonX
+  .. group-tab:: Python3
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Python3/variables.py
         :language: python
