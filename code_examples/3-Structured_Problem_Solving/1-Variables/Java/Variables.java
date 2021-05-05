@@ -1,7 +1,7 @@
 /**
  * Class Variables.
  * Created by: Mr. Coxall
- * Created on: June 2020
+ * Created on: Sep 2020
  * This program shows declaring variables
  */
 public class Variables {

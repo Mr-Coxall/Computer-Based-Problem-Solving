@@ -5,7 +5,7 @@
 package main
 
 import "fmt"
-	
+
 func main() {
 	var isCurrent = true // bool
   var age = 32 // int
