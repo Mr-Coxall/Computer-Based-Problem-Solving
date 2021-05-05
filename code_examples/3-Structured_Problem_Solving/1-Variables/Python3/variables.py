@@ -7,10 +7,10 @@
 
 def main():
     # variable definition
-    is_current = True
-    age = 32
-    area = 32.45
-    some_words = "Hello, World!"
+    is_current = True            # bool
+    age = 32                     # int
+    area = 32.45                 # float
+    some_words = "Hello, World!" # string
 
 
 if __name__ == "__main__":
