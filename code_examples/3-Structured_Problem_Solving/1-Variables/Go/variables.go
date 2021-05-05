@@ -7,6 +7,7 @@ package main
 import "fmt"
 
 func main() {
+	// this function shows declaring variables
 	var isCurrent = true            // bool
 	var age = 32                    // int
 	var area float32 = 14.65        // float

@@ -50,7 +50,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Go/variables.go
         :language: go
         :linenos:
-        :emphasize-lines: 10-13
+        :emphasize-lines: 11-14
 
   .. group-tab:: Java
     .. code-block:: Java
