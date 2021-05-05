@@ -43,85 +43,23 @@ Variable declaration usually should be grouped at the beginning of a section of 
           string someWords = "Hello, World!";
       }
 
-
   .. group-tab:: Go
-
     .. code-block:: Go
-
-      // Created by: Mr. Coxall
-      // Created on: June 2020
-      // This program shows declaring variables
-      
-      package main
-      	
-      func main() {
-      	  var isCurrent = true // bool
-          var age = 32 // int
-          var area float32
-          var someWords = "Hello, World!" // string
-      }
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Go/variables.go
+        :language: go
+        :linenos:
 
   .. group-tab:: Java
-
     .. code-block:: Java
-
-      /**
-       * Class Variables.
-       * Created by: Mr. Coxall
-       * Created on: June 2020
-       * This program shows declaring variables
-       */
-      public class Variables {
-        /**
-         * This is the main method.
-         */
-        public static void main(String[] args) {
-          // variable definition
-          boolean isCurrent = true;
-          int age = 32;
-          float area;
-          String someWords = "Hello, World!";
-        }
-      }
-
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Java/Variables.java
+        :language: java
+        :linenos:
 
   .. group-tab:: JavaScript
-
     .. code-block:: JavaScript
-
-      /**
-       * Created by: Mr. Coxall
-       * Created on: June 2020
-       * This program shows declaring variables
-       */
-      
-      var isCurrent = true;
-      var age = 32;
-      var someWords = "Hello, World!";
-
-
-  .. group-tab:: Python3
-
-    .. code-block:: Python
-      :linenos:
-
-      #!/usr/bin/env python3
-      
-      # Created by: Mr. Coxall
-      # Created on: June 2020
-      # This program shows declaring variables
-      
-      
-      def main():
-          # variable definition
-          is_current = True
-          age = 32
-          area = 32.45
-          some_words = "Hello, World!"
-      
-      
-      if __name__ == "__main__":
-          main()
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/JavaScript/variables.js
+        :language: javascript
+        :linenos:
 
   .. group-tab:: Python3
     .. code-block:: Python
@@ -137,18 +75,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
 
   .. group-tab:: Swift
-
     .. code-block:: Swift
-
-      /**
-       * Class Variables.
-       * Created by: Mr. Coxall
-       * Created on: June 2020
-       * This program shows declaring variables
-       */
-      
-      var isCurrent: Bool = true
-      var age: Int = 32
-      var area: Float = 32.45
-      var someWords: String = "Hello, World!"
-
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Swift/Variables.swift
+        :language: swift
+        :linenos:
