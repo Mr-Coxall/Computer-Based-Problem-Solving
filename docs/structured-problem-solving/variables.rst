@@ -130,19 +130,10 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :linenos:
 
   .. group-tab:: Ruby
-
     .. code-block:: Ruby
-
-      #!/usr/bin/env ruby
-      
-      # Created by: Mr. Coxall
-      # Created on: June 2020
-      # This program shows declaring variables
-      
-      is_current = true
-      age = 32
-      area = 32.45
-      some_words = "Hello, World!"
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Ruby/variables.rb
+        :language: ruby
+        :linenos:
 
 
   .. group-tab:: Swift
