@@ -14,6 +14,12 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v2
-
+            
       - name: Lint Code Base
-        uses: docker://github/super-linter:v2.1.0
+        uses: github/super-linter@master
+        env:
+          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_JAVASCRIPT_STANDARD: false
+          DEFAULT_BRANCH: master
+          FILTER_REGEX_INCLUDE: .*\.(cpp|go|java|js|py|rb|swift)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
