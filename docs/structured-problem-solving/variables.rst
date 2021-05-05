@@ -22,6 +22,8 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
 
 .. tabs::
+  .. group-tab:: C#
+    .. code-block:: C#
 
   .. group-tab:: C++
 
