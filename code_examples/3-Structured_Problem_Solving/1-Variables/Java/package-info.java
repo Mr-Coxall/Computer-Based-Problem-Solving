@@ -1,5 +1,5 @@
 /**
- * Computer Based Problem Solving textbook
+ * Computer Based Problem Solving textbook.
  * Coding examples
  *
  * @author  Mr Coxall
