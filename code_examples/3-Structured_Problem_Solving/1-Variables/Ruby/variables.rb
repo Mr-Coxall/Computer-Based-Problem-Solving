@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+# frozen_string_literal: true
+#
 # Created by: Mr. Coxall
 # Created on: June 2020
 # This program shows declaring variables

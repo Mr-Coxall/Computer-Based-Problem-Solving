@@ -16,7 +16,7 @@ class MainClass {
     int age = 32;                        // int
     float area = 32.45F;                 // float
     string someWords = "Hello, World!";  // string
-      
+
     Console.WriteLine (isCurrent);
     Console.WriteLine (age);
     Console.WriteLine (area);
