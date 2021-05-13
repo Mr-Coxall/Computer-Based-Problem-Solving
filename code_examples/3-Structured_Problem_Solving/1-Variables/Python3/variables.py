@@ -12,6 +12,11 @@ def main():
     area = 32.45                 # float
     some_words = "Hello, World!" # string
 
+    print(is_current)
+    print(age)
+    print(area)
+    print(some_words)
+
 
 if __name__ == "__main__":
     main()
