@@ -14,9 +14,9 @@ final class Variables {
         throw new IllegalStateException("Cannot be instantiated");
     }
     /**
-     * This is the main method.
-     * */
-    
+     * Main entry point into program.
+     * @param args nothing passed in
+     */
      public static void main(final String[] args) {
          // variable definition
          boolean isCurrent = true;
