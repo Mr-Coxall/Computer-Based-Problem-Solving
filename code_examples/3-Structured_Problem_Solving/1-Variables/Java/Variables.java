@@ -4,7 +4,7 @@
  * @author  Mr Coxall
  * @version 1.0
  * @since   2020-09-01
-*/
+ */
 
 final class Variables {
     private Variables() {
@@ -13,15 +13,21 @@ final class Variables {
         // if this ever *is* called
         throw new IllegalStateException("Cannot be instantiated");
     }
+
+    /**
+     * Some floating point number.
+     */
+    public static final float SOME_FLOAT = 14.65F;
+
     /**
      * Main entry point into program.
      * @param args nothing passed in
-    */
+     */
     public static void main(final String[] args) {
         // variable definition
         boolean isCurrent = true;
         int age = 0;
-        float area = 14.65F;
+        float area = SOME_FLOAT;
         String someWords = "Hello, World!";
 
         System.out.println(isCurrent);
