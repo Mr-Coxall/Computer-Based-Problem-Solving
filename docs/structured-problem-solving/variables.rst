@@ -22,10 +22,10 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
 
 .. tabs::
-  .. code-tab:: C#
+  .. group-tab:: C#
     .. code-block:: C#
 
-  .. code-tab:: C++
+  .. group-tab:: C++
 
     .. code-block:: C++
 
@@ -45,39 +45,39 @@ Variable declaration usually should be grouped at the beginning of a section of 
           string someWords = "Hello, World!";
       }
 
-  .. code-tab:: Go
+  .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Go/variables.go
         :language: go
         :linenos:
         :emphasize-lines: 11-14
 
-  .. code-tab:: Java
+  .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Java/Variables.java
         :language: java
         :linenos:
 
-  .. code-tab:: JavaScript
+  .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/JavaScript/variables.js
         :language: javascript
         :linenos:
 
-  .. code-tab:: Python3
+  .. group-tab:: Python3
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Python3/variables.py
         :language: python
         :linenos:
 
-  .. code-tab:: Ruby
+  .. group-tab:: Ruby
     .. code-block:: Ruby
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Ruby/variables.rb
         :language: ruby
         :linenos:
 
 
-  .. code-tab:: Swift
+  .. group-tab:: Swift
     .. code-block:: Swift
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Swift/Variables.swift
         :language: swift
