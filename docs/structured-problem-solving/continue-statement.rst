@@ -9,22 +9,22 @@ The continue statement (in most computer programming languages) takes the generi
 
 | **WHILE** bolean expression
 |    counter = counter + 1
-|    statement_1 
-|    statement_2
-|    ...
 |    **IF** bolean expression **THEN**
 |        **CONTINUE**
 |    **ENDIF**
+|    statement_1 
+|    statement_2
+|    ...
 | **END**
 
 | **FOR** counter in range(n)
 |    counter = counter + 1
-|    statement_1 
-|    statement_2
 |    ...
 |    **IF** bolean expression **THEN**
 |        **CONTINUE**
 |    **ENDIF**
+|    statement_1 
+|    statement_2
 | **END**
 
 The flowchart for a Continue statement will look like this:
