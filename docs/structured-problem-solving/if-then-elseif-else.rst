@@ -59,6 +59,15 @@ An example of what this would look like in a specific programming language is:
     .. code-block:: JavaScript
 
       // if ... then ... elseif ... else example
+      if (colourOfLight == "red") {
+          std::cout << "Stop!";
+      } else if (colourOfLight == "yellow") {
+          std::cout << "Slow Down.";
+      } else if (colourOfLight == "green") {
+          std::cout << "Go, if all clear.";
+      } else {
+          std::cout << "No idea!";
+      }
 
   .. group-tab:: Python3
 
