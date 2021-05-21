@@ -60,13 +60,13 @@ An example of what this would look like in a specific programming language is:
 
       // if ... then ... elseif ... else example
       if (colourOfLight == "red") {
-          std::cout << "Stop!";
+        console.log("Stop!")
       } else if (colourOfLight == "yellow") {
-          std::cout << "Slow Down.";
+        console.log("Slow Down.")
       } else if (colourOfLight == "green") {
-          std::cout << "Go, if all clear.";
+        console.log("Go, if all clear.")
       } else {
-          std::cout << "No idea!";
+        console.log("No idea!")
       }
 
   .. group-tab:: Python3
