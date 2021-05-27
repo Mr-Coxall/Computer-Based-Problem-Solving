@@ -129,7 +129,7 @@ Notice that right in the declaration of the function, the "default optional para
 
 		    full_name = first_name
 		    if middle_name != None:
-		        full_name = full_name + " " + middle_name
+		        full_name = full_name + " " + middle_name[0]
 		    full_name = full_name + " " + last_name
 
 		    return full_name
