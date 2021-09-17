@@ -115,7 +115,7 @@ In the code examples below, if the variable numberOfStudents (or number_of_stude
 		    print("")
 
 		    # process & output
-		    if number_of_students > 30:
+		    if number_of_students > constants.MAX_STUDENT_NUMBER:
 		        print("Too many students!")
 
 
