@@ -60,8 +60,8 @@ In the code examples below, if the variable numberOfStudents (or number_of_stude
 
 		    // process
 		    if (numberOfStudents > MAX_STUDENT_NUMBER) {
-		            // output
-		            std::cout << "Too many students!";
+		        // output
+		        std::cout << "Too many students!";
 		    }
 		}
 
