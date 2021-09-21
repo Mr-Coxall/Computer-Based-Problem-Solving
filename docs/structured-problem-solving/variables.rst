@@ -57,6 +57,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Java/Variables.java
         :language: java
         :linenos:
+        :emphasize-lines: 28-31
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
@@ -69,6 +70,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Python3/variables.py
         :language: python
         :linenos:
+        :emphasize-lines: 10-13
 
   .. group-tab:: Ruby
     .. code-block:: Ruby
@@ -82,3 +84,4 @@ Variable declaration usually should be grouped at the beginning of a section of 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Swift/Variables.swift
         :language: swift
         :linenos:
+        :emphasize-lines: 8-11
