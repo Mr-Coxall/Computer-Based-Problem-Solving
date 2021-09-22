@@ -13,3 +13,5 @@ puts is_current
 puts age
 puts area
 puts some_words
+
+puts "\nDone."
