@@ -13,3 +13,5 @@ console.log(isCurrent)
 console.log(age)
 console.log(area)
 console.log(someWords)
+
+console.log("\nDone.")
