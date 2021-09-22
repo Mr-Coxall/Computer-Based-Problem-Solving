@@ -14,3 +14,5 @@ print(isCurrent)
 print(age)
 print(area)
 print(someWords)
+
+print("\nDone.")
