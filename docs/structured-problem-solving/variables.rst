@@ -24,26 +24,17 @@ Variable declaration usually should be grouped at the beginning of a section of 
 .. tabs::
   .. group-tab:: C#
     .. code-block:: C#
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CSharp/variables.cs
+        :language: C#
+        :linenos:
+        :emphasize-lines: 15-18
 
   .. group-tab:: C++
-
     .. code-block:: C++
-
-      // Copyright (c) 2020 Mr. Coxall All rights reserved.
-      //
-      // Created by: Mr. Coxall
-      // Created on: June 2020
-      // This program shows declaring variables
-      
-      #include <stdio.h>
-      
-      int main() {
-          // variable definition
-          bool isCurrent = true;
-          int age = 32;
-          float area;
-          string someWords = "Hello, World!";
-      }
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CPP/variables.cpp
+        :language: C++
+        :linenos:
+        :emphasize-lines: 11-14
 
   .. group-tab:: Go
     .. code-block:: Go
