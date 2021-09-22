@@ -12,9 +12,9 @@ using System;
 class MainClass {
   public static void Main (string[] args) {
     // variable definition
-    bool isCurrent = true;               // bool
-    int age = 32;                        // int
-    float area = 32.45F;                 // float
+    bool isCurrent = true;  // bool
+    int age = 32;  // int
+    float area = 32.45F;  // float
     string someWords = "Hello, World!";  // string
 
     Console.WriteLine (isCurrent);
