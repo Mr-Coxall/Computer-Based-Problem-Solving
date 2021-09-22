@@ -20,6 +20,7 @@ jobs:
         env:
           VALIDATE_ALL_CODEBASE: true
           VALIDATE_JAVASCRIPT_STANDARD: false
+          VALIDATE_CLANG_FORMAT: false
           VALIDATE_JSCPD: false
           DEFAULT_BRANCH: master
           FILTER_REGEX_INCLUDE: .*\.(cpp|go|java|js|py|rb|swift)
