@@ -1,4 +1,4 @@
-# Computer-Based-Problem-Solving
+# Computer Based Problem Solving
 
 [![GitHub's Super Linter](https://github.com/Mr-Coxall/Computer-Based-Problem-Solving/workflows/Super%20Linter/badge.svg)](https://github.com/Mr-Coxall/Computer-Based-Problem-Solving/actions)
 ![Read the Docs](https://img.shields.io/readthedocs/computer-based-problem-solving.svg)
