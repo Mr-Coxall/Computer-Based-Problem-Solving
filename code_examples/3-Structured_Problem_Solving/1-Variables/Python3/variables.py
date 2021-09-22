@@ -17,6 +17,8 @@ def main():
     print(area)
     print(some_words)
 
+    print("\nDone.")
+
 
 if __name__ == "__main__":
     main()
