@@ -17,4 +17,6 @@ int main() {
     std::cout << age << std::endl;
     std::cout << area << std::endl;
     std::cout << someWords << std::endl;
+
+    std::cout << "\nDone." << std::endl;
 }
