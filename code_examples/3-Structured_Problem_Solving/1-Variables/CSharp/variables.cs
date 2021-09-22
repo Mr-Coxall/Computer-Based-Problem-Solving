@@ -21,5 +21,7 @@ class MainClass {
     Console.WriteLine (age);
     Console.WriteLine (area);
     Console.WriteLine (someWords);
+    
+    Console.WriteLine ("\nDone.");
   }
 }
