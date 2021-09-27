@@ -1,5 +1,16 @@
 # Computer Based Problem Solving
 
+An introductory textbook to Computer Science, focussing on a structured problem solving approach. Code examples in:
+- C#
+- C++
+- Go
+- Java
+- JavaScript
+- Python
+- Ruby
+- Swift (Linux)
+
+
 [![GitHub's Super Linter](https://github.com/Mr-Coxall/Computer-Based-Problem-Solving/workflows/Super%20Linter/badge.svg)](https://github.com/Mr-Coxall/Computer-Based-Problem-Solving/actions)
 ![Read the Docs](https://img.shields.io/readthedocs/computer-based-problem-solving.svg)
 
