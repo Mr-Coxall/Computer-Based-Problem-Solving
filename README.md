@@ -1,6 +1,8 @@
 # Computer Based Problem Solving
 
-An introductory textbook to Computer Science, focussing on a structured problem solving approach. Code examples in:
+An introductory textbook to Computer Science, focussing on a structured problem solving approach. 
+
+Code examples in:
 - C#
 - C++
 - Go
