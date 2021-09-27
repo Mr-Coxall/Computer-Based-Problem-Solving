@@ -13,6 +13,7 @@ The nested if statements (in most computer programming languages) takes the gene
 |        statement(s)
 |    **ELSE**
 |        Alternate statements to be performed
+|    **ENDIF**
 | **ELSE**
 |     Alternate statements to be performed
 | **ENDIF**
