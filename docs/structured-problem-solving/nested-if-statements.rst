@@ -7,9 +7,9 @@ Sometimes a single if statement, even a long If…Then…ElseIf…ElseIf…Else 
 
 The nested if statements (in most computer programming languages) takes the generic form of:
 
-| **IF** expression1:
+| **IF** expression1 **THEN**
 |    statement(s)
-|    **IF** expressionA:
+|    **IF** expressionA **THEN**
 |        statement(s)
 |    **ELSE**
 |        Alternate statements to be performed
