@@ -15,7 +15,7 @@ The for loop (in most computer programming languages) takes the generic form of:
 
 or
 
-| **FOR** (counter = 0; boolean expresion; counter++)
+| **FOR** (int counter = 0; boolean expresion; counter++)
 |    statement(s)
 | **END** 
 
@@ -44,14 +44,13 @@ The following code snippet is a repetition program. The user enters a positive i
 		main() {
 		    // this function uses a for loop
 		    int positiveInteger;
-		    int loopCounter = 0;
 
 		    // input
 		    std::cout << "Enter how many times to repeat: ";
 		    std::cin >> positiveInteger;
 
 		    // process & output
-		    for (loopCounter = 0; loopCounter < positiveInteger; loopCounter++) {
+		    for (int loopCounter = 0; loopCounter < positiveInteger; loopCounter++) {
 		        std::cout << loopCounter <<" time through loop." << std::endl;
 		    }
 		}
