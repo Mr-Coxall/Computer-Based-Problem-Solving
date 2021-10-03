@@ -25,10 +25,10 @@ final class Variables {
      */
     public static void main(final String[] args) {
         // variable definition
-        boolean isCurrent = true;
-        int age = 0;
-        float area = SOME_FLOAT;
-        String someWords = "Hello, World!";
+        boolean isCurrent = true;  // bool
+        int age = 0;  // int
+        float area = SOME_FLOAT;  // float
+        String someWords = "Hello, World!";  // string
 
         System.out.println(isCurrent);
         System.out.println(age);
