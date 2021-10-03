@@ -6,7 +6,7 @@
  */
 
 var isCurrent: Bool = true  // bool
-var age: Int = 32  // Int
+var age: Int = 32  // int
 var area: Float = 32.45  // float
 var someWords: String = "Hello, World!"  // string
 
