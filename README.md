@@ -5,7 +5,6 @@ An introductory textbook to Computer Science, focussing on a structured problem 
 Code examples in:
 - C#
 - C++
-- Go
 - Java
 - JavaScript
 - Python
