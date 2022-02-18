@@ -52,8 +52,8 @@ If you think way back to when we did different types of looping structures, one 
 
 		    total = 0
 		    
-		    for counter in list_of_numbers:
-		        total += counter
+		    for a_single_number in list_of_numbers:
+		        total += a_single_number
 
 		    return total
 
