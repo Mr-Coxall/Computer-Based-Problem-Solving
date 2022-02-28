@@ -30,6 +30,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :emphasize-lines: 15-18
 
   .. group-tab:: C++
+    Open in `Repl.it <https://replit.com/join/nxykwyavwi-mrcoxall1>`_
     .. image:: ../images/replit.svg
       :width: 200px
       :alt: Repl.it
