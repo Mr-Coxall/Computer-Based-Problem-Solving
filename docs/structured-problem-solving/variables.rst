@@ -31,8 +31,8 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
   .. group-tab:: C++
 
-    Text
-    
+    Open code in `Repl.it <https://replit.com/join/nxykwyavwi-mrcoxall1>`_
+
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CPP/variables.cpp
         :language: C++
