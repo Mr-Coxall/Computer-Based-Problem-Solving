@@ -43,9 +43,9 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :linenos:
         :emphasize-lines: 28-31
 
-  .. group-tab:: JavaScript
-    .. code-block:: JavaScript
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/JavaScript/variables.js
+  .. group-tab:: Node.js
+    .. code-block:: Node.js
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Node.js/variables.js
         :language: javascript
         :linenos:
         :emphasize-lines: 7-10
