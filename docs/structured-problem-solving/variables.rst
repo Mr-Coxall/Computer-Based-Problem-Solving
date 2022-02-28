@@ -30,7 +30,6 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :emphasize-lines: 15-18
 
   .. group-tab:: C++
-    Some text here
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CPP/variables.cpp
         :language: C++
