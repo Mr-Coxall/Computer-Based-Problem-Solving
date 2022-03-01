@@ -38,7 +38,6 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: C++
         :linenos:
         :emphasize-lines: 11-14
-    
     .. image:: ../images/replit.svg
       :target: https://replit.com/join/nxykwyavwi-mrcoxall1
       :width: 100
@@ -49,6 +48,9 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: java
         :linenos:
         :emphasize-lines: 28-31
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/join/ytphnjfeyq-mrcoxall1
+      :width: 100
 
   .. group-tab:: Node.js
     .. code-block:: Node.js
