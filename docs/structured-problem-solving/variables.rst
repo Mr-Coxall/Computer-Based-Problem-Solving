@@ -36,8 +36,6 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :linenos:
         :emphasize-lines: 11-14
     
-    Run code in `Repl.it <https://replit.com/join/nxykwyavwi-mrcoxall1>`_ .
-    
     .. image:: ../images/replit.svg
       :target: https://replit.com/join/nxykwyavwi-mrcoxall1
       :width: 100
