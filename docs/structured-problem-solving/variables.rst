@@ -31,7 +31,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
   .. group-tab:: C++
 
-    Open code in `Repl.it <https://replit.com/join/nxykwyavwi-mrcoxall1>`_
+    Run code in `Repl.it <https://replit.com/join/nxykwyavwi-mrcoxall1>`_ .
 
 
     .. code-block:: C++
