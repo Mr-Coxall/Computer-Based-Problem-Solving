@@ -6,10 +6,10 @@
 using System;
 
 /*
- * The main class
+ * The Program class
  * Contains all methods for performing basic variable usage
 */
-class MainClass {
+class Program {
   public static void Main (string[] args) {
     // variable definition
     bool isCurrent = true;  // bool
