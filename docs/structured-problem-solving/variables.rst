@@ -37,6 +37,12 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :emphasize-lines: 11-14
     
     Run code in `Repl.it <https://replit.com/join/nxykwyavwi-mrcoxall1>`_ .
+    
+    |facebook| |tw|
+      .. |facebook| image:: http://www.summerbounce.ca/wp-content/uploads/2012/11/facebook-logo-small.png 
+        :target: http://www.facebook.com 
+      .. |tw| image:: http://www.summerbounce.ca/wp-content/uploads/2012/11/facebook-logo-small.png
+        :target: http://www.twitter.com 
 
   .. group-tab:: Java
     .. code-block:: Java
