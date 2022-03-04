@@ -4,8 +4,10 @@
 // Created on: Mar 2022
 // This program shows how local and global variables work
 
+// Global variable
 var variableX = 25;
 
+// This shows what happens with local variables
 function localVarible() {
     var variableX = 10;
     var variableY = 30;
@@ -13,6 +15,7 @@ function localVarible() {
     console.log("Local variableX, variableY, variableZ: " + variableX + " + " + variableY + " = " + variableZ);
 }
 
+// This shows what happens with global variables
 function globalVarible() {
     variableX = variableX + 1;
     var variableY = 30;
