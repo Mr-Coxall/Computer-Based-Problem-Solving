@@ -56,20 +56,26 @@ What if for some reason you needed a variable to be accessible to several differ
   .. group-tab:: Go
 
     .. code-block:: Go
-
-      // This program shows how local and global variables work
+    	.. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/scopeOfVariables.go
+	    :language: Go
+	    :linenos:
+            :emphasize-lines: 28-31
 
   .. group-tab:: Java
 
     .. code-block:: Java
-
-       // This program shows how local and global variables work
+    	.. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/scopeOfVariables.java
+	    :language: Java
+	    :linenos:
+            :emphasize-lines: 28-31
 
   .. group-tab:: JavaScript
 
     .. code-block:: JavaScript
-
-       // This program shows how local and global variables work
+    	.. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/scopeOfVariables.js
+	    :language: JavaScript
+	    :linenos:
+            :emphasize-lines: 28-31
 
   .. group-tab:: Python3
 
@@ -120,12 +126,16 @@ What if for some reason you needed a variable to be accessible to several differ
   .. group-tab:: Ruby
 
     .. code-block:: Ruby
-
-       # This program shows how local and global variables work
+    	.. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/scopeOfVariables.rb
+	    :language: Ruby
+	    :linenos:
+            :emphasize-lines: 28-31
 
   .. group-tab:: Swift
 
     .. code-block:: Swift
-
-      // This program shows how local and global variables work
+    	.. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/scopeOfVariables.swift
+	    :language: Swift
+	    :linenos:
+            :emphasize-lines: 28-31
 
