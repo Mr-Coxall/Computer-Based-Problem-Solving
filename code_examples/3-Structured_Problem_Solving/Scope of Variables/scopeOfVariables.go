@@ -10,11 +10,11 @@ import (
 	"fmt"
 )
 
-// global variable
+// Global variable
 var variableX int = 25
 
+// This shows what happens with local variables
 func localVariable() {
-    // this shows what happens with local variables
 	var variableX int = 10
 	var variableY int = 30
 	var variableZ int = variableX + variableY
@@ -22,8 +22,8 @@ func localVariable() {
                variableX, variableY, variableZ)
 }
 
+// This shows what happens with global variables
 func globalVariable() {
-    // this shows what happens with global variables
 	variableX = variableX + 1
 	var variableY int = 30
 	var variableZ int = variableX + variableY
@@ -31,6 +31,7 @@ func globalVariable() {
                variableX, variableY, variableZ)
 }
 
+// This function calls local and global
 func main() {
     localVariable()
     globalVariable()
