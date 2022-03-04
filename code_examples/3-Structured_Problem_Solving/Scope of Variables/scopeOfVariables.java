@@ -24,7 +24,8 @@ class Main {
     }
 
     /**
-    * This shows what happens with global variables    */
+    * This shows what happens with global variables
+    */
     public static void globalVariable() {
         variableX = variableX + 1;
         int variableY = 30;
