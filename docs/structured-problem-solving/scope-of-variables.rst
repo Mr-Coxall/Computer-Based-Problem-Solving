@@ -57,7 +57,7 @@ What if for some reason you needed a variable to be accessible to several differ
 
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/scopeOfVariables.go
-        :language: Go
+        :language: go
 	:linenos:
         :emphasize-lines: 28-31
 
@@ -65,15 +65,15 @@ What if for some reason you needed a variable to be accessible to several differ
 
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/scopeOfVariables.java
-	:language: Java
-	:linenos:
+	:language: java
+        :linenos:
         :emphasize-lines: 28-31
 
   .. group-tab:: JavaScript
 
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/scopeOfVariables.js
-	:language: JavaScript
+	:language: javascript
 	:linenos:
         :emphasize-lines: 28-31
 
@@ -127,7 +127,7 @@ What if for some reason you needed a variable to be accessible to several differ
 
     .. code-block:: Ruby
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/scopeOfVariables.rb
-	:language: Ruby
+	:language: ruby
 	:linenos:
         :emphasize-lines: 28-31
 
@@ -135,6 +135,6 @@ What if for some reason you needed a variable to be accessible to several differ
 
     .. code-block:: Swift
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/scopeOfVariables.swift
-	:language: Swift
+	:language: swift
 	:linenos:
         :emphasize-lines: 28-31
