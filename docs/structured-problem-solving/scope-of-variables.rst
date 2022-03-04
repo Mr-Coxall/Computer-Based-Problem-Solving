@@ -56,7 +56,7 @@ What if for some reason you needed a variable to be accessible to several differ
   .. group-tab:: Go
 
     .. code-block:: Go
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/scopeOfVariables.go
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/Go/scopeOfVariables.go
         :language: go
 	:linenos:
         :emphasize-lines: 2-3
@@ -64,7 +64,7 @@ What if for some reason you needed a variable to be accessible to several differ
   .. group-tab:: Java
 
     .. code-block:: Java
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/scopeOfVariables.java
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/Java/scopeOfVariables.java
 	:language: java
         :linenos:
         :emphasize-lines: 2-3
@@ -72,7 +72,7 @@ What if for some reason you needed a variable to be accessible to several differ
   .. group-tab:: JavaScript
 
     .. code-block:: JavaScript
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/scopeOfVariables.js
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/JavaScript/scopeOfVariables.js
 	:language: javascript
 	:linenos:
         :emphasize-lines: 2-3
@@ -126,7 +126,7 @@ What if for some reason you needed a variable to be accessible to several differ
   .. group-tab:: Ruby
 
     .. code-block:: Ruby
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/scopeOfVariables.rb
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/Ruby/scopeOfVariables.rb
 	:language: ruby
 	:linenos:
         :emphasize-lines: 2-3
@@ -134,7 +134,7 @@ What if for some reason you needed a variable to be accessible to several differ
   .. group-tab:: Swift
 
     .. code-block:: Swift
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/scopeOfVariables.swift
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/Swift/scopeOfVariables.swift
 	:language: swift
 	:linenos:
         :emphasize-lines: 2-3
