@@ -37,7 +37,6 @@ What if for some reason you needed a variable to be accessible to several differ
 
 	void globalVariable() {
 	    // this shows what happens with global variables
-
 	    variableX = variableX + 1;
 	    int variableY = 30;
 	    int variableZ = variableX + variableY;
@@ -60,12 +59,11 @@ What if for some reason you needed a variable to be accessible to several differ
 	    :linenos:
         :emphasize-lines: 2-3
 
-    .. group-tab:: JavaScript
-
+  .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/JavaScript/scopeOfVariables.js
-	:language: javascript
-	:linenos:
+      	:language: javascript
+		:linenos:
         :emphasize-lines: 2-3
 
   .. group-tab:: Python3
