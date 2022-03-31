@@ -52,8 +52,8 @@ Variable declaration usually should be grouped at the beginning of a section of 
       :target: https://replit.com/join/ytphnjfeyq-mrcoxall1
       :width: 100
 
-  .. group-tab:: Node.js
-    .. code-block:: Node.js
+  .. group-tab:: JavaScript
+    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Node.js/variables.js
         :language: javascript
         :linenos:
@@ -72,7 +72,6 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: ruby
         :linenos:
         :emphasize-lines: 7-10
-
 
   .. group-tab:: Swift
     .. code-block:: Swift
