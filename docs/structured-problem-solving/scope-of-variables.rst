@@ -13,14 +13,14 @@ What if for some reason you needed a variable to be accessible to several differ
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/Java/scopeOfVariables.java
         :language: java
-		:linenos:
+        :linenos:
         :emphasize-lines: 2-3
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/JavaScript/scopeOfVariables.js
       	:language: javascript
-		:linenos:
+        :linenos:
         :emphasize-lines: 2-3
 
   .. group-tab:: C++
