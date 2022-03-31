@@ -54,87 +54,15 @@ What if for some reason you needed a variable to be accessible to several differ
 
 
   .. group-tab:: Go
-
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/Go/scopeOfVariables.go
         :language: go
-	:linenos:
+	    :linenos:
         :emphasize-lines: 2-3
 
-  .. group-tab:: Java
-
-    .. code-block:: Java
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/Java/scopeOfVariables.java
-	:language: java
-        :linenos:
-        :emphasize-lines: 2-3
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/JavaScript/scopeOfVariables.js
-	:language: javascript
-	:linenos:
-        :emphasize-lines: 2-3
-
-  .. group-tab:: Python3
-
-    .. code-block:: Python
-
-	#!/usr/bin/env python3
-
-	# Created by: Mr. Coxall
-	# Created on: Sept 2019
-	# This program shows how local and global variables work
-
-	# global variable
-	variable_X = 25
-
-
-	def local_variable():
-	    # this shows what happens with local variables
-
-	    variable_X = 10
-	    variable_Y = 30
-	    variable_Z = variable_X + variable_Y
-	    print("Local variable_X, variable_Y, variable_Z: {0} + {1} = {2}".
-	          format(variable_X, variable_Y, variable_Z))
-
-
-	def global_variable():
-	    # this shows what happens with global variables
-
-	    global variable_X
-	    variable_X = variable_X + 1
-	    variable_Y = 30
-	    variable_Z = variable_X + variable_Y
-	    print("Global variable_X, variable_Y, variable_Z: {0} + {1} = {2}".
-	          format(variable_X, variable_Y, variable_Z))
-
-
-	def main():
-	    # this function shows how local and global variables work
-
-	    local_variable()
-	    global_variable()
-
-
-	if __name__ == "__main__":
-	    main()
-
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/Ruby/scopeOfVariables.rb
-	:language: ruby
-	:linenos:
-        :emphasize-lines: 2-3
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/Swift/scopeOfVariables.swift
-	:language: swift
-	:linenos:
-        :emphasize-lines: 2-3
+    .. group-tab:: JavaScript
+  	  .. code-block:: JavaScript
+  	    .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Node.js/variables.js
+  	      :language: javascript
+  	      :linenos:
+   	      :emphasize-lines: 7-10
