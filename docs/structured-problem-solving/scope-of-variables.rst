@@ -53,10 +53,10 @@ What if for some reason you needed a variable to be accessible to several differ
 	}
 
 
-  .. group-tab:: Go
-    .. code-block:: Go
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/Go/scopeOfVariables.go
-        :language: go
+  .. group-tab:: Java
+    .. code-block:: Java
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/Java/scopeOfVariables.java
+        :language: java
 	    :linenos:
         :emphasize-lines: 2-3
 
