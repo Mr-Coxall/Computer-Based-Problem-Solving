@@ -23,9 +23,9 @@ What if for some reason you needed a variable to be accessible to several differ
 		:linenos:
         :emphasize-lines: 2-3
 
-	.. group-tab:: C++
-   	  .. code-block:: C++
-        .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CPP/variables.cpp
-          :language: C++
-          :linenos:
-          :emphasize-lines: 11-14
+  .. group-tab:: C++
+    .. code-block:: C++
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CPP/variables.cpp
+        :language: C++
+        :linenos:
+        :emphasize-lines: 11-14
