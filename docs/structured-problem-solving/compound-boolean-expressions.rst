@@ -33,6 +33,10 @@ OR Truth Table
 | False | False |  False  | 
 +-------+-------+---------+ 
 
+| **IF** (boolean expression #1 and boolean expression #2) **THEN** 
+|    Statements to be performed
+| **ENDIF**
+
 .. image:: ./images/compound-boolean.png
    :alt: Flowchart Compund Boolean Expression
    :align: center 
