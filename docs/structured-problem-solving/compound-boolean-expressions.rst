@@ -33,6 +33,11 @@ OR Truth Table
 | False | False |  False  | 
 +-------+-------+---------+ 
 
+.. image:: ./images/compound-boolean.png
+   :alt: Flowchart Compund Boolean Expression
+   :align: center 
+
+
 In some programming languages the operators are simpley the words “AND and OR”. In others they are “&&” for AND and “||” for OR. The following are some examples of compound boolean expressions:
 
 .. tabs::
