@@ -15,7 +15,7 @@ We will be translating our flow-chart that we create from the previous step into
 
 Here is the lamp example from the flow-chart section as pseudocode:
 
-| **GET** lamp does not work
+| **GET** lamp info
 | **IF (lamp plugged in == yes) THEN**
 |     plug in lamp
 | **ELSE**
