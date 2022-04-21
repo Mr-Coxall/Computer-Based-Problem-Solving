@@ -29,7 +29,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :linenos:
         :emphasize-lines: 15-18
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@MrCoxall1/variables-csharp
+      :target: https://replit.com/@MrCoxall1/variables-csharp#main.cs
       :width: 100
         
   .. group-tab:: C++
@@ -49,7 +49,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :linenos:
         :emphasize-lines: 28-31
     .. image:: ../images/replit.svg
-      :target: https://replit.com/join/ytphnjfeyq-mrcoxall1
+      :target: https://replit.com/@MrCoxall1/variables-java#Variables.java
       :width: 100
 
   .. group-tab:: JavaScript
@@ -58,6 +58,9 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: javascript
         :linenos:
         :emphasize-lines: 7-10
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@MrCoxall1/varaibles-jsjs#variables.js
+      :width: 100
 
   .. group-tab:: Python3
     .. code-block:: Python
@@ -65,6 +68,9 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: python
         :linenos:
         :emphasize-lines: 10-13
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@MrCoxall1/variables-python#main.py
+      :width: 100
 
   .. group-tab:: Ruby
     .. code-block:: Ruby
@@ -72,6 +78,9 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: ruby
         :linenos:
         :emphasize-lines: 7-10
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@MrCoxall1/variables-ruby#main.rb
+      :width: 100
 
 
   .. group-tab:: Swift
@@ -80,3 +89,6 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: swift
         :linenos:
         :emphasize-lines: 8-11
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@MrCoxall1/variables-swift#main.swift
+      :width: 100
