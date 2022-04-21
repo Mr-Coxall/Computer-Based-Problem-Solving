@@ -29,7 +29,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :linenos:
         :emphasize-lines: 15-18
     .. image:: ../images/replit.svg
-      :target: https://replit.com/join/tzbdjuqnie-mrcoxall1
+      :target: https://replit.com/@MrCoxall1/variables-csharp
       :width: 100
         
   .. group-tab:: C++
@@ -39,7 +39,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :linenos:
         :emphasize-lines: 11-14
     .. image:: ../images/replit.svg
-      :target: https://replit.com/join/nxykwyavwi-mrcoxall1
+      :target: https://replit.com/@MrCoxall1/variables-cpp#main.cpp
       :width: 100
 
   .. group-tab:: Java
