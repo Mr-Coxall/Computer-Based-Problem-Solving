@@ -9,18 +9,25 @@ Constants just like variables hold a particular value in memory for a programmer
 
 
 .. tabs::
-
+  .. group-tab:: C#
+    .. code-block:: C#
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CSharp/variables.cs
+        :language: C#
+        :linenos:
+        :emphasize-lines: 15-18
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@MrCoxall1/variables-csharp#main.cs
+      :width: 100
+        
   .. group-tab:: C++
-
     .. code-block:: C++
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CPP/constants.cpp
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CPP/variables.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 11-13
+        :emphasize-lines: 11-14
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Constants-CPP#main.cpp
+      :target: https://replit.com/@MrCoxall1/variables-cpp#main.cpp
       :width: 100
-
 
   .. group-tab:: Go
 
