@@ -11,12 +11,12 @@ Constants just like variables hold a particular value in memory for a programmer
 .. tabs::
   .. group-tab:: C#
     .. code-block:: C#
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/-Variables/CSharp/variables.cs
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CPP/constants.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 15-18
+        :emphasize-lines: 14-17
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@MrCoxall1/variables-csharp#main.cs
+      :target: https://replit.com/@mrcoxall/Constants-CSharp#main.cs
       :width: 100
         
   .. group-tab:: C++
@@ -24,7 +24,7 @@ Constants just like variables hold a particular value in memory for a programmer
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CPP/constants.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 11-14
+        :emphasize-lines: 11-13
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Constants-CPP#main.cpp
       :width: 100

@@ -13,7 +13,7 @@ int main() {
     std::string COUNTRY = "Canada";  // string
 
     std::cout << "Room: " << ROOM_NUMBER << std::endl;
-    std::cout << HST <<"%" << std::endl;
+    std::cout << HST << "%" << std::endl;
     std::cout << COUNTRY << std::endl;
 
     std::cout << "\nDone." << std::endl;
