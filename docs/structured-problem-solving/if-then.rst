@@ -88,10 +88,25 @@ In the code examples below, if the variable numberOfStudents (or number_of_stude
 
     .. code-block:: JavaScript
 
-		// if ... then example
+		/**
+		* Created by: Mr. Coxall
+		* Created on: Sep 2020
+		* This program shows an if statement
+		*/
+
+		// this allows for console input
+		const prompt = require('prompt-sync')()
+
+		// input
+		const numberOfStudents = prompt("Enter the number of students: ")
+
+		// process & output
 		if (numberOfStudents > 30) {
-		    print("Too many students!");
+			console.log("Too many students!")
 		}
+
+		console.log("\nDone.")
+
 
   .. group-tab:: Python3
 
