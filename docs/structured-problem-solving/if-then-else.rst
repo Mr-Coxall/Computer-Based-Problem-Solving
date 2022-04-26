@@ -66,9 +66,9 @@ An example of what this would look like in a specific programming language is:
 
       // if ... then ... else example
       if (numberOfStudents == 30) {
-        console.log("Exactly 30 students!");
+        console.log("Exactly 30 students!")
       } else {
-        console.log("Not 30 students.");
+        console.log("Not 30 students.")
       }
 
       console.log("\nDone.")
