@@ -13,20 +13,13 @@ Constants just like variables hold a particular value in memory for a programmer
   .. group-tab:: C++
 
     .. code-block:: C++
-
-      // Copyright (c) 2020 Mr. Coxall All rights reserved.
-      //
-      // Created by: Mr. Coxall
-      // Created on: June 2020
-      // This program shows declaring constants
-      
-      #include <stdio.h>
-      
-      int main() {
-          // constant definition
-          const int NUMBER_OF_LIVES = 3;
-          const double HST = 0.13;
-      }
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CPP/constants.cpp
+        :language: C++
+        :linenos:
+        :emphasize-lines: 11-13
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@mrcoxall/Constants-CPP#main.cpp
+      :width: 100
 
 
   .. group-tab:: Go
