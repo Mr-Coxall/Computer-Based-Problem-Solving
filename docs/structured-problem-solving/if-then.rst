@@ -102,7 +102,7 @@ In the code examples below, if the variable numberOfStudents (or number_of_stude
 
 		// process & output
 		if (numberOfStudents > 30) {
-			console.log("Too many students!")
+	      console.log("Too many students!")
 		}
 
 		console.log("\nDone.")
