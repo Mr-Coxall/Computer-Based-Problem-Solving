@@ -94,7 +94,7 @@ In the code examples below, if the variable numberOfStudents (or number_of_stude
 		* This program shows an if statement
 		*/
 
-		// this allows for console input
+		// this allows for console input in Node.js
 		const prompt = require('prompt-sync')()
 
 		// input
