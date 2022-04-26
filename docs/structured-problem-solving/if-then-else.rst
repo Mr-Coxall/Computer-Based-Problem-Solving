@@ -52,12 +52,26 @@ An example of what this would look like in a specific programming language is:
 
     .. code-block:: JavaScript
 
+      /**
+      * Created by: Mr. Coxall
+      * Created on: Sep 2020
+      * This program shows an if ... else statement
+      */
+
+      // this allows for console input in Node.js
+      const prompt = require('prompt-sync')()
+
+      // input
+      const numberOfStudents = prompt("Enter the number of students: ")
+
       // if ... then ... else example
       if (numberOfStudents == 30) {
-          print("Exactly 30 students!");
+        console.log("Exactly 30 students!");
       } else {
-          print("Not 30 students.");
+        console.log("Not 30 students.");
       }
+
+      console.log("\nDone.")
 
   .. group-tab:: Python3
 
