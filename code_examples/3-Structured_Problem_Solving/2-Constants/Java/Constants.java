@@ -21,7 +21,7 @@ final class Constants {
 
     /**
      * Constant for HST.
-     */   
+     */
     private static final double HST = 0.13;
 
     /**
