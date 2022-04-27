@@ -14,7 +14,7 @@ Constants just like variables hold a particular value in memory for a programmer
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CSharp/constants.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 14-17
+        :emphasize-lines: 15-17
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Constants-CSharp#main.cs
       :width: 100
@@ -31,23 +31,13 @@ Constants just like variables hold a particular value in memory for a programmer
 
   .. group-tab:: Java
     .. code-block:: Java
-
-      /**
-       * Class Constants.
-       * Created by: Mr. Coxall
-       * Created on: June 2020
-       * This program shows declaring constants
-       */
-      public class Constants {
-        // constant definition
-        private static int NUMBER_OF_LIVES = 3;
-        private static double HST = 0.13;
-        
-        public static void main(String[] args) {
-          // some code ...  
-        }
-      }
-
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Java/Constants.java
+        :language: Java
+        :linenos:
+        :emphasize-lines: 20-21
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@mrcoxall/Constants-Java#Constants.java
+      :width: 100
 
   .. group-tab:: JavaScript
 
