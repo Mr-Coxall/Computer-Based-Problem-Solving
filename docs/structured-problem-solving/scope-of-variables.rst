@@ -111,6 +111,10 @@ What if for some reason you needed a variable to be accessible to several differ
 
 	if __name__ == "__main__":
 	    main()
+	
+	:language: python
+        :linenos:
+        :emphasize-lines: 2-3
 
   .. group-tab:: Ruby
     .. code-block:: Ruby
