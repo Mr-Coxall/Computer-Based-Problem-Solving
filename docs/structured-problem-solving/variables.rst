@@ -29,7 +29,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :linenos:
         :emphasize-lines: 15-18
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@MrCoxall1/variables-csharp#main.cs
+      :target: https://replit.com/@mrcoxall/Variables-CSharp#main.cs
       :width: 100
         
   .. group-tab:: C++

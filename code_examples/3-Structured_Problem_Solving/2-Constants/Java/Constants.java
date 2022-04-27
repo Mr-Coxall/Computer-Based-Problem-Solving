@@ -1,5 +1,5 @@
 /*
- * This program shows declaring constants
+ * This program shows declaring variables
  *
  * @author  Mr Coxall
  * @version 1.0
@@ -15,9 +15,13 @@ final class Constants {
     }
 
     /**
-     * Some constants.
+     * Constant number of lives.
      */
     private static final int NUMBER_OF_LIVES = 3;
+
+    /**
+     * Constant for HST.
+     */   
     private static final double HST = 0.13;
 
     /**
