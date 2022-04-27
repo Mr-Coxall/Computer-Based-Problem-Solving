@@ -11,7 +11,7 @@ Constants just like variables hold a particular value in memory for a programmer
 .. tabs::
   .. group-tab:: C#
     .. code-block:: C#
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CSharp/constants.cs
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 15-17
@@ -21,7 +21,7 @@ Constants just like variables hold a particular value in memory for a programmer
         
   .. group-tab:: C++
     .. code-block:: C++
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CPP/constants.cpp
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 11-13
@@ -31,61 +31,37 @@ Constants just like variables hold a particular value in memory for a programmer
 
   .. group-tab:: Java
     .. code-block:: Java
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Java/Constants.java
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Java/Main.java
         :language: Java
         :linenos:
         :emphasize-lines: 20-21
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Constants-Java#Constants.java
+      :target: https://replit.com/@mrcoxall/Constants-Java#Main.java
       :width: 100
 
   .. group-tab:: JavaScript
-
     .. code-block:: JavaScript
-
-      /**
-       * Created by: Mr. Coxall
-       * Created on: June 2020
-       * This program shows declaring constants
-       */
-      
-      // constant definition
-      const NUMBER_OF_LIVES = 3;
-      const HST = 0.13;
-
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/JavaScript/index.js
+        :language: javascript
+        :linenos:
+        :emphasize-lines: 8-9
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@mrcoxall/Constants-JS#index.js
+      :width: 100
 
   .. group-tab:: Python3
-
     .. code-block:: Python
-
-      --> file named: constants.py
-      # constant definition
-      # Note: in python ususally constants are declared in a seperate module
-      #   In this example the module is called "constants" and would have the following lines of code:
-      
-      NUMBER_OF_LIVES = 3
-      HST = 0.13
-
-      --> file named: constants_example_code.py
-      #!/usr/bin/env python3
-      
-      # Created by: Mr. Coxall
-      # Created on: June 2020
-      # This program shows declaring constants
-      
-      import constants
-      
-      
-      def main():
-          # then in the main program
-          
-          constants.NUMBER_OF_LIVES
-          constants.HST
-      
-      
-      if __name__ == "__main__":
-          main()
-
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python3/constants.py
+        :language: python
+        :linenos:
+        :emphasize-lines: 7-8
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python3/main.py
+        :language: python
+        :linenos:
+        :emphasize-lines: 7, 13-14
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@mrcoxall/Constants-Python#main.py
+      :width: 100
 
   .. group-tab:: Ruby
 
