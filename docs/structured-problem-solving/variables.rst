@@ -59,7 +59,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :linenos:
         :emphasize-lines: 7-10
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@MrCoxall1/variables-js#index.js
+      :target: https://replit.com/@mrcoxall/Variable-JS#index.js
       :width: 100
 
   .. group-tab:: Python3
@@ -69,7 +69,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :linenos:
         :emphasize-lines: 10-13
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@MrCoxall1/variables-python#main.py
+      :target: https://replit.com/@mrcoxall/Variables-Python#.replit
       :width: 100
 
   .. group-tab:: Ruby
