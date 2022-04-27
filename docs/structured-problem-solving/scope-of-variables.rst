@@ -13,6 +13,9 @@ What if for some reason you needed a variable to be accessible to several differ
   .. group-tab:: C++
 
     .. code-block:: C++
+      :language: C++
+      :linenos:
+      :emphasize-lines: 10, 15-17, 26-28
 
 	// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
 	//
@@ -58,18 +61,21 @@ What if for some reason you needed a variable to be accessible to several differ
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/Java/scopeOfVariables.java
         :language: java
         :linenos:
-        :emphasize-lines: 2-3
+        :emphasize-lines: 12, 18-20, 30-32
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/JavaScript/scopeOfVariables.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 8, 12, 13, 21
+        :emphasize-lines: 8, 12-14, 20-22
 
   .. group-tab:: Python3
 
     .. code-block:: Python
+      :language: python
+      :linenos:
+      :emphasize-lines: 8, 14-16, 24-27
 
 	#!/usr/bin/env python3
 
@@ -117,11 +123,11 @@ What if for some reason you needed a variable to be accessible to several differ
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/Ruby/scopeOfVariables.rb
         :language: ruby
         :linenos:
-        :emphasize-lines: 2-3
+        :emphasize-lines: 9, 13-15, 22-24
 
   .. group-tab:: Swift
     .. code-block:: Swift
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/Scope_of_Variables/Swift/scopeOfVariables.swift
         :language: swift
         :linenos:
-        :emphasize-lines: 2-3
+        :emphasize-lines:  8, 12-14, 20-22
