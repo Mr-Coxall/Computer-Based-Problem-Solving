@@ -24,7 +24,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 .. tabs::
   .. group-tab:: C#
     .. code-block:: C#
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CSharp/variables.cs
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 15-18
@@ -34,7 +34,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
         
   .. group-tab:: C++
     .. code-block:: C++
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CPP/variables.cpp
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 11-14
@@ -44,17 +44,17 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
   .. group-tab:: Java
     .. code-block:: Java
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Java/Variables.java
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 28-31
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Variables-Java#Variables.java
+      :target: https://replit.com/@mrcoxall/Variables-Java#Main.java
       :width: 100
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/JavaScript/variables.js
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/JavaScript/index.js
         :language: javascript
         :linenos:
         :emphasize-lines: 7-10
@@ -64,31 +64,31 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
   .. group-tab:: Python3
     .. code-block:: Python
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Python3/variables.py
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Python3/main.py
         :language: python
         :linenos:
         :emphasize-lines: 10-13
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Variables-Python#variables.py
+      :target: https://replit.com/@mrcoxall/Variables-Python#main.py
       :width: 100
 
   .. group-tab:: Ruby
     .. code-block:: Ruby
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Ruby/variables.rb
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Ruby/main.rb
         :language: ruby
         :linenos:
         :emphasize-lines: 7-10
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Variables-Ruby#variables.rb
+      :target: https://replit.com/@mrcoxall/Variables-Ruby#main.rb
       :width: 100
 
 
   .. group-tab:: Swift
     .. code-block:: Swift
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Swift/Variables.swift
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Swift/main.swift
         :language: swift
         :linenos:
         :emphasize-lines: 8-11
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Variables-Swift#variables.swift
+      :target: https://replit.com/@mrcoxall/Variables-Swift#main.swift
       :width: 100
