@@ -79,7 +79,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :linenos:
         :emphasize-lines: 7-10
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@MrCoxall1/variables-ruby#main.rb
+      :target: https://replit.com/@mrcoxall/Variables-Ruby#variables.rb
       :width: 100
 
 
@@ -90,5 +90,5 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :linenos:
         :emphasize-lines: 8-11
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@MrCoxall1/variables-swift#main.swift
+      :target: https://replit.com/@mrcoxall/Variables-Swift#variables.swift
       :width: 100
