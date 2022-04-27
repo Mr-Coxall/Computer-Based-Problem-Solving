@@ -49,7 +49,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :linenos:
         :emphasize-lines: 28-31
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@MrCoxall1/variables-java#Variables.java
+      :target: https://replit.com/@mrcoxall/Variables-Java#Variables.java
       :width: 100
 
   .. group-tab:: JavaScript
