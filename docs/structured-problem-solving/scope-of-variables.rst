@@ -9,8 +9,11 @@ What if for some reason you needed a variable to be accessible to several differ
 
 
 .. tabs::
+
   .. group-tab:: C++
+
     .. code-block:: C++
+
 	// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
 	//
 	// Created by: Mr. Coxall
