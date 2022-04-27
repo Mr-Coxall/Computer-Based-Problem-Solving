@@ -28,9 +28,6 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: C#
         :linenos:
         :emphasize-lines: 15-18
-
-    See this code in running:
-
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-CSharp#main.cs
       :width: 100
