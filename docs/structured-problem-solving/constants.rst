@@ -11,7 +11,7 @@ Constants just like variables hold a particular value in memory for a programmer
 .. tabs::
   .. group-tab:: C#
     .. code-block:: C#
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CPP/constants.cs
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CSharp/constants.cs
         :language: C#
         :linenos:
         :emphasize-lines: 14-17
