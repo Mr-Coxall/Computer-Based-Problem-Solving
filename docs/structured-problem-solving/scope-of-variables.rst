@@ -13,8 +13,6 @@ What if for some reason you needed a variable to be accessible to several differ
   .. group-tab:: C++
 
     .. code-block:: C++
-      :language: C++
-      :linenos:
       :emphasize-lines: 10, 15-17, 26-28
 
 	// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
@@ -73,8 +71,6 @@ What if for some reason you needed a variable to be accessible to several differ
   .. group-tab:: Python3
 
     .. code-block:: Python
-      :language: python
-      :linenos:
       :emphasize-lines: 8, 14-16, 24-27
 
 	#!/usr/bin/env python3
