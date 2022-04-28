@@ -33,7 +33,7 @@ Here are a few examples of assignment statements:
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 32-34
+        :emphasize-lines: 52-54
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/AssingmentStatements-Java#Main.cpp
       :width: 100
