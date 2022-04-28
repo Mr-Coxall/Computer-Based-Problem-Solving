@@ -15,27 +15,48 @@ final class Main {
     }
 
     /**
+     * Constant number TWO.
+     */
+    private static final int TWO = 2;
+
+    /**
+     * Constant number THIRTY_TWO_POINT_FIVE.
+     */
+    private static final float THIRTY_TWO_POINT_FIVE = 32.5F;
+
+    /**
+     * Constant number TEN.
+     */
+    private static final float TEN = 10.0F;
+
+        /**
+     * Constant number FIVE.
+     */
+    private static final int FIVE = 10;
+
+    /**
      * Main entry point into program.
      * @param args nothing passed in
      */
     public static void main(final String[] args) {
         // variable definition
-        int numberOfStudents = 2;
-        float width = 32.5F;
-        float length = 10.0F;
+        int numberOfStudents = TWO;
+        float width = THIRTY_TWO_POINT_FIVE;
+        float length = TEN;
         float areaOfRectangle = 0F;
         String someWords1 = "Hello";
         String someWords2 = "Wordl!";
         String helloWorld = null;
 
         // using assignment statements
-        numberOfStudents = numberOfStudents + 5;
+        numberOfStudents = numberOfStudents + FIVE;
         areaOfRectangle = length * width;
         helloWorld = someWords1 + ", " + someWords2;
 
         // output
         System.out.println("The number of students is: " + numberOfStudents);
-        System.out.println("The area of a rectangle is: " + areaOfRectangle + " cm²");
+        System.out.println("The area of a rectangle is: "
+                           + areaOfRectangle + " cm²");
         System.out.println(helloWorld);
 
         System.out.println("\nDone.");
