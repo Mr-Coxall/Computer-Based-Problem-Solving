@@ -6,8 +6,8 @@
  * @since   2020-09-01
  */
 
-final class Variables {
-    private Variables() {
+final class Main {
+    private Main() {
         // Prevent instantiation
         // Optional: throw an exception e.g. AssertionError
         // if this ever *is* called

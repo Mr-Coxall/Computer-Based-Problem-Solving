@@ -30,13 +30,13 @@ Here are a few examples of assignment statements:
 
   .. group-tab:: Java
     .. code-block:: Java
-
-      // assignment statement
-      numberOfStudents = numberOfStudents + 5;
-      width = 32;
-      length = 10;
-      areaOfRectangle = length * width;
-      someWords = "Hello, Wordl!";
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Java/main.java
+        :language: java
+        :linenos:
+        :emphasize-lines: 32-34
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@mrcoxall/AssingmentStatements-Java#main.cpp
+      :width: 100
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
