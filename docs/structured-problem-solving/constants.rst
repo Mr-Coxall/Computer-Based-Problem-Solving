@@ -79,7 +79,6 @@ Constants just like variables hold a particular value in memory for a programmer
       :target: https://replit.com/@mrcoxall/Constants-Ruby#main.rb
       :width: 100
 
-
   .. group-tab:: Swift
     .. code-block:: Swift
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Swift/main.swift

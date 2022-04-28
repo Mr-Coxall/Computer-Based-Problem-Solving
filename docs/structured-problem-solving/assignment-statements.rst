@@ -30,50 +30,60 @@ Here are a few examples of assignment statements:
 
   .. group-tab:: Java
     .. code-block:: Java
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Java/main.java
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 32-34
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/AssingmentStatements-Java#main.cpp
+      :target: https://replit.com/@mrcoxall/AssingmentStatements-Java#Main.cpp
       :width: 100
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
-
-      // assignment statement
-      numberOfStudents = numberOfStudents + 5;
-      width = 32;
-      length = 10;
-      areaOfRectangle = length * width;
-      someWords = "Hello, Wordl!";
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/JavaScript/index.js
+        :language: javascript
+        :linenos:
+        :emphasize-lines: 8-9
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@mrcoxall/Constants-JS#index.js
+      :width: 100
 
   .. group-tab:: Python3
     .. code-block:: Python
 
-      # assignment statement
-      number_of_students = number_of_students + 5
-      width = 32
-      length = 10
-      area_of_rectangle = length * width
-      some_words = "Hello, Wordl!"
+      constants.py
+
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python3/constants.py
+        :language: python
+        :linenos:
+        :emphasize-lines: 7-8
+
+      main.py
+
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python3/main.py
+        :language: python
+        :linenos:
+        :emphasize-lines: 7
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@mrcoxall/Constants-Python#main.py
+      :width: 100
 
   .. group-tab:: Ruby
     .. code-block:: Ruby
-
-      # assignment statement
-      number_of_students = number_of_students + 5
-      width = 32
-      length = 10
-      area_of_rectangle = length * width
-      some_words = "Hello, Wordl!"
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Ruby/main.rb
+        :language: ruby
+        :linenos:
+        :emphasize-lines: 7-8
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@mrcoxall/Constants-Ruby#main.rb
+      :width: 100
 
   .. group-tab:: Swift
     .. code-block:: Swift
-
-      // assignment statement
-      numberOfStudents = numberOfStudents + 5
-      width = 32
-      length = 10
-      areaOfRectangle = length * width
-      someWords = "Hello, Wordl!"
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Swift/main.swift
+        :language: swift
+        :linenos:
+        :emphasize-lines: 8-9
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@mrcoxall/Constants-Swift#main.swift
+      :width: 100
