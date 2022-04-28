@@ -34,7 +34,7 @@ Constants just like variables hold a particular value in memory for a programmer
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Java/Main.java
         :language: Java
         :linenos:
-        :emphasize-lines: 20-21
+        :emphasize-lines: 20, 25
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Constants-Java#Main.java
       :width: 100
@@ -44,50 +44,48 @@ Constants just like variables hold a particular value in memory for a programmer
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/JavaScript/index.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 8-9
+        :emphasize-lines: 11-12
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Constants-JS#index.js
       :width: 100
 
   .. group-tab:: Python3
     .. code-block:: Python
+
+      constants.py
+
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python3/constants.py
         :language: python
         :linenos:
         :emphasize-lines: 7-8
+
+      main.py
+
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python3/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 7, 13-14
+        :emphasize-lines: 7
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Constants-Python#main.py
       :width: 100
 
   .. group-tab:: Ruby
-
     .. code-block:: Ruby
-
-      #!/usr/bin/env ruby
-      
-      # Created by: Mr. Coxall
-      # Created on: June 2020
-      # This program shows declaring constants
-      
-      NUMBER_OF_LIVES = 3
-      HST = 0.13
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Ruby/main.rb
+        :language: ruby
+        :linenos:
+        :emphasize-lines: 7-8
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@mrcoxall/Constants-Ruby#main.rb
+      :width: 100
 
 
   .. group-tab:: Swift
-
     .. code-block:: Swift
-
-      /**
-       * Class Constants.
-       * Created by: Mr. Coxall
-       * Created on: June 2020
-       * This program shows declaring constants
-       */
-      
-      let numberOfLives = 3
-      let HST = 0.13
-
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Swift/main.swift
+        :language: swift
+        :linenos:
+        :emphasize-lines: 8-9
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@mrcoxall/Constants-Swift#main.swift
+      :width: 100
