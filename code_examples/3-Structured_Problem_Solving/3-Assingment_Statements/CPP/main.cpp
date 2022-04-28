@@ -23,7 +23,8 @@ int main() {
 
     // output
     std::cout << "The number of students is: " << numberOfStudents << std::endl;
-    std::cout << "The area of a rectangle is: " << areaOfRectangle << " cm²" << std::endl;
+    std::cout << "The area of a rectangle is: " << areaOfRectangle
+              << " cm²" << std::endl;
     std::cout << helloWorld << std::endl;
 
     std::cout << "\nDone." << std::endl;
