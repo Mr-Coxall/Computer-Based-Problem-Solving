@@ -44,7 +44,7 @@ Constants just like variables hold a particular value in memory for a programmer
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/JavaScript/index.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 11-12
+        :emphasize-lines: 8-9
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Constants-JS#index.js
       :width: 100
