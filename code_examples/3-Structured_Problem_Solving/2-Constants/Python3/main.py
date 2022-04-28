@@ -9,7 +9,7 @@ import constants
 
 def main():
     # then in the main program
-    
+
     print(constants.NUMBER_OF_LIVES)
     print(constants.HST)
 

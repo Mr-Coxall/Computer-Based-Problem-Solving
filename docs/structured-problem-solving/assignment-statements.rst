@@ -13,20 +13,20 @@ Here are a few examples of assignment statements:
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 24-26
+        :emphasize-lines: 15-18
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/AssingmentStatements-CSharp#main.cs
       :width: 100
 
   .. group-tab:: C++
     .. code-block:: C++
-
-      // assignment statement
-      numberOfStudents = numberOfStudents + 5;
-      width = 32;
-      length = 10;
-      areaOfRectangle = length * width;
-      someWords = "Hello, Wordl!";
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/CPP/main.cpp
+        :language: C++
+        :linenos:
+        :emphasize-lines: 15-18
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@mrcoxall/AssingmentStatements-CPP#main.cpp
+      :width: 100
 
   .. group-tab:: Go
     .. code-block:: Go
