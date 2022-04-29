@@ -57,7 +57,7 @@ Constants just like variables hold a particular value in memory for a programmer
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python3/constants.py
         :language: python
         :linenos:
-        :emphasize-lines: 7-9
+        :emphasize-lines: 7-10
 
       main.py
 
