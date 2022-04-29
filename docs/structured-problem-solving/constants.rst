@@ -34,7 +34,7 @@ Constants just like variables hold a particular value in memory for a programmer
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Java/Main.java
         :language: Java
         :linenos:
-        :emphasize-lines: 17-20, 22-25
+        :emphasize-lines: 17-20, 22-25, 27-30
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Constants-Java#Main.java
       :width: 100
