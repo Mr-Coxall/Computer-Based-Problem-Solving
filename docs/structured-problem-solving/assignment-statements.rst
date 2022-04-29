@@ -40,7 +40,7 @@ Here are a few examples of assignment statements:
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/JavaScript/index.js
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/JavaScript/index.js
         :language: javascript
         :linenos:
         :emphasize-lines: 13-16
@@ -53,14 +53,14 @@ Here are a few examples of assignment statements:
 
       constants.py
 
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python3/constants.py
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Python3/constants.py
         :language: python
         :linenos:
         :emphasize-lines: 7-8
 
       main.py
 
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python3/main.py
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Python3/main.py
         :language: python
         :linenos:
         :emphasize-lines: 7
@@ -70,7 +70,7 @@ Here are a few examples of assignment statements:
 
   .. group-tab:: Ruby
     .. code-block:: Ruby
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Ruby/main.rb
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Ruby/main.rb
         :language: ruby
         :linenos:
         :emphasize-lines: 7-8
@@ -80,7 +80,7 @@ Here are a few examples of assignment statements:
 
   .. group-tab:: Swift
     .. code-block:: Swift
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Swift/main.swift
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Swift/main.swift
         :language: swift
         :linenos:
         :emphasize-lines: 8-9
