@@ -32,7 +32,7 @@ final class Main {
         /**
      * Constant number FIVE.
      */
-    private static final int FIVE = 10;
+    private static final int FIVE = 5;
 
     /**
      * Main entry point into program.
