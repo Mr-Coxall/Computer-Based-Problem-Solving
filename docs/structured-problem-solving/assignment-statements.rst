@@ -43,9 +43,9 @@ Here are a few examples of assignment statements:
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/JavaScript/index.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 8-9
+        :emphasize-lines: 13-16
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Constants-JS#index.js
+      :target: https://replit.com/@mrcoxall/AssingmentStatements-JS#index.js
       :width: 100
 
   .. group-tab:: Python3
