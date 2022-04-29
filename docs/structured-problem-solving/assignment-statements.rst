@@ -50,22 +50,12 @@ Here are a few examples of assignment statements:
 
   .. group-tab:: Python3
     .. code-block:: Python
-
-      constants.py
-
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Python3/constants.py
-        :language: python
-        :linenos:
-        :emphasize-lines: 7-8
-
-      main.py
-
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Python3/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 7
+        :emphasize-lines: 16-19
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Constants-Python#main.py
+      :target: https://replit.com/@mrcoxall/AssingmentStatements-Python#main.py
       :width: 100
 
   .. group-tab:: Ruby
@@ -75,7 +65,7 @@ Here are a few examples of assignment statements:
         :linenos:
         :emphasize-lines: 7-8
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Constants-Ruby#main.rb
+      :target: https://replit.com/@mrcoxall/AssingmentStatements-Ruby#main.rb
       :width: 100
 
   .. group-tab:: Swift
@@ -85,5 +75,5 @@ Here are a few examples of assignment statements:
         :linenos:
         :emphasize-lines: 8-9
     .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Constants-Swift#main.swift
+      :target: https://replit.com/@mrcoxall/AssingmentStatements-Swift#main.swift
       :width: 100

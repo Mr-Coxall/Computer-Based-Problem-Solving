@@ -16,8 +16,8 @@ areaOfRectangle = length * width
 helloWorld = someWords1 + ", " + someWords2
 
 // output
-console.log("The number of students is: " + numberOfStudents);
-console.log("The area of a rectangle is: " + areaOfRectangle + " cm²");
-console.log(helloWorld);
+console.log("The number of students is: " + numberOfStudents)
+console.log("The area of a rectangle is: " + areaOfRectangle + " cm²")
+console.log(helloWorld)
 
 console.log("\nDone.")
