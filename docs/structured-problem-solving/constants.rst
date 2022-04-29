@@ -14,7 +14,7 @@ Constants just like variables hold a particular value in memory for a programmer
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 15-17
+        :emphasize-lines: 14-17
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Constants-CSharp#main.cs
       :width: 100
@@ -24,7 +24,7 @@ Constants just like variables hold a particular value in memory for a programmer
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 11-13
+        :emphasize-lines: 10-13
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Constants-CPP#main.cpp
       :width: 100
@@ -34,7 +34,7 @@ Constants just like variables hold a particular value in memory for a programmer
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Java/Main.java
         :language: Java
         :linenos:
-        :emphasize-lines: 20, 25
+        :emphasize-lines: 17-20, 22-25
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Constants-Java#Main.java
       :width: 100
@@ -44,7 +44,7 @@ Constants just like variables hold a particular value in memory for a programmer
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/JavaScript/index.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 8-9
+        :emphasize-lines: 7-9
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Constants-JS#index.js
       :width: 100
@@ -84,7 +84,7 @@ Constants just like variables hold a particular value in memory for a programmer
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Swift/main.swift
         :language: swift
         :linenos:
-        :emphasize-lines: 8-9
+        :emphasize-lines: 7-9
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Constants-Swift#main.swift
       :width: 100

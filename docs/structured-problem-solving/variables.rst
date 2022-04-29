@@ -27,7 +27,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 15-18
+        :emphasize-lines: 14-18
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-CSharp#main.cs
       :width: 100
@@ -37,7 +37,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 11-14
+        :emphasize-lines: 10-14
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-CPP#main.cpp
       :width: 100
@@ -47,7 +47,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 28-31
+        :emphasize-lines: 27-31
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-Java#Main.java
       :width: 100
@@ -57,7 +57,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/JavaScript/index.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 7-10
+        :emphasize-lines: 6-10
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-JS#index.js
       :width: 100
@@ -67,7 +67,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Python3/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 10-13
+        :emphasize-lines: 9-13
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-Python#main.py
       :width: 100
@@ -77,18 +77,17 @@ Variable declaration usually should be grouped at the beginning of a section of 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Ruby/main.rb
         :language: ruby
         :linenos:
-        :emphasize-lines: 7-10
+        :emphasize-lines: 6-10
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-Ruby#main.rb
       :width: 100
-
 
   .. group-tab:: Swift
     .. code-block:: Swift
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Swift/main.swift
         :language: swift
         :linenos:
-        :emphasize-lines: 8-11
+        :emphasize-lines: 7-11
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-Swift#main.swift
       :width: 100

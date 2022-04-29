@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program shows declaring variables
+ * This program shows assingment statements
 */
 
 using System;
@@ -12,15 +12,23 @@ using System;
 class Program {
     public static void Main (string[] args) {
         // variable definition
-        bool isCurrent = true;  // bool
-        int age = 32;  // int
-        float area = 32.45F;  // float
-        string someWords = "Hello, World!";  // string
+        int numberOfStudents = 2;
+        float width = 32.5F;
+        float length = 10.0F;
+        float areaOfRectangle = 0F;
+        string someWords1 = "Hello";
+        string someWords2 = "Wordl!";
+        string helloWorld = null;
 
-        Console.WriteLine (isCurrent);
-        Console.WriteLine (age);
-        Console.WriteLine (area);
-        Console.WriteLine (someWords);
+        // using assignment statements
+        numberOfStudents = numberOfStudents + 5;
+        areaOfRectangle = length * width;
+        helloWorld = someWords1 + ", " + someWords2; 
+
+        // output
+        Console.WriteLine ("The number of students is: " + numberOfStudents);
+        Console.WriteLine ("The area of a rectangle is: " + areaOfRectangle + " cm²");
+        Console.WriteLine (helloWorld);
 
         Console.WriteLine ("\nDone.");
     }

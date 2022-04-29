@@ -13,7 +13,7 @@ Here are a few examples of assignment statements:
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 15-18
+        :emphasize-lines: 23-26
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/AssingmentStatements-CSharp#main.cs
       :width: 100
@@ -23,7 +23,7 @@ Here are a few examples of assignment statements:
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 20-22
+        :emphasize-lines: 19-22
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/AssingmentStatements-CPP#main.cpp
       :width: 100
@@ -33,7 +33,7 @@ Here are a few examples of assignment statements:
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 52-54
+        :emphasize-lines: 51-54
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/AssingmentStatements-Java#Main.cpp
       :width: 100
