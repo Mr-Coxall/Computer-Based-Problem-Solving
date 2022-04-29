@@ -4,10 +4,13 @@
 # Created on: Sept 2020
 # This program shows declaring constants
 
-NUMBER_OF_LIVES = 3
+# constant definition
+ROOM_NUMBER = 212
 HST = 0.13
+COUNTRY = "Canada"
 
-puts NUMBER_OF_LIVES
-puts HST
+puts "Room: " + ROOM_NUMBER.to_s
+puts HST.to_s + "%"
+puts COUNTRY
 
 puts "\nDone."
