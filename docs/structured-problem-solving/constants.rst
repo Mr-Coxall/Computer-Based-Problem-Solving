@@ -74,7 +74,7 @@ Constants just like variables hold a particular value in memory for a programmer
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Ruby/main.rb
         :language: ruby
         :linenos:
-        :emphasize-lines: 7-10
+        :emphasize-lines: 7-12
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Constants-Ruby#main.rb
       :width: 100
