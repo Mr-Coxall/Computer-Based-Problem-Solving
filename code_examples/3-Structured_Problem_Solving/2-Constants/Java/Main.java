@@ -1,5 +1,5 @@
 /*
- * This program shows declaring variables
+ * This program shows declaring constants
  *
  * @author  Mr Coxall
  * @version 1.0
