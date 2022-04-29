@@ -87,7 +87,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Swift/main.swift
         :language: swift
         :linenos:
-        :emphasize-lines: 7-11
+        :emphasize-lines: 8-12
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-Swift#main.swift
       :width: 100
