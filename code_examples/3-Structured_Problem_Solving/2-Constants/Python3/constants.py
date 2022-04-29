@@ -5,5 +5,6 @@
 # This contains constants
 
 # constant definition
-NUMBER_OF_LIVES = 3
+ROOM_NUMBER = 212
 HST = 0.13
+COUNTRY = "Canada"

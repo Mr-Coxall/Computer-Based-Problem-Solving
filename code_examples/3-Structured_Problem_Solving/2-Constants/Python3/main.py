@@ -9,9 +9,9 @@ import constants
 
 def main():
     # then in the main program
-
-    print(constants.NUMBER_OF_LIVES)
-    print(constants.HST)
+    print("Room: " + constants.NUMBER_OF_LIVES)
+    print(constants.HST + "%")
+    print(constants.COUNTRY)
 
     print("\nDone.")
 
