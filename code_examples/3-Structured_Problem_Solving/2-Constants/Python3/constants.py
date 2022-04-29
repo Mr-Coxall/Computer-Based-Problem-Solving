@@ -4,5 +4,6 @@
 # Created on: Sep 2020
 # This contains constants
 
+# constant definition
 NUMBER_OF_LIVES = 3
 HST = 0.13
