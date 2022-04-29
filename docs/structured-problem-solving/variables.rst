@@ -57,7 +57,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/JavaScript/index.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 6-10
+        :emphasize-lines: 7-11
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-JS#index.js
       :width: 100
