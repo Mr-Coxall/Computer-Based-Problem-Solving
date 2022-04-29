@@ -52,6 +52,8 @@ Constants just like variables hold a particular value in memory for a programmer
   .. group-tab:: Python3
     .. code-block:: Python
 
+      In Python we normally create a seperate file called constants.py and place all our constants in it
+      
       constants.py
 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python3/constants.py
