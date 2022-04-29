@@ -1,14 +1,16 @@
 /**
- * Created by: Mr. Coxall
- * Created on: Sep 2020
- * This program shows declaring constants
- */
+* Created by: Mr. Coxall
+* Created on: Sep 2020
+* This program shows declaring constants
+*/
 
 // constant definition
-const NUMBER_OF_LIVES = 3
+const ROOM = 212
 const HST = 0.13
+const COUNTRY = "Canada"
 
-console.log(NUMBER_OF_LIVES)
-console.log(HST)
+console.log("Room: " + ROOM)
+console.log(HST + "%")
+console.log(COUNTRY)
 
 console.log("\nDone.")

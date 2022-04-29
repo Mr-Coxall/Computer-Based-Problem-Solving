@@ -17,11 +17,11 @@ class Program {
         float area = 32.45F;  // float
         string someWords = "Hello, World!";  // string
 
-        Console.WriteLine (isCurrent);
-        Console.WriteLine (age);
-        Console.WriteLine (area);
-        Console.WriteLine (someWords);
+        Console.WriteLine(isCurrent);
+        Console.WriteLine(age);
+        Console.WriteLine(area);
+        Console.WriteLine(someWords);
 
-        Console.WriteLine ("\nDone.");
+        Console.WriteLine("\nDone.");
     }
 }
