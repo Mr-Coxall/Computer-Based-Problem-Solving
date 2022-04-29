@@ -12,9 +12,9 @@ using System;
 class Program {
     public static void Main (string[] args) {
         // constant definition
-        int ROOM_NUMBER = 212;  // int
-        float HST = 0.13f;  // float
-        string COUNTRY = "Canada";  // string
+        const int ROOM_NUMBER = 212;  // int
+        const float HST = 0.13f;  // float
+        const string COUNTRY = "Canada";  // string
 
         Console.WriteLine ("Room: " + ROOM_NUMBER);
         Console.WriteLine (HST + "%");

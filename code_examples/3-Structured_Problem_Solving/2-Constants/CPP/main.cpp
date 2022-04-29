@@ -8,9 +8,9 @@
 
 int main() {
     // constant definition
-    int ROOM_NUMBER = 212;  // int
-    float HST = 0.13;  // float
-    std::string COUNTRY = "Canada";  // string
+    const int ROOM_NUMBER = 212;  // int
+    const float HST = 0.13;  // float
+    const std::string COUNTRY = "Canada";  // string
 
     std::cout << "Room: " << ROOM_NUMBER << std::endl;
     std::cout << HST << "%" << std::endl;
