@@ -84,7 +84,7 @@ Constants just like variables hold a particular value in memory for a programmer
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Swift/main.swift
         :language: swift
         :linenos:
-        :emphasize-lines: 7-9
+        :emphasize-lines: 8-12
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Constants-Swift#main.swift
       :width: 100
