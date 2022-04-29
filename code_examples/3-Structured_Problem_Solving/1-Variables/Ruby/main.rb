@@ -4,6 +4,7 @@
 # Created on: Sept 2020
 # This program shows declaring variables
 
+# variable definition
 is_current = true  # bool
 age = 32  # int
 area = 32.45  # float
