@@ -63,7 +63,7 @@ Here are a few examples of assignment statements:
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Ruby/main.rb
         :language: ruby
         :linenos:
-        :emphasize-lines: 7-8
+        :emphasize-lines: 14-17
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/AssingmentStatements-Ruby#main.rb
       :width: 100
