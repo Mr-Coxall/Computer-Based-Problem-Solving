@@ -73,7 +73,7 @@ Here are a few examples of assignment statements:
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Swift/main.swift
         :language: swift
         :linenos:
-        :emphasize-lines: 8-9
+        :emphasize-lines: 18-21
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/AssingmentStatements-Swift#main.swift
       :width: 100
