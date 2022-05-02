@@ -22,4 +22,3 @@ puts"The area of a rectangle is: " + area_of_rectangle.to_s + " cm²"
 puts hello_world
 
 puts "\nDone."
-
