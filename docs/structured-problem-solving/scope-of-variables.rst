@@ -20,7 +20,7 @@ What if for some reason you needed a variable to be accessible to several differ
 
   .. group-tab:: C++
     .. code-block:: C++
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/CPP/main.cpp
+      .. literalinclude:: https://raw.githubusercontent.com/Mr-Coxall/CBPS-Scope_of_Variables-CPP/main/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 13-16, 23-26 
