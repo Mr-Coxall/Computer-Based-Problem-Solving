@@ -89,8 +89,39 @@ An example of what this would look like in a specific programming language is:
 
     .. code-block:: Python
 
-      # select ...case example
-      # python does not actually have a select ... case structure
+      #!/usr/bin/env python3
+
+      # Created by: Mr. Coxall
+      # Created on: Sep 2020
+      # This program checks your grade
+      # NOTE: This will only work on >= Python 3.10
+
+      def main():
+          # this function checks your grade
+
+          # input
+          grade_level = input("Enter grade mark as a single character(ex: A, B, ...): ")
+          print("")
+
+          # process & output
+          match grade_level:
+              case "A":
+                  print("Excellent!")
+              case "B":
+                  print("Really good!")
+              case "C":
+                  print("Well done")
+              case "D":
+                  print("You passed")
+              case "F":
+                  print("Better try again")
+              case _:
+                  print("Invalid grade")
+
+
+      if __name__ == "__main__":
+          main()
+
 
   .. group-tab:: Ruby
 
