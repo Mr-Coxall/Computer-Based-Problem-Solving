@@ -20,12 +20,20 @@ String           Variable length number of characters
 
 Variable declaration usually should be grouped at the beginning of a section of code (sub, procedure, function, method...), after the initial `comments <https://en.wikipedia.org/wiki/Comment_%28computer_programming%29>`_. A blank line follows the declaration and separates the declaration from the rest of your code. This makes it easy to see where the declaration starts and ends. Ensuring that your code is easy to read and understand is as important in computer science as it is in English. It is important to remember that your code has two audiences, the computer that needs to `compile <https://en.wikipedia.org/wiki/Compiler>`_ or `interprete <https://en.wikipedia.org/wiki/Interpreter_(computing)>`_ it so that the computer can run your program and even more important, you and everyone else that looks at your source code that are trying to figure out how your program works. Here are some examples of declaring a variable:
 
+.. image:: ./images/Structured-Problem-Solving---Variables-Block-Code.png
+   :alt: If…Then flowchart
+   :align: center
+
 .. tabs::
   .. group-tab:: Block Code
-    .. image:: ./images/Structured-Problem-Solving---Variables-Block-Code.png
+    .. image:: ../images/MakeCode-badge.svg
+      :target: https://arcade.makecode.com/#pub:github:Mr-Coxall/Structured-Problem-Solving---Variables-MakeCode
+      :align: center
+
     .. image:: ../images/MakeCode-badge.svg
       :target: https://arcade.makecode.com/#pub:github:Mr-Coxall/Structured-Problem-Solving---Variables-MakeCode
       :width: 100
+
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CSharp/main.cs
