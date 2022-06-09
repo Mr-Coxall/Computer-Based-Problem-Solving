@@ -23,7 +23,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 .. tabs::
   .. group-tab:: Block Code
 
-    .. image:: ../images/MakeCode-badge.svg
+    .. image:: ../images/Structured-Problem-Solving---Variables-Block-Code.png
       :target: https://arcade.makecode.com/#pub:github:Mr-Coxall/Structured-Problem-Solving---Variables-MakeCode
       :align: center
 
