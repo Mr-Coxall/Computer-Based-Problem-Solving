@@ -23,8 +23,8 @@ Variable declaration usually should be grouped at the beginning of a section of 
 .. tabs::
   .. group-tab:: Block Code
 
-    .. image:: ./images/for-loop.svg
-      :alt: If…Then flowchart
+    .. image:: ./images/for-loop.png
+      :alt: Structured-Problem-Solving---Variables-MakeCode
       :align: center
 
     .. image:: ../images/MakeCode-badge.svg
