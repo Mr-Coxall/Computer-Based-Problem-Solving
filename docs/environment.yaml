@@ -6,4 +6,3 @@ dependencies:
   - mkdocs==1.2.3
   - pip:
     - jinja2==3.0.0
-    - sphinxext-remoteliteralinclude==0.3.0
