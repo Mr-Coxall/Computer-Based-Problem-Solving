@@ -24,8 +24,11 @@ Variable declaration usually should be grouped at the beginning of a section of 
 .. tabs::
   .. group-tab:: Block Code
     .. image:: ./images/Structured-Problem-Solving---Variables-Block-Code.png
-    .. image:: ../images/replit.svg
-      :target: https://makecode.com/_WgoEf0MfxWPz
+      :alt: Structured-Problem-Solving---Variables-Block-Code
+      :align: center
+
+    .. image:: ../images/MakeCode-badge.svg
+      :target: https://arcade.makecode.com/#pub:_3F4gV17rvhEx
       :width: 100
   .. group-tab:: C#
     .. code-block:: C#
