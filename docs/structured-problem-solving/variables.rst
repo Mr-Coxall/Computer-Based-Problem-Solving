@@ -22,6 +22,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
 .. tabs::
   .. group-tab:: Block Code
+
     .. image:: ./images/Structured-Problem-Solving---Variables-Block-Code.png
       :alt: Structured-Problem-Solving---Variables-MakeCode
       :align: center
@@ -72,7 +73,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
   .. group-tab:: Python3
     .. code-block:: Python
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Python3/main.py
+      .. literalinclude:: https://raw.githubusercontent.com/Mr-Coxall/Structured-Problem-Solving---Variables-Python/main/main.py
         :language: python
         :linenos:
         :emphasize-lines: 9-13
