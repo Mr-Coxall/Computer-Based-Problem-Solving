@@ -90,7 +90,7 @@ The following code snippet is a continue program:
 
       // continue statement
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
 
     .. code-block:: Python
 

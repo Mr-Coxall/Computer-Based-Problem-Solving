@@ -95,7 +95,7 @@ The following code snippet is a repetition program. The user enters a positive i
 
       // do...while loop
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
 
     .. code-block:: Python
 

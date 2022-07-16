@@ -73,7 +73,7 @@ An example of what this would look like in a specific programming language is:
 
       console.log("\nDone.")
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
 
     .. code-block:: Python
 

@@ -71,7 +71,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       :target: https://replit.com/@mrcoxall/Variables-JS#index.js
       :width: 100
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
     .. code-block:: Python
       .. rli:: https://raw.githubusercontent.com/Mr-Coxall/Structured-Problem-Solving---Variables-Python/main/main.py
         :language: python

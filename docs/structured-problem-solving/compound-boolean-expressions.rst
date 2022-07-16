@@ -98,7 +98,7 @@ In some programming languages the operators are simpley the words â€œAND and ORâ
 
       // compound boolean expressions
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
 
     .. code-block:: Python
 

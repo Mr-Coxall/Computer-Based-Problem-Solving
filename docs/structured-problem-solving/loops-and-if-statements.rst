@@ -89,7 +89,7 @@ The following code snippet is the solution to the above problem:
 
       // nested loop
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
 
     .. code-block:: Python
 

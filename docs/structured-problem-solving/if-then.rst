@@ -108,7 +108,7 @@ In the code examples below, if the variable numberOfStudents (or number_of_stude
 		console.log("\nDone.")
 
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
 
     .. code-block:: Python
 

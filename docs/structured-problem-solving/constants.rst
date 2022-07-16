@@ -49,7 +49,7 @@ Constants just like variables hold a particular value in memory for a programmer
       :target: https://replit.com/@mrcoxall/Constants-JS#index.js
       :width: 100
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
     .. code-block:: Python
 
       In Python we normally create a seperate file called constants.py and place all our constants in it

@@ -100,7 +100,7 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 
        // This program shows how local and global variables work
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
 
     .. code-block:: Python
 

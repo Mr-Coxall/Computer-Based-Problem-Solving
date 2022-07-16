@@ -89,7 +89,7 @@ The following code snippet is a break program:
 
       // break statement
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
 
     .. code-block:: Python
 

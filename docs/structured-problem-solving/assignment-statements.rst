@@ -48,7 +48,7 @@ Here are a few examples of assignment statements:
       :target: https://replit.com/@mrcoxall/AssingmentStatements-JS#index.js
       :width: 100
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Python3/main.py
         :language: python
