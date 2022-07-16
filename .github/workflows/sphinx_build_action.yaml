@@ -50,4 +50,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           force: true
-          directory: ./docs/build/html
+          directory: /home/runner/work/Computer-Based-Problem-Solving/Computer-Based-Problem-Solving/docs/_build/html/
