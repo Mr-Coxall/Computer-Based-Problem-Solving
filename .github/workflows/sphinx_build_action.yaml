@@ -24,6 +24,7 @@ jobs:
           python -m pip install -U sphinx
           python -m pip install sphinx-rtd-theme
           python -m pip install sphinx-tabs
+          python3 -m pip install sphinxext-remoteliteralinclude
           # python -m pip install sphinxcontrib-apidoc
           python -m pip install sphinx-autoapi
 
