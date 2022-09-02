@@ -95,12 +95,12 @@ You will notice that the function is now on the right hand side of an assignment
     .. code-block:: Python
 
 		# function definition with a return value
-		def calculate_area(length, width):
+		def calculate_area(length: int, width: int) -> int:
 		    # calculate area
 
 		    area = length * width
 		    
-	    	    return area
+	    	return area
 
   .. group-tab:: Ruby
 
