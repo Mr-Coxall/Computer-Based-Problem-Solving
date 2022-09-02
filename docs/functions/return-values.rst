@@ -205,14 +205,14 @@ Now that we know how to use a return statement, we should no longer print out re
 		# This program uses return values
 
 
-		def calculate_area(length, width):
+		def calculate_area(length: int, width: int) -> int:
 		    # calculate area
 
 		    area = length * width
 		    
 		    return area
 
-		def calculate_perimeter(length, width):
+		def calculate_perimeter(length: int, width: int) -> int:
 		    # calculate perimeter
 		    
 		    perimeter = 2 * (length + width)
