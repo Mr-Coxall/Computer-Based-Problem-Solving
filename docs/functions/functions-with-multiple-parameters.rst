@@ -125,7 +125,7 @@ In the example below, I have a function that can calculate the quadratic formula
 		import math 
 
 
-		def quadratic(a, b, c, add):
+		def quadratic(a: int, b: int, c: int, add: bool) -> float:
 		    x1 = -b / (2*a)
 		    x2 = math.sqrt(b**2 - 4*a*c) / (2*a)
 		    if add == True:
