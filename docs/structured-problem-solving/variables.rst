@@ -108,6 +108,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       :target: https://replit.com/@mrcoxall/Variables-Rust#src/main.rs
       :width: 100
     ☝ Click the button to run the code online
+
   .. group-tab:: Swift
     .. code-block:: Swift
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Swift/main.swift
