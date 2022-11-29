@@ -93,7 +93,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
   .. group-tab:: Rust
     .. code-block:: Rust
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Rust/main.rb
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Rust/main.rs
         :language: rust
         :linenos:
         :emphasize-lines: 8-12
