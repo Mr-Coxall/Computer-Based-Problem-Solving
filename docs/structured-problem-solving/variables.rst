@@ -28,7 +28,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :linenos:
         :emphasize-lines: 14-18
     .. image:: ../images/replit.svg
-      :target="_blank": https://replit.com/@mrcoxall/Variables-CSharp#main.cs
+      :target: https://replit.com/@mrcoxall/Variables-CSharp#main.cs
       :width: 100
     ☝ Click the button to run the code online
 
@@ -41,6 +41,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-CPP#main.cpp
       :width: 100
+    ☝ Click the button to run the code online
 
   .. group-tab:: Go
     .. code-block:: Go
@@ -51,6 +52,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-Go#main.go
       :width: 100
+    ☝ Click the button to run the code online
 
   .. group-tab:: Java
     .. code-block:: Java
@@ -61,6 +63,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-Java#Main.java
       :width: 100
+    ☝ Click the button to run the code online
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
@@ -71,6 +74,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-JS#index.js
       :width: 100
+    ☝ Click the button to run the code online
 
   .. group-tab:: Python
     .. code-block:: Python
@@ -81,6 +85,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-Python#main.py
       :width: 100
+    ☝ Click the button to run the code online
 
   .. group-tab:: Ruby
     .. code-block:: Ruby
@@ -91,6 +96,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-Ruby#main.rb
       :width: 100
+    ☝ Click the button to run the code online
 
   .. group-tab:: Rust
     .. code-block:: Rust
@@ -101,7 +107,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-Rust#src/main.rs
       :width: 100
-
+    ☝ Click the button to run the code online
   .. group-tab:: Swift
     .. code-block:: Swift
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Swift/main.swift
@@ -111,3 +117,4 @@ Variable declaration usually should be grouped at the beginning of a section of 
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-Swift#main.swift
       :width: 100
+    ☝ Click the button to run the code online
