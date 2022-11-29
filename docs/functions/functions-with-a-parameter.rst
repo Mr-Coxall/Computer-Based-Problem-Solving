@@ -102,7 +102,7 @@ The following is the function declaration line for the examples above:
     .. code-block:: Python
 
 		# declaring a function
-		def calculate_area(length, width):
+		def calculate_area(length: int, width: int):
 		    ...
 
   .. group-tab:: Ruby
@@ -207,7 +207,7 @@ Here is a full example of the previous sections program, but now the main functi
 		# This program uses user defined functions
 
 
-		def calculate_area(length, width):
+		def calculate_area(length: int, width: int) -> None:
 		    # calculate area
 
 		    # process
@@ -217,7 +217,7 @@ Here is a full example of the previous sections program, but now the main functi
 		    print("The area is {0} cm²".format(area))
 
 
-		def calculate_perimeter(length, width):
+		def calculate_perimeter(length: int, width: int) -> None:
 		    # calculate perimeter
 		    
 		    # process
