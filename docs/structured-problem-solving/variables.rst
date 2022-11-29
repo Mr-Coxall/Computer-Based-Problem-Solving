@@ -91,6 +91,16 @@ Variable declaration usually should be grouped at the beginning of a section of 
       :target: https://replit.com/@mrcoxall/Variables-Ruby#main.rb
       :width: 100
 
+  .. group-tab:: Rust
+    .. code-block:: Rust
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Rust/main.rb
+        :language: rust
+        :linenos:
+        :emphasize-lines: 8-12
+    .. image:: ../images/replit.svg
+      :target: https://replit.com/@mrcoxall/Variables-Rust#src/main.rs
+      :width: 100
+
   .. group-tab:: Swift
     .. code-block:: Swift
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Swift/main.swift
