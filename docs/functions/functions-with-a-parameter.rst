@@ -102,7 +102,7 @@ The following is the function declaration line for the examples above:
     .. code-block:: Python
 
 		# declaring a function
-		def calculate_area(length: int, width: int):
+		def calculate_area(length: int, width: int) -> None:
 		    ...
 
   .. group-tab:: Ruby
