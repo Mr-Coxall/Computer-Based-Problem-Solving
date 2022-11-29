@@ -30,7 +30,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/Variables-CSharp#main.cs
       :width: 100
-      ☝ Click the button to run the code online
+    ☝ Click the button to run the code online
 
   .. group-tab:: C++
     .. code-block:: C++
