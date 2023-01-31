@@ -131,7 +131,7 @@ Each programming language has its own syntax to create and call a function. Here
 		    print("The area is {0} cm²".format(area))
 
 
-		def calculate_perimeter():
+		def calculate_perimeter() -> None:
 		    # calculate perimeter
 		    
 		    # input
