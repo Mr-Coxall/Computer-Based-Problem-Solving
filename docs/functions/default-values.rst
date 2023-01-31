@@ -124,7 +124,7 @@ Notice that right in the declaration of the function, the "default optional para
 		# This program prints out your name, using default function parameters
 
 
-		def full_name(first_name, last_name, middle_name = None):
+		def full_name(first_name: str, last_name: str, middle_name: str = None) -> None:
 		    # return the full formal name
 
 		    full_name = first_name
