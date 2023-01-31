@@ -74,7 +74,7 @@ Each language has its own syntax on how to declare you are going to accept a val
       # This program uses a function by reference
 
 
-      def add_one(someVariable):
+      def add_one(someVariable: int) -> None:
           # function adds 1, by reference
 
           someVariable[0] = someVariable[0] + 1
