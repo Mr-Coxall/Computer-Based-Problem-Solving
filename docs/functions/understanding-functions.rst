@@ -117,7 +117,7 @@ Each programming language has its own syntax to create and call a function. Here
 		# This program uses user defined functions
 
 
-		def calculate_area():
+		def calculate_area() -> None:
 		    # calculate area
 		    
 		    # input
