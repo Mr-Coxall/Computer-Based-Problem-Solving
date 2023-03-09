@@ -113,29 +113,33 @@ In the code examples below, if the variable numberOfStudents (or number_of_stude
     .. code-block:: Python
 
 		#!/usr/bin/env python3
-
-		# Created by: Mr. Coxall
-		# Created on: Sep 2019
-		# This program checks if there is over 30 students
+		"""
+		Created by: Mr. Coxall
+		Created on: Sep 2020
+		This module checks if there is over 30 students
+		"""
 
 
 		import constants
 
 
 		def main():
-		    # this function checks if there is over 30 students
+			"""The main() function checks if there is over 30 students, returns None."""
 
-		    # input
-		    number_of_students = int(input("Enter the number of students: "))
-		    print("")
+			# input
+			number_of_students = int(input("Enter the number of students: "))
+			print("")
 
-		    # process & output
-		    if number_of_students > constants.MAX_STUDENT_NUMBER:
-		        print("Too many students!")
+			# process & output
+			if number_of_students > constants.MAX_STUDENT_NUMBER:
+				print("Too many students!")
+
+			print("\nDone.")
 
 
 		if __name__ == "__main__":
-		    main()
+			main()
+
 
 
   .. group-tab:: Ruby
