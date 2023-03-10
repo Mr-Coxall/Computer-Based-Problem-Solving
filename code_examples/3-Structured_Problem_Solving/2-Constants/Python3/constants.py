@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-
-# Created by: Mr. Coxall
-# Created on: Sep 2020
-# This contains constants
+"""
+Created by: Mr. Coxall
+Created on: Sep 2020
+This module holds constants
+"""
 
 # constant definition
 ROOM_NUMBER = 212

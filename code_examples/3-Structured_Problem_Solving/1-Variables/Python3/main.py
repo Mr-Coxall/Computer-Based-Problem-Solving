@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
+"""
+Created by: Mr. Coxall
+Created on: Sep 2020
+This module shows declaring variables
+"""
 
-# Created by: Mr. Coxall
-# Created on: Sep 2020
-# This program shows declaring variables
-
-
-def main():
-    # variable definition
+def main() -> None:
+    """The main() function shows declaring variables, returns None."""
     is_current = True  # bool
     age = 32  # int
     area = 32.45  # float

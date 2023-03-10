@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
+"""
+Created by: Mr. Coxall
+Created on: Sep 2020
+This module shows assingment statements
+"""
 
-# Created by: Mr. Coxall
-# Created on: Sep 2020
-# This program shows assingment statements
 
-
-def main():
-    # variable definition
+def main() -> None:
+    """The main() function shows variable definition, returns None."""
     number_of_students = 2
     width = 32.5
     length = 10.0
