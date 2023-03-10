@@ -4,7 +4,8 @@
 // Created on: Sep 2020
 // This program shows declaring variables
 
-variable definition
+#include <stdio.h>
+#include <stdbool.h>
 
 int main() {
     // variable definition
@@ -15,7 +16,7 @@ int main() {
 
     printf("%d\n", isCurrent);
     printf("%d\n", age);
-    printf("%.2\n", area);
+    printf("%.2f\n", area);
     printf("%s\n", someWords);
 
     printf("\nDone.\n");
