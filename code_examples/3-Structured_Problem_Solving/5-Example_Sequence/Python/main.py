@@ -2,40 +2,27 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module shows how local and global variables work
+This module calculates total from subtotal and tax
 """
 
-# global variable
-variable_x = 25
-
-
-def local_variable() -> None:
-    """The local_variable() function creates local variables, returns None."""
-    variable_x = 10
-    variable_y = 30
-
-    variable_x = variable_x + 1
-    variable_z = variable_x + variable_y
-
-    print(f"Local variable:  {variable_x} + {variable_y} = {variable_z}")
-
-
-def global_variable() -> None:
-    """The global_variable() function uses a global variable, returns None."""
-    global variable_x
-    variable_y = 30
-
-    variable_x = variable_x + 1
-    variable_z = variable_x + variable_y
-
-    print(f"Global variable: {variable_x} + {variable_y} = {variable_z}")
+import constants
 
 
 def main() -> None:
-    """The main() function shows how local and global variables work, returns None."""
-    local_variable()
-    global_variable()
+    """The main() function calculates total from subtotal and tax, returns None."""
 
+    # input
+    sub_total = float(input("Enter the subtotal: $"))
+
+    # process
+    tax = sub_total * constants.HST
+    total = sub_total + tax
+
+    # output
+    print("")
+    print(f"The HST is ${tax:,.2f}.")
+    print(f"The total cost is ${total:,.2f}.")
+    
     print("\nDone.")
 
 

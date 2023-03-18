@@ -41,102 +41,6 @@ Pseudo-code converts your flowchart into something that more resembles the final
 
 Once you have the pseudo-code done, the hardest part of solving the problem should be finished. Now you just convert your pseudo-code into the specific programming language you have chosen:
 
-
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-		// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-		//
-		// Created by: Mr. Coxall
-		// Created on: Sep 2019
-		// This program calculates total from subtotal and tax
-
-		#include <iostream>
-		#include <iomanip>
-
-		int main() {
-		    // this function calculates total from subtotal and tax
-		    const float HST = 0.13;
-		    float tax;
-		    float subTotal;
-		    float total;
-
-		    // input
-		    std::cout << "Enter the subtotal: $";
-		    std::cin >> subTotal;
-
-		    // process
-		    tax = + subTotal * HST;
-		    total = subTotal + tax;
-
-		    // output
-		    std::cout << "" << std::endl;
-		    std::cout << "The HST is: $" 
-		              << std::fixed << std::setprecision(2) << std::setfill('0')
-		              << tax << ", and the total cost is: $"
-		              << std::fixed << std::setprecision(2) << std::setfill('0')
-		              << total << "." << std::endl;
-		}
-        
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-      // This program calculates total from subtotal and tax
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-       // This program calculates total from subtotal and tax
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-       // This program shows how local and global variables work
-
-  .. group-tab:: Python
-
-    .. code-block:: Python
-
-		#!/usr/bin/env python3
-
-		# Created by: Mr. Coxall
-		# Created on: Sep 2019
-		# This program calculates total from subtotal and tax
-
-
-		import constants
-
-
-		def main():
-		    # this function calculates total from subtotal and tax
-
-		    # input
-		    sub_total = float(input("Enter the subtotal: $"))
-
-		    # process
-		    tax = sub_total * constants.HST
-		    total = sub_total + tax
-
-		    # output
-		    print("")
-		    print("The HST is ${0:,.2f}, and the total cost is: ${1:,.2f}"
-		        .format(tax, total))
-
-
-		if __name__ == "__main__":
-		    main()
-		    
-
-
-
-
 .. tabs::
   .. group-tab:: C
     .. code-block:: C
@@ -179,9 +83,6 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/5-Example_Sequence/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 8-9, 12-20, 23-31
-
-
 
 This program calculates total from subtotal and tax
 
