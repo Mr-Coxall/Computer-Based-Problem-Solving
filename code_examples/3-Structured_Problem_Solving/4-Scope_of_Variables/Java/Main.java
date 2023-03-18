@@ -1,5 +1,5 @@
 /*
- * This program program shows assingment statements
+ * This program shows how local and global variables work
  *
  * @author  Mr Coxall
  * @version 1.0
@@ -7,50 +7,53 @@
  */
 
 final class Main {
-  private Main() {
+    private Main() {
     // Prevent instantiation
     // Optional: throw an exception e.g. AssertionError
     // if this ever *is* called
     throw new IllegalStateException("Cannot be instantiated");
-  }
+    }
 
-  /** Constant number TWO. */
-  private static final int TWO = 2;
+    // global variable
+    static int variableX = 25;
 
-  /** Constant number THIRTY_TWO_POINT_FIVE. */
-  private static final float THIRTY_TWO_POINT_FIVE = 32.5F;
+    /**
+    * The localVariable() function.
+    *
+    * @param nil
+    * @return nil
+    */
+    public static void localVariable() {
+        int variableX = 10;
+        int variableY = 30;
+        int variableZ = variableX + variableY;
 
-  /** Constant number TEN. */
-  private static final float TEN = 10.0F;
+        System.out.println("Local variableX, variableY, variableZ: " + variableX + " + " + variableY + " = " + variableZ);
+    }
 
-  /** Constant number FIVE. */
-  private static final int FIVE = 5;
+    /**
+    * The globalVariable() function.
+    *
+    * @param nil
+    * @return nil
+    */
+    public static void globalVariable() {
+        int variableY = 30;
+        int variableZ = variableX + variableY;
 
-  /**
-   * Main entry point into program.
-   *
-   * @param args nothing passed in
-   */
-  public static void main(final String[] args) {
-    // variable definition
-    int numberOfStudents = TWO;
-    float width = THIRTY_TWO_POINT_FIVE;
-    float length = TEN;
-    float areaOfRectangle = 0F;
-    String someWords1 = "Hello";
-    String someWords2 = "Wordl!";
-    String helloWorld = null;
+        System.out.println("Local variableX, variableY, variableZ: " + variableX + " + " + variableY + " = " + variableZ);
+    }
 
-    // using assignment statements
-    numberOfStudents = numberOfStudents + FIVE;
-    areaOfRectangle = length * width;
-    helloWorld = someWords1 + ", " + someWords2;
+    /**
+    * Main entry point into program.
+    *
+    * @param args nothing passed in
+    */
+    public static void main(final String[] args) {
+        // this function calls local and global
+        localVariable();
+        globalVariable();
 
-    // output
-    System.out.println("The number of students is: " + numberOfStudents);
-    System.out.println("The area of a rectangle is: " + areaOfRectangle + " cm²");
-    System.out.println(helloWorld);
-
-    System.out.println("\nDone.");
-  }
+        System.out.println("\nDone.");
+    }
 }

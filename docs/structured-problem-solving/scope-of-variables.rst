@@ -34,7 +34,7 @@ What if for some reason you needed a variable to be accessible to several differ
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 51-54
+        :emphasize-lines: 20-32, 34-45
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
