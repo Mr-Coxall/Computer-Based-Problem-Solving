@@ -14,11 +14,15 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@main
+        with: 
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
             
       - name: Lint Code Base
         uses: github/super-linter@main
         env:
           VALIDATE_ALL_CODEBASE: true
+          VALIDATE_JAVA: false
           VALIDATE_JAVASCRIPT_STANDARD: false
           VALIDATE_CLANG_FORMAT: false
           VALIDATE_JSCPD: false
