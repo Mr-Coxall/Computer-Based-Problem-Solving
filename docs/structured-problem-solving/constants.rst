@@ -9,15 +9,12 @@ Constants just like variables hold a particular value in memory for a programmer
 
 
 .. tabs::
-  .. group-tab:: C#
-    .. code-block:: C#
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CSharp/main.cs
-        :language: C#
+  .. group-tab:: C
+    .. code-block:: C
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/C/main.c
+        :language: C
         :linenos:
-        :emphasize-lines: 14-17
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Constants-CSharp#main.cs
-      :width: 100
+        :emphasize-lines: 10-13
         
   .. group-tab:: C++
     .. code-block:: C++
@@ -25,9 +22,13 @@ Constants just like variables hold a particular value in memory for a programmer
         :language: C++
         :linenos:
         :emphasize-lines: 10-13
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Constants-CPP#main.cpp
-      :width: 100
+
+  .. group-tab:: C#
+    .. code-block:: C#
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CSharp/main.cs
+        :language: C#
+        :linenos:
+        :emphasize-lines: 14-17
 
   .. group-tab:: Java
     .. code-block:: Java
@@ -35,9 +36,6 @@ Constants just like variables hold a particular value in memory for a programmer
         :language: Java
         :linenos:
         :emphasize-lines: 17-20, 22-25, 27-30
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Constants-Java#Main.java
-      :width: 100
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
@@ -45,9 +43,6 @@ Constants just like variables hold a particular value in memory for a programmer
         :language: javascript
         :linenos:
         :emphasize-lines: 7-10
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Constants-JS#index.js
-      :width: 100
 
   .. group-tab:: Python
     .. code-block:: Python
@@ -67,19 +62,6 @@ Constants just like variables hold a particular value in memory for a programmer
         :language: python
         :linenos:
         :emphasize-lines: 7
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Constants-Python#main.py
-      :width: 100
-
-  .. group-tab:: Ruby
-    .. code-block:: Ruby
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Ruby/main.rb
-        :language: ruby
-        :linenos:
-        :emphasize-lines: 7-12
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Constants-Ruby#main.rb
-      :width: 100
 
   .. group-tab:: Swift
     .. code-block:: Swift
@@ -87,6 +69,3 @@ Constants just like variables hold a particular value in memory for a programmer
         :language: swift
         :linenos:
         :emphasize-lines: 8-12
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Constants-Swift#main.swift
-      :width: 100
