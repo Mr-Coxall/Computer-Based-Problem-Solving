@@ -1,5 +1,6 @@
 /*
  * This program shows declaring variables
+ * .... this was linted by GitHub Actions
  *
  * @author  Mr Coxall
  * @version 1.0
