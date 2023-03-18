@@ -29,6 +29,13 @@ What if for some reason you needed a variable to be accessible to several differ
         :linenos:
         :emphasize-lines: 14-15, 17-27, 29-38
 
+  .. group-tab:: Go
+    .. code-block:: Go
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Go/main.go
+        :language: go
+        :linenos:
+        :emphasize-lines: 11-12, 14-23, 25-33
+
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/Java/Main.java

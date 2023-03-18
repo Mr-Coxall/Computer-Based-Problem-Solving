@@ -26,7 +26,7 @@ func globalVariable() {
 	// this shows what happens with global variables
 	variableY := 30
 
-	variableX = variableX + 1
+	variableX++
 	variableZ := variableX + variableY
 
 	fmt.Println("Global variableX, variableY, variableZ:", variableX, "+", variableY, "=", variableZ)

@@ -30,6 +30,13 @@ Constants just like variables hold a particular value in memory for a programmer
         :linenos:
         :emphasize-lines: 14-17
 
+  .. group-tab:: Go
+    .. code-block:: Go
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Go/main.go
+        :language: go
+        :linenos:
+        :emphasize-lines: 12-15
+
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Java/Main.java

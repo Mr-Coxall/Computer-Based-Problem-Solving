@@ -17,7 +17,7 @@ func main() {
 	someWords2 := "World!"
 
 	// using assignment statements
-	numberOfStudents = numberOfStudents + 5
+	numberOfStudents += 5
 	areaOfRectangle := length * width
 	helloWorld := someWords1 + ", " + someWords2
 

@@ -29,6 +29,13 @@ Here are a few examples of assignment statements:
         :linenos:
         :emphasize-lines: 23-26
 
+  .. group-tab:: Go
+    .. code-block:: Go
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Go/main.go
+        :language: go
+        :linenos:
+        :emphasize-lines: 19-22
+
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Java/Main.java
