@@ -1,34 +1,39 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program shows assingment statements
+ * This program shows how local and global variables work
 */
 
 using System;
 
 /*
  * The Program class
- * Contains all methods for performing basic variable usage
+ * Contains all methods for performing how local and global variables work
 */
 class Program {
+
+    // global variable
+    public static int variableX = 25;
+
+    static void localVariable() {
+        // this shows what happens with local variables
+        int variableX = 10;
+        int variableY = 30;
+        int variableZ = variableX + variableY;
+        Console.WriteLine ($"Local variableX, variableY, variableZ: {variableX} + {variableY} =  {variableZ}");
+    }
+
+    static void globalVariable() {
+        // this shows what happens with global variables
+        Program.variableX = Program.variableX + 1;
+        int variableY = 30;
+        int variableZ = variableX + variableY;
+        Console.WriteLine ($"Local variableX, variableY, variableZ: {variableX} + {variableY} =  {variableZ}");
+    }
+
     public static void Main (string[] args) {
-        // variable definition
-        int numberOfStudents = 2;
-        float width = 32.5F;
-        float length = 10.0F;
-        float areaOfRectangle = 0F;
-        string someWords1 = "Hello";
-        string someWords2 = "Wordl!";
-        string helloWorld = null;
-
-        // using assignment statements
-        numberOfStudents = numberOfStudents + 5;
-        areaOfRectangle = length * width;
-        helloWorld = someWords1 + ", " + someWords2; 
-
-        // output
-        Console.WriteLine ("The number of students is: " + numberOfStudents);
-        Console.WriteLine ("The area of a rectangle is: " + areaOfRectangle + " cm²");
-        Console.WriteLine (helloWorld);
+        // this function calls local and global
+        localVariable();
+        globalVariable();
 
         Console.WriteLine ("\nDone.");
     }

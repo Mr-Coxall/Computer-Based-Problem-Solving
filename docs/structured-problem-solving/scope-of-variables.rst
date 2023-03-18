@@ -27,7 +27,7 @@ What if for some reason you needed a variable to be accessible to several differ
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 23-26
+        :emphasize-lines: 17-23, 25-31
 
   .. group-tab:: Java
     .. code-block:: Java
@@ -35,9 +35,6 @@ What if for some reason you needed a variable to be accessible to several differ
         :language: java
         :linenos:
         :emphasize-lines: 51-54
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/AssingmentStatements-Java#Main.cpp
-      :width: 100
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
@@ -59,6 +56,3 @@ What if for some reason you needed a variable to be accessible to several differ
         :language: swift
         :linenos:
         :emphasize-lines: 18-21
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/AssingmentStatements-Swift#main.swift
-      :width: 100
