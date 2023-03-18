@@ -26,7 +26,10 @@ final class Main {
   public static void localVariable() {
     int variableX = 10;
     int variableY = 30;
-    int variableZ = variableX + variableY;
+    int variableZ;
+
+    variableX = variableX + 1;
+    variableZ = variableX + variableY;
 
     System.out.println(
         "Local variableX, variableY, variableZ: "
@@ -45,7 +48,10 @@ final class Main {
    */
   public static void globalVariable() {
     int variableY = 30;
-    int variableZ = variableX + variableY;
+    int variableZ;
+
+    variableX = variableX + 1;
+    variableZ = variableX + variableY;
 
     System.out.println(
         "Local variableX, variableY, variableZ: "

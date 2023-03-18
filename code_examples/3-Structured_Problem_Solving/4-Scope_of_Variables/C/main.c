@@ -13,15 +13,22 @@ void localVariable() {
     // this shows what happens with local variables
     int variableX = 10;
     int variableY = 30;
-    int variableZ = variableX + variableY;
+    int variableZ;
+
+    variableX = variableX + 1;
+    variableZ = variableX + variableY;
+    
     printf("Local variableX, variableY, variableZ: %d + %d = %d\n", variableX, variableY, variableZ);
 }
 
 void globalVariable() {
     // this shows what happens with global variables
-    variableX = variableX + 1;
     int variableY = 30;
-    int variableZ = variableX + variableY;
+    int variableZ;
+
+    variableX = variableX + 1;
+    variableZ = variableX + variableY;
+
     printf("Local variableX, variableY, variableZ: %d + %d = %d\n", variableX, variableY, variableZ);
 }
 

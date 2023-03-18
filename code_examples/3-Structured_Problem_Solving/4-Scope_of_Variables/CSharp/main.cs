@@ -18,15 +18,22 @@ class Program {
         // this shows what happens with local variables
         int variableX = 10;
         int variableY = 30;
-        int variableZ = variableX + variableY;
+        int variableZ;
+
+        variableX = variableX + 1;
+        variableZ = variableX + variableY;
+
         Console.WriteLine ($"Local variableX, variableY, variableZ: {variableX} + {variableY} =  {variableZ}");
     }
 
     static void globalVariable() {
         // this shows what happens with global variables
-        Program.variableX = Program.variableX + 1;
         int variableY = 30;
-        int variableZ = variableX + variableY;
+        int variableZ;
+
+        variableX = variableX + 1;
+        variableZ = variableX + variableY;
+
         Console.WriteLine ($"Local variableX, variableY, variableZ: {variableX} + {variableY} =  {variableZ}");
     }
 

@@ -10,15 +10,20 @@ function localVariable() {
     // this shows what happens with local variables
     let variableX = 10
     let variableY = 30
+
+    variableX = variableX + 1
     let variableZ = variableX + variableY
+
     console.log("Local variableX, variableY, variableZ: " + variableX + " + " + variableY + " = " + variableZ)
 }
 
 function globalVariable() {
     // this shows what happens with global variables
-    variableX = variableX + 1;
-    let variableY = 30;
-    let variableZ = variableX + variableY;
+    let variableY = 30
+
+    variableX = variableX + 1
+    let variableZ = variableX + variableY
+
     console.log("Local variableX, variableY, variableZ: " + variableX + " + " + variableY + " = " + variableZ)
 }
 

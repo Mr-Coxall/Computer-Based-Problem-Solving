@@ -38,7 +38,7 @@ What if for some reason you needed a variable to be accessible to several differ
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/JavaScript/index.js
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 6-7, 9-15, 17-23

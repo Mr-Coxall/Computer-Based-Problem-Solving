@@ -13,16 +13,23 @@ void localVariable() {
     // this shows what happens with local variables
     int variableX = 10;
     int variableY = 30;
-    int variableZ = variableX + variableY;
+    int variableZ;
+
+    variableX = variableX + 1;
+    variableZ = variableX + variableY;
+
     std::cout << "Local variableX, variableY, variableZ: " << variableX
               << " + " << variableY << " = " << variableZ << std::endl;
 }
 
 void globalVariable() {
     // this shows what happens with global variables
-    variableX = variableX + 1;
     int variableY = 30;
-    int variableZ = variableX + variableY;
+    int variableZ;
+
+    variableX = variableX + 1;
+    variableZ = variableX + variableY;
+
     std::cout << "Local variableX, variableY, variableZ: " << variableX
               << " + " << variableY << " = " << variableZ << std::endl;
 }
