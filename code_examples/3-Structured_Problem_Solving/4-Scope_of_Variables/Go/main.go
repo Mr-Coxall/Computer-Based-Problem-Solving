@@ -13,10 +13,10 @@ var variableX = 25
 
 func localVariable() {
 	// this shows what happens with local variables
-	variableX := 10
-	variableY := 30
+	var variableX = 10
+	var variableY = 30
 
-	variableX = variableX + 1
+	variableX++
 	variableZ := variableX + variableY
 
 	fmt.Println("Local variableX, variableY, variableZ:", variableX, "+", variableY, "=", variableZ)

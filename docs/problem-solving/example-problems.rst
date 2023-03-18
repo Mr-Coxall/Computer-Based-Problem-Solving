@@ -3,7 +3,7 @@
 Example Problems
 ================
 
-Here are some examples of problems and a possible solution using the six step method. Note that these problems are not necessarily problems that you would use a computer to help you solve. This is an important thing to remember, not all problems should be solved with a computer. Although this book is about solving problems using a computer, there are many problems that are better solved not using a computer and that is perfectly ok. Sometimes your job as a programmer might be to identify that you should not be solving the problem on a computer. Latter on these six steps will be translated into six step used to solve problems that a computer program will be used to help solve.
+Here are some examples of problems and a possible solution using the six step method. Note that these problems are not necessarily problems that you would use a computer to help you solve. This is an important thing to remember, not all problems should be solved with a computer. Although this book is about solving problems using a computer, there are many problems that are better solved not using a computer and that is perfectly OK. Sometimes your job as a programmer might be to identify that you should not be solving the problem on a computer. Latter on these six steps will be translated into six step used to solve problems that a programmer can use.
 
 Folding Paper
 -------------
@@ -20,11 +20,11 @@ For this problem our model will just be our actual physical piece of paper. It i
 
 3. Analyze the model.
 ^^^^^^^^^^^^^^^^^^^^^
-You should check to make sure that your model will be correct. What is your size of paper? Would that not make a difference in how many times you can fold it? Maybe not? Once again you might have to go back to the source of the question and get more information. Maybe the real question is, “How many times can a piece of 8½"x 11" paper be folded?”
+You should check to make sure that your model will be correct. What is your size of paper? Would that not make a difference in how many times you can fold it? Maybe not? Once again you might have to go back to the source of the question and get more information. Maybe the real question is, “How many times can a piece of 8½"x 11" photocopy paper be folded?”
 
 4. Find the solution.
 ^^^^^^^^^^^^^^^^^^^^^
-In this case to find the solution we will take our piece of 8½"x 11" piece of paper and keep folding it until we cannot longer do it. Should we try more than once?
+In this case to find the solution we will take our piece of 8½"x 11" paper and keep folding it until we no longer can. Should we try more than once?
 
 5. Check the solution.
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -90,4 +90,4 @@ It is always important to check your solution. In this case since our solution c
 ^^^^^^^^^^^^^^^^^^^^^^^^
 Now that you have proven that the answer is 98 days, make sure you document it, so that someone else does not have to figure it out but can just refer to your answer and check your solution.
 
-Remember not to always go with your gut instinct and thing because it is following a patter you know the answer instantly without following through with the steps. Do all six steps and always check your answer.
+Remember not to always go with your gut instinct and think because it is following a patter you know the answer instantly without following through with the steps. Do all six steps and always check your answer.

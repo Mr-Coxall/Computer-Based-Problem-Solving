@@ -10,7 +10,7 @@ The table below shows the initial six steps that we have been using for generic 
 ===  =========================  =========================
 _    **Generic Step**           **Computer Programming Step**
 #1   What is the problem        Top-Down Chart
-#2   Make a model               Flow Chart & StoryBoard
+#2   Make a model               Flow Chart
 #3   Analyze the model          Pseudocode
 #4   Find the solution          Actually type in the code
 #5   Check the solution         Style check & test for errors
