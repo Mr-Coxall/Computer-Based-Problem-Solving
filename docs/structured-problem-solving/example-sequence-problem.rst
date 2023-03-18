@@ -156,6 +156,12 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
         :language: C#
         :linenos:
 
+  .. group-tab:: Go
+    .. code-block:: Go
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/5-Example_Sequence/Go/main.go
+        :language: go
+        :linenos:
+
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/5-Example_Sequence/Java/Main.java
