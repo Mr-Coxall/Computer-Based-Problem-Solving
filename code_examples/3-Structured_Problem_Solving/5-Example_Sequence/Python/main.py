@@ -22,7 +22,7 @@ def main() -> None:
     print("")
     print(f"The HST is ${tax:,.2f}.")
     print(f"The total cost is ${total:,.2f}.")
-    
+
     print("\nDone.")
 
 

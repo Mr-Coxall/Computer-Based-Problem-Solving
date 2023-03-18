@@ -24,7 +24,7 @@ int main() {
 
     // output
     std::cout << "" << std::endl;
-    std::cout << "The HST is: $" 
+    std::cout << "The HST is: $"
                 << std::fixed << std::setprecision(2) << std::setfill('0')
                 << tax << "." << std::endl;
     std::cout << "The total cost is: $"
