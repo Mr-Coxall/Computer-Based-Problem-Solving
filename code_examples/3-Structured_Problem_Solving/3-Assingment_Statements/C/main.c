@@ -4,7 +4,8 @@
 // Created on: Sep 2020
 // This program shows assingment statements
 
-#include <iostream>
+#include <stdio.h>
+#include <string.h>
 
 int main() {
     // variable definition
@@ -12,20 +13,22 @@ int main() {
     float width = 32.5F;
     float length = 10.0F;
     float areaOfRectangle = 0;
-    std::string someWords1 = "Hello";
-    std::string someWords2 = "Wordl!";
-    std::string helloWorld = "";
+    char someWords1[] = "Hello";
+    char someWords2[] = "Wordl!";
+    char helloWorld[13] = "";
 
     // using assignment statements
     numberOfStudents = numberOfStudents + 5;
     areaOfRectangle = length * width;
-    helloWorld = someWords1 + ", " + someWords2;
+    strcat(helloWorld, someWords1);
+    strcat(helloWorld, ", ");
+    strcat(helloWorld, someWords2);
 
     // output
-    std::cout << "The number of students is: " << numberOfStudents << std::endl;
-    std::cout << "The area of a rectangle is: " << areaOfRectangle
-              << " cm²" << std::endl;
-    std::cout << helloWorld << std::endl;
+    printf("The number of students is: %d\n", numberOfStudents);
+    printf("The area of a rectangle is: %.2f cm²\n", areaOfRectangle);
+    printf("%s\n", helloWorld);
 
-    std::cout << "\nDone." << std::endl;
+    printf("\nDone.\n");
+    return 0;
 }

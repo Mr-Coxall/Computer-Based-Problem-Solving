@@ -8,15 +8,12 @@ Programs can have many variables. Usually information is gathered from the user,
 Here are a few examples of assignment statements:
 
 .. tabs::
-  .. group-tab:: C#
-    .. code-block:: C#
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/CSharp/main.cs
-        :language: C#
+  .. group-tab:: C
+    .. code-block:: C
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/C/main.c
+        :language: C
         :linenos:
-        :emphasize-lines: 23-26
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/AssingmentStatements-CSharp#main.cs
-      :width: 100
+        :emphasize-lines: 20-25
 
   .. group-tab:: C++
     .. code-block:: C++
@@ -24,9 +21,13 @@ Here are a few examples of assignment statements:
         :language: C++
         :linenos:
         :emphasize-lines: 19-22
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/AssingmentStatements-CPP#main.cpp
-      :width: 100
+
+  .. group-tab:: C#
+    .. code-block:: C#
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/CSharp/main.cs
+        :language: C#
+        :linenos:
+        :emphasize-lines: 23-26
 
   .. group-tab:: Java
     .. code-block:: Java
@@ -34,9 +35,6 @@ Here are a few examples of assignment statements:
         :language: java
         :linenos:
         :emphasize-lines: 51-54
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/AssingmentStatements-Java#Main.cpp
-      :width: 100
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
@@ -44,29 +42,13 @@ Here are a few examples of assignment statements:
         :language: javascript
         :linenos:
         :emphasize-lines: 13-16
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/AssingmentStatements-JS#index.js
-      :width: 100
 
   .. group-tab:: Python
     .. code-block:: Python
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Python3/main.py
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Python/main.py
         :language: python
         :linenos:
         :emphasize-lines: 16-19
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/AssingmentStatements-Python#main.py
-      :width: 100
-
-  .. group-tab:: Ruby
-    .. code-block:: Ruby
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Ruby/main.rb
-        :language: ruby
-        :linenos:
-        :emphasize-lines: 14-17
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/AssingmentStatements-Ruby#main.rb
-      :width: 100
 
   .. group-tab:: Swift
     .. code-block:: Swift
@@ -74,6 +56,3 @@ Here are a few examples of assignment statements:
         :language: swift
         :linenos:
         :emphasize-lines: 18-21
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/AssingmentStatements-Swift#main.swift
-      :width: 100
