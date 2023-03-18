@@ -24,8 +24,9 @@ int main() {
     
     // output
     printf("\n");
-    printf("The HST is: $%.2f and the total cost is: $%.2f.\n", tax, total);
+    printf("The HST is: $%.2f.\n", tax);
+    printf("The total cost is: $%.2f.\n", total);
 
-    printf("\nDone.");
+    printf("\nDone.\n");
     return 0;
 }
