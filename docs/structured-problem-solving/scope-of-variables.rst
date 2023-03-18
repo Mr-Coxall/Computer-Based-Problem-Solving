@@ -13,40 +13,40 @@ What if for some reason you needed a variable to be accessible to several differ
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 9-10, 12-18, 20-26
+        :emphasize-lines: 9-10, 12-22, 24-33
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 9-10, 12-19, 21-28 
+        :emphasize-lines: 9-10, 12-23, 25-35 
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 14-15, 17-23, 25-31
+        :emphasize-lines: 14-15, 17-27, 29-38
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 17-18, 20-38, 40-57
+        :emphasize-lines: 17-18, 20-41, 43-63
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 6-7, 9-15, 17-23
+        :emphasize-lines: 6-7, 9-18, 20-28
 
   .. group-tab:: Python
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 8-10, 12-18, 21-27
+        :emphasize-lines: 8-9, 12-20, 23-31
 
