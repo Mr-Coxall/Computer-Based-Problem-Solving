@@ -21,16 +21,6 @@ String           Variable length number of characters
 Variable declaration usually should be grouped at the beginning of a section of code (sub, procedure, function, method...), after the initial `comments <https://en.wikipedia.org/wiki/Comment_%28computer_programming%29>`_. A blank line follows the declaration and separates the declaration from the rest of your code. This makes it easy to see where the declaration starts and ends. Ensuring that your code is easy to read and understand is as important in computer science as it is in English. It is important to remember that your code has two audiences, the computer that needs to `compile <https://en.wikipedia.org/wiki/Compiler>`_ or `interprete <https://en.wikipedia.org/wiki/Interpreter_(computing)>`_ it so that the computer can run your program and even more important, you and everyone else that looks at your source code that are trying to figure out how your program works. Here are some examples of declaring a variable:
 
 .. tabs::
-  .. group-tab:: C#
-    .. code-block:: C#
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CSharp/main.cs
-        :language: C#
-        :linenos:
-        :emphasize-lines: 14-18
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Variables-CSharp#main.cs
-      :width: 100
-    ☝ Click the button to run the code online
 
   .. group-tab:: C
     .. code-block:: C
@@ -38,10 +28,6 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: C
         :linenos:
         :emphasize-lines: 11-15
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Variables-CSharp#main.cs
-      :width: 100
-    ☝ Click the button to run the code online
 
   .. group-tab:: C++
     .. code-block:: C++
@@ -49,10 +35,13 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: C++
         :linenos:
         :emphasize-lines: 10-14
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Variables-CPP#main.cpp
-      :width: 100
-    ☝ Click the button to run the code online
+
+  .. group-tab:: C#
+    .. code-block:: C#
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CSharp/main.cs
+        :language: C#
+        :linenos:
+        :emphasize-lines: 14-18
 
   .. group-tab:: Go
     .. code-block:: Go
@@ -60,10 +49,6 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: go
         :linenos:
         :emphasize-lines: 14-19
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Variables-Go#main.go
-      :width: 100
-    ☝ Click the button to run the code online
 
   .. group-tab:: Java
     .. code-block:: Java
@@ -71,10 +56,6 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: java
         :linenos:
         :emphasize-lines: 27-31
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Variables-Java#Main.java
-      :width: 100
-    ☝ Click the button to run the code online
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
@@ -82,43 +63,13 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: javascript
         :linenos:
         :emphasize-lines: 7-11
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Variables-JS#index.js
-      :width: 100
-    ☝ Click the button to run the code online
 
   .. group-tab:: Python
     .. code-block:: Python
-      .. rli:: https://raw.githubusercontent.com/Mr-Coxall/Structured-Problem-Solving---Variables-Python/main/main.py
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Python/main.py
         :language: python
         :linenos:
         :emphasize-lines: 9-13
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Variables-Python#main.py
-      :width: 100
-    ☝ Click the button to run the code online
-
-  .. group-tab:: Ruby
-    .. code-block:: Ruby
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Ruby/main.rb
-        :language: ruby
-        :linenos:
-        :emphasize-lines: 7-11
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Variables-Ruby#main.rb
-      :width: 100
-    ☝ Click the button to run the code online
-
-  .. group-tab:: Rust
-    .. code-block:: Rust
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Rust/main.rs
-        :language: rust
-        :linenos:
-        :emphasize-lines: 8-12
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Variables-Rust#src/main.rs
-      :width: 100
-    ☝ Click the button to run the code online
 
   .. group-tab:: Swift
     .. code-block:: Swift
@@ -126,7 +77,3 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: swift
         :linenos:
         :emphasize-lines: 8-12
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/Variables-Swift#main.swift
-      :width: 100
-    ☝ Click the button to run the code online
