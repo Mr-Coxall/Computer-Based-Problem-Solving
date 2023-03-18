@@ -50,9 +50,3 @@ What if for some reason you needed a variable to be accessible to several differ
         :linenos:
         :emphasize-lines: 8-10, 12-18, 21-27
 
-  .. group-tab:: Swift
-    .. code-block:: Swift
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/Swift/main.swift
-        :language: swift
-        :linenos:
-        :emphasize-lines: 18-21
