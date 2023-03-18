@@ -39,7 +39,7 @@ Constants just like variables hold a particular value in memory for a programmer
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/JavaScript/index.js
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 7-10
@@ -62,10 +62,3 @@ Constants just like variables hold a particular value in memory for a programmer
         :language: python
         :linenos:
         :emphasize-lines: 8
-
-  .. group-tab:: Swift
-    .. code-block:: Swift
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Swift/main.swift
-        :language: swift
-        :linenos:
-        :emphasize-lines: 8-12
