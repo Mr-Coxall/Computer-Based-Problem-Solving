@@ -1,33 +1,27 @@
-/* Created by: Mr. Coxall
- * Created on: Sep 2020
- * This program shows how local and global variables work
-*/
+// Copyright (c) 2020 Mr. Coxall All rights reserved
+//
+// Created by: Mr. Coxall
+// Created on: Sep 2020
+// This program calculates total from subtotal and tax
 
-// global variable
-var variableX = 25
+const prompt = require('prompt-sync')();
 
-function localVariable() {
-    // this shows what happens with local variables
-    let variableX = 10
-    let variableY = 30
+// this function calculates total from subtotal and tax
+const HST = 0.13;
+let tax;
+let subTotal;
+let total;
 
-    variableX = variableX + 1
-    let variableZ = variableX + variableY
+// get user input
+subTotal = parseFloat(prompt("Enter the subtotal: $"));
 
-    console.log("Local variableX, variableY, variableZ: " + variableX + " + " + variableY + " = " + variableZ)
-}
+// process input
+tax = subTotal * HST;
+total = subTotal + tax;
 
-function globalVariable() {
-    // this shows what happens with global variables
-    let variableY = 30
+// output results
+console.log();
+console.log(`The HST is: $${tax.toFixed(2)}.`);
+console.log(`The total cost is: $${total.toFixed(2)}.`);
 
-    variableX = variableX + 1
-    let variableZ = variableX + variableY
-
-    console.log("Local variableX, variableY, variableZ: " + variableX + " + " + variableY + " = " + variableZ)
-}
-
-localVariable()
-globalVariable()
-
-console.log("\nDone.")
+console.log("\nDone.");

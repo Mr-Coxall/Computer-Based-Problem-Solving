@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program shows how local and global variables work
+ * This program calculates total from subtotal and tax
 */
 
 using System;
@@ -11,36 +11,25 @@ using System;
 */
 class Program {
 
-    // global variable
-    public static int variableX = 25;
-
-    static void localVariable() {
-        // this shows what happens with local variables
-        int variableX = 10;
-        int variableY = 30;
-        int variableZ;
-
-        variableX = variableX + 1;
-        variableZ = variableX + variableY;
-
-        Console.WriteLine ($"Local variableX, variableY, variableZ: {variableX} + {variableY} =  {variableZ}");
-    }
-
-    static void globalVariable() {
-        // this shows what happens with global variables
-        int variableY = 30;
-        int variableZ;
-
-        variableX = variableX + 1;
-        variableZ = variableX + variableY;
-
-        Console.WriteLine ($"Local variableX, variableY, variableZ: {variableX} + {variableY} =  {variableZ}");
-    }
-
     public static void Main (string[] args) {
-        // this function calls local and global
-        localVariable();
-        globalVariable();
+        // this function calculates total from subtotal and tax
+        const float HST = 0.13f;
+        float tax;
+        float subTotal;
+        float total;
+
+        //input
+        Console.Write("Enter the subtotal: $");
+        subTotal = float.Parse(Console.ReadLine());
+
+        // process
+        tax = + subTotal * HST;
+        total = subTotal + tax;
+        
+        // output
+        Console.WriteLine("\n");
+        Console.WriteLine("The HST is: ${0:0.00}.", tax);
+        Console.WriteLine("The total cost is: ${0:0.00}.", total);
 
         Console.WriteLine ("\nDone.");
     }

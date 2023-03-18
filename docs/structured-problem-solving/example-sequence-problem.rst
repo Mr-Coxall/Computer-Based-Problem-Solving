@@ -134,15 +134,7 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 		    main()
 		    
 
-  .. group-tab:: Ruby
 
-    .. code-block:: Ruby
-
-       # This program calculates total from subtotal and tax
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
 
 
 .. tabs::
@@ -163,21 +155,18 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/5-Example_Sequence/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 14-15, 17-27, 29-38
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/5-Example_Sequence/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 17-18, 20-41, 43-63
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/5-Example_Sequence/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 6-7, 9-18, 20-28
 
   .. group-tab:: Python
     .. code-block:: Python
