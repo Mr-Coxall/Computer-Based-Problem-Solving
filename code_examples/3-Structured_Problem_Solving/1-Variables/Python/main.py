@@ -5,6 +5,7 @@ Created on: Sep 2020
 This module shows declaring variables
 """
 
+
 def main() -> None:
     """The main() function shows declaring variables, returns None."""
     is_current = True  # bool

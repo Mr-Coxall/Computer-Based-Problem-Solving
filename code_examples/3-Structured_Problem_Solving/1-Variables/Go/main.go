@@ -12,14 +12,12 @@ import (
 
 func main() {
 	// variable definition
-	var is_current bool = true              // bool
-	var is_old = true                       // type is inferred
-	var age int = 32                        // int
-	var area = 32.4                         // float32
-	var some_words string = "Hello, World!" // string
+	is_current := true              // bool
+	age := 32                       // int
+	area := 32.4                    // float32
+	some_words := "Hello, World!"   // string
 
 	fmt.Println(is_current)
-	fmt.Println(is_old)
 	fmt.Println(age)
 	fmt.Println(area)
 	fmt.Println(some_words)
