@@ -8,25 +8,26 @@ Where a variable is declared is important because it determines its `scope <http
 What if for some reason you needed a variable to be accessible to several different functions within a single program. In this case declaring it within a single function is no good. Another option is to declare the variable at the top of the form class or module, just before any function. If this is done then any function within that program can see and use this variable. This type of variable is called a `global variable <https://en.wikipedia.org/wiki/Global_variable>`_. Global variables should only be used when absolutely necessary; if only one function needs a variable, it should be declared within the function. This is good programming style and also saves computer memory. The following is an example where you can see variables with the same name, being used as global and local variables. Type it in and follow the variables by stepping through the program.
 
 .. tabs::
+  .. group-tab:: C
+    .. code-block:: C
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/C/main.c
+        :language: C
+        :linenos:
+        :emphasize-lines: 12-18, 20-26
+
+  .. group-tab:: C++
+    .. code-block:: C++
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/CPP/main.cpp
+        :language: C++
+        :linenos:
+        :emphasize-lines: 12-19, 21-28 
+
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 23-26
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/ScopeofVariables-CPP#main.cpp
-      :width: 100
-
-  .. group-tab:: C++
-    .. code-block:: C++
-      .. literalinclude:: https://raw.githubusercontent.com/Mr-Coxall/CBPS-Scope_of_Variables-CPP/main/main.cpp
-        :language: C++
-        :linenos:
-        :emphasize-lines: 13-16, 23-26 
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/ScopeofVariables-CPP#main.cpp
-      :width: 100
 
   .. group-tab:: Java
     .. code-block:: Java
@@ -44,28 +45,15 @@ What if for some reason you needed a variable to be accessible to several differ
         :language: javascript
         :linenos:
         :emphasize-lines: 13-16
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/AssingmentStatements-JS#index.js
-      :width: 100
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
     .. code-block:: Python
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/Python3/main.py
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/Python/main.py
         :language: python
         :linenos:
         :emphasize-lines: 16-19
     .. image:: ../images/replit.svg
       :target: https://replit.com/@mrcoxall/AssingmentStatements-Python#main.py
-      :width: 100
-
-  .. group-tab:: Ruby
-    .. code-block:: Ruby
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/Ruby/main.rb
-        :language: ruby
-        :linenos:
-        :emphasize-lines: 14-17
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/AssingmentStatements-Ruby#main.rb
       :width: 100
 
   .. group-tab:: Swift

@@ -4,7 +4,7 @@
 // Created on: Sep 2020
 // This program shows how local and global variables work
 
-#include <iostream>
+#include <stdio.h>
 
 // global variable
 int variableX = 25;
@@ -14,8 +14,7 @@ void localVariable() {
     int variableX = 10;
     int variableY = 30;
     int variableZ = variableX + variableY;
-    std::cout << "Local variableX, variableY, variableZ: " << variableX
-              << " + " << variableY << " = " << variableZ << std::endl;
+    printf("Local variableX, variableY, variableZ: %d + %d = %d\n", variableX, variableY, variableZ);
 }
 
 void globalVariable() {
@@ -23,8 +22,7 @@ void globalVariable() {
     variableX = variableX + 1;
     int variableY = 30;
     int variableZ = variableX + variableY;
-    std::cout << "Local variableX, variableY, variableZ: " << variableX
-              << " + " << variableY << " = " << variableZ << std::endl;
+    printf("Local variableX, variableY, variableZ: %d + %d = %d\n", variableX, variableY, variableZ);
 }
 
 int main() {
@@ -32,5 +30,6 @@ int main() {
     localVariable();
     globalVariable();
 
-    std::cout << "\nDone. " << std::endl;
+    printf("\nDone.\n");
+    return 0;
 }
