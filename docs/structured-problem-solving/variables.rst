@@ -48,7 +48,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 14-19
+        :emphasize-lines: 14-18
 
   .. group-tab:: Java
     .. code-block:: Java
@@ -69,7 +69,7 @@ Variable declaration usually should be grouped at the beginning of a section of 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 9-13
+        :emphasize-lines: 10-14
 
   .. group-tab:: Swift
     .. code-block:: Swift
