@@ -22,6 +22,7 @@ jobs:
         uses: github/super-linter@main
         env:
           VALIDATE_ALL_CODEBASE: true
+          LINTER_RULES_PATH: /.prettierrc
           VALIDATE_JAVA: false
           VALIDATE_JAVASCRIPT_STANDARD: false
           VALIDATE_CLANG_FORMAT: false
