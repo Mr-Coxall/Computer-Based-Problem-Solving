@@ -7,23 +7,23 @@
  */
 
 final class Main {
-  private Main() {
+    private Main() {
     // Prevent instantiation
     // Optional: throw an exception e.g. AssertionError
     // if this ever *is* called
     throw new IllegalStateException("Cannot be instantiated");
-  }
+    }
 
-  /**
-  * Some floating point number.
-  */
-  public static final float SOME_FLOAT = 14.65F;
+    /**
+     * Some floating point number.
+     */
+    public static final float SOME_FLOAT = 14.65F;
 
-  /**
-  * Main entry point into program.
-  * @param args nothing passed in
-  */
-  public static void main(final String[] args) {
+    /**
+     * Main entry point into program.
+     * @param args nothing passed in
+     */
+    public static void main(final String[] args) {
     // variable definition
     boolean isCurrent = true;  // bool
     int age = 0;  // int
@@ -36,5 +36,5 @@ final class Main {
     System.out.println(someWords);
 
     System.out.println("\nDone.");
-  }
+    }
 }

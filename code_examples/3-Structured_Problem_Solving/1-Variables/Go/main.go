@@ -12,10 +12,10 @@ import (
 
 func main() {
 	// variable definition
-	isCurrent := true              // bool
-	age := 32                       // int
-	area := 32.4                    // float32
-	someWords := "Hello, World!"   // string
+	isCurrent := true            // bool
+	age := 32                    // int
+	area := 32.4                 // float32
+	someWords := "Hello, World!" // string
 
 	fmt.Println(isCurrent)
 	fmt.Println(age)
