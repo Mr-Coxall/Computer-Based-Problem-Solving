@@ -38,7 +38,7 @@ final class Main {
     float length = TEN;
     float areaOfRectangle = 0F;
     String someWords1 = "Hello";
-    String someWords2 = "Wordl!";
+    String someWords2 = "World!";
     String helloWorld = null;
 
     // using assignment statements

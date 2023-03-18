@@ -17,7 +17,7 @@ class Program {
         float length = 10.0F;
         float areaOfRectangle = 0F;
         string someWords1 = "Hello";
-        string someWords2 = "Wordl!";
+        string someWords2 = "World!";
         string helloWorld = null;
 
         // using assignment statements

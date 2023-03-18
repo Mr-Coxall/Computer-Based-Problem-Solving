@@ -14,7 +14,7 @@ int main() {
     float length = 10.0F;
     float areaOfRectangle = 0;
     char someWords1[] = "Hello";
-    char someWords2[] = "Wordl!";
+    char someWords2[] = "World!";
     char helloWorld[13] = "";
 
     // using assignment statements

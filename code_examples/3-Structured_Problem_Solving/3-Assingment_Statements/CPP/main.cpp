@@ -13,7 +13,7 @@ int main() {
     float length = 10.0F;
     float areaOfRectangle = 0;
     std::string someWords1 = "Hello";
-    std::string someWords2 = "Wordl!";
+    std::string someWords2 = "World!";
     std::string helloWorld = "";
 
     // using assignment statements

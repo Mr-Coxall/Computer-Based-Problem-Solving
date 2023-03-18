@@ -38,7 +38,7 @@ Here are a few examples of assignment statements:
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/JavaScript/index.js
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 13-16
@@ -49,10 +49,3 @@ Here are a few examples of assignment statements:
         :language: python
         :linenos:
         :emphasize-lines: 17-20
-
-  .. group-tab:: Swift
-    .. code-block:: Swift
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Swift/main.swift
-        :language: swift
-        :linenos:
-        :emphasize-lines: 18-21
