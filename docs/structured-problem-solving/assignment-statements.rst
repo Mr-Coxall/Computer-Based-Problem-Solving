@@ -48,7 +48,7 @@ Here are a few examples of assignment statements:
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 16-19
+        :emphasize-lines: 17-20
 
   .. group-tab:: Swift
     .. code-block:: Swift
