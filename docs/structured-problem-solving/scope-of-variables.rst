@@ -41,7 +41,7 @@ What if for some reason you needed a variable to be accessible to several differ
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/JavaScript/index.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 13-16
+        :emphasize-lines: 9-15, 17-23
 
   .. group-tab:: Python
     .. code-block:: Python

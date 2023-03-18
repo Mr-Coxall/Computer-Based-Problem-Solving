@@ -1,23 +1,28 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program shows assingment statements
+ * This program shows how local and global variables work
 */
 
-// variable definition
-numberOfStudents = 2
-width = 32.5
-length = 10.0
-someWords1 = "Hello"
-someWords2 = "Wordl!"
+// global variable
+var variableX = 25
 
-// using assignment statements
-numberOfStudents = numberOfStudents + 5
-areaOfRectangle = length * width
-helloWorld = someWords1 + ", " + someWords2
+function localVariable() {
+    // this shows what happens with local variables
+    let variableX = 10
+    let variableY = 30
+    let variableZ = variableX + variableY
+    console.log("Local variableX, variableY, variableZ: " + variableX + " + " + variableY + " = " + variableZ)
+}
 
-// output
-console.log("The number of students is: " + numberOfStudents)
-console.log("The area of a rectangle is: " + areaOfRectangle + " cm²")
-console.log(helloWorld)
+function globalVariable() {
+    // this shows what happens with global variables
+    variableX = variableX + 1;
+    let variableY = 30;
+    let variableZ = variableX + variableY;
+    console.log("Local variableX, variableY, variableZ: " + variableX + " + " + variableY + " = " + variableZ)
+}
+
+localVariable()
+globalVariable()
 
 console.log("\nDone.")
