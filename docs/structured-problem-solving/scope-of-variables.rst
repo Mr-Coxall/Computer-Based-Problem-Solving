@@ -51,10 +51,7 @@ What if for some reason you needed a variable to be accessible to several differ
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 16-19
-    .. image:: ../images/replit.svg
-      :target: https://replit.com/@mrcoxall/AssingmentStatements-Python#main.py
-      :width: 100
+        :emphasize-lines: 12-18, 21-27
 
   .. group-tab:: Swift
     .. code-block:: Swift
