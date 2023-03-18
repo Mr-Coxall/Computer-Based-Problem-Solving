@@ -35,7 +35,7 @@ Constants just like variables hold a particular value in memory for a programmer
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Java/Main.java
         :language: Java
         :linenos:
-        :emphasize-lines: 17-20, 22-25, 27-30
+        :emphasize-lines: 17-18, 20-21, 23-24
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
@@ -51,14 +51,14 @@ Constants just like variables hold a particular value in memory for a programmer
       
       constants.py
 
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python3/constants.py
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python/constants.py
         :language: python
         :linenos:
         :emphasize-lines: 7-10
 
       main.py
 
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python3/main.py
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python/main.py
         :language: python
         :linenos:
         :emphasize-lines: 7
