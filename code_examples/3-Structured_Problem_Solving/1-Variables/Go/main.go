@@ -15,12 +15,12 @@ func main() {
 	is_current := true              // bool
 	age := 32                       // int
 	area := 32.4                    // float32
-	some_words := "Hello, World!"   // string
+	someWords := "Hello, World!"   // string
 
 	fmt.Println(is_current)
 	fmt.Println(age)
 	fmt.Println(area)
-	fmt.Println(some_words)
+	fmt.Println(someWords)
 
 	fmt.Println("\nDone.")
 }
