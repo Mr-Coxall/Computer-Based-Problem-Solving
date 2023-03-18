@@ -34,7 +34,7 @@ Here are a few examples of assignment statements:
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 51-54
+        :emphasize-lines: 45-47
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
