@@ -47,21 +47,21 @@ Constants just like variables hold a particular value in memory for a programmer
   .. group-tab:: Python
     .. code-block:: Python
 
-      In Python we normally create a seperate file called constants.py and place all our constants in it
+      In Python we normally create a seperate file called constants.py and place all our constants in it. This is so that we can import the constants into our main.py file. This is a good way to organize your code and keep it clean.
       
       constants.py
 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python/constants.py
         :language: python
         :linenos:
-        :emphasize-lines: 7-10
+        :emphasize-lines: 8-11
 
       main.py
 
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 7
+        :emphasize-lines: 8
 
   .. group-tab:: Swift
     .. code-block:: Swift
