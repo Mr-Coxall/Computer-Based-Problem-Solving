@@ -70,10 +70,3 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: python
         :linenos:
         :emphasize-lines: 10-14
-
-  .. group-tab:: Swift
-    .. code-block:: Swift
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Swift/main.swift
-        :language: swift
-        :linenos:
-        :emphasize-lines: 8-12
