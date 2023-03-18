@@ -6,7 +6,7 @@
  * @since   2020-09-01
  */
 
-import java.util.Scanner;  // Import the Scanner class
+import java.util.Scanner; // Import the Scanner class
 
 final class Main {
   private Main() {
