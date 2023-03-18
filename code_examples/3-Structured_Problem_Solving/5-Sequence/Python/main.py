@@ -13,7 +13,7 @@ def local_variable() -> None:
     """The local_variable() function creates local variables, returns None."""
     variable_x = 10
     variable_y = 30
-
+    
     variable_x = variable_x + 1
     variable_z = variable_x + variable_y
 
