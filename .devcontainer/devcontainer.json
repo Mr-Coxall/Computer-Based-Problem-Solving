@@ -1,0 +1,52 @@
+{
+    "name": "Mr Coxall - Codespace Image",
+    "postCreateCommand": "bash ./.devcontainer/startup.sh",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.autoClosingQuotes": "always",
+                "editor.bracketPairColorization.enabled": true,
+                "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+                "editor.folding": false,
+                "editor.formatOnPaste": true,
+                "editor.guides.bracketPairs": true,
+                "editor.guides.indentation": true,
+                "editor.inlineSuggest.enabled": true,
+                "editor.insertSpaces": true,
+                "editor.lightbulb.enabled": false,
+                "editor.lineNumbers": "on",
+                "editor.minimap.enabled": false,
+                "editor.mouseWheelZoom": true,
+                "editor.renderWhitespace": "all",
+                "editor.smoothScrolling": true,
+                "editor.tabSize": 2,
+                "explorer.confirmDragAndDrop": false,
+                "extensions.ignoreRecommendations": true,
+                "files.eol": "\n",
+                "git.autofetch": true,
+                "git.confirmSync": false,
+                "git.enableSmartCommit": true,
+                "githubPullRequests.defaultMergeMethod": "merge",
+                "html.autoClosingTags": true,
+                "html.format.extraLiners": "",
+                "htmlhint.enable": true,
+                "python.formatting.blackArgs": [
+                    "--line-length",
+                    "120"
+                ],
+                "python.linting.enabled": true,
+                "terminal.integrated.copyOnSelection": true,
+                "terminal.integrated.fontSize": 20,
+                "terminal.integrated.rightClickBehavior": "copyPaste",
+                "terminal.integrated.gpuAcceleration": "off",
+                "window.menuBarVisibility": "classic",
+                "workbench.activityBar.visible": true,
+                "workbench.colorTheme": "GitHub Dark Default",
+                "workbench.iconTheme": "material-icon-theme",
+                "workbench.startupEditor": "none",
+                "workbench.tips.enabled": false,
+                "workbench.welcomePage.walkthroughs.openOnInstall": false
+            }
+        }
+    }
+}

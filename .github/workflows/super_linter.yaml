@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Check out Git repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@main
             
       - name: Lint Code Base
         uses: github/super-linter@main
