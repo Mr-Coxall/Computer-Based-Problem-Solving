@@ -105,7 +105,9 @@ Code for If…Then...Else statement
     :linenos:
     :lines: 1-40
 
-.. parsed-literal::
+Example Output
+^^^^^^^^^^^^^^
+.. parsed-literal:: console
 
   @Mr-Coxall ➜ (master ✗) $ python ./main.py 
   Enter the number of students: 23
@@ -119,7 +121,9 @@ Code for If…Then...Else statement
 
   Done.
 
-.. code-block:: bash
+Example Output
+^^^^^^^^^^^^^^
+.. code-block:: console
 
   @Mr-Coxall ➜ (master ✗) $ python ./main.py 
   Enter the number of students: 32
