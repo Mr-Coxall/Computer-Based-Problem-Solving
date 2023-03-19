@@ -14,7 +14,6 @@ issues:
         - dupl
         - gosec
         - goconst
-        - shadow # because of my Global / Local example
 linters:
   enable:
     - gosec
@@ -25,6 +24,8 @@ linters:
     - gocritic
     - govet
     - revive
+  disable:
+    - shadow # because of my Global / Local example
 linters-settings:
   errcheck:
     # report about assignment of errors to blank identifier: 
