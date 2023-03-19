@@ -107,22 +107,6 @@ Code for If…Then...Else statement
 
 Example Output
 ^^^^^^^^^^^^^^
-.. parsed-literal:: console
-
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the number of students: 23
-  Not too many students.
-
-  Done.
-
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the number of students: 32
-  Too many students!
-
-  Done.
-
-Example Output
-^^^^^^^^^^^^^^
 .. code-block:: console
 
   @Mr-Coxall ➜ (master ✗) $ python ./main.py 
