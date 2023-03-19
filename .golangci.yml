@@ -8,7 +8,7 @@
 # configure golangci-lint
 # https://github.com/golangci/golangci-lint/blob/master/.golangci.example.yml
 skip-files:
-  - "/code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/Go/main.go"
+  - ./code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/Go/*.go
 issues:
   exclude-rules:
     - path: _test\.go
@@ -27,10 +27,10 @@ linters:
     - goconst
     - goimports
     - gocritic
-    - govet
+    # - govet
     - revive
   disable:
-    - shadow # because of my Global / Local example
+    - govet
 linters-settings:
   errcheck:
     # report about assignment of errors to blank identifier: 
