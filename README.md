@@ -3,13 +3,12 @@
 An introductory textbook to Computer Science, focussing on a structured problem solving approach. 
 
 Code examples in:
-- C#
+- C
 - C++
+- C#
 - Java
-- Node.js
+- JavaScript (Node.js)
 - Python
-- Ruby
-- Swift (Linux)
 
 
 [![GitHub's Super Linter](https://github.com/Mr-Coxall/Computer-Based-Problem-Solving/workflows/Super%20Linter/badge.svg)](https://github.com/Mr-Coxall/Computer-Based-Problem-Solving/actions)
