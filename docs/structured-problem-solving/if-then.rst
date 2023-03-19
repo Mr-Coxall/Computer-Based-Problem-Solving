@@ -15,13 +15,13 @@ Here is a problem that can be solved using an If…Then statement. I have a clas
 
 The top-down design will have decision logic in it. You **do not** use a diamond in a top-down design, you still only use rectangles. Here is what a top-down design might look like for this problem:
 
-.. image:: ./images/top-down-decision.png
+.. image:: ./images/top-down-if-then.png
    :alt: Top-Down Design for If…Then statement
    :align: center 
 
 Remember from the section on flowcharts, the diamond shape represented decisions. The If…Then statement is the translation of a decision in a flowchart to code. The above examples would look like the following in a flowchart:
 
-.. image:: ./images/if-then.png
+.. image:: ./images/flowchart-if-then.png
    :alt: If…Then flowchart
    :align: center 
 
