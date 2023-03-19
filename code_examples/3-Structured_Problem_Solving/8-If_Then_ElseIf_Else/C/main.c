@@ -2,24 +2,27 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program checks if ther is over 30 students
+// This program checks a traffic light
 
 #include <stdio.h>
 
 int main() {
-    // this function checks if ther is over 30 students
-    const int MAX_STUDENT_NUMBER = 30;
-    int numberOfStudents;
+    // this function checks a traffic light
+    char lightColor[7];
 
     // input
-    printf("Enter the number of students: ");
-    scanf("%d", &numberOfStudents);
+    printf("Enter the color of the traffic light: ");
+    scanf("%s", lightColor);
 
     // process and output
-    if (numberOfStudents > MAX_STUDENT_NUMBER) {
-        printf("Too many students!\n");
+    if (lightColor == "red") {
+        printf("Stop!\n");
+    } else if (lightColor == "yellow") {
+        printf("Slow down!\n");
+    } else if (lightColor == "green") {
+        printf("Go!\n");
     } else {
-        printf("Not too many students.\n");
+        printf("Not a valid color.\n");
     }
 
     printf("\nDone.\n");

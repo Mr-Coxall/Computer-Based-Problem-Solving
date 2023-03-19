@@ -2,7 +2,7 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module shows using the assignment statement
+This module checks if there is over 30 students
 """
 
 

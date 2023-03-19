@@ -1,5 +1,5 @@
 /*
- * This program checks if ther is over 30 students
+ * This program checks a traffic light
  *
  * @author  Mr Coxall
  * @version 1.0
@@ -9,23 +9,26 @@
 import java.util.Scanner;
 
 public class Main {
-  public static void main(String[] args) {
-    // this function checks if ther is over 30 students
-    final int MAX_STUDENT_NUMBER = 30;
-    int numberOfStudents;
+    public static void main(String[] args) {
+        // this function checks a traffic light
+        String lightColor;
 
-    // input
-    Scanner input = new Scanner(System.in);
-    System.out.print("Enter the number of students: ");
-    numberOfStudents = input.nextInt();
+        // input
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the color of the traffic light: ");
+        lightColor = scanner.nextLine();
 
-    // process and output
-    if (numberOfStudents > MAX_STUDENT_NUMBER) {
-      System.out.println("Too many students!");
-    } else {
-      System.out.println("Not too many students.");
+        // process and output
+        if (lightColor.equals("red")) {
+            System.out.println("Stop!");
+        } else if (lightColor.equals("yellow")) {
+            System.out.println("Slow down!");
+        } else if (lightColor.equals("green")) {
+            System.out.println("Go!");
+        } else {
+            System.out.println("Not a valid color.");
+        }
+
+        System.out.println("\nDone.");
     }
-
-    System.out.println("\nDone.");
-  }
 }

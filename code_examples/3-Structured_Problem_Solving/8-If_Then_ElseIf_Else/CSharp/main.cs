@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks if ther is over 30 students
+ * This program checks a traffic light
 */
 
 using System;
@@ -10,19 +10,22 @@ using System;
 */
 class Program {
     static void Main() {
-        // this function checks if ther is over 30 students
-        const int MAX_STUDENT_NUMBER = 30;
-        int numberOfStudents;
+        // this function checks a traffic light
+        string lightColor;
 
         // input
-        Console.Write("Enter the number of students: ");
-        numberOfStudents = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter the color of the traffic light: ");
+        lightColor = Console.ReadLine();
 
         // process and output
-        if (numberOfStudents > MAX_STUDENT_NUMBER) {
-            Console.WriteLine("Too many students!");
+        if (lightColor == "red") {
+            Console.WriteLine("Stop!");
+        } else if (lightColor == "yellow") {
+            Console.WriteLine("Slow down!");
+        } else if (lightColor == "green") {
+            Console.WriteLine("Go!");
         } else {
-            Console.WriteLine("Not too many students.");
+            Console.WriteLine("Not a valid color.");
         }
 
         Console.WriteLine("\nDone.");

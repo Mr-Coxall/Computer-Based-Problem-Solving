@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 int main() {
-    // this function checks if ther is over 30 students
+    // this function checks if there is over 30 students
     const int MAX_STUDENT_NUMBER = 30;
     int numberOfStudents;
 
