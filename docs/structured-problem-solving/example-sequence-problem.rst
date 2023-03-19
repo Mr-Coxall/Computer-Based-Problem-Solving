@@ -96,8 +96,6 @@ Example Output
 
   Done.
 
-This program calculates total from subtotal and tax
-
 5. **Debug**
 
 It is hard to show the debugging step, since I ensured that the program above worked correctly before I pasted it into the page. When programmers write code it is extremely unlikely that it will work right away the first time. This is why the development environment has tools to help the programmer fix simple mistakes. The two main kinds of mistakes are syntax errors and logical errors.
