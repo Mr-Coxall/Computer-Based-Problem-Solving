@@ -70,3 +70,15 @@ Variable declaration usually should be grouped at the beginning of a section of 
         :language: python
         :linenos:
         :emphasize-lines: 10-14
+
+Example Output
+^^^^^^^^^^^^^^
+.. code-block:: console
+
+  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
+  True
+  32
+  32.45
+  Hello, World!
+
+  Done.

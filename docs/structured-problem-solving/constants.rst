@@ -69,3 +69,14 @@ Constants just like variables hold a particular value in memory for a programmer
         :language: python
         :linenos:
         :emphasize-lines: 8
+
+Example Output
+^^^^^^^^^^^^^^
+.. code-block:: console
+
+  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
+  Room: 212
+  0.13%
+  Canada
+
+  Done.
