@@ -15,7 +15,7 @@ issues:
         - gosec
         - goconst
     - text: 'shadow: declaration of "variableX" shadows declaration at'
-      linters: [ govet ]
+      linters: [govet]
 
 linters:
   enable:
