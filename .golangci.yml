@@ -14,7 +14,7 @@ issues:
         - dupl
         - gosec
         - goconst
-    - text: 'shadow: declaration of "(err|ctx)" shadows declaration at'
+    - text: 'shadow: declaration of "variableX" shadows declaration at'
       linters: [ govet ]
 
 linters:
