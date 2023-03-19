@@ -34,7 +34,7 @@ Pseudo-code converts your flowchart into something that more resembles the final
 | **GET** subtotal from user
 | **CALCULATE** tax ← subTotal * HST
 | **CALCULATE** total ← subTotal + tax
-| **SHOW** taxes back to user
+| **SHOW** tax back to user
 | **SHOW** total back to user
 
 4. **Code**

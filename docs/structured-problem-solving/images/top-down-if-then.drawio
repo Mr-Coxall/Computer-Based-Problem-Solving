@@ -26,7 +26,7 @@
                 <mxCell id="38" value="Too many students?" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="353" y="84" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="58" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;" edge="1" parent="1" source="40" target="48">
+                <mxCell id="58" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;" parent="1" source="40" target="48" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="40" value="Process" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -44,10 +44,10 @@
                 <mxCell id="42" value="Output" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="572" y="204" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="46" value="Get number of students" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="46" value="Get number_of_students" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="135" y="300" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="48" value="Check if number of students is over 30" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="48" value="Check if number_of_students is over 30" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="353" y="300" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="50" value="Show answer" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">

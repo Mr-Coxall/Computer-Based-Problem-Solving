@@ -32,7 +32,7 @@ You will also be using If…Then statements in pseudocode. The above problem loo
 |     **SHOW** "Too many students!"
 | **ENDIF**
 
-In the code examples below, if the variable numberOfStudents (or number_of_students) happens to be a number that is greater than 30 (say 32), the next line of code is performed. If the variable is not greater than 30 (say it is exactly 30), then the next line of code is skipped over and **NOT** performed.
+In the code examples below, if the variable numberOfStudents (or number_of_students) happens to be a number that is greater than 30 (say 32), the next line of code is performed. If the variable is not greater than 30 (say it is exactly 30), then the next line of code is skipped over and **NOT** performed. Note that the numbers of chairs does not change often in my room, so I can use a constant to hold that value.
 
 .. tabs::
 
