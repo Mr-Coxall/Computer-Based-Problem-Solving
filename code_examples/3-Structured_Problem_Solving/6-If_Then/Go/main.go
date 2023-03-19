@@ -10,7 +10,7 @@ import "fmt"
 
 func main() {
 	// this function checks if ther is over 30 students
-	const MAX_STUDENT_NUMBER int = 30
+	const maxStudentNumber int = 30
 	var numberOfStudents int
 
 	// input
@@ -18,7 +18,7 @@ func main() {
 	fmt.Scan(&numberOfStudents)
 
 	// process
-	if numberOfStudents > MAX_STUDENT_NUMBER {
+	if numberOfStudents > maxStudentNumber {
 		// output
 		fmt.Println("Too many students!")
 	}

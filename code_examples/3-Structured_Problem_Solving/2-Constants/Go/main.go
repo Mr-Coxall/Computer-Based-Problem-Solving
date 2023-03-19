@@ -9,14 +9,14 @@ package main
 import "fmt"
 
 func main() {
-	// constant definition
-	const ROOM int = 212
-	const HST float64 = 0.13
-	const COUNTRY string = "Canada"
+	// constant definition, Go does not use ALL CAPS
+	const room int = 212
+	const hst float64 = 0.13
+	const country string = "Canada"
 
-	fmt.Println("Room:", ROOM)
-	fmt.Println(HST*100, "%")
-	fmt.Println(COUNTRY)
+	fmt.Println("Room:", room)
+	fmt.Println(hst*100, "%")
+	fmt.Println(country)
 
 	fmt.Println("\nDone.")
 }
