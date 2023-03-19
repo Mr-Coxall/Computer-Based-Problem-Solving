@@ -56,3 +56,14 @@ Here are a few examples of assignment statements:
         :language: python
         :linenos:
         :emphasize-lines: 17-20
+
+Example Output
+^^^^^^^^^^^^^^
+.. code-block:: console
+
+  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
+  The number of students is: 7
+  The area of a rectangle is: 325.0 cm²
+  Hello, World!
+
+  Done.

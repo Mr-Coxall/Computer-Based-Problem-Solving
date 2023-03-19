@@ -114,3 +114,8 @@ Example Output
   Too many students!
 
   Done.
+  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
+  Enter the number of students: 23
+  Not too many students.
+
+  Done.

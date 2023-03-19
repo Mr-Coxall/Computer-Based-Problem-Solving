@@ -94,3 +94,17 @@ In the code examples below, if the variable numberOfStudents (or number_of_stude
         :language: python
         :linenos:
         :emphasize-lines: 19-21
+
+Example Output
+^^^^^^^^^^^^^^
+.. code-block:: console
+
+  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
+  Enter the number of students: 32
+  Too many students!
+
+  Done.
+  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
+  Enter the number of students: 23
+
+  Done.

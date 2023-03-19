@@ -12,7 +12,7 @@ def main() -> None:
     width = 32.5
     length = 10.0
     some_words1 = "Hello"
-    some_words2 = "Wordl!"
+    some_words2 = "World!"
 
     # using assignment statements
     number_of_students = number_of_students + 5

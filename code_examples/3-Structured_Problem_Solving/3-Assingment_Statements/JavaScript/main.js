@@ -8,7 +8,7 @@ numberOfStudents = 2
 width = 32.5
 length = 10.0
 someWords1 = "Hello"
-someWords2 = "Wordl!"
+someWords2 = "World!"
 
 // using assignment statements
 numberOfStudents = numberOfStudents + 5

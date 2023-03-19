@@ -57,3 +57,12 @@ What if for some reason you needed a variable to be accessible to several differ
         :linenos:
         :emphasize-lines: 8-9, 12-20, 23-31
 
+Example Output
+^^^^^^^^^^^^^^
+.. code-block:: console
+
+  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
+  Local variable:  11 + 30 = 41
+  Global variable: 26 + 30 = 56
+
+  Done.
