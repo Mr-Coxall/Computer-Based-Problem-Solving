@@ -8,7 +8,6 @@ package main
 
 import (
 	"fmt"
-	"strconv"
 )
 
 func main() {
@@ -20,15 +19,7 @@ func main() {
 
 	// get user input
 	fmt.Print("Enter the subtotal: $")
-	var input string
-	fmt.Scanln(&input)
-
-	// convert user input to float64
-	subTotal, err := strconv.ParseFloat(input, 64)
-	if err != nil {
-		fmt.Println("Invalid input, please enter a number.")
-		return
-	}
+	fmt.Scanln(&subTotal)
 
 	// process input
 	tax = subTotal * HST
