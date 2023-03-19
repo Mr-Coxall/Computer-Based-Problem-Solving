@@ -14,7 +14,7 @@ issues:
         - dupl
         - gosec
         - goconst
-        - govet
+        - shadow # because of my Global / Local example
 linters:
   enable:
     - gosec
@@ -23,7 +23,7 @@ linters:
     - goconst
     - goimports
     - gocritic
-    # - govet
+    - govet
     - revive
 linters-settings:
   errcheck:
