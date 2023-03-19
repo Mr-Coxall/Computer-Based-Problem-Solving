@@ -31,7 +31,7 @@ What if for some reason you needed a variable to be accessible to several differ
 
   .. group-tab:: Go
     .. code-block:: Go
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/Go/main.go
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 11-12, 14-23, 25-33
