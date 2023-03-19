@@ -9,7 +9,7 @@ package main
 import "fmt"
 
 // global variable
-var variableX = 25 //nolint:all
+var variableX = 25
 
 func localVariable() {
 	// this shows what happens with local variables
