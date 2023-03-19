@@ -3,15 +3,22 @@
 If…Then…Else
 ============
 
-In the previous section we looked at the If…Then statement that is used for making a decision. When used a section of code is either performed or not performed, depending if the boolean statement is true or not. In some situations, if the statement is false and the section of code is not performed you would like an **alternative** piece of code to be performed instead. In this case an optional Else statement can be used. The If…Then…Else statement (in most computer programming languages) takes the generic form of:
+In the previous section we looked at the If…Then statement that is used for making a decision. When used a section of code is either performed or not performed, depending if the boolean statement is true or false. In some situations, if the statement is false and the section of code is not performed you would like an **alternative** piece of code to be performed instead. In this case an optional Else statement can be used. The If…Then…Else statement (in most computer programming languages) takes the generic form of:
 
 | **IF** (boolean expression) **THEN** 
-|    Statements to be performed ...
+|    statements to be performed ...
 | **ELSE**
-|    Alternate statements to be performed ...
+|    alternate statements to be performed ...
 | **ENDIF**
 
-An example of what this would look like in a specific programming language is:
+In the previous example of asking the user how many students were in the class, you might have noticed that the user was given no feedback if there were 30 or fewer students. This can add confusion for the user; they might be unsure if the program worked correctly. An example of what this would look like using an If .. Then .. Else statement is shown below:
+
+
+
+
+
+
+
 
 .. tabs::
 
