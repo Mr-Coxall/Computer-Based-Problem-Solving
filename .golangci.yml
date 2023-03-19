@@ -7,8 +7,9 @@
 
 # configure golangci-lint
 # https://github.com/golangci/golangci-lint/blob/master/.golangci.example.yml
-skip-files:
-  - /github/workspace/code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/Go/main.go
+run:
+  skip-dirs:
+    - 4-Scope_of_Variables
 issues:
   exclude-rules:
     - path: _test\.go

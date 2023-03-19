@@ -3,7 +3,7 @@
  * Created on: Sep 2020
  * This program shows how local and global variables work
  */
-
+//nolint
 package main
 
 import "fmt"
