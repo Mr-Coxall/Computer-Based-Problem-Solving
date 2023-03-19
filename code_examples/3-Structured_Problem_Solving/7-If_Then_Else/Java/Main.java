@@ -19,10 +19,11 @@ public class Main {
     System.out.print("Enter the number of students: ");
     numberOfStudents = input.nextInt();
 
-    // process
+    // process and output
     if (numberOfStudents > MAX_STUDENT_NUMBER) {
-      // output
       System.out.println("Too many students!");
+    } else {
+      System.out.println("Not too many students.");
     }
 
     System.out.println("\nDone.");

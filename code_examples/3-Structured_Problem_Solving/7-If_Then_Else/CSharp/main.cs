@@ -18,10 +18,11 @@ class Program {
         Console.Write("Enter the number of students: ");
         numberOfStudents = Convert.ToInt32(Console.ReadLine());
 
-        // process
+        // process and output
         if (numberOfStudents > MAX_STUDENT_NUMBER) {
-            // output
             Console.WriteLine("Too many students!");
+        } else {
+            Console.WriteLine("Not too many students.");
         }
 
         Console.WriteLine("\nDone.");

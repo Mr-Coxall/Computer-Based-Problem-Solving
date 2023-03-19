@@ -11,16 +11,24 @@ In the previous section we looked at the If…Then statement that is used for ma
 |    alternate statements to be performed ...
 | **ENDIF**
 
-In the previous example of asking the user how many students were in the class, you might have noticed that the user was given no feedback if there were 30 or fewer students. This can add confusion for the user; they might be unsure if the program worked correctly. An example of what this would look like using an If .. Then .. Else statement is shown below:
+In the previous example of asking the user how many students were in the class, you might have noticed that the user was given no feedback if there were 30 or fewer students. This can add confusion for the user; they might be unsure if the program worked correctly.
 
+An example of what this would look like using an If .. Then .. Else statement is shown below:
+
+Top-Down Design for If…Then...Else statement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/top-down-if-then-else.png
    :alt: Top-Down Design for If…Then...Else statement
    :align: center
 
+Flowchart for If…Then...Else statement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/flowchart-if-then-else.png
    :alt: If…Then...Else flowchart
    :align: center
 
+Pseudocode for If…Then...Else statement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **GET** number_of_students
 | **IF** (number_of_students > 30) **THEN**
 |     **SHOW** "Too many students!"
@@ -28,6 +36,8 @@ In the previous example of asking the user how many students were in the class, 
 |     **SHOW** "Not too many students."
 | **ENDIF**
 
+Code for If…Then...Else statement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
   .. group-tab:: C

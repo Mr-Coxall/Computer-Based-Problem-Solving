@@ -17,10 +17,11 @@ func main() {
 	fmt.Print("Enter the number of students: ")
 	fmt.Scan(&numberOfStudents)
 
-	// process
+	// process and output
 	if numberOfStudents > maxStudentNumber {
-		// output
 		fmt.Println("Too many students!")
+	} else {
+		fmt.Println("Not too many students.")
 	}
 
 	fmt.Println("\nDone.")

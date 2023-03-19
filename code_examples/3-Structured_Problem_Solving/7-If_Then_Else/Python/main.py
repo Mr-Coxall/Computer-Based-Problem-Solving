@@ -15,10 +15,11 @@ def main() -> None:
     # input
     number_of_students = int(input("Enter the number of students: "))
 
-    # process
+    # process and output
     if number_of_students > MAX_STUDENT_NUMBER:
-        # output
         print("Too many students!")
+    else:
+        print("Not too many students.")
 
     print("\nDone.")
 

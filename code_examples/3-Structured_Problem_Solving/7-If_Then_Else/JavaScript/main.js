@@ -9,10 +9,11 @@ const MAX_STUDENT_NUMBER = 30;
 // input
 const numberOfStudents = parseInt(prompt('Enter the number of students: '));
 
-// process
+// process and output
 if (numberOfStudents > MAX_STUDENT_NUMBER) {
-    // output
     console.log("Too many students!");
+} else {
+    console.log("Not too many students.");
 }
 
 console.log("\nDone.");

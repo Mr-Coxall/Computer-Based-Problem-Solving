@@ -15,10 +15,11 @@ int main() {
     std::cout << "Enter the number of students: ";
     std::cin >> numberOfStudents;
 
-    // process
+    // process and output
     if (numberOfStudents > MAX_STUDENT_NUMBER) {
-        // output
         std::cout << "Too many students!\n";
+    } else {
+        std::cout << "Not too many students.\n";
     }
 
     std::cout << "\nDone." << std::endl;

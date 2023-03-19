@@ -15,10 +15,11 @@ int main() {
     printf("Enter the number of students: ");
     scanf("%d", &numberOfStudents);
 
-    // process
+    // process and output
     if (numberOfStudents > MAX_STUDENT_NUMBER) {
-        // output
         printf("Too many students!\n");
+    } else {
+        printf("Not too many students.\n");
     }
 
     printf("\nDone.\n");
