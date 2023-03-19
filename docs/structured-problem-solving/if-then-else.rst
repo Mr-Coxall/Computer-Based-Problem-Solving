@@ -37,12 +37,7 @@ Pseudocode for If…Then...Else statement
 | **ENDIF**
 
 Code for If…Then...Else statement
-"""""""""""""""""""""""""""""""""
-.. sidebar:: Example Output
-
-    Too many students!
-    Not too many students.
-
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
   .. group-tab:: C
@@ -103,3 +98,31 @@ Code for If…Then...Else statement
         :language: python
         :linenos:
         :emphasize-lines: 19-22
+
+.. literalinclude:: test_py_module/test.py
+    :language: python
+    :caption: Literal includes can also have captions.
+    :linenos:
+    :lines: 1-40
+
+.. parsed-literal::
+
+  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
+  Enter the number of students: 23
+  Not too many students.
+
+  Done.
+
+  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
+  Enter the number of students: 32
+  Too many students!
+
+  Done.
+
+.. code-block:: bash
+
+  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
+  Enter the number of students: 32
+  Too many students!
+
+  Done.
