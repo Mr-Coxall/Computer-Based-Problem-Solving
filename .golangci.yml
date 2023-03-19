@@ -14,6 +14,7 @@ issues:
         - dupl
         - gosec
         - goconst
+    - shadow: declaration of .err. shadows declaration at .+\.go:\d+:\d+
 linters:
   enable:
     - gosec
