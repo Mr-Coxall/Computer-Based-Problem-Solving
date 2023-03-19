@@ -5,8 +5,6 @@
 #########################
 #########################
 
-# configure golangci-lint
-# https://github.com/golangci/golangci-lint/blob/master/.golangci.example.yml
 run:
   skip-dirs:
     - 4-Scope_of_Variables
