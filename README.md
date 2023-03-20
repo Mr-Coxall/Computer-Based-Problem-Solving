@@ -11,7 +11,19 @@ Code examples in:
 - JavaScript (Node.js)
 - Python
 
+## Running the Code Examples
+
+You can run all the code examples in this book using GitHub Codespaces. Click the button below to open this repository in GitHub Codespaces. It will take a few minutes to build the environment, but once it's done you can run any of the code examples in the book.
+
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=191458088)
+
+## Online Web Version of Textbook
+
+The online version can be found at:
+
+[https://computer-based-problem-solving.readthedocs.io/en/latest/](https://computer-based-problem-solving.readthedocs.io/en/latest/)
+
+## Repo Info
 
 [![GitHub's Super Linter](https://github.com/Mr-Coxall/Computer-Based-Problem-Solving/workflows/Super%20Linter/badge.svg)](https://github.com/Mr-Coxall/Computer-Based-Problem-Solving/actions)
 ![Read the Docs](https://img.shields.io/readthedocs/computer-based-problem-solving.svg)
@@ -20,7 +32,3 @@ Code examples in:
 [![GitHub issues](https://img.shields.io/github/issues/mr-coxall/Computer-Based-Problem-Solving.svg)](https://github.com/Mr-Coxall/Computer-Based-Problem-Solving/issues)
 ![GitHub last commit](https://img.shields.io/github/last-commit/mr-coxall/Computer-Based-Problem-Solving.svg)
 [![GitHub forks](https://img.shields.io/github/forks/mr-coxall/Computer-Based-Problem-Solving.svg?style=social)](https://github.com/Mr-Coxall/Computer-Based-Problem-Solving/network/members)
-
-The online version can be found at:
-
-[https://computer-based-problem-solving.readthedocs.io/en/latest/](https://computer-based-problem-solving.readthedocs.io/en/latest/)
