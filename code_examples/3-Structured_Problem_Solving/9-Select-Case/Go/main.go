@@ -1,30 +1,39 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks a traffic light
+ * This program checks a student's grade
  */
-//nolint:gocritic
+
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	// this function checks a traffic light
-	var lightColor string
+	// this function checks a student's grade
+
+	var grade string
 
 	// input
-	fmt.Print("Enter the color of the traffic light: ")
-	fmt.Scan(&lightColor)
+	fmt.Print("Enter your grade: ")
+	fmt.Scanln(&grade)
 
 	// process and output
-	if lightColor == "red" {
-		fmt.Println("Stop!")
-	} else if lightColor == "yellow" {
-		fmt.Println("Slow down!")
-	} else if lightColor == "green" {
-		fmt.Println("Go!")
-	} else {
-		fmt.Println("Not a valid color.")
+	switch strings.ToUpper(grade) {
+	case "A":
+		fmt.Println("Excellent!")
+	case "B":
+		fmt.Println("Good job!")
+	case "C":
+		fmt.Println("Average.")
+	case "D":
+		fmt.Println("Poor.")
+	case "F":
+		fmt.Println("Fail.")
+	default:
+		fmt.Println("Invalid grade.")
 	}
 
 	fmt.Println("\nDone.")

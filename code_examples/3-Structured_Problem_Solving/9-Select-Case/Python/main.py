@@ -2,7 +2,7 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module checks checks a student's grade
+This module checks a student's grade
 """
 
 
@@ -13,7 +13,7 @@ def main() -> None:
     grade = input("Enter your grade: ")
 
     # process & output
-    match grade:
+    match grade.toUpper():
         case "A":
             print("Excellent!")
         case "B":

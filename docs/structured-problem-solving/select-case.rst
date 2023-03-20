@@ -79,28 +79,28 @@ Code for Select Case statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 20-28
+        :emphasize-lines: 24-37
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 22-30
+        :emphasize-lines: 23-42
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 12-20
+        :emphasize-lines: 12-31
 
   .. group-tab:: Python
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 16-23
+        :emphasize-lines: 16-28
 
 Example Output
 ^^^^^^^^^^^^^^
