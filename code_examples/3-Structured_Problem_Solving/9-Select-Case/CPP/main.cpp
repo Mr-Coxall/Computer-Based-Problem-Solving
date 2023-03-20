@@ -1,32 +1,43 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved.
+// Copyright (c) 2020 St. Mother Teresa HS All rights reserved.
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program checks a traffic light
+// This program checks your grade
 
 #include <iostream>
-#include <string>
 
-int main() {
-    // this function checks a traffic light
-    std::string lightColor;
+int main()
+{
+    // this function checks your grade
+    char gradeLevel; // a single character
 
     // input
-    std::cout << "Enter the color of the traffic light: ";
-    std::cin >> lightColor;
+    std::cout << "Enter grade mark as a single character(ex: A, B, ...): ";
+    std::cin >> gradeLevel;
 
-    // process and output
-    if (lightColor == "red") {
-        std::cout << "Stop!" << std::endl;
-    } else if (lightColor == "yellow") {
-        std::cout << "Slow down!" << std::endl;
-    } else if (lightColor == "green") {
-        std::cout << "Go!" << std::endl;
-    } else {
-        std::cout << "Not a valid color." << std::endl;
+    // switch in C++ can not support strings, only numbers and char
+    // also note you need the break in C++ or it will move to next
+    // line in switch statement and might be true again
+    switch (gradeLevel)
+    {
+    case 'A':
+        std::cout << "Excellent!" << std::endl;
+        break;
+    case 'B':
+        std::cout << "Good job!" << std::endl;
+        break;
+    case 'C':
+        std::cout << "Average." << std::endl;
+        break;
+    case 'D':
+        std::cout << "Poor." << std::endl;
+        break;
+    case 'F':
+        std::cout << "Fail." << std::endl;
+        break;
+    default:
+        std::cout << "Invalid grade." << std::endl;
     }
 
-    std::cout << std::endl
-              << "Done." << std::endl;
-    return 0;
+    std::cout << "\nDone." << std::endl;
 }

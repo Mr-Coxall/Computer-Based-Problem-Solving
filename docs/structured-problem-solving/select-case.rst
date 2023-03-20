@@ -65,7 +65,7 @@ Code for Select Case statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 19-27
+        :emphasize-lines: 21-40
 
   .. group-tab:: C#
     .. code-block:: C#
@@ -100,184 +100,24 @@ Code for Select Case statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 16-28
+        :emphasize-lines: 17-29
 
 Example Output
 ^^^^^^^^^^^^^^
 .. code-block:: console
 
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the color of the traffic light: red
-  Stop!
+  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
+  Enter your grade: A
+  Excellent!
 
   Done.
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the color of the traffic light: yellow
-  Slow down!
+  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
+  Enter your grade: F
+  Fail.
 
   Done.
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the color of the traffic light: green
-  Go!
+  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
+  Enter your grade: E
+  Invalid grade.
 
   Done.
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the color of the traffic light: blue
-  Not a valid color.
-
-  Done.
-
-
-
-
-
-
-
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-      // Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-      //
-      // Created by: Mr. Coxall
-      // Created on: Sep 2019
-      // This program checks your grade
-
-      #include <iostream>
-
-      int main() {
-          // this function checks your grade
-          char gradeLevel;  // a single character
-
-          // input
-          std::cout << "Enter grade mark as a single character(ex: A, B, ...): ";
-          std::cin >> gradeLevel;
-
-          // switch in C++ can not support strings, only numbers and char
-          // also note you need the break in C++ or it will move to next
-          // line in switch statement and might be true again
-          switch (gradeLevel) {
-              case 'A' :
-                  std::cout << "Excellent!" << std::endl;
-                  break;
-              case 'B' :
-                  std::cout << "Really good!" << std::endl;
-                  break;
-              case 'C' :
-                  std::cout << "Well done" << std::endl;
-                  break;
-              case 'D' :
-                  std::cout << "You passed" << std::endl;
-                  break;
-              case 'F' :
-                  std::cout << "Better try again" << std::endl;
-                  break;
-              default :
-                  std::cout << "Invalid grade" << std::endl;
-          }
-      }
-
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-      // select ...case example
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-      // select ...case example
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-      // select ...case example
-
-  .. group-tab:: Python3
-
-    .. code-block:: Python
-
-      #!/usr/bin/env python3
-
-      # Created by: Mr. Coxall
-      # Created on: Sep 2020
-      # This program checks your grade
-      # NOTE: This will only work on >= Python 3.10
-
-      def main():
-          # this function checks your grade
-
-          # input
-          grade_level = input("Enter grade mark as a single character(ex: A, B, ...): ")
-          print("")
-
-          # process & output
-          match grade_level:
-              case "A":
-                  print("Excellent!")
-              case "B":
-                  print("Really good!")
-              case "C":
-                  print("Well done")
-              case "D":
-                  print("You passed")
-              case "F":
-                  print("Better try again")
-              case _:
-                  print("Invalid grade")
-
-
-      if __name__ == "__main__":
-          main()
-
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      #!/usr/bin/env ruby
-
-      # Created by: Mr. Coxall
-      # Created on: Sep 2019
-      # This program checks your grade
-
-
-      # input
-      print "Enter grade mark as a single character(ex: A, B, ...): "
-      gradeLevel = gets
-      gradeLevel = gradeLevel.chomp
-
-      # process & output
-      case gradeLevel
-          when "A"
-              puts "Excellent!"
-          when "B"
-              puts "Really good!"
-          when "C"
-              puts "Well done"
-          when "D"
-              puts "You passed"
-          when "F"
-              puts "Better try again"
-          else
-              puts "Invalid grade"
-      end
-
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // select ...case example
-
-
-In the above examples, if the variable gradeLevel is "A" it will print out "Excellent!", and so on for each letter of grades. If the variable does not equal any of these, then the last statement is executed, Invalid grade”. The above examples would look like the following in a flow-chart:
-
-.. image:: ./images/select-case.png
-   :alt: Select…Case flowchart
-   :align: center 

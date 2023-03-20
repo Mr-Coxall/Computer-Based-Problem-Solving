@@ -13,6 +13,7 @@ def main() -> None:
     grade = input("Enter your grade: ")
 
     # process & output
+    # NOTE: This will only work on >= Python 3.10
     match grade.upper():
         case "A":
             print("Excellent!")
