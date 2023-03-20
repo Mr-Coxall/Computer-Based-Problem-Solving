@@ -1,19 +1,22 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks if ther is over 30 students
+ * This program checks a traffic light
 */
 
 const prompt = require('prompt-sync')();
-const MAX_STUDENT_NUMBER = 30;
 
 // input
-const numberOfStudents = parseInt(prompt('Enter the number of students: '));
+const lightColor = prompt('Enter the color of the traffic light: ');
 
 // process and output
-if (numberOfStudents > MAX_STUDENT_NUMBER) {
-    console.log("Too many students!");
+if (lightColor === 'red') {
+  console.log('Stop!');
+} else if (lightColor === 'yellow') {
+  console.log('Slow down!');
+} else if (lightColor === 'green') {
+  console.log('Go!');
 } else {
-    console.log("Not too many students.");
+  console.log('Not a valid color.');
 }
 
-console.log("\nDone.");
+console.log('\nDone.');

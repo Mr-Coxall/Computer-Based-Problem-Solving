@@ -17,20 +17,13 @@ int main()
     std::cin >> lightColor;
 
     // process and output
-    if (lightColor == "red")
-    {
+    if (lightColor == "red") {
         std::cout << "Stop!" << std::endl;
-    }
-    else if (lightColor == "yellow")
-    {
+    } else if (lightColor == "yellow") {
         std::cout << "Slow down!" << std::endl;
-    }
-    else if (lightColor == "green")
-    {
+    } else if (lightColor == "green") {
         std::cout << "Go!" << std::endl;
-    }
-    else
-    {
+    } else {
         std::cout << "Not a valid color." << std::endl;
     }
 

@@ -1,7 +1,7 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks if ther is over 30 students
+ * This program checks a traffic light
  */
 
 package main
@@ -9,19 +9,22 @@ package main
 import "fmt"
 
 func main() {
-	// this function checks if ther is over 30 students
-	const maxStudentNumber int = 30
-	var numberOfStudents int
+	// this function checks a traffic light
+	var lightColor string
 
 	// input
-	fmt.Print("Enter the number of students: ")
-	fmt.Scan(&numberOfStudents)
+	fmt.Print("Enter the color of the traffic light: ")
+	fmt.Scan(&lightColor)
 
 	// process and output
-	if numberOfStudents > maxStudentNumber {
-		fmt.Println("Too many students!")
+	if lightColor == "red" {
+		fmt.Println("Stop!")
+	} else if lightColor == "yellow" {
+		fmt.Println("Slow down!")
+	} else if lightColor == "green" {
+		fmt.Println("Go!")
 	} else {
-		fmt.Println("Not too many students.")
+		fmt.Println("Not a valid color.")
 	}
 
 	fmt.Println("\nDone.")

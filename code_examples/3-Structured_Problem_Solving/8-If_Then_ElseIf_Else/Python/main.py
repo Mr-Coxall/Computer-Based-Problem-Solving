@@ -2,26 +2,27 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module shows using the assignment statement
+This module checks a traffic light
 """
 
 
-from constants import MAX_STUDENT_NUMBER
-
-
 def main() -> None:
-    """The main() this function checks if ther is over 30 students, returns None."""
+    """The main() this function checks a traffic light, returns None."""
 
     # input
-    number_of_students = int(input("Enter the number of students: "))
+    light_color = input('Enter the color of the traffic light: ')
 
     # process and output
-    if number_of_students > MAX_STUDENT_NUMBER:
-        print("Too many students!")
+    if light_color == 'red':
+        print('Stop!')
+    elif light_color == 'yellow':
+        print('Slow down!')
+    elif light_color == 'green':
+        print('Go!')
     else:
-        print("Not too many students.")
+        print('Not a valid color.')
 
-    print("\nDone.")
+    print('\nDone.')
 
 
 if __name__ == "__main__":
