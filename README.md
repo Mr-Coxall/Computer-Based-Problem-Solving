@@ -6,6 +6,7 @@ Code examples in:
 - C
 - C++
 - C#
+- Go
 - Java
 - JavaScript (Node.js)
 - Python
