@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
     // this function checks a traffic light
-  
+
     // create Scanner object for user input
     Scanner scanner = new Scanner(System.in);
 
@@ -22,23 +22,23 @@ public class Main {
     // process & output
     switch (grade.toUpperCase()) {
       case "A":
-          System.out.println("Excellent!");
-          break;
+        System.out.println("Excellent!");
+        break;
       case "B":
-          System.out.println("Good job!");
-          break;
+        System.out.println("Good job!");
+        break;
       case "C":
-          System.out.println("Average.");
-          break;
+        System.out.println("Average.");
+        break;
       case "D":
-          System.out.println("Poor.");
-          break;
+        System.out.println("Poor.");
+        break;
       case "F":
-          System.out.println("Fail.");
-          break;
+        System.out.println("Fail.");
+        break;
       default:
-          System.out.println("Invalid grade.");
-          break;
+        System.out.println("Invalid grade.");
+        break;
     }
 
     // close the Scanner object
