@@ -1,9 +1,7 @@
 CPP: sudo pip3 install cpplint -> cpplint ./hello_world.cpp
 Java: https://sites.google.com/a/ocsb.ca/teh-2019-ics4ur-1-2/introduction/intro-04
-    java -jar /home/ubuntu/environment/code_examples/style/checkstyle-8.32-all.jar -c /home/ubuntu/environment/code_examples/style/google_checks.xml ./Variables.java
+    java -jar /workspaces/Computer-Based-Problem-Solving/code_examples/style/checkstyle-8.32-all.jar -c /workspaces/Computer-Based-Problem-Solving/code_examples/style/google_checks.xml ./Main.java
 Go: gofmt -w ./hello_world.go
 Python3: sudo pip3 install black -> black ./*.py
 JS: npm install -g jslint
-Ruby:
-Swift:
 C#: sudo apt install mono-devel -> mcs -out:hello.exe hello_world.cs && mono hello_world.exe
