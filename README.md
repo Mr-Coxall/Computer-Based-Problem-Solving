@@ -13,7 +13,7 @@ Code examples in:
 
 ## Running the Code Examples
 
-You can run all the code examples in this book using GitHub Codespaces. Click the button below to open this repository in GitHub Codespaces. It will take a few minutes to build the environment, but once it's done you can run any of the code examples in the book.
+You can run all the code examples in this book using GitHub Codespaces. Click the button below to open this repository in GitHub Codespaces. It will take a few minutes to build the environment, but once it's done you can run any of the code examples in the book. Note that you will need a GitHub login to use this feature.
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=191458088)
 
