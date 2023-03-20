@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
     // this function checks a traffic light
-  
+
     // create Scanner object for user input
     Scanner scanner = new Scanner(System.in);
 
