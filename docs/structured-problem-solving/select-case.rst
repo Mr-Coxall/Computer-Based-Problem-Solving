@@ -35,7 +35,7 @@ Flowchart for Select Case statement
 Pseudocode for Select Case statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **GET** grade
-| **SELECT** (grade)  
+| **SELECT** (grade)
 |       **CASE** "A"
 |           **SHOW** "Excellent!"
 |       **CASE** "B"

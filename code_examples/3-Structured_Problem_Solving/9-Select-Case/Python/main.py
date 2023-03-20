@@ -2,25 +2,30 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module checks a traffic light
+This module checks checks a student's grade
 """
 
 
 def main() -> None:
-    """The main() this function checks a traffic light, returns None."""
+    """The main() this function checks a student's grade, returns None."""
 
     # input
-    light_color = input("Enter the color of the traffic light: ")
+    grade = input("Enter your grade: ")
 
-    # process and output
-    if light_color == "red":
-        print("Stop!")
-    elif light_color == "yellow":
-        print("Slow down!")
-    elif light_color == "green":
-        print("Go!")
-    else:
-        print("Not a valid color.")
+    # process & output
+    match grade:
+        case "A":
+            print("Excellent!")
+        case "B":
+            print("Good job!")
+        case "C":
+            print("Average.")
+        case "D":
+            print("Poor.")
+        case "F":
+            print("Fail.")
+        case _:
+            print("Invalid grade.")
 
     print("\nDone.")
 
