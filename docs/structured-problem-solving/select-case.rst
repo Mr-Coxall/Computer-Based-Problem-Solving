@@ -7,9 +7,9 @@ As you have seen from the If…Elseif…Elseif…Else statement, when there are 
 
 The Select Case structure takes a variable and then compares it to a list of expressions. The first expressions that is evaluated as “True” is executed and the remaining of the select case structure is skipped over, just like an If…ElseIf… statement (but not in all languages!). There are several different ways to create your expression. You can just use a value (a single digit for example and then it does an equal comparison), several digits, a range or having a regular expression (Is < 10). Just like the If structure, there is an optional “Else” that can be placed at the end as a catch all. The general form of a Select…Case statement (in most computer programming languages) takes the generic form of:
 
-| **SELECT** (variable)  
-|       **CASE** valueOne 
-|           //statements 
+| **SELECT** (variable)
+|       **CASE** valueOne
+|           //statements
 |       **CASE** valueTwo
 |           //statements
 |       **CASE** valueThree
@@ -34,16 +34,20 @@ Flowchart for Select Case statement
 
 Pseudocode for Select Case statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-| **GET** light_color
-| **IF** (light_color == "red") **THEN**
-|     **SHOW** "Stop!"
-| **ELSEIF** (light_color == "yellow") **THEN**
-|     **SHOW** "Slow down!"
-| **ELSEIF** (light_color == "green") **THEN**
-|     **SHOW** "Go!"
-| **ELSE**
-|     **SHOW** "Not sure!"
-| **ENDIF**
+| **GET** grade
+| **SELECT** (grade)  
+|       **CASE** "A"
+|           **SHOW** "Excellent!"
+|       **CASE** "B"
+|           **SHOW** "Good job!"
+|       **CASE** "C"
+|           **SHOW** "Average."
+|       **CASE** "D"
+|           **SHOW** "Poor."
+|       **CASE** "F"
+|           **SHOW** "Fail."
+|       **ELSE**
+|           **SHOW** "Invalid grade."
 
 Code for Select Case statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
