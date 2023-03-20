@@ -58,14 +58,14 @@ Code for Select Case statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 20-28
+        :emphasize-lines: 18-38
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 21-40
+        :emphasize-lines: 18-39
 
   .. group-tab:: C#
     .. code-block:: C#

@@ -6,20 +6,19 @@
 
 #include <iostream>
 
-int main()
-{
+int main() {
     // this function checks your grade
-    char gradeLevel; // a single character
+    char gradeLevel;  // a single character
 
     // input
     std::cout << "Enter grade mark as a single character(ex: A, B, ...): ";
     std::cin >> gradeLevel;
 
+    // process and output
     // switch in C++ can not support strings, only numbers and char
     // also note you need the break in C++ or it will move to next
-    // line in switch statement and might be true again
-    switch (gradeLevel)
-    {
+    // line in switch statement if it is true again
+    switch (gradeLevel) {
     case 'A':
         std::cout << "Excellent!" << std::endl;
         break;

@@ -10,7 +10,7 @@ def main() -> None:
     """The main() this function checks a student's grade, returns None."""
 
     # input
-    grade = input("Enter your grade: ")
+    grade = input("Enter grade mark as a single character(ex: A, B, ...): ")
 
     # process & output
     # NOTE: This will only work on >= Python 3.10

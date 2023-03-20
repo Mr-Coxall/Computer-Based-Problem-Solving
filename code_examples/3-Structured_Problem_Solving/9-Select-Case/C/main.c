@@ -2,29 +2,39 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program checks a traffic light
+// This program checks your grade
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 int main() {
-    // this function checks a traffic light
-    char lightColor[10];
+    // this function checks your grade
+    char gradeLevel;  // a single character
 
     // input
-    printf("Enter the color of the traffic light: ");
-    scanf("%s", lightColor);
+    printf("Enter grade mark as a single character(ex: A, B, ...): ");
+    scanf("%c", &gradeLevel);
 
     // process and output
-    if (strcmp(lightColor, "red") == 0) {
-        printf("Stop!\n");
-    } else if (strcmp(lightColor, "yellow") == 0) {
-        printf("Slow down!\n");
-    } else if (strcmp(lightColor, "green") == 0) {
-        printf("Go!\n");
-    } else {
-        printf("Not a valid color.\n");
+    // Note you need the break in C or it will move to next
+    // line in switch statement if it is true again
+    switch (gradeLevel) {
+    case 'A':
+        printf("Excellent!\n");
+        break;
+    case 'B':
+        printf("Good job!\n");
+        break;
+    case 'C':
+        printf("Average.\n");
+        break;
+    case 'D':
+        printf("Poor.\n");
+        break;
+    case 'F':
+        printf("Fail.\n");
+        break;
+    default:
+        printf("Invalid grade.\n");
     }
 
     printf("\nDone.\n");
