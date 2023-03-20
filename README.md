@@ -11,6 +11,7 @@ Code examples in:
 - JavaScript (Node.js)
 - Python
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=191458088)
 
 [![GitHub's Super Linter](https://github.com/Mr-Coxall/Computer-Based-Problem-Solving/workflows/Super%20Linter/badge.svg)](https://github.com/Mr-Coxall/Computer-Based-Problem-Solving/actions)
 ![Read the Docs](https://img.shields.io/readthedocs/computer-based-problem-solving.svg)
