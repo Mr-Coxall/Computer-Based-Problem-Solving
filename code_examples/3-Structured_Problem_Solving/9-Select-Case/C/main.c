@@ -5,6 +5,7 @@
 // This program checks your grade
 
 #include <stdio.h>
+#include <ctype.h>
 
 int main() {
     // this function checks your grade
@@ -17,7 +18,8 @@ int main() {
     // process and output
     // Note you need the break in C or it will move to next
     // line in switch statement if it is true again
-    switch (gradeLevel) {
+    switch (toupper(gradeLevel))
+    {
     case 'A':
         printf("Excellent!\n");
         break;
