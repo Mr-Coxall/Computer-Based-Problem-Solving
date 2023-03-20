@@ -3,7 +3,7 @@
  * Created on: Sep 2020
  * This program checks a traffic light
  */
-
+//nolint:gocritic
 package main
 
 import "fmt"

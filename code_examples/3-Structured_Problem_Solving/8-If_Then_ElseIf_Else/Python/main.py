@@ -10,19 +10,19 @@ def main() -> None:
     """The main() this function checks a traffic light, returns None."""
 
     # input
-    light_color = input('Enter the color of the traffic light: ')
+    light_color = input("Enter the color of the traffic light: ")
 
     # process and output
-    if light_color == 'red':
-        print('Stop!')
-    elif light_color == 'yellow':
-        print('Slow down!')
-    elif light_color == 'green':
-        print('Go!')
+    if light_color == "red":
+        print("Stop!")
+    elif light_color == "yellow":
+        print("Slow down!")
+    elif light_color == "green":
+        print("Go!")
     else:
-        print('Not a valid color.')
+        print("Not a valid color.")
 
-    print('\nDone.')
+    print("\nDone.")
 
 
 if __name__ == "__main__":

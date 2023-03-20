@@ -7,8 +7,7 @@
 #include <iostream>
 #include <string>
 
-int main()
-{
+int main() {
     // this function checks a traffic light
     std::string lightColor;
 

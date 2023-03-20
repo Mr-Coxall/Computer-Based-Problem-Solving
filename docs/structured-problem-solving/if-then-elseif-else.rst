@@ -63,7 +63,7 @@ Code for If…Then…ElseIf…Else statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/8-If_Then_ElseIf_Else/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 20-28
+        :emphasize-lines: 19-27
 
   .. group-tab:: C#
     .. code-block:: C#
