@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks a traffic light
+ * This program checks a student's grade
 */
 
 using System;
@@ -10,22 +10,32 @@ using System;
 */
 class Program {
     static void Main() {
-        // this function checks a traffic light
-        string lightColor;
+        // this function checks a student's grade
 
-        // input
-        Console.Write("Enter the color of the traffic light: ");
-        lightColor = Console.ReadLine();
+        // create Scanner object for user input
+        Console.Write("Enter your grade: ");
+        string grade = Console.ReadLine();
 
-        // process and output
-        if (lightColor == "red") {
-            Console.WriteLine("Stop!");
-        } else if (lightColor == "yellow") {
-            Console.WriteLine("Slow down!");
-        } else if (lightColor == "green") {
-            Console.WriteLine("Go!");
-        } else {
-            Console.WriteLine("Not a valid color.");
+        // process & output
+        switch (grade.ToUpper()) {
+            case "A":
+                Console.WriteLine("Excellent!");
+                break;
+            case "B":
+                Console.WriteLine("Good job!");
+                break;
+            case "C":
+                Console.WriteLine("Average.");
+                break;
+            case "D":
+                Console.WriteLine("Poor.");
+                break;
+            case "F":
+                Console.WriteLine("Fail.");
+                break;
+            default:
+                Console.WriteLine("Invalid grade.");
+                break;
         }
 
         Console.WriteLine("\nDone.");

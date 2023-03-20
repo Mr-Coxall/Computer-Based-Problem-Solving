@@ -72,7 +72,7 @@ Code for Select Case statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 21-29
+        :emphasize-lines: 20-39
 
   .. group-tab:: Go
     .. code-block:: Go
