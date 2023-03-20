@@ -86,7 +86,6 @@ In the code examples below, if the variable numberOfStudents (or number_of_stude
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/6-If_Then/Python/constants.py
         :language: python
         :linenos:
-        :emphasize-lines: 8-9
 
       main.py
 
