@@ -13,7 +13,7 @@ def main() -> None:
     grade = input("Enter your grade: ")
 
     # process & output
-    match grade.toUpper():
+    match grade.upper():
         case "A":
             print("Excellent!")
         case "B":
