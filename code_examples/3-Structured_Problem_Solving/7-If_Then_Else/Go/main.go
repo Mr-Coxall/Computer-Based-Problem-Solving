@@ -9,7 +9,7 @@ package main
 import "fmt"
 
 func main() {
-	// this function checks if ther is over 30 students
+	// this function checks if there is over 30 students
 	const maxStudentNumber int = 30
 	var numberOfStudents int
 

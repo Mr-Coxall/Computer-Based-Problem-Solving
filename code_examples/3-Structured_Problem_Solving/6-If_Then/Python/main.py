@@ -2,7 +2,7 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module shows using the assignment statement
+This module shows checks if over 30 students
 """
 
 
@@ -10,7 +10,7 @@ from constants import MAX_STUDENT_NUMBER
 
 
 def main() -> None:
-    """The main() this function checks if ther is over 30 students, returns None."""
+    """The main() this function checks if over 30 students, returns None."""
 
     # input
     number_of_students = int(input("Enter the number of students: "))

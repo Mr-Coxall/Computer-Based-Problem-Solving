@@ -2,7 +2,7 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program checks if ther is over 30 students
+// This program checks if there is over 30 students
 
 #include <stdio.h>
 

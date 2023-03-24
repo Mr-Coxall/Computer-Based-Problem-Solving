@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks if ther is over 30 students
+ * This program checks if there is over 30 students
 */
 
 using System;
@@ -10,7 +10,7 @@ using System;
 */
 class Program {
     static void Main() {
-        // this function checks if ther is over 30 students
+        // this function checks if there is over 30 students
         const int MAX_STUDENT_NUMBER = 30;
         int numberOfStudents;
 

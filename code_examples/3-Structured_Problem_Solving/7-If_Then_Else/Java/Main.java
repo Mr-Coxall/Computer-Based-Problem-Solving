@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    // this function checks if ther is over 30 students
+    // this function checks if there is over 30 students
     final int MAX_STUDENT_NUMBER = 30;
     int numberOfStudents;
 

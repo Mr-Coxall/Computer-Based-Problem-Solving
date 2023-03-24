@@ -32,7 +32,7 @@ def global_variable() -> None:
 
 
 def main() -> None:
-    """The main() function shows how local and global variables work, returns None."""
+    """The main() function shows local and global variables, returns None."""
     local_variable()
     global_variable()
 

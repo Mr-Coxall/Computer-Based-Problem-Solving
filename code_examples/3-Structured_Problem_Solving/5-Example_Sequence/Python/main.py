@@ -9,7 +9,7 @@ import constants
 
 
 def main() -> None:
-    """The main() function calculates total from subtotal and tax, returns None."""
+    """The main() function calculates total and tax, returns None."""
 
     # input
     sub_total = float(input("Enter the subtotal: $"))
