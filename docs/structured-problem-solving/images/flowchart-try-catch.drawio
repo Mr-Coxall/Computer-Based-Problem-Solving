@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="XHk-bZ8t28PDqSV33KaL" name="Page-1">
-        <mxGraphModel dx="686" dy="401" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="686" dy="236" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -8,13 +8,13 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="57" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="375" y="110" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="336.5" y="110" width="100" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="72" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;" parent="1" source="58" target="70" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="58" value="Get&lt;br&gt;integer_as_string" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
-                    <mxGeometry x="343.25" y="210" width="164.5" height="60" as="geometry"/>
+                    <mxGeometry x="304.25" y="210" width="164.5" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="68" value="Stop" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="555" y="750" width="100" height="60" as="geometry"/>
@@ -30,11 +30,11 @@
                 <mxCell id="126" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;html=1;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="70" target="107" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="70" value="try&lt;br&gt;convert string to int" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="358" y="310" width="135" height="130" as="geometry"/>
+                <mxCell id="70" value="try&lt;br&gt;integer_as_number&lt;br&gt;=&lt;br&gt;int(integer_as_string)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="310" width="213" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="79" value="catch" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
-                    <mxGeometry x="377" y="439" width="50" height="30" as="geometry"/>
+                    <mxGeometry x="325" y="490" width="50" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="128" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;html=1;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="87" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -48,10 +48,10 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="107" value="Show &lt;br&gt;&quot;The error was ...&quot;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
-                    <mxGeometry x="340" y="530" width="170" height="60" as="geometry"/>
+                    <mxGeometry x="301.5" y="540" width="170" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="109" value="else" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
-                    <mxGeometry x="494" y="375" width="40" height="30" as="geometry"/>
+                    <mxGeometry x="494" y="402" width="40" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="129" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;html=1;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="110" target="68" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
