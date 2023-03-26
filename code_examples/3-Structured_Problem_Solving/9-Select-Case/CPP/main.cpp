@@ -19,8 +19,7 @@ int main() {
     // switch in C++ can not support strings, only numbers and char
     // also note you need the break in C++ or it will move to next
     // line in switch statement if it is true again
-    switch (toupper(gradeLevel))
-    {
+    switch (toupper(gradeLevel)) {
     case 'A':
         std::cout << "Excellent!" << std::endl;
         break;
