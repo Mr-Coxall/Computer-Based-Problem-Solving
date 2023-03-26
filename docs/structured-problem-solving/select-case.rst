@@ -55,49 +55,49 @@ Code for Select Case statement
 
   .. group-tab:: C
     .. code-block:: C
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/C/main.c
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 19-40
 
   .. group-tab:: C++
     .. code-block:: C++
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/CPP/main.cpp
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 19-41
 
   .. group-tab:: C#
     .. code-block:: C#
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/CSharp/main.cs
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 20-39
 
   .. group-tab:: Go
     .. code-block:: Go
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/Go/main.go
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 24-37
 
   .. group-tab:: Java
     .. code-block:: Java
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/Java/Main.java
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 23-42
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/JavaScript/main.js
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 12-31
 
   .. group-tab:: Python
     .. code-block:: Python
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select-Case/Python/main.py
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/Python/main.py
         :language: python
         :linenos:
         :emphasize-lines: 17-29
