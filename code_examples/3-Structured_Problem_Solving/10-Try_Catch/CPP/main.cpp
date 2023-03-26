@@ -20,8 +20,7 @@ int main() {
         int integerAsNumber = stoi(integerAsString);
         std::cout << "You entered: " << integerAsNumber << "." << std::endl;
     }
-    catch (const std::invalid_argument &err)
-    {
+    catch (const std::invalid_argument &err) {
         std::cout << "The error was: " << err.what() << "." << std::endl;
     }
     std::cout << "Thanks for playing." << std::endl;

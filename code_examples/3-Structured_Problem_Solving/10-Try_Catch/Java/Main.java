@@ -21,12 +21,12 @@ public class Main {
 
     // process & output
     try {
-        int integerAsNumber = Integer.parseInt(integerAsString);
-        System.out.printf("You entered: %d.%n", integerAsNumber);
+      int integerAsNumber = Integer.parseInt(integerAsString);
+      System.out.printf("You entered: %d.%n", integerAsNumber);
     } catch (NumberFormatException e) {
-        System.out.printf("The error was: %s.%n", e.getMessage());
+      System.out.printf("The error was: %s.%n", e.getMessage());
     } finally {
-        System.out.println("Thanks for playing.");
+      System.out.println("Thanks for playing.");
     }
 
     // close the Scanner object

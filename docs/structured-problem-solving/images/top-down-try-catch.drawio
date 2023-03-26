@@ -53,10 +53,10 @@
                 <mxCell id="48" value="Convert string to int" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="353" y="300" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="50" value="Show &quot;That number as an integer is ...&quot;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="50" value="Show &quot;You entered ...&quot;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="657" y="370" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="59" value="Show &quot;That was not a valid integer&quot;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="59" value="Show &quot;The error was ...&quot;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="487" y="370" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
