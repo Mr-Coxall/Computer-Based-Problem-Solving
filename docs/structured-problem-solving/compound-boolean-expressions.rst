@@ -49,7 +49,7 @@ The general form in a programming language for a compound boolean expression is:
 
 NOT
 ^^^
-| **IF** Not(boolean expression #1) **THEN** 
+| **IF** not(boolean expression #1) **THEN** 
 |    Statements to be performed ...
 | **ELSE**
 |    Statements to be performed ...
@@ -73,7 +73,7 @@ OR
 
 In some programming languages the operators are simpley the words not, and & or. In others they are “!” for NOT, “&&” for AND & “||” for OR.
 
-In this example program, the user is asked to enter a term mark and a final project mark. The program then tells the user if they passed the course. The rule for passing the course is that the student must have a term mark of at least 50 and a final project mark of at least 50. The program uses a compound boolean expression to determine if the student passed the course.
+In this example program, the user is asked to enter a term mark and a final project mark. The program then tells the user if they passed the course or not. The rule for passing the course is that the student must have a term mark of at least 50% **and** a final project mark of at least 50. The program uses a compound boolean expression to determine if the student passed the course.
 
 Top-Down Design for Compound Boolean Expression statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
