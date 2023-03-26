@@ -1,21 +1,20 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks for a runtime error
+ * This program uses a compound boolean statement
  */
 
 const prompt = require("prompt-sync")()
 
 // input
-const integerAsString = prompt("Enter an integer: ")
+const termMark = parseInt(prompt("Enter term mark (as %): "));
+const projectMark = parseInt(prompt("Enter project mark (as %): "));
+console.log("");
 
 // process & output
-try{
-  const integerAsNumber = parseInt(integerAsString)
-  console.log(`You entered: ${integerAsNumber}.`)
-} catch (err) {
-  console.log(`The error was: {err}.`)
-} finally {
-  console.log("Thanks for playing.")
+if (termMark >= 50 && projectMark >= 50) {
+  console.log("You passed the course.");
+} else {
+  console.log("You did not pass the course.");
 }
 
-console.log("\nDone.")
+console.log("\nDone.");

@@ -2,28 +2,29 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program checks for a runtime error
+// This program uses a compound boolean statement
 
 #include <iostream>
-#include <string>
 
 int main() {
-    // this function checks for a runtime error
-    std::string integerAsString;
+    // this function uses a compound boolean statement
+    int termMark;
+    int projectMark;
 
-    // Input
-    std::cout << "Enter an integer: ";
-    getline(std::cin, integerAsString);
+    // input
+    std::cout << "Enter term mark (as %): ";
+    std::cin >> termMark;
+    std::cout << "Enter project mark (as %): ";
+    std::cin >> projectMark;
+    std::cout << std::endl;
 
-    // Process & Output
-    try {
-        int integerAsNumber = stoi(integerAsString);
-        std::cout << "You entered: " << integerAsNumber << "." << std::endl;
+    // process & output
+    if (termMark >= 50 && projectMark >= 50) {
+        std::cout << "You passed the course." << std::endl;
+    } else {
+        std::cout << "You did not pass the course." << std::endl;
     }
-    catch (const std::invalid_argument &err) {
-        std::cout << "The error was: " << err.what() << "." << std::endl;
-    }
-    std::cout << "Thanks for playing." << std::endl;
 
     std::cout << "\nDone." << std::endl;
+    return 0;
 }

@@ -2,27 +2,29 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program checks for a runtime error
+// This program uses a compound boolean statement
 
 #include <stdio.h>
 
 int main() {
-    // this function checks for a runtime error
-    int integerValue = 0;
-    int scanErrorCode = 0;
+    // this function uses a compound boolean statement
+    int termMark;
+    int projectMark;
 
     // input
-    printf("Enter an integer: ");
-    scanErrorCode = scanf("%d", &integerValue);
+    printf("Enter term mark (as %%): ");
+    scanf("%d", &termMark);
+    printf("Enter project mark (as %%): ");
+    scanf("%d", &projectMark);
+    printf("\n");
 
-    // process and output
-    if (scanErrorCode == 1) {
-        printf("You entered: %d\n", integerValue);
+    // process & output
+    if (termMark >= 50 && projectMark >= 50) {
+        printf("You passed the course.\n");
     } else {
-        printf("You did not enter an integer.\n");
+        printf("You did not pass the course.\n");
     }
-    printf("Thanks for playing.\n");
 
-        printf("\nDone.\n");
+    printf("\nDone.\n");
     return 0;
 }

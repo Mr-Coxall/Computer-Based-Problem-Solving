@@ -106,42 +106,42 @@ Code for Select Case statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 16, 19-23
+        :emphasize-lines: 22-26
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 19-25
+        :emphasize-lines: 22-26
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 20-27
+        :emphasize-lines: 23-27
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 26-30
+        :emphasize-lines: 27-31
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 23-30
+        :emphasize-lines: 26-30
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 12-19
+        :emphasize-lines: 14-18
 
   .. group-tab:: Python
     .. code-block:: Python
@@ -175,218 +175,3 @@ Example Output
   You passed the course.
 
   Done.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-      // Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-      //
-      // Created by: Mr. Coxall
-      // Created on: Oct 2019
-      // This program uses a compound boolean statement
-
-      #include <iostream>
-
-      main() {
-          // this function uses a compound boolean statement
-          std::string integer_as_string;
-          int term_mark;
-          int project_mark;
-
-          // input
-          std::cout << "Enter term mark: ";
-          std::cin >> term_mark;
-          
-          std::cout << "Enter project mark: ";
-          std::cin >> project_mark;
-
-          // process & output
-          if (term_mark >= 50 && project_mark >= 50) {
-              std::cout << "You passed the course.";
-          } else {
-              std::cout << "You did not pass the course.";
-          }
-      }
-
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-      // compound boolean expressions
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-      // compound boolean expressions
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-      // compound boolean expressions
-
-  .. group-tab:: Python
-
-    .. code-block:: Python
-
-      #!/usr/bin/env python3
-
-      # Created by: Mr. Coxall
-      # Created on: Sep 2019
-      # This program uses a compound boolean statement
-
-
-      def main():
-          # this function uses a compound boolean statement
-
-          # input
-          term_mark = int(input("Enter term mark: "))
-          project_mark = int(input("Enter project mark: "))
-          print("")
-
-          # process & output
-          if term_mark >= 50 and project_mark >= 50:
-              print("You passed the course.")
-          else:
-              print("You did not pass the course.")
-
-
-      if __name__ == "__main__":
-          main()
-
-
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // compound boolean expressions
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // compound boolean expressions
-
-
-Besides these two logical operators, there is one more, the NOT. NOT is used most often at the beginning of a Boolean expression to invert its evaluation. It does not compare 2 values but just inversts a single one.
-
-NOT Truth Table
-
-+-------+--------+
-|   A   | NOT(A) | 
-+=======+========+ 
-| True  | False  |
-+-------+--------+ 
-| False | True   | 
-+-------+--------+ 
-
-For example:
-
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-      // Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-      //
-      // Created by: Mr. Coxall
-      // Created on: Oct 2019
-      // This program uses a NOT boolean statement
-
-      #include <iostream>
-
-      main() {
-          // this function uses a NOT boolean statement
-          bool isSunday = true;
-          bool isHoliday = false;
-          
-          if (!isHoliday == true) {
-              std::cout << "Please start working, it is not holiday.";
-          } else {
-              std::cout << "Today is holiday!!";
-          }
-      }
-
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-      // NOT boolean expressions
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-      // NOT boolean expressions
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-      // NOT boolean expressions
-
-  .. group-tab:: Python3
-
-    .. code-block:: Python
-
-      #!/usr/bin/env python3
-
-      # Created by: Mr. Coxall
-      # Created on: Sep 2019
-      # This program uses a NOT boolean statement
-
-
-      def main():
-          # this function uses a NOT boolean statement
-
-          is_sunday = True
-          is_holiday = False
-          
-          if not is_holiday == True:
-              print('Please start working, it is not holiday')
-          else:
-              print('Today is holiday!!')
-
-
-      if __name__ == "__main__":
-          main()
-
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // NOT boolean expressions
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // NOT boolean expressions

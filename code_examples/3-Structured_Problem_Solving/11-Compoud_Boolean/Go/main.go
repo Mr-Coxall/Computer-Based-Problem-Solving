@@ -1,35 +1,34 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks for a runtime error
+ * This program uses a compound boolean statement
  */
 
 package main
 
 import (
 	"fmt"
-	"strconv"
 )
 
 func main() {
-	// this function checks for a runtime error
-
-	var integerAsString string
+	// this function uses a compound boolean statement
 
 	// input
-	fmt.Print("Enter an integer: ")
-	fmt.Scanln(&integerAsString)
+	var termMark int
+	var projectMark int
 
-	// process and output
-	integerAsNumber, err := strconv.Atoi(integerAsString)
+	fmt.Print("Enter term mark (as %): ")
+	fmt.Scanln(&termMark)
+	fmt.Print("Enter project mark (as %): ")
+	fmt.Scanln(&projectMark)
+	fmt.Println()
 
-	if err == nil {
-		fmt.Println("You entered: ", integerAsNumber)
+	// process & output
+	if termMark >= 50 && projectMark >= 50 {
+		fmt.Println("You passed the course.")
 	} else {
-		fmt.Println("The error was:", err, ".")
+		fmt.Println("You did not pass the course.")
 	}
-
-	fmt.Println("Thanks for playing.")
 
 	fmt.Println("\nDone.")
 }

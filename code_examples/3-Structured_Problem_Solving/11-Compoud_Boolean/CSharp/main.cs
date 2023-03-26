@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks for a runtime error
+ * This program uses a compound boolean statement
 */
 
 using System;
@@ -10,20 +10,20 @@ using System;
 */
 class Program {
     static void Main() {
-        // this function checks a student's grade
+        // this function uses a compound boolean statement
 
-        // Input
-        Console.Write("Enter an integer: ");
-        string integerAsString = Console.ReadLine();
+        // input
+        Console.Write("Enter term mark (as %): ");
+        int termMark = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter project mark (as %): ");
+        int projectMark = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine();
 
-        // Process & Output
-        try {
-            int integerAsNumber = int.Parse(integerAsString);
-            Console.WriteLine($"You entered: {integerAsNumber}.");
-        } catch (FormatException e) {
-            Console.WriteLine($"The error was: {e.Message}.");
-        } finally {
-            Console.WriteLine("Thanks for playing.");
+        // process & output
+        if (termMark >= 50 && projectMark >= 50) {
+            Console.WriteLine("You passed the course.");
+        } else {
+            Console.WriteLine("You did not pass the course.");
         }
 
         Console.WriteLine("\nDone.");
