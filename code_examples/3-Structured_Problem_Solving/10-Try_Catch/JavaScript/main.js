@@ -1,33 +1,21 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks a student's grade
+ * This program uses a try statement
  */
 
 const prompt = require("prompt-sync")()
 
 // input
-const grade = prompt("Enter your grade: ")
+const integerAsString = prompt("Enter an integer: ")
 
 // process & output
-switch (grade.toUpperCase()) {
-  case "A":
-    console.log("Excellent!")
-    break
-  case "B":
-    console.log("Good job!")
-    break
-  case "C":
-    console.log("Average.")
-    break
-  case "D":
-    console.log("Poor.")
-    break
-  case "F":
-    console.log("Fail.")
-    break
-  default:
-    console.log("Invalid grade.")
-    break
+try{
+  const integerAsNumber = parseInt(integerAsString)
+  console.log(`The integer was: ${integerAsNumber}.`)
+} catch (err) {
+  console.log(`The error was: {err}.`)
+} finally {
+  console.log("Thanks for playing.")
 }
 
 console.log("\nDone.")

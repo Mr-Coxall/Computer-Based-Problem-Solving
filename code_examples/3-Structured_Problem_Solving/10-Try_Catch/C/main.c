@@ -2,14 +2,13 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program checks your grade
+// This program uses a try statement
 
 #include <stdio.h>
-#include <ctype.h>
 
 int main() {
-    // this function checks your grade
-    char gradeLevel;  // a single character
+    // this function uses a try statement
+    char userIntegerAsString; // a single character
 
     // input
     printf("Enter grade mark as a single character(ex: A, B, ...): ");

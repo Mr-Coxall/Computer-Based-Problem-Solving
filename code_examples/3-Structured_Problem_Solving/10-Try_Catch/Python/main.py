@@ -2,31 +2,25 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module checks a student's grade
+This module uses a try statement
 """
 
 
 def main() -> None:
-    """The main() this function checks a student's grade, returns None."""
+    """The main() this function uses a try statement, returns None."""
 
     # input
-    grade = input("Enter grade mark as a single character(ex: A, B, ...): ")
+    integer_as_string = input("Enter an integer: ")
 
     # process & output
-    # NOTE: This will only work on >= Python 3.10
-    match grade.upper():
-        case "A":
-            print("Excellent!")
-        case "B":
-            print("Good job!")
-        case "C":
-            print("Average.")
-        case "D":
-            print("Poor.")
-        case "F":
-            print("Fail.")
-        case _:
-            print("Invalid grade.")
+    try:
+        integer_as_number = int(integer_as_string)
+    except ValueError:
+        print("This was not an integer.")
+    else:
+        print(f"The integer was: {integer_as_number}.")
+    finally:
+        print("Thanks for playing.")
 
     print("\nDone.")
 

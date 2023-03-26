@@ -1,5 +1,5 @@
 /*
- * This program checks a student's grade
+ * This program uses a try statement
  *
  * @author  Mr Coxall
  * @version 1.0
@@ -10,35 +10,23 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    // this function checks a traffic light
+    // this function uses a try statement
 
     // create Scanner object for user input
     Scanner scanner = new Scanner(System.in);
 
     // input
-    System.out.print("Enter your grade: ");
-    String grade = scanner.nextLine();
+    System.out.print("Enter an integer: ");
+    String integerAsString = scanner.nextLine();
 
     // process & output
-    switch (grade.toUpperCase()) {
-      case "A":
-        System.out.println("Excellent!");
-        break;
-      case "B":
-        System.out.println("Good job!");
-        break;
-      case "C":
-        System.out.println("Average.");
-        break;
-      case "D":
-        System.out.println("Poor.");
-        break;
-      case "F":
-        System.out.println("Fail.");
-        break;
-      default:
-        System.out.println("Invalid grade.");
-        break;
+    try {
+        int integerAsNumber = Integer.parseInt(integerAsString);
+        System.out.printf("The integer was: %d.%n", integerAsNumber);
+    } catch (NumberFormatException e) {
+        System.out.printf("The error was: %s.%n", e.getMessage());
+    } finally {
+        System.out.println("Thanks for playing.");
     }
 
     // close the Scanner object
