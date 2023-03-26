@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks a student's grade
+ * This program checks for a runtime error
 */
 
 using System;
@@ -12,30 +12,18 @@ class Program {
     static void Main() {
         // this function checks a student's grade
 
-        // create Scanner object for user input
-        Console.Write("Enter your grade: ");
-        string grade = Console.ReadLine();
+        // Input
+        Console.Write("Enter an integer: ");
+        string integerAsString = Console.ReadLine();
 
-        // process & output
-        switch (grade.ToUpper()) {
-            case "A":
-                Console.WriteLine("Excellent!");
-                break;
-            case "B":
-                Console.WriteLine("Good job!");
-                break;
-            case "C":
-                Console.WriteLine("Average.");
-                break;
-            case "D":
-                Console.WriteLine("Poor.");
-                break;
-            case "F":
-                Console.WriteLine("Fail.");
-                break;
-            default:
-                Console.WriteLine("Invalid grade.");
-                break;
+        // Process & Output
+        try {
+            int integerAsNumber = int.Parse(integerAsString);
+            Console.WriteLine($"You entered: {integerAsNumber}.");
+        } catch (FormatException e) {
+            Console.WriteLine($"The error was: {e.Message}.");
+        } finally {
+            Console.WriteLine("Thanks for playing.");
         }
 
         Console.WriteLine("\nDone.");

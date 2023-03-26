@@ -2,42 +2,29 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program checks your grade
+// This program checks for a runtime error
 
 #include <iostream>
-#include <cctype>
+#include <string>
 
 int main() {
-    // this function checks your grade
-    char gradeLevel;  // a single character
+    // this function checks for a runtime error
+    std::string integerAsString;
 
-    // input
-    std::cout << "Enter grade mark as a single character(ex: A, B, ...): ";
-    std::cin >> gradeLevel;
+    // Input
+    std::cout << "Enter an integer: ";
+    getline(std::cin, integerAsString);
 
-    // process and output
-    // switch in C++ can not support strings, only numbers and char
-    // also note you need the break in C++ or it will move to next
-    // line in switch statement if it is true again
-    switch (toupper(gradeLevel)) {
-    case 'A':
-        std::cout << "Excellent!" << std::endl;
-        break;
-    case 'B':
-        std::cout << "Good job!" << std::endl;
-        break;
-    case 'C':
-        std::cout << "Average." << std::endl;
-        break;
-    case 'D':
-        std::cout << "Poor." << std::endl;
-        break;
-    case 'F':
-        std::cout << "Fail." << std::endl;
-        break;
-    default:
-        std::cout << "Invalid grade." << std::endl;
+    // Process & Output
+    try {
+        int integerAsNumber = stoi(integerAsString);
+        std::cout << "You entered: " << integerAsNumber << "." << std::endl;
     }
+    catch (const std::invalid_argument &err)
+    {
+        std::cout << "The error was: " << err.what() << "." << std::endl;
+    }
+    std::cout << "Thanks for playing." << std::endl;
 
     std::cout << "\nDone." << std::endl;
 }

@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a try statement
+ * This program checks for a runtime error
  */
 
 const prompt = require("prompt-sync")()
@@ -11,7 +11,7 @@ const integerAsString = prompt("Enter an integer: ")
 // process & output
 try{
   const integerAsNumber = parseInt(integerAsString)
-  console.log(`The integer was: ${integerAsNumber}.`)
+  console.log(`You entered: ${integerAsNumber}.`)
 } catch (err) {
   console.log(`The error was: {err}.`)
 } finally {

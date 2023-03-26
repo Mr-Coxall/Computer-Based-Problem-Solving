@@ -1,40 +1,33 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks a student's grade
+ * This program checks for a runtime error
  */
 
 package main
 
 import (
 	"fmt"
-	"strings"
+	"strconv"
 )
 
 func main() {
-	// this function checks a student's grade
+	// this function checks for a runtime error
 
-	var grade string
+	var integerAsString string
 
 	// input
-	fmt.Print("Enter your grade: ")
-	fmt.Scanln(&grade)
+	fmt.Print("Enter an integer: ")
+	fmt.Scanln(&integerAsString)
 
 	// process and output
-	switch strings.ToUpper(grade) {
-	case "A":
-		fmt.Println("Excellent!")
-	case "B":
-		fmt.Println("Good job!")
-	case "C":
-		fmt.Println("Average.")
-	case "D":
-		fmt.Println("Poor.")
-	case "F":
-		fmt.Println("Fail.")
-	default:
-		fmt.Println("Invalid grade.")
+	integerAsNumber, err := strconv.Atoi(integerAsString)
+	if err == nil {
+		fmt.Println("You entered: ", integerAsNumber)
+	} else {
+		fmt.Println("The error was:", err, ".")
 	}
+	fmt.Println("Thanks for playing.")
 
 	fmt.Println("\nDone.")
 }

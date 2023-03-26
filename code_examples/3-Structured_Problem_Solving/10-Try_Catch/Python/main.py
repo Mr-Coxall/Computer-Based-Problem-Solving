@@ -2,12 +2,12 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module uses a try statement
+This module checks for a runtime error
 """
 
 
 def main() -> None:
-    """The main() this function uses a try statement, returns None."""
+    """The main() this function checks for a runtime error, returns None."""
 
     # input
     integer_as_string = input("Enter an integer: ")
@@ -16,9 +16,9 @@ def main() -> None:
     try:
         integer_as_number = int(integer_as_string)
     except ValueError:
-        print("This was not an integer.")
+        print(f"The error was {ValueError}.")
     else:
-        print(f"The integer was: {integer_as_number}.")
+        print(f"You entered: {integer_as_number}.")
     finally:
         print("Thanks for playing.")
 

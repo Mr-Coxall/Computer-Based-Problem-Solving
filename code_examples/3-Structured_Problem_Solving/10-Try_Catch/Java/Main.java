@@ -1,5 +1,5 @@
 /*
- * This program uses a try statement
+ * This program checks for a runtime error
  *
  * @author  Mr Coxall
  * @version 1.0
@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    // this function uses a try statement
+    // this function checks for a runtime error
 
     // create Scanner object for user input
     Scanner scanner = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class Main {
     // process & output
     try {
         int integerAsNumber = Integer.parseInt(integerAsString);
-        System.out.printf("The integer was: %d.%n", integerAsNumber);
+        System.out.printf("You entered: %d.%n", integerAsNumber);
     } catch (NumberFormatException e) {
         System.out.printf("The error was: %s.%n", e.getMessage());
     } finally {

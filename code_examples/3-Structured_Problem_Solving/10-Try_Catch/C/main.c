@@ -2,41 +2,27 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program uses a try statement
+// This program checks for a runtime error
 
 #include <stdio.h>
 
 int main() {
-    // this function uses a try statement
-    char userIntegerAsString; // a single character
+    // this function checks for a runtime error
+    int integerValue = 0;
+    int scanErrorCode = 0;
 
     // input
-    printf("Enter grade mark as a single character(ex: A, B, ...): ");
-    scanf("%c", &gradeLevel);
+    printf("Enter an integer: ");
+    scanErrorCode = scanf("%d", &integerValue);
 
     // process and output
-    // Note you need the break in C or it will move to next
-    // line in switch statement if it is true again
-    switch (toupper(gradeLevel)) {
-    case 'A':
-        printf("Excellent!\n");
-        break;
-    case 'B':
-        printf("Good job!\n");
-        break;
-    case 'C':
-        printf("Average.\n");
-        break;
-    case 'D':
-        printf("Poor.\n");
-        break;
-    case 'F':
-        printf("Fail.\n");
-        break;
-    default:
-        printf("Invalid grade.\n");
+    if (scanErrorCode == 1) {
+        printf("You entered: %d\n", integerValue);
+    } else {
+        printf("You did not enter an integer.\n");
     }
+    printf("Thanks for playing.\n");
 
-    printf("\nDone.\n");
+        printf("\nDone.\n");
     return 0;
 }
