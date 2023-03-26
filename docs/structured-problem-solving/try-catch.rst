@@ -38,7 +38,7 @@ Pseudocode for Try Catch statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **GET** userIntegerAsString
 | **TRY**
-|    **CONVERT** userIntegerAsInt = int(userIntegerAsString)
+|    **CONVERT** userIntegerAsInt = int(user_integer_as_string)
 | **EXCEPT** invalid_argument
 |    **SHOW** "That was not a valid integer"
 | **ELSE**
