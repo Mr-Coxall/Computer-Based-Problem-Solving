@@ -22,11 +22,13 @@ func main() {
 
 	// process and output
 	integerAsNumber, err := strconv.Atoi(integerAsString)
+
 	if err == nil {
 		fmt.Println("You entered: ", integerAsNumber)
 	} else {
 		fmt.Println("The error was:", err, ".")
 	}
+
 	fmt.Println("Thanks for playing.")
 
 	fmt.Println("\nDone.")

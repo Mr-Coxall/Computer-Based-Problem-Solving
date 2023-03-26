@@ -36,15 +36,15 @@ Flowchart for Try Catch statement
 
 Pseudocode for Try Catch statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-| **GET** userIntegerAsString
+| **GET** integer_as_string
 | **TRY**
-|    **CONVERT** userIntegerAsInt = int(user_integer_as_string)
+|    **CONVERT** integer_as_number = int(integer_as_string)
 | **EXCEPT** invalid_argument
-|    **SHOW** "That was not a valid integer"
+|    **SHOW** "The error was ..."
 | **ELSE**
-|    **SHOW** "That number as an integer is " + userIntegerAsInt
+|    **SHOW** "You entered: " + integer_as_number
 | **FINALLY**
-|    **SHOW** "Done."
+|    **SHOW** "Thanks for playing."
 | **ENDTRY**
 
 Code for Select Case statement
@@ -56,176 +56,62 @@ Code for Select Case statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/10-Try_Catch/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 19-40
+        :emphasize-lines: 19-23
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/10-Try_Catch/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 19-41
+        :emphasize-lines: 19-25
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/10-Try_Catch/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 20-39
+        :emphasize-lines: 20-27
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/10-Try_Catch/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 24-37
+        :emphasize-lines: 26-30
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/10-Try_Catch/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 23-42
+        :emphasize-lines: 23-30
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/10-Try_Catch/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 12-31
+        :emphasize-lines: 12-19
 
   .. group-tab:: Python
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/10-Try_Catch/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 17-29
+        :emphasize-lines: 16-23
 
 Example Output
 ^^^^^^^^^^^^^^
 .. code-block:: console
 
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter your grade: A
-  Excellent!
+  Enter an integer: 42
+  You entered: 42.
+  Thanks for playing.
 
   Done.
   @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter your grade: f
-  Fail.
+  Enter an integer: Not an integer!       
+  The error was <class 'ValueError'>.
+  Thanks for playing.
 
   Done.
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter your grade: E
-  Invalid grade.
-
-  Done.
-
-
-
-
-
-
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-      // Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-      //
-      // Created by: Mr. Coxall
-      // Created on: Sep 2019
-      // This program uses a try statement
-
-      #include <iostream>
-      #include <string>
-
-      main() {
-          // this function uses a try statement
-          std::string integerAsString;
-          int integerAsNumber;
-
-          // input
-          std::cout << "Enter a number: ";
-          std::cin >> integerAsString;
-
-          // process & output
-          try {
-              integerAsNumber = std::stoi(integerAsString);
-              std::cout << "That number as an integer is " << integerAsNumber;
-          } catch (std::invalid_argument) {
-              std::cout << "That was not a valid integer";
-          }
-      }
-
-
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-      // try statement
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-      // try statement
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-      // try statement
-
-  .. group-tab:: Python3
-
-    .. code-block:: Python
-
-      #!/usr/bin/env python3
-
-      # Created by: Mr. Coxall
-      # Created on: Sep 2019
-      # This program uses a try statement
-
-
-      def main():
-          # this function uses a try statement
-
-          # input
-          integer_as_string = input("Enter an integer: ")
-          print("")
-
-          # process & output
-          try:
-              integer_as_number = int(integer_as_string)
-              print("You entered an integer correctly")
-          except ValueError:
-              print("This was not an integer")
-          finally:
-              print("Thanks for playing")
-
-
-      if __name__ == "__main__":
-          main()
-
-
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // try statement
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // try statement
-
-
-In the above examples, if you do enter in an integer, it will let you know. If you enter in a string for example, the program will not crash, but give you a warning. The above examples would look like the following in a flow-chart:
-
-.. image:: ./images/try-catch.png
-   :alt: Try…Catch flowchart
-   :align: center 
