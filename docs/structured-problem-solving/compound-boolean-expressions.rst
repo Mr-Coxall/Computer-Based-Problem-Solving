@@ -148,7 +148,7 @@ Code for Select Case statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 18-21
+        :emphasize-lines: 24-27
 
 Example Output
 ^^^^^^^^^^^^^^
