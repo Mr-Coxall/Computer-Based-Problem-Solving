@@ -148,22 +148,31 @@ Code for Select Case statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 16-23
+        :emphasize-lines: 19-22
 
 Example Output
 ^^^^^^^^^^^^^^
 .. code-block:: console
 
   @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter an integer: 42
-  You entered: 42.
-  Thanks for playing.
+  Enter term mark (as %): 42
+  Enter project mark (as %): 42
+
+  You did not pass the course.
 
   Done.
   @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter an integer: Not an integer!       
-  The error was <class 'ValueError'>.
-  Thanks for playing.
+  Enter term mark (as %): 42
+  Enter project mark (as %): 88
+
+  You did not pass the course.
+
+  Done.
+  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
+  Enter term mark (as %): 88
+  Enter project mark (as %): 88
+
+  You passed the course.
 
   Done.
 

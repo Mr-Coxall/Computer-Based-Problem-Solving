@@ -2,25 +2,24 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module checks for a runtime error
+This module uses a compound boolean statement
 """
 
 
 def main() -> None:
-    """The main() this function checks for a runtime error, returns None."""
+    """The main() this function uses a compound boolean statement, returns None."""
+
 
     # input
-    integer_as_string = input("Enter an integer: ")
+    term_mark = int(input("Enter term mark (as %): "))
+    project_mark = int(input("Enter project mark (as %): "))
+    print("")
 
     # process & output
-    try:
-        integer_as_number = int(integer_as_string)
-    except ValueError:
-        print(f"The error was {ValueError}.")
+    if term_mark >= 50 and project_mark >= 50:
+        print("You passed the course.")
     else:
-        print(f"You entered: {integer_as_number}.")
-    finally:
-        print("Thanks for playing.")
+        print("You did not pass the course.")
 
     print("\nDone.")
 
