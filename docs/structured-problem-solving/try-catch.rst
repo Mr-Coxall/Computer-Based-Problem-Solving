@@ -47,7 +47,7 @@ Pseudocode for Try Catch statement
 |    **SHOW** "Thanks for playing."
 | **ENDTRY**
 
-Code for Select Case statement
+Code for Try Catch statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
