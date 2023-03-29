@@ -23,6 +23,6 @@ int main() {
     }
     printf("Thanks for playing.\n");
 
-        printf("\nDone.\n");
+    printf("\nDone.\n");
     return 0;
 }
