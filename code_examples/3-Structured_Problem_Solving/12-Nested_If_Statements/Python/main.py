@@ -21,11 +21,11 @@ def main() -> None:
     else:
         if cookies_sold >= 20:
             if cookies_sold < 30:
-                print("You get a small prize")
+                print("You get a small prize.")
             else:
-                print("You get a large prize")
+                print("You get a large prize.")
         else:
-            print("No prize")
+            print("No prize.")
 
     print("\nDone.")
 
