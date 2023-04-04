@@ -35,13 +35,14 @@ Flowchart for Nested If statement
 Pseudocode for Nested If statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **GET** cookies_sold
-| **IF** (cookies_sold < 20) **THEN**
-|    **SHOW** "No prize!"
-|    **IF** (cookies_sold > 30) **THEN**
-|        **SHOW** "Big prize!"
-|    **ELSE**
+| **IF** (cookies_sold >= 20) **THEN**
+|    **IF** (cookies_sold < 30) **THEN**
 |        **SHOW** "Small prize!"
+|    **ELSE**
+|        **SHOW** "Large prize!"
 |    **ENDIF**
+| **ELSE**
+|    **SHOW** "No prize."
 | **ENDIF**
 
 Code for Nested If statement
