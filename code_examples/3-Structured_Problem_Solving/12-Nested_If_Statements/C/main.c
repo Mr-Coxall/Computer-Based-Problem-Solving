@@ -2,27 +2,28 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program uses a compound boolean statement
+// This program uses a nested if statement
 
 #include <stdio.h>
 
 int main() {
-    // this function uses a compound boolean statement
-    int termMark;
-    int projectMark;
+    // this function uses a nested if statement
+    int cookiesSold;
 
     // input
-    printf("Enter term mark (as %%): ");
-    scanf("%d", &termMark);
-    printf("Enter project mark (as %%): ");
-    scanf("%d", &projectMark);
+    printf("Enter the number of boxes of cookies you sold: ");
+    scanf("%d", &cookiesSold);
     printf("\n");
 
     // process & output
-    if (termMark >= 50 && projectMark >= 50) {
-        printf("You passed the course.\n");
+    if (cookiesSold >= 20) {
+        if (cookiesSold < 30) {
+            printf("You get a small prize.\n");
+        } else {
+            printf("You get a large prize.\n");
+        }
     } else {
-        printf("You did not pass the course.\n");
+        printf("No prize.\n");
     }
 
     printf("\nDone.\n");

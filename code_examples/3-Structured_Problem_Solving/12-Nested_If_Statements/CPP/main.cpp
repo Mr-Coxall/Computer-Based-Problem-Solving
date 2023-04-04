@@ -2,27 +2,28 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program uses a compound boolean statement
+// This program uses a nested if statement
 
 #include <iostream>
 
 int main() {
-    // this function uses a compound boolean statement
-    int termMark;
-    int projectMark;
+    // this function uses a nested if statement
+    int cookiesSold;
 
     // input
-    std::cout << "Enter term mark (as %): ";
-    std::cin >> termMark;
-    std::cout << "Enter project mark (as %): ";
-    std::cin >> projectMark;
+    std::cout << "Enter the number of boxes of cookies you sold: ";
+    std::cin >> cookiesSold;
     std::cout << std::endl;
 
     // process & output
-    if (termMark >= 50 && projectMark >= 50) {
-        std::cout << "You passed the course." << std::endl;
+    if (cookiesSold >= 20) {
+        if (cookiesSold < 30) {
+            std::cout << "You get a small prize." << std::endl;
+        } else {
+            std::cout << "You get a large prize." << std::endl;
+        }
     } else {
-        std::cout << "You did not pass the course." << std::endl;
+        std::cout << "No prize." << std::endl;
     }
 
     std::cout << "\nDone." << std::endl;

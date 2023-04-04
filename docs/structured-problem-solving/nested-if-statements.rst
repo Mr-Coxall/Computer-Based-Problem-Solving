@@ -54,7 +54,7 @@ Code for Nested If statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/12-Nested_If_Statements/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 20-28
+        :emphasize-lines: 19-27
 
   .. group-tab:: C++
     .. code-block:: C++
@@ -68,14 +68,14 @@ Code for Nested If statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/12-Nested_If_Statements/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 21-29
+        :emphasize-lines: 23-31
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/12-Nested_If_Statements/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 20-28
+        :emphasize-lines: 24-32
 
   .. group-tab:: Java
     .. code-block:: Java

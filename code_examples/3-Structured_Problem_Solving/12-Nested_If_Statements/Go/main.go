@@ -1,7 +1,7 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a compound boolean statement
+ * This program uses a nested if statement
  */
 
 package main
@@ -11,23 +11,24 @@ import (
 )
 
 func main() {
-	// this function uses a compound boolean statement
+	// this function uses a nested if statement
+
+	var cookiesSold int
 
 	// input
-	var termMark int
-	var projectMark int
-
-	fmt.Print("Enter term mark (as %): ")
-	fmt.Scanln(&termMark)
-	fmt.Print("Enter project mark (as %): ")
-	fmt.Scanln(&projectMark)
+	fmt.Print("Enter the number of boxes of cookies you sold: ")
+	fmt.Scan(&cookiesSold)
 	fmt.Println()
 
 	// process & output
-	if termMark >= 50 && projectMark >= 50 {
-		fmt.Println("You passed the course.")
+	if cookiesSold >= 20 {
+		if cookiesSold < 30 {
+			fmt.Println("You get a small prize.")
+		} else {
+			fmt.Println("You get a large prize.")
+		}
 	} else {
-		fmt.Println("You did not pass the course.")
+		fmt.Println("No prize.")
 	}
 
 	fmt.Println("\nDone.")
