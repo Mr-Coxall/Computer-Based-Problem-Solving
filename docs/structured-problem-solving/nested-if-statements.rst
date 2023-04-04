@@ -82,21 +82,21 @@ Code for Nested If statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/12-Nested_If_Statements/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 22-30
+        :emphasize-lines: 26-34
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/12-Nested_If_Statements/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 12-20
+        :emphasize-lines: 15-23
 
   .. group-tab:: Python
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/12-Nested_If_Statements/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 22-28
+        :emphasize-lines: 17-23
 
 Example Output
 ^^^^^^^^^^^^^^

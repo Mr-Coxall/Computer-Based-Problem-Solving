@@ -9,13 +9,12 @@ const prompt = require("prompt-sync")()
 const integerAsString = prompt("Enter an integer: ")
 
 // process & output
-try{
-  const integerAsNumber = parseInt(integerAsString)
+const integerAsNumber = parseInt(integerAsString)
+
+if (integerAsNumber != NaN) {
   console.log(`You entered: ${integerAsNumber}.`)
-} catch (err) {
-  console.log(`The error was: {err}.`)
-} finally {
-  console.log("Thanks for playing.")
+} else {
+  console.log("Invalid input.")
 }
 
 console.log("\nDone.")
