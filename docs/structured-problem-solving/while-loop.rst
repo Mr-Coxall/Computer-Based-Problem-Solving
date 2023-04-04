@@ -3,22 +3,24 @@
 While Loop
 ==========
 
-The `While loop <https://en.wikipedia.org/wiki/While_loop>`_ is a repetition structure where the statements in the structure are repeated as long as the boolean expression is true. The flow of logic keeps coming back up to the Boolean expression to check if it is still true. As soon as the boolean expression is false, the flow of logic hops down to the end of the loop. The boolean condition is also checked before the looping statements are executes the first times. This mean if the condition is not true the first time, the statements will never happen. 
+The `While loop <https://en.wikipedia.org/wiki/While_loop>`_ is a repetition structure where the statements in the structure are repeated as long as the boolean expression is true. The flow of logic keeps coming back up to the Boolean expression to check if it is still true. As soon as the boolean expression is false, the flow of logic hops down to the end of the loop. The boolean condition is also checked before the looping statements are executes the first times. This mean if the condition is not true the first time, the statements will never happen.
+
+It is a common occurrence to have an accumulator or counter within a looping structure. The counter, usually, is incremented (1 is added) or decremented (1 is subtracted) each time the condition is meet and the statements inside the loop are performed. When the counter reaches a certain number that is expressed inside the boolean statement, then the loop is exited. Ensure you use proper style and **DO NOT** do what is very common in programming, just declare the variable as i, j or x. Always name a variable for what it is actually doing and holding. For example, if you are using a counter, name it counter or loopCounter.
 
 The while loop (in most computer programming languages) takes the generic form of:
 
-| **WHILE** boolean expression:
+| **WHILE** (boolean expression)
 |    statement(s)
+|    ...
 |    counter = counter + 1
-| **END**
+| **ENDWHILE**
+
 
 The flowchart for a While Loop will look like this:
 
 .. image:: ./images/while-loop.png
    :alt: While Loop
    :align: center 
-
-It is a common occurrence to have an accumulator or counter within a looping structure. The counter, usually, is incremented (1 is added) or decremented (1 is subtracted) each time the condition is meet and the statements inside the loop are performed. When the counter reaches a certain number that is expressed inside the boolean statement, then the loop is exited. Ensure you use proper style and do not do what is very common in programming, just declare the variable as i, j or x. Always name a variable for what it is actually doing and holding.
 
 The following code snippet, a repetition program. The user enters a positive integer and the program prints out that many lines:
 
