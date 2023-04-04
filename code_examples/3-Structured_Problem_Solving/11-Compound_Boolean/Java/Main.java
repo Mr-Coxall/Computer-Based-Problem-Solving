@@ -24,9 +24,9 @@ public class Main {
 
     // process & output
     if (termMark >= 50 && projectMark >= 50) {
-        System.out.println("You passed the course.");
+      System.out.println("You passed the course.");
     } else {
-        System.out.println("You did not pass the course.");
+      System.out.println("You did not pass the course.");
     }
 
     // close the Scanner object
