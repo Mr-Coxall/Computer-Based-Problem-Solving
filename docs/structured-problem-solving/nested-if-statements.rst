@@ -3,7 +3,7 @@
 Nested If Statements
 ====================
 
-Sometimes a single if statement, even a long If…Then…ElseIf…ElseIf…Else is not a suitable structure to model your problem. Sometimes after one decision is made, there is another second decision that must follow. In these cases, if statements can be nested within if statements (or other structures as we will see later). Here is a problem:
+Sometimes a single if statement, even a long If…Then…ElseIf…ElseIf…Else is not a suitable structure to model your problem. Sometimes after one decision is made, there is another second decision that must follow. In these cases, if statements can be nested within if statements (or other structures as we will see later).
 
 The nested if statements (in most computer programming languages) takes the generic form of:
 
@@ -18,7 +18,113 @@ The nested if statements (in most computer programming languages) takes the gene
 |     Alternate statements to be performed
 | **ENDIF**
 
-A school is going to sell chocolate bars to raise money. If a student sells 20 or more boxes, they get a prize. If they sell less than 30, they get a “small” prize. If they sell more than 30, they get a "large" prize. (Yes you could use an If…Then…ElseIf… statement.)
+In this example problem a school is going to sell cookies to raise money. If a student sells 20 or more boxes, they get a prize. If they sell less than 30, they get a “small” prize. If they sell more than 30, they get a "large" prize. (Yes you could use an If…Then…ElseIf… statement.)
+
+Top-Down Design for Nested If statement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. image:: ./images/top-down-nested-if.png
+   :alt: Top-Down Design for Nested If statement
+   :align: center
+
+Flowchart for Nested If statement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. image:: ./images/flowchart-nested-if.png
+   :alt: Nested If flowchart
+   :align: center
+
+Pseudocode for Nested If statement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **GET** cookies_sold
+| **IF** (cookies_sold < 20) **THEN**
+|    **SHOW** "No prize!"
+|    **IF** (cookies_sold > 30) **THEN**
+|        **SHOW** "Big prize!"
+|    **ELSE**
+|        **SHOW** "Small prize!"
+|    **ENDIF**
+| **ENDIF**
+
+Code for Nested If statement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. tabs::
+
+  .. group-tab:: C
+    .. code-block:: C
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/12-Nested_If_Statements/C/main.c
+        :language: C
+        :linenos:
+        :emphasize-lines: 20-28
+
+  .. group-tab:: C++
+    .. code-block:: C++
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/12-Nested_If_Statements/CPP/main.cpp
+        :language: C++
+        :linenos:
+        :emphasize-lines: 19-27
+
+  .. group-tab:: C#
+    .. code-block:: C#
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/12-Nested_If_Statements/CSharp/main.cs
+        :language: C#
+        :linenos:
+        :emphasize-lines: 21-29
+
+  .. group-tab:: Go
+    .. code-block:: Go
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/12-Nested_If_Statements/Go/main.go
+        :language: go
+        :linenos:
+        :emphasize-lines: 20-28
+
+  .. group-tab:: Java
+    .. code-block:: Java
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/12-Nested_If_Statements/Java/Main.java
+        :language: java
+        :linenos:
+        :emphasize-lines: 22-30
+
+  .. group-tab:: JavaScript
+    .. code-block:: JavaScript
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/12-Nested_If_Statements/JavaScript/main.js
+        :language: javascript
+        :linenos:
+        :emphasize-lines: 12-20
+
+  .. group-tab:: Python
+    .. code-block:: Python
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/12-Nested_If_Statements/Python/main.py
+        :language: python
+        :linenos:
+        :emphasize-lines: 22-28
+
+Example Output
+^^^^^^^^^^^^^^
+.. code-block:: console
+
+  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
+  Enter the color of the traffic light: red
+  Stop!
+
+  Done.
+  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
+  Enter the color of the traffic light: yellow
+  Slow down!
+
+  Done.
+  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
+  Enter the color of the traffic light: green
+  Go!
+
+  Done.
+  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
+  Enter the color of the traffic light: blue
+  Not a valid color.
+
+  Done.
+
+
+
+
 
 An example of what this would look like in a specific programming language is:
 
