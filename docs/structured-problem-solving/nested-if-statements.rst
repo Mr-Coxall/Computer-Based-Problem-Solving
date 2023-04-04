@@ -102,134 +102,21 @@ Example Output
 ^^^^^^^^^^^^^^
 .. code-block:: console
 
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the color of the traffic light: red
-  Stop!
+  @Mr-Coxall ➜ (main) $ python ./main.py 
+  Enter the number of boxes of cookies you sold: 12
+
+  No prize
 
   Done.
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the color of the traffic light: yellow
-  Slow down!
+  @Mr-Coxall ➜ (main) $ python ./main.py 
+  Enter the number of boxes of cookies you sold: 45
+
+  You get a large prize
 
   Done.
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the color of the traffic light: green
-  Go!
+  @Mr-Coxall ➜ (main) $ python ./main.py 
+  Enter the number of boxes of cookies you sold: 22
+
+  You get a small prize
 
   Done.
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the color of the traffic light: blue
-  Not a valid color.
-
-  Done.
-
-
-
-
-
-An example of what this would look like in a specific programming language is:
-
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-      // Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-      //
-      // Created by: Mr. Coxall
-      // Created on: Sep 2019
-      // This program uses a nested if statement
-
-      #include <iostream>
-      #include <string>
-
-      main() {
-          // this function uses a nested if statement
-          int cookiesSold;
-
-          // input
-          std::cout << "Enter the number of boxes of cookies you sold: ";
-          std::cin >> cookiesSold;
-
-          // process & output
-          if (cookiesSold >= 20) {
-              if (cookiesSold < 30) {
-                  std::cout << "You get a small prize";
-              } else {
-                  std::cout << "You get a large prize";
-              }
-          } else{
-              std::cout << "No prize";
-          }
-      }
-
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-      // nested if example
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-      // nested if example
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-      // nested if example
-
-  .. group-tab:: Python3
-
-    .. code-block:: Python
-
-      #!/usr/bin/env python3
-
-      # Created by: Mr. Coxall
-      # Created on: Sep 2019
-      # This program uses a nested if statement
-
-
-      def main():
-          # this function uses a nested if statement
-
-          # input
-          cookies_sold = int(input("Enter the number of boxes of cookies you sold: "))
-          print("")
-
-          # process & output
-          if cookies_sold >= 20:
-              if cookies_sold < 30:
-                  print("You get a small prize")
-              else:
-                  print("You get a large prize")
-          else:
-              print("No prize")
-
-
-      if __name__ == "__main__":
-          main()
-
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // nested if example
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // nested if example
-
-
-The flowchart for this type of problem will look something like this:
-
-.. image:: ./images/nested-if-statement.png
-   :alt: Nested If Statement Flowchart
-   :align: center 
