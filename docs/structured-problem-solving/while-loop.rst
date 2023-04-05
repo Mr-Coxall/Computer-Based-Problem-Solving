@@ -88,7 +88,7 @@ Code for While loop
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 20-22
+        :emphasize-lines: 18-20
 
 Example Output
 ^^^^^^^^^^^^^^

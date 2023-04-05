@@ -1,7 +1,7 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a nested if statement
+ * This program uses a while loop
  */
 
 package main
@@ -11,24 +11,20 @@ import (
 )
 
 func main() {
-	// this function uses a nested if statement
+	// this function uses a while loop
 
-	var cookiesSold int
+	var counter int = 0
+	var positiveInteger int
 
 	// input
-	fmt.Print("Enter the number of boxes of cookies you sold: ")
-	fmt.Scan(&cookiesSold)
+	fmt.Print("Enter how many times to repeat: ")
+	fmt.Scan(&positiveInteger)
 	fmt.Println()
 
 	// process & output
-	if cookiesSold >= 20 {
-		if cookiesSold < 30 {
-			fmt.Println("You get a small prize.")
-		} else {
-			fmt.Println("You get a large prize.")
-		}
-	} else {
-		fmt.Println("No prize.")
+	for counter < positiveInteger {
+		fmt.Printf("%d time(s) through the loop.\n", counter)
+		counter = counter + 1
 	}
 
 	fmt.Println("\nDone.")

@@ -2,28 +2,24 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program uses a nested if statement
+// This program uses a while loop
 
 #include <stdio.h>
 
 int main() {
-    // this function uses a nested if statement
-    int cookiesSold;
+    // this function uses a while loop
+    int counter = 0;
+    int positiveInteger;
 
     // input
-    printf("Enter the number of boxes of cookies you sold: ");
-    scanf("%d", &cookiesSold);
+    printf("Enter how many times to repeat: ");
+    scanf("%d", &positiveInteger);
     printf("\n");
 
     // process & output
-    if (cookiesSold >= 20) {
-        if (cookiesSold < 30) {
-            printf("You get a small prize.\n");
-        } else {
-            printf("You get a large prize.\n");
-        }
-    } else {
-        printf("No prize.\n");
+    while (counter < positiveInteger) {
+        printf("%d time(s) through the loop.\n", counter);
+        counter = counter + 1;
     }
 
     printf("\nDone.\n");

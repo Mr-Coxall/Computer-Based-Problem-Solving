@@ -2,28 +2,24 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program uses a nested if statement
+// This program uses a while loop
 
 #include <iostream>
 
 int main() {
-    // this function uses a nested if statement
-    int cookiesSold;
+    // this function uses a while loop
+    int counter = 0;
+    int positiveInteger;
 
     // input
-    std::cout << "Enter the number of boxes of cookies you sold: ";
-    std::cin >> cookiesSold;
+    std::cout << "Enter how many times to repeat: ";
+    std::cin >> positiveInteger;
     std::cout << std::endl;
 
     // process & output
-    if (cookiesSold >= 20) {
-        if (cookiesSold < 30) {
-            std::cout << "You get a small prize." << std::endl;
-        } else {
-            std::cout << "You get a large prize." << std::endl;
-        }
-    } else {
-        std::cout << "No prize." << std::endl;
+    while (counter < positiveInteger) {
+        std::cout << counter << " time(s) through the loop." << std::endl;
+        counter = counter + 1;
     }
 
     std::cout << "\nDone." << std::endl;

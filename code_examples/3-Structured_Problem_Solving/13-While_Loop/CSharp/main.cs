@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a nested if statement
+ * This program uses a while loop
 */
 
 using System;
@@ -10,24 +10,20 @@ using System;
 */
 class Program {
     static void Main() {
-        // this function uses a nested if statement
+        // this function uses a while loop
 
-        int cookiesSold;
+        int counter = 0;
+        int positiveInteger;
 
         // input
-        Console.Write("Enter the number of boxes of cookies you sold: ");
-        cookiesSold = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter how many times to repeat: ");
+        positiveInteger = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine();
 
         // process & output
-        if (cookiesSold >= 20) {
-            if (cookiesSold < 30) {
-                Console.WriteLine("You get a small prize.");
-            } else {
-                Console.WriteLine("You get a large prize.");
-            }
-        } else {
-            Console.WriteLine("No prize.");
+        while (counter < positiveInteger) {
+            Console.WriteLine(counter + " time(s) through the loop.");
+            counter = counter + 1;
         }
 
         Console.WriteLine("\nDone.");

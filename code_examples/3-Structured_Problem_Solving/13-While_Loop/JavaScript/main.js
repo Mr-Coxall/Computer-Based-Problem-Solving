@@ -1,25 +1,22 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a nested if statement
+ * This program uses a while loop
  */
 
 const prompt = require("prompt-sync")()
 
+let counter = 0
+
 // input
-const cookiesSoldStr = prompt("Enter the number of boxes of cookies you sold: ")
+const positiveIntegerStr = prompt("Enter how many times to repeat: ")
 console.log("")
 
 // process & output
-const cookiesSold = parseInt(cookiesSoldStr)
+const positiveInteger = parseInt(positiveIntegerStr)
 
-if (cookiesSold >= 20) {
-  if (cookiesSold < 30) {
-    console.log("You get a small prize.")
-  } else {
-    console.log("You get a large prize.")
-  }
-} else {
-  console.log("No prize.")
+while (counter < positiveInteger) {
+  console.log(`${counter} time(s) through the loop.`)
+  counter = counter + 1
 }
 
 console.log("\nDone.")
