@@ -8,8 +8,6 @@ This module uses a while loop
 
 def main() -> None:
     """The main() this function uses a while loop, returns None."""
-
-
     counter = 0
 
     # input
