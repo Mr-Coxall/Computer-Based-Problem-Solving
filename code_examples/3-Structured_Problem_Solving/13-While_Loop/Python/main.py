@@ -2,25 +2,24 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module uses a nested if statement
+This module uses a while loop
 """
 
 
 def main() -> None:
-    """The main() this function uses a nested if statement, returns None."""
+    """The main() this function uses a while loop, returns None."""
+
+
+    counter = 0
 
     # input
-    cookies_sold = int(input("Enter the number of boxes of cookies you sold: "))
+    positive_integer = int(input("Enter how many times to repeat: "))
     print("")
 
     # process & output
-    if cookies_sold >= 20:
-        if cookies_sold < 30:
-            print("You get a small prize.")
-        else:
-            print("You get a large prize.")
-    else:
-        print("No prize.")
+    while counter < positive_integer:
+        print(f"{counter} time(s) through the loop.")
+        counter = counter + 1
 
     print("\nDone.")
 

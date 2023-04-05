@@ -15,214 +15,92 @@ The while loop (in most computer programming languages) takes the generic form o
 |    counter = counter + 1
 |**ENDWHILE**
 
-In this example program, the user is asked to enter a term mark and a final project mark. The program then tells the user if they passed the course or not. The rule for passing the course is that the student must have a term mark of at least 50% **and** a final project mark of at least 50. The program uses a compound boolean expression to determine if the student passed the course.
+In this example program, the user is asked to enter a posative integer and the program will count how many times it goes through the loop until it reaches that number.
 
-Top-Down Design for Compound Boolean Expression statement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. image:: ./images/top-down-compound-boolean.png
-   :alt: Top-Down Design for Compound Boolean Expression statement
+Top-Down Design for While loop
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. image:: ./images/top-down-while-loop.png
+   :alt: Top-Down Design for While loop
    :align: center
 
-Flowchart for Compound Boolean Expression statement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. image:: ./images/flowchart-compound-boolean.png
-   :alt: Compound Boolean Expression flowchart
+Flowchart for While loop
+^^^^^^^^^^^^^^^^^^^^^^^^
+.. image:: ./images/flowchart-while-loop.png
+   :alt: While loop flowchart
    :align: center
 
-Pseudocode for Compound Boolean Expression statement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-| **GET** term_mark
-| **GET** project_mark
-| **IF** ((term_mark >= 50) and (project_mark >= 50)) **THEN** 
-|    **SHOW** "You passed the course."
-| **ELSE**
-|    **SHOW** "You failed the course."
-| **ENDIF**
+Pseudocode for While loop
+^^^^^^^^^^^^^^^^^^^^^^^^^
+|**GET** positive_integer
+|**WHILE** (counter < positive_integer)
+|    **SHOW** counter
+|    counter = counter + 1
+|**ENDWHILE**
 
-Code for Select Case statement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Code for While loop
+^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
   .. group-tab:: C
     .. code-block:: C
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/C/main.c
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 22-26
 
   .. group-tab:: C++
     .. code-block:: C++
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/CPP/main.cpp
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 22-26
 
   .. group-tab:: C#
     .. code-block:: C#
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/CSharp/main.cs
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 23-27
 
   .. group-tab:: Go
     .. code-block:: Go
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/Go/main.go
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 27-31
 
   .. group-tab:: Java
     .. code-block:: Java
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/Java/Main.java
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 26-30
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/JavaScript/main.js
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 14-18
 
   .. group-tab:: Python
     .. code-block:: Python
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/Python/main.py
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 18-21
+        :emphasize-lines: 20-22
 
 Example Output
 ^^^^^^^^^^^^^^
 .. code-block:: console
 
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter term mark (as %): 42
-  Enter project mark (as %): 42
+	@Mr-Coxall ➜ (main ✗) $ python ./main.py 
+	Enter how many times to repeat: 5
 
-  You did not pass the course.
+	0 time(s) through the loop.
+	1 time(s) through the loop.
+	2 time(s) through the loop.
+	3 time(s) through the loop.
+	4 time(s) through the loop.
 
-  Done.
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter term mark (as %): 42
-  Enter project mark (as %): 88
-
-  You did not pass the course.
-
-  Done.
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter term mark (as %): 88
-  Enter project mark (as %): 88
-
-  You passed the course.
-
-  Done.
-
-
-
-
-
-
-
-The flowchart for a While Loop will look like this:
-
-.. image:: ./images/while-loop.png
-   :alt: While Loop
-   :align: center 
-
-The following code snippet, a repetition program. The user enters a positive integer and the program prints out that many lines:
-
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-		// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-		//
-		// Created by: Mr. Coxall
-		// Created on: Oct 2019
-		// This program uses a while loop
-
-		#include <iostream>
-
-		main() {
-		    // this function uses a while loop
-		    int positiveInteger;
-		    int loopCounter = 0;
-
-		    // input
-		    std::cout << "Enter how many times to repeat: ";
-		    std::cin >> positiveInteger;
-
-		    // process
-		    while (loopCounter <= positiveInteger) {
-		        std::cout << loopCounter <<" time through loop." << std::endl;
-		        loopCounter = loopCounter + 1;
-		    }
-		}
-
-
-
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-      // while loop
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-      // while loop
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-      // while loop
-
-  .. group-tab:: Python3
-
-    .. code-block:: Python
-
-		#!/usr/bin/env python3
-
-		# Created by: Mr. Coxall
-		# Created on: Oct 2019
-		# This program uses a while loop
-
-
-		def main():
-		    # this function uses a while loop
-		    loop_counter = 0
-
-		    # input
-		    positive_integer = int(input("Enter how many times to repeat: "))
-		    print("")
-
-		    # process & output
-		    while loop_counter < positive_integer:
-		        print("{0} time through loop.".format(loop_counter))
-		        loop_counter = loop_counter + 1
-
-
-		if __name__ == "__main__":
-		    main()
-
-
-
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // while loop
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // while loop
-
+	Done.
