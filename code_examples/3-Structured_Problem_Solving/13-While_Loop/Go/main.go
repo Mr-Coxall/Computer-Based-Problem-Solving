@@ -24,7 +24,7 @@ func main() {
 	// process & output
 	for counter < positiveInteger {
 		fmt.Printf("%d time(s) through the loop.\n", counter)
-		counter = counter + 1
+		counter++ // a short form for: counter = counter + 1
 	}
 
 	fmt.Println("\nDone.")
