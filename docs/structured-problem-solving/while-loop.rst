@@ -9,11 +9,11 @@ It is a common occurrence to have an accumulator or counter within a looping str
 
 The while loop (in most computer programming languages) takes the generic form of:
 
-|**WHILE** (boolean expression)
+| **WHILE** (boolean expression)
 |    statement(s)
 |    ...
 |    counter = counter + 1
-|**ENDWHILE**
+| **ENDWHILE**
 
 In this example program, the user is asked to enter a posative integer and the program will count how many times it goes through the loop until it reaches that number.
 
