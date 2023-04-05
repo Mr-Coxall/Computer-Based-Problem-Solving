@@ -31,11 +31,11 @@ Flowchart for While loop
 
 Pseudocode for While loop
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-|**GET** positive_integer
-|**WHILE** (counter < positive_integer)
-|    **SHOW** counter
-|    counter = counter + 1
-|**ENDWHILE**
+| **GET** positive_integer
+| **WHILE** (counter < positive_integer)
+|     **SHOW** counter
+|     counter = counter + 1
+| **ENDWHILE**
 
 Code for While loop
 ^^^^^^^^^^^^^^^^^^^
