@@ -1,5 +1,5 @@
 /*
- * This program uses a nested if statement
+ * This program uses a while loop
  *
  * @author  Mr Coxall
  * @version 1.0
@@ -10,27 +10,24 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    // this function uses a nested if statement
+    // this function uses a while loop
 
     // create Scanner object for user input
     Scanner scanner = new Scanner(System.in);
 
+    int counter = 0;
+
     // input
-    System.out.print("Enter the number of boxes of cookies you sold: ");
-    String cookiesSoldStr = scanner.nextLine();
+    System.out.print("Enter how many times to repeat: ");
+    String positiveIntegerStr = scanner.nextLine();
     System.out.println();
 
     // process & output
-    int cookiesSold = Integer.parseInt(cookiesSoldStr);
+    int positiveInteger = Integer.parseInt(positiveIntegerStr);
 
-    if (cookiesSold >= 20) {
-      if (cookiesSold < 30) {
-        System.out.println("You get a small prize.");
-      } else {
-        System.out.println("You get a large prize.");
-      }
-    } else {
-      System.out.println("No prize.");
+    while (counter < positiveInteger) {
+      System.out.println("%d time(s) through the loop.".formatted(counter));
+      counter = counter + 1;
     }
 
     // close the Scanner object

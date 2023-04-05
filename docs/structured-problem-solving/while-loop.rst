@@ -46,42 +46,42 @@ Code for While loop
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 22-26
+        :emphasize-lines: 20-23
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 22-26
+        :emphasize-lines: 20-23
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 23-27
+        :emphasize-lines: 24-27
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 27-31
+        :emphasize-lines: 25-28
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 26-30
+        :emphasize-lines: 28-31
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 14-18
+        :emphasize-lines: 17-20
 
   .. group-tab:: Python
     .. code-block:: Python
