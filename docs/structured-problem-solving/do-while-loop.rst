@@ -3,11 +3,11 @@
 Do While Loop
 =============
 
-The Do…While loop is a repetition structure where the statements inside the loop are executed **at least once**. Only then after being executed once, the Boolean expression is evaluated. If the Boolean expression is true, the body of the loop is executed again and the Boolean expression is re-evaluated once again. Note that this is different from the while loop, where the Boolean expression is at the top. Being at the top in a while loop, it is evaluated first and there might be a circumstance where the Boolean expression is false, right from the beginning. In this case the while loop will never happen. In a Do...While loop, the statements will always happen at least once.
+The `Do…While <https://en.wikipedia.org/wiki/Do_while_loop>`_ loop is a repetition structure where the statements inside the loop are executed **at least once**. Only then after being executed once, the Boolean expression is evaluated. If the Boolean expression is true, the body of the loop is executed again and the Boolean expression is re-evaluated once again. Note that this is different from the while loop, where the Boolean expression is at the top. Being at the top in a while loop, it is evaluated first and there might be a circumstance where the Boolean expression is false, right from the beginning. In this case the while loop will never happen. In a Do…While loop, the statements will always happen at least once.
 
-Note that not all programming languages have a Do ... While loop structure.
+Note that not all programming languages have a Do…While loop structure.
 
-The do...while loop (in most computer programming languages) takes the generic form of:
+The Do…While loop (in most computer programming languages) takes the generic form of:
 
 | **DO**
 |     statement(s)
@@ -15,30 +15,30 @@ The do...while loop (in most computer programming languages) takes the generic f
 |     counter = counter + 1
 | **WHILE** (boolean expression)
 
-In this example program once again the user is asked to enter a posative integer and the program will count how many times it goes through the loop until it reaches that number. This time a Do ... While loop is used.
+In this example program once again the user is asked to enter a posative integer and the program will count how many times it goes through the loop until it reaches that number. This time a Do…While loop is used.
 
-Top-Down Design for Do ... While loop
+Top-Down Design for Do…While loop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/top-down-do-while-loop.png
-   :alt: Top-Down Design for Do ... While loop
+   :alt: Top-Down Design for Do…While loop
    :align: center
 
-Flowchart for Do ... While loop
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Flowchart for Do…While loop
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/flowchart-do-while-loop.png
-   :alt: Do ... While loop flowchart
+   :alt: Do…While loop flowchart
    :align: center
 
-Pseudocode for Do ... While loop
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Pseudocode for Do…While loop
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **GET** positive_integer
-| **Do**
+| **DO**
 |     **SHOW** counter
 |     counter = counter + 1
 | **WHILE** (counter < positive_integer)
 
-Code for Do ... While loop
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Code for Do…While loop
+^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
   .. group-tab:: C
