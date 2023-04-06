@@ -13,7 +13,7 @@ import (
 func main() {
 	// this function uses a while loop
 
-	var counter int = 0
+	var counter int // in go no need to set to 0, it automaticall is!
 	var positiveInteger int
 
 	// input
