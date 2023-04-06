@@ -64,7 +64,7 @@ Code for Do ... While loop
 
   .. group-tab:: Go
     .. code-block:: Go
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do_While_Loop/Go/main.go
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do_While_Loop/Go/main.c
         :language: go
         :linenos:
         :emphasize-lines: 1
@@ -103,4 +103,4 @@ Example Output
   3 time(s) through the loop.
   4 time(s) through the loop.
 
-	Done.
+  Done.
