@@ -43,49 +43,49 @@ Code for Do ... While loop
 
   .. group-tab:: C
     .. code-block:: C
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do-While_Loop/C/main.c
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do_While_Loop/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 20-23
 
   .. group-tab:: C++
     .. code-block:: C++
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do-While_Loop/CPP/main.cpp
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do_While_Loop/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 20-23
 
   .. group-tab:: C#
     .. code-block:: C#
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do-While_Loop/CSharp/main.cs
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do_While_Loop/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 24-27
 
   .. group-tab:: Go
     .. code-block:: Go
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do-While_Loop/Go/main.go
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do_While_Loop/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 1
 
   .. group-tab:: Java
     .. code-block:: Java
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do-While_Loop/Java/Main.java
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do_While_Loop/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 28-31
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do-While_Loop/JavaScript/main.js
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do_While_Loop/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 17-20
 
   .. group-tab:: Python
     .. code-block:: Python
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do-While_Loop/Python/main.py
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do_While_Loop/Python/main.py
         :language: python
         :linenos:
         :emphasize-lines: 1
