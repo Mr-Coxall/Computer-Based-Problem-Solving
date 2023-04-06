@@ -11,6 +11,7 @@ A loop is a sequence of instructions that are repeated until a certain boolean c
 
    While Loop <while-loop>
    Do…While Loop <do-while-loop>
+   Repeat…Until Loop <repeat-until-loop>
    For Loop <for-loop>
    Break Statement <break-statement>
    Continue Statement <continue-statement>
