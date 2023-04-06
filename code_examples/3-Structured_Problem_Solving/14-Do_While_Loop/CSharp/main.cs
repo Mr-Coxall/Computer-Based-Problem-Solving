@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a while loop
+ * This program uses a do ... while loop
 */
 
 using System;
@@ -10,7 +10,7 @@ using System;
 */
 class Program {
     static void Main() {
-        // this function uses a while loop
+        // this function uses a do ... while loop
 
         int counter = 0;
         int positiveInteger;
@@ -21,10 +21,10 @@ class Program {
         Console.WriteLine();
 
         // process & output
-        while (counter < positiveInteger) {
+        do {
             Console.WriteLine(counter + " time(s) through the loop.");
             counter = counter + 1;
-        }
+        } while (counter < positiveInteger);
 
         Console.WriteLine("\nDone.");
     }

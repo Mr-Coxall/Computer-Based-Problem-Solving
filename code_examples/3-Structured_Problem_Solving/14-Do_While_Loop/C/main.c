@@ -2,12 +2,12 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program uses a while loop
+// This program uses a do ... while loop
 
 #include <stdio.h>
 
 int main() {
-    // this function uses a while loop
+    // this function uses a do ... while loop
     int counter = 0;
     int positiveInteger;
 
@@ -17,10 +17,10 @@ int main() {
     printf("\n");
 
     // process & output
-    while (counter < positiveInteger) {
+    do {
         printf("%d time(s) through the loop.\n", counter);
         counter = counter + 1;
-    }
+    } while (counter < positiveInteger);
 
     printf("\nDone.\n");
     return 0;

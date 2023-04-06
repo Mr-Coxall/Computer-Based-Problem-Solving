@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a while loop
+ * This program uses a do ... while loop
  */
 
 const prompt = require("prompt-sync")()
@@ -14,9 +14,9 @@ console.log("")
 // process & output
 const positiveInteger = parseInt(positiveIntegerStr)
 
-while (counter < positiveInteger) {
+do {
   console.log(`${counter} time(s) through the loop.`)
   counter = counter + 1
-}
+} while (counter < positiveInteger)
 
 console.log("\nDone.")

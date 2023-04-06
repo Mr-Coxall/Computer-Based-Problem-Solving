@@ -2,12 +2,12 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program uses a while loop
+// This program uses a do ... while loop
 
 #include <iostream>
 
 int main() {
-    // this function uses a while loop
+    // this function uses a do ... while loop
     int counter = 0;
     int positiveInteger;
 
@@ -17,10 +17,10 @@ int main() {
     std::cout << std::endl;
 
     // process & output
-    while (counter < positiveInteger) {
+    do {
         std::cout << counter << " time(s) through the loop." << std::endl;
         counter = counter + 1;
-    }
+    } while (counter < positiveInteger);
 
     std::cout << "\nDone." << std::endl;
     return 0;

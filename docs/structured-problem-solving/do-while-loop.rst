@@ -67,7 +67,7 @@ Code for Do ... While loop
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do-While_Loop/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 25-28
+        :emphasize-lines: 1
 
   .. group-tab:: Java
     .. code-block:: Java
@@ -88,128 +88,19 @@ Code for Do ... While loop
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/14-Do-While_Loop/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 18-20
+        :emphasize-lines: 1
 
 Example Output
 ^^^^^^^^^^^^^^
 .. code-block:: console
 
-	@Mr-Coxall ➜ (main ✗) $ python ./main.py 
-	Enter how many times to repeat: 5
+  @Mr-Coxall ➜ (main ✗) $ ./main.app 
+  Enter how many times to repeat: 5
 
-	0 time(s) through the loop.
-	1 time(s) through the loop.
-	2 time(s) through the loop.
-	3 time(s) through the loop.
-	4 time(s) through the loop.
+  0 time(s) through the loop.
+  1 time(s) through the loop.
+  2 time(s) through the loop.
+  3 time(s) through the loop.
+  4 time(s) through the loop.
 
 	Done.
-
-
-
-
-
-
-
-
-The flowchart for a Do...While Loop will look like this:
-
-.. image:: ./images/do-while-loop.png
-   :alt: Do...While Loop
-   :align: center 
-
-The following code snippet is a repetition program. The user enters a positive integer and the program prints out that many lines:
-
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-		// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-		//
-		// Created by: Mr. Coxall
-		// Created on: Oct 2019
-		// This program uses a do...while loop
-
-		#include <iostream>
-
-		main() {
-		    // this function uses a while loop
-		    int positiveInteger;
-		    int loopCounter = 0;
-
-		    // input
-		    std::cout << "Enter how many times to repeat: ";
-		    std::cin >> positiveInteger;
-
-		    // process & output
-		    do {
-		        std::cout << loopCounter <<" time through loop." << std::endl;
-		        loopCounter = loopCounter + 1;
-		    } while (loopCounter < positiveInteger);
-		}
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-      // do...while loop
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-      /**
-       * Class do-while
-       * 
-       * Created by: Mr. Coxall
-       * Created on: Oct 2019
-       * This program uses a do while loop
-       */
-
-      public class do_while {
-          public static void main(String[] args) {
-            // this function uses a while loop
-            String positiveIntegerAsString;
-            int positiveInteger;
-            int loopCounter = 0;
-
-            // input
-            System.out.println("Enter how many times to repeat: ");
-            positiveIntegerAsString = System.console().readLine();
-            positiveInteger = Integer.valueOf(positiveIntegerAsString);
-        
-            // process & output
-            do {
-                System.out.println(loopCounter + " time through loop.");
-                loopCounter = loopCounter + 1;
-            } while (loopCounter < positiveInteger);
-          }
-      }
-
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-      // do...while loop
-
-  .. group-tab:: Python
-
-    .. code-block:: Python
-
-		# there is no Do...While Loop structure in Python
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // do...while loop
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // do...while loop
-
