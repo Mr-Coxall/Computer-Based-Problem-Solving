@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a for loop
+ * This program uses a break statement
 */
 
 using System;
@@ -10,7 +10,7 @@ using System;
 */
 class Program {
     static void Main() {
-        // this function uses a do ... while loop
+        // this function uses a break statement
 
         int positiveInteger;
 
@@ -22,6 +22,9 @@ class Program {
         // process & output
         for (int loopCounter = 0; loopCounter < positiveInteger; loopCounter++) {
             Console.WriteLine(loopCounter + " time(s) through the loop.");
+            if (loopCounter >= 5) {
+                break;
+            }
         }
 
         Console.WriteLine("\nDone.");

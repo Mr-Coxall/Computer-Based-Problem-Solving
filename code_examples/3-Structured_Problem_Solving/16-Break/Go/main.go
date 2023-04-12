@@ -1,7 +1,7 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a for loop
+ * This program uses a break statement
  */
 
 package main
@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	// this function uses a for loop
+	// this function uses a break statement
 
 	var counter int // in go no need to set to 0, it automaticall is!
 	var positiveInteger int
@@ -24,6 +24,9 @@ func main() {
 	// process & output
 	for counter < positiveInteger {
 		fmt.Printf("%d time(s) through the loop.\n", counter)
+		if counter >= 5 {
+			break
+		}
 		counter++ // a short form for: counter = counter + 1
 	}
 

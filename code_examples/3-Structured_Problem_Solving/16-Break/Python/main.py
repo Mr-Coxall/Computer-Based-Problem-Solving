@@ -2,12 +2,12 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module uses a while loop
+This module uses a break statement
 """
 
 
 def main() -> None:
-    """The main() this function uses a while loop, returns None."""
+    """The main() this function uses a break statement, returns None."""
 
     # input
     positive_integer = int(input("Enter how many times to repeat: "))
@@ -16,6 +16,8 @@ def main() -> None:
     # process & output
     for loop_counter in range(positive_integer):
         print(f"{loop_counter} time through loop.")
+        if loop_counter >= 5:
+            break
 
     print("\nDone.")
 
