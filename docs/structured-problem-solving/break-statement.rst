@@ -33,13 +33,13 @@ In this example program, the user is asked to enter a posative integer and the p
 Top-Down Design for the Break Statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/top-down-break.png
-   :alt: Top-Down Design for While loop
+   :alt: Top-Down Design for Break Statement
    :align: center
 
 Flowchart for the Break Statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/flowchart-break.png
-   :alt: While loop flowchart
+   :alt: Break Statement flowchart
    :align: center
 
 Pseudocode for the Break Statement

@@ -26,7 +26,7 @@ public class Main {
     for (int loopCounter = 0; loopCounter < positiveInteger; loopCounter++) {
       System.out.println("%d time(s) through the loop.".formatted(loopCounter));
       if (loopCounter >= 5) {
-        break
+        break;
       }
     }
 
