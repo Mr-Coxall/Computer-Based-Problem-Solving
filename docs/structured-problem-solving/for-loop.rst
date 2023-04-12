@@ -93,7 +93,7 @@ Code for the For loop
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/15-For_Loop/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 18-19
+        :emphasize-lines: 17-18
 
 Example Output
 ^^^^^^^^^^^^^^
