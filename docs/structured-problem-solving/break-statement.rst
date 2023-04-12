@@ -10,22 +10,22 @@ The break statement terminates the loop containing it. Control of the program fl
 The break statement (in most computer programming languages) takes the generic form of:
 
 | **WHILE** bolean expression
-|    statement_1 
-|    statement_2
-|    ...
-|    **IF** (Boolean expression) **THEN**
-|        **BREAK**
-|    **ENDIF**
-|    counter = counter + 1
+|     statement_1 
+|     statement_2
+|     ...
+|     **IF** (Boolean expression) **THEN**
+|         **BREAK**
+|     **ENDIF**
+|     counter = counter + 1
 | **ENDWHILE**
 
 | **FOR** counter in range(n)
-|    statement_1 
-|    statement_2
-|    ...
-|    **IF** Boolean expression **THEN**
-|        **BREAK**
-|    **ENDIF**
+|     statement_1 
+|     statement_2
+|     ...
+|     **IF** Boolean expression **THEN**
+|         **BREAK**
+|     **ENDIF**
 | **ENDFOR**
 
 In this example program, the user is asked to enter a posative integer and the program will count how many times it goes through the loop until it reaches that number, except it will always stop when it hits 5!
@@ -47,9 +47,9 @@ Pseudocode for the Break Statement
 | **GET** positive_integer
 | **FOR** (int counter = 0; counter < positive_integer; counter++)
 |     **SHOW** counter
-|    **IF** (counter >= 5) **THEN**
-|        **BREAK**
-|    **ENDIF**
+|     **IF** (counter >= 5) **THEN**
+|         **BREAK**
+|     **ENDIF**
 | **ENDFOR** 
 
 Code for the Break Statement
