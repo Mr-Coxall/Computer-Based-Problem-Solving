@@ -58,49 +58,49 @@ Code for the Break Statement
 
   .. group-tab:: C
     .. code-block:: C
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/15-For_Loop/C/main.c
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/16-Break/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 21-23
 
   .. group-tab:: C++
     .. code-block:: C++
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/15-For_Loop/CPP/main.cpp
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/16-Break/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 21-23
 
   .. group-tab:: C#
     .. code-block:: C#
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/15-For_Loop/CSharp/main.cs
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/16-Break/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 25-27
 
   .. group-tab:: Go
     .. code-block:: Go
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/15-For_Loop/Go/main.go
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/16-Break/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 27-29
 
   .. group-tab:: Java
     .. code-block:: Java
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/15-For_Loop/Java/Main.java
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/16-Break/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 28-30
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/15-For_Loop/JavaScript/main.js
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/16-Break/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 19-21
 
   .. group-tab:: Python
     .. code-block:: Python
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/15-For_Loop/Python/main.py
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/16-Break/Python/main.py
         :language: python
         :linenos:
         :emphasize-lines: 19-20
