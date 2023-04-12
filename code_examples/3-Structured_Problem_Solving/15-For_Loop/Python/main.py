@@ -15,7 +15,7 @@ def main() -> None:
 
     # process & output
     for loop_counter in range(positive_integer):
-        print("{0} time through loop.".format(loop_counter))
+        print(f"{loop_counter} time through loop.")
 
     print("\nDone.")
 
