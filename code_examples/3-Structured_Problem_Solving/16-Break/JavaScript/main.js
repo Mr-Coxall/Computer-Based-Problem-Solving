@@ -15,7 +15,7 @@ console.log("")
 const positiveInteger = parseInt(positiveIntegerStr)
 
 for (var loopCounter = 0; loopCounter < positiveInteger; loopCounter++) {
-  console.log(`${counter} time(s) through the loop.`)
+  console.log(`${loopCounter} time(s) through the loop.`)
   if (loopCounter >= 5){
     break
   }
