@@ -89,21 +89,21 @@ Code for the Continue Statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/17-Continue/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 28-30
+        :emphasize-lines: 31-33
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/17-Continue/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 19-21
+        :emphasize-lines: 22-23
 
   .. group-tab:: Python
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/17-Continue/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 19-20
+        :emphasize-lines: 21-22
 
 Example Output
 ^^^^^^^^^^^^^^
