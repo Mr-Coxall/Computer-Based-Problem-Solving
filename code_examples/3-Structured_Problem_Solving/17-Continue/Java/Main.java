@@ -1,5 +1,5 @@
 /*
- * This program uses a for loop
+ * This program uses a continue statement
  *
  * @author  Mr Coxall
  * @version 1.0
@@ -10,21 +10,28 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    // this function uses a for loop
+    // this function uses a continue statement
 
     // create Scanner object for user input
     Scanner scanner = new Scanner(System.in);
 
     // input
-    System.out.print("Enter how many times to repeat: ");
+    System.out.print("Enter a count-down number (ex: 10): ");
     String positiveIntegerStr = scanner.nextLine();
     System.out.println();
 
     // process & output
     int positiveInteger = Integer.parseInt(positiveIntegerStr);
 
-    for (int loopCounter = 0; loopCounter < positiveInteger; loopCounter++) {
-      System.out.println("%d time(s) through the loop.".formatted(loopCounter));
+    while (positiveInteger > 0) {
+      // yes, this is the exception on placing the counter at the top
+      // if you did not, then there would be an infinit loop
+
+      positiveInteger--;
+      if (positiveInteger == 5) {
+        continue;
+      }
+      System.out.println("Current variable value: %d".formatted(positiveInteger));
     }
 
     // close the Scanner object

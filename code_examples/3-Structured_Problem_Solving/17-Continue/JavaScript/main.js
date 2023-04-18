@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a for loop
+ * This program uses a continue statement
  */
 
 const prompt = require("prompt-sync")()
@@ -8,14 +8,21 @@ const prompt = require("prompt-sync")()
 let counter = 0
 
 // input
-const positiveIntegerStr = prompt("Enter how many times to repeat: ")
+const positiveIntegerStr = prompt("Enter a count-down number (ex: 10): ")
 console.log("")
 
 // process & output
-const positiveInteger = parseInt(positiveIntegerStr)
+let positiveInteger = parseInt(positiveIntegerStr)
 
-for (var loopCounter = 0; loopCounter < positiveInteger; loopCounter++) {
-  console.log(`${counter} time(s) through the loop.`)
+while (positiveInteger > 0) {
+  // yes, this is the exception on placing the counter at the top
+  // if you did not, then there would be an infinit loop
+
+  positiveInteger--
+  if (positiveInteger == 5) {
+    continue
+  }
+  console.log(`Current variable value : ${positiveInteger}`)
 }
 
 console.log("\nDone.")
