@@ -110,12 +110,11 @@ Example Output
 .. code-block:: console
 
 	@Mr-Coxall ➜ (main ✗) $ python ./main.py 
-	Enter how many times to repeat: 10
+  Enter how many times to repeat: 9
+  0 time through loop.1 time through loop.
+  2 time through loop.
+  3 time through loop.
+  4 time through loop.
+  5 time through loop.
 
-	0 time(s) through the loop.
-	1 time(s) through the loop.
-	2 time(s) through the loop.
-	3 time(s) through the loop.
-	4 time(s) through the loop.
-
-	Done.
+  Done.

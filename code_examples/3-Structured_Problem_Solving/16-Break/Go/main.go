@@ -27,7 +27,7 @@ func main() {
 		if counter >= 5 {
 			break
 		}
-		counter++ // a short form for: counter = counter + 1
+		counter++
 	}
 
 	fmt.Println("\nDone.")
