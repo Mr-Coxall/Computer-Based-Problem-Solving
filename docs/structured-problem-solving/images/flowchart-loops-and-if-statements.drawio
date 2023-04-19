@@ -1,0 +1,49 @@
+<mxfile host="65bd71144e">
+    <diagram id="XHk-bZ8t28PDqSV33KaL" name="Page-1">
+        <mxGraphModel dx="726" dy="396" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="102" style="edgeStyle=none;html=1;" edge="1" parent="1" source="57" target="70">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="375.5" y="245" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="Stop" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="420" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="for&lt;br&gt;counter = 1;&lt;br&gt;counter &amp;lt;= 100;&lt;br&gt;counter++" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="334" y="340" width="183" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="Show&lt;br&gt;&quot;FizzBuzz&quot;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="800" width="210" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="513" width="40" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="506" y="430" width="40" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="if&lt;br&gt;counter % 3 == 0&lt;br&gt;&amp;amp;&amp;amp;&lt;br&gt;counter %5 == 0" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="334" y="570" width="183" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="Show&lt;br&gt;&quot;Fizz&quot;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="800" width="210" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="if&lt;br&gt;counter % 3 == 0" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="585" width="156" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="Show&lt;br&gt;&quot;Buzz&quot;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+                    <mxGeometry x="790" y="800" width="210" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="if&lt;br&gt;counter % 5 == 0" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="585" width="156" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="Show&lt;br&gt;{counter}" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="710" width="210" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -30,13 +30,13 @@ The task is:
 
 Top-Down Design for Loops and If Statements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. image:: ./images/top-down-loops-and-ifs.png
+.. image:: ./images/top-down-loops-and-if-statements.png
    :alt: Top-Down Design for Nested Loops
    :align: center
 
 Flowchart for Loops and If Statements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. image:: ./images/flowchart-loops-and-ifs.png
+.. image:: ./images/flowchart-loops-and-if-statements.png
    :alt: for Nested Loops flowchart
    :align: center
 
