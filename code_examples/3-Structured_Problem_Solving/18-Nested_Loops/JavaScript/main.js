@@ -1,21 +1,13 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a for loop
+ * This program uses a nested loop
  */
 
-const prompt = require("prompt-sync")()
-
-let counter = 0
-
-// input
-const positiveIntegerStr = prompt("Enter how many times to repeat: ")
-console.log("")
-
 // process & output
-const positiveInteger = parseInt(positiveIntegerStr)
-
-for (var loopCounter = 0; loopCounter < positiveInteger; loopCounter++) {
-  console.log(`${counter} time(s) through the loop.`)
+for (var counter1 = 0; counter1 < 10; counter1++) {
+  for (var counter2 = 0; counter2 < 10; counter2++) {
+    console.log(`Odometer: ${counter1}${counter2}`)
+  }
 }
 
 console.log("\nDone.")

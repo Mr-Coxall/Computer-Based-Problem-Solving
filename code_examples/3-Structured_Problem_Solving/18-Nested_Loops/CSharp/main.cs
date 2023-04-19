@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a for loop
+ * This program uses a nested loop
 */
 
 using System;
@@ -10,18 +10,13 @@ using System;
 */
 class Program {
     static void Main() {
-        // this function uses a do ... while loop
-
-        int positiveInteger;
-
-        // input
-        Console.Write("Enter how many times to repeat: ");
-        positiveInteger = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine();
+        // this function uses a nested loop
 
         // process & output
-        for (int loopCounter = 0; loopCounter < positiveInteger; loopCounter++) {
-            Console.WriteLine(loopCounter + " time(s) through the loop.");
+        for (int counter1 = 0; counter1 < 10; counter1++) {
+            for (int counter2 = 0; counter2 < 10; counter2++) {
+                Console.WriteLine("Odometer: " + counter1 + counter2);
+            }
         }
 
         Console.WriteLine("\nDone.");

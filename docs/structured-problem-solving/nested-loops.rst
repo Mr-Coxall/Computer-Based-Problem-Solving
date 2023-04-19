@@ -57,49 +57,49 @@ Code for the Nested Loops
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/18-Nested_Loops/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 24-26
+        :emphasize-lines: 13-17
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/18-Nested_Loops/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 24-26
+        :emphasize-lines: 13-17
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/18-Nested_Loops/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 28-30
+        :emphasize-lines: 16-20
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/18-Nested_Loops/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 30-32
+        :emphasize-lines: 20-26
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/18-Nested_Loops/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 31-33
+        :emphasize-lines: 14-18
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/18-Nested_Loops/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 22-24
+        :emphasize-lines: 7-11
 
   .. group-tab:: Python
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/18-Nested_Loops/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 21-22
+        :emphasize-lines: 13-15
 
 Example Output
 ^^^^^^^^^^^^^^
@@ -115,105 +115,3 @@ Example Output
   Odometer: 99
 
   Done.
-
-
-
-
-
-
-
-
-
-
-
-In a flow chart it looks like:
-
-.. image:: ./images/nested-loops.png
-   :alt: Nested Loops
-   :align: center 
-
-The following code snippet is a nested loop example of a 2 digit odometer:
-
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-		// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-		//
-		// Created by: Mr. Coxall
-		// Created on: Oct 2019
-		// This program uses a nested loop
-
-		#include <iostream>
-
-		main() {
-		    // this function uses a nested loop
-		    int counter1;
-		    int counter2;
-
-		    // process & output
-		    for (counter1 = 0; counter1 < 10; counter1++) {
-		        for (counter2 = 0; counter2 < 10; counter2++) {
-		            std::cout << "Odometer reading: " << counter1 << counter2 << std::endl;
-		        }
-		    }
-		}
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-      // nested loop
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-      // nested loop
-
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-      // nested loop
-
-  .. group-tab:: Python3
-
-    .. code-block:: Python
-
-		#!/usr/bin/env python3
-
-		# Created by: Mr. Coxall
-		# Created on: Oct 2019
-		# This program uses a nested loop
-
-
-		def main():
-		    # this function uses a nested loop
-		    
-		    counter1 = 0
-		    counter2 = 0
-
-		    # process & output
-		    for counter1 in range(10):
-		        for counter2 in range(10):
-		            print("Odometer {0}{1}".format(counter1, counter2))
-
-
-		if __name__ == "__main__":
-		    main()
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // nested loop
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // nested loop

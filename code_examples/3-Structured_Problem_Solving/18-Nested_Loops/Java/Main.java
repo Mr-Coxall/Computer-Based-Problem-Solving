@@ -1,34 +1,22 @@
 /*
- * This program uses a for loop
+ * This program uses a nested loop
  *
  * @author  Mr Coxall
  * @version 1.0
  * @since   2020-09-01
  */
 
-import java.util.Scanner;
-
 public class Main {
   public static void main(String[] args) {
-    // this function uses a for loop
-
-    // create Scanner object for user input
-    Scanner scanner = new Scanner(System.in);
-
-    // input
-    System.out.print("Enter how many times to repeat: ");
-    String positiveIntegerStr = scanner.nextLine();
-    System.out.println();
+    // this function uses a nested loop
 
     // process & output
-    int positiveInteger = Integer.parseInt(positiveIntegerStr);
-
-    for (int loopCounter = 0; loopCounter < positiveInteger; loopCounter++) {
-      System.out.println("%d time(s) through the loop.".formatted(loopCounter));
+    for (int counter1 = 0; counter1 < 10; counter1++) {
+      for (int counter2 = 0; counter2 < 10; counter2++) {
+        System.out.println("Odometer: %d%d".formatted(counter1, counter2));
+      }
     }
 
-    // close the Scanner object
-    scanner.close();
     System.out.println("\nDone.");
   }
 }

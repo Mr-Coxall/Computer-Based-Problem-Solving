@@ -2,22 +2,18 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program uses a for loop
+// This program uses a nested loop
 
 #include <stdio.h>
 
 int main() {
-    // this function uses a for loop
-    int positiveInteger;
-
-    // input
-    printf("Enter how many times to repeat: ");
-    scanf("%d", &positiveInteger);
-    printf("\n");
+    // this function uses a nested loop
 
     // process & output
-    for (int loopCounter = 0; loopCounter < positiveInteger; loopCounter++) {
-        printf("%d time(s) through the loop.\n", loopCounter);
+    for (int counter1 = 0; counter1 < 10; counter1++) {
+        for (int counter2 = 0; counter2 < 10; counter2++) {
+            printf("Odometer: %d%d\n", counter1, counter2);
+        }
     }
 
     printf("\nDone.\n");

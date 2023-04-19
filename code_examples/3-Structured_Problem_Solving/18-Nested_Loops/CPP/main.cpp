@@ -2,22 +2,18 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program uses a for loop
+// This program uses a nested loop
 
 #include <iostream>
 
 int main() {
-    // this function uses a for loop
-    int positiveInteger;
-
-    // input
-    std::cout << "Enter how many times to repeat: ";
-    std::cin >> positiveInteger;
-    std::cout << std::endl;
+    // this function uses a nested loop
 
     // process & output
-    for (int loopCounter = 0; loopCounter < positiveInteger; loopCounter++) {
-        std::cout << loopCounter <<" time through loop." << std::endl;
+    for (int counter1 = 0; counter1 < 10; counter1++) {
+        for (int counter2 = 0; counter2 < 10; counter2++) {
+            std::cout << "Odometer: " << counter1 << counter2 << std::endl;
+        }
     }
 
     std::cout << "\nDone." << std::endl;

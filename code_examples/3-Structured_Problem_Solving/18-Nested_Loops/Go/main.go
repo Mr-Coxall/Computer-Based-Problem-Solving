@@ -1,7 +1,7 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a for loop
+ * This program uses a nested loop
  */
 
 package main
@@ -11,20 +11,18 @@ import (
 )
 
 func main() {
-	// this function uses a for loop
+	// this function uses a nested loop
 
-	var counter int // in go no need to set to 0, it automaticall is!
-	var positiveInteger int
-
-	// input
-	fmt.Print("Enter how many times to repeat: ")
-	fmt.Scan(&positiveInteger)
-	fmt.Println()
+	var counter1 int
+	var counter2 int
 
 	// process & output
-	for counter < positiveInteger {
-		fmt.Printf("%d time(s) through the loop.\n", counter)
-		counter++ // a short form for: counter = counter + 1
+	for counter1 < 10 {
+		for counter2 < 10 {
+			fmt.Printf("Odometer:%d%d\n", counter1, counter2)
+			counter2++
+		}
+		counter1++
 	}
 
 	fmt.Println("\nDone.")
