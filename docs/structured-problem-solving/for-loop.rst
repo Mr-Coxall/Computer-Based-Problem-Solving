@@ -99,7 +99,7 @@ Example Output
 ^^^^^^^^^^^^^^
 .. code-block:: console
 
-	@Mr-Coxall ➜ (main ✗) $ python ./main.py 
+	@Mr-Coxall ➜ (main ✗) $ python ./main.py
 	Enter how many times to repeat: 5
 
 	0 time(s) through the loop.

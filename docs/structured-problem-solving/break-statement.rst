@@ -109,7 +109,7 @@ Example Output
 ^^^^^^^^^^^^^^
 .. code-block:: console
 
-	@Mr-Coxall ➜ (main ✗) $ python ./main.py 
+	@Mr-Coxall ➜ (main ✗) $ python ./main.py
   Enter how many times to repeat: 9
   0 time through loop.1 time through loop.
   2 time through loop.
