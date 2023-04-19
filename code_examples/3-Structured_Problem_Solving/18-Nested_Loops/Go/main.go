@@ -22,6 +22,7 @@ func main() {
 			fmt.Printf("Odometer:%d%d\n", counter1, counter2)
 			counter2++
 		}
+		counter2 = 0
 		counter1++
 	}
 

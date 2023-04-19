@@ -17,11 +17,12 @@ A Nested for loop (in most computer programming languages) takes the generic for
 or using While loops:
 
 | **WHILE** counter1 <= n :
-|     **WHILE** counter2 >= m :
+|     **WHILE** counter2 <= m :
 |         statement(s)
 |         ...
 |         counter2 = counter2 + 1
 |     **END**
+|     counter2 = 0
 |     ...
 |     counter1 = counter1 + 1
 | **END**
@@ -78,7 +79,7 @@ Code for the Nested Loops
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/18-Nested_Loops/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 20-26
+        :emphasize-lines: 20-27
 
   .. group-tab:: Java
     .. code-block:: Java
