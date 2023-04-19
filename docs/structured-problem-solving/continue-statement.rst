@@ -112,15 +112,15 @@ Example Output
 	@Mr-Coxall ➜ (main ✗) $ python ./main.py
   Enter a count-down number (ex: 10): 9
 
-  Current variable value: 9
-  Current variable value: 8
-  Current variable value: 7
-  Current variable value: 5
-  Current variable value: 4
-  Current variable value: 3
-  Current variable value: 2
-  Current variable value: 1
-  Current variable value: 0
+  Current variable value : 9
+  Current variable value : 8
+  Current variable value : 7
+  Current variable value : 6
+  Current variable value : 4
+  Current variable value : 3
+  Current variable value : 2
+  Current variable value : 1
+  Current variable value : 0
 
   Done.
 

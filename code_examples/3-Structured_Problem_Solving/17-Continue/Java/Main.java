@@ -28,7 +28,7 @@ public class Main {
       // if you did not, then there would be an infinit loop
 
       positiveInteger--;
-      if (positiveInteger == 5) {
+      if (positiveInteger + 1 == 5) {
         continue;
       }
       System.out.println("Current variable value: %d".formatted(positiveInteger + 1));

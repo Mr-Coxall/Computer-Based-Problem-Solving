@@ -21,7 +21,7 @@ int main() {
         // if you did not, then there would be an infinit loop
 
         positiveInteger--;
-        if (positiveInteger == 5) {
+        if (positiveInteger + 1 == 5) {
             continue;
         }
         printf("Current variable value: %d\n", positiveInteger + 1);

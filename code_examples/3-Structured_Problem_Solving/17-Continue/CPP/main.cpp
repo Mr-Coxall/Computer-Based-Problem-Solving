@@ -21,7 +21,7 @@ int main() {
         // if you did not, then there would be an infinit loop
 
         positiveInteger--;
-        if (positiveInteger == 5) {
+        if (positiveInteger + 1 == 5) {
             continue;
         }
         std::cout << " Current variable value: " << positiveInteger + 1 << std::endl;
