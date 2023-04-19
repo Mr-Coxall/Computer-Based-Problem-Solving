@@ -28,6 +28,100 @@ Here is one of the most well-known examples of the exercises that you might be g
 The task is:
 *Go through all the whole numbers up until 100. Print ‘fizz’ for every number that’s divisible by 3, print ‘buzz’ for every number divisible by 5, and print ‘fizzbuzz’ for every number divisible by 3 and by 5! If the number is not divisible either by 3 or 5, print a dash (‘-‘)!*
 
+Top-Down Design for Loops and If Statements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. image:: ./images/top-down-loops-and-ifs.png
+   :alt: Top-Down Design for Nested Loops
+   :align: center
+
+Flowchart for Loops and If Statements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. image:: ./images/flowchart-loops-and-ifs.png
+   :alt: for Nested Loops flowchart
+   :align: center
+
+Pseudocode for Loops and If Statements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| **FOR** counter1 in range(10)
+|     **FOR** counter2 in range(10)
+|         **SHOW** Odometer {counter1}{counter2}
+|     **END**
+| **END** 
+
+Code for the Loops and If Statements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. tabs::
+
+  .. group-tab:: C
+    .. code-block:: C
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/C/main.c
+        :language: C
+        :linenos:
+        :emphasize-lines: 13-17
+
+  .. group-tab:: C++
+    .. code-block:: C++
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/CPP/main.cpp
+        :language: C++
+        :linenos:
+        :emphasize-lines: 13-17
+
+  .. group-tab:: C#
+    .. code-block:: C#
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/CSharp/main.cs
+        :language: C#
+        :linenos:
+        :emphasize-lines: 16-20
+
+  .. group-tab:: Go
+    .. code-block:: Go
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/Go/main.go
+        :language: go
+        :linenos:
+        :emphasize-lines: 20-26
+
+  .. group-tab:: Java
+    .. code-block:: Java
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/Java/Main.java
+        :language: java
+        :linenos:
+        :emphasize-lines: 14-18
+
+  .. group-tab:: JavaScript
+    .. code-block:: JavaScript
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/JavaScript/main.js
+        :language: javascript
+        :linenos:
+        :emphasize-lines: 7-11
+
+  .. group-tab:: Python
+    .. code-block:: Python
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/Python/main.py
+        :language: python
+        :linenos:
+        :emphasize-lines: 13-15
+
+Example Output
+^^^^^^^^^^^^^^
+.. code-block:: console
+
+  @Mr-Coxall ➜ (main ✗) $ python ./main.py
+  Odometer: 00
+  Odometer: 01
+  Odometer: 02
+  ...
+  Odometer: 97
+  Odometer: 98
+  Odometer: 99
+
+  Done.
+
+
+
+
+
+
+
 In a flow chart it looks like:
 
 .. image:: ./images/loops-and-if-statements.png
