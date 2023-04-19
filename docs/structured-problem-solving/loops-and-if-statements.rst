@@ -99,7 +99,7 @@ Code for the Loops and If Statements
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 13-15
+        :emphasize-lines: 13-21
 
 Example Output
 ^^^^^^^^^^^^^^
