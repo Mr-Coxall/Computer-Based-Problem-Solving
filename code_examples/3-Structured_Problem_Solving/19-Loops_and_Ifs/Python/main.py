@@ -2,20 +2,23 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module uses a while loop
+This module is the Fizz Buzz program
 """
 
 
 def main() -> None:
-    """The main() this function uses a while loop, returns None."""
-
-    # input
-    positive_integer = int(input("Enter how many times to repeat: "))
-    print("")
+    """The main() function is the Fizz Buzz program, returns None."""
 
     # process & output
-    for loop_counter in range(positive_integer):
-        print(f"{loop_counter} time through loop.")
+    for counter in range(1, 101):
+        if counter % 3 == 0 and counter % 5 == 0:
+            print("Fizz-Buzz")
+        elif counter % 3 == 0:
+            print("Fizz")
+        elif counter % 5 == 0:
+            print("Buzz")
+        else:
+            print(counter)
 
     print("\nDone.")
 

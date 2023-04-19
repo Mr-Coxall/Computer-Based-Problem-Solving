@@ -26,7 +26,7 @@ or using While loops:
 Here is one of the most well-known examples of the exercises that you might be given as the opening question in a junior data scientist job interview.
 
 The task is:
-*Go through all the whole numbers up until 100. Print ‘fizz’ for every number that’s divisible by 3, print ‘buzz’ for every number divisible by 5, and print ‘fizzbuzz’ for every number divisible by 3 and by 5! If the number is not divisible either by 3 or 5, print a dash (‘-‘)!*
+*Go through all the whole numbers up until 100 (1 to 100). Print ‘Fizz’ for every number that’s divisible by 3, print ‘Buzz’ for every number divisible by 5, and print ‘Fizz-Buzz’ for every number divisible by 3 and by 5! If the number is not divisible either by 3 or 5, print out the number.*
 
 Top-Down Design for Loops and If Statements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -106,121 +106,22 @@ Example Output
 .. code-block:: console
 
   @Mr-Coxall ➜ (main ✗) $ python ./main.py
-  Odometer: 00
-  Odometer: 01
-  Odometer: 02
+  1
+  2
+  Fizz
+  4
+  Buzz
+  Fizz
+  7
   ...
-  Odometer: 97
-  Odometer: 98
-  Odometer: 99
+  92
+  Fizz
+  94
+  Buzz
+  Fizz
+  97
+  98
+  Fizz
+  Buzz
 
   Done.
-
-
-
-
-
-
-
-In a flow chart it looks like:
-
-.. image:: ./images/loops-and-if-statements.png
-   :alt: Loops and If Statements
-   :align: center 
-
-The following code snippet is the solution to the above problem:
-
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-		// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-		//
-		// Created by: Mr. Coxall
-		// Created on: Nov 2019
-		// This program uses a loop and an if statement
-		//   It is also the famous Fizz-Buzz problem
-
-		#include <iostream>
-
-		main() {
-		    // this function is the the famous Fizz-Buzz problem
-		    
-		    int counter;
-
-		    for (counter = 0; counter < 100 + 1; counter++) {
-		        if (counter % 3 == 0 && counter % 5 == 0) {
-		            std::cout << counter <<" → fizzbuzz" << std::endl;
-		        } else if (counter % 3 == 0) {
-		            std::cout << counter <<" → fizz" << std::endl;
-		        } else if (counter % 5 == 0) {
-		            std::cout << counter <<" → buzz" << std::endl;
-		        } else {
-		            std::cout << counter <<" → -" << std::endl;
-		        }
-		    }
-		}
-
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-      // nested loop
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-      // nested loop
-
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-      // nested loop
-
-  .. group-tab:: Python
-
-    .. code-block:: Python
-
-		#!/usr/bin/env python3
-
-		# Created by: Mr. Coxall
-		# Created on: Nov 2019
-		# This program uses a loop and an if statement
-		#   It is also the famous Fizz-Buzz problem
-
-
-		def main():
-		    # this function is the the famous Fizz-Buzz problem
-
-		    for counter in range(100 + 1):
-		        if counter % 3 == 0 and counter % 5 == 0:
-		            print('{0} → fizzbuzz'.format(counter))
-		        elif counter % 3 == 0:
-		            print('{0} → fizz'.format(counter))
-		        elif counter % 5 == 0:
-		            print('{0} → buzz'.format(counter))
-		        else:
-		            print('{0} → -'.format(counter))
-
-
-		if __name__ == "__main__":
-		    main()
-
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // nested loop
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // nested loop
