@@ -7,7 +7,7 @@ This module checks for a runtime error
 
 
 def main() -> None:
-    """The main() this function checks for a runtime error, returns None."""
+    """The main() function checks for a runtime error, returns None."""
 
     # input
     integer_as_string = input("Enter an integer: ")

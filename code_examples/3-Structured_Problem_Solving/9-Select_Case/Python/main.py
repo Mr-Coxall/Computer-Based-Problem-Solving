@@ -7,7 +7,7 @@ This module checks a student's grade
 
 
 def main() -> None:
-    """The main() this function checks a student's grade, returns None."""
+    """The main() function checks a student's grade, returns None."""
 
     # input
     grade = input("Enter grade mark as a single character(ex: A, B, ...): ")

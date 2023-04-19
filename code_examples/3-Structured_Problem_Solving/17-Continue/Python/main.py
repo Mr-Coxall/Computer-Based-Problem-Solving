@@ -7,7 +7,7 @@ This module uses a continue statement
 
 
 def main() -> None:
-    """The main() this function uses a continue statement, returns None."""
+    """The main() function uses a continue statement, returns None."""
 
     # input
     positive_integer = int(input("Enter a count-down number (ex: 10): "))

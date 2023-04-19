@@ -10,7 +10,7 @@ from constants import MAX_STUDENT_NUMBER
 
 
 def main() -> None:
-    """The main() this function checks if over 30 students, returns None."""
+    """The main() function checks if over 30 students, returns None."""
 
     # input
     number_of_students = int(input("Enter the number of students: "))

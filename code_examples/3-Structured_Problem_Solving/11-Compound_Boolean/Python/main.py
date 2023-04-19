@@ -7,7 +7,7 @@ This module uses a compound boolean statement
 
 
 def main() -> None:
-    """The main() this function uses a compound boolean statement, returns None."""
+    """The main() function uses a compound boolean statement, returns None."""
 
     # input
     term_mark = int(input("Enter term mark (as %): "))

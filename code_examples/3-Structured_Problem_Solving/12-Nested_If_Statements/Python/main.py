@@ -7,7 +7,7 @@ This module uses a nested if statement
 
 
 def main() -> None:
-    """The main() this function uses a nested if statement, returns None."""
+    """The main() function uses a nested if statement, returns None."""
 
     # input
     cookies_sold = int(input("Enter the number of boxes of cookies you sold: "))

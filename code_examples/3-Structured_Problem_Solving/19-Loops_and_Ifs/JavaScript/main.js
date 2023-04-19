@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a for loop
+ * This program is the Fizz Buzz program
  */
 
 const prompt = require("prompt-sync")()
