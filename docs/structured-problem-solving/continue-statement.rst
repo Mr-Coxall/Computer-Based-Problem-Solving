@@ -45,11 +45,12 @@ Flowchart for the Continue Statement
 Pseudocode for the Continue Statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **GET** positive_integer
-| **FOR** (int counter = 0; counter < positive_integer; counter++)
-|     **IF** (counter == 5) **THEN**
+| **WHILE** (counter < positive_integer)
+|     counter--
+|     **IF** (counter + 1 == 5) **THEN**
 |         **CONTINUE**
 |     **ENDIF**
-|     **SHOW** counter
+|     **SHOW** counter + 1
 | **ENDFOR** 
 
 Code for the Continue Statement
