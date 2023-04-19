@@ -129,12 +129,16 @@ Example Output
 .. code-block:: console
 
 	@Mr-Coxall ➜ (main ✗) $ python ./main.py
-	Enter how many times to repeat: 5
+  Enter a count-down number (ex: 10): 9
 
-	0 time(s) through the loop.
-	1 time(s) through the loop.
-	2 time(s) through the loop.
-	3 time(s) through the loop.
-	4 time(s) through the loop.
+  Current variable value : 9
+  Current variable value : 8
+  Current variable value : 7
+  Current variable value : 6
+  Current variable value : 4
+  Current variable value : 3
+  Current variable value : 2
+  Current variable value : 1
+  Current variable value : 0
 
 	Done.
