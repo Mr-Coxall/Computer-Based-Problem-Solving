@@ -28,7 +28,7 @@ class Program {
             if (positiveInteger + 1 == 5) {
                 continue;
             }
-            Console.WriteLine("Current variable value: " + positiveInteger + 1);
+            Console.WriteLine("Current variable value: " + (positiveInteger + 1));
         }
 
         Console.WriteLine("\nDone.");
