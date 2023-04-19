@@ -16,8 +16,15 @@ int main() {
     std::cout << std::endl;
 
     // process & output
-    for (int loopCounter = 0; loopCounter < positiveInteger; loopCounter++) {
-        std::cout << loopCounter <<" time through loop." << std::endl;
+    while (positiveInteger >= 0) {
+        // yes, this is the exception on placing the counter at the top
+        // if you did not, then there would be an infinit loop
+
+        positiveInteger--;
+        if (positiveInteger == 5) {
+            continue;
+        }
+        std::cout << " Current variable value: " << positiveInteger + 1 << std::endl;
     }
 
     std::cout << "\nDone." << std::endl;

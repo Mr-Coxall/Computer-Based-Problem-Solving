@@ -3,7 +3,7 @@
 Continue Statement
 ==================
 
-The `Continue Statement <https://en.wikipedia.org/wiki/Control_flow#Continuation_with_next_iteration>`_ gives you the option to skip over the part of a loop where an external condition is triggered, but to go on to complete the rest of the loop. That is, the current iteration of the loop will be disrupted, but the program will return to the top of the loop. The continue statement will be within the block of code under the loop statement, usually after a conditional if statement.
+The `Continue Statement <https://en.wikipedia.org/wiki/Control_flow#Continuation_with_next_iteration>`_ gives you the option to skip over the part of a loop where an external condition is triggered, but to go on to complete the rest of the loop iterations. That is, the current iteration of the loop will be disrupted, but the program will return to the top of the loop. The continue statement will be within the block of code under the loop statement, usually after a conditional if statement.
 
 The continue statement (in most computer programming languages) takes the generic form of:
 
@@ -28,7 +28,7 @@ The continue statement (in most computer programming languages) takes the generi
 |     ...
 | **ENDFOR**
 
-In this example program, the user is asked to enter a posative integer and the program will count how many times it goes through the loop until it reaches that number, except it will always skip 5!
+In this example program, the user is asked to enter a positive integer and the program will count how many times it goes through the loop until it reaches that number, except it will always skip 5!
 
 Top-Down Design for the Continue Statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -61,28 +61,28 @@ Code for the Continue Statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/17-Continue/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 21-23
+        :emphasize-lines: 24-26
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/17-Continue/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 21-23
+        :emphasize-lines: 24-26
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/17-Continue/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 25-27
+        :emphasize-lines: 28-30
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/17-Continue/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 27-29
+        :emphasize-lines: 30-32
 
   .. group-tab:: Java
     .. code-block:: Java
@@ -96,7 +96,7 @@ Code for the Continue Statement
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/17-Continue/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 22-23
+        :emphasize-lines: 22-24
 
   .. group-tab:: Python
     .. code-block:: Python
@@ -110,15 +110,19 @@ Example Output
 .. code-block:: console
 
 	@Mr-Coxall ➜ (main ✗) $ python ./main.py 
-	Enter how many times to repeat: 10
+  Enter a count-down number (ex: 10): 9
 
-	0 time(s) through the loop.
-	1 time(s) through the loop.
-	2 time(s) through the loop.
-	3 time(s) through the loop.
-	4 time(s) through the loop.
+  Current variable value: 9
+  Current variable value: 8
+  Current variable value: 7
+  Current variable value: 5
+  Current variable value: 4
+  Current variable value: 3
+  Current variable value: 2
+  Current variable value: 1
+  Current variable value: 0
 
-	Done.
+  Done.
 
 
 

@@ -14,13 +14,13 @@ def main() -> None:
     print("")
 
     # process & output
-    while positive_integer > 0:
+    while positive_integer >= 0:
         # yes, this is the exception on placing the counter at the top
         # if you did not, then there would be an infinit loop
         positive_integer -= 1
         if positive_integer == 5:
             continue
-        print(f"Current variable value : {positive_integer}")
+        print(f"Current variable value: {positive_integer + 1}")
 
     print("\nDone.")
 

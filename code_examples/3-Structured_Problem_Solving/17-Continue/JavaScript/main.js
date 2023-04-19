@@ -14,7 +14,7 @@ console.log("")
 // process & output
 let positiveInteger = parseInt(positiveIntegerStr)
 
-while (positiveInteger > 0) {
+while (positiveInteger >= 0) {
   // yes, this is the exception on placing the counter at the top
   // if you did not, then there would be an infinit loop
 
@@ -22,7 +22,7 @@ while (positiveInteger > 0) {
   if (positiveInteger == 5) {
     continue
   }
-  console.log(`Current variable value : ${positiveInteger}`)
+  console.log(`Current variable value: ${positiveInteger + 1}`)
 }
 
 console.log("\nDone.")

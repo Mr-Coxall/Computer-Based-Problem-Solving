@@ -21,7 +21,7 @@ func main() {
 	fmt.Println()
 
 	// process & output
-	for positiveInteger < 0 {
+	for positiveInteger >= 0 {
 		// yes, this is the exception on placing the counter at the top
 		// if you did not, then there would be an infinite loop
 
@@ -30,7 +30,7 @@ func main() {
 		if positiveInteger == 5 {
 			continue
 		}
-		fmt.Printf("Current variable value: %d\n", positiveInteger)
+		fmt.Printf("Current variable value: %d\n", positiveInteger + 1)
 	}
 
 	fmt.Println("\nDone.")

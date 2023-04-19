@@ -23,7 +23,7 @@ public class Main {
     // process & output
     int positiveInteger = Integer.parseInt(positiveIntegerStr);
 
-    while (positiveInteger > 0) {
+    while (positiveInteger >= 0) {
       // yes, this is the exception on placing the counter at the top
       // if you did not, then there would be an infinit loop
 
@@ -31,7 +31,7 @@ public class Main {
       if (positiveInteger == 5) {
         continue;
       }
-      System.out.println("Current variable value: %d".formatted(positiveInteger));
+      System.out.println("Current variable value: %d".formatted(positiveInteger + 1));
     }
 
     // close the Scanner object

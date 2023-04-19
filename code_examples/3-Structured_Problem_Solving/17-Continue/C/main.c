@@ -16,8 +16,15 @@ int main() {
     printf("\n");
 
     // process & output
-    for (int loopCounter = 0; loopCounter < positiveInteger; loopCounter++) {
-        printf("%d time(s) through the loop.\n", loopCounter);
+    while (positiveInteger >= 0) {
+        // yes, this is the exception on placing the counter at the top
+        // if you did not, then there would be an infinit loop
+
+        positiveInteger--;
+        if (positiveInteger == 5) {
+            continue;
+        }
+        printf("Current variable value: %d\n", positiveInteger + 1);
     }
 
     printf("\nDone.\n");
