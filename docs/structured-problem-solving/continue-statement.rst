@@ -46,7 +46,7 @@ Pseudocode for the Continue Statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **GET** positive_integer
 | **WHILE** (counter < positive_integer)
-|     counter--
+|     counter = counter - 1
 |     **IF** (counter + 1 == 5) **THEN**
 |         **CONTINUE**
 |     **ENDIF**
