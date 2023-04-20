@@ -104,6 +104,6 @@ Code for the Nested Loops
 
 Example Output
 ^^^^^^^^^^^^^^
-.. image:: ../../code_examples/3-Structured_Problem_Solving/18-Nested_Loops/vhs.gif
+.. image:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/vhs.gif
    :alt: Code example output
    :align: left
