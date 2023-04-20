@@ -97,15 +97,6 @@ Code for the For loop
 
 Example Output
 ^^^^^^^^^^^^^^
-.. code-block:: console
-
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py
-  Enter how many times to repeat: 5
-
-  0 time(s) through the loop.
-  1 time(s) through the loop.
-  2 time(s) through the loop.
-  3 time(s) through the loop.
-  4 time(s) through the loop.
-
-  Done.
+.. image:: ../../code_examples/3-Structured_Problem_Solving/15-For_Loop/vhs.gif
+   :alt: Code example output
+   :align: left
