@@ -100,23 +100,6 @@ Code for Nested If statement
 
 Example Output
 ^^^^^^^^^^^^^^
-.. code-block:: console
-
-  @Mr-Coxall ➜ (main) $ python ./main.py 
-  Enter the number of boxes of cookies you sold: 12
-
-  No prize
-
-  Done.
-  @Mr-Coxall ➜ (main) $ python ./main.py 
-  Enter the number of boxes of cookies you sold: 45
-
-  You get a large prize
-
-  Done.
-  @Mr-Coxall ➜ (main) $ python ./main.py 
-  Enter the number of boxes of cookies you sold: 22
-
-  You get a small prize
-
-  Done.
+.. image:: ../../code_examples/3-Structured_Problem_Solving/12-Nested_If_Statements/vhs.gif
+   :alt: Code example output
+   :align: left
