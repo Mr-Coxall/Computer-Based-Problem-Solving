@@ -86,15 +86,10 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 
 Example Output
 ^^^^^^^^^^^^^^
-.. code-block:: console
+.. image:: ../../code_examples/3-Structured_Problem_Solving/5-Example_Sequence/vhs.gif
+   :alt: Code example output
+   :align: left
 
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the subtotal: $12.34
-
-  The HST is $1.60.
-  The total cost is $13.94.
-
-  Done.
 
 5. **Debug**
 
