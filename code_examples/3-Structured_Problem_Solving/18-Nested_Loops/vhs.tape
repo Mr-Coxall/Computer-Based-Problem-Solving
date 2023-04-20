@@ -32,4 +32,4 @@ Sleep 1s
 Enter
 
 # Ending
-Sleep 5s
+Sleep 30s

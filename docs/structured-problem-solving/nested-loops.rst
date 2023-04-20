@@ -100,7 +100,7 @@ Code for the Nested Loops
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/18-Nested_Loops/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 13-15
+        :emphasize-lines: 13-16
 
 Example Output
 ^^^^^^^^^^^^^^
