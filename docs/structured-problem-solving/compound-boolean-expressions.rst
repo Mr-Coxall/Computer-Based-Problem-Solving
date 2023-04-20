@@ -152,6 +152,6 @@ Code for Select Case statement
 
 Example Output
 ^^^^^^^^^^^^^^
-.. image:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/vhs.gif
+.. image:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/vhs.gif
    :alt: Code example output
    :align: left

@@ -45,11 +45,11 @@ Type "python ./main.py"
 Sleep 1s
 Enter
 Sleep 2s
-Type "42"
+Type "88"
 Sleep 1s
 Enter
 Sleep 2s
-Type "88"
+Type "42"
 Sleep 1s
 Enter
 # Admire the output for a bit.
