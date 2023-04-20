@@ -73,18 +73,6 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
 Example Output
 ^^^^^^^^^^^^^^
-.. code-block:: console
-
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  True
-  32
-  32.45
-  Hello, World!
-
-  Done.
-
-Example Output
-^^^^^^^^^^^^^^
 .. image:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/vhs.gif
    :alt: Code example output
    :align: left
