@@ -96,25 +96,6 @@ Code for the Loops and If Statements
 
 Example Output
 ^^^^^^^^^^^^^^
-.. code-block:: console
-
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py
-  1
-  2
-  Fizz
-  4
-  Buzz
-  Fizz
-  7
-  ...
-  92
-  Fizz
-  94
-  Buzz
-  Fizz
-  97
-  98
-  Fizz
-  Buzz
-
-  Done.
+.. image:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/vhs.gif
+   :alt: Code example output
+   :align: left
