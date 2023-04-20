@@ -96,14 +96,6 @@ In the code examples below, if the variable numberOfStudents (or number_of_stude
 
 Example Output
 ^^^^^^^^^^^^^^
-.. code-block:: console
-
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the number of students: 32
-  Too many students!
-
-  Done.
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the number of students: 23
-
-  Done.
+.. image:: ../../code_examples/3-Structured_Problem_Solving/6-If_Then/vhs.gif
+   :alt: Code example output
+   :align: left
