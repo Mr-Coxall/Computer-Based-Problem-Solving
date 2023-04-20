@@ -59,11 +59,7 @@ Here are a few examples of assignment statements:
 
 Example Output
 ^^^^^^^^^^^^^^
-.. code-block:: console
+.. image:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/vhs.gif
+   :alt: Code example output
+   :align: left
 
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  The number of students is: 7
-  The area of a rectangle is: 325.0 cm²
-  Hello, World!
-
-  Done.
