@@ -13,8 +13,8 @@ Set Padding 20
 Set Margin 15
 Set MarginFill "#104972"
 Set WindowBar Colorful
-Set WindowBarSize 80
-Set PlaybackSpeed 0.5 # Make output 2 times slower
+Set WindowBarSize 100
+# Set PlaybackSpeed 0.5 # Make output 2 times slower
 
 # source the .bashrc file
 Hide
@@ -26,19 +26,12 @@ Type "clear"
 Enter
 
 Show
+Sleep 1s
 
-Sleep 1s
-Type "pwd"
-Sleep 1s
-Enter
-Sleep 1s
-Type "ll"
-Enter
-Sleep 1s
 
 Type "python ./main.py"
 Sleep 1s
 Enter
 
 # Admire the output for a bit.
-Sleep 5s
+Sleep 10s
