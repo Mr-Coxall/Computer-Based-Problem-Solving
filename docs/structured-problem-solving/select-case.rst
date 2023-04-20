@@ -104,20 +104,6 @@ Code for Select Case statement
 
 Example Output
 ^^^^^^^^^^^^^^
-.. code-block:: console
-
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter your grade: A
-  Excellent!
-
-  Done.
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter your grade: f
-  Fail.
-
-  Done.
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter your grade: E
-  Invalid grade.
-
-  Done.
+.. image:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/vhs.gif
+   :alt: Code example output
+   :align: left

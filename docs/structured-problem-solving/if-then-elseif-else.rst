@@ -105,4 +105,3 @@ Example Output
 .. image:: ../../code_examples/3-Structured_Problem_Solving/8-If_Then_ElseIf_Else/vhs.gif
    :alt: Code example output
    :align: left
-
