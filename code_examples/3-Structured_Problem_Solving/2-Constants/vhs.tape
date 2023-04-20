@@ -8,13 +8,12 @@ Set Width 1920
 Set Height 1080
 Set TypingSpeed 300ms
 Set Theme "Dracula+"
-Set Framerate 30
+Set Framerate 60
 Set Padding 20
 Set Margin 15
 Set MarginFill "#104972"
 Set WindowBar Colorful
-Set WindowBarSize 80
-Set PlaybackSpeed 0.5 # Make output 2 times slower
+Set WindowBarSize 40
 
 # source the .bashrc file
 Hide
@@ -26,19 +25,12 @@ Type "clear"
 Enter
 
 Show
-
-Sleep 1s
-Type "pwd"
-Sleep 1s
-Enter
-Sleep 1s
-Type "ll"
-Enter
-Sleep 1s
+Sleep 2s
 
 Type "python ./main.py"
-Sleep 1s
+Sleep 2s
 Enter
+Sleep 1s
 
 # Admire the output for a bit.
 Sleep 5s

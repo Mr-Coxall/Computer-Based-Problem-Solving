@@ -72,11 +72,6 @@ Constants just like variables hold a particular value in memory for a programmer
 
 Example Output
 ^^^^^^^^^^^^^^
-.. code-block:: console
-
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Room: 212
-  0.13%
-  Canada
-
-  Done.
+.. image:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/vhs.gif
+   :alt: Code example output
+   :align: left
