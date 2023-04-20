@@ -7,7 +7,7 @@ This module uses a break statement
 
 
 def main() -> None:
-    """The main() this function uses a break statement, returns None."""
+    """The main() function uses a break statement, returns None."""
 
     # input
     positive_integer = int(input("Enter how many times to repeat: "))

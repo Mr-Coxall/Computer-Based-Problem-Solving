@@ -7,7 +7,7 @@ This module uses a for loop
 
 
 def main() -> None:
-    """The main() this function uses a for loop, returns None."""
+    """The main() function uses a for loop, returns None."""
 
     # input
     positive_integer = int(input("Enter how many times to repeat: "))

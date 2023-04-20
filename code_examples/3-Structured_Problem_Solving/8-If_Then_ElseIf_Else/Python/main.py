@@ -7,7 +7,7 @@ This module checks a traffic light
 
 
 def main() -> None:
-    """The main() this function checks a traffic light, returns None."""
+    """The main() function checks a traffic light, returns None."""
 
     # input
     light_color = input("Enter the color of the traffic light: ")

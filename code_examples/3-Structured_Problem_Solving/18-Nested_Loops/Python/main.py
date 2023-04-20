@@ -7,7 +7,7 @@ This module uses a nested loop
 
 
 def main() -> None:
-    """The main() this function uses a nested loop, returns None."""
+    """The main() function uses a nested loop, returns None."""
 
     # process & output
     for counter1 in range(10):
