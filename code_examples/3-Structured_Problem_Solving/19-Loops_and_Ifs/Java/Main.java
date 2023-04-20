@@ -1,5 +1,5 @@
 /*
- * This program uses a for loop
+ * This program is the Fizz Buzz program
  *
  * @author  Mr Coxall
  * @version 1.0
@@ -10,25 +10,20 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    // this function uses a for loop
-
-    // create Scanner object for user input
-    Scanner scanner = new Scanner(System.in);
-
-    // input
-    System.out.print("Enter how many times to repeat: ");
-    String positiveIntegerStr = scanner.nextLine();
-    System.out.println();
+    // this function is the Fizz Buzz program
 
     // process & output
-    int positiveInteger = Integer.parseInt(positiveIntegerStr);
-
-    for (int loopCounter = 0; loopCounter < positiveInteger; loopCounter++) {
-      System.out.println("%d time(s) through the loop.".formatted(loopCounter));
+    for (int counter = 1; counter <= 100; counter++) {
+        if (counter % 3 == 0 && counter % 5 == 0) {
+            System.out.println("Fizz-Buzz");
+        } else if (counter % 3 == 0) {
+            System.out.println("Fizz");
+        } else if (counter % 5 == 0) {
+            System.out.println("Buzz");
+        } else {
+            System.out.println(counter);
+        }
     }
-
-    // close the Scanner object
-    scanner.close();
     System.out.println("\nDone.");
   }
 }

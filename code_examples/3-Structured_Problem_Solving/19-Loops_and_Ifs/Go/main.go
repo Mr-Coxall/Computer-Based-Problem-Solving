@@ -1,7 +1,7 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a for loop
+ * This program is the Fizz Buzz program
  */
 
 package main
@@ -11,20 +11,19 @@ import (
 )
 
 func main() {
-	// this function uses a for loop
-
-	var counter int // in go no need to set to 0, it automaticall is!
-	var positiveInteger int
-
-	// input
-	fmt.Print("Enter how many times to repeat: ")
-	fmt.Scan(&positiveInteger)
-	fmt.Println()
+	// this function is the Fizz Buzz program
 
 	// process & output
-	for counter < positiveInteger {
-		fmt.Printf("%d time(s) through the loop.\n", counter)
-		counter++ // a short form for: counter = counter + 1
+	for counter := 1; counter <= 100; counter++ {
+		if counter%3 == 0 && counter%5 == 0 {
+			fmt.Println("Fizz-Buzz")
+		} else if counter%3 == 0 {
+			fmt.Println("Fizz")
+		} else if counter%5 == 0 {
+			fmt.Println("Buzz")
+		} else {
+			fmt.Println(counter)
+		}
 	}
 
 	fmt.Println("\nDone.")
