@@ -62,4 +62,3 @@ Example Output
 .. image:: ../../code_examples/3-Structured_Problem_Solving/3-Assingment_Statements/vhs.gif
    :alt: Code example output
    :align: left
-

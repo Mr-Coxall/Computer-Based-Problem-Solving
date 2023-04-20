@@ -59,10 +59,6 @@ What if for some reason you needed a variable to be accessible to several differ
 
 Example Output
 ^^^^^^^^^^^^^^
-.. code-block:: console
-
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Local variable:  11 + 30 = 41
-  Global variable: 26 + 30 = 56
-
-  Done.
+.. image:: ../../code_examples/3-Structured_Problem_Solving/4-Scope_of_Variables/vhs.gif
+   :alt: Code example output
+   :align: left
