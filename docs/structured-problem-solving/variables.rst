@@ -82,3 +82,9 @@ Example Output
   Hello, World!
 
   Done.
+
+Example Output
+^^^^^^^^^^^^^^
+.. image:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/vhs.gif
+   :alt: Code example output
+   :align: left
