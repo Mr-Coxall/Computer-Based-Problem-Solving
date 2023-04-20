@@ -102,25 +102,7 @@ Code for If…Then…ElseIf…Else statement
 
 Example Output
 ^^^^^^^^^^^^^^
-.. code-block:: console
+.. image:: ../../code_examples/3-Structured_Problem_Solving/8-If_Then_ElseIf_Else/vhs.gif
+   :alt: Code example output
+   :align: left
 
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the color of the traffic light: red
-  Stop!
-
-  Done.
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the color of the traffic light: yellow
-  Slow down!
-
-  Done.
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the color of the traffic light: green
-  Go!
-
-  Done.
-  @Mr-Coxall ➜ (master ✗) $ python ./main.py 
-  Enter the color of the traffic light: blue
-  Not a valid color.
-
-  Done.
