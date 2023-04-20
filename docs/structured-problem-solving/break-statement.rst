@@ -107,16 +107,6 @@ Code for the Break Statement
 
 Example Output
 ^^^^^^^^^^^^^^
-.. code-block:: console
-
-  @Mr-Coxall ➜ (main) $ python ./main.py 
-  Enter how many times to repeat: 9
-
-  0 time through loop.
-  1 time through loop.
-  2 time through loop.
-  3 time through loop.
-  4 time through loop.
-  5 time through loop.
-
-  Done.
+.. image:: ../../code_examples/3-Structured_Problem_Solving/16-Break/vhs.gif
+   :alt: Code example output
+   :align: left
