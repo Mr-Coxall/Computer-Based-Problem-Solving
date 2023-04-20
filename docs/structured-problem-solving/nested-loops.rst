@@ -104,15 +104,6 @@ Code for the Nested Loops
 
 Example Output
 ^^^^^^^^^^^^^^
-.. code-block:: console
-
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py
-  Odometer: 00
-  Odometer: 01
-  Odometer: 02
-  ...
-  Odometer: 97
-  Odometer: 98
-  Odometer: 99
-
-  Done.
+.. image:: ../../code_examples/3-Structured_Problem_Solving/18-Nested_Loops/vhs.gif
+   :alt: Code example output
+   :align: left
