@@ -102,17 +102,6 @@ Code for Try Catch statement
 
 Example Output
 ^^^^^^^^^^^^^^
-.. code-block:: console
-
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter an integer: 42
-  You entered: 42.
-  Thanks for playing.
-
-  Done.
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter an integer: Not an integer!       
-  The error was <class 'ValueError'>.
-  Thanks for playing.
-
-  Done.
+.. image:: ../../code_examples/3-Structured_Problem_Solving/10-Try_Catch/vhs.gif
+   :alt: Code example output
+   :align: left

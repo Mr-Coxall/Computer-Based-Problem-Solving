@@ -152,26 +152,6 @@ Code for Select Case statement
 
 Example Output
 ^^^^^^^^^^^^^^
-.. code-block:: console
-
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter term mark (as %): 42
-  Enter project mark (as %): 42
-
-  You did not pass the course.
-
-  Done.
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter term mark (as %): 42
-  Enter project mark (as %): 88
-
-  You did not pass the course.
-
-  Done.
-  @Mr-Coxall ➜ (main ✗) $ python ./main.py 
-  Enter term mark (as %): 88
-  Enter project mark (as %): 88
-
-  You passed the course.
-
-  Done.
+.. image:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/vhs.gif
+   :alt: Code example output
+   :align: left
