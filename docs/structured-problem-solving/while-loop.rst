@@ -64,7 +64,7 @@ Code for While loop
 
   .. group-tab:: Go
     .. code-block:: Go
-      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/Go/main.go
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/13-While_Loop/Go/main.c
         :language: go
         :linenos:
         :emphasize-lines: 25-28
