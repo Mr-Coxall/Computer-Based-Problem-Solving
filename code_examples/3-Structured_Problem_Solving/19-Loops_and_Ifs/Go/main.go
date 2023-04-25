@@ -15,16 +15,16 @@ func main() {
 
 	// process & output
 	for counter := 1; counter <= 100; counter++ {
-		if counter%3 == 0 && counter%5 == 0 {
+		switch {
+		case counter%3 == 0 && counter%5 == 0:
 			fmt.Println("Fizz-Buzz")
-		} else if counter%3 == 0 {
+		case counter%3 == 0:
 			fmt.Println("Fizz")
-		} else if counter%5 == 0 {
+		case counter%5 == 0:
 			fmt.Println("Buzz")
-		} else {
+		default:
 			fmt.Println(counter)
 		}
 	}
-
 	fmt.Println("\nDone.")
 }
