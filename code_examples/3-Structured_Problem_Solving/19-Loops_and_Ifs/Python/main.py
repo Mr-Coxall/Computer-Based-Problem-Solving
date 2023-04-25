@@ -7,6 +7,7 @@ This module is the Fizz Buzz program
 
 import time
 
+
 def main() -> None:
     """The main() function is the Fizz Buzz program, returns None."""
 
