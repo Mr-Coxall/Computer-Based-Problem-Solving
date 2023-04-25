@@ -9,6 +9,11 @@
 import java.util.Scanner;
 
 public class Main {
+  /**
+   * This function handles all the inputs and outputs.
+   *
+   * @param args
+   */
   public static void main(String[] args) {
     // this function is the Fizz Buzz program
 
