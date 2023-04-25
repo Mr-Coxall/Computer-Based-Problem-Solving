@@ -24,7 +24,8 @@ int main() {
         if (positiveInteger + 1 == 5) {
             continue;
         }
-        std::cout << " Current variable value: " << positiveInteger + 1 << std::endl;
+        std::cout << "Current variable value: " <<
+                      positiveInteger + 1 << std::endl;
     }
 
     std::cout << "\nDone." << std::endl;

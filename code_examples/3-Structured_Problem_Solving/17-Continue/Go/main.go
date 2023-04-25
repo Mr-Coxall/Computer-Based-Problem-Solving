@@ -27,10 +27,10 @@ func main() {
 
 		positiveInteger--
 
-		if positiveInteger + 1 == 5 {
+		if positiveInteger+1 == 5 {
 			continue
 		}
-		fmt.Printf("Current variable value: %d\n", positiveInteger + 1)
+		fmt.Printf("Current variable value: %d\n", positiveInteger+1)
 	}
 
 	fmt.Println("\nDone.")
