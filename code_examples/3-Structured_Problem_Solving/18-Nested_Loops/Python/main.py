@@ -6,6 +6,7 @@ This module uses a nested loop
 """
 import time
 
+
 def main() -> None:
     """The main() function uses a nested loop, returns None."""
 
