@@ -29,42 +29,42 @@ Code for While loop
       .. literalinclude:: ../../code_examples/4-Functions/1-Understanding_Functions/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 20-23
+        :emphasize-lines: 9-24, 26-41, 45-46
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/4-Functions/1-Understanding_Functions/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 20-23
+        :emphasize-lines: 9-23, 25-39, 43-44
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/4-Functions/1-Understanding_Functions/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 24-27
+        :emphasize-lines: 13-25, 27-39, 43-44
 
   .. group-tab:: Go
     .. code-block:: Go
-      .. literalinclude:: ../../code_examples/4-Functions/1-Understanding_Functions/Go/main.c
+      .. literalinclude:: ../../code_examples/4-Functions/1-Understanding_Functions/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 25-28
+        :emphasize-lines: 13-26, 28-41, 45-46
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/4-Functions/1-Understanding_Functions/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 28-31
+        :emphasize-lines: 12-30, 32-50, 66-67
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/4-Functions/1-Understanding_Functions/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 17-20
+        :emphasize-lines: 9-19, 21-31, 34-35
 
   .. group-tab:: Python
     .. code-block:: Python
@@ -78,162 +78,3 @@ Example Output
 .. image:: ../../code_examples/4-Functions/1-Understanding_Functions/vhs.gif
    :alt: Code example output
    :align: left
-
-
-
-
-
-
-
-
-
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-		// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-		//
-		// Created by: Mr. Coxall
-		// Created on: Oct 2019
-		// This program uses user defined functions
-
-		#include <iostream>
-
-		// note: the style for the function name is following Google's style guide
-		//       https://google.github.io/styleguide/cppguide.html#Function_Names
-		void CalculateArea() {
-		    // calculate area
-
-		    int length;
-		    int width;
-		    int area;
-
-		    // input
-		    std::cout << "Enter the length of a rectangle (cm): ";
-		    std::cin >> length;
-		    std::cout << "Enter the width of a rectangle (cm): ";
-		    std::cin >> width;
-
-		    // process
-		    area = length * width;
-
-		    // output
-		    std::cout << "The area is " << area << "cm^2" << std::endl << std::endl;
-		}
-
-
-		void CalculatePerimeter() {
-		    // calculate perimeter
-
-		    int length;
-		    int width;
-		    int perimeter;
-
-		    // input
-		    std::cout << "Enter the length of a rectangle (cm): ";
-		    std::cin >> length;
-		    std::cout << "Enter the width of a rectangle (cm): ";
-		    std::cin >> width;
-
-		    // process
-		    perimeter = 2 * (length + width);
-
-		    // output
-		    std::cout << "The perimeter is "<< perimeter << "cm"
-		              << std::endl << std::endl;
-		}
-
-		main() {
-		    // this function just calls other functions
-
-		    // call functions
-		    CalculateArea();
-		    CalculatePerimeter();
-		}
-
-
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-      // functions
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-      // functions
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-      // functions
-
-  .. group-tab:: Python3
-
-    .. code-block:: Python
-
-		#!/usr/bin/env python3
-
-		# Created by: Mr. Coxall
-		# Created on: Oct 2019
-		# This program uses user defined functions
-
-
-		def calculate_area() -> None:
-		    # calculate area
-		    
-		    # input
-		    length = int(input("Enter the length of a rectangle (cm): "))
-		    width = int(input("Enter the width of a rectangle (cm): "))
-		    
-		    # process
-		    area = length * witdh
-		    
-		    # output
-		    print("The area is {0} cm²".format(area))
-
-
-		def calculate_perimeter() -> None:
-		    # calculate perimeter
-		    
-		    # input
-		    length = int(input("Enter the length of a rectangle (cm): "))
-		    width = int(input("Enter the width of a rectangle (cm): "))
-		    
-		    # process
-		    perimeter = 2 * (length + width)
-		    
-		    # output
-		    print("The perimeter is {0} cm".format(perimeter))
-		    
-		def main():
-		    # this function just calls other functions
-		    
-		    # call functions
-		    calculate_area()
-		    calculate_perimeter()
-
-
-		if __name__ == "__main__":
-		    main()
-
-
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // functions
-
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // functions
-

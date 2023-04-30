@@ -9,13 +9,11 @@
 import java.util.Scanner;
 
 final class Main {
-  private Main() {
-    // Prevent instantiation
-    // Optional: throw an exception e.g. AssertionError
-    // if this ever *is* called
-    throw new IllegalStateException("Cannot be instantiated");
-  }
-
+  /**
+   * Calculates area of rectangle.
+   *
+   * @param args nothing passed in
+   */
   public static void calculateArea() {
     // input
     Scanner scanner = new Scanner(System.in);
@@ -31,6 +29,11 @@ final class Main {
     System.out.printf("The area is %d cm²%n%n", area);
   }
 
+  /**
+   * Calculates perimeter of rectangle.
+   *
+   * @param args nothing passed in
+   */
   public static void calculatePerimeter() {
     // input
     Scanner scanner = new Scanner(System.in);
@@ -44,6 +47,13 @@ final class Main {
 
     // output
     System.out.printf("The perimeter is %d cm%n%n", perimeter);
+  }
+
+  private Main() {
+    // Prevent instantiation
+    // Optional: throw an exception e.g. AssertionError
+    // if this ever *is* called
+    throw new IllegalStateException("Cannot be instantiated");
   }
 
   /**
