@@ -71,7 +71,7 @@ Code for While loop
       .. literalinclude:: ../../code_examples/4-Functions/1-Understanding_Functions/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 9, 24, 43-44
+        :emphasize-lines: 9-21, 24-36, 43-44
 
 Example Output
 ^^^^^^^^^^^^^^

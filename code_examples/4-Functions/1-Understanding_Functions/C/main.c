@@ -2,22 +2,48 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program shows declaring variables
+// This program uses user defined functions
 
 #include <stdio.h>
-#include <stdbool.h>
+
+void calculateArea()
+{
+    // input
+    printf("Enter the length of a rectangle (cm): ");
+    int length;
+    scanf("%d", &length);
+    printf("Enter the width of a rectangle (cm): ");
+    int width;
+    scanf("%d", &width);
+
+    // process
+    int area = length * width;
+
+    // output
+    printf("The area is %d cm²\n\n", area);
+}
+
+void calculatePerimeter()
+{
+    // input
+    printf("Enter the length of a rectangle (cm): ");
+    int length;
+    scanf("%d", &length);
+    printf("Enter the width of a rectangle (cm): ");
+    int width;
+    scanf("%d", &width);
+
+    // process
+    int perimeter = 2 * (length + width);
+
+    // output
+    printf("The perimeter is %d cm\n\n", perimeter);
+}
 
 int main() {
-    // variable definition
-    bool isCurrent = true;  // bool
-    int age = 32;  // int
-    float area = 32.45;  // float
-    char someWords[13] = "Hello, World!";  // string
-
-    printf("%d\n", isCurrent);
-    printf("%d\n", age);
-    printf("%.2f\n", area);
-    printf("%s\n", someWords);
+    // call functions
+    calculateArea();
+    calculatePerimeter();
 
     printf("\nDone.\n");
     return 0;

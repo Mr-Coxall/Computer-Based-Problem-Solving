@@ -1,11 +1,12 @@
 /*
- * This program shows declaring variables
- * .... this was linted by GitHub Actions
+ * This program uses user defined functions
  *
  * @author  Mr Coxall
  * @version 1.0
  * @since   2020-09-01
  */
+
+import java.util.Scanner;
 
 final class Main {
   private Main() {
@@ -15,8 +16,35 @@ final class Main {
     throw new IllegalStateException("Cannot be instantiated");
   }
 
-  /** Some floating point number. */
-  public static final float SOME_FLOAT = 14.65F;
+  public static void calculateArea() {
+    // input
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter the length of a rectangle (cm): ");
+    int length = scanner.nextInt();
+    System.out.print("Enter the width of a rectangle (cm): ");
+    int width = scanner.nextInt();
+
+    // process
+    int area = length * width;
+
+    // output
+    System.out.printf("The area is %d cm²%n%n", area);
+  }
+
+  public static void calculatePerimeter() {
+    // input
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter the length of a rectangle (cm): ");
+    int length = scanner.nextInt();
+    System.out.print("Enter the width of a rectangle (cm): ");
+    int width = scanner.nextInt();
+
+    // process
+    int perimeter = 2 * (length + width);
+
+    // output
+    System.out.printf("The perimeter is %d cm%n%n", perimeter);
+  }
 
   /**
    * Main entry point into program.
@@ -24,16 +52,9 @@ final class Main {
    * @param args nothing passed in
    */
   public static void main(final String[] args) {
-    // variable definition
-    boolean isCurrent = true; // bool
-    int age = 0; // int
-    float area = SOME_FLOAT; // float
-    String someWords = "Hello, World!"; // string
-
-    System.out.println(isCurrent);
-    System.out.println(age);
-    System.out.println(area);
-    System.out.println(someWords);
+    // call functions
+    calculateArea();
+    calculatePerimeter();
 
     System.out.println("\nDone.");
   }

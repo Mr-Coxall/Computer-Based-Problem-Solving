@@ -2,21 +2,47 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program shows declaring variables
+// This program uses user defined functions
 
 #include <iostream>
 
+void calculateArea() {
+    // input
+    std::cout << "Enter the length of a rectangle (cm): ";
+    int length;
+    std::cin >> length;
+    std::cout << "Enter the width of a rectangle (cm): ";
+    int width;
+    std::cin >> width;
+
+    // process
+    int area = length * width;
+
+    // output
+    std::cout << "The area is " << area << " cm²\n\n";
+}
+
+void calculatePerimeter() {
+    // input
+    std::cout << "Enter the length of a rectangle (cm): ";
+    int length;
+    std::cin >> length;
+    std::cout << "Enter the width of a rectangle (cm): ";
+    int width;
+    std::cin >> width;
+
+    // process
+    int perimeter = 2 * (length + width);
+
+    // output
+    std::cout << "The perimeter is " << perimeter << " cm\n\n";
+}
+
 int main() {
-    // variable definition
-    bool isCurrent = true;  // bool
-    int age = 32;  // int
-    float area = 32.45;  // float
-    std::string someWords = "Hello, World!";  // string
+    // call functions
+    calculateArea();
+    calculatePerimeter();
 
-    std::cout << isCurrent << std::endl;
-    std::cout << age << std::endl;
-    std::cout << area << std::endl;
-    std::cout << someWords << std::endl;
-
-    std::cout << "\nDone." << std::endl;
+    std::cout << "Done." << std::endl;
+    return 0;
 }

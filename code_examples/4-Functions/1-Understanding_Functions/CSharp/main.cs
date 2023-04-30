@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program shows declaring variables
+ * This program uses user defined functions
 */
 
 using System;
@@ -10,17 +10,38 @@ using System;
  * Contains all methods for performing basic variable usage
 */
 class Program {
-    public static void Main (string[] args) {
-        // variable definition
-        bool isCurrent = true;  // bool
-        int age = 32;  // int
-        float area = 32.45F;  // float
-        string someWords = "Hello, World!";  // string
+    static void calculateArea() {
+        // input
+        Console.Write("Enter the length of a rectangle (cm): ");
+        int length = int.Parse(Console.ReadLine());
+        Console.Write("Enter the width of a rectangle (cm): ");
+        int width = int.Parse(Console.ReadLine());
 
-        Console.WriteLine(isCurrent);
-        Console.WriteLine(age);
-        Console.WriteLine(area);
-        Console.WriteLine(someWords);
+        // process
+        int area = length * width;
+
+        // output
+        Console.WriteLine($"The area is {area} cm²\n");
+    }
+
+    static void calculatePerimeter() {
+        // input
+        Console.Write("Enter the length of a rectangle (cm): ");
+        int length = int.Parse(Console.ReadLine());
+        Console.Write("Enter the width of a rectangle (cm): ");
+        int width = int.Parse(Console.ReadLine());
+
+        // process
+        int perimeter = 2 * (length + width);
+
+        // output
+        Console.WriteLine($"The perimeter is {perimeter} cm\n");
+    }
+
+    public static void Main (string[] args) {
+        // call functions
+        calculateArea();
+        calculatePerimeter();
 
         Console.WriteLine("\nDone.");
     }

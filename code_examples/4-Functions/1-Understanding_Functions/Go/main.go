@@ -1,7 +1,7 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program shows declaring variables
+ * This program uses user defined functions
  */
 
 package main
@@ -10,17 +10,40 @@ import (
 	"fmt"
 )
 
-func main() {
-	// variable definition
-	isCurrent := true            // bool
-	age := 32                    // int
-	area := 32.4                 // float32
-	someWords := "Hello, World!" // string
+func calculateArea() {
+	// input
+	var length, width int
+	fmt.Print("Enter the length of a rectangle (cm): ")
+	fmt.Scanln(&length)
+	fmt.Print("Enter the width of a rectangle (cm): ")
+	fmt.Scanln(&width)
 
-	fmt.Println(isCurrent)
-	fmt.Println(age)
-	fmt.Println(area)
-	fmt.Println(someWords)
+	// process
+	area := length * width
+
+	// output
+	fmt.Printf("The area is %d cm²\n\n", area)
+}
+
+func calculatePerimeter() {
+	// input
+	var length, width int
+	fmt.Print("Enter the length of a rectangle (cm): ")
+	fmt.Scanln(&length)
+	fmt.Print("Enter the width of a rectangle (cm): ")
+	fmt.Scanln(&width)
+
+	// process
+	perimeter := 2 * (length + width)
+
+	// output
+	fmt.Printf("The perimeter is %d cm\n\n", perimeter)
+}
+
+func main() {
+	// call functions
+	calculateArea()
+	calculatePerimeter()
 
 	fmt.Println("\nDone.")
 }
