@@ -3,20 +3,20 @@
  * This program checks a traffic light
 */
 
-const prompt = require('prompt-sync')();
+const prompt = require('prompt-sync')()
 
 // input
-const lightColor = prompt('Enter the color of the traffic light: ');
+const lightColor = prompt('Enter the color of the traffic light: ')
 
 // process and output
 if (lightColor === 'red') {
-  console.log('Stop!');
+  console.log('Stop!')
 } else if (lightColor === 'yellow') {
-  console.log('Slow down!');
+  console.log('Slow down!')
 } else if (lightColor === 'green') {
-  console.log('Go!');
+  console.log('Go!')
 } else {
-  console.log('Not a valid color.');
+  console.log('Not a valid color.')
 }
 
-console.log('\nDone.');
+console.log('\nDone.')

@@ -4,24 +4,24 @@
 // Created on: Sep 2020
 // This program calculates total from subtotal and tax
 
-const prompt = require('prompt-sync')();
+const prompt = require('prompt-sync')()
 
 // this function calculates total from subtotal and tax
-const HST = 0.13;
-let tax;
-let subTotal;
-let total;
+const HST = 0.13
+let tax
+let subTotal
+let total
 
 // get user input
-subTotal = parseFloat(prompt("Enter the subtotal: $"));
+subTotal = parseFloat(prompt("Enter the subtotal: $"))
 
 // process input
-tax = subTotal * HST;
-total = subTotal + tax;
+tax = subTotal * HST
+total = subTotal + tax
 
 // output results
-console.log();
-console.log(`The HST is: $${tax.toFixed(2)}.`);
-console.log(`The total cost is: $${total.toFixed(2)}.`);
+console.log()
+console.log(`The HST is: $${tax.toFixed(2)}.`)
+console.log(`The total cost is: $${total.toFixed(2)}.`)
 
-console.log("\nDone.");
+console.log("\nDone.")
