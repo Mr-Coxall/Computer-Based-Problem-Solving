@@ -23,6 +23,54 @@ A variable or value passed along inside a function call is called an `parameter 
     .. code-block:: C
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/C/main.c
         :language: C
+        :lines: 40
+
+  .. group-tab:: C++
+    .. code-block:: C++
+      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CPP/main.cpp
+        :language: C++
+        :lines: 41
+
+  .. group-tab:: C#
+    .. code-block:: C#
+      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CSharp/main.cs
+        :language: C#
+        :lines: 42
+
+  .. group-tab:: Go
+    .. code-block:: Go
+      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Go/main.go
+        :language: go
+        :lines: 42
+
+  .. group-tab:: Java
+    .. code-block:: Java
+      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Java/Main.java
+        :language: java
+        :lines: 60
+
+  .. group-tab:: JavaScript
+    .. code-block:: JavaScript
+      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/JavaScript/main.js
+        :language: javascript
+        :lines: 35
+
+  .. group-tab:: Python
+    .. code-block:: Python
+      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Python/main.py
+        :language: python
+        :lines: 38
+
+When you are creating your function, you must also tell the program that the function is expecting these two values. To do this after the function name declaration you place in brackets the two declaration statements declaring that the function must be passed in two variable (just like when a regular variable is being declared). If your programming language requires that you declare what type the variables will be normally, you will most like have to do that to. 
+
+The following is the function declaration line for the examples above:
+
+.. tabs::
+
+  .. group-tab:: C
+    .. code-block:: C
+      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/C/main.c
+        :language: C
         :lines: 9
 
   .. group-tab:: C++
@@ -60,66 +108,6 @@ A variable or value passed along inside a function call is called an `parameter 
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Python/main.py
         :language: python
         :lines: 9
-
-When you are creating your function, you must also tell the program that the function is expecting these two values. To do this after the function name declaration you place in brackets the two declaration statements declaring that the function must be passed in two variable (just like when a regular variable is being declared). If your programming language requires that you declare what type the variables will be normally, you will most like have to do that to. 
-
-The following is the function declaration line for the examples above:
-
-.. tabs::
-
-  .. group-tab:: C
-    .. code-block:: C
-
-		// declaring a function
-		int CalculateArea(int length, int width) {
-		    ...
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-		// declaring a function
-		int CalculateArea(int length, int width) {
-		    ...
-
-  .. group-tab:: C#
-    .. code-block:: C#
-
-		// declaring a function
-		int CalculateArea(int length, int width) {
-		    ...
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-		// declaring a function
-		func CalculateArea(int length, int width) {
-		    ...
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-		// declaring a function
-		int CalculateArea(int length, int width) {
-		    ...
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-		// declaring a function
-		int CalculateArea(int length, int width) {
-		    ...
-
-  .. group-tab:: Python3
-
-    .. code-block:: Python
-
-		# declaring a function, with type hints
-		def calculate_area(length: int, width: int) -> None:
-		    ...
 
 Here is a full example of the previous sections program, but now the main function takes care of getting the length and width. This way it only has to ask you the information once and it passes the length and width to each function:
 
