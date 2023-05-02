@@ -6,7 +6,7 @@ This module uses user defined functions
 """
 
 
-def calculate_area(length : int, width: int) -> None:
+def calculate_area(length: int, width: int) -> None:
     """The calculate_area() function calculates area of a rectangle, returns None."""
 
     # process
@@ -16,7 +16,7 @@ def calculate_area(length : int, width: int) -> None:
     print(f"The area is {area} cm²")
 
 
-def calculate_perimeter(length : int, width : int) -> None:
+def calculate_perimeter(length: int, width: int) -> None:
     """The calculate_perimeter() function calculates perimeter of a rectangle, returns None."""
 
     # process
