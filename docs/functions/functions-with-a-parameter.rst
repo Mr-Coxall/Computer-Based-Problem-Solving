@@ -21,50 +21,52 @@ A variable or value passed along inside a function call is called an `parameter 
 
   .. group-tab:: C
     .. code-block:: C
-		
-		// calling a function
-		CalculateArea(lengthFromUser, widthFromUser);
+      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/C/main.c
+        :language: C
+        :linenos:
+        :lines: 9
 
   .. group-tab:: C++
-
     .. code-block:: C++
-
-		// calling a function
-		CalculateArea(lengthFromUser, widthFromUser);
+      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CPP/main.cpp
+        :language: C++
+        :linenos:
+        :lines: 10
 
   .. group-tab:: C#
     .. code-block:: C#
-
-		// calling a function
-		CalculateArea(lengthFromUser, widthFromUser);
+      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CSharp/main.cs
+        :language: C#
+        :linenos:
+        :lines: 13
 
   .. group-tab:: Go
-
     .. code-block:: Go
-
-		// calling a function
-		CalculateArea(lengthFromUser, widthFromUser)
+      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Go/main.go
+        :language: go
+        :linenos:
+        :lines: 13
 
   .. group-tab:: Java
-
     .. code-block:: Java
-
-		// calling a function
-		CalculateArea(lengthFromUser, widthFromUser);
+      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Java/Main.java
+        :language: java
+        :linenos:
+        :lines: 17
 
   .. group-tab:: JavaScript
-
     .. code-block:: JavaScript
+      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/JavaScript/main.js
+        :language: javascript
+        :linenos:
+        :lines: 9
 
-		// calling a function
-		CalculateArea(lengthFromUser, widthFromUser)
-
-  .. group-tab:: Python3
-
+  .. group-tab:: Python
     .. code-block:: Python
-
-		# calling a function
-		calculate_area(length_from_user, width_from_user)
+      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Python/main.py
+        :language: python
+        :linenos:
+        :lines: 9
 
 When you are creating your function, you must also tell the program that the function is expecting these two values. To do this after the function name declaration you place in brackets the two declaration statements declaring that the function must be passed in two variable (just like when a regular variable is being declared). If your programming language requires that you declare what type the variables will be normally, you will most like have to do that to. 
 
@@ -74,7 +76,7 @@ The following is the function declaration line for the examples above:
 
   .. group-tab:: C
     .. code-block:: C
-		
+
 		// declaring a function
 		int CalculateArea(int length, int width) {
 		    ...
