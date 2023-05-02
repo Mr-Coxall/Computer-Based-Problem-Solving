@@ -1,22 +1,46 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program shows declaring constants
+ * This program uses user defined functions
  */
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+func calculateArea(length int, width int) {
+	// this function calculates the area of a rectangle
+
+	// process
+	area := length * width
+
+	// output
+	fmt.Printf("The area is %d cm²\n", area)
+}
+
+func calculatePerimeter(length int, width int) {
+	// this function calculates the perimeter of a rectangle
+	// process
+	perimeter := 2 * (length + width)
+
+	// output
+	fmt.Printf("The perimeter is %d cm\n", perimeter)
+}
 
 func main() {
-	// constant definition, Go does not use ALL CAPS
-	const room int = 212
-	const hst float64 = 0.13
-	const country string = "Canada"
+	// input
+	var length, width int
+	fmt.Print("Enter the length of a rectangle (cm): ")
+	fmt.Scanln(&length)
+	fmt.Print("Enter the width of a rectangle (cm): ")
+	fmt.Scanln(&width)
+	fmt.Println()
 
-	fmt.Println("Room:", room)
-	fmt.Println(hst*100, "%")
-	fmt.Println(country)
+	// call functions
+	calculateArea(length, width)
+	calculatePerimeter(length, width)
 
 	fmt.Println("\nDone.")
 }

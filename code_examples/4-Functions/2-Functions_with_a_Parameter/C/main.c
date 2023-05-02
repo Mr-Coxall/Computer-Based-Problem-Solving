@@ -2,19 +2,43 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program shows declaring constants
+// This program uses user defined functions
 
 #include <stdio.h>
 
-int main() {
-    // constant definition
-    const int ROOM_NUMBER = 212;
-    const float HST = 0.13;
-    const char COUNTRY[6] = "Canada";
+void calculateArea(int length, int width) {
+    // this function calculates the area
 
-    printf("Room: %d\n", ROOM_NUMBER);
-    printf("HST %.2f%%\n", HST);
-    printf("%s\n", COUNTRY);
+    // process
+    int area = length * width;
+
+    // output
+    printf("The area is %d cm²\n", area);
+}
+
+void calculatePerimeter(int length, int width) {
+    // this function calculates the perimeter
+    
+    // process
+    int perimeter = 2 * (length + width);
+
+    // output
+    printf("The perimeter is %d cm\n", perimeter);
+}
+
+int main() {
+    // input
+    printf("Enter the length of a rectangle (cm): ");
+    int length;
+    scanf("%d", &length);
+    printf("Enter the width of a rectangle (cm): ");
+    int width;
+    scanf("%d", &width);
+    printf("\n");
+
+    // call functions
+    calculateArea(length, width);
+    calculatePerimeter(length, width);
 
     printf("\nDone.\n");
     return 0;

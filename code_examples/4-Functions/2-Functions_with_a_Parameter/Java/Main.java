@@ -1,12 +1,40 @@
 /*
- * This program shows declaring constants
+ * This program uses user defined functions
  *
  * @author  Mr Coxall
  * @version 1.0
  * @since   2020-09-01
  */
 
+import java.util.Scanner;
+
 final class Main {
+  /**
+   * Calculates area of rectangle.
+   *
+   * @param args nothing passed in
+   */
+  public static void calculateArea(int length, int width) {
+    // process
+    int area = length * width;
+
+    // output
+    System.out.printf("The area is %d cm²%n", area);
+  }
+
+  /**
+   * Calculates perimeter of rectangle.
+   *
+   * @param args nothing passed in
+   */
+  public static void calculatePerimeter(int length, int width) {
+    // process
+    int perimeter = 2 * (length + width);
+
+    // output
+    System.out.printf("The perimeter is %d cm%n", perimeter);
+  }
+
   private Main() {
     // Prevent instantiation
     // Optional: throw an exception e.g. AssertionError
@@ -14,25 +42,23 @@ final class Main {
     throw new IllegalStateException("Cannot be instantiated");
   }
 
-  /** Constant number of lives. */
-  private static final int ROOM = 212;
-
-  /** Constant for HST. */
-  private static final double HST = 0.13;
-
-  /** Constant for COUNTRY. */
-  private static final String COUNTRY = "Canada";
-
   /**
    * Main entry point into program.
    *
    * @param args nothing passed in
    */
   public static void main(final String[] args) {
-    // output
-    System.out.println("Room: " + ROOM);
-    System.out.println(HST + "%");
-    System.out.println(COUNTRY);
+    // input
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter the length of a rectangle (cm): ");
+    int length = scanner.nextInt();
+    System.out.print("Enter the width of a rectangle (cm): ");
+    int width = scanner.nextInt();
+    System.out.println();
+
+    // call functions
+    calculateArea(length, width);
+    calculatePerimeter(length, width);
 
     System.out.println("\nDone.");
   }
