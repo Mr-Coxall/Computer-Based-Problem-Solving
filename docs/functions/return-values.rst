@@ -16,10 +16,14 @@ We have already seen many built in functions that have a return value, like the 
 		// square root function
 		someVariable = sqrt(someNumber);
 
+  .. group-tab:: C++
+
     .. code-block:: C++
 
 		// square root function
 		someVariable = sqrt(someNumber);
+
+  .. group-tab:: C#
 
     .. code-block:: C#
 
@@ -59,37 +63,37 @@ You will notice that the function is now on the right hand side of an assignment
     .. code-block:: C
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/C/main.c
         :language: C
-        :lines: 9
+        :lines: 9-16
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/CPP/main.cpp
         :language: C++
-        :lines: 10
+        :lines: 10-17
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/CSharp/main.cs
         :language: C#
-        :lines: 13
+        :lines: 12-20
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Go/main.go
         :language: go
-        :lines: 13
+        :lines: 13-20
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Java/Main.java
         :language: java
-        :lines: 17
+        :lines: 29-34
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/JavaScript/main.js
         :language: javascript
-        :lines: 9
+        :lines: 12-20
 
   .. group-tab:: Python
     .. code-block:: Python
@@ -106,42 +110,42 @@ Now that we know how to use a return statement, we should no longer print out re
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 9, 19, 40-41
+        :emphasize-lines: 9-16, 18-25, 46-47
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 10, 20, 41-42
+        :emphasize-lines: 10-17, 19-26, 47-48
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 13, 23, 42-43
+        :emphasize-lines: 13-20, 22-29, 44-45
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 13, 23, 42-43
+        :emphasize-lines: 13-20, 22-28, 44-45
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 17, 30, 60-61
+        :emphasize-lines: 17-22, 29-34, 62-63
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 9, 19, 35-36
+        :emphasize-lines: 12-20, 22-29, 37-38
 
   .. group-tab:: Python
     .. code-block:: Python

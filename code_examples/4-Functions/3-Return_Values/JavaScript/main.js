@@ -1,23 +1,45 @@
-/* Created by: Mr. Coxall
+/**
+ * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program shows assingment statements
-*/
+ * This program uses user defined functions
+ */
 
-// variable definition
-numberOfStudents = 2
-width = 32.5
-length = 10.0
-someWords1 = "Hello"
-someWords2 = "World!"
+const prompt = require('prompt-sync')();
 
-// using assignment statements
-numberOfStudents = numberOfStudents + 5
-areaOfRectangle = length * width
-helloWorld = someWords1 + ", " + someWords2
+let area = 0;
+let perimeter = 0;
+
+function calculateArea(length, width) {
+  // this function calculates the area of a rectangle
+  
+  // process
+  const area = length * width;
+
+  // output
+  console.log(`The area is ${area} cm²`);
+}
+
+function calculatePerimeter(length, width) {
+  // this function calculates the perimeter of a rectangle
+
+  // process
+  const perimeter = 2 * (length + width)
+
+  return area
+}
+
+// input
+const length = parseInt(prompt("Enter the length of a rectangle (cm): "))
+const width = parseInt(prompt("Enter the width of a rectangle (cm): "))
+console.log();
+
+// call functions
+area = calculateArea(length, width)
+perimeter = calculatePerimeter(length, width)
 
 // output
-console.log("The number of students is: " + numberOfStudents)
-console.log("The area of a rectangle is: " + areaOfRectangle + " cm²")
-console.log(helloWorld)
+console.log(`The area is ${area} cm²`)
+console.log(`The perimeter is ${perimeter} cm`)
 
 console.log("\nDone.")
+

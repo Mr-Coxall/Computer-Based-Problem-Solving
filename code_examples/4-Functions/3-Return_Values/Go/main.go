@@ -1,30 +1,52 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program shows assingment statements
+ * This program uses user defined functions
  */
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+func calculateArea(length int, width int) {
+	// this function calculates the area of a rectangle
+
+	// process
+	area := length * width
+
+	return area
+}
+
+func calculatePerimeter(length int, width int) {
+	// this function calculates the perimeter of a rectangle
+	// process
+	perimeter := 2 * (length + width)
+
+	return perimeter
+}
 
 func main() {
-	// variable definition
-	numberOfStudents := 2
-	width := 32.5
-	length := 10.0
-	someWords1 := "Hello"
-	someWords2 := "World!"
+	// this function does the input and output
+	var area = 0
+	var perimeter = 0
 
-	// using assignment statements
-	numberOfStudents += 5
-	areaOfRectangle := length * width
-	helloWorld := someWords1 + ", " + someWords2
+	// input
+	var length, width int
+	fmt.Print("Enter the length of a rectangle (cm): ")
+	fmt.Scanln(&length)
+	fmt.Print("Enter the width of a rectangle (cm): ")
+	fmt.Scanln(&width)
+	fmt.Println()
+
+	// call functions
+	calculateArea(length, width)
+	calculatePerimeter(length, width)
 
 	// output
-	fmt.Println("The number of students is:", numberOfStudents)
-	fmt.Println("The area of a rectangle is:", areaOfRectangle, "cm²")
-	fmt.Println(helloWorld)
+	fmt.Printf("The area is %d cm²\n", area)
+	fmt.Printf("The perimeter is %d cm\n", perimeter)
 
 	fmt.Println("\nDone.")
 }

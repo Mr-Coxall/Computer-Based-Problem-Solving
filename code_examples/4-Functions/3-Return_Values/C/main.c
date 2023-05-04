@@ -2,32 +2,49 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program shows assingment statements
+// This program uses user defined functions
 
 #include <stdio.h>
-#include <string.h>
+
+int calculateArea(int length, int width) {
+    // this function calculates the area
+
+    // process
+    int area = length * width;
+
+    return area;
+}
+
+int calculatePerimeter(int length, int width) {
+    // this function calculates the perimeter
+    
+    // process
+    int perimeter = 2 * (length + width);
+
+    return perimeter;
+}
 
 int main() {
-    // variable definition
-    int numberOfStudents = 2;
-    float width = 32.5F;
-    float length = 10.0F;
-    float areaOfRectangle = 0;
-    char someWords1[] = "Hello";
-    char someWords2[] = "World!";
-    char helloWorld[13] = "";
+    // this function does the input and output
+    int area = 0;
+    int perimeter = 0;
 
-    // using assignment statements
-    numberOfStudents = numberOfStudents + 5;
-    areaOfRectangle = length * width;
-    strcat(helloWorld, someWords1);
-    strcat(helloWorld, ", ");
-    strcat(helloWorld, someWords2);
+    // input
+    printf("Enter the length of a rectangle (cm): ");
+    int length;
+    scanf("%d", &length);
+    printf("Enter the width of a rectangle (cm): ");
+    int width;
+    scanf("%d", &width);
+    printf("\n");
+
+    // call functions
+    area = calculateArea(length, width);
+    perimeter = calculatePerimeter(length, width);
 
     // output
-    printf("The number of students is: %d\n", numberOfStudents);
-    printf("The area of a rectangle is: %.2f cm²\n", areaOfRectangle);
-    printf("%s\n", helloWorld);
+    printf("The area is %d cm²\n", area);
+    printf("The perimeter is %d cm\n", perimeter);
 
     printf("\nDone.\n");
     return 0;
