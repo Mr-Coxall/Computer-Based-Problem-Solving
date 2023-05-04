@@ -2,27 +2,45 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module shows using the assignment statement
+This module uses user defined functions
 """
 
 
-def main() -> None:
-    """The main() function shows variable definition, returns None."""
-    number_of_students = 2
-    width = 32.5
-    length = 10.0
-    some_words1 = "Hello"
-    some_words2 = "World!"
+def calculate_area(length: int, width: int) -> int:
+    """The calculate_area() function calculates area of a rectangle, returns int."""
 
-    # using assignment statements
-    number_of_students = number_of_students + 5
-    area_of_rectangle = length * width
-    hello_world = some_words1 + ", " + some_words2
+    # process
+    area = length * width
 
     # output
-    print("The number of students is: " + str(number_of_students))
-    print("The area of a rectangle is: " + str(area_of_rectangle) + " cm²")
-    print(hello_world)
+    return area
+
+
+def calculate_perimeter(length: int, width: int) -> int:
+    """The calculate_perimeter() function calculates perimeter of a rectangle, returns int."""
+
+    # process
+    perimeter = 2 * (length + width)
+
+    # output
+    return perimeter
+
+
+def main() -> None:
+    """The main() function just calls other functions, returns None."""
+
+    # input
+    length = int(input("Enter the length of a rectangle (cm): "))
+    width = int(input("Enter the width of a rectangle (cm): "))
+    print("")
+
+    # call functions
+    area = calculate_area(length, width)
+    perimeter = calculate_perimeter(length, width)
+
+    # output
+    print(f"The area is {area} cm²")
+    print(f"The perimeter is {perimeter} cm")
 
     print("\nDone.")
 
