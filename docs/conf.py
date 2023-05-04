@@ -22,7 +22,7 @@ copyright = "2020, Patrick Coxall"
 author = "Patrick Coxall"
 
 # The full version, including alpha/beta/rc tags
-release = "1.0.2"
+release = "1.0.5"
 
 
 # -- General configuration ---------------------------------------------------
@@ -64,6 +64,4 @@ html_logo = "images/cs-logo.png"
 
 
 def setup(app):
-    import six
-    print('Six version: %s' % six.__version__)
     app.add_stylesheet("my_theme.css")
