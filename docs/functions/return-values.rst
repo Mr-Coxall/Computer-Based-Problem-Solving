@@ -117,7 +117,7 @@ Now that we know how to use a return statement, we should no longer print out re
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 10-17, 19-26, 47-48
+        :emphasize-lines: 10-17, 19-26, 43-44
 
   .. group-tab:: C#
     .. code-block:: C#
@@ -152,7 +152,7 @@ Now that we know how to use a return statement, we should no longer print out re
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 9-16, 19-36, 38-39
+        :emphasize-lines: 9-16, 19-26, 38-39
 
 Example Output
 ^^^^^^^^^^^^^^
