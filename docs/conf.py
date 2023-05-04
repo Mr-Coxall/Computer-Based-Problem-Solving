@@ -64,4 +64,6 @@ html_logo = "images/cs-logo.png"
 
 
 def setup(app):
+    import six
+    print('Six version: %s' % six.__version__)
     app.add_stylesheet("my_theme.css")
