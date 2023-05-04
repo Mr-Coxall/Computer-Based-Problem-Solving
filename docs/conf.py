@@ -64,4 +64,5 @@ html_logo = "images/cs-logo.png"
 
 
 def setup(app):
-    app.add_stylesheet("my_theme.css")
+    #app.add_stylesheet("my_theme.css")
+    pass
