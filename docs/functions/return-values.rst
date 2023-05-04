@@ -10,51 +10,18 @@ We have already seen many built in functions that have a return value, like the 
 .. tabs::
 
   .. group-tab:: C
+
     .. code-block:: C
-      .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/C/main.c
-        :language: C
-        :lines: 40
 
-  .. group-tab:: C++
+		// square root function
+		someVariable = sqrt(someNumber);
+
     .. code-block:: C++
-      .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/CPP/main.cpp
-        :language: C++
-        :lines: 41
 
-  .. group-tab:: C#
+		// square root function
+		someVariable = sqrt(someNumber);
+
     .. code-block:: C#
-      .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/CSharp/main.cs
-        :language: C#
-        :lines: 42
-
-  .. group-tab:: Go
-    .. code-block:: Go
-      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Go/main.go
-        :language: go
-        :lines: 42
-
-  .. group-tab:: Java
-    .. code-block:: Java
-      .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Java/Main.java
-        :language: java
-        :lines: 60
-
-  .. group-tab:: JavaScript
-    .. code-block:: JavaScript
-      .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/JavaScript/main.js
-        :language: javascript
-        :lines: 35
-
-  .. group-tab:: Python
-    .. code-block:: Python
-      .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Python/main.py
-        :language: python
-        :lines: 38
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
 
 		// square root function
 		someVariable = sqrt(someNumber);
@@ -77,25 +44,12 @@ We have already seen many built in functions that have a return value, like the 
 
       // square root function
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
 
     .. code-block:: Python
 
 		# square root function
 		some_variable = math.sqrt(some_number)
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // square root function
-
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // square root function
 
 You will notice that the function is now on the right hand side of an assignment statement and the calculated value is being placed right into another variable. To allow this ability, we normally use the reserved word "return" to pass the value back. In many programming languages, in the definition of the function you must specify what type of variable will be returned. This way the IDE can confirm that the same types are being passe back and placed into variable of the same type. This way the language remains type safe.
 
@@ -141,66 +95,7 @@ You will notice that the function is now on the right hand side of an assignment
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Python/main.py
         :language: python
-        :lines: 9
-
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-		// function definition with a return value
-		int CalculateArea(int length, int width) {
-		    // calculate area
-		    int area;
-
-		    area = length * width;
-
-		    return area;
-		}
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-      // function definition with a return value
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-      // function definition with a return value
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-      // function definition with a return value
-
-  .. group-tab:: Python3
-
-    .. code-block:: Python
-
-		# function definition with a return value
-		def calculate_area(length: int, width: int) -> int:
-		    # calculate area
-
-		    area = length * width
-		    
-	    	return area
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // function definition with a return value
-
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // function definition with a return value
+        :lines: 9-16
 
 Now that we know how to use a return statement, we should no longer print out results inside a function like in the last few chapters. It is much better style to retrun the value from a funstion and let the calling process decide what to do with it. Here is the example from last section, this time using return values:
 
@@ -208,190 +103,55 @@ Now that we know how to use a return statement, we should no longer print out re
 
   .. group-tab:: C
     .. code-block:: C
-      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/C/main.c
+      .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 9, 19, 40-41
 
   .. group-tab:: C++
     .. code-block:: C++
-      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CPP/main.cpp
+      .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 10, 20, 41-42
 
   .. group-tab:: C#
     .. code-block:: C#
-      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CSharp/main.cs
+      .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 13, 23, 42-43
 
   .. group-tab:: Go
     .. code-block:: Go
-      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Go/main.go
+      .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 13, 23, 42-43
 
   .. group-tab:: Java
     .. code-block:: Java
-      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Java/Main.java
+      .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 17, 30, 60-61
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
-      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/JavaScript/main.js
+      .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 9, 19, 35-36
 
   .. group-tab:: Python
     .. code-block:: Python
-      .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Python/main.py
+      .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 9, 19, 38-39
+        :emphasize-lines: 9-16, 19-36, 38-39
 
 Example Output
 ^^^^^^^^^^^^^^
-.. image:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/vhs.gif
+.. image:: ../../code_examples/4-Functions/3-Return_Values/vhs.gif
    :alt: Code example output
    :align: left
-
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-		// Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-		//
-		// Created by: Mr. Coxall
-		// Created on: Oct 2019
-		// This program uses return values
-
-		#include <iostream>
-
-		int CalculateArea(int length, int width) {
-		    // calculate area
-		    int area;
-
-		    area = length * width;
-
-		    return area;
-		}
-
-
-		int CalculatePerimeter(int length, int width) {
-		    // calculate perimeter
-		    int perimeter;
-
-		    perimeter = 2 * (length + width);
-		    
-		    return perimeter;
-
-		}
-
-		main() {
-		    // this function gets length and width
-		    
-		    int lengthFromUser;
-		    int widthFromUser;
-		    int calculateArea;
-		    int calculatePerimeter;
-
-		    // input
-		    std::cout << "Enter the length of a rectangle (cm): ";
-		    std::cin >> lengthFromUser;
-		    std::cout << "Enter the width of a rectangle (cm): ";
-		    std::cin >> widthFromUser;
-		    std::cout << std::endl;
-
-		    // call functions
-		    calculateArea = CalculateArea(lengthFromUser, widthFromUser);
-		    calculatePerimeter = CalculatePerimeter(lengthFromUser, widthFromUser);
-		    
-		    // output
-		    std::cout << "The area is " << calculateArea << "cm^2" << std::endl;
-		    std::cout << "The perimeter is "<< calculatePerimeter << "cm" << std::endl;
-		}
-
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-      // return values
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-      // return values
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-      // return values
-
-  .. group-tab:: Python3
-
-    .. code-block:: Python
-
-		#!/usr/bin/env python3
-
-		# Created by: Mr. Coxall
-		# Created on: Oct 2019
-		# This program uses return values
-
-
-		def calculate_area(length: int, width: int) -> int:
-		    # calculate area
-
-		    area = length * width
-		    
-		    return area
-
-		def calculate_perimeter(length: int, width: int) -> int:
-		    # calculate perimeter
-		    
-		    perimeter = 2 * (length + width)
-		    
-		    return perimeter
-		    
-		def main():
-		    # this function gets length and width
-		    
-		    # input
-		    length_from_user = int(input("Enter the length of a rectangle (cm): "))
-		    width_from_user = int(input("Enter the width of a rectangle (cm): "))
-		    print("")
-		    
-		    #call functions
-		    calculated_area = calculate_area(length_from_user, width_from_user)
-		    calculated_perimeter = calculate_perimeter(length_from_user, width_from_user)
-		    
-		    print("The area is {0} cm²".format(calculated_area))
-		    print("The perimeter is {0} cm".format(calculated_perimeter))
-
-
-		if __name__ == "__main__":
-		    main()
-
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // return values
-
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // return values
