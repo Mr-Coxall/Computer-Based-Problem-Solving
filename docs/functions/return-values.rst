@@ -109,43 +109,50 @@ Now that we know how to use a return statement, we should no longer print out re
     .. code-block:: C
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/C/main.c
         :language: C
-        :lines: 10-17, 29
+        :linenos:
+        :emphasize-lines: 10-17, 29
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/CPP/main.cpp
         :language: C++
-        :lines: 11-18, 30
+        :linenos:
+        :emphasize-lines: 11-18, 30
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/CSharp/main.cs
         :language: C#
-        :lines: 13-20, 32
+        :linenos:
+        :emphasize-lines: 13-20, 32
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Go/main.go
         :language: go
-        :lines: 14-21, 33
+        :linenos:
+        :emphasize-lines: 14-21, 33
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Java/Main.java
         :language: java
-        :lines: 12-22, 47
+        :linenos:
+        :emphasize-lines: 12-22, 47
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/JavaScript/main.js
         :language: javascript
-        :lines: 9-16, 23
+        :linenos:
+        :emphasize-lines: 9-16, 23
 
   .. group-tab:: Python
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Python/main.py
         :language: python
-        :lines: 10-16, 27
+        :linenos:
+        :emphasize-lines: 10-16, 27
 
 Example Output
 ^^^^^^^^^^^^^^
