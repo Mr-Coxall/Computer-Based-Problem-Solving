@@ -2,39 +2,33 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module shows how local and global variables work
+This module calculates area of a rectangle
 """
 
-# global variable
-variable_x = 25
 
+def calculate_area(length: int, width: int) -> int:
+    """The calculate_area() function calculates area of a rectangle, returns int."""
 
-def local_variable() -> None:
-    """The local_variable() function creates local variables, returns None."""
-    variable_x = 10
-    variable_y = 30
+    # process
+    area = length * width
 
-    variable_x = variable_x + 1
-    variable_z = variable_x + variable_y
-
-    print(f"Local variable:  {variable_x} + {variable_y} = {variable_z}")
-
-
-def global_variable() -> None:
-    """The global_variable() function uses a global variable, returns None."""
-    global variable_x
-    variable_y = 30
-
-    variable_x = variable_x + 1
-    variable_z = variable_x + variable_y
-
-    print(f"Global variable: {variable_x} + {variable_y} = {variable_z}")
+    # output
+    return area
 
 
 def main() -> None:
-    """The main() function shows local and global variables, returns None."""
-    local_variable()
-    global_variable()
+    """The main() function just calls other functions, returns None."""
+
+    # input
+    length = int(input("Enter the length of a rectangle (cm): "))
+    width = int(input("Enter the width of a rectangle (cm): "))
+    print("")
+
+    # call functions
+    area = calculate_area(length, width)
+
+    # output
+    print(f"The area is {area} cm²")
 
     print("\nDone.")
 

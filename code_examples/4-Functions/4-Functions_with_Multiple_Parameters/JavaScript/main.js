@@ -1,33 +1,32 @@
-/* Created by: Mr. Coxall
+/**
+ * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program shows how local and global variables work
-*/
+ * This program calculates the area of a rectangle
+ */
 
-// global variable
-var variableX = 25
+const prompt = require('prompt-sync')();
 
-function localVariable() {
-    // this shows what happens with local variables
-    let variableX = 10
-    let variableY = 30
+let area = 0;
 
-    variableX = variableX + 1
-    let variableZ = variableX + variableY
+function calculateArea(length, width) {
+  // this function calculates the area of a rectangle
+  
+  // process
+  const area = length * width;
 
-    console.log("Local variableX, variableY, variableZ: " + variableX + " + " + variableY + " = " + variableZ)
+  // output
+  console.log(`The area is ${area} cm²`);
 }
 
-function globalVariable() {
-    // this shows what happens with global variables
-    let variableY = 30
+// input
+const length = parseInt(prompt("Enter the length of a rectangle (cm): "))
+const width = parseInt(prompt("Enter the width of a rectangle (cm): "))
+console.log();
 
-    variableX = variableX + 1
-    let variableZ = variableX + variableY
+// call functions
+area = calculateArea(length, width)
 
-    console.log("Local variableX, variableY, variableZ: " + variableX + " + " + variableY + " = " + variableZ)
-}
-
-localVariable()
-globalVariable()
+// output
+console.log(`The area is ${area} cm²`)
 
 console.log("\nDone.")

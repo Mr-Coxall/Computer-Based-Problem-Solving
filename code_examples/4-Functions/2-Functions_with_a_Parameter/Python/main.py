@@ -2,41 +2,30 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module uses user defined functions
+This module calculates the area of circle
 """
 
+import math
 
-def calculate_area(length: int, width: int) -> None:
-    """The calculate_area() function calculates area of a rectangle, returns None."""
+def calculate_area(radius: int) -> None:
+    """The calculate_area() function calculates the area of circle, returns None."""
 
     # process
-    area = length * width
+    area = math.pi * radius ** 2
 
     # output
     print(f"The area is {area} cm²")
-
-
-def calculate_perimeter(length: int, width: int) -> None:
-    """The calculate_perimeter() function calculates perimeter of a rectangle, returns None."""
-
-    # process
-    perimeter = 2 * (length + width)
-
-    # output
-    print(f"The perimeter is {perimeter} cm")
 
 
 def main() -> None:
     """The main() function just calls other functions, returns None."""
 
     # input
-    length = int(input("Enter the length of a rectangle (cm): "))
-    width = int(input("Enter the width of a rectangle (cm): "))
+    radius = int(input("Enter the radius of a circle (cm): "))
     print("")
 
     # call functions
     calculate_area(length, width)
-    calculate_perimeter(length, width)
 
     print("\nDone.")
 

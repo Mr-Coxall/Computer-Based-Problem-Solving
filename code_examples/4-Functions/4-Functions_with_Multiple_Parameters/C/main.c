@@ -1,41 +1,38 @@
-// Copyright (c) 2020 St. Mother Teresa HS All rights reserved.
+// Copyright (c) 2020 Mr. Coxall All rights reserved.
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program shows how local and global variables work
+// This program calculates the area of a rectangle
 
 #include <stdio.h>
 
-// global variable
-int variableX = 25;
+int calculateArea(int length, int width) {
+    // this function calculates the area of a rectangle
 
-void localVariable() {
-    // this shows what happens with local variables
-    int variableX = 10;
-    int variableY = 30;
-    int variableZ;
+    // process
+    int area = length * width;
 
-    variableX = variableX + 1;
-    variableZ = variableX + variableY;
-    
-    printf("Local variableX, variableY, variableZ: %d + %d = %d\n", variableX, variableY, variableZ);
-}
-
-void globalVariable() {
-    // this shows what happens with global variables
-    int variableY = 30;
-    int variableZ;
-
-    variableX = variableX + 1;
-    variableZ = variableX + variableY;
-
-    printf("Local variableX, variableY, variableZ: %d + %d = %d\n", variableX, variableY, variableZ);
+    return area;
 }
 
 int main() {
-    // this function calls local and global
-    localVariable();
-    globalVariable();
+    // this function does the input and output
+    int area = 0;
+
+    // input
+    printf("Enter the length of a rectangle (cm): ");
+    int length;
+    scanf("%d", &length);
+    printf("Enter the width of a rectangle (cm): ");
+    int width;
+    scanf("%d", &width);
+    printf("\n");
+
+    // call functions
+    area = calculateArea(length, width);
+
+    // output
+    printf("The area is %d cm²\n", area);
 
     printf("\nDone.\n");
     return 0;

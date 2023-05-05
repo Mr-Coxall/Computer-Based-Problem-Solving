@@ -1,47 +1,41 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program shows how local and global variables work
+ * This program calculates the area of a rectangle
 */
 
 using System;
 
 /*
  * The Program class
- * Contains all methods for performing how local and global variables work
+ * Contains all methods for performing basic variable usage
 */
 class Program {
+    static int calculateArea(int length, int width) {
+        // this function calculates the area of a rectangle
 
-    // global variable
-    public static int variableX = 25;
+        // process
+        int area = length * width;
 
-    static void localVariable() {
-        // this shows what happens with local variables
-        int variableX = 10;
-        int variableY = 30;
-        int variableZ;
-
-        variableX = variableX + 1;
-        variableZ = variableX + variableY;
-
-        Console.WriteLine ($"Local variableX, variableY, variableZ: {variableX} + {variableY} =  {variableZ}");
+        return area;
     }
-
-    static void globalVariable() {
-        // this shows what happens with global variables
-        int variableY = 30;
-        int variableZ;
-
-        variableX = variableX + 1;
-        variableZ = variableX + variableY;
-
-        Console.WriteLine ($"Local variableX, variableY, variableZ: {variableX} + {variableY} =  {variableZ}");
-    }
-
+ 
     public static void Main (string[] args) {
-        // this function calls local and global
-        localVariable();
-        globalVariable();
+        // this function does the input and output
+        int area = 0;
 
-        Console.WriteLine ("\nDone.");
+        // input
+        Console.Write("Enter the length of a rectangle (cm): ");
+        int length = int.Parse(Console.ReadLine());
+        Console.Write("Enter the width of a rectangle (cm): ");
+        int width = int.Parse(Console.ReadLine());
+        Console.WriteLine("");
+
+        // call functions
+        area = calculateArea(length, width);
+
+        // output
+        Console.WriteLine($"The area is {area} cm²");
+
+        Console.WriteLine("\nDone.");
     }
 }

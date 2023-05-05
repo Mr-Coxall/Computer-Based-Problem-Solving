@@ -1,45 +1,28 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses user defined functions
+ * This program calculates the area of circle
  */
 
 const prompt = require('prompt-sync')();
 
-let area = 0;
-let perimeter = 0;
-
-function calculateArea(length, width) {
-  // this function calculates the area of a rectangle
+function calculateArea(radius) {
+  // this function calculates the area of circle
   
   // process
-  const area = length * width;
-
-  // output
-  console.log(`The area is ${area} cm²`);
-}
-
-function calculatePerimeter(length, width) {
-  // this function calculates the perimeter of a rectangle
-
-  // process
-  const perimeter = 2 * (length + width)
+  const area = Math.PI * radius ** 2;
 
   return area
 }
 
 // input
-const length = parseInt(prompt("Enter the length of a rectangle (cm): "))
-const width = parseInt(prompt("Enter the width of a rectangle (cm): "))
+const radius = parseInt(prompt("Enter the radius of a circle (cm): "));
 console.log();
 
 // call functions
-area = calculateArea(length, width)
-perimeter = calculatePerimeter(length, width)
+area = calculateArea(length, width);
 
 // output
-console.log(`The area is ${area} cm²`)
-console.log(`The perimeter is ${perimeter} cm`)
+console.log(`The area is ${area} cm²`);
 
-console.log("\nDone.")
-
+console.log("\nDone.");

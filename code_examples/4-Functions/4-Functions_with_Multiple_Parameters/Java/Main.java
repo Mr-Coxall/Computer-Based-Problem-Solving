@@ -1,65 +1,31 @@
 /*
- * This program shows how local and global variables work
+ * This program calculates area of rectangle
  *
  * @author  Mr Coxall
  * @version 1.0
  * @since   2020-09-01
  */
 
+import java.util.Scanner;
+
 final class Main {
+  /**
+   * Calculates area of rectangle.
+   *
+   * @param args nothing passed in
+   */
+  public static int calculateArea(int length, int width) {
+    // process
+    int area = length * width;
+
+    return area;
+  }
+
   private Main() {
     // Prevent instantiation
     // Optional: throw an exception e.g. AssertionError
     // if this ever *is* called
     throw new IllegalStateException("Cannot be instantiated");
-  }
-
-  // global variable
-  static int variableX = 25;
-
-  /**
-   * The localVariable() function.
-   *
-   * @param nil
-   * @return nil
-   */
-  public static void localVariable() {
-    int variableX = 10;
-    int variableY = 30;
-    int variableZ;
-
-    variableX = variableX + 1;
-    variableZ = variableX + variableY;
-
-    System.out.println(
-        "Local variableX, variableY, variableZ: "
-            + variableX
-            + " + "
-            + variableY
-            + " = "
-            + variableZ);
-  }
-
-  /**
-   * The globalVariable() function.
-   *
-   * @param nil
-   * @return nil
-   */
-  public static void globalVariable() {
-    int variableY = 30;
-    int variableZ;
-
-    variableX = variableX + 1;
-    variableZ = variableX + variableY;
-
-    System.out.println(
-        "Local variableX, variableY, variableZ: "
-            + variableX
-            + " + "
-            + variableY
-            + " = "
-            + variableZ);
   }
 
   /**
@@ -68,9 +34,22 @@ final class Main {
    * @param args nothing passed in
    */
   public static void main(final String[] args) {
-    // this function calls local and global
-    localVariable();
-    globalVariable();
+    // this function does the input and output
+    int area = 0;
+
+    // input
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter the length of a rectangle (cm): ");
+    int length = scanner.nextInt();
+    System.out.print("Enter the width of a rectangle (cm): ");
+    int width = scanner.nextInt();
+    System.out.println();
+
+    // call functions
+    area = calculateArea(length, width);
+
+    // output
+    System.out.printf("The area is %d cm²%n", area);
 
     System.out.println("\nDone.");
   }

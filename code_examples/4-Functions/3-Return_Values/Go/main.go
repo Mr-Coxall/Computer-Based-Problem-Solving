@@ -1,52 +1,40 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses user defined functions
+ * This program calculates the area of circle
  */
 
-package main
+ package main
 
-import (
-	"fmt"
-)
-
-func calculateArea(length int, width int) {
-	// this function calculates the area of a rectangle
-
-	// process
-	area := length * width
-
+ import (
+	 "fmt"
+	 "math"
+ )
+ 
+ func calculateArea(radius int) {
+	 // this function calculates the area of circle
+ 
+	 // process
+	 area := math.Pi * radius ** 2
+ 
 	return area
-}
+ }
+ 
+ func main() {
+	var radius int
+	var area float
 
-func calculatePerimeter(length int, width int) {
-	// this function calculates the perimeter of a rectangle
-	// process
-	perimeter := 2 * (length + width)
+	 // input
+	 fmt.Print("Enter the radius of a circle (cm): ")
+	 fmt.Scanln(&radius)
+	 fmt.Println()
+ 
+	 // call functions
+	 area = calculateArea(length, width)
 
-	return perimeter
-}
-
-func main() {
-	// this function does the input and output
-	var area = 0
-	var perimeter = 0
-
-	// input
-	var length, width int
-	fmt.Print("Enter the length of a rectangle (cm): ")
-	fmt.Scanln(&length)
-	fmt.Print("Enter the width of a rectangle (cm): ")
-	fmt.Scanln(&width)
-	fmt.Println()
-
-	// call functions
-	calculateArea(length, width)
-	calculatePerimeter(length, width)
-
-	// output
-	fmt.Printf("The area is %d cm²\n", area)
-	fmt.Printf("The perimeter is %d cm\n", perimeter)
-
-	fmt.Println("\nDone.")
-}
+	 // output
+	 fmt.Printf("The area is %d cm²\n", area)
+ 
+	 fmt.Println("\nDone.")
+ }
+ 

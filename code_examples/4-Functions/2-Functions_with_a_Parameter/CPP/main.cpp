@@ -2,44 +2,32 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program uses user defined functions
+// This program calculates the area of circle
 
 #include <iostream>
+#include <cmath>
 
 
-void calculateArea(int length, int width) {
-    // this function calculates the area
+void calculateArea(int radius) {
+    // this function calculates the area of circle
 
     // process
-    int area = length * width;
+    int area = area = M_PI * radius ** 2;
 
     // output
     std::cout << "The area is " << area << " cm²\n";
 }
 
-void calculatePerimeter(int length, int width) {
-    // this function calculates the perimeter
-
-    // process
-    int perimeter = 2 * (length + width);
-
-    // output
-    std::cout << "The perimeter is " << perimeter << " cm\n";
-}
-
 int main() {
+    int radius;
+    
     // input
-    std::cout << "Enter the length of a rectangle (cm): ";
-    int length;
-    std::cin >> length;
-    std::cout << "Enter the width of a rectangle (cm): ";
-    int width;
-    std::cin >> width;
+    std::cout << "Enter the radius of a circle (cm): ";
+    std::cin >> radius;
     std::cout << std::endl;
 
     // call functions
     calculateArea(length, width);
-    calculatePerimeter(length, width);
 
     std::cout << "\nDone." << std::endl;
     return 0;

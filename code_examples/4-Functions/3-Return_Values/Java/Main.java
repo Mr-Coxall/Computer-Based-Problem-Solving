@@ -1,5 +1,5 @@
 /*
- * This program uses user defined functions
+ * This program calculates the area of circle
  *
  * @author  Mr Coxall
  * @version 1.0
@@ -10,27 +10,15 @@ import java.util.Scanner;
 
 final class Main {
   /**
-   * Calculates area of rectangle.
+   * Calculates calculates the area of circle.
    *
    * @param args nothing passed in
    */
-  public static int calculateArea(int length, int width) {
+  public static void calculateArea(int radius) {
     // process
-    int area = length * width;
+    int area = Math.PI * Math.pow(radius, 2);
 
     return area;
-  }
-
-  /**
-   * Calculates perimeter of rectangle.
-   *
-   * @param args nothing passed in
-   */
-  public static int calculatePerimeter(int length, int width) {
-    // process
-    int perimeter = 2 * (length + width);
-
-    return perimeter;
   }
 
   private Main() {
@@ -45,26 +33,21 @@ final class Main {
    *
    * @param args nothing passed in
    */
-  public static void main(final String[] args) {
-    // this function does the input and output
-    int area = 0;
-    int perimeter = 0;
+  public static float main(final String[] args) {
+    int radius;
+    float area = 0.0;
 
     // input
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter the length of a rectangle (cm): ");
-    int length = scanner.nextInt();
-    System.out.print("Enter the width of a rectangle (cm): ");
-    int width = scanner.nextInt();
+    System.out.print("Enter the radius of a circle (cm): ");
+    radius = scanner.nextInt();
     System.out.println();
 
     // call functions
     area = calculateArea(length, width);
-    perimeter = calculatePerimeter(length, width);
 
     // output
     System.out.printf("The area is %d cm²%n", area);
-    System.out.printf("The perimeter is %d cm%n", perimeter);
 
     System.out.println("\nDone.");
   }

@@ -1,43 +1,41 @@
-// Copyright (c) 2020 St. Mother Teresa HS All rights reserved.
+// Copyright (c) 2020 Mr. Coxall All rights reserved.
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program shows how local and global variables work
+// This program calculates the area of a rectangle
 
 #include <iostream>
 
-// global variable
-int variableX = 25;
 
-void localVariable() {
-    // this shows what happens with local variables
-    int variableX = 10;
-    int variableY = 30;
-    int variableZ;
+int calculateArea(int length, int width) {
+    // this function calculates the area of a rectangle
 
-    variableX = variableX + 1;
-    variableZ = variableX + variableY;
+    // process
+    int area = length * width;
 
-    std::cout << "Local variableX, variableY, variableZ: " << variableX
-              << " + " << variableY << " = " << variableZ << std::endl;
-}
-
-void globalVariable() {
-    // this shows what happens with global variables
-    int variableY = 30;
-    int variableZ;
-
-    variableX = variableX + 1;
-    variableZ = variableX + variableY;
-
-    std::cout << "Local variableX, variableY, variableZ: " << variableX
-              << " + " << variableY << " = " << variableZ << std::endl;
+    return area;
 }
 
 int main() {
-    // this function calls local and global
-    localVariable();
-    globalVariable();
+    // this function does the input and output
+    int area = 0;
+    int perimeter = 0;
 
-    std::cout << "\nDone. " << std::endl;
+    // input
+    std::cout << "Enter the length of a rectangle (cm): ";
+    int length;
+    std::cin >> length;
+    std::cout << "Enter the width of a rectangle (cm): ";
+    int width;
+    std::cin >> width;
+    std::cout << std::endl;
+
+    // call functions
+    area = calculateArea(length, width);
+
+    // output
+    std::cout << "The area is " << area << " cm²\n";
+
+    std::cout << "\nDone." << std::endl;
+    return 0;
 }
