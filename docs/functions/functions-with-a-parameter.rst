@@ -23,43 +23,43 @@ A variable or value passed along inside a function call is called an `parameter 
     .. code-block:: C
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/C/main.c
         :language: C
-        :lines: 40
+        :lines: 28
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CPP/main.cpp
         :language: C++
-        :lines: 41
+        :lines: 30
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CSharp/main.cs
         :language: C#
-        :lines: 42
+        :lines: 30
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Go/main.go
         :language: go
-        :lines: 42
+        :lines: 32
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Java/Main.java
         :language: java
-        :lines: 60
+        :lines: 45
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/JavaScript/main.js
         :language: javascript
-        :lines: 35
+        :lines: 24
 
   .. group-tab:: Python
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Python/main.py
         :language: python
-        :lines: 38
+        :lines: 28
 
 When you are creating your function, you must also tell the program that the function is expecting these two values. To do this after the function name declaration you place in brackets the two declaration statements declaring that the function must be passed in two variable (just like when a regular variable is being declared). If your programming language requires that you declare what type the variables will be normally, you will most like have to do that to. 
 
@@ -71,13 +71,13 @@ The following is the function declaration line for the examples above:
     .. code-block:: C
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/C/main.c
         :language: C
-        :lines: 9
+        :lines: 10
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CPP/main.cpp
         :language: C++
-        :lines: 10
+        :lines: 11
 
   .. group-tab:: C#
     .. code-block:: C#
@@ -89,7 +89,7 @@ The following is the function declaration line for the examples above:
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Go/main.go
         :language: go
-        :lines: 13
+        :lines: 14
 
   .. group-tab:: Java
     .. code-block:: Java
@@ -107,7 +107,7 @@ The following is the function declaration line for the examples above:
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Python/main.py
         :language: python
-        :lines: 9
+        :lines: 10
 
 Here is a full example of the previous sections program, but now the main function takes care of getting the length and width. This way it only has to ask you the information once and it passes the length and width to each function:
 
@@ -118,49 +118,49 @@ Here is a full example of the previous sections program, but now the main functi
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 9, 19, 40-41
+        :emphasize-lines: 10-18, 28
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 10, 20, 41-42
+        :emphasize-lines: 11-19, 30
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 13, 23, 42-43
+        :emphasize-lines: 12-31, 30
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 13, 23, 42-43
+        :emphasize-lines: 14-21, 32
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 17, 30, 60-61
+        :emphasize-lines: 12-23, 45
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 9, 19, 35-36
+        :emphasize-lines: 9-17, 24
 
   .. group-tab:: Python
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 9, 19, 38-39
+        :emphasize-lines: 10-17, 28
 
 Example Output
 ^^^^^^^^^^^^^^
