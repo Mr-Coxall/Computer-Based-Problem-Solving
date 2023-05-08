@@ -7,9 +7,9 @@ All of the functions that we have looked at to this point, there has been one (1
 
 Fortunately you can pass multiple parameters into a function. The thing to remember is that, since you now have more than one (1) item, the order of the parameters is important, since this is how the computer is going to keep track of the different variables.
 
-Since people are not always great at keeping things in order, many programming languages (but not all, for example `C++ does not do this <https://stackoverflow.com/questions/38076786/why-c-doesnt-support-named-parameter>`_) let you pass multiple parameters to functions using "parameteres by keyword". This means that you actually give each parameter a name and then refer to this name when you are passing the values to the function, so there is no confusion about what value is going where.
+Since people are not always great at keeping things in order, many programming languages (`but not all <https://en.wikipedia.org/wiki/Named_parameter#:~:text=Named%20parameters%20are%20supported%20explicitly,Smalltalk%2C%20Swift%20and%20Visual%20Basic.>`_) let you pass multiple parameters to functions using "parameteres by keyword". This means that you actually give each parameter a name and then refer to this name when you are passing the values to the function, so there is no confusion about what value is going where.
 
-In the example below, I have a function that can calculate the area of a rectangle. Is is important to keep all two (2) parameters organzied, or you will not get the correct answer. To do this each parameter will be given a name:
+In the example below, I have a function that can calculate the area of a rectangle. Is is important to keep all two (2) parameters organzied, or you will not get the correct answer. To do this each parameter will be use named parameters (if possible):
 
 .. tabs::
 
