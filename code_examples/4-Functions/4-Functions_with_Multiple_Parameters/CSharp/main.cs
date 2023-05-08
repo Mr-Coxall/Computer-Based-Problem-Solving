@@ -25,13 +25,13 @@ class Program {
 
         // input
         Console.Write("Enter the length of a rectangle (cm): ");
-        int length = int.Parse(Console.ReadLine());
+        int lengthFromUser = int.Parse(Console.ReadLine());
         Console.Write("Enter the width of a rectangle (cm): ");
-        int width = int.Parse(Console.ReadLine());
+        int widthFromUser = int.Parse(Console.ReadLine());
         Console.WriteLine("");
 
         // call functions
-        area = calculateArea(length, width);
+        area = calculateArea(width: widthFromUser, length: lengthFromUser);
 
         // output
         Console.WriteLine($"The area is {area} cm²");

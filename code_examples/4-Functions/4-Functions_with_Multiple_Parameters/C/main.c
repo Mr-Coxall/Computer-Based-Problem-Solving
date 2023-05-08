@@ -21,15 +21,15 @@ int main() {
 
     // input
     printf("Enter the length of a rectangle (cm): ");
-    int length;
-    scanf("%d", &length);
+    int lengthFromUser;
+    scanf("%d", &lengthFromUser);
     printf("Enter the width of a rectangle (cm): ");
-    int width;
-    scanf("%d", &width);
+    int widthFromUser;
+    scanf("%d", &widthFromUser);
     printf("\n");
 
     // call functions
-    area = calculateArea(length, width);
+    area = calculateArea(lengthFromUser, widthFromUser);
 
     // output
     printf("The area is %d cm²\n", area);

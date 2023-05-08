@@ -23,15 +23,15 @@ int main() {
 
     // input
     std::cout << "Enter the length of a rectangle (cm): ";
-    int length;
-    std::cin >> length;
+    int lengthFromUser;
+    std::cin >> lengthFromUser;
     std::cout << "Enter the width of a rectangle (cm): ";
-    int width;
-    std::cin >> width;
+    int widthFromUser;
+    std::cin >> widthFromUser;
     std::cout << std::endl;
 
     // call functions
-    area = calculateArea(length, width);
+    area = calculateArea(lengthFromUser, widthFromUser);
 
     // output
     std::cout << "The area is " << area << " cm²\n";

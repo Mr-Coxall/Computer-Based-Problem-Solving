@@ -19,12 +19,12 @@ function calculateArea(length, width) {
 }
 
 // input
-const length = parseInt(prompt("Enter the length of a rectangle (cm): "))
-const width = parseInt(prompt("Enter the width of a rectangle (cm): "))
+const lengthFromUser = parseInt(prompt("Enter the length of a rectangle (cm): "))
+const widthFromUser = parseInt(prompt("Enter the width of a rectangle (cm): "))
 console.log();
 
 // call functions
-area = calculateArea(length, width)
+area = calculateArea(lengthFromUser, widthFromUser)
 
 // output
 console.log(`The area is ${area} cm²`)

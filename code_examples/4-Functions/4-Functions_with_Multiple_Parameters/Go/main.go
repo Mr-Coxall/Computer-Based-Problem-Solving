@@ -24,15 +24,15 @@
 	 var area = 0
  
 	 // input
-	 var length, width int
+	 var length_from_user, width_from_user int
 	 fmt.Print("Enter the length of a rectangle (cm): ")
-	 fmt.Scanln(&length)
+	 fmt.Scanln(&length_from_user)
 	 fmt.Print("Enter the width of a rectangle (cm): ")
-	 fmt.Scanln(&width)
+	 fmt.Scanln(&width_from_user)
 	 fmt.Println()
  
 	 // call functions
-	 area = calculateArea(length, width)
+	 area = calculateArea(length_from_user, width_from_user)
  
 	 // output
 	 fmt.Printf("The area is %d cm²\n", area)

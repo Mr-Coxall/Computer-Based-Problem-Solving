@@ -40,13 +40,13 @@ final class Main {
     // input
     Scanner scanner = new Scanner(System.in);
     System.out.print("Enter the length of a rectangle (cm): ");
-    int length = scanner.nextInt();
+    int lengthFromUser = scanner.nextInt();
     System.out.print("Enter the width of a rectangle (cm): ");
-    int width = scanner.nextInt();
+    int widthFromUser = scanner.nextInt();
     System.out.println();
 
     // call functions
-    area = calculateArea(length, width);
+    area = calculateArea(lengthFromUser, widthFromUser);
 
     // output
     System.out.printf("The area is %d cm²%n", area);
