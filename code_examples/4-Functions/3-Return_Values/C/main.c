@@ -11,7 +11,7 @@ float calculateArea(int radius) {
     // this function calculates the area of circle
 
     // process
-    int area = M_PI * radius ** 2;
+    float area = M_PI * radius ** 2;
 
     return area;
 }

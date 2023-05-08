@@ -42,7 +42,7 @@ final class Main {
     System.out.println();
 
     // call functions
-    calculateArea(length, width);
+    calculateArea(radius);
 
     System.out.println("\nDone.");
   }

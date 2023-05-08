@@ -30,7 +30,7 @@
 	 fmt.Println()
  
 	 // call functions
-	 area = calculateArea(length, width)
+	 area = calculateArea(radius)
 
 	 // output
 	 fmt.Printf("The area is %d cm²\n", area)

@@ -27,7 +27,7 @@ class Program {
         Console.WriteLine("");
 
         // call functions
-        calculateArea(length, width);
+        calculateArea(radius);
 
         Console.WriteLine("\nDone.");
     }

@@ -35,18 +35,21 @@ We have already seen many built in functions that have a return value, like the 
     .. code-block:: Go
 
       // square root function
+      someVariable = math.Sqrt(someNumber);
 
   .. group-tab:: Java
 
     .. code-block:: Java
 
       // square root function
+      someVariable = sqrt(someNumber);
 
   .. group-tab:: JavaScript
 
     .. code-block:: JavaScript
 
       // square root function
+      someVariable = sqrt(someNumber);
 
   .. group-tab:: Python
 

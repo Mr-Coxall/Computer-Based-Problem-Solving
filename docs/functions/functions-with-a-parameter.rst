@@ -109,7 +109,7 @@ The following is the function declaration line for the examples above:
         :language: python
         :lines: 10
 
-Here is a full example of the previous sections program, but now the main function takes care of getting the length and width. This way it only has to ask you the information once and it passes the length and width to each function:
+Here is a full example of the previous sections program, but now the main function takes care of getting the radius. This way it only has to ask you the information once and it passes the radius to the function:
 
 .. tabs::
 

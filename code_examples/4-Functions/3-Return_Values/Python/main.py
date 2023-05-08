@@ -24,7 +24,7 @@ def main() -> None:
     print("")
 
     # call functions
-    area = calculate_area(length, width)
+    area = calculate_area(radius)
 
     # output
     print(f"The area is {area} cm²")

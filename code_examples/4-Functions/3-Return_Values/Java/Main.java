@@ -14,9 +14,9 @@ final class Main {
    *
    * @param args nothing passed in
    */
-  public static void calculateArea(int radius) {
+  public static float calculateArea(int radius) {
     // process
-    int area = Math.PI * Math.pow(radius, 2);
+    float area = Math.PI * Math.pow(radius, 2);
 
     return area;
   }
@@ -44,7 +44,7 @@ final class Main {
     System.out.println();
 
     // call functions
-    area = calculateArea(length, width);
+    area = calculateArea(radius);
 
     // output
     System.out.printf("The area is %d cm²%n", area);

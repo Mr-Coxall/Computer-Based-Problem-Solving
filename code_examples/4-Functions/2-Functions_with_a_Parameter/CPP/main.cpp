@@ -27,7 +27,7 @@ int main() {
     std::cout << std::endl;
 
     // call functions
-    calculateArea(length, width);
+    calculateArea(radius);
 
     std::cout << "\nDone." << std::endl;
     return 0;

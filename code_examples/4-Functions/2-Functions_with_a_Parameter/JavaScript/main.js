@@ -21,7 +21,7 @@ const radius = parseInt(prompt("Enter the radius of a circle (cm): "));
 console.log();
 
 // call functions
-calculateArea(length, width);
+calculateArea(radius);
 
 console.log("\nDone.");
 

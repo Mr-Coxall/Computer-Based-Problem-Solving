@@ -25,7 +25,7 @@ def main() -> None:
     print("")
 
     # call functions
-    calculate_area(length, width)
+    calculate_area(radius)
 
     print("\nDone.")
 

@@ -20,12 +20,12 @@ def main() -> None:
     """The main() function just calls other functions, returns None."""
 
     # input
-    length = int(input("Enter the length of a rectangle (cm): "))
-    width = int(input("Enter the width of a rectangle (cm): "))
+    length_from_user = int(input("Enter the length of a rectangle (cm): "))
+    width_from_user = int(input("Enter the width of a rectangle (cm): "))
     print("")
 
     # call functions
-    area = calculate_area(length, width)
+    area = calculate_area(width = width_from_user, length = length_from_user)
 
     # output
     print(f"The area is {area} cm²")

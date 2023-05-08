@@ -29,7 +29,7 @@ func main() {
 	fmt.Println()
 
 	// call functions
-	calculateArea(length, width)
+	calculateArea(radius)
 
 	fmt.Println("\nDone.")
 }

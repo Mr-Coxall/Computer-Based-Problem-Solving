@@ -12,9 +12,9 @@ float calculateArea(int radius) {
     // this function calculates the area of circle
 
     // process
-    int area = area = M_PI * radius ** 2;
+    float area = M_PI * radius ** 2;
 
-    retuen area;
+    return area;
 }
 
 int main() {
@@ -27,7 +27,7 @@ int main() {
     std::cout << std::endl;
 
     // call functions
-    area = calculateArea(length, width);
+    area = calculateArea(radius);
 
     // output
     std::cout << "The area is " << area << " cm²\n";

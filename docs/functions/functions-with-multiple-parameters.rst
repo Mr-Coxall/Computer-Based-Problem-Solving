@@ -9,7 +9,7 @@ Fortunately you can pass multiple parameters into a function. The thing to remem
 
 Since people are not always great at keeping things in order, many programming languages (but not all, for example `C++ does not do this <https://stackoverflow.com/questions/38076786/why-c-doesnt-support-named-parameter>`_) let you pass multiple parameters to functions using "parameteres by keyword". This means that you actually give each parameter a name and then refer to this name when you are passing the values to the function, so there is no confusion about what value is going where.
 
-In the example below, I have a function that can calculate the quadratic formula. Is is important to keep all three (3) parameters organzied, or you will not get the correct answer. To do this each parameter will be given a name:
+In the example below, I have a function that can calculate the area of a rectangle. Is is important to keep all two (2) parameters organzied, or you will not get the correct answer. To do this each parameter will be given a name:
 
 .. tabs::
 
