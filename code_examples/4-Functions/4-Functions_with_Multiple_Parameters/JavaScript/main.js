@@ -12,10 +12,9 @@ function calculateArea(length, width) {
   // this function calculates the area of a rectangle
   
   // process
-  const area = length * width;
+  const area = length * width
 
-  // output
-  console.log(`The area is ${area} cm²`);
+  return area
 }
 
 // input
