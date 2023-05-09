@@ -2,34 +2,55 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program calculates total from subtotal and tax
+// This program prints out your name, using default function parameters
 
 #include <iostream>
-#include <iomanip>
+
+std::string FullName(std::string firstName, std::string lastName,
+                     std::string middleName = "") {
+    // return the full formal name
+
+    std::string fullName;
+
+    fullName = firstName;
+    if (middleName.size() != 0) {
+        fullName = fullName + " " + middleName[0] + ".";
+    }
+    fullName = fullName + " " + lastName;
+
+    return fullName;
+}
+
 
 int main() {
-    // this function calculates total from subtotal and tax
-    const float HST = 0.13;
-    float tax;
-    float subTotal;
-    float total;
+    // gets a users name and prints out their formal name
+
+    std::string firstName;
+    std::string question;
+    std::string middleName = "";
+    std::string lastName;
+    std::string fullName;
 
     // input
-    std::cout << "Enter the subtotal: $";
-    std::cin >> subTotal;
+    std::cout << "Enter your first name: ";
+    std::cin >> firstName;
+    std::cout << "Do you have a middle name? (y/n): ";
+    std::cin >> question;
+    if (question == "Y" || question == "YES") {
+        std::cout << "Enter your middle name: ";
+        std::cin >> middleName;
+    }
+    std::cout << "Enter your last name: ";
+    std::cin >> lastName;
 
-    // process
-    tax = + subTotal * HST;
-    total = subTotal + tax;
+    // call functions
+    if (middleName != "") {
+        fullName = FullName(firstName, lastName, middleName);
+    } else {
+        fullName = FullName(firstName, lastName);
+    }
+    std::cout << fullName;
 
-    // output
-    std::cout << "" << std::endl;
-    std::cout << "The HST is: $"
-                << std::fixed << std::setprecision(2) << std::setfill('0')
-                << tax << "." << std::endl;
-    std::cout << "The total cost is: $"
-                << std::fixed << std::setprecision(2) << std::setfill('0')
-                << total << "." << std::endl;
-
-    std::cout << "\nDone. " << std::endl;
+    std::cout << "\nDone." << std::endl;
+    return 0;
 }
