@@ -48,7 +48,7 @@ Notice that right in the declaration of the function, the "default optional para
       .. literalinclude:: ../../code_examples/4-Functions/5-Default_Values/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 11-18, 30
+        :emphasize-lines: 9-22, 48, 50
 
   .. group-tab:: C#
     .. code-block:: C#
