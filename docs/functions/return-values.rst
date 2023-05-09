@@ -162,4 +162,3 @@ Example Output
 .. image:: ../../code_examples/4-Functions/3-Return_Values/vhs.gif
    :alt: Code example output
    :align: left
-

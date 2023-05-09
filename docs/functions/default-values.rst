@@ -36,6 +36,64 @@ Notice that right in the declaration of the function, the "default optional para
 
 .. tabs::
 
+  .. group-tab:: C
+    .. code-block:: C
+      .. literalinclude:: ../../code_examples/4-Functions/5-Default_Values/C/main.c
+        :language: C
+        :linenos:
+        :emphasize-lines: 10-17, 29
+
+  .. group-tab:: C++
+    .. code-block:: C++
+      .. literalinclude:: ../../code_examples/4-Functions/5-Default_Values/CPP/main.cpp
+        :language: C++
+        :linenos:
+        :emphasize-lines: 11-18, 30
+
+  .. group-tab:: C#
+    .. code-block:: C#
+      .. literalinclude:: ../../code_examples/4-Functions/5-Default_Values/CSharp/main.cs
+        :language: C#
+        :linenos:
+        :emphasize-lines: 13-20, 32
+
+  .. group-tab:: Go
+    .. code-block:: Go
+      .. literalinclude:: ../../code_examples/4-Functions/5-Default_Values/Go/main.go
+        :language: go
+        :linenos:
+        :emphasize-lines: 14-21, 33
+
+  .. group-tab:: Java
+    .. code-block:: Java
+      .. literalinclude:: ../../code_examples/4-Functions/5-Default_Values/Java/Main.java
+        :language: java
+        :linenos:
+        :emphasize-lines: 12-22, 47
+
+  .. group-tab:: JavaScript
+    .. code-block:: JavaScript
+      .. literalinclude:: ../../code_examples/4-Functions/5-Default_Values/JavaScript/main.js
+        :language: javascript
+        :linenos:
+        :emphasize-lines: 9-16, 23
+
+  .. group-tab:: Python
+    .. code-block:: Python
+      .. literalinclude:: ../../code_examples/4-Functions/5-Default_Values/Python/main.py
+        :language: python
+        :linenos:
+        :emphasize-lines: 8-17, 33, 35
+
+Example Output
+^^^^^^^^^^^^^^
+.. image:: ../../code_examples/4-Functions/5-Default_Values/vhs.gif
+   :alt: Code example output
+   :align: left
+
+
+.. tabs::
+
   .. group-tab:: C++
 
     .. code-block:: C++
