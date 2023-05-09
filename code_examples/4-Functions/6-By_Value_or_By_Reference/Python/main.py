@@ -2,23 +2,28 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module shows checks if over 30 students
+This module uses a function by reference
 """
 
+def add_one(someVariable: int) -> None:
+    """The add_one() function adds 1, by reference, returns str."""
 
-from constants import MAX_STUDENT_NUMBER
+    someVariable[0] = someVariable[0] + 1
 
 
 def main() -> None:
-    """The main() this function checks if over 30 students, returns None."""
+    """The main() this function gets a number and calls the add_one function, returns None."""
+    someNumber = []
 
     # input
-    number_of_students = int(input("Enter the number of students: "))
+    temp_var = int(input("Enter a number: "))
+    someNumber.append(temp_var)
 
     # process
-    if number_of_students > MAX_STUDENT_NUMBER:
-        # output
-        print("Too many students!")
+    add_one(someNumber)
+
+    # output
+    print(someNumber[0])
 
     print("\nDone.")
 

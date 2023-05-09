@@ -9,109 +9,58 @@ Each language has its own syntax on how to declare you are going to accept a val
 
 .. tabs::
 
+  .. group-tab:: C
+    .. code-block:: C
+      .. literalinclude:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/C/main.c
+        :language: C
+        :linenos:
+        :emphasize-lines: 10-17, 29
+
   .. group-tab:: C++
-
     .. code-block:: C++
+      .. literalinclude:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/CPP/main.cpp
+        :language: C++
+        :linenos:
+        :emphasize-lines: 11-18, 30
 
-      // Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-      //
-      // Created by: Mr. Coxall
-      // Created on: Oct 2019
-      // This program uses a function by reference
-
-      #include <iostream>
-
-
-      void AddOne(int &someVariable) {
-          // function adds 1, by reference
-
-          someVariable = someVariable + 1;
-      }
-
-      main() {
-          // this function gets a number and calls the AddOne function
-
-          int someNumber;
-
-          // input
-          std::cout << "Enter a number: ";
-          std::cin >> someNumber;
-          
-          AddOne(someNumber);
-          
-          std::cout << "New number: " << someNumber;
-          
-      }
-
+  .. group-tab:: C#
+    .. code-block:: C#
+      .. literalinclude:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/CSharp/main.cs
+        :language: C#
+        :linenos:
+        :emphasize-lines: 13-20, 32
 
   .. group-tab:: Go
-
     .. code-block:: Go
-
-      // in Go, you can not pass a variable by reference
+      .. literalinclude:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/Go/main.go
+        :language: go
+        :linenos:
+        :emphasize-lines: 14-21, 33
 
   .. group-tab:: Java
-
     .. code-block:: Java
-
-      // in Java, you can not pass a variable by reference
+      .. literalinclude:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/Java/Main.java
+        :language: java
+        :linenos:
+        :emphasize-lines: 12-22, 47
 
   .. group-tab:: JavaScript
-
     .. code-block:: JavaScript
+      .. literalinclude:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/JavaScript/main.js
+        :language: javascript
+        :linenos:
+        :emphasize-lines: 9-16, 23
 
-      // in Java, you can not pass a variable by reference
-      // You can pass a reference to an object and then change the object 
-
-  .. group-tab:: Python3
-
+  .. group-tab:: Python
     .. code-block:: Python
+      .. literalinclude:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/Python/main.py
+        :language: python
+        :linenos:
+        :emphasize-lines: 8-11, 23
 
-      #!/usr/bin/env python3
+Example Output
+^^^^^^^^^^^^^^
+.. image:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/vhs.gif
+   :alt: Code example output
+   :align: left
 
-      # Created by: Mr. Coxall
-      # Created on: Oct 2019
-      # This program uses a function by reference
-
-
-      def add_one(someVariable: int) -> None:
-          # function adds 1, by reference
-
-          someVariable[0] = someVariable[0] + 1
-          
-      def main():
-          # this function gets a number and calls the add_one function
-          
-          someNumber = []
-          # input
-          temp_var = int(input("Enter a number: "))
-          someNumber.append(temp_var)
-          add_one(someNumber)
-          print(someNumber[0])
-
-      if __name__ == "__main__":
-          main()
-
-
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // Ruby is pass by value
-
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-		// declaring a function to accept parameter, by reference
-
-		func addOne(inout someVaraible: Int) {
-			someVaraible++
-		}
-
-		// ...
-		var startValue = 1
-		addOne(&startValue)
-		println(startValue) // startValue = 2
