@@ -2,26 +2,40 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module calculates total from subtotal and tax
+This module prints out your name, using default function parameters
 """
 
-import constants
+def full_name(first_name: str, last_name: str, middle_name: str = None) -> str:
+    """The full_name() function calculates the full formal name, returns str."""
+    # return the full formal name
+
+    full_name = first_name
+    if middle_name != None:
+        full_name = full_name + " " + middle_name[0] + "."
+    full_name = full_name + " " + last_name
+
+    return full_name
 
 
 def main() -> None:
-    """The main() function calculates total and tax, returns None."""
+    """The main() function gets a users name and prints out their formal name, returns None."""
 
-    # input
-    sub_total = float(input("Enter the subtotal: $"))
+    middle_name = None
 
-    # process
-    tax = sub_total * constants.HST
-    total = sub_total + tax
+    # input & process
+    first_name = input("Enter your first name: ")
+    question = input("Do you have a middle name? (y/n): ")
+    if question.upper() == "Y" or question.upper() == "YES":
+        middle_name = input("Enter your middle name: ")
+    last_name = input("Enter your last name: ")
+
+    if middle_name != None:
+        name = full_name(first_name, last_name, middle_name)
+    else:
+        name = full_name(first_name, last_name)
 
     # output
-    print("")
-    print(f"The HST is ${tax:,.2f}.")
-    print(f"The total cost is ${total:,.2f}.")
+    print(f"\nYour formal name is {name}.")
 
     print("\nDone.")
 
