@@ -27,7 +27,7 @@ def main() -> None:
     area = calculate_area(radius)
 
     # output
-    print(f"The area is {area} cm²")
+    print(f"The area is {area:.2f} cm²")
 
     print("\nDone.")
 
