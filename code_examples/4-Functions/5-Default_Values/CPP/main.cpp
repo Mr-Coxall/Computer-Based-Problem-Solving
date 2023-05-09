@@ -36,7 +36,7 @@ int main() {
     std::cin >> firstName;
     std::cout << "Do you have a middle name? (y/n): ";
     std::cin >> question;
-    if (question == "Y" || question == "YES") {
+    if (question == "Y" || question == "YES" || question == "y") {
         std::cout << "Enter your middle name: ";
         std::cin >> middleName;
     }
@@ -49,7 +49,7 @@ int main() {
     } else {
         fullName = FullName(firstName, lastName);
     }
-    std::cout << fullName;
+    std::cout << "Your formal name is " << fullName << ".";
 
     std::cout << "\nDone." << std::endl;
     return 0;
