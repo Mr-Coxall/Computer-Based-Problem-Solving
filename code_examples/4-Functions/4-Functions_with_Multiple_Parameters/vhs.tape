@@ -31,10 +31,10 @@ Type "python ./main.py"
 Sleep 1s
 Enter
 Sleep 2s
-Type "42"
+Type "42.42"
 Sleep 1s
 Enter
-Type "24"
+Type "24.24"
 Sleep 1s
 Enter
 
