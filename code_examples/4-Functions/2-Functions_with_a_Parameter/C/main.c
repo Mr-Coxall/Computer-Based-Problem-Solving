@@ -11,7 +11,7 @@ void calculateArea(int radius) {
     // this function calculates the area of circle
 
     // process
-    int area = M_PI * radius ** 2;
+    int area = M_PI * radius * pow( 2, 2);
 
     // output
     printf("The area is %d cm²\n", area);
