@@ -2,26 +2,42 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program calculates total from subtotal and tax
+// This program prints out your name, using default function parameters
 
-const prompt = require('prompt-sync')();
+const prompt = require('prompt-sync')()
 
-// this function calculates total from subtotal and tax
-const HST = 0.13;
-let tax;
-let subTotal;
-let total;
+function FullName(firstName, lastName, middleName = "") {
+    // return the full formal name
+    let fullName = firstName
 
-// get user input
-subTotal = parseFloat(prompt("Enter the subtotal: $"));
+    if (middleName.length != 0) {
+        fullName = fullName + " " + middleName[0] + "."
+    }
+    fullName = fullName + " " + lastName
 
-// process input
-tax = subTotal * HST;
-total = subTotal + tax;
+    return fullName
+}
 
-// output results
-console.log();
-console.log(`The HST is: $${tax.toFixed(2)}.`);
-console.log(`The total cost is: $${total.toFixed(2)}.`);
+// this function function calculates the full name
+let middleName = ""
 
-console.log("\nDone.");
+// input
+let firstName = prompt('Enter your first name: ')
+let question = prompt('Do you have a middle name? (y/n): ')
+
+if (question.toUpperCase() == "Y" || question.toUpperCase() == "YES") {
+    middleName = prompt('Enter your middle name: ')
+}
+let lastName = prompt('Enter your last name: ')
+
+// call functions
+let fullName = ""
+
+if (middleName != "") {
+    fullName = FullName(firstName, lastName, middleName)
+} else {
+    fullName = FullName(firstName, lastName)
+}
+console.log(`\nYour formal name is ${fullName}.`)
+
+console.log("\nDone.")
