@@ -42,6 +42,7 @@ int main() {
     }
     std::cout << "Enter your last name: ";
     std::cin >> lastName;
+    std::cout << std::endl;
 
     // call functions
     if (middleName != "") {
@@ -49,7 +50,7 @@ int main() {
     } else {
         fullName = FullName(firstName, lastName);
     }
-    std::cout << "Your formal name is " << fullName << ".";
+    std::cout << "Your formal name is " << fullName << "." << std::endl;
 
     std::cout << "\nDone." << std::endl;
     return 0;

@@ -41,14 +41,13 @@ Notice that right in the declaration of the function, the "default optional para
       .. literalinclude:: ../../code_examples/4-Functions/5-Default_Values/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 10-17, 29
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/4-Functions/5-Default_Values/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 9-22, 48, 50
+        :emphasize-lines: 9-22, 49, 51
 
   .. group-tab:: C#
     .. code-block:: C#
