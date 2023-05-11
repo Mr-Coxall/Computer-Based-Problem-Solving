@@ -54,7 +54,7 @@ Notice that right in the declaration of the function, the "default optional para
       .. literalinclude:: ../../code_examples/4-Functions/5-Default_Values/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 13-20, 32
+        :emphasize-lines: 14-24, 49, 51
 
   .. group-tab:: Go
     .. code-block:: Go
@@ -74,7 +74,7 @@ Notice that right in the declaration of the function, the "default optional para
       .. literalinclude:: ../../code_examples/4-Functions/5-Default_Values/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 9-96, 37, 39
+        :emphasize-lines: 9-19, 37, 39
 
   .. group-tab:: Python
     .. code-block:: Python
