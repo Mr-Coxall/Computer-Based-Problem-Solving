@@ -58,10 +58,9 @@ Notice that right in the declaration of the function, the "default optional para
 
   .. group-tab:: Go
     .. code-block:: Go
-      .. literalinclude:: ../../code_examples/4-Functions/5-Default_Values/Go/main.go
+      .. literalinclude:: ../../code_examples/4-Functions/5-Default_Values/Go/main.c
         :language: go
         :linenos:
-        :emphasize-lines: 14-21, 33
 
   .. group-tab:: Java
     .. code-block:: Java
