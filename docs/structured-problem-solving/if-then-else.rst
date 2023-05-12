@@ -28,7 +28,7 @@ Flowchart for If…Then...Else statement
    :align: center
 
 Pseudocode for If…Then...Else statement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **GET** number_of_students
 | **IF** (number_of_students > 30) **THEN**
 |     **SHOW** "Too many students!"
