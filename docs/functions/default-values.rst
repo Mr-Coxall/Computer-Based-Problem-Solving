@@ -34,6 +34,8 @@ It seems that step is "optional", which it is. By default, if you do not provide
 
 Notice that right in the declaration of the function, the "default optional parameter" is being set. If it is not provided as a parameter, the default value is just used. Each programming language has its own syntax to make this kind of optional parameter work. Here is an example:
 
+Code for Function with Default Values
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
   .. group-tab:: C

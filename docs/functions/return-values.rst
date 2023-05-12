@@ -7,6 +7,8 @@ If this was math class, the definition of a `mathimatical function <https://en.w
 
 We have already seen many built in functions that have a return value, like the square root function:
 
+Code for Function with a Return Value
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
   .. group-tab:: C

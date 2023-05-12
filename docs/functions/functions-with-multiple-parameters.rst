@@ -11,6 +11,8 @@ Since people are not always great at keeping things in order, many programming l
 
 In the example below, I have a function that can calculate the area of a rectangle. Is is important to keep all two (2) parameters organzied, or you will not get the correct answer. To do this each parameter will be use named parameters (if possible):
 
+Code for Function with Multiple Parameters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
   .. group-tab:: C

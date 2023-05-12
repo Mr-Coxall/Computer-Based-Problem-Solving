@@ -17,6 +17,8 @@ The first method of transferring information to a function is to pass it `“By 
 
 A variable or value passed along inside a function call is called an `parameter <https://en.wikipedia.org/wiki/Parameter_(computer_programming)>`_. Parameter(s) are usually placed inside a bracket when you invoke the function. For example:
 
+Code for Function with a Parameter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
   .. group-tab:: C
