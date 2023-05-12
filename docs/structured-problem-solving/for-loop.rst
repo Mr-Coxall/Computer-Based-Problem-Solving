@@ -32,7 +32,7 @@ Top-Down Design for the For loop
 Flowchart for the For loop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/flowchart-for-loop.png
-   :alt: While loop flowchart
+   :alt: For loop flowchart
    :align: center
 
 Pseudocode for the For loop
