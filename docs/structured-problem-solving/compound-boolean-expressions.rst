@@ -97,8 +97,8 @@ Pseudocode for Compound Boolean Expression statement
 |    **SHOW** "You failed the course."
 | **ENDIF**
 
-Code for Select Case statement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Code for Compound Boolean Expression statement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
   .. group-tab:: C
