@@ -15,17 +15,25 @@ Here is a problem that can be solved using an If…Then statement. I have a clas
 
 The top-down design will have decision logic in it. You **do not** use a diamond in a top-down design, you still only use rectangles. Here is what a top-down design might look like for this problem:
 
+Top-Down Design for If…Then statement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. image:: ./images/top-down-if-then.png
    :alt: Top-Down Design for If…Then statement
    :align: center
 
 Remember from the section on flowcharts, the diamond shape represented decisions. The If…Then statement is the translation of a decision in a flowchart to code. Note that you **MUST** mark the "Yes" and "No" path, so that people can follow the flow of logic. The above examples would look like the following in a flowchart:
 
+Flowchart for If…Then statement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/flowchart-if-then.png
    :alt: If…Then flowchart
    :align: center
 
 You will also be using If…Then statements in pseudocode. The above problem looks like this in pseudocode. Note that you do indent when you are inside an If…Then statement in pseudocode. Also note that "**IF**", "**THEN**" and "**ENDIF**" are all bold and caps:
+
+Pseudocode for If…Then statement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | **GET** number_of_students
 | **IF** (number_of_students > 30) **THEN**
@@ -34,6 +42,8 @@ You will also be using If…Then statements in pseudocode. The above problem loo
 
 In the code examples below, if the variable numberOfStudents (or number_of_students) happens to be a number that is greater than 30 (say 32), the next line of code is performed. If the variable is not greater than 30 (say it is exactly 30), then the next line of code is skipped over and **NOT** performed. Note that the numbers of chairs does not change often in my room, so I will use a constant to hold that value.
 
+Code for If…Then statement
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
   .. group-tab:: C
