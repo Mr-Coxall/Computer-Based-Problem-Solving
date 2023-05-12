@@ -29,19 +29,19 @@ or using While loops:
 
 In this example program, the output shows a 2 digit odometer, using a nested loop.
 
-Top-Down Design for Nested Loops
+Top-Down Design for Nested loops
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/top-down-nested-loops.png
    :alt: Top-Down Design for Nested Loops
    :align: center
 
-Flowchart for Nested Loops
+Flowchart for Nested loops
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/flowchart-nested-loops.png
    :alt: for Nested Loops flowchart
    :align: center
 
-Pseudocode for Nested Loops
+Pseudocode for Nested loops
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **FOR** counter1 in range(10)
 |     **FOR** counter2 in range(10)
@@ -49,7 +49,7 @@ Pseudocode for Nested Loops
 |     **END**
 | **END** 
 
-Code for the Nested Loops
+Code for the Nested loops
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
