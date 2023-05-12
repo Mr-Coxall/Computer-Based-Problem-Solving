@@ -23,13 +23,13 @@ The structure can contain many ElseIfs, as many as the programmer needs. Another
 When you approach a street light, there are not just 2 choices there are actually 3 (or maybe more). The following example will tell the driver (or the self-driving car) what to do as they approach a stop light. The driver will need to know what to do if the light is red, yellow or green. If the light is red, the driver needs to stop. If the light is yellow, the driver needs to slow down. If the light is green, the driver needs to go. If the light is not red, yellow or green, the driver needs to do something else. The following code shows how this might be done:
 
 Top-Down Design for If…Then…ElseIf…Else statement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/top-down-if-then-elseif-else.png
    :alt: Top-Down Design for If…Then…ElseIf…Else statement
    :align: center
 
 Flowchart for If…Then…ElseIf…Else statement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/flowchart-if-then-elseif-else.png
    :alt: If…Then…ElseIf…Else flowchart
    :align: center
