@@ -17,7 +17,6 @@ The top-down design will have decision logic in it. You **do not** use a diamond
 
 Top-Down Design for If…Then statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. image:: ./images/top-down-if-then.png
    :alt: Top-Down Design for If…Then statement
    :align: center
@@ -34,7 +33,6 @@ You will also be using If…Then statements in pseudocode. The above problem loo
 
 Pseudocode for If…Then statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 | **GET** number_of_students
 | **IF** (number_of_students > 30) **THEN**
 |     **SHOW** "Too many students!"
