@@ -1,5 +1,5 @@
 /*
- * This program checks if there is over 30 students
+ * This program uses a function by reference
  *
  * @author  Mr Coxall
  * @version 1.0
@@ -9,21 +9,31 @@
 import java.util.Scanner;
 
 public class Main {
+
+  /**
+   * This function adds one to a number, by reference.
+   * @param someNumber
+   */
+  public static void addOne(int[] someNumber) {
+    someNumber[0] = someNumber[0] + 1;
+  }
+
   public static void main(String[] args) {
-    // this function checks if there is over 30 students
-    final int MAX_STUDENT_NUMBER = 30;
-    int numberOfStudents;
+    // this function uses a function by reference
+
+    // In Java, you can pass a variable by reference by using an array
+    int[] someVariable = new int[1];
 
     // input
     Scanner input = new Scanner(System.in);
-    System.out.print("Enter the number of students: ");
-    numberOfStudents = input.nextInt();
+    System.out.print("Enter a number: ");
+    someVariable[0] = input.nextInt();
 
     // process
-    if (numberOfStudents > MAX_STUDENT_NUMBER) {
-      // output
-      System.out.println("Too many students!");
-    }
+    addOne(someVariable);
+
+    // output
+    System.out.println("The number plus one is: " + someVariable[0]);
 
     System.out.println("\nDone.");
   }

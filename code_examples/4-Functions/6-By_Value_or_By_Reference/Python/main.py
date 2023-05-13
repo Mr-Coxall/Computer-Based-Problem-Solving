@@ -7,6 +7,7 @@ This module uses a function by reference
 
 def add_one(someVariable: int) -> None:
     """The add_one() function adds 1, by reference, returns str."""
+    # in python the only way to pass by reference is to pass the whole list
 
     someVariable[0] = someVariable[0] + 1
 
@@ -23,7 +24,7 @@ def main() -> None:
     add_one(someNumber)
 
     # output
-    print(someNumber[0])
+    print(f"The number plus one is: {someNumber[0]}")
 
     print("\nDone.")
 

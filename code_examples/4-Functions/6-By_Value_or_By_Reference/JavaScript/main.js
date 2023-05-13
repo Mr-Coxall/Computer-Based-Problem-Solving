@@ -1,18 +1,26 @@
-/* Created by: Mr. Coxall
- * Created on: Sep 2020
- * This program checks if ther is over 30 students
+/*
+Created by: Mr. Coxall
+Created on: Sep 2020
+This module uses a function by reference
 */
 
-const prompt = require('prompt-sync')();
-const MAX_STUDENT_NUMBER = 30;
-
-// input
-const numberOfStudents = parseInt(prompt('Enter the number of students: '));
-
-// process
-if (numberOfStudents > MAX_STUDENT_NUMBER) {
-    // output
-    console.log("Too many students!");
+function addOne(someVariable) {
+    // The addOne() function adds 1, by reference
+    someVariable[0] = someVariable[0] + 1;
 }
+  
+const prompt = require('prompt-sync')()
+// In JavaScript, you can pass a variable by reference by using an array  
+const someNumber = [];
+
+// Input
+const tempVar = parseInt(prompt("Enter a number: "));
+someNumber.push(tempVar);
+
+// Process
+addOne(someNumber);
+
+// Output
+console.log(`The number plus one is: ` + someNumber[0]);
 
 console.log("\nDone.");

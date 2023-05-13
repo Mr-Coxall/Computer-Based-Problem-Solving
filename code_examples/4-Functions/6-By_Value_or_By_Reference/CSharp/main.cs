@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks if there is over 30 students
+ * This program uses a function by reference
 */
 
 using System;
@@ -9,20 +9,24 @@ using System;
  * The Program class
 */
 class Program {
+    static void AddOne(ref int someNumber) {
+        // this function adds one to the parameter, by reference
+        someNumber = someNumber + 1;
+    }
+
     static void Main() {
-        // this function checks if there is over 30 students
-        const int MAX_STUDENT_NUMBER = 30;
-        int numberOfStudents;
+        // this function uses a function by reference
+        int someNumber;
 
         // input
-        Console.Write("Enter the number of students: ");
-        numberOfStudents = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter a number: ");
+        someNumber = Convert.ToInt32(Console.ReadLine());
 
         // process
-        if (numberOfStudents > MAX_STUDENT_NUMBER) {
-            // output
-            Console.WriteLine("Too many students!");
-        }
+        AddOne(ref someNumber);
+
+        // output
+        Console.WriteLine("The number plus one is: {0}", someNumber);
 
         Console.WriteLine("\nDone.");
     }

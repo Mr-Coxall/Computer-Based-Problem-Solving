@@ -2,24 +2,28 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program checks if there is over 30 students
+// This program uses a function by reference
 
 #include <iostream>
 
+void addOne(int &someNumber) {
+    // this function adds one, by reference
+    someNumber = someNumber + 1;
+}
+
 int main() {
-    // this function checks if there is over 30 students
-    const int MAX_STUDENT_NUMBER = 30;
-    int numberOfStudents;
+    // this function uses a function by reference
+    int someNumber;
 
     // input
-    std::cout << "Enter the number of students: ";
-    std::cin >> numberOfStudents;
+    std::cout << "Enter a number: ";
+    std::cin >> someNumber;
 
     // process
-    if (numberOfStudents > MAX_STUDENT_NUMBER) {
-        // output
-        std::cout << "Too many students!\n";
-    }
+    addOne(someNumber);
+
+    // output
+    std::cout << "The number plus one is: " << someNumber << std::endl;
 
     std::cout << "\nDone." << std::endl;
 }

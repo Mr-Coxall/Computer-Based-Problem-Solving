@@ -1,27 +1,31 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks if there is over 30 students
+ * This program uses a function by reference
  */
 
 package main
 
 import "fmt"
 
+func addOne(someVariable *int) {
+	// this function adds one to the variable passed in, by reference
+	*someVariable = *someVariable + 1
+}
+
 func main() {
-	// this function checks if there is over 30 students
-	const maxStudentNumber int = 30
-	var numberOfStudents int
+	// this function uses a function by reference
+	var someNumber int
 
 	// input
-	fmt.Print("Enter the number of students: ")
-	fmt.Scan(&numberOfStudents)
+	fmt.Print("Enter a number: ")
+	fmt.Scan(&someNumber)
 
-	// process
-	if numberOfStudents > maxStudentNumber {
-		// output
-		fmt.Println("Too many students!")
-	}
+	// Process
+	addOne(&someNumber)
+
+	// Output
+	fmt.Println("The number plus one is:", someNumber)
 
 	fmt.Println("\nDone.")
 }
