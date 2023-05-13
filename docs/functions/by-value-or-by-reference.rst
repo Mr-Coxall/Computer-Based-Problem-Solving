@@ -65,4 +65,3 @@ Example Output
 .. image:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/vhs.gif
    :alt: Code example output
    :align: left
-
