@@ -16,47 +16,59 @@ In most modern IDEs you can also watch your progress by looking at the stack. Th
 
 By using recursion, what you are trying to do is simplify out the problem to something very trivial to program. Remember that in our problem solving model, trying to simplify out the problem was really important. Here is the n! problem solved using recusion.
 
+Code for a Recursive Function
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
+  .. group-tab:: C
+    .. code-block:: C
+      .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/C/main.c
+        :language: C
+        :linenos:
+
   .. group-tab:: C++
-
     .. code-block:: C++
+      .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/CPP/main.cpp
+        :language: C++
+        :linenos:
+        :emphasize-lines: 9-22, 49, 51
 
-		// recursive function
+  .. group-tab:: C#
+    .. code-block:: C#
+      .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/CSharp/main.cs
+        :language: C#
+        :linenos:
+        :emphasize-lines: 14-24, 49, 51
 
   .. group-tab:: Go
-
     .. code-block:: Go
-
-      // recursive function
+      .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/Go/main.c
+        :language: go
+        :linenos:
 
   .. group-tab:: Java
-
     .. code-block:: Java
-
-      // recursive function
+      .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/Java/Main.java
+        :language: java
+        :linenos:
+        :emphasize-lines: 12-22, 47
 
   .. group-tab:: JavaScript
-
     .. code-block:: JavaScript
+      .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/JavaScript/main.js
+        :language: javascript
+        :linenos:
+        :emphasize-lines: 9-19, 37, 39
 
-      // recursive function
-
-  .. group-tab:: Python3
-
+  .. group-tab:: Python
     .. code-block:: Python
+      .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/Python/main.py
+        :language: python
+        :linenos:
+        :emphasize-lines: 8-17, 33, 35
 
-		# recursive function
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // recursive function
-
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // recursive function
+Example Output
+^^^^^^^^^^^^^^
+.. image:: ../../code_examples/4-Functions/7-Recursion/vhs.gif
+   :alt: Code example output
+   :align: left
