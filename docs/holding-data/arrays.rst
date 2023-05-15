@@ -13,79 +13,100 @@ This array has 5 `elements <https://en.wikipedia.org/wiki/Element_(mathematics)>
 
 .. tabs::
 
+  .. group-tab:: C
+
+    .. code-block:: C++
+
+      // array index
+      studentMarks[3]
+
   .. group-tab:: C++
 
     .. code-block:: C++
 
       // array index
-      studentMarks[3];
+      studentMarks[3]
+
+  .. group-tab:: C#
+
+    .. code-block:: C#
+
+      // array index
+      studentMarks[3]
 
   .. group-tab:: Go
 
     .. code-block:: Go
 
       // array
+      studentMarks[3]
 
   .. group-tab:: Java
 
     .. code-block:: Java
 
       // array index
+      studentMarks[3]
 
   .. group-tab:: JavaScript
 
     .. code-block:: JavaScript
 
       // array
+      studentMarks[3]
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
 
     .. code-block:: Python
 
-      # list index (because python does not have arrays!)
-      student_marks[3]
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // array
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // array index
+      studentMarks[3]
 
 
 Arrays are an important programming concept because they allow a collection of related objects to be stored within a single variable. To declare an array, you usually must specify how many elements will be in the array during the declaration. Here we are declaring the variable studentMarks and allowing 5 items in it:
 
 .. tabs::
 
+  .. group-tab:: C
+
+    .. code-block:: C++
+
+      // array index
+      int studentMarks[5];
+
   .. group-tab:: C++
 
     .. code-block:: C++
 
-      // declaring an array
+      // array index
       int studentMarks[5];
+
+  .. group-tab:: C#
+
+    .. code-block:: C#
+
+      // array index
+      int[] studentMarks = new int[5];
 
   .. group-tab:: Go
 
     .. code-block:: Go
 
       // array
+      var studentMarks [5]int
 
   .. group-tab:: Java
 
     .. code-block:: Java
 
-      // declaring an array
+      // array index
+      studentMarks = new int[10];
 
   .. group-tab:: JavaScript
 
     .. code-block:: JavaScript
 
       // array
+      const studentMarks = new Array(5)
 
   .. group-tab:: Python3
 
@@ -95,18 +116,6 @@ Arrays are an important programming concept because they allow a collection of r
       #   also, since it is a list, you do not specify how many elements are in it
       #   since it can shrink and grow as needed
       student_marks = []
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // array
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // array
 
 This will create our student mark array and ensure 5 student marks can be held. We often use a loop to either place infomation in an array or to get the infomation out of an array, since we need to do the same process for each element in the array. Here is an example:
 
