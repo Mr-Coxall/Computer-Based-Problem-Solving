@@ -86,14 +86,14 @@ Arrays are an important programming concept because they allow a collection of r
     .. code-block:: C#
 
       // array index
-      int[] studentMarks = new int[];
+      int[] studentMarks = new int[5];
 
   .. group-tab:: Go
 
     .. code-block:: Go
 
       // array index
-      var studentMarks[3]int
+      var studentMarks[5]int
 
   .. group-tab:: Java
 
