@@ -1,5 +1,5 @@
 /*
- * This program checks if there is over 30 students
+ * This program calculates factorial
  *
  * @author  Mr Coxall
  * @version 1.0
@@ -9,21 +9,30 @@
 import java.util.Scanner;
 
 public class Main {
+    static int factorial(int number) {
+      // recursive function calculating factorial
+      if (number == 1) {
+          return 1;
+      } else {
+          return number * factorial(number - 1);
+      }
+    }
+
   public static void main(String[] args) {
-    // this function checks if there is over 30 students
-    final int MAX_STUDENT_NUMBER = 30;
-    int numberOfStudents;
+    // this function gets user input
+    int userInputInt;
 
     // input
-    Scanner input = new Scanner(System.in);
-    System.out.print("Enter the number of students: ");
-    numberOfStudents = input.nextInt();
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter a positive integer: ");
+    userInputInt = scanner.nextInt();
 
-    // process and output
-    if (numberOfStudents > MAX_STUDENT_NUMBER) {
-      System.out.println("Too many students!");
+    if (userInputInt < 0) {
+      System.out.println("That was not a positive integer.");
     } else {
-      System.out.println("Not too many students.");
+      // call function
+      int factorialAnswer = factorial(userInputInt);
+      System.out.printf("The factorial of %d is %d%n", userInputInt, factorialAnswer);
     }
 
     System.out.println("\nDone.");

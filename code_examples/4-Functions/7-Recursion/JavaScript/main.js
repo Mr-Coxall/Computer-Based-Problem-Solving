@@ -1,19 +1,25 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks if there is over 30 students
+ * This program calculates factorial
 */
 
-const prompt = require('prompt-sync')();
-const MAX_STUDENT_NUMBER = 30;
+function factorial(number) {
+  // recursive function calculating factorial
+  if (number === 1) {
+      return 1;
+  } else {
+      return number * factorial(number - 1);
+  }
+}
 
-// input
-const numberOfStudents = parseInt(prompt('Enter the number of students: '));
+var userInputInt = parseInt(prompt("Enter a positive integer:"));
 
-// process and output
-if (numberOfStudents > MAX_STUDENT_NUMBER) {
-    console.log("Too many students!");
+if (userInputInt < 0) {
+  console.log("That was not a positive integer.");
 } else {
-    console.log("Not too many students.");
+  // call function
+  var factorialAnswer = factorial(userInputInt);
+  console.log(`The factorial of ${userInputInt} is ${factorialAnswer}`);
 }
 
 console.log("\nDone.");

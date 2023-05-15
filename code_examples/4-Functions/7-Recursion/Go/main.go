@@ -1,27 +1,36 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks if there is over 30 students
+ * This program calculates factorial
  */
 
 package main
 
 import "fmt"
 
+func factorial(number int) int {
+	// recursive function calculating factorial
+	if number == 1 {
+		return 1
+	} else {
+		return number * factorial(number-1)
+	}
+}
+
 func main() {
-	// this function checks if there is over 30 students
-	const maxStudentNumber int = 30
-	var numberOfStudents int
+	// this function gets user input
+	var userInputInt int
 
 	// input
-	fmt.Print("Enter the number of students: ")
-	fmt.Scan(&numberOfStudents)
+	fmt.Print("Enter a positive integer: ")
+	fmt.Scanln(&userInputInt)
 
-	// process and output
-	if numberOfStudents > maxStudentNumber {
-		fmt.Println("Too many students!")
+	if userInputInt < 0 {
+		fmt.Println("That was not a positive integer.")
 	} else {
-		fmt.Println("Not too many students.")
+		// call function
+		factorialAnswer := factorial(userInputInt)
+		fmt.Printf("The factorial of %d is %d\n", userInputInt, factorialAnswer)
 	}
 
 	fmt.Println("\nDone.")

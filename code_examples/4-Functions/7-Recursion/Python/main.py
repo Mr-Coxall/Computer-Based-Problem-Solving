@@ -2,24 +2,32 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module checks if there is over 30 students
+This module calculates factorial
 """
 
 
-from constants import MAX_STUDENT_NUMBER
+def factorial(number: int) -> int:
+    """ a recursive function that returns the factorial of a number"""
+    
+    # process
+    if number == 1:
+        return 1
+    else:
+        return number * factorial(number - 1)
 
 
-def main() -> None:
-    """The main() this function checks if over 30 students, returns None."""
+def main():
+    """this function gets user input"""
 
     # input
-    number_of_students = int(input("Enter the number of students: "))
+    user_input_int = int(input("Enter a positive integer: "))
 
-    # process and output
-    if number_of_students > MAX_STUDENT_NUMBER:
-        print("Too many students!")
+    if user_input_int < 0:
+        print("That was not a positive integer.")
     else:
-        print("Not too many students.")
+        # call function
+        factorial_answer = factorial(user_input_int)
+        print(f"The factorial of {user_input_int} is {factorial_answer}")
 
     print("\nDone.")
 

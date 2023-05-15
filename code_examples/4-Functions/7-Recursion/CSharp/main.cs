@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program checks if there is over 30 students
+ * This program calculates factorial
 */
 
 using System;
@@ -9,20 +9,30 @@ using System;
  * The Program class
 */
 class Program {
+        // recursive function calculating factorial
+        static int Factorial(int number) {
+            if (number == 1) {
+                return 1;
+            }
+            else {
+                return number * Factorial(number - 1);
+            }
+        }
+
     static void Main() {
-        // this function checks if there is over 30 students
-        const int MAX_STUDENT_NUMBER = 30;
-        int numberOfStudents;
+        // this function gets user input
+        int userInputInt;
 
         // input
-        Console.Write("Enter the number of students: ");
-        numberOfStudents = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter a positive integer: ");
+        userInputInt = int.Parse(Console.ReadLine());
 
-        // process and output
-        if (numberOfStudents > MAX_STUDENT_NUMBER) {
-            Console.WriteLine("Too many students!");
+        if (userInputInt < 0) {
+            Console.WriteLine("That was not a positive integer.");
         } else {
-            Console.WriteLine("Not too many students.");
+            // call function
+            int factorialAnswer = Factorial(userInputInt);
+            Console.WriteLine($"The factorial of {userInputInt} is {factorialAnswer}");
         }
 
         Console.WriteLine("\nDone.");

@@ -2,25 +2,35 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program checks if there is over 30 students
+// This program calculates factorial
 
 #include <iostream>
 
+int factorial(int number) {
+    // recursive function calculating factorial
+    if (number == 1) {
+        return 1;
+    } else {
+        return number * factorial(number - 1);
+    }
+}
+
 int main() {
-    // this function checks if there is over 30 students
-    const int MAX_STUDENT_NUMBER = 30;
-    int numberOfStudents;
+    // this function gets user input
+    int userInputInt;
 
     // input
-    std::cout << "Enter the number of students: ";
-    std::cin >> numberOfStudents;
+    std::cout << "Enter a positive integer: ";
+    std::cin >> userInputInt;
 
-    // process and output
-    if (numberOfStudents > MAX_STUDENT_NUMBER) {
-        std::cout << "Too many students!\n";
+    if (userInputInt < 0) {
+        std::cout << "That was not a positive integer." << std::endl;
     } else {
-        std::cout << "Not too many students.\n";
+        // call function
+        int factorialAnswer = factorial(userInputInt);
+        std::cout << "The factorial of " << userInputInt << " is " << factorialAnswer << std::endl;
     }
 
     std::cout << "\nDone." << std::endl;
+    return 0;
 }
