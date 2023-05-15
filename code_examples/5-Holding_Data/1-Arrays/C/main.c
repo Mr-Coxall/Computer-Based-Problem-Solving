@@ -1,24 +1,35 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved.
+// Copyright (c) 2020 St. Mother Teresa HS All rights reserved.
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program shows declaring variables
+// This program uses an array
 
 #include <stdio.h>
-#include <stdbool.h>
 
 int main() {
-    // variable definition
-    bool isCurrent = true;  // bool
-    int age = 32;  // int
-    float area = 32.45;  // float
-    char someWords[13] = "Hello, World!";  // string
+    // this function uses an array
 
-    printf("%d\n", isCurrent);
-    printf("%d\n", age);
-    printf("%.2f\n", area);
-    printf("%s\n", someWords);
+    int studentMarks[5];
+    int aSingleMark;
 
+    // input
+    for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
+        printf("Enter a mark (percentage): ");
+        scanf("%d", &aSingleMark);
+        studentMarks[loop_counter] = aSingleMark;
+    }
+    printf("\n");
+
+    printf("Here are the 5 marks:\n");
+
+    // get length of array
+    int arrayLength = sizeof(studentMarks) / sizeof(studentMarks[0]);
+
+    for (int loop_counter = 0; loop_counter < arrayLength; loop_counter++) {
+        printf("%d%% ", studentMarks[loop_counter]);
+    }
+
+    printf("\n");
     printf("\nDone.\n");
     return 0;
 }
