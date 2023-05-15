@@ -1,22 +1,33 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved.
+// Copyright (c) 2020 St. Mother Teresa HS All rights reserved.
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program shows declaring variables
+// This program uses an array
 
 #include <iostream>
 
+
 int main() {
-    // variable definition
-    bool isCurrent = true;  // bool
-    int age = 32;  // int
-    float area = 32.45;  // float
-    std::string someWords = "Hello, World!";  // string
+    // this function uses an array
 
-    std::cout << isCurrent << std::endl;
-    std::cout << age << std::endl;
-    std::cout << area << std::endl;
-    std::cout << someWords << std::endl;
+    int studentMarks[5];
+    int aSingleMark;
 
+    // input
+    for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
+        std::cout << "Enter a mark (percentage): ";
+        std::cin >> aSingleMark;
+        studentMarks[loop_counter] = aSingleMark;
+    }
+    std::cout << "";
+
+    // process & output
+    std::cout << "Here are the 5 marks:" << std::endl;
+    for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
+        std::cout << studentMarks[loop_counter] << "% ";
+    }
+
+    std::cout << "" << std::endl;
     std::cout << "\nDone." << std::endl;
+    return 0;
 }
