@@ -60,7 +60,7 @@ Code for a Recursive Function
       .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 6-13, 21
+        :emphasize-lines: 6-13, 24
 
   .. group-tab:: Python
     .. code-block:: Python

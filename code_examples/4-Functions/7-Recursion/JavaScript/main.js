@@ -12,7 +12,10 @@ function factorial(number) {
   }
 }
 
-var userInputInt = parseInt(prompt("Enter a positive integer:"));
+const prompt = require('prompt-sync')()
+
+// input
+const userInputInt = parseInt(prompt("Enter a positive integer: "));
 
 if (userInputInt < 0) {
   console.log("That was not a positive integer.");
