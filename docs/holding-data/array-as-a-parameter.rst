@@ -13,6 +13,14 @@ To declare an array as a parameter in a function, it would look like this:
 
 .. tabs::
 
+  .. group-tab:: C
+
+    .. code-block:: C
+
+      // declare an array as a parameter in a function
+      template<size_t N>
+      int SumOfNumbers(std::array<int, N> listOfNumbers) {
+
   .. group-tab:: C++
 
     .. code-block:: C++
@@ -39,7 +47,7 @@ To declare an array as a parameter in a function, it would look like this:
 
       // declare an array as a parameter in a function
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
 
     .. code-block:: Python
 
@@ -47,23 +55,18 @@ To declare an array as a parameter in a function, it would look like this:
       # note: it just looks like a normal variable
       def sum_of_numbers(list_of_numbers):
 
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // declare an array as a parameter in a function
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // declare an array as a parameter in a function
-
 To pass an array into this function as a parameter, it would look like this:
 
 .. tabs::
 
-  .. group-tab:: C++
+  .. group-tab:: C
+
+    .. code-block:: C
+
+      // pass an array into this function as a parameter
+      std::array<int, 10> randomNumbers;
+    
+      sum = SumOfNumbers(randomNumbers);
 
     .. code-block:: C++
 
@@ -90,7 +93,7 @@ To pass an array into this function as a parameter, it would look like this:
 
       // pass an array into this function as a parameter
 
-  .. group-tab:: Python3
+  .. group-tab:: Python
 
     .. code-block:: Python
 
@@ -99,19 +102,69 @@ To pass an array into this function as a parameter, it would look like this:
 
       sum = sum_of_numbers(random_numbers)
 
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // pass an array into this function as a parameter
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // pass an array into this function as a parameter
-
 Here is a complete example of creating an array and passing it as a parameter to a function:
+
+
+Code for Creating an Array
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. tabs::
+
+  .. group-tab:: C
+    .. code-block:: C
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/C/main.c
+        :language: C
+        :linenos:
+        :emphasize-lines: 12, 16, 19-23, 27-29
+
+  .. group-tab:: C++
+    .. code-block:: C++
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/CPP/main.cpp
+        :language: C++
+        :linenos:
+        :emphasize-lines: 13, 17, 20-24, 28-30
+
+  .. group-tab:: C#
+    .. code-block:: C#
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/CSharp/main.cs
+        :language: C#
+        :linenos:
+        :emphasize-lines: 14, 18, 21-25, 30-32
+
+  .. group-tab:: Go
+    .. code-block:: Go
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Go/main.go
+        :language: go
+        :linenos:
+        :emphasize-lines: 16, 19, 22-26, 32-34
+
+  .. group-tab:: Java
+    .. code-block:: Java
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Java/Main.java
+        :language: java
+        :linenos:
+        :emphasize-lines: 16, 20, 24-28, 32-34
+
+  .. group-tab:: JavaScript
+    .. code-block:: JavaScript
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/JavaScript/main.js
+        :language: javascript
+        :linenos:
+        :emphasize-lines: 8, 12, 15-18, 23-25
+
+  .. group-tab:: Python
+    .. code-block:: Python
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Python/main.py
+        :language: python
+        :linenos:
+        :emphasize-lines: 12, 15-17, 22-23
+
+Example Output
+^^^^^^^^^^^^^^
+.. image:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/vhs.gif
+   :alt: Code example output
+   :align: left
+
+
 
 .. tabs::
 
