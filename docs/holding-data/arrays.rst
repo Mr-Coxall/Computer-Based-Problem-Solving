@@ -38,7 +38,7 @@ This array has 5 `elements <https://en.wikipedia.org/wiki/Element_(mathematics)>
 
     .. code-block:: Go
 
-      // array
+      // array index
       studentMarks[3]
 
   .. group-tab:: Java
@@ -52,174 +52,78 @@ This array has 5 `elements <https://en.wikipedia.org/wiki/Element_(mathematics)>
 
     .. code-block:: JavaScript
 
-      // array
+      // array index
       studentMarks[3]
 
   .. group-tab:: Python
 
     .. code-block:: Python
 
+      # array (or list) index
       studentMarks[3]
 
 
-Arrays are an important programming concept because they allow a collection of related objects to be stored within a single variable. To declare an array, you usually must specify how many elements will be in the array during the declaration. Here we are declaring the variable studentMarks and allowing 5 items in it:
+Arrays are an important programming concept because they allow a collection of related objects to be stored within a single variable. To declare an array, you usually must specify how many elements will be in the array during the declaration. This is because the compiler needs to reseve the required memory inside the the computer to stare all these variables. (There are ways to store groups of data where the size will change during the running of the program and we will get to them.)Here we are declaring the variable studentMarks and allowing 5 items in it:
 
+Code for Creating an Array
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
   .. group-tab:: C
-
-    .. code-block:: C++
-
-      // array index
-      int studentMarks[5];
+    .. code-block:: C
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/C/main.c
+        :language: C
+        :linenos:
+        :emphasize-lines: 12, 16-20, 28-30
 
   .. group-tab:: C++
-
     .. code-block:: C++
-
-      // array index
-      int studentMarks[5];
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/CPP/main.cpp
+        :language: C++
+        :linenos:
+        :emphasize-lines: 13, 17-21, 29-31
 
   .. group-tab:: C#
-
     .. code-block:: C#
-
-      // array index
-      int[] studentMarks = new int[5];
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-      // array
-      var studentMarks [5]int
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-      // array index
-      studentMarks = new int[10];
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-      // array
-      const studentMarks = new Array(5)
-
-  .. group-tab:: Python3
-
-    .. code-block:: Python
-
-      # declaring a list (because python does not have arrays!)
-      #   also, since it is a list, you do not specify how many elements are in it
-      #   since it can shrink and grow as needed
-      student_marks = []
-
-This will create our student mark array and ensure 5 student marks can be held. We often use a loop to either place infomation in an array or to get the infomation out of an array, since we need to do the same process for each element in the array. Here is an example:
-
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-      // Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-      //
-      // Created by: Mr. Coxall
-      // Created on: Dec 2019
-      // This program uses an array
-
-      #include <iostream>
-
-
-      main() {
-          // this function uses an array
-
-          int studentMarks[5];
-          int aSingleMark;
-
-          // input
-          for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
-              std::cout << "Enter a mark (percentage): ";
-              std::cin >> aSingleMark;
-              studentMarks[loop_counter] = aSingleMark;
-          }
-          std::cout << "";
-          
-          std::cout << "Here are the 5 marks:" << std::endl;
-          
-          for (int loop_counter; loop_counter < 5; loop_counter++) {
-              std::cout << studentMarks[loop_counter] << "% ";
-          }
-          std::cout << "" << std::endl;
-      }
-
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/CSharp/main.cs
+        :language: C#
+        :linenos:
+        :emphasize-lines: 1
 
   .. group-tab:: Go
-
     .. code-block:: Go
-
-      // array
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/Go/main.go
+        :language: go
+        :linenos:
+        :emphasize-lines: 1
 
   .. group-tab:: Java
-
     .. code-block:: Java
-
-      // array
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/Java/Main.java
+        :language: java
+        :linenos:
+        :emphasize-lines: 1
 
   .. group-tab:: JavaScript
-
     .. code-block:: JavaScript
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/JavaScript/main.js
+        :language: javascript
+        :linenos:
+        :emphasize-lines: 1
 
-      // array
-
-  .. group-tab:: Python3
-
+  .. group-tab:: Python
     .. code-block:: Python
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/Python/main.py
+        :language: python
+        :linenos:
+        :emphasize-lines: 12, 15-17, 22-23
 
-      #!/usr/bin/env python3
+Example Output
+^^^^^^^^^^^^^^
+.. image:: ../../code_examples/5-Holding_Data/1-Arrays/vhs.gif
+   :alt: Code example output
+   :align: left
 
-      # Created by: Mr. Coxall
-      # Created on: Dec 2019
-      # This program uses an array
-
-          
-      def main():
-          # this function uses an array
-          
-          student_marks = []
-          
-          # input
-          for loop_counter in range(0, 5):
-              a_single_mark = int(input("Enter a mark (percentage): "))
-              student_marks.append(a_single_mark)
-          print("")
-              
-          print("Here are the 5 marks:")
-          
-          for loop_counter in range(0, 5):
-              print("{0}% ".format(student_marks[loop_counter]), end="")
-              
-          print("")
-
-
-      if __name__ == "__main__":
-          main()
-
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // array
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // array
 
 .. toctree::
    :maxdepth: 1
