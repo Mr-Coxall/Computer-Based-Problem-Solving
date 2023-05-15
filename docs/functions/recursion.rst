@@ -43,7 +43,7 @@ Code for a Recursive Function
 
   .. group-tab:: Go
     .. code-block:: Go
-      .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/Go/main.c
+      .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 11-18, 32
