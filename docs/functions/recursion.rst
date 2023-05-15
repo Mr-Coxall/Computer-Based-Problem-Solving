@@ -67,7 +67,7 @@ Code for a Recursive Function
       .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 9-16, 29
+        :emphasize-lines: 9-14, 27
 
 Example Output
 ^^^^^^^^^^^^^^
