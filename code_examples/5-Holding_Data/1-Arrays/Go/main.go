@@ -16,17 +16,20 @@ func main() {
 	var studentMarks [5]int
 	var aSingleMark int
 
+	arrayLength = len(studentMarks)
+
 	// input
-	for loopCounter := 0; loopCounter < len(studentMarks); loopCounter++ {
+	for loopCounter := 0; loopCounter < arrayLength; loopCounter++ {
 		fmt.Print("Enter a mark (percentage): ")
 		fmt.Scan(&aSingleMark)
 		studentMarks[loopCounter] = aSingleMark
 	}
+	
 	fmt.Println()
 	fmt.Println("Here are the 5 marks:")
 
 	// get length of array
-	for loopCounter := 0; loopCounter < len(studentMarks); loopCounter++ {
+	for loopCounter := 0; loopCounter < arrayLength; loopCounter++ {
 		fmt.Printf("%d%% ", studentMarks[loopCounter])
 	}
 

@@ -129,42 +129,42 @@ Code for Creating an Array
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 12, 16-20, 28-30
+        :emphasize-lines: 12, 16, 19-23, 27-29
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 13, 17-21, 29-31
+        :emphasize-lines: 13, 17, 20-24, 28-30
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 1
+        :emphasize-lines: 14, 18, 21-25, 30-32
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 1
+        :emphasize-lines: 16, 19, 22-26, 32-34
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 1
+        :emphasize-lines: 22, 26, 30-34, 38-40
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 1
+        :emphasize-lines: 7, 11, 14-17, 22-24
 
   .. group-tab:: Python
     .. code-block:: Python
