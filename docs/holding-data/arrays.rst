@@ -65,6 +65,61 @@ This array has 5 `elements <https://en.wikipedia.org/wiki/Element_(mathematics)>
 
 Arrays are an important programming concept because they allow a collection of related objects to be stored within a single variable. To declare an array, you usually must specify how many elements will be in the array during the declaration. This is because the compiler needs to reseve the required memory inside the the computer to stare all these variables. (There are ways to store groups of data where the size will change during the running of the program and we will get to them.)Here we are declaring the variable studentMarks and allowing 5 items in it:
 
+.. tabs::
+
+  .. group-tab:: C
+
+    .. code-block:: C++
+
+      // array index
+      int studentMarks[5];
+
+  .. group-tab:: C++
+
+    .. code-block:: C++
+
+      // array index
+      int studentMarks[5];
+
+  .. group-tab:: C#
+
+    .. code-block:: C#
+
+      // array index
+      int[] studentMarks = new int[];
+
+  .. group-tab:: Go
+
+    .. code-block:: Go
+
+      // array index
+      var studentMarks[3]int
+
+  .. group-tab:: Java
+
+    .. code-block:: Java
+
+      // array index
+      int [] studentMarks = new int[5];
+
+  .. group-tab:: JavaScript
+
+    .. code-block:: JavaScript
+
+      // array index
+      let studentMarks = new Array(5)
+
+  .. group-tab:: Python
+
+    .. code-block:: Python
+
+      # array (or list) index
+      studentMarks = []
+
+Once you have an array, you will need to loop over it to add items to it or to see what the values are. It is usually a bad idea to **Hard Code** your loop ending point to a value. An array knows how many elements are in it and you should always use this. If someone changes the size of the array in the declaration, then no othe code will have to be changed.
+
+Here is a code example of creating an array, placing values into it and then reading data out of it:
+
 Code for Creating an Array
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
