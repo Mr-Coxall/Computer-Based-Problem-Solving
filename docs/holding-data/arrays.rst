@@ -157,14 +157,14 @@ Code for Creating an Array
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 22, 26, 30-34, 38-40
+        :emphasize-lines: 16, 20, 24-28, 32-34
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 7, 11, 14-17, 22-24
+        :emphasize-lines: 8, 12, 15-18, 23-25
 
   .. group-tab:: Python
     .. code-block:: Python
@@ -188,3 +188,4 @@ Example Output
    Pass an Array as a Return Values <array-as-a-return-value>
    Arrays with For ... Each Loops <arrays-and-for-each>
    2D Arrays <2d-arrays>
+   
