@@ -1,27 +1,37 @@
-/* Created by: Mr. Coxall
- * Created on: Sep 2020
- * This program shows declaring variables
-*/
+// Copyright (c) 2020 St. Mother Teresa HS All rights reserved.
+//
+// Created by: Mr. Coxall
+// Created on: Sep 2020
+// This program uses an array
 
 using System;
 
-/*
- * The Program class
- * Contains all methods for performing basic variable usage
-*/
-class Program {
-    public static void Main (string[] args) {
-        // variable definition
-        bool isCurrent = true;  // bool
-        int age = 32;  // int
-        float area = 32.45F;  // float
-        string someWords = "Hello, World!";  // string
+class Program
+{
+    static void Main() {
+        // this function uses an array
 
-        Console.WriteLine(isCurrent);
-        Console.WriteLine(age);
-        Console.WriteLine(area);
-        Console.WriteLine(someWords);
+        int[] studentMarks = new int[5];
+        int aSingleMark;
 
+        // get length of array
+        int arrayLength = studentMarks.Length;
+
+        // input
+        for (int loop_counter = 0; loop_counter < arrayLength; loop_counter++) {
+            Console.Write("Enter a mark (percentage): ");
+            aSingleMark = Convert.ToInt32(Console.ReadLine());
+            studentMarks[loop_counter] = aSingleMark;
+        }
+
+        Console.WriteLine();
+        Console.WriteLine("Here are the 5 marks:");
+
+        for (int loop_counter = 0; loop_counter < arrayLength; loop_counter++) {
+            Console.Write(studentMarks[loop_counter] + "% ");
+        }
+
+        Console.WriteLine();
         Console.WriteLine("\nDone.");
     }
 }

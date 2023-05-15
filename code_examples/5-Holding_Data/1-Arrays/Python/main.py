@@ -19,7 +19,7 @@ def main():
 
     print("Here are the 5 marks:")
 
-    for loop_counter in range(0, 5):
+    for loop_counter in range(0, len(student_marks)):
         print(f"{student_marks[loop_counter]}% ", end="")
 
     print("")

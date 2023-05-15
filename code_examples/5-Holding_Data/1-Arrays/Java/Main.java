@@ -1,5 +1,5 @@
 /*
- * This program shows declaring variables
+ * This program uses an array
  * .... this was linted by GitHub Actions
  *
  * @author  Mr Coxall
@@ -15,26 +15,31 @@ final class Main {
     throw new IllegalStateException("Cannot be instantiated");
   }
 
-  /** Some floating point number. */
-  public static final float SOME_FLOAT = 14.65F;
+public class Main {
+    public static void main(String[] args) {
+        // this function uses an array
 
-  /**
-   * Main entry point into program.
-   *
-   * @param args nothing passed in
-   */
-  public static void main(final String[] args) {
-    // variable definition
-    boolean isCurrent = true; // bool
-    int age = 0; // int
-    float area = SOME_FLOAT; // float
-    String someWords = "Hello, World!"; // string
+        int[] studentMarks = new int[5];
+        int aSingleMark;
 
-    System.out.println(isCurrent);
-    System.out.println(age);
-    System.out.println(area);
-    System.out.println(someWords);
+        // get length of array
+        int arrayLength = studentMarks.length;
 
-    System.out.println("\nDone.");
-  }
+        // input
+        Scanner scanner = new Scanner(System.in);
+        for (int loop_counter = 0; loop_counter < arrayLength; loop_counter++) {
+            System.out.print("Enter a mark (percentage): ");
+            aSingleMark = scanner.nextInt();
+            studentMarks[loop_counter] = aSingleMark;
+        }
+        System.out.println();
+        System.out.println("Here are the 5 marks:");
+
+        for (int loop_counter = 0; loop_counter < arrayLength; loop_counter++) {
+            System.out.print(studentMarks[loop_counter] + "% ");
+        }
+
+        System.out.println();
+        System.out.println("\nDone.");
+    }
 }

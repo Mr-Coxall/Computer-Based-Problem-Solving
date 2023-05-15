@@ -1,18 +1,27 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program shows declaring variables
+ * This program uses an array
  */
 
-// variable definition
-var isCurrent = true // bool
-var age = 32 // int
-var area = 32.45 // float
-var someWords = "Hello, World!" // string
+const studentMarks = new Array(5);
+let aSingleMark;
 
-console.log(isCurrent)
-console.log(age)
-console.log(area)
-console.log(someWords)
+// get length of array
+const arrayLength = studentMarks.length;
 
-console.log("\nDone.")
+// input
+for (let loopCounter = 0; loopCounter < arrayLength; loopCounter++) {
+  aSingleMark = parseInt(prompt("Enter a mark (percentage): "));
+  studentMarks[loopCounter] = aSingleMark;
+}
+
+console.log();
+console.log("Here are the 5 marks:");
+
+for (let loopCounter = 0; loopCounter < arrayLength; loopCounter++) {
+  process.stdout.write(studentMarks[loopCounter] + "% ");
+}
+
+console.log();
+console.log("\nDone.");

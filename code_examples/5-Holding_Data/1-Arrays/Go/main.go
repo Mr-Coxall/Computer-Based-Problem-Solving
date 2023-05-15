@@ -1,7 +1,7 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program shows declaring variables
+ * This program uses an array
  */
 
 package main
@@ -11,16 +11,25 @@ import (
 )
 
 func main() {
-	// variable definition
-	isCurrent := true            // bool
-	age := 32                    // int
-	area := 32.4                 // float32
-	someWords := "Hello, World!" // string
+	// this function uses an array
 
-	fmt.Println(isCurrent)
-	fmt.Println(age)
-	fmt.Println(area)
-	fmt.Println(someWords)
+	var studentMarks [5]int
+	var aSingleMark int
 
+	// input
+	for loopCounter := 0; loopCounter < len(studentMarks); loopCounter++ {
+		fmt.Print("Enter a mark (percentage): ")
+		fmt.Scan(&aSingleMark)
+		studentMarks[loopCounter] = aSingleMark
+	}
+	fmt.Println()
+	fmt.Println("Here are the 5 marks:")
+
+	// get length of array
+	for loopCounter := 0; loopCounter < len(studentMarks); loopCounter++ {
+		fmt.Printf("%d%% ", studentMarks[loopCounter])
+	}
+
+	fmt.Println()
 	fmt.Println("\nDone.")
 }

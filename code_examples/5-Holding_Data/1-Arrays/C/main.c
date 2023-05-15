@@ -12,18 +12,17 @@ int main() {
     int studentMarks[5];
     int aSingleMark;
 
+    // get length of array
+    int arrayLength = sizeof(studentMarks) / sizeof(studentMarks[0]);
+
     // input
-    for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
+    for (int loop_counter = 0; loop_counter < arrayLength; loop_counter++) {
         printf("Enter a mark (percentage): ");
         scanf("%d", &aSingleMark);
         studentMarks[loop_counter] = aSingleMark;
     }
     printf("\n");
-
     printf("Here are the 5 marks:\n");
-
-    // get length of array
-    int arrayLength = sizeof(studentMarks) / sizeof(studentMarks[0]);
 
     for (int loop_counter = 0; loop_counter < arrayLength; loop_counter++) {
         printf("%d%% ", studentMarks[loop_counter]);
