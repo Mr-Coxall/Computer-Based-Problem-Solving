@@ -16,7 +16,7 @@ func main() {
 	var studentMarks [5]int
 	var aSingleMark int
 
-	arrayLength = len(studentMarks)
+	arrayLength := len(studentMarks)
 
 	// input
 	for loopCounter := 0; loopCounter < arrayLength; loopCounter++ {
@@ -24,7 +24,7 @@ func main() {
 		fmt.Scan(&aSingleMark)
 		studentMarks[loopCounter] = aSingleMark
 	}
-	
+
 	fmt.Println()
 	fmt.Println("Here are the 5 marks:")
 

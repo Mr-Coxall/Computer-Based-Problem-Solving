@@ -4,6 +4,7 @@
  * This program uses an array
  */
 
+const prompt = require('prompt-sync')()
 const studentMarks = new Array(5);
 let aSingleMark;
 
