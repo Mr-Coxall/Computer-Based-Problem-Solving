@@ -31,9 +31,7 @@ Type "python ./main.py"
 Sleep 1s
 Enter
 Sleep 2s
-Type "42"
-Sleep 1s
-Enter
+
 
 # Ending
 Sleep 5s

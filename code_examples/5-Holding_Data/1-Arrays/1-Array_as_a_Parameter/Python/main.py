@@ -2,32 +2,43 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module calculates the area of circle
+This module uses an array as a parameter
 """
 
-import math
 
-def calculate_area(radius: int) -> float:
-    """The calculate_area() function calculates the area of circle, returns None."""
+import random
+from typing import List
 
-    # process
-    area = math.pi * radius ** 2
 
-    return area
+def sum_of_numbers(array_of_numbers: List[int]) -> int:
+    """The sum_of_numbers() function calculates the sum of numbers in a list, returns the sum as int."""
+
+    total = 0
+
+    for counter in range(0, len(array_of_numbers)):
+        total += array_of_numbers[counter]
+
+    return total
 
 
 def main() -> None:
     """The main() function just calls other functions, returns None."""
 
+    random_numbers = []
+    sum = 0
+
     # input
-    radius = int(input("Enter the radius of a circle (cm): "))
+    for loop_counter in range(0, 10):
+        a_single_number = random.randint(1, 100)
+        random_numbers.append(a_single_number)
+        print(f"The random number is: {a_single_number}")
     print("")
 
-    # call functions
-    area = calculate_area(radius)
+    # process
+    sum = sum_of_numbers(random_numbers)
 
     # output
-    print(f"The area is {area:.2f} cm²")
+    print(f"The sum of all the numbers is: {sum}")
 
     print("\nDone.")
 
