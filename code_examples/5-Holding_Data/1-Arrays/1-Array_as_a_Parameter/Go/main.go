@@ -1,40 +1,44 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program calculates the area of circle
+ * This program uses an array as a parameter
  */
 
- package main
+package main
 
- import (
-	 "fmt"
-	 "math"
- )
- 
- func calculateArea(radius int) {
-	 // this function calculates the area of circle
- 
-	 // process
-	 area := math.Pi * radius ** 2
- 
-	return area
- }
- 
- func main() {
-	var radius int
-	var area float
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
-	 // input
-	 fmt.Print("Enter the radius of a circle (cm): ")
-	 fmt.Scanln(&radius)
-	 fmt.Println()
- 
-	 // call functions
-	 area = calculateArea(radius)
+func sumOfNumbers(arrayOfNumbers []int) int {
+	total := 0
 
-	 // output
-	 fmt.Printf("The area is %d cm²\n", area)
- 
-	 fmt.Println("\nDone.")
- }
- 
+	for _, number := range arrayOfNumbers {
+		total += number
+	}
+
+	return total
+}
+
+func main() {
+	// this function uses an array as a parameter
+	rand.Seed(time.Now().UnixNano())
+	var arrayOfNumbers [10]int
+
+	// input
+	for counter := 0; counter < len(arrayOfNumbers); counter++ {
+		arrayOfNumbers[counter] = rand.Intn(100) + 1
+		fmt.Println("The number is:", arrayOfNumbers[counter])
+	}
+	fmt.Println("")
+
+	// call function
+	total := sumOfNumbers(arrayOfNumbers[:])
+
+	// output
+	fmt.Println("The sum of all the numbers is:", total)
+
+	fmt.Println("\nDone.")
+}

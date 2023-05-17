@@ -1,24 +1,28 @@
 /*
- * This program calculates the area of circle
+ * This program uses an array as a parameter
  *
  * @author  Mr Coxall
  * @version 1.0
  * @since   2020-09-01
  */
 
-import java.util.Scanner;
+import java.util.Arrays;
+import java.util.Random;
 
 final class Main {
   /**
-   * Calculates calculates the area of circle.
+   * This function calculates the sum of an array.
    *
-   * @param args nothing passed in
+   * @param args array of integers
    */
-  public static float calculateArea(int radius) {
-    // process
-    float area = Math.PI * Math.pow(radius, 2);
+  public static int sumOfNumbers(int[] arrayOfNumbers) {
+    int total = 0;
 
-    return area;
+    for (int number : arrayOfNumbers) {
+      total += number;
+    }
+
+    return total;
   }
 
   private Main() {
@@ -33,21 +37,23 @@ final class Main {
    *
    * @param args nothing passed in
    */
-  public static float main(final String[] args) {
-    int radius;
-    float area = 0.0;
+  public static void main(final String[] args) {
+    int[] arrayOfNumbers = new int[10];
+    long seed = System.currentTimeMillis();
+    Random rand = new Random(seed);
 
     // input
-    Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter the radius of a circle (cm): ");
-    radius = scanner.nextInt();
+    for (int counter = 0; counter < arrayOfNumbers.length; counter++) {
+      arrayOfNumbers[counter] = rand.nextInt(100) + 1;
+      System.out.println("The random number is: " + arrayOfNumbers[counter]);
+    }
     System.out.println();
 
-    // call functions
-    area = calculateArea(radius);
+    // Call function
+    int total = sumOfNumbers(arrayOfNumbers);
 
     // output
-    System.out.printf("The area is %d cm²%n", area);
+    System.out.println("\nThe sum of the numbers is: " + total);
 
     System.out.println("\nDone.");
   }

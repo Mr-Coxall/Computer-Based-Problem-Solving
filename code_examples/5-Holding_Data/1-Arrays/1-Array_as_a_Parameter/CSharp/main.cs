@@ -1,6 +1,6 @@
 /* Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program calculates the area of circle
+ * This program uses an array as a parameter
 */
 
 using System;
@@ -10,29 +10,33 @@ using System;
  * Contains all methods for performing basic variable usage
 */
 class Program {
-    static float calculateArea(int radius) {
-        // this function calculates the area of circle
+    static int SumOfNumbers(int[] arrayOfNumbers) {
+        int total = 0;
+        int lengthOfArray = arrayOfNumbers.Length;
 
-        // process
-        float area = Math.Pi * radius ** 2;
+        for (int counter = 0; counter < lengthOfArray; counter++) {
+            total += arrayOfNumbers[counter];
+        }
 
-        return area;
+        return total;
     }
  
     public static void Main (string[] args) {
-        int radius;
-        float area = 0.0;
+        int[] numberList = new int[10];
+        Random rand = new Random();
 
         // input
-        Console.Write("Enter the radius of a circle (cm): ");
-        radius = int.Parse(Console.ReadLine());
-        Console.WriteLine("");
+        for (int counter = 0; counter < 10; counter++) {
+            numberList[counter] = rand.Next(1, 100);
+            Console.WriteLine("The random number is: {0}", numberList[counter]);
+        }
+        Console.WriteLine();
 
-        // call functions
-        area = calculateArea(length, width);
+        // call function
+        int sum = SumOfNumbers(numberList);
 
         // output
-        Console.WriteLine($"The area is {area} cm²");
+        Console.WriteLine("The sum of all the numbers is: {0}", sum);
 
         Console.WriteLine("\nDone.");
     }

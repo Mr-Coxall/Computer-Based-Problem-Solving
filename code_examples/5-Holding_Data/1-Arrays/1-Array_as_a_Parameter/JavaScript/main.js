@@ -1,28 +1,37 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program calculates the area of circle
+ * This program uses an array as a parameter
  */
 
-const prompt = require('prompt-sync')();
 
-function calculateArea(radius) {
-  // this function calculates the area of circle
-  
-  // process
-  const area = Math.PI * radius ** 2;
+function sumOfNumbers(arrayOfNumbers) {
+  let total = 0;
 
-  return area
+  for (let number of arrayOfNumbers) {
+      total += number;
+  }
+
+  return total;
 }
 
 // input
-const radius = parseInt(prompt("Enter the radius of a circle (cm): "));
-console.log();
+const numberList = [];
+const seed = new Date().getTime();
+const rand = require('random-seed').create(seed);
 
-// call functions
-area = calculateArea(radius);
+// input
+for (let counter = 0; counter < 10; counter++) {
+  const randomNumber = rand.intBetween(1, 100);
+  numberList.push(randomNumber);
+  console.log("The random number is: " + randomNumber);
+}
+console.log("\n");
+
+// call the function
+const sum = sumOfNumbers(numberList);
 
 // output
-console.log(`The area is ${area} cm²`);
+console.log("The sum of all the numbers is: " + sum);
 
 console.log("\nDone.");

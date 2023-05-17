@@ -2,34 +2,46 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program calculates the area of circle
+// This program uses an array as a parameter
 
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
+#include <time.h>
 
-float calculateArea(int radius) {
-    // this function calculates the area of circle
+// in C an array is passed by reference to a function
+int sumOfNumbers(int arrayOfNumbers[]) {
+    // this function adds up all of the numbers in the list
 
-    // process
-    float area = M_PI * radius ** 2;
+    int total = 0;
+    int counter;
+    int lengthOfArray = sizeof(arrayOfNumbers) / sizeof(arrayOfNumbers[0]);
 
-    return area;
+    for (counter = 0; counter < lengthOfArray; counter++) {
+        total += arrayOfNumbers[counter];
+    }
+
+    return total;
 }
 
 int main() {
-    int radius;
-    float area = 0.0;
+    // this function uses an array
+    int numberList[10];
+    int seed = time(NULL);
 
     // input
-    printf("Enter the radius of a circle (cm): ");
-    scanf("%d", &radius);
+    for (int counter = 0; counter < 10; counter++) {
+        srand(seed);
+        int aSingleRandomNumber = rand_r(&seed) % 100;
+        numberList[counter] = aSingleRandomNumber;
+        printf("The random number is: %d\n", aSingleRandomNumber);
+    }
     printf("\n");
 
-    // call functions
-    area = calculateArea(radius);
+    // call function
+    int sum = sumOfNumbers(numberList);
 
     // output
-    printf("The area is %f cm²\n", area);
+    printf("The sum of all the numbers is: %d\n", sum);
 
     printf("\nDone.\n");
     return 0;

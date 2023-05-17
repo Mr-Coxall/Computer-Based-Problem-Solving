@@ -2,35 +2,47 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program calculates the area of circle
+// This program uses an array as a parameter
 
 #include <iostream>
-#include <cmath>
+#include <cstdlib>
+#include <ctime>
 
 
-float calculateArea(int radius) {
-    // this function calculates the area of circle
+// in C++, an array is passed by reference by default
+int sumOfNumbers(int arrayOfNumbers[]) {
+    // this function adds up all of the numbers in the list
 
-    // process
-    float area = M_PI * radius ** 2;
+    int total = 0;
+    int counter;
+    int lengthOfArray = sizeof(arrayOfNumbers)/sizeof(arrayOfNumbers[0]);
 
-    return area;
+    for (counter = 0; counter < lengthOfArray; counter++) {
+        total += arrayOfNumbers[counter];
+    }
+
+    return total;
 }
 
 int main() {
-    int radius = 0;
-    float area = 0.0;
+    // this function uses an array
+    int numberList[10];
+    unsigned int seed = time(NULL);
 
+    srand(seed);
     // input
-    std::cout << "Enter the radius of a circle (cm): ";
-    std::cin >> radius;
-    std::cout << std::endl;
+    for (int counter = 0; counter < 10; counter++) {
+        numberList[counter] = rand_r(&seed) % 100;
+        std::cout << "The random number is: " << numberList[counter]
+                  << std::endl;
+    }
+    std::cout << "" << std::endl;
 
     // call functions
-    area = calculateArea(radius);
+    int sum = sumOfNumbers(numberList);
 
     // output
-    std::cout << "The area is " << area << " cm²\n";
+    std::cout << "The sum of all the numbers is: " << sum << std::endl;
 
     std::cout << "\nDone." << std::endl;
     return 0;

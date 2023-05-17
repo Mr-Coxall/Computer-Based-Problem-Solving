@@ -10,6 +10,7 @@ import random
 from typing import List
 
 
+# in python an array is passed by reference to a function
 def sum_of_numbers(array_of_numbers: List[int]) -> int:
     """The sum_of_numbers() function calculates the sum of numbers in a list, returns the sum as int."""
 
