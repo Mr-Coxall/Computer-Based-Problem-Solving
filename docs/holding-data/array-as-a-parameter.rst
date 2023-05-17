@@ -114,185 +114,52 @@ Code for Creating an Array
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 12, 16, 19-23, 27-29
+        :emphasize-lines: 11-24, 41
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 13, 17, 20-24, 28-30
+        :emphasize-lines: 12-25, 42
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 14, 18, 21-25, 30-32
+        :emphasize-lines: 13-22 36
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 16, 19, 22-26, 32-34
+        :emphasize-lines: 15-23, 38
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 16, 20, 24-28, 32-34
+        :emphasize-lines: 18-26, 53
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 8, 12, 15-18, 23-25
+        :emphasize-lines: 8-16, 32
 
   .. group-tab:: Python
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 12, 15-17, 22-23
+        :emphasize-lines: 13-22, 39
 
 Example Output
 ^^^^^^^^^^^^^^
 .. image:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/vhs.gif
    :alt: Code example output
    :align: left
-
-
-
-.. tabs::
-
-  .. group-tab:: C++
-
-    .. code-block:: C++
-
-      // Copyright (c) 2019 St. Mother Teresa HS All rights reserved.
-      //
-      // Created by: Mr. Coxall
-      // Created on: Dec 2019
-      // This program uses an array as a parameter
-
-      #include <iostream>
-      #include <time.h>
-      #include <array>
-
-
-      template<size_t N>
-      int SumOfNumbers(std::array<int, N> listOfNumbers) {
-          // this functions add up all the numbers in the list
-
-          int total = 0;
-          
-          for (int counter = 0; counter < listOfNumbers.size(); counter++) {
-              total += listOfNumbers[counter];
-          }
-
-          return total;
-      }
-
-      main() {
-          // this function uses an array
-
-          std::array<int, 10> randomNumbers;
-          int aSingleRandomNumber = 0;
-          int sum = 0;
-          
-          srand(time(NULL));
-
-          // input
-          std::cout << "The numbers are: ";
-          for (int loop_counter = 0; loop_counter < 10; loop_counter++) {
-              aSingleRandomNumber = (rand() % 10) + 1;
-              randomNumbers[loop_counter] = aSingleRandomNumber;
-              std::cout << aSingleRandomNumber << ", ";
-          }
-          std::cout << " " << std::endl;
-          
-          sum = SumOfNumbers(randomNumbers);
-          
-          std::cout << "The sum of all the numbers is: " << sum << std::endl;
-      }
-
-
-  .. group-tab:: Go
-
-    .. code-block:: Go
-
-      // pass an array into this function as a parameter
-
-  .. group-tab:: Java
-
-    .. code-block:: Java
-
-      // pass an array into this function as a parameter
-
-  .. group-tab:: JavaScript
-
-    .. code-block:: JavaScript
-
-      // pass an array into this function as a parameter
-
-  .. group-tab:: Python3
-
-    .. code-block:: Python
-
-      #!/usr/bin/env python3
-
-      # Created by: Mr. Coxall
-      # Created on: Dec 2019
-      # This program uses a list as a parameter
-
-      import random
-
-          
-      def sum_of_numbers(list_of_numbers):
-          # this functions add up all the numbers in the list
-
-          total = 0
-          
-          for counter in range (0, len(list_of_numbers)):
-              total += list_of_numbers[counter]
-
-          return total
-
-      def main():
-          # this function uses a list
-          
-          random_numbers = []
-          sum = 0
-          
-          # input
-          print("The numbers are ")
-          for loop_counter in range(0, 9):
-              a_single_number = random.randint(0,10)
-              random_numbers.append(a_single_number)
-              print("{0}, ".format(a_single_number), end="")
-          print("")
-          
-          sum = sum_of_numbers(random_numbers)
-          
-          print("The sum of all the numbers is: {0} ".format(sum))
-              
-
-
-      if __name__ == "__main__":
-          main()
-
-
-  .. group-tab:: Ruby
-
-    .. code-block:: Ruby
-
-      // pass an array into this function as a parameter
-
-  .. group-tab:: Swift
-
-    .. code-block:: Swift
-
-      // pass an array into this function as a parameter
