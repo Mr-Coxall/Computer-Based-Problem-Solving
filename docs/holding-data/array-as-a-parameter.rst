@@ -14,46 +14,46 @@ To declare an array as a parameter in a function, it would look like this:
 .. tabs::
 
   .. group-tab:: C
-
     .. code-block:: C
-
-      // declare an array as a parameter in a function
-      template<size_t N>
-      int SumOfNumbers(std::array<int, N> listOfNumbers) {
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/C/main.c
+        :language: C
+        :lines: 11-12
 
   .. group-tab:: C++
-
     .. code-block:: C++
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/CPP/main.cpp
+        :language: C++
+        :lines: 12-13
 
-      // declare an array as a parameter in a function
-      template<size_t N>
-      int SumOfNumbers(std::array<int, N> listOfNumbers) {
+  .. group-tab:: C#
+    .. code-block:: C#
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/CSharp/main.cs
+        :language: C#
+        :lines: 13
 
   .. group-tab:: Go
-
     .. code-block:: Go
-
-      // declare an array as a parameter in a function
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Go/main.go
+        :language: go
+        :lines: 15
 
   .. group-tab:: Java
-
     .. code-block:: Java
-
-      // declare an array as a parameter in a function
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Java/Main.java
+        :language: java
+        :lines: 18
 
   .. group-tab:: JavaScript
-
     .. code-block:: JavaScript
-
-      // declare an array as a parameter in a function
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/JavaScript/main.js
+        :language: javascript
+        :emphasize-lines: 8
 
   .. group-tab:: Python
-
     .. code-block:: Python
-
-      # declare an array as a parameter in a function
-      # note: it just looks like a normal variable
-      def sum_of_numbers(list_of_numbers):
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Python/main.py
+        :language: python
+        :lines: 13-14
 
 To pass an array into this function as a parameter, it would look like this:
 
@@ -128,7 +128,7 @@ Code for Creating an Array
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 13-22 36
+        :emphasize-lines: 13-22, 36
 
   .. group-tab:: Go
     .. code-block:: Go
