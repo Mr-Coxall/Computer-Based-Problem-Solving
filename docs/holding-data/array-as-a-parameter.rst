@@ -47,7 +47,7 @@ To declare an array as a parameter in a function, it would look like this:
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/JavaScript/main.js
         :language: javascript
-        :emphasize-lines: 8
+        :lines: 8
 
   .. group-tab:: Python
     .. code-block:: Python
@@ -60,47 +60,46 @@ To pass an array into this function as a parameter, it would look like this:
 .. tabs::
 
   .. group-tab:: C
-
     .. code-block:: C
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/C/main.c
+        :language: C
+        :lines: 41
 
-      // pass an array into this function as a parameter
-      std::array<int, 10> randomNumbers;
-    
-      sum = SumOfNumbers(randomNumbers);
-
+  .. group-tab:: C++
     .. code-block:: C++
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/CPP/main.cpp
+        :language: C++
+        :lines: 42
 
-      // pass an array into this function as a parameter
-      std::array<int, 10> randomNumbers;
-    
-      sum = SumOfNumbers(randomNumbers);
+  .. group-tab:: C#
+    .. code-block:: C#
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/CSharp/main.cs
+        :language: C#
+        :lines: 36
 
   .. group-tab:: Go
-
     .. code-block:: Go
-
-      // pass an array into this function as a parameter
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Go/main.go
+        :language: go
+        :lines: 38
 
   .. group-tab:: Java
-
     .. code-block:: Java
-
-      // pass an array into this function as a parameter
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Java/Main.java
+        :language: java
+        :lines: 53
 
   .. group-tab:: JavaScript
-
     .. code-block:: JavaScript
-
-      // pass an array into this function as a parameter
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/JavaScript/main.js
+        :language: javascript
+        :lines: 32
 
   .. group-tab:: Python
-
     .. code-block:: Python
-
-      # pass an array into this function as a parameter
-      random_numbers = []
-
-      sum = sum_of_numbers(random_numbers)
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Python/main.py
+        :language: python
+        :lines: 39
 
 Here is a complete example of creating an array and passing it as a parameter to a function:
 
