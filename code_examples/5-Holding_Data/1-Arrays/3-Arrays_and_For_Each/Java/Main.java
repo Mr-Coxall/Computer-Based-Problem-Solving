@@ -15,6 +15,9 @@ final class Main {
    *
    * @param args array of integers
    */
+  // In Java, an array is passed by value to a function, 
+  //   but it's important to note that the value being passed is actually a reference to the array.
+  //   This means that modifications made to the array elements within the function will affect the original array outside the function.
   public static int sumOfNumbers(int[] arrayOfNumbers) {
     // this function adds up all of the numbers in the array, using a For Each loop
     int total = 0;

@@ -9,7 +9,7 @@
 #include <ctime>
 
 
-// iIn C++, an array is passed by reference to a function
+// In C++, an array is passed by reference to a function
 // (template is used to find the length of the array)
 template<size_t arraySize>
 int sumOfNumbers(int (&arrayOfNumbers)[arraySize]) {
