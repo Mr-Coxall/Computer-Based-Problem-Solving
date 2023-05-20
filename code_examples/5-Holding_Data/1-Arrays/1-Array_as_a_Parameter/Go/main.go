@@ -12,6 +12,7 @@ import (
 	"time"
 )
 
+// In Go, an array is passed by value to a function
 func sumOfNumbers(arrayOfNumbers []int) int {
 	// this function adds up all of the numbers in the array
 	total := 0

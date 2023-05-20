@@ -10,6 +10,7 @@ using System;
  * Contains all methods for performing basic variable usage
 */
 class Program {
+    // In C#, an array is passed by reference to a function
     static int SumOfNumbers(int[] arrayOfNumbers) {
         // this function adds up all of the numbers in the array
         int total = 0;

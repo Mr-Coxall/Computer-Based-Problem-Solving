@@ -5,6 +5,9 @@
  */
 
 
+  // In JavaScript, an array is passed by value to a function, 
+  //   but it's important to note that the value being passed is actually a reference to the array.
+  //   This means that modifications made to the array elements within the function will affect the original array outside the function.
 function sumOfNumbers(arrayOfNumbers) {
   // this function adds up all of the numbers in the array
   let total = 0;

@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-// in C an array is passed by reference to a function
+// In C an array is passed by reference to a function
 //   (C can not know the size of the array, so you need to pass it in as well)
 int sumOfNumbers(int *arrayOfNumbers, int lengthOfArray) {
     // this function adds up all of the numbers in the array
