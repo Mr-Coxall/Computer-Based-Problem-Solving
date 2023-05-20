@@ -3,7 +3,7 @@
 Arrays and For ... Each Loops
 =============================
 
-If you think way back to when we did different types of looping structures, one of the methods to loop was using the For loop. The purpose of the for each loop was that the loop would manage counting for us. It turnes out that since an array is a collection of variables held in a common structure, you can use a for loop with it. This type of loop, usually called a For ... Each loop, is used when you have a collection of things and you wanted to iterate through each one of them, one at a time. Since an array is a collection of variables, the For ... Each loop takes one element out of the array at a time and lets you do something with it. The loop will continue until it has gone through all the elements in the array.
+If you think way back to when we did different types of looping structures, one of the methods to loop was using the For loop. The purpose of the for each loop was that the loop would manage counting for us. It turns out that since an array is a collection of variables held in a common structure, you can use a for loop with it. This type of loop, usually called a For ... Each loop, is used when you have a collection of things and you wanted to iterate through each one of them, one at a time. Since an array is a collection of variables, the For ... Each loop takes one element out of the array at a time and lets you do something with it. The loop will continue until it has gone through all the elements in the array. The For ... Each loop does not need an iterator variable, since the loop manages that counting for you.
 
 From the previous example of summing up all the values in an array, a For Each loop would look like the following:
 
@@ -21,7 +21,7 @@ Code for Creating an Array
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/3-Arrays_and_For_Each/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 12-26, 43
+        :emphasize-lines: 12-27, 44
 
   .. group-tab:: C#
     .. code-block:: C#
@@ -42,7 +42,7 @@ Code for Creating an Array
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/3-Arrays_and_For_Each/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 18-24, 54
+        :emphasize-lines: 18-27, 54
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript

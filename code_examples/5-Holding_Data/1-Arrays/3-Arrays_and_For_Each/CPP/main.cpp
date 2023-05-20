@@ -10,9 +10,10 @@
 
 
 // in C++, an array is passed by reference by default
+// (template is used to find the length of the array)
 template<size_t arraySize>
 int sumOfNumbers(int (&arrayOfNumbers)[arraySize]) {
-    // this function adds up all of the numbers in the list, using a For Each loop
+    // this function adds up all of the numbers in the array, using a For Each loop
 
     int total = 0;
     int counter;

@@ -11,7 +11,7 @@ using System;
 */
 class Program {
     static int SumOfNumbers(int[] arrayOfNumbers) {
-        // this function adds up all of the numbers in the list, using a For Each loop
+        // this function adds up all of the numbers in the array, using a For Each loop
         int total = 0;
         int lengthOfArray = arrayOfNumbers.Length;
 

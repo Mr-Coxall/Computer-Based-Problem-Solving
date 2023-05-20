@@ -16,7 +16,7 @@ final class Main {
    * @param args array of integers
    */
   public static int sumOfNumbers(int[] arrayOfNumbers) {
-    // this function adds up all of the numbers in the list, using a For Each loop
+    // this function adds up all of the numbers in the array, using a For Each loop
     int total = 0;
 
     for (int aSingleNumber : arrayOfNumbers) {

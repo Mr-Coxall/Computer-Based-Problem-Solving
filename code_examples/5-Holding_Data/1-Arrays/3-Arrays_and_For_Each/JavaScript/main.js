@@ -6,7 +6,7 @@
 
 
 function sumOfNumbers(arrayOfNumbers) {
-  // this function adds up all of the numbers in the list, using a For Each loop
+  // this function adds up all of the numbers in the array, using a For Each loop
   let total = 0;
 
   for (let aSingleNumber of arrayOfNumbers) {
