@@ -10,13 +10,12 @@
 
 
 // in C++, an array is passed by reference by default
-template<size_t N>
-int sumOfNumbers(int (&arrayOfNumbers)[N]) {
+template<size_t arraySize>
+int sumOfNumbers(int (&arrayOfNumbers)[arraySize]) {
     // this function adds up all of the numbers in the list, using a For Each loop
 
     int total = 0;
     int counter;
-    int lengthOfArray = sizeof(arrayOfNumbers)/sizeof(arrayOfNumbers[0]);
 
     for (int aSingleNumber : arrayOfNumbers) {
         total += aSingleNumber;

@@ -9,15 +9,16 @@
 #include <time.h>
 
 // in C an array is passed by reference to a function
-int sumOfNumbers(int arrayOfNumbers[]) {
-    // this function adds up all of the numbers in the list
+//   (C can not know the size of the array, so you need to pass it in as well)
+int sumOfNumbers(int *arrayOfNumbers, int lengthOfArray) {
+    // this function adds up all of the numbers in the array
 
     int total = 0;
-    int counter;
-    int lengthOfArray = sizeof(arrayOfNumbers) / sizeof(arrayOfNumbers[0]);
+    int counter = 0;
 
-    for (counter = 0; counter < lengthOfArray; counter++) {
+    while (counter < lengthOfArray) {
         total += arrayOfNumbers[counter];
+        counter++;
     }
 
     return total;
@@ -38,7 +39,8 @@ int main() {
     printf("\n");
 
     // call function
-    int sum = sumOfNumbers(numberList);
+    int lengthOfArray = sizeof(numberList) / sizeof(numberList[0]);
+    int sum = sumOfNumbers(numberList, lengthOfArray);
 
     // output
     printf("The sum of all the numbers is: %d\n", sum);

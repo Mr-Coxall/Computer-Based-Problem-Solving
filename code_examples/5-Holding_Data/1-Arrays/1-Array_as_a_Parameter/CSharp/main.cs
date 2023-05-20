@@ -11,11 +11,14 @@ using System;
 */
 class Program {
     static int SumOfNumbers(int[] arrayOfNumbers) {
+        // this function adds up all of the numbers in the array
         int total = 0;
+        int counter = 0;
         int lengthOfArray = arrayOfNumbers.Length;
 
-        for (int counter = 0; counter < lengthOfArray; counter++) {
+        while (counter < lengthOfArray) {
             total += arrayOfNumbers[counter];
+            counter++;
         }
 
         return total;

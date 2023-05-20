@@ -17,13 +17,13 @@ To declare an array as a parameter in a function, it would look like this:
     .. code-block:: C
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/C/main.c
         :language: C
-        :lines: 11-12
+        :lines: 11-13
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/CPP/main.cpp
         :language: C++
-        :lines: 12-13
+        :lines: 12-15
 
   .. group-tab:: C#
     .. code-block:: C#
@@ -63,37 +63,37 @@ To pass an array into this function as a parameter, it would look like this:
     .. code-block:: C
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/C/main.c
         :language: C
-        :lines: 41
+        :lines: 43
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/CPP/main.cpp
         :language: C++
-        :lines: 42
+        :lines: 44
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/CSharp/main.cs
         :language: C#
-        :lines: 36
+        :lines: 39
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Go/main.go
         :language: go
-        :lines: 38
+        :lines: 41
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Java/Main.java
         :language: java
-        :lines: 53
+        :lines: 56
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/JavaScript/main.js
         :language: javascript
-        :lines: 32
+        :lines: 35
 
   .. group-tab:: Python
     .. code-block:: Python
@@ -113,42 +113,42 @@ Code for Creating an Array
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 11-24, 41
+        :emphasize-lines: 11-23, 41-43
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 12-25, 42
+        :emphasize-lines: 12-27, 44
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 13-22, 36
+        :emphasize-lines: 13-25, 39
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 15-23, 38
+        :emphasize-lines: 15-26, 41
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 18-26, 53
+        :emphasize-lines: 18-28, 56
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 8-16, 32
+        :emphasize-lines: 8-19, 35
 
   .. group-tab:: Python
     .. code-block:: Python

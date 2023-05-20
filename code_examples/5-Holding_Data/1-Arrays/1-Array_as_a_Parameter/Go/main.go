@@ -13,10 +13,13 @@ import (
 )
 
 func sumOfNumbers(arrayOfNumbers []int) int {
+	// this function adds up all of the numbers in the array
 	total := 0
+	counter := 0
 
-	for _, number := range arrayOfNumbers {
-		total += number
+	while counter < len(arrayOfNumbers) {
+		total += arrayOfNumbers[counter]
+		counter++
 	}
 
 	return total

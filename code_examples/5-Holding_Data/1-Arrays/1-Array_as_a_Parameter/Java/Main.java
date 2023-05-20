@@ -16,10 +16,13 @@ final class Main {
    * @param args array of integers
    */
   public static int sumOfNumbers(int[] arrayOfNumbers) {
+    // this function adds up all of the numbers in the array
     int total = 0;
+    int counter = 0;
 
-    for (int number : arrayOfNumbers) {
-      total += number;
+    while (counter < arrayOfNumbers.length) {
+      total += arrayOfNumbers[counter];
+      counter++;
     }
 
     return total;

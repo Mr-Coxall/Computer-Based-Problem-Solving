@@ -6,10 +6,13 @@
 
 
 function sumOfNumbers(arrayOfNumbers) {
+  // this function adds up all of the numbers in the array
   let total = 0;
+  let counter = 0;
 
-  for (let number of arrayOfNumbers) {
-      total += number;
+  while (counter < arrayOfNumbers.length) {
+    total += arrayOfNumbers[counter];
+    counter++;
   }
 
   return total;
