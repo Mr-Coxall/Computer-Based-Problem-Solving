@@ -11,34 +11,50 @@
 
 // In C++, a 2D array is passed by reference to a function
 // (template is used to find the length of the array)
-template<size_t rows, >
+template<size_t rows, size_t cols>
 int sumOfNumbers(int (&arrayOf2DNumbers)[rows][cols]) {
     // this function adds up all of the numbers in a 2D array
 
     int total = 0;
     int counter = 0;
     
-    while ()
+    for (int rowCounter : arrayOf2DNumbers) {
+        for (int columnCounter : rowCounter) {
+            total += columnCounter;
+        }
+    }
 
     return total;
 }
 
 int main() {
-    // this function uses an array
-    int numberList[10];
-    unsigned int seed = time(NULL);
+    // this function uses a 2D array
+    const int rows = 2;
+    const int columns = 5;
+    int a2DArray[rows][columns];
+    int aSingleRandomNumber = 0;
+    int sum = 0;
 
-    srand(seed);
+    srand(time(NULL));
+
     // input
-    for (int counter = 0; counter < 10; counter++) {
-        numberList[counter] = rand_r(&seed) % 100;
-        std::cout << "The random number is: " << numberList[counter]
-                  << std::endl;
+
+    // So, ...
+    //   In C++ you can't define array's size using variable.
+    //   this is why you see const int rows = 2; above,
+    //   so the size of the array can never change
+
+    for (int rowElement = 0; rowElement < rows; rowElement++) {
+        for (int columnElement = 0; columnElement < columns; columnElement++) {
+            aSingleRandomNumber = (rand() % 10) + 1;
+            a2DArray[rowElement][columnElement] = aSingleRandomNumber;
+            std::cout << aSingleRandomNumber << ", ";
+        }
+        std::cout << std::endl;
     }
-    std::cout << "" << std::endl;
 
     // call functions
-    int sum = sumOfNumbers(numberList);
+    sum = sumOfNumbers(a2DArray);
 
     // output
     std::cout << "The sum of all the numbers is: " << sum << std::endl;

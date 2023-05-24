@@ -12,12 +12,13 @@ from typing import List
 
 # in python an array is passed by reference to a function
 def sum_of_numbers(array_of_numbers: List[int]) -> int:
-    """The sum_of_numbers() function calculates the sum of numbers in a list, returns the sum as int."""
+    """The sum_of_numbers() function calculates the sum of numbers in a 2D list, returns the sum as int."""
 
     total = 0
 
-    for counter in range(0, len(array_of_numbers)):
-        total += array_of_numbers[counter]
+    for row_value in array_of_numbers:
+        for single_value in row_value:
+            total += single_value
 
     return total
 
@@ -25,21 +26,26 @@ def sum_of_numbers(array_of_numbers: List[int]) -> int:
 def main() -> None:
     """The main() function just calls other functions, returns None."""
 
-    random_numbers = []
-    sum = 0
+    a_2d_list = []
+    sum_answer = 0
 
     # input
-    for loop_counter in range(0, 10):
-        a_single_number = random.randint(1, 100)
-        random_numbers.append(a_single_number)
-        print(f"The random number is: {a_single_number}")
-    print("")
+    rows = int(input("How many row would you like: "))
+    columns = int(input("How many columns would you like: "))
 
-    # process
-    sum = sum_of_numbers(random_numbers)
+    for _ in range(0, rows):
+        temp_column = []
+        for _ in range(0, columns):
+            a_random_number = random.randint(0, 9)
+            temp_column.append(a_random_number)
+            print(f"{a_random_number} ", end="")
+        a_2d_list.append(temp_column)
+        print("")
+
+    sum_answer = sum_of_numbers(a_2d_list)
 
     # output
-    print(f"The sum of all the numbers is: {sum}")
+    print(f"\nThe sum of all the numbers is: {sum}")
 
     print("\nDone.")
 
