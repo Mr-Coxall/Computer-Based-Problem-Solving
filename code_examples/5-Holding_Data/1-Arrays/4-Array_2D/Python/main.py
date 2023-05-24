@@ -45,7 +45,7 @@ def main() -> None:
     sum_answer = sum_of_numbers(a_2d_list)
 
     # output
-    print(f"\nThe sum of all the numbers is: {sum}")
+    print(f"\nThe sum of all the numbers is: {sum_answer}")
 
     print("\nDone.")
 

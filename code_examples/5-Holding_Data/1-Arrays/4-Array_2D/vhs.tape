@@ -32,6 +32,15 @@ Sleep 1s
 Enter
 Sleep 2s
 
+Type "7"
+Sleep 1s
+Enter
+Sleep 2s
+
+Type "5"
+Sleep 1s
+Enter
+Sleep 2s
 
 # Ending
 Sleep 5s
