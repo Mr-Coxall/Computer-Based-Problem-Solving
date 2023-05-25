@@ -10,7 +10,7 @@
 
 // In C an array is passed by reference to a function
 //   (C can not know the size of the array, so you need to pass it in as well)
-int sumOfNumbers(int **arrayOfNumbers, int rows, int columns) {
+int sumOfNumbers(int rows, int columns, int arrayOfNumbers[rows][columns]) {
     // this function adds up all of the numbers in a 2D array
 
     int total = 0;
@@ -26,10 +26,10 @@ int sumOfNumbers(int **arrayOfNumbers, int rows, int columns) {
 }
 
 int main() {
-    // this function uses an array
+    // this function uses a 2D array
     const int rows = 7;
     const int columns = 5;
-    int numberList[7][5];
+    int number2DArray[rows][columns];
     int seed = time(NULL);
 
     // input
@@ -38,7 +38,7 @@ int main() {
     for (int row = 0; row < rows; row++) {
         for (int column = 0; column < columns; column++) {
             int aRandomNumber = rand() % 9;
-            numberList[row][column] = aRandomNumber;
+            number2DArray[row][column] = aRandomNumber;
             printf("%d ", aRandomNumber);
         }
         printf("\n");
@@ -46,8 +46,7 @@ int main() {
     printf("\n");
 
     // call function
-    //int lengthOfArray = sizeof(numberList) / sizeof(numberList[0]);
-    int sumNumbers = sumOfNumbers(numberList, rows, columns);
+    int sumNumbers = sumOfNumbers(rows, columns, number2DArray);
 
     // output
     printf("The sum of all the numbers is: %d\n", sumNumbers);
