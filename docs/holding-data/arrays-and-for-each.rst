@@ -7,8 +7,8 @@ If you think way back to when we did different types of looping structures, one 
 
 From the previous example of summing up all the values in an array, a For Each loop would look like the following:
 
-Code for Creating an Array
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Code for Using a For ... Each loop with an Array
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
   .. group-tab:: C
