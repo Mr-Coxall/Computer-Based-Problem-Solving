@@ -10,17 +10,15 @@
 
 // In C an array is passed by reference to a function
 //   (C can not know the size of the array, so you need to pass it in as well)
-int sumOfNumbers(int *arrayOfNumbers, int rows, int columns) {
+int sumOfNumbers(int **arrayOfNumbers, int rows, int columns) {
     // this function adds up all of the numbers in a 2D array
 
     int total = 0;
-    int counter = 0;
 
     // loop through 2D array and add all numbers together
     for (int rowCounter = 0; rowCounter < rows; rowCounter++) {
         for (int columnCounter = 0; columnCounter < columns; columnCounter++) {
-            total += *(arrayOfNumbers + counter);
-            counter++;
+            total += arrayOfNumbers[rowCounter][columnCounter];
         }
     }
 
