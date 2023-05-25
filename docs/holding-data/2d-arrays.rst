@@ -73,7 +73,7 @@ Code for Creating and using a 2D Array
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/4-Array_2D/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 13-22, 39
+        :emphasize-lines: 13-23, 29, 36-43, 45
 
 Example Output
 ^^^^^^^^^^^^^^
