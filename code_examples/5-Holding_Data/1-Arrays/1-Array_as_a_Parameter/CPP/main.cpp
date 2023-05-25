@@ -11,7 +11,7 @@
 
 // In C++, an array is passed by reference to a function
 // (template is used to find the length of the array)
-template<size_t arraySize>
+template<int arraySize>
 int sumOfNumbers(int (&arrayOfNumbers)[arraySize]) {
     // this function adds up all of the numbers in the array
 

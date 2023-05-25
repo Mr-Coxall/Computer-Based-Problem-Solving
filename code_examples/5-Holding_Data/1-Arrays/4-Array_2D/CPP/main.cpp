@@ -2,7 +2,7 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program uses an array as a parameter
+// This program uses a 2D array as a parameter
 
 #include <iostream>
 #include <cstdlib>
@@ -11,16 +11,17 @@
 
 // In C++, a 2D array is passed by reference to a function
 // (template is used to find the length of the array)
-template<size_t rows, size_t cols>
-int sumOfNumbers(int (&arrayOf2DNumbers)[rows][cols]) {
+template <int rows, int cols>
+int sumOfNumbers(int (&passedIn2DArray)[rows][cols]) {
     // this function adds up all of the numbers in a 2D array
 
     int total = 0;
     int counter = 0;
-    
-    for (int rowCounter : arrayOf2DNumbers) {
-        for (int columnCounter : rowCounter) {
-            total += columnCounter;
+
+    //adding up all of the numbers in a 2D array
+    for (int rowCounter = 0; rowCounter < rows; rowCounter++) {
+        for (int columnCounter = 0; columnCounter < cols; columnCounter++) {
+            total += passedIn2DArray[rowCounter][columnCounter];
         }
     }
 
@@ -29,7 +30,7 @@ int sumOfNumbers(int (&arrayOf2DNumbers)[rows][cols]) {
 
 int main() {
     // this function uses a 2D array
-    const int rows = 2;
+    const int rows = 3;
     const int columns = 5;
     int a2DArray[rows][columns];
     int aSingleRandomNumber = 0;
@@ -46,9 +47,9 @@ int main() {
 
     for (int rowElement = 0; rowElement < rows; rowElement++) {
         for (int columnElement = 0; columnElement < columns; columnElement++) {
-            aSingleRandomNumber = (rand() % 10) + 1;
+            aSingleRandomNumber = (rand() % 9) + 1;
             a2DArray[rowElement][columnElement] = aSingleRandomNumber;
-            std::cout << aSingleRandomNumber << ", ";
+            std::cout << aSingleRandomNumber << " ";
         }
         std::cout << std::endl;
     }
