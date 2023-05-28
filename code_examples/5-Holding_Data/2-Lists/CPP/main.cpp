@@ -5,7 +5,7 @@
 // This program program uses a list
 
 #include <iostream>
-#include <list>
+#include <list> // need this for Lists
 
 int main() {
     // this function uses a list
