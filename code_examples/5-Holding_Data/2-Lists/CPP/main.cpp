@@ -2,28 +2,39 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program checks for a runtime error
+// This program program uses a list
 
 #include <iostream>
-#include <string>
+#include <list>
 
 int main() {
-    // this function checks for a runtime error
-    std::string integerAsString;
+    // this function uses a list
+    std::list<std::string> words;
+    std::string tempWord = "temp";
+    std::list<std::string> reversedWords;
 
-    // Input
-    std::cout << "Enter an integer: ";
-    getline(std::cin, integerAsString);
+    // input
+    std::cout << "Please enter 1 word at a time. Enter 'S' to end.";
+    std::cout << "" << std::endl;
 
-    // Process & Output
-    try {
-        int integerAsNumber = stoi(integerAsString);
-        std::cout << "You entered: " << integerAsNumber << "." << std::endl;
+    while (!(toupper(tempWord[0]) == 'S') && !(tempWord.length() != 1)) {
+        std::cout << "Enter a word: ";
+        std::cin >> tempWord;
+        words.push_back(tempWord);
     }
-    catch (const std::invalid_argument &err) {
-        std::cout << "The error was: " << err.what() << "." << std::endl;
+
+    words.pop_back(); // remove the "Stop" that was added
+    std::cout << "" << std::endl;
+
+    // reversed words
+    for (std::string tempWord2 : words) {
+        reversedWords.push_front(tempWord2);
     }
-    std::cout << "Thanks for playing." << std::endl;
+
+    std::cout << "Here are the words reversed.:" << std::endl;
+    for (std::string tempWord3 : reversedWords) {
+        std::cout << tempWord3 << std::endl;
+    }
 
     std::cout << "\nDone." << std::endl;
 }

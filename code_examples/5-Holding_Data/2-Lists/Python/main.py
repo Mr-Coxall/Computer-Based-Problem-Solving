@@ -2,25 +2,31 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module checks for a runtime error
+This module program uses a list
 """
 
 
 def main() -> None:
-    """The main() this function checks for a runtime error, returns None."""
+    """The main() this function uses a list, returns None."""
 
     # input
-    integer_as_string = input("Enter an integer: ")
+    words = []
+    temp_word = "Go"
 
-    # process & output
-    try:
-        integer_as_number = int(integer_as_string)
-    except ValueError:
-        print(f"The error was {ValueError}.")
-    else:
-        print(f"You entered: {integer_as_number}.")
-    finally:
-        print("Thanks for playing.")
+    # input
+    print("Please enter 1 word at a time. Enter STOP to end.")
+
+    while temp_word.upper() != "STOP":
+        temp_word = input("Enter a word: ")
+        words.append(temp_word)
+
+    words.pop()  # remove the "Stop" that was added
+    print("")
+
+    print("Here are the words reversed:")
+    for _ in range(0, len(words)):
+        print(words.pop())
+
 
     print("\nDone.")
 
