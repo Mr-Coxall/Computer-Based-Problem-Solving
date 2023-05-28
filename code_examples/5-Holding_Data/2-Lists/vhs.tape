@@ -32,27 +32,32 @@ Sleep 1s
 Enter
 Sleep 2s
 
-Type "99"
+Type "Fred"
 Sleep 1s
 Enter
 Sleep 2s
 
-Type "88"
+Type "Cat"
 Sleep 1s
 Enter
 Sleep 2s
 
-Type "77"
+Type "Jane"
 Sleep 1s
 Enter
 Sleep 2s
 
-Type "66"
+Type "Dog"
 Sleep 1s
 Enter
 Sleep 2s
 
-Type "55"
+Type "42"
+Sleep 1s
+Enter
+Sleep 2s
+
+Type "Stop"
 Sleep 1s
 Enter
 Sleep 2s
