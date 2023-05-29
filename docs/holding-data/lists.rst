@@ -17,50 +17,48 @@ Code for Creating a List
     .. code-block:: C
       .. literalinclude:: ../../code_examples/5-Holding_Data/2-Lists/C/main.c
         :language: C
-        :linenos:
-        :emphasize-lines: 12, 16, 19-23, 27-29
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/5-Holding_Data/2-Lists/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 13, 17, 20-24, 28-30
+        :emphasize-lines: 8, 12, 14, 19-23, 25, 30-33
 
   .. group-tab:: C#
     .. code-block:: C#
       .. literalinclude:: ../../code_examples/5-Holding_Data/2-Lists/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 14, 18, 21-25, 30-32
+        :emphasize-lines: 7, 15, 20-24, 26, 30-33
 
   .. group-tab:: Go
     .. code-block:: Go
       .. literalinclude:: ../../code_examples/5-Holding_Data/2-Lists/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 16, 19, 22-26, 32-34
+        :emphasize-lines: 10, 16, 21-25, 27, 31-33
 
   .. group-tab:: Java
     .. code-block:: Java
       .. literalinclude:: ../../code_examples/5-Holding_Data/2-Lists/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 16, 20, 24-28, 32-34
+        :emphasize-lines: 10-11, 16, 22-26, 28, 32-34
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/5-Holding_Data/2-Lists/JavaScript/main.js
         :language: javascript
         :linenos:
-        :emphasize-lines: 8, 12, 15-18, 23-25
+        :emphasize-lines: 9, 14-17, 19, 23-25
 
   .. group-tab:: Python
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/5-Holding_Data/2-Lists/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 13, 19-21, 27-28
+        :emphasize-lines: 13, 19-21, 23, 27-28
 
 Example Output
 ^^^^^^^^^^^^^^
