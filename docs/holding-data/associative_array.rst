@@ -42,7 +42,7 @@ Code for Creating an Associative Array
       .. literalinclude:: ../../code_examples/5-Holding_Data/4-Associative_Array/CSharp/main.cs
         :language: C#
         :linenos:
-        :emphasize-lines: 7, 15, 20-24, 26, 30-33
+        :emphasize-lines: 7, 17-18, 20-25, 27-31, 34-36, 43-47
 
   .. group-tab:: Go
     .. code-block:: Go

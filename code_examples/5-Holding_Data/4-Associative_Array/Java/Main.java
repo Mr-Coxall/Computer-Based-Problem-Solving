@@ -1,5 +1,5 @@
 /*
- * This program uses a uses a map
+ * This program uses a map
  *
  * @author  Mr Coxall
  * @version 1.0
