@@ -13,8 +13,6 @@ import java.util.Map;
 public class Main {
   public static void main(String[] args) {
     // this function uses a uses a map
-
-    // this function uses a map
     String airportName;
 
     // an empty map

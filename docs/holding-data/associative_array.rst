@@ -56,7 +56,7 @@ Code for Creating an Associative Array
       .. literalinclude:: ../../code_examples/5-Holding_Data/4-Associative_Array/Java/Main.java
         :language: java
         :linenos:
-        :emphasize-lines: 10-11, 20-21, 23-27, 29-33, 36-38, 46-50
+        :emphasize-lines: 10-11, 18-19, 21-25, 27-31, 34-36, 44-48
 
   .. group-tab:: JavaScript
     .. code-block:: JavaScript
