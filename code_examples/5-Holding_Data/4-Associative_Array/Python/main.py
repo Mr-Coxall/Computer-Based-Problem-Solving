@@ -21,7 +21,6 @@ def main() -> None:
     airports['LHR'] = "London Heathrow"
 
     # input & process
-
     print("All the airports:")
     for key, value in airports.items():
         print(f"The airport code is {key} for {value}.")

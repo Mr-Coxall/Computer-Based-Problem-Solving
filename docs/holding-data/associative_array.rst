@@ -70,7 +70,7 @@ Code for Creating an Associative Array
       .. literalinclude:: ../../code_examples/5-Holding_Data/4-Associative_Array/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 12-15, 17-21, 26-27, 31-34
+        :emphasize-lines: 12-15, 17-21, 25-26, 30-33
 
 Example Output
 ^^^^^^^^^^^^^^
