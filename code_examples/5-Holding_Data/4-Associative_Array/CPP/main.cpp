@@ -2,13 +2,13 @@
 //
 // Created by: Mr. Coxall
 // Created on: Sep 2020
-// This program uses an associative array
+// This program uses a map
 
 #include <iostream>
 #include <map>
 
 int main() {
-    // this function uses an associative array
+    // this function uses a map
     std::string airportName = "";
 
     // an empty map

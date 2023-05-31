@@ -1,7 +1,7 @@
 /**
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program uses a nested if statement
+ * This program uses a map
  */
 
 package main
@@ -11,24 +11,42 @@ import (
 )
 
 func main() {
-	// this function uses a nested if statement
+	// this function uses a map
 
-	var cookiesSold int
+	var airportName string
 
-	// input
-	fmt.Print("Enter the number of boxes of cookies you sold: ")
-	fmt.Scan(&cookiesSold)
+	// an empty map
+	airports := make(map[string]string)
+
+	/*
+	// a map filled with data
+	someInfo := map[byte]int{
+		'a': 1,
+		'b': 2,
+		'c': 3,
+	}
+	*/
+
+	// adding items
+	airports["YYZ"] = "Toronto Pearson"
+	airports["YOW"] = "Ottawa Canada"
+	airports["DUB"] = "Dublin Ireland"
+	airports["LHR"] = "London Heathrow"
+
+	fmt.Println("All the airports:")
+	for code, name := range airports {
+		fmt.Printf("The airport code is %s for %s\n", code, name)
+	}
 	fmt.Println()
 
-	// process & output
-	if cookiesSold >= 20 {
-		if cookiesSold < 30 {
-			fmt.Println("You get a small prize.")
-		} else {
-			fmt.Println("You get a large prize.")
-		}
+	fmt.Print("Type in an airport code: ")
+	fmt.Scanln(&airportName)
+	fmt.Println()
+
+	if name, ok := airports[airportName]; ok {
+		fmt.Println("The name of the airport you chose is", name)
 	} else {
-		fmt.Println("No prize.")
+		fmt.Println("That airport is not in the airport's dictionary.")
 	}
 
 	fmt.Println("\nDone.")

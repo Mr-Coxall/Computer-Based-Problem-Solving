@@ -49,7 +49,7 @@ Code for Creating an Associative Array
       .. literalinclude:: ../../code_examples/5-Holding_Data/4-Associative_Array/Go/main.go
         :language: go
         :linenos:
-        :emphasize-lines: 10, 16, 21-25, 27, 31-33
+        :emphasize-lines: 18-19, 22-27, 30-34, 37-39, 46-50
 
   .. group-tab:: Java
     .. code-block:: Java
