@@ -7,7 +7,7 @@ This module uses an associative array
 
 
 def main() -> None:
-    """The main() this function function uses an associative array, returns None."""
+    """The main() this function uses an associative array, returns None."""
 
     airports = {}
     some_info = {'item1': 1,
