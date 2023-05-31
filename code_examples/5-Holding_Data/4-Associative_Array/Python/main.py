@@ -2,25 +2,36 @@
 """
 Created by: Mr. Coxall
 Created on: Sep 2020
-This module uses a nested if statement
+This module uses an associative array
 """
 
 
 def main() -> None:
-    """The main() this function uses a nested if statement, returns None."""
+    """The main() this function function uses an associative array, returns None."""
 
-    # input
-    cookies_sold = int(input("Enter the number of boxes of cookies you sold: "))
+    airports = {}
+    some_info = {'item1': 1,
+                'item2': 2,
+                }
+
+    # adding items
+    airports['YYZ'] = "Toronto Pearson"
+    airports['YOW'] = "Ottawa Canada"
+    airports['DUB'] = "Dublin Ireland"
+    airports['LHR'] = "London Heathrow"
+
+    # input & process
+
+    print("All the airports:")
+    for key, value in airports.items():
+        print(f"The airport code is {key} for {value}.")
     print("")
 
-    # process & output
-    if cookies_sold >= 20:
-        if cookies_sold < 30:
-            print("You get a small prize.")
-        else:
-            print("You get a large prize.")
+    airport_name = input("Type in an airport code: ")
+    if airport_name in airports:
+        print(f"The name of the airport you chose is {airports[airport_name]}.")
     else:
-        print("No prize.")
+        print("That airport is not in the airport's dictionary.")
 
     print("\nDone.")
 
