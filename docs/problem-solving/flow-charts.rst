@@ -12,7 +12,7 @@ A flow-chart is a set of different shapes that each represent a certain type of 
    :alt: flow-chart symbols
    :align: center
 
-Here is an example of a flowchart for a none-computer based problem:
+Here is an example of a flowchart for a non-computer based problem:
 
 .. image:: ./images/flowchart-example.png
    :width: 250 px

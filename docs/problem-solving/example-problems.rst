@@ -3,7 +3,7 @@
 Example Problems
 ================
 
-Here are some examples of problems and a possible solution using the six step method. Note that these problems are not necessarily problems that you would use a computer to help you solve. This is an important thing to remember, not all problems should be solved with a computer. Although this book is about solving problems using a computer, there are many problems that are better solved not using a computer and that is perfectly OK. Sometimes your job as a programmer might be to identify that you should not be solving the problem on a computer. Latter on these six steps will be translated into six step used to solve problems that a programmer can use.
+Here are some examples of problems and a possible solution using the six step method. Note that these problems are not necessarily problems that you would use a computer to help you solve. This is an important thing to remember, not all problems should be solved with a computer. Although this book is about solving problems using a computer, there are many problems that are better solved not using a computer and that is perfectly OK. Sometimes your job as a programmer might be to identify that you should not be solving the problem on a computer. Later on these six steps will be translated into six steps used to solve problems that a programmer can use.
 
 Folding Paper
 -------------
@@ -48,7 +48,7 @@ The Salmon Swimming
 
 1) What is the problem?
 ^^^^^^^^^^^^^^^^^^^^^^^
-The first thing that should be asked is, does the fish swim up stream 3 km during the day and fall back 2 km at night or does she swim continuously all day and would go 3 km if it was not for the 2 km current so she only ever gets 1 km? Once again you will have to go back to the source of the problem to find out. We will say she swims 3 km during the day and then drifts back 2 km at night.
+The first thing that should be asked is, does the fish swim up stream 3 km during the day and fall back 2 km at night or does she swim continuously all day and would only go 3 km? Once again you will have to go back to the source of the problem to find out. We will say she swims 3 km during the day and then drifts back 2 km at night.
 
 2) Make a model.
 ^^^^^^^^^^^^^^^^
@@ -90,4 +90,4 @@ It is always important to check your solution. In this case since our solution c
 ^^^^^^^^^^^^^^^^^^^^^^^^
 Now that you have proven that the answer is 98 days, make sure you document it, so that someone else does not have to figure it out but can just refer to your answer and check your solution.
 
-Remember not to always go with your gut instinct and think because it is following a patter you know the answer instantly without following through with the steps. Do all six steps and always check your answer.
+Remember not to always go with your gut instinct and think because it is following a pattern you know the answer instantly without following through with the steps. Do all six steps and always check your answer.
