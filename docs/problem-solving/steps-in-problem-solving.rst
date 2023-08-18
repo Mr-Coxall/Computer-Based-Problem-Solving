@@ -45,7 +45,7 @@ Here are things to remember:
 
 Find the Solution
 -----------------
-The hard part is now to find a solution. Hopefully you are well on your way by doing the above three steps. Can you find a pattern? Do you know the solution to one of the pieces? Can you find the solution somewhere (internet!)? In the world of programming there are book call, `Patterns and Practices <https://en.wikipedia.org/wiki/Software_design_pattern>`_, that are full of common problems and their solutions. Once you have all your solutions, the next step is to bring them all together to a final overall solution to the original problem.  
+The hard part is now to find a solution. Hopefully you are well on your way by doing the above three steps. Can you find a pattern? Do you know the solution to one of the pieces? Can you find the solution somewhere (internet!)? In the world of programming there are books like, `Patterns and Practices <https://en.wikipedia.org/wiki/Software_design_pattern>`_, that are full of common problems and their solutions. Once you have all your solutions, the next step is to bring them all together to a final overall solution to the original problem.  
 Here are things to remember:
 
 * Find a solution to each piece of the problem.
