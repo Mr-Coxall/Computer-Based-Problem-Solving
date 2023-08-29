@@ -5,7 +5,7 @@ Select Case
 
 As you have seen from the If…Elseif…Elseif…Else statement, when there are many choices, the structure can be hard to follow. Some programming languages have an alternative structure when this happens. The Select Case or Switch Case statement is also a decision structure that is sometimes preferred because code might be easier to read and understand, by people. 
 
-The Select Case structure takes a variable and then compares it to a list of expressions. The first expressions that is evaluated as “True” is executed and the remaining of the select case structure is skipped over, just like an If…ElseIf… statement (but not in all languages!). There are several different ways to create your expression. You can just use a value (a single digit for example and then it does an equal comparison), several digits, a range or having a regular expression. Just like the If structure, there is an optional “Else” that can be placed at the end as a catch all. The general form of a Select…Case statement (in most computer programming languages) takes the generic form of:
+The Select Case structure takes a variable and then compares it to a list of expressions. The first expressions that is evaluated as, “True” is executed and the remaining of the select case structure is skipped over, just like an If…ElseIf… statement (but not in all languages!). There are several different ways to create your expression. You can just use a value (a single digit for example and then it does an equal comparison), several digits, a range or having a regular expression. Just like the If structure, there is an optional “Else” that can be placed at the end as a catch all. The general form of a Select…Case statement (in most computer programming languages), takes the generic form of:
 
 | **SELECT** (variable)
 |       **CASE** valueOne
@@ -21,19 +21,19 @@ The Select Case structure takes a variable and then compares it to a list of exp
 In this example program, the user enters in a grade letter. The letter grades are A, B, C, D & F. The computer will tell you if you are doing well, average or poorly. If the user enters in a grade that is not A, B, C, D or F, the computer will tell you that you have entered in an invalid grade.
 
 Top-Down Design for Select Case statement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/top-down-select-case.png
-   :alt: Top-Down Design for Select Case statement
-   :align: center
+    :alt: Top-Down Design for Select Case statement
+    :align: center
 
 Flowchart for Select Case statement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/flowchart-select-case.png
-   :alt: Select Case flowchart
-   :align: center
+    :alt: Select Case flowchart
+    :align: center
 
 Pseudocode for Select Case statement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | **GET** grade
 | **SELECT** (grade)
 |       **CASE** "A"
@@ -50,7 +50,7 @@ Pseudocode for Select Case statement
 |           **SHOW** "Invalid grade."
 
 Code for Select Case statement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. tabs::
 
   .. group-tab:: C
@@ -105,5 +105,5 @@ Code for Select Case statement
 Example Output
 ^^^^^^^^^^^^^^
 .. image:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/vhs.gif
-   :alt: Code example output
-   :align: left
+    :alt: Code example output
+    :align: left

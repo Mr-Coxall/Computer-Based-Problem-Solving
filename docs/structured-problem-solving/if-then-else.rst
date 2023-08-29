@@ -3,9 +3,9 @@
 If…Then…Else
 ============
 
-In the previous section we looked at the If…Then statement that is used for making a decision. When used a section of code is either performed or not performed, depending if the boolean statement is true or false. In some situations, if the statement is false and the section of code is not performed you would like an **alternative** piece of code to be performed instead. In this case an optional Else statement can be used. The If…Then…Else statement (in most computer programming languages) takes the generic form of:
+In the previous section we looked at the If…Then statement that is used for making a decision. When using the If…Then statement a section of code is performed only if the Boolean statement is true. If the Boolean statement is false, nothing happens. In some situations, if the Boolean statement is false and the section of code is not performed, you would like an **alternative** piece of code to be performed instead. In this case an optional Else statement can be used. The If…Then…Else statement (in most computer programming languages), takes the generic form of:
 
-| **IF** (boolean expression) **THEN** 
+| **IF** (Boolean expression) **THEN** 
 |    statements to be performed ...
 | **ELSE**
 |    alternate statements to be performed ...
@@ -16,16 +16,16 @@ In the previous example of asking the user how many students were in the class, 
 An example of what this would look like using an If .. Then .. Else statement is shown below:
 
 Top-Down Design for If…Then...Else statement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/top-down-if-then-else.png
-   :alt: Top-Down Design for If…Then...Else statement
-   :align: center
+    :alt: Top-Down Design for If…Then...Else statement
+    :align: center
 
 Flowchart for If…Then...Else statement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/flowchart-if-then-else.png
-   :alt: If…Then...Else flowchart
-   :align: center
+    :alt: If…Then...Else flowchart
+    :align: center
 
 Pseudocode for If…Then...Else statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -108,5 +108,5 @@ Code for If…Then...Else statement
 Example Output
 ^^^^^^^^^^^^^^
 .. image:: ../../code_examples/3-Structured_Problem_Solving/7-If_Then_Else/vhs.gif
-   :alt: Code example output
-   :align: left
+    :alt: Code example output
+    :align: left

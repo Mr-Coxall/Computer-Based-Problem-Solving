@@ -15,19 +15,19 @@ The Do…While loop (in most computer programming languages) takes the generic f
 |     counter = counter + 1
 | **WHILE** (boolean expression)
 
-In this example program once again the user is asked to enter a posative integer and the program will count how many times it goes through the loop until it reaches that number. This time a Do…While loop is used.
+In this example program once again the user is asked to enter a positive integer and the program will count how many times it goes through the loop until it reaches that number. This time a Do…While loop is used.
 
 Top-Down Design for Do…While loop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/top-down-do-while-loop.png
-   :alt: Top-Down Design for Do…While loop
-   :align: center
+    :alt: Top-Down Design for Do…While loop
+    :align: center
 
 Flowchart for Do…While loop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/flowchart-do-while-loop.png
-   :alt: Do…While loop flowchart
-   :align: center
+    :alt: Do…While loop flowchart
+    :align: center
 
 Pseudocode for Do…While loop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -93,5 +93,5 @@ Code for Do…While loop
 Example Output
 ^^^^^^^^^^^^^^
 .. image:: ../../code_examples/3-Structured_Problem_Solving/14-Do_While_Loop/vhs.gif
-   :alt: Code example output
-   :align: left
+    :alt: Code example output
+    :align: left

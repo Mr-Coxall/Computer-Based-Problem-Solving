@@ -3,12 +3,12 @@
 Loops and If Statements
 =======================
 
-As you can probably guess from now, yes you can place loops inside if statements and if statements inside loops. 
+As you can probably guess by now, yes you can place loops inside if statements and if statements inside loops. 
 
-An if statement inside a loop would (in most computer programming languages) take the generic form of:
+An if statement inside a loop would (in most computer programming languages), take the generic form of:
 
 | **FOR** counter in range(n)
-|     **IF** (boolean expression) **THEN** 
+|     **IF** (Boolean expression) **THEN** 
 |         Statements to be performed
 |     **ENDIF**
 | **END** 
@@ -16,7 +16,7 @@ An if statement inside a loop would (in most computer programming languages) tak
 or using While loops:
 
 | **WHILE** counter1 <= n :
-|     **IF** (boolean expression) **THEN** 
+|     **IF** (Boolean expression) **THEN** 
 |         Statements to be performed
 |     **ENDIF**
 |     ...
@@ -31,14 +31,14 @@ The task is:
 Top-Down Design for Loops and If Statements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/top-down-loops-and-if-statements.png
-   :alt: Top-Down Design for Nested Loops
-   :align: center
+    :alt: Top-Down Design for Nested Loops
+    :align: center
 
 Flowchart for Loops and If Statements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/flowchart-loops-and-if-statements.png
-   :alt: for Nested Loops flowchart
-   :align: center
+    :alt: for Nested Loops flowchart
+    :align: center
 
 Pseudocode for Loops and If Statements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -97,5 +97,5 @@ Code for the Loops and If Statements
 Example Output
 ^^^^^^^^^^^^^^
 .. image:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/vhs.gif
-   :alt: Code example output
-   :align: left
+    :alt: Code example output
+    :align: left

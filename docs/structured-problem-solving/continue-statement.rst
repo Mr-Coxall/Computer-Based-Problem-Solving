@@ -3,14 +3,14 @@
 Continue Statement
 ==================
 
-The `Continue Statement <https://en.wikipedia.org/wiki/Control_flow#Continuation_with_next_iteration>`_ gives you the option to skip over the part of a loop where an external condition is triggered, but to go on to complete the rest of the loop iterations. That is, the current iteration of the loop will be disrupted, but the program will return to the top of the loop. The continue statement will be within the block of code under the loop statement, usually after a conditional if statement.
+The `Continue statement <https://en.wikipedia.org/wiki/Control_flow#Continuation_with_next_iteration>`_ gives you the option to skip over the part of a loop where an external condition is triggered, but to go on to complete the rest of the loop iterations. That is, the current iteration of the loop will be disrupted, but the program will return to the top of the loop. The Continue statement will be within the block of code under the Loop statement, usually after a conditional if statement.
 
-The continue statement (in most computer programming languages) takes the generic form of:
+The continue statement (in most computer programming languages), takes the generic form of:
 
-| **WHILE** bolean expression
+| **WHILE** Boolean expression
 |     statement_1 
 |     ...
-|     **IF** bolean expression **THEN**
+|     **IF** Boolean expression **THEN**
 |         **CONTINUE**
 |     **ENDIF**
 |     statement_2
@@ -21,7 +21,7 @@ The continue statement (in most computer programming languages) takes the generi
 | **FOR** counter in range(n)
 |     statement_1
 |     ...
-|     **IF** bolean expression **THEN**
+|     **IF** Boolean expression **THEN**
 |         **CONTINUE**
 |     **ENDIF**
 |     statement_2
@@ -33,14 +33,14 @@ In this example program, the user is asked to enter a positive integer and the p
 Top-Down Design for the Continue Statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/top-down-continue.png
-   :alt: Top-Down Design for Continue Statement
-   :align: center
+    :alt: Top-Down Design for Continue Statement
+    :align: center
 
 Flowchart for the Continue Statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/flowchart-continue.png
-   :alt: Continue Statement flowchart
-   :align: center
+    :alt: Continue Statement flowchart
+    :align: center
 
 Pseudocode for the Continue Statement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -109,5 +109,5 @@ Code for the Continue Statement
 Example Output
 ^^^^^^^^^^^^^^
 .. image:: ../../code_examples/3-Structured_Problem_Solving/17-Continue/vhs.gif
-   :alt: Code example output
-   :align: left
+    :alt: Code example output
+    :align: left

@@ -3,9 +3,9 @@
 Nested Loops
 ============
 
-The placing of one loop inside the body of another loop is called nesting. When you "nest" two loops, the outer loop takes control of the number of complete repetitions of the inner loop. How this works is that the first pass of the outer loop triggers the inner loop, which executes to completion. Then the second pass of the outer loop triggers the inner loop again. This repeats until the outer loop finishes. 
+The placing of one loop inside the body of another loop is called nesting. When you, "nest" two loops, the outer loop takes control of the number of complete repetitions of the inner loop. How this works is that the first pass of the outer loop triggers the inner loop, which executes to completion. Then the second pass of the outer loop triggers the inner loop again. This repeats until the outer loop finishes. 
 
-A Nested for loop (in most computer programming languages) takes the generic form of:
+A Nested for loop (in most computer programming languages), takes the generic form of:
 
 | **FOR** counter1 in range(n)
 |     **FOR** counter2 in range(m)
@@ -27,19 +27,19 @@ or using While loops:
 |     counter1 = counter1 + 1
 | **END**
 
-In this example program, the output shows a 2 digit odometer, using a nested loop.
+In this example program, the output shows a 2 digit odometer, using a Nested loop.
 
 Top-Down Design for Nested loops
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/top-down-nested-loops.png
-   :alt: Top-Down Design for Nested Loops
-   :align: center
+    :alt: Top-Down Design for Nested Loops
+    :align: center
 
 Flowchart for Nested loops
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: ./images/flowchart-nested-loops.png
-   :alt: for Nested Loops flowchart
-   :align: center
+    :alt: for Nested Loops flowchart
+    :align: center
 
 Pseudocode for Nested loops
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -105,5 +105,5 @@ Code for the Nested loops
 Example Output
 ^^^^^^^^^^^^^^
 .. image:: ../../code_examples/3-Structured_Problem_Solving/18-Nested_Loops/vhs.gif
-   :alt: Code example output
-   :align: left
+    :alt: Code example output
+    :align: left
