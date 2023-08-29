@@ -5,7 +5,8 @@ Created on: Sep 2020
 This module uses a function by reference
 """
 
-def add_one(someVariable: int) -> None:
+
+def add_one(someVariable: List[int]) -> None:
     """The add_one() function adds 1, by reference, returns str."""
     # in python the only way to pass by reference is to pass the whole list
 

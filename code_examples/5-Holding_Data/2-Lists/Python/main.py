@@ -27,7 +27,6 @@ def main() -> None:
     for _ in range(0, len(words)):
         print(words.pop())
 
-
     print("\nDone.")
 
 

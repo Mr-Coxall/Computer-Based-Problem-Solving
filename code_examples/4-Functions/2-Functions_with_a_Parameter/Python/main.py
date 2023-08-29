@@ -7,6 +7,7 @@ This module calculates the area of circle
 
 import math
 
+
 def calculate_area(radius: int) -> None:
     """The calculate_area() function calculates the area of circle, returns None."""
 
