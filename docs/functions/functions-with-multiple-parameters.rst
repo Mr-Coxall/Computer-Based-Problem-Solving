@@ -9,7 +9,7 @@ Fortunately you can pass multiple parameters into a function. The thing to remem
 
 Since people are not always great at keeping things in order, many programming languages (`but not all <https://en.wikipedia.org/wiki/Named_parameter#:~:text=Named%20parameters%20are%20supported%20explicitly,Smalltalk%2C%20Swift%20and%20Visual%20Basic.>`_) let you pass multiple parameters to functions using "parameteres by keyword". This means that you actually give each parameter a name and then refer to this name when you are passing the values to the function, so there is no confusion about what value is going where.
 
-In the example below, I have a function that can calculate the area of a rectangle. Is is important to keep all two (2) parameters organzied, or you will not get the correct answer. To do this each parameter will be use named parameters (if possible):
+In the example below, I have a function that can calculate the area of a rectangle. Is is important to keep all two (2) parameters organzied, or you will not get the correct answer. To do this each parameter will use named parameters (if possible):
 
 Code for Function with Multiple Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -67,5 +67,5 @@ Code for Function with Multiple Parameters
 Example Output
 ^^^^^^^^^^^^^^
 .. image:: ../../code_examples/4-Functions/4-Functions_with_Multiple_Parameters/vhs.gif
-   :alt: Code example output
-   :align: left
+    :alt: Code example output
+    :align: left

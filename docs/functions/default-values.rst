@@ -3,7 +3,7 @@
 Default Values
 ==============
 
-All of the functions that we have looked at to this point, you had to ensure that you were sending the exact same number of parameters to the function as it was expecting. To help us do this a good IDE will have "auto-complete" giving us a little pop out window to show us what should be passed over to the function.
+All of the functions that we have looked at to this point, you had to ensure that you were sending the exact same number of parameters to the function as it was expecting. To help us do this a good IDE will have, "auto-complete" giving us a little pop out window to show us what should be passed over to the function.
 
 Some built in functions we have been using can be accessed in multiple different ways though. For example in Python there is a built in function called random.randrange(). It is kind of like random.ranint() that we have used in the past. Here is the definition for random.ranint():
 
@@ -26,13 +26,13 @@ First off there is actually 2 seperate ways we could call this function:
 - random.randrange(start, stop)
 - random.randrange(start, stop, step)
 
-It seems that step is "optional", which it is. By default, if you do not provide it, then python assumes the value is just 1. You can choose for example to place in a 2, and then only even numbers will be chosen. Here is how we would define the function random.randrange() to get this optional parameter:
+It seems that *step* is, "optional" which it is. By default, if you do not provide it, then python assumes the value is just 1. You can choose for example to place in a 2, and then only even numbers will be chosen. Here is how we would define the function random.randrange() to get this optional parameter:
 
 .. code-block:: python
 
 	def randrange(start, stop, step = 1):
 
-Notice that right in the declaration of the function, the "default optional parameter" is being set. If it is not provided as a parameter, the default value is just used. Each programming language has its own syntax to make this kind of optional parameter work. Here is an example:
+Notice that right in the declaration of the function the, "default optional parameter" is being set. If it is not provided as a parameter, the default value is just used. Each programming language has its own syntax to make this kind of optional parameter work. Here is an example:
 
 Code for Function with Default Values
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -88,5 +88,5 @@ Code for Function with Default Values
 Example Output
 ^^^^^^^^^^^^^^
 .. image:: ../../code_examples/4-Functions/5-Default_Values/vhs.gif
-   :alt: Code example output
-   :align: left
+    :alt: Code example output
+    :align: left

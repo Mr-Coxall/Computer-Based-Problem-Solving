@@ -3,7 +3,7 @@
 Understanding Functions
 =======================
 
-A `Subroutine <https://en.wikipedia.org/wiki/Subroutine>`_ or what we will just refer to as a function is a block of code written to perform a specific task. We have actually been using functions all along our programming journey so far and you probably have not even notices. Many functions are built into most programming languages, like the print() function for example. In python we usually placing our code in main(), which is a function. In C, C++ or Java the compiler looks for the main() function to start running its program. You can also create functions to do specific calculations, like converting temperature from Celsius to Fahrenheit for example. This type of conversion is very common and we might want to use it in another program (re-usability is very important in programming; why re-invent the wheel, just use someone else's code, as long as you can trust that it will work!).
+A `Subroutine <https://en.wikipedia.org/wiki/Subroutine>`_ or what we will just refer to as a function is a block of code written to perform a specific task. We have actually been using functions all along our programming journey so far and you probably have not even noticed. Many functions are built into most programming languages, like the print() function for example. In python we usually place our code in main(), which is a function. In C, C++ or Java the compiler looks for the main() function to start running the program. You can also create functions to do specific calculations, like converting temperature from Celsius to Fahrenheit for example. This type of conversion is very common and we might want to use it in another program (re-usability is very important in programming; why re-invent the wheel, just use someone else's code, as long as you can trust that it will work!).
 
 Functions need to have two (2) seperate mechanisms to work correctly. You need a way to create the function in your program and you also need a way to then "call" the function and get the code inside of it to run. Although not normally needed for the computer, we usually place the function definition before we call the function, so that when people are actually reading the code they have seen the function definition and know what it will do *before* they see it being called.
 
@@ -76,5 +76,5 @@ Code for Creating and Calling a Function
 Example Output
 ^^^^^^^^^^^^^^
 .. image:: ../../code_examples/4-Functions/1-Understanding_Functions/vhs.gif
-   :alt: Code example output
-   :align: left
+    :alt: Code example output
+    :align: left
