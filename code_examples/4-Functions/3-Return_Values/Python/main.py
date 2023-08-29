@@ -8,7 +8,7 @@ This module calculates the area of circle
 import math
 
 def calculate_area(radius: int) -> float:
-    """The calculate_area() function calculates the area of circle, returns None."""
+    """The calculate_area() function calculates the area of circle, returns float."""
 
     # process
     area = math.pi * radius ** 2

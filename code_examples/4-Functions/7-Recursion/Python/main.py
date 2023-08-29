@@ -7,7 +7,7 @@ This module calculates factorial
 
 
 def factorial(number: int) -> int:
-    """ a recursive function that returns the factorial of a number"""
+    """ A recursive function that returns the factorial of a number"""
     if number == 1:
         return 1
     else:
