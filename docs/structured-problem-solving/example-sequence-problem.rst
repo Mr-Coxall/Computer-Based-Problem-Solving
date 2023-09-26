@@ -80,6 +80,15 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 
   .. group-tab:: Python
     .. code-block:: Python
+
+      constants.py
+
+      .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/5-Example_Sequence/Python/constants.py
+        :language: python
+        :linenos:
+
+      main.py
+
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/5-Example_Sequence/Python/main.py
         :language: python
         :linenos:
