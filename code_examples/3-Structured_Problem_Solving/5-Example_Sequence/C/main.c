@@ -5,7 +5,6 @@
 // This program calculates total from subtotal and tax
 
 #include <stdio.h>
-#include <math.h>
 
 int main() {
     // this function calculates total from subtotal and tax
