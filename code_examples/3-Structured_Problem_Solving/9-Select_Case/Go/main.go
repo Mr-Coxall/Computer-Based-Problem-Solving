@@ -22,18 +22,18 @@ func main() {
 
 	// process and output
 	switch strings.ToUpper(grade) {
-	case "A":
-		fmt.Println("Excellent!")
-	case "B":
-		fmt.Println("Good job!")
-	case "C":
-		fmt.Println("Average.")
-	case "D":
-		fmt.Println("Poor.")
-	case "F":
-		fmt.Println("Fail.")
-	default:
-		fmt.Println("Invalid grade.")
+		case "A":
+			fmt.Println("Excellent!")
+		case "B":
+			fmt.Println("Good job!")
+		case "C":
+			fmt.Println("Average.")
+		case "D":
+			fmt.Println("Poor.")
+		case "F":
+			fmt.Println("Fail.")
+		default:
+			fmt.Println("Invalid grade.")
 	}
 
 	fmt.Println("\nDone.")

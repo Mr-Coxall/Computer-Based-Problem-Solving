@@ -20,23 +20,23 @@ int main() {
     // also note you need the break in C++ or it will move to next
     // line in switch statement if it is true again
     switch (toupper(gradeLevel)) {
-    case 'A':
-        std::cout << "Excellent!" << std::endl;
-        break;
-    case 'B':
-        std::cout << "Good job!" << std::endl;
-        break;
-    case 'C':
-        std::cout << "Average." << std::endl;
-        break;
-    case 'D':
-        std::cout << "Poor." << std::endl;
-        break;
-    case 'F':
-        std::cout << "Fail." << std::endl;
-        break;
-    default:
-        std::cout << "Invalid grade." << std::endl;
+        case 'A':
+            std::cout << "Excellent!" << std::endl;
+            break;
+        case 'B':
+            std::cout << "Good job!" << std::endl;
+            break;
+        case 'C':
+            std::cout << "Average." << std::endl;
+            break;
+        case 'D':
+            std::cout << "Poor." << std::endl;
+            break;
+        case 'F':
+            std::cout << "Fail." << std::endl;
+            break;
+        default:
+            std::cout << "Invalid grade." << std::endl;
     }
 
     std::cout << "\nDone." << std::endl;

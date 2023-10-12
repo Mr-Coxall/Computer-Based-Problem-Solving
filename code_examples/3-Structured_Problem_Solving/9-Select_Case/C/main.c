@@ -19,23 +19,23 @@ int main() {
     // Note you need the break in C or it will move to next
     // line in switch statement if it is true again
     switch (toupper(gradeLevel)) {
-    case 'A':
-        printf("Excellent!\n");
-        break;
-    case 'B':
-        printf("Good job!\n");
-        break;
-    case 'C':
-        printf("Average.\n");
-        break;
-    case 'D':
-        printf("Poor.\n");
-        break;
-    case 'F':
-        printf("Fail.\n");
-        break;
-    default:
-        printf("Invalid grade.\n");
+        case 'A':
+            printf("Excellent!\n");
+            break;
+        case 'B':
+            printf("Good job!\n");
+            break;
+        case 'C':
+            printf("Average.\n");
+            break;
+        case 'D':
+            printf("Poor.\n");
+            break;
+        case 'F':
+            printf("Fail.\n");
+            break;
+        default:
+            printf("Invalid grade.\n");
     }
 
     printf("\nDone.\n");
