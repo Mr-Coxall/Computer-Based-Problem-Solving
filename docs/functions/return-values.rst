@@ -157,7 +157,7 @@ Now that we know how to use a return statement, we should no longer print out re
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 10-16, 27
+        :emphasize-lines: 10-17, 27
 
 Example Output
 ^^^^^^^^^^^^^^
