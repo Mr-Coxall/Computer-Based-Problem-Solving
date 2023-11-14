@@ -104,7 +104,7 @@ You will notice that the function is now on the right hand side of an assignment
     .. code-block:: Python
       .. literalinclude:: ../../code_examples/4-Functions/3-Return_Values/Python/main.py
         :language: python
-        :lines: 10-16
+        :lines: 10-17
 
 Now that we know how to use a return statement, we should no longer print out results inside a function like in the last few chapters. It is much better style to retrun the value from a function and let the calling process decide what to do with it. Here is the example from last section, this time using return values:
 
