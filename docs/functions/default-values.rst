@@ -83,7 +83,7 @@ Code for Function with Default Values
       .. literalinclude:: ../../code_examples/4-Functions/5-Default_Values/Python/main.py
         :language: python
         :linenos:
-        :emphasize-lines: 8-17, 33, 35
+        :emphasize-lines: 9-18, 34, 36
 
 Example Output
 ^^^^^^^^^^^^^^
