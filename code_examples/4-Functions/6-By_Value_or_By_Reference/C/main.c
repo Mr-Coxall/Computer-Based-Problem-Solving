@@ -8,7 +8,7 @@
 
 void addOne(int *someNumber) {
     // this function adds one by reference
-    someNumber = someNumber + 1;
+    (*someNumber)++;
 }
 
 int main() {
