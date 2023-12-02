@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-// in C you must pass in the size of the array to a function
+// in C you must pass in the size of the 2D array to a function, first
 int sumOfNumbers(int lengthOfArray, int widthOfArray, int arrayOfNumbers[lengthOfArray][widthOfArray]) {
     // this function adds up all of the numbers in the list
 
