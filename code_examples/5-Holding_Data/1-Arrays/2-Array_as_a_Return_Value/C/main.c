@@ -8,16 +8,18 @@
 #include <stdlib.h>
 #include <time.h>
 
-// in C an array is passed by reference to a function
-int sumOfNumbers(int arrayOfNumbers[]) {
+// in C you must pass in the size of the array to a function
+int sumOfNumbers(int lengthOfArray, int widthOfArray, int arrayOfNumbers[lengthOfArray][widthOfArray]) {
     // this function adds up all of the numbers in the list
 
     int total = 0;
-    int counter;
-    int lengthOfArray = sizeof(arrayOfNumbers) / sizeof(arrayOfNumbers[0]);
+    int counterLength;
+    int counterWidth;
 
-    for (counter = 0; counter < lengthOfArray; counter++) {
-        total += arrayOfNumbers[counter];
+    for (counterLength = 0; counterLength < lengthOfArray; counterLength++) {
+        for (counterWidth = 0; counterWidth < widthOfArray; counterWidth++) {
+            total += arrayOfNumbers[counterLength][counterWidth];
+        }
     }
 
     return total;
@@ -25,20 +27,25 @@ int sumOfNumbers(int arrayOfNumbers[]) {
 
 int main() {
     // this function uses an array
-    int numberList[10];
+    // remember in C you must know the array size at compile time
+    const int lengthOfArray = 10;
+    const int widthOfArray = 5;
+    int numberList[lengthOfArray][widthOfArray];
     int seed = time(NULL);
 
     // input
-    for (int counter = 0; counter < 10; counter++) {
-        srand(seed);
-        int aSingleRandomNumber = rand_r(&seed) % 100;
-        numberList[counter] = aSingleRandomNumber;
-        printf("The random number is: %d\n", aSingleRandomNumber);
+    srand(seed);
+    for (int counter1 = 0; counter1 < lengthOfArray; counter1++) {
+        for (int counter2 = 0; counter2 < widthOfArray; counter2++) {
+            int aSingleRandomNumber = rand_r(&seed) % 100;
+            numberList[counter1][counter2] = aSingleRandomNumber;
+            printf("The random number is: %d\n", aSingleRandomNumber);
+        }
     }
     printf("\n");
 
     // call function
-    int sum = sumOfNumbers(numberList);
+    int sum = sumOfNumbers(lengthOfArray, widthOfArray, numberList);
 
     // output
     printf("The sum of all the numbers is: %d\n", sum);
