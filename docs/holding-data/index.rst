@@ -21,7 +21,7 @@ To solve these problems, there are several different type of `data structures <h
    Lists <lists>
    Tuple <tuple>
    Associative Array <associative_array>
-   Listed List <linked_list>
+   Linked List <linked_list>
    Sets <sets>
    Stacks <stacks>
    Queue <queue>
