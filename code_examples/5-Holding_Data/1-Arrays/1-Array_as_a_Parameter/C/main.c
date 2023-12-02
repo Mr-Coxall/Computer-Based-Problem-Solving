@@ -10,7 +10,7 @@
 
 // In C an array is passed by reference to a function
 //   (C can not know the size of the array, so you need to pass it in as well)
-int sumOfNumbers(int *arrayOfNumbers, int lengthOfArray) {
+int sumOfNumbers(int lengthOfArray, int arrayOfNumbers[lengthOfArray]) {
     // this function adds up all of the numbers in the array
 
     int total = 0;
@@ -26,12 +26,14 @@ int sumOfNumbers(int *arrayOfNumbers, int lengthOfArray) {
 
 int main() {
     // this function uses an array
-    int numberList[10];
+    // remember in C you must know the array size at compile time
+    int arraySize = 10;
+    int numberList[arraySize];
     int seed = time(NULL);
 
     // input
-    for (int counter = 0; counter < 10; counter++) {
-        srand(seed);
+    srand(seed);
+    for (int counter = 0; counter < arraySize; counter++) {
         int aSingleRandomNumber = rand_r(&seed) % 100;
         numberList[counter] = aSingleRandomNumber;
         printf("The random number is: %d\n", aSingleRandomNumber);
@@ -40,7 +42,7 @@ int main() {
 
     // call function
     int lengthOfArray = sizeof(numberList) / sizeof(numberList[0]);
-    int sum = sumOfNumbers(numberList, lengthOfArray);
+    int sum = sumOfNumbers(lengthOfArray, numberList);
 
     // output
     printf("The sum of all the numbers is: %d\n", sum);
