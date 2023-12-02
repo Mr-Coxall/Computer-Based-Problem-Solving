@@ -21,11 +21,6 @@ You can run all the code examples in this book using GitHub Codespaces. Click th
 .. image:: https://github.com/codespaces/badge.svg
    :target: https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=191458088
 
-Downloading the Book
-====================
-
-A PDF version of this textbook can be downloaded `here <https://readthedocs.org/projects/computer-based-problem-solving/downloads/pdf/latest/>`_, for offline reading.
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
