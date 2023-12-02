@@ -17,7 +17,7 @@ To declare an array as a parameter in a function, it would look like this:
     .. code-block:: C
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/C/main.c
         :language: C
-        :lines: 11-13
+        :lines: 11-12
 
   .. group-tab:: C++
     .. code-block:: C++
@@ -63,7 +63,7 @@ To pass an array into this function as a parameter, it would look like this:
     .. code-block:: C
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/C/main.c
         :language: C
-        :lines: 43
+        :lines: 44
 
   .. group-tab:: C++
     .. code-block:: C++
@@ -113,7 +113,7 @@ Code for Creating an Array
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/1-Array_as_a_Parameter/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 11-25, 41-43
+        :emphasize-lines: 11-24, 42-44
 
   .. group-tab:: C++
     .. code-block:: C++
