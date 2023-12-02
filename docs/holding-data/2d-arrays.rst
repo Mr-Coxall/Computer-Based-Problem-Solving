@@ -30,17 +30,17 @@ Code for Creating and using a 2D Array
 
   .. group-tab:: C
     .. code-block:: C
-      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/4-Array_2D/CPP/main.cpp
+      .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/4-Array_2D/C/main.c
         :language: C
         :linenos:
-        :emphasize-lines: 12-29, 33-35, 51, 58
+        :emphasize-lines: 11-26, 30-33, 41, 49
 
   .. group-tab:: C++
     .. code-block:: C++
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/4-Array_2D/CPP/main.cpp
         :language: C++
         :linenos:
-        :emphasize-lines: 12-29, 33-35, 51, 58
+        :emphasize-lines: 11-27, 31-34, 41, 49
 
   .. group-tab:: C#
     .. code-block:: C#
