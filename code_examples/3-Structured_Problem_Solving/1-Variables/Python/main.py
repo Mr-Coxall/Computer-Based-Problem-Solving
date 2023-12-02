@@ -9,8 +9,8 @@ This module shows declaring variables
 def main() -> None:
     """The main() function shows declaring variables, returns None."""
     is_current = True  # bool
-    age = 32  # int
-    area = 32.45  # float
+    age = 42  # int
+    area = 42.42  # float
     some_words = "Hello, World!"  # string
 
     print(is_current)

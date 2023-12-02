@@ -6,8 +6,8 @@
 
 // variable definition
 var isCurrent = true // bool
-var age = 32 // int
-var area = 32.45 // float
+var age = 42 // int
+var area = 42.42 // float
 var someWords = "Hello, World!" // string
 
 console.log(isCurrent)

@@ -6,8 +6,8 @@
 
 # variable definition
 is_current = true  # bool
-age = 32  # int
-area = 32.45  # float
+age = 42  # int
+area = 42.42  # float
 some_words = "Hello, World!"  # string
 
 puts is_current

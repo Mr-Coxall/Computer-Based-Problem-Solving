@@ -7,8 +7,8 @@
 fn main() {
     // variable definition
     let is_current = true;  // bool
-    let age = 32;  // int
-    let area = 32.45;  // float
+    let age = 42;  // int
+    let area = 42.42;  // float
     let some_words = "Hello, World!";  // string
     
     println!("{is_current}");

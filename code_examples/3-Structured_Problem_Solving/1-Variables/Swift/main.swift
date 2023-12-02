@@ -7,8 +7,8 @@
 
 // variable definition
 var isCurrent: Bool = true  // bool
-var age: Int = 32  // int
-var area: Float = 32.45  // float
+var age: Int = 42  // int
+var area: Float = 42.42  // float
 var someWords: String = "Hello, World!"  // string
 
 print(isCurrent)

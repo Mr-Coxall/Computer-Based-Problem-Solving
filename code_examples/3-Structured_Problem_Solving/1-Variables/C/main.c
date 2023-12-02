@@ -10,8 +10,8 @@
 int main() {
     // variable definition
     bool isCurrent = true;  // bool
-    int age = 32;  // int
-    float area = 32.45;  // float
+    int age = 42;  // int
+    float area = 42.42;  // float
     char someWords[13] = "Hello, World!";  // string
 
     printf("%d\n", isCurrent);

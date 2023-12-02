@@ -16,7 +16,7 @@ final class Main {
   }
 
   /** Some floating point number. */
-  public static final float SOME_FLOAT = 14.65F;
+  public static final float SOME_FLOAT = 42.42F;
 
   /**
    * Main entry point into program.
@@ -26,7 +26,7 @@ final class Main {
   public static void main(final String[] args) {
     // variable definition
     boolean isCurrent = true; // bool
-    int age = 0; // int
+    int age = 42; // int
     float area = SOME_FLOAT; // float
     String someWords = "Hello, World!"; // string
 

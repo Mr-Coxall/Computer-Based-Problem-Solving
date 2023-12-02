@@ -13,8 +13,8 @@ class Program {
     public static void Main (string[] args) {
         // variable definition
         bool isCurrent = true;  // bool
-        int age = 32;  // int
-        float area = 32.45F;  // float
+        int age = 42;  // int
+        float area = 42.42F;  // float
         string someWords = "Hello, World!";  // string
 
         Console.WriteLine(isCurrent);
