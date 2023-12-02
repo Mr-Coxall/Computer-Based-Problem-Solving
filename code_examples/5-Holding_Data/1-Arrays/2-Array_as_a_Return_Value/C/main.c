@@ -39,8 +39,9 @@ int main() {
         for (int counter2 = 0; counter2 < widthOfArray; counter2++) {
             int aSingleRandomNumber = rand_r(&seed) % 100;
             numberList[counter1][counter2] = aSingleRandomNumber;
-            printf("The random number is: %d\n", aSingleRandomNumber);
+            printf("%d ", aSingleRandomNumber);
         }
+        printf("\n");
     }
     printf("\n");
 
