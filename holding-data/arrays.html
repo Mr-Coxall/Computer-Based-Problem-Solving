@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arrays &mdash; Computer Based Problem Solving 1.0.5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=d55fa986"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Array as a Parameter" href="array-as-a-parameter.html" />
+    <link rel="prev" title="Holding Data" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Computer Based Problem Solving
+              <img src="../_static/cs-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computer Based Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem-solving/index.html">Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structured-problem-solving/index.html">Structured Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Holding Data</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Arrays</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="array-as-a-parameter.html">Pass an Array as a Parameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="array-as-a-return-value.html">Pass an Array as a Return Values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="arrays-and-for-each.html">Arrays with For ... Each Loops</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2d-arrays.html">2D Arrays</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lists.html">Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tuple.html">Tuple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="associative_array.html">Associative Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_list.html">Linked List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sets.html">Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stacks.html">Stacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue.html">Queue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heap.html">Heap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphs.html">Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="binary-trees.html">Binary Trees</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../oop/index.html">Object Oriented Programming</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computer Based Problem Solving</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Holding Data</a></li>
+      <li class="breadcrumb-item active">Arrays</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/holding-data/arrays.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="arrays">
+<span id="id1"></span><h1>Arrays<a class="headerlink" href="#arrays" title="Link to this heading"></a></h1>
+<p>An <a class="reference external" href="https://en.wikipedia.org/wiki/Array_data_structure">array</a> stores many pieces of data but in the same variable. For example I could save the marks for 5 students in an array like:</p>
+<img alt="array" class="align-center" src="../_images/array.png" />
+<p>This array has 5 <a class="reference external" href="https://en.wikipedia.org/wiki/Element_(mathematics)">elements</a> (note that you usually start counting at 0 with arrays!) but they all have just one variable name (studentMarks). To refer to a specific mark you place the <a class="reference external" href="https://en.wikipedia.org/wiki/Array_data_structure#Element_identifier_and_addressing_formulas">index</a> of the mark after the variable name, usually in brackets. For example, you would refer to the mark of 84 as:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-Qw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-Qw==" name="Qw==" role="tab" tabindex="0">C</button><button aria-controls="panel-0-Qysr" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-Qysr" name="Qysr" role="tab" tabindex="-1">C++</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button><button aria-controls="panel-0-R28=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-R28=" name="R28=" role="tab" tabindex="-1">Go</button><button aria-controls="panel-0-SmF2YQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YQ==" name="SmF2YQ==" role="tab" tabindex="-1">Java</button><button aria-controls="panel-0-SmF2YVNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tab" tabindex="-1">JavaScript</button><button aria-controls="panel-0-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-0-Qw==" class="sphinx-tabs-panel group-tab" id="panel-0-Qw==" name="Qw==" role="tabpanel" tabindex="0"><div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// array index</span>
+<span class="n">studentMarks</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-Qysr" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// array index</span>
+<span class="n">studentMarks</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-C# notranslate"><div class="highlight"><pre><span></span><span class="c1">// array index</span>
+<span class="n">studentMarks</span><span class="p">[</span><span class="m">3</span><span class="p">]</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-R28=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-R28=" name="R28=" role="tabpanel" tabindex="0"><div class="highlight-Go notranslate"><div class="highlight"><pre><span></span><span class="c1">// array index</span>
+<span class="nx">studentMarks</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YQ==" name="SmF2YQ==" role="tabpanel" tabindex="0"><div class="highlight-Java notranslate"><div class="highlight"><pre><span></span><span class="c1">// array index</span>
+<span class="n">studentMarks</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YVNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tabpanel" tabindex="0"><div class="highlight-JavaScript notranslate"><div class="highlight"><pre><span></span><span class="c1">// array index</span>
+<span class="nx">studentMarks</span><span class="p">[</span><span class="mf">3</span><span class="p">]</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># array (or list) index</span>
+<span class="n">studentMarks</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+</div></div>
+<p>Arrays are an important programming concept because they allow a collection of related objects to be stored within a single variable. To declare an array, you usually must specify how many elements will be in the array during the declaration. This is because the compiler needs to reseve the required memory inside the the computer to stare all these variables. (There are ways to store groups of data where the size will change during the running of the program and we will get to them.)Here we are declaring the variable studentMarks and allowing 5 items in it:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-Qw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-Qw==" name="Qw==" role="tab" tabindex="0">C</button><button aria-controls="panel-1-Qysr" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-Qysr" name="Qysr" role="tab" tabindex="-1">C++</button><button aria-controls="panel-1-QyM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button><button aria-controls="panel-1-R28=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-R28=" name="R28=" role="tab" tabindex="-1">Go</button><button aria-controls="panel-1-SmF2YQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-SmF2YQ==" name="SmF2YQ==" role="tab" tabindex="-1">Java</button><button aria-controls="panel-1-SmF2YVNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tab" tabindex="-1">JavaScript</button><button aria-controls="panel-1-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-1-Qw==" class="sphinx-tabs-panel group-tab" id="panel-1-Qw==" name="Qw==" role="tabpanel" tabindex="0"><div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// array index</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">studentMarks</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-Qysr" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// array index</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">studentMarks</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-QyM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-C# notranslate"><div class="highlight"><pre><span></span><span class="c1">// array index</span>
+<span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">studentMarks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="p">[</span><span class="m">5</span><span class="p">];</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-R28=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-R28=" name="R28=" role="tabpanel" tabindex="0"><div class="highlight-Go notranslate"><div class="highlight"><pre><span></span><span class="c1">// array index</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">studentMarks</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">int</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-SmF2YQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-SmF2YQ==" name="SmF2YQ==" role="tabpanel" tabindex="0"><div class="highlight-Java notranslate"><div class="highlight"><pre><span></span><span class="c1">// array index</span>
+<span class="kt">int</span><span class="w"> </span><span class="o">[]</span><span class="w"> </span><span class="n">studentMarks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="mi">5</span><span class="o">]</span><span class="p">;</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-SmF2YVNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tabpanel" tabindex="0"><div class="highlight-JavaScript notranslate"><div class="highlight"><pre><span></span><span class="c1">// array index</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">studentMarks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Array</span><span class="p">(</span><span class="mf">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-UHl0aG9u" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># array (or list) index</span>
+<span class="n">studentMarks</span> <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
+</div>
+</div></div>
+<p>Once you have an array, you will need to loop over it to add items to it or to see what the values are. It is usually a bad idea to <strong>Hard Code</strong> your loop ending point to a value. An array knows how many elements are in it and you should always use this. If someone changes the size of the array in the declaration, then no othe code will have to be changed.</p>
+<p>Here is a code example of creating an array, placing values into it and then reading data out of it:</p>
+<section id="code-for-creating-an-array">
+<h2>Code for Creating an Array<a class="headerlink" href="#code-for-creating-an-array" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-Qw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-Qw==" name="Qw==" role="tab" tabindex="0">C</button><button aria-controls="panel-2-Qysr" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-Qysr" name="Qysr" role="tab" tabindex="-1">C++</button><button aria-controls="panel-2-QyM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button><button aria-controls="panel-2-R28=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-R28=" name="R28=" role="tab" tabindex="-1">Go</button><button aria-controls="panel-2-SmF2YQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-SmF2YQ==" name="SmF2YQ==" role="tab" tabindex="-1">Java</button><button aria-controls="panel-2-SmF2YVNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tab" tabindex="-1">JavaScript</button><button aria-controls="panel-2-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-2-Qw==" class="sphinx-tabs-panel group-tab" id="panel-2-Qw==" name="Qw==" role="tabpanel" tabindex="0"></div><div aria-labelledby="tab-2-Qysr" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-Qysr" name="Qysr" role="tabpanel" tabindex="0"></div><div aria-labelledby="tab-2-QyM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-QyM=" name="QyM=" role="tabpanel" tabindex="0"></div><div aria-labelledby="tab-2-R28=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-R28=" name="R28=" role="tabpanel" tabindex="0"></div><div aria-labelledby="tab-2-SmF2YQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-SmF2YQ==" name="SmF2YQ==" role="tabpanel" tabindex="0"></div><div aria-labelledby="tab-2-SmF2YVNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tabpanel" tabindex="0"></div><div aria-labelledby="tab-2-UHl0aG9u" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"></div></div>
+</section>
+<section id="example-output">
+<h2>Example Output<a class="headerlink" href="#example-output" title="Link to this heading"></a></h2>
+<img alt="Code example output" class="align-left" src="../_images/vhs9.gif" />
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="array-as-a-parameter.html">Pass an Array as a Parameter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="array-as-a-return-value.html">Pass an Array as a Return Values</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arrays-and-for-each.html">Arrays with For ... Each Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2d-arrays.html">2D Arrays</a></li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Holding Data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="array-as-a-parameter.html" class="btn btn-neutral float-right" title="Array as a Parameter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Patrick Coxall.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
