@@ -8,8 +8,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-// In C an array is passed by reference to a function
-//   (C can not know the size of the array, so you need to pass it in as well)
+// in C you must pass in the size of the 2D array to a function, first
 int sumOfNumbers(int rows, int columns, int arrayOfNumbers[rows][columns]) {
     // this function adds up all of the numbers in a 2D array
 
