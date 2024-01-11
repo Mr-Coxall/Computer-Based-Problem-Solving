@@ -5,4 +5,4 @@ pydata-sphinx-theme
 sphinxext_remoteliteralinclude==0.3.0
 sphinx_tabs==1.3.0
 mkdocs==1.2.3
-jinja2==3.0.0
+jinja2==3.1.3
