@@ -34,4 +34,3 @@ You can run all the code examples in this book using GitHub Codespaces. Click th
    structured-problem-solving/index
    functions/index
    holding-data/index
-   oop/index
