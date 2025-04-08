@@ -22,7 +22,7 @@ copyright = "2020, Patrick Coxall"
 author = "Patrick Coxall"
 
 # The full version, including alpha/beta/rc tags
-release = "5.1"
+release = "1.0.5"
 
 
 # -- General configuration ---------------------------------------------------
