@@ -22,43 +22,36 @@ Code for Function with a Parameter
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/C/main.c
         :language: C
         :lines: 28
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CPP/main.cpp
         :language: C++
         :lines: 30
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CSharp/main.cs
         :language: C#
         :lines: 30
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Go/main.go
         :language: go
         :lines: 32
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Java/Main.java
         :language: java
         :lines: 45
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/JavaScript/main.js
         :language: javascript
         :lines: 24
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Python/main.py
         :language: python
         :lines: 28
@@ -70,43 +63,36 @@ The following is the function declaration line for the examples above:
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/C/main.c
         :language: C
         :lines: 10
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CPP/main.cpp
         :language: C++
         :lines: 11
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CSharp/main.cs
         :language: C#
         :lines: 13
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Go/main.go
         :language: go
         :lines: 14
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Java/Main.java
         :language: java
         :lines: 17
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/JavaScript/main.js
         :language: javascript
         :lines: 9
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Python/main.py
         :language: python
         :lines: 10
@@ -116,49 +102,42 @@ Here is a full example of the previous sections program, but now the main functi
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 10-18, 28
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 11-19, 30
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 12-31, 30
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 14-21, 32
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 12-23, 45
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 9-17, 24
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/4-Functions/2-Functions_with_a_Parameter/Python/main.py
         :language: python
         :linenos:

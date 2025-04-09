@@ -12,49 +12,42 @@ Code for Function passing a value By Reference
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 9-12, 23
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 9-12, 23
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 12-15, 26
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 11-14, 25
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 13-19, 33
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 7-10, 21
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/4-Functions/6-By_Value_or_By_Reference/Python/main.py
         :language: python
         :linenos:

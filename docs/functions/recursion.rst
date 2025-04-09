@@ -20,49 +20,42 @@ Code for a Recursive Function
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 9-16, 30
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 9-16, 30
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 12-20, 34
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 11-18, 32
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 12-19, 34
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 6-13, 24
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/4-Functions/7-Recursion/Python/main.py
         :language: python
         :linenos:

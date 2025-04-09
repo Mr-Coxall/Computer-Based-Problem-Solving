@@ -16,49 +16,42 @@ Code for Function with Multiple Parameters
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/4-Functions/4-Functions_with_Multiple_Parameters/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 9-16, 32
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/4-Functions/4-Functions_with_Multiple_Parameters/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 10-17, 34
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/4-Functions/4-Functions_with_Multiple_Parameters/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 13-20, 34
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/4-Functions/4-Functions_with_Multiple_Parameters/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 13-20, 35
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/4-Functions/4-Functions_with_Multiple_Parameters/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 12-22, 49
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/4-Functions/4-Functions_with_Multiple_Parameters/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 11-19, 27
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/4-Functions/4-Functions_with_Multiple_Parameters/Python/main.py
         :language: python
         :linenos:
