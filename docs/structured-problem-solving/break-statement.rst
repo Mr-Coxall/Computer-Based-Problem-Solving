@@ -57,49 +57,42 @@ Code for the Break Statement
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/16-Break/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 21-23
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/16-Break/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 21-23
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/16-Break/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 25-27
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/16-Break/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 27-29
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/16-Break/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 28-30
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/16-Break/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 19-21
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/16-Break/Python/main.py
         :language: python
         :linenos:

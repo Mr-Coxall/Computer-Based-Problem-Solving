@@ -102,49 +102,42 @@ Code for Compound Boolean Expression statement
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 22-26
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 22-26
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 23-27
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 27-31
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 26-30
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 14-18
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/11-Compound_Boolean/Python/main.py
         :language: python
         :linenos:

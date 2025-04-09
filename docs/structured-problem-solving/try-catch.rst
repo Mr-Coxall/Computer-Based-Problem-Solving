@@ -52,49 +52,42 @@ Code for Try Catch statement
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/10-Try_Catch/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 16, 19-23
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/10-Try_Catch/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 19-25
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/10-Try_Catch/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 20-27
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/10-Try_Catch/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 26-30
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/10-Try_Catch/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 23-30
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/10-Try_Catch/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 12-19
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/10-Try_Catch/Python/main.py
         :language: python
         :linenos:

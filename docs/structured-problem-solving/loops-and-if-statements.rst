@@ -53,43 +53,36 @@ Code for the Loops and If Statements
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/C/main.c
         :language: C
         :linenos:
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/CPP/main.cpp
         :language: C++
         :linenos:
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/CSharp/main.cs
         :language: C#
         :linenos:
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/Go/main.go
         :language: go
         :linenos:
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/Java/Main.java
         :language: java
         :linenos:
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/JavaScript/main.js
         :language: javascript
         :linenos:
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/19-Loops_and_Ifs/Python/main.py
         :language: python
         :linenos:

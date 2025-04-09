@@ -52,49 +52,42 @@ Code for If…Then…ElseIf…Else statement
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/8-If_Then_ElseIf_Else/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 20-28
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/8-If_Then_ElseIf_Else/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 19-27
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/8-If_Then_ElseIf_Else/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 21-29
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/8-If_Then_ElseIf_Else/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 20-28
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/8-If_Then_ElseIf_Else/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 22-30
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/8-If_Then_ElseIf_Else/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 12-20
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/8-If_Then_ElseIf_Else/Python/main.py
         :language: python
         :linenos:

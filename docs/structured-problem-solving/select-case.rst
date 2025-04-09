@@ -54,49 +54,42 @@ Code for Select Case statement
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 19-40
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 19-41
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 20-39
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 24-37
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 23-42
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 12-31
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/9-Select_Case/Python/main.py
         :language: python
         :linenos:
