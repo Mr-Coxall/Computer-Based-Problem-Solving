@@ -43,43 +43,36 @@ Once you have the pseudo-code done, the hardest part of solving the problem shou
 
 .. tabs::
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/5-Example_Sequence/C/main.c
         :language: C
         :linenos:
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/5-Example_Sequence/CPP/main.cpp
         :language: C++
         :linenos:
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/5-Example_Sequence/CSharp/main.cs
         :language: C#
         :linenos:
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/5-Example_Sequence/Go/main.go
         :language: go
         :linenos:
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/5-Example_Sequence/Java/Main.java
         :language: java
         :linenos:
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/5-Example_Sequence/JavaScript/main.js
         :language: javascript
         :linenos:
 
   .. group-tab:: Python
-    .. code-block:: Python
 
       constants.py
 
