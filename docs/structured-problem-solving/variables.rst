@@ -20,55 +20,45 @@ String           Variable length number of characters
 
 Variable declaration usually should be grouped at the beginning of a section of code (sub, procedure, function, method...), after the initial `comments <https://en.wikipedia.org/wiki/Comment_%28computer_programming%29>`_. A blank line follows the declaration and separates the declaration from the rest of your code. This makes it easy to see where the declaration starts and ends. Ensuring that your code is easy to read and understand is as important in computer science as it is in English. It is important to remember that your code has two audiences, the computer that needs to `compile <https://en.wikipedia.org/wiki/Compiler>`_ or `interpret <https://en.wikipedia.org/wiki/Interpreter_(computing)>`_ it so that the computer can run your program and even more important, you and everyone else that looks at your source code that are trying to figure out how your program works. Here are some examples of declaring a variable:
 
-.. code-block:: C
-  .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/C/main.c
-
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 11-15
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 10-14
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 14-18
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 14-18
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 27-31
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 7-11
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/Python/main.py
         :language: python
         :linenos:
