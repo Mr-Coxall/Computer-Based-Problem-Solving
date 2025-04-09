@@ -10,49 +10,42 @@ Constants just like variables hold a particular value in memory for a programmer
 
 .. tabs::
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 10-13
         
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 10-13
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 14-17
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 12-15
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/Java/Main.java
         :language: Java
         :linenos:
         :emphasize-lines: 17-18, 20-21, 23-24
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/2-Constants/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 7-10
 
   .. group-tab:: Python
-    .. code-block:: Python
 
       In Python we normally create a seperate file called constants.py and place all our constants in it. This is so that we can import the constants into our main.py file. This is a good way to organize your code and keep it clean.
       
