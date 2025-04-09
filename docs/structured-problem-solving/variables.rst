@@ -22,9 +22,6 @@ Variable declaration usually should be grouped at the beginning of a section of 
 
 .. code-block:: C
   .. literalinclude:: ../../code_examples/3-Structured_Problem_Solving/1-Variables/C/main.c
-    :language: C
-    :linenos:
-    :emphasize-lines: 11-15
 
 .. tabs::
 
