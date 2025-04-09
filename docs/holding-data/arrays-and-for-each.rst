@@ -12,47 +12,40 @@ Code for Using a For ... Each loop with an Array
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/3-Arrays_and_For_Each/C/main.c
         :language: C
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/3-Arrays_and_For_Each/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 12-26, 43
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/3-Arrays_and_For_Each/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 13-24, 38
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/3-Arrays_and_For_Each/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 15-25, 40
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/3-Arrays_and_For_Each/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 13-30, 57
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/3-Arrays_and_For_Each/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 8-20, 36
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/3-Arrays_and_For_Each/Python/main.py
         :language: python
         :linenos:

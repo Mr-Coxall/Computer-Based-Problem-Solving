@@ -15,49 +15,35 @@ This array has 5 `elements <https://en.wikipedia.org/wiki/Element_(mathematics)>
 
   .. group-tab:: C
 
-    .. code-block:: C++
-
       // array index
       studentMarks[3]
 
   .. group-tab:: C++
-
-    .. code-block:: C++
 
       // array index
       studentMarks[3]
 
   .. group-tab:: C#
 
-    .. code-block:: C#
-
       // array index
       studentMarks[3]
 
   .. group-tab:: Go
-
-    .. code-block:: Go
 
       // array index
       studentMarks[3]
 
   .. group-tab:: Java
 
-    .. code-block:: Java
-
       // array index
       studentMarks[3]
 
   .. group-tab:: JavaScript
 
-    .. code-block:: JavaScript
-
       // array index
       studentMarks[3]
 
   .. group-tab:: Python
-
-    .. code-block:: Python
 
       # array (or list) index
       studentMarks[3]
@@ -69,49 +55,35 @@ Arrays are an important programming concept because they allow a collection of r
 
   .. group-tab:: C
 
-    .. code-block:: C++
-
       // array index
       int studentMarks[5];
 
   .. group-tab:: C++
-
-    .. code-block:: C++
 
       // array index
       int studentMarks[5];
 
   .. group-tab:: C#
 
-    .. code-block:: C#
-
       // array index
       int[] studentMarks = new int[5];
 
   .. group-tab:: Go
-
-    .. code-block:: Go
 
       // array index
       var studentMarks[5]int
 
   .. group-tab:: Java
 
-    .. code-block:: Java
-
       // array index
       int [] studentMarks = new int[5];
 
   .. group-tab:: JavaScript
 
-    .. code-block:: JavaScript
-
       // array index
       let studentMarks = new Array(5)
 
   .. group-tab:: Python
-
-    .. code-block:: Python
 
       # array (or list) index
       studentMarks = []
@@ -125,49 +97,42 @@ Code for Creating an Array
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 12, 16, 19-23, 27-29
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 13, 17, 20-24, 28-30
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 14, 18, 21-25, 30-32
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 16, 19, 22-26, 32-34
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 16, 20, 24-28, 32-34
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 8, 12, 15-18, 23-25
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/Python/main.py
         :language: python
         :linenos:

@@ -29,49 +29,42 @@ Code for Creating and using a 2D Array
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/4-Array_2D/C/main.c
         :language: C
         :linenos:
         :emphasize-lines: 11-25, 29-31, 40, 48
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/4-Array_2D/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 12-29, 33-35, 51, 58
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/4-Array_2D/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 13-24, 38
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/4-Array_2D/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/4-Array_2D/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/4-Array_2D/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/5-Holding_Data/1-Arrays/4-Array_2D/Python/main.py
         :language: python
         :linenos:

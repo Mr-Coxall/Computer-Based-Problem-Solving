@@ -26,47 +26,40 @@ Code for Creating an Associative Array
 .. tabs::
 
   .. group-tab:: C
-    .. code-block:: C
       .. literalinclude:: ../../code_examples/5-Holding_Data/4-Associative_Array/C/main.c
         :language: C
 
   .. group-tab:: C++
-    .. code-block:: C++
       .. literalinclude:: ../../code_examples/5-Holding_Data/4-Associative_Array/CPP/main.cpp
         :language: C++
         :linenos:
         :emphasize-lines: 8, 14-15, 18-22, 24-28, 31-33, 40-44
 
   .. group-tab:: C#
-    .. code-block:: C#
       .. literalinclude:: ../../code_examples/5-Holding_Data/4-Associative_Array/CSharp/main.cs
         :language: C#
         :linenos:
         :emphasize-lines: 7, 17-18, 20-25, 27-31, 34-36, 43-47
 
   .. group-tab:: Go
-    .. code-block:: Go
       .. literalinclude:: ../../code_examples/5-Holding_Data/4-Associative_Array/Go/main.go
         :language: go
         :linenos:
         :emphasize-lines: 18-19, 22-27, 30-34, 37-39, 46-50
 
   .. group-tab:: Java
-    .. code-block:: Java
       .. literalinclude:: ../../code_examples/5-Holding_Data/4-Associative_Array/Java/Main.java
         :language: java
         :linenos:
         :emphasize-lines: 10-11, 18-19, 21-25, 27-31, 34-36, 44-48
 
   .. group-tab:: JavaScript
-    .. code-block:: JavaScript
       .. literalinclude:: ../../code_examples/5-Holding_Data/4-Associative_Array/JavaScript/main.js
         :language: javascript
         :linenos:
         :emphasize-lines: 9, 14-17, 19, 23-25
 
   .. group-tab:: Python
-    .. code-block:: Python
       .. literalinclude:: ../../code_examples/5-Holding_Data/4-Associative_Array/Python/main.py
         :language: python
         :linenos:
