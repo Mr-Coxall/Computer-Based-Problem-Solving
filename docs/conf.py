@@ -62,6 +62,8 @@ html_logo = "images/cs-logo.png"
 # added this to make the standard Read the Docs layout
 #   not be constrained in the width
 
+# remove footer
+html_show_sphinx = False
 
 def setup(app):
     # app.add_stylesheet("my_theme.css")
