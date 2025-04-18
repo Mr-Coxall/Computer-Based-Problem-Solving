@@ -1,5 +1,7 @@
 # Computer Based Problem Solving
 
+[Textbook image](https://github.com/Mr-Coxall/Computer-Based-Problem-Solving/blob/51a9994a1ed568620658aa504ef65b6590543078/docs/images/ComputerBasedProblemSolving.png)
+
 An introductory textbook to Computer Science, focussing on a structured problem solving approach. 
 
 Code examples in:
