@@ -21,7 +21,7 @@ You can run all the code examples in this book using GitHub Codespaces. Click th
 
 The online version can be found at:
 
-[https://computer-based-problem-solving.readthedocs.io/en/latest/](https://computer-based-problem-solving.readthedocs.io/en/latest/)
+[https://cs-textbook.coxall.cloud](https://cs-textbook.coxall.cloud)
 
 ## Repo Info
 
