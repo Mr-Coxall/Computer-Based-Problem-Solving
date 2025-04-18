@@ -1,0 +1,395 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2D Arrays &mdash; Computer Based Problem Solving 1.0.5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=d55fa986"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Lists" href="lists.html" />
+    <link rel="prev" title="Arrays and For … Each Loops" href="arrays-and-for-each.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Computer Based Problem Solving
+              <img src="../_static/cs-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computer Based Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem-solving/index.html">Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structured-problem-solving/index.html">Structured Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Holding Data</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="arrays.html">Arrays</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="array-as-a-parameter.html">Pass an Array as a Parameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="array-as-a-return-value.html">Pass an Array as a Return Values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="arrays-and-for-each.html">Arrays with For ... Each Loops</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">2D Arrays</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lists.html">Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tuple.html">Tuple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="associative_array.html">Associative Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_list.html">Linked List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sets.html">Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stacks.html">Stacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue.html">Queue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heap.html">Heap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphs.html">Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="binary-trees.html">Binary Trees</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computer Based Problem Solving</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Holding Data</a></li>
+          <li class="breadcrumb-item"><a href="arrays.html">Arrays</a></li>
+      <li class="breadcrumb-item active">2D Arrays</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/holding-data/2d-arrays.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="d-arrays">
+<span id="id1"></span><h1>2D Arrays<a class="headerlink" href="#d-arrays" title="Link to this heading"></a></h1>
+<p>All the arrays that we have used thus far have been to represent a collection of information. This is a very powerful tool and can save the programmer a lot of time and confusion when dealing with items that are somehow related to each other. Not all things can be represented with a single collection though. Several times we use a grid or <a class="reference external" href="https://en.wikipedia.org/wiki/Spreadsheet">spreadsheet</a> to keep information in rows and columns. This <a class="reference external" href="https://en.wikipedia.org/wiki/Matrix_(math)">matrix</a> of information can not be represented in a single array. In these situations we represent our data with a 2-dimensional (or <a class="reference external" href="https://en.wikipedia.org/wiki/Index_notation#Multi-dimensional_arrays">multi-dimensional array</a> ).</p>
+<p>A 2-D array can just be thought of an array of arrays.</p>
+<img alt="2D-array" class="align-center" src="../_images/2-d_array.png" />
+<p>We represent a given element with 2 indices now, instead of 1 when we
+had a single dimension. Unlike in math class where you used the
+<a class="reference external" href="https://en.wikipedia.org/wiki/Cartesian_coordinate_system">Cartesian plane</a>, and moved in the X direction and then the Y direction,</p>
+<a class="reference internal image-reference" href="../_images/Cartesian-coordinate-system.png"><img alt="Cartesian-coordinate-system" class="align-center" src="../_images/Cartesian-coordinate-system.png" style="height: 250px;" />
+</a>
+<p>in computer science you move up and down in the rows first and then across to the column position. Thus if we want to refer to the element in the above array that has a value of 8, we would say, studentMarks(2, 1).</p>
+<p>There are many applications of 2-D arrays, like a game board (tic-tac-toe), adventure games and business applications like spreadsheets.</p>
+<section id="code-for-creating-and-using-a-2d-array">
+<h2>Code for Creating and using a 2D Array<a class="headerlink" href="#code-for-creating-and-using-a-2d-array" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-Qw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-Qw==" name="Qw==" role="tab" tabindex="0">C</button><button aria-controls="panel-0-Qysr" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-Qysr" name="Qysr" role="tab" tabindex="-1">C++</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button><button aria-controls="panel-0-R28=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-R28=" name="R28=" role="tab" tabindex="-1">Go</button><button aria-controls="panel-0-SmF2YQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YQ==" name="SmF2YQ==" role="tab" tabindex="-1">Java</button><button aria-controls="panel-0-SmF2YVNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tab" tabindex="-1">JavaScript</button><button aria-controls="panel-0-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-0-Qw==" class="sphinx-tabs-panel group-tab" id="panel-0-Qw==" name="Qw==" role="tabpanel" tabindex="0"><div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 Mr. Coxall All rights reserved.</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program uses a 2D array as a parameter</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<span class="linenos"> 8</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdlib.h&gt;</span>
+<span class="linenos"> 9</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;time.h&gt;</span>
+<span class="linenos">10</span>
+<span class="hll"><span class="linenos">11</span><span class="c1">// in C you must pass in the size of the 2D array to a function, first</span>
+</span><span class="hll"><span class="linenos">12</span><span class="kt">int</span><span class="w"> </span><span class="nf">sumOfNumbers</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">rows</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">columns</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">arrayOfNumbers</span><span class="p">[</span><span class="n">rows</span><span class="p">][</span><span class="n">columns</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">13</span><span class="w">    </span><span class="c1">// this function adds up all of the numbers in a 2D array</span>
+</span><span class="hll"><span class="linenos">14</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">16</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">    </span><span class="c1">// loop through 2D array and add all numbers together</span>
+</span><span class="hll"><span class="linenos">18</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">rowCounter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">rowCounter</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">rows</span><span class="p">;</span><span class="w"> </span><span class="n">rowCounter</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">19</span><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">columnCounter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">columnCounter</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">columns</span><span class="p">;</span><span class="w"> </span><span class="n">columnCounter</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">20</span><span class="w">            </span><span class="n">total</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">arrayOfNumbers</span><span class="p">[</span><span class="n">rowCounter</span><span class="p">][</span><span class="n">columnCounter</span><span class="p">];</span>
+</span><span class="hll"><span class="linenos">21</span><span class="w">        </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">22</span><span class="w">    </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">23</span>
+</span><span class="hll"><span class="linenos">24</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">total</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">25</span><span class="p">}</span>
+</span><span class="linenos">26</span>
+<span class="linenos">27</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">28</span><span class="w">    </span><span class="c1">// this function uses a 2D array</span>
+<span class="hll"><span class="linenos">29</span><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">rows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">30</span><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">columns</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">31</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">number2DArray</span><span class="p">[</span><span class="n">rows</span><span class="p">][</span><span class="n">columns</span><span class="p">];</span>
+</span><span class="linenos">32</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">seed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+<span class="linenos">33</span>
+<span class="linenos">34</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">35</span><span class="w">    </span><span class="n">srand</span><span class="p">(</span><span class="n">seed</span><span class="p">);</span>
+<span class="linenos">36</span><span class="w">    </span><span class="c1">// Generate random numbers and populate the 2D array</span>
+<span class="linenos">37</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">row</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">row</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">rows</span><span class="p">;</span><span class="w"> </span><span class="n">row</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">38</span><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">column</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">column</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">columns</span><span class="p">;</span><span class="w"> </span><span class="n">column</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">39</span><span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">aRandomNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rand</span><span class="p">()</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">9</span><span class="p">;</span>
+<span class="hll"><span class="linenos">40</span><span class="w">            </span><span class="n">number2DArray</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">column</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">aRandomNumber</span><span class="p">;</span>
+</span><span class="linenos">41</span><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">aRandomNumber</span><span class="p">);</span>
+<span class="linenos">42</span><span class="w">        </span><span class="p">}</span>
+<span class="linenos">43</span><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="linenos">44</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">45</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="linenos">46</span>
+<span class="linenos">47</span><span class="w">    </span><span class="c1">// call function</span>
+<span class="hll"><span class="linenos">48</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">sumNumbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sumOfNumbers</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span><span class="w"> </span><span class="n">columns</span><span class="p">,</span><span class="w"> </span><span class="n">number2DArray</span><span class="p">);</span>
+</span><span class="linenos">49</span>
+<span class="linenos">50</span><span class="w">    </span><span class="c1">// output</span>
+<span class="linenos">51</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;The sum of all the numbers is: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">sumNumbers</span><span class="p">);</span>
+<span class="linenos">52</span>
+<span class="linenos">53</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Done.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="linenos">54</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">55</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-Qysr" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 Mr. Coxall All rights reserved.</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program uses a 2D array as a parameter</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="linenos"> 8</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstdlib&gt;</span>
+<span class="linenos"> 9</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;ctime&gt;</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span>
+<span class="hll"><span class="linenos">12</span><span class="c1">// In C++, a 2D array is passed by reference to a function</span>
+</span><span class="hll"><span class="linenos">13</span><span class="c1">// (template is used to find the length of the array)</span>
+</span><span class="hll"><span class="linenos">14</span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="kt">int</span><span class="w"> </span><span class="n">rows</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">cols</span><span class="o">&gt;</span>
+</span><span class="hll"><span class="linenos">15</span><span class="kt">int</span><span class="w"> </span><span class="n">sumOfNumbers</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="p">(</span><span class="o">&amp;</span><span class="n">passedIn2DArray</span><span class="p">)[</span><span class="n">rows</span><span class="p">][</span><span class="n">cols</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">    </span><span class="c1">// this function adds up all of the numbers in a 2D array</span>
+</span><span class="hll"><span class="linenos">17</span>
+</span><span class="hll"><span class="linenos">18</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">19</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">counter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">20</span>
+</span><span class="hll"><span class="linenos">21</span><span class="w">    </span><span class="c1">//adding up all of the numbers in a 2D array</span>
+</span><span class="hll"><span class="linenos">22</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">rowCounter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">rowCounter</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">rows</span><span class="p">;</span><span class="w"> </span><span class="n">rowCounter</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">23</span><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">columnCounter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">columnCounter</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">cols</span><span class="p">;</span><span class="w"> </span><span class="n">columnCounter</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">24</span><span class="w">            </span><span class="n">total</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">passedIn2DArray</span><span class="p">[</span><span class="n">rowCounter</span><span class="p">][</span><span class="n">columnCounter</span><span class="p">];</span>
+</span><span class="hll"><span class="linenos">25</span><span class="w">        </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">26</span><span class="w">    </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">27</span>
+</span><span class="hll"><span class="linenos">28</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">total</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">29</span><span class="p">}</span>
+</span><span class="linenos">30</span>
+<span class="linenos">31</span><span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">32</span><span class="w">    </span><span class="c1">// this function uses a 2D array</span>
+<span class="hll"><span class="linenos">33</span><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">rows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">34</span><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">columns</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">35</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a2DArray</span><span class="p">[</span><span class="n">rows</span><span class="p">][</span><span class="n">columns</span><span class="p">];</span>
+</span><span class="linenos">36</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">aSingleRandomNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">37</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">38</span>
+<span class="linenos">39</span><span class="w">    </span><span class="n">srand</span><span class="p">(</span><span class="n">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">));</span>
+<span class="linenos">40</span>
+<span class="linenos">41</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">42</span>
+<span class="linenos">43</span><span class="w">    </span><span class="c1">// So, ...</span>
+<span class="linenos">44</span><span class="w">    </span><span class="c1">//   In C++ you can&#39;t define array&#39;s size using variable.</span>
+<span class="linenos">45</span><span class="w">    </span><span class="c1">//   this is why you see const int rows = 2; above,</span>
+<span class="linenos">46</span><span class="w">    </span><span class="c1">//   so the size of the array can never change</span>
+<span class="linenos">47</span>
+<span class="linenos">48</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">rowElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">rowElement</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">rows</span><span class="p">;</span><span class="w"> </span><span class="n">rowElement</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">49</span><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">columnElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">columnElement</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">columns</span><span class="p">;</span><span class="w"> </span><span class="n">columnElement</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">50</span><span class="w">            </span><span class="n">aSingleRandomNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">rand</span><span class="p">()</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">9</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="hll"><span class="linenos">51</span><span class="w">            </span><span class="n">a2DArray</span><span class="p">[</span><span class="n">rowElement</span><span class="p">][</span><span class="n">columnElement</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">aSingleRandomNumber</span><span class="p">;</span>
+</span><span class="linenos">52</span><span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">aSingleRandomNumber</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">;</span>
+<span class="linenos">53</span><span class="w">        </span><span class="p">}</span>
+<span class="linenos">54</span><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">55</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">56</span>
+<span class="linenos">57</span><span class="w">    </span><span class="c1">// call functions</span>
+<span class="hll"><span class="linenos">58</span><span class="w">    </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sumOfNumbers</span><span class="p">(</span><span class="n">a2DArray</span><span class="p">);</span>
+</span><span class="linenos">59</span>
+<span class="linenos">60</span><span class="w">    </span><span class="c1">// output</span>
+<span class="linenos">61</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;The sum of all the numbers is: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">62</span>
+<span class="linenos">63</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Done.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">64</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">65</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-C# notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 St. Mother Teresa HS All rights reserved.</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program uses a 2D array</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="k">class</span><span class="w"> </span><span class="nc">Program</span>
+<span class="linenos">10</span><span class="p">{</span>
+<span class="linenos">11</span><span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">SumOfNumbers</span><span class="p">(</span><span class="kt">int</span><span class="p">[,]</span><span class="w"> </span><span class="n">arrayOfNumbers</span><span class="p">)</span>
+<span class="linenos">12</span><span class="w">  </span><span class="p">{</span>
+<span class="hll"><span class="linenos">13</span><span class="w">    </span><span class="c1">// This function adds up all of the numbers in a 2D array</span>
+</span><span class="hll"><span class="linenos">14</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">rows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayOfNumbers</span><span class="p">.</span><span class="n">GetLength</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">columns</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayOfNumbers</span><span class="p">.</span><span class="n">GetLength</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">18</span>
+</span><span class="hll"><span class="linenos">19</span><span class="w">    </span><span class="c1">// Loop through 2D array and add all numbers together</span>
+</span><span class="hll"><span class="linenos">20</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">rowCounter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">rowCounter</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">rows</span><span class="p">;</span><span class="w"> </span><span class="n">rowCounter</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">21</span><span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">columnCounter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">columnCounter</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">columns</span><span class="p">;</span><span class="w"> </span><span class="n">columnCounter</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">22</span><span class="w">        </span><span class="n">total</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">arrayOfNumbers</span><span class="p">[</span><span class="n">rowCounter</span><span class="p">,</span><span class="w"> </span><span class="n">columnCounter</span><span class="p">];</span>
+</span><span class="hll"><span class="linenos">23</span><span class="w">      </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">24</span><span class="w">    </span><span class="p">}</span>
+</span><span class="linenos">25</span>
+<span class="linenos">26</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">total</span><span class="p">;</span>
+<span class="linenos">27</span><span class="w">  </span><span class="p">}</span>
+<span class="linenos">28</span>
+<span class="linenos">29</span><span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span>
+<span class="linenos">30</span><span class="w">  </span><span class="p">{</span>
+<span class="linenos">31</span><span class="w">    </span><span class="c1">// This function uses a 2D array</span>
+<span class="linenos">32</span><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">rows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
+<span class="linenos">33</span><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">columns</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="linenos">34</span><span class="w">    </span><span class="kt">int</span><span class="p">[,]</span><span class="w"> </span><span class="n">number2DArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="p">[</span><span class="n">rows</span><span class="p">,</span><span class="w"> </span><span class="n">columns</span><span class="p">];</span>
+<span class="linenos">35</span><span class="w">    </span><span class="n">Random</span><span class="w"> </span><span class="n">random</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Random</span><span class="p">();</span>
+<span class="linenos">36</span>
+<span class="linenos">37</span><span class="w">    </span><span class="c1">// Generate random numbers and populate the 2D array</span>
+<span class="hll"><span class="linenos">38</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">row</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">row</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">rows</span><span class="p">;</span><span class="w"> </span><span class="n">row</span><span class="o">++</span><span class="p">)</span>
+</span><span class="linenos">39</span><span class="w">    </span><span class="p">{</span>
+<span class="linenos">40</span><span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">column</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">column</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">columns</span><span class="p">;</span><span class="w"> </span><span class="n">column</span><span class="o">++</span><span class="p">)</span>
+<span class="linenos">41</span><span class="w">      </span><span class="p">{</span>
+<span class="linenos">42</span><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">aRandomNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">random</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="linenos">43</span><span class="w">        </span><span class="n">number2DArray</span><span class="p">[</span><span class="n">row</span><span class="p">,</span><span class="w"> </span><span class="n">column</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">aRandomNumber</span><span class="p">;</span>
+<span class="linenos">44</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">$&quot;{aRandomNumber} &quot;</span><span class="p">);</span>
+<span class="linenos">45</span><span class="w">      </span><span class="p">}</span>
+<span class="linenos">46</span><span class="w">      </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">();</span>
+<span class="linenos">47</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">48</span><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">();</span>
+<span class="linenos">49</span>
+<span class="linenos">50</span><span class="w">    </span><span class="c1">// Call function</span>
+<span class="linenos">51</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">sumNumbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SumOfNumbers</span><span class="p">(</span><span class="n">number2DArray</span><span class="p">);</span>
+<span class="linenos">52</span>
+<span class="linenos">53</span><span class="w">    </span><span class="c1">// Output</span>
+<span class="linenos">54</span><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;The sum of all the numbers is: {sumNumbers}&quot;</span><span class="p">);</span>
+<span class="linenos">55</span>
+<span class="linenos">56</span><span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
+<span class="linenos">57</span><span class="w">  </span><span class="p">}</span>
+<span class="linenos">58</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-R28=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-R28=" name="R28=" role="tabpanel" tabindex="0"></div><div aria-labelledby="tab-0-SmF2YQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YQ==" name="SmF2YQ==" role="tabpanel" tabindex="0"></div><div aria-labelledby="tab-0-SmF2YVNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tabpanel" tabindex="0"></div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="ch">#!/usr/bin/env python3</span>
+<span class="linenos"> 2</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 3</span><span class="sd">Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="sd">Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="sd">This module uses an array as a parameter</span>
+<span class="linenos"> 6</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+<span class="linenos">10</span><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span>
+<span class="hll"><span class="linenos">13</span><span class="c1"># in python an array is passed by reference to a function</span>
+</span><span class="hll"><span class="linenos">14</span><span class="k">def</span><span class="w"> </span><span class="nf">sum_of_numbers</span><span class="p">(</span><span class="n">array_of_numbers</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;The sum_of_numbers() function calculates the sum of numbers in a 2D list, returns the sum as int.&quot;&quot;&quot;</span>
+</span><span class="hll"><span class="linenos">16</span>
+</span><span class="hll"><span class="linenos">17</span>    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class="hll"><span class="linenos">18</span>
+</span><span class="hll"><span class="linenos">19</span>    <span class="k">for</span> <span class="n">row_value</span> <span class="ow">in</span> <span class="n">array_of_numbers</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">20</span>        <span class="k">for</span> <span class="n">single_value</span> <span class="ow">in</span> <span class="n">row_value</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">21</span>            <span class="n">total</span> <span class="o">+=</span> <span class="n">single_value</span>
+</span><span class="hll"><span class="linenos">22</span>
+</span><span class="hll"><span class="linenos">23</span>    <span class="k">return</span> <span class="n">total</span>
+</span><span class="linenos">24</span>
+<span class="linenos">25</span>
+<span class="linenos">26</span><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">27</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;The main() function just calls other functions, returns None.&quot;&quot;&quot;</span>
+<span class="linenos">28</span>
+<span class="hll"><span class="linenos">29</span>    <span class="n">a_2d_list</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class="linenos">30</span>    <span class="n">sum_answer</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos">31</span>
+<span class="linenos">32</span>    <span class="c1"># input</span>
+<span class="linenos">33</span>    <span class="n">rows</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many row would you like: &quot;</span><span class="p">))</span>
+<span class="linenos">34</span>    <span class="n">columns</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many columns would you like: &quot;</span><span class="p">))</span>
+<span class="linenos">35</span>
+<span class="hll"><span class="linenos">36</span>    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">rows</span><span class="p">):</span>
+</span><span class="hll"><span class="linenos">37</span>        <span class="n">temp_column</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class="hll"><span class="linenos">38</span>        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">columns</span><span class="p">):</span>
+</span><span class="hll"><span class="linenos">39</span>            <span class="n">a_random_number</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">40</span>            <span class="n">temp_column</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a_random_number</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">41</span>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a_random_number</span><span class="si">}</span><span class="s2"> &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">42</span>        <span class="n">a_2d_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp_column</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">43</span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+</span><span class="linenos">44</span>
+<span class="hll"><span class="linenos">45</span>    <span class="n">sum_answer</span> <span class="o">=</span> <span class="n">sum_of_numbers</span><span class="p">(</span><span class="n">a_2d_list</span><span class="p">)</span>
+</span><span class="linenos">46</span>
+<span class="linenos">47</span>    <span class="c1"># output</span>
+<span class="linenos">48</span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">The sum of all the numbers is: </span><span class="si">{</span><span class="n">sum_answer</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="linenos">49</span>
+<span class="linenos">50</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Done.&quot;</span><span class="p">)</span>
+<span class="linenos">51</span>
+<span class="linenos">52</span>
+<span class="linenos">53</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="linenos">54</span>    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="example-output">
+<h2>Example Output<a class="headerlink" href="#example-output" title="Link to this heading"></a></h2>
+<img alt="Code example output" class="align-left" src="../_images/vhs7.gif" />
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="arrays-and-for-each.html" class="btn btn-neutral float-left" title="Arrays and For … Each Loops" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="lists.html" class="btn btn-neutral float-right" title="Lists" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Patrick Coxall.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,405 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recursion &mdash; Computer Based Problem Solving 1.0.5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=d55fa986"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Holding Data" href="../holding-data/index.html" />
+    <link rel="prev" title="By Value or By Reference" href="by-value-or-by-reference.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Computer Based Problem Solving
+              <img src="../_static/cs-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computer Based Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem-solving/index.html">Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structured-problem-solving/index.html">Structured Problem Solving</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Functions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="understanding-functions.html">Understanding Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions-with-a-parameter.html">Functions with a Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="return-values.html">Return Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions-with-multiple-parameters.html">Functions with Multiple Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="default-values.html">Default Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="by-value-or-by-reference.html">By Value or By Reference</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Recursion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../holding-data/index.html">Holding Data</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computer Based Problem Solving</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Functions</a></li>
+      <li class="breadcrumb-item active">Recursion</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/functions/recursion.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="recursion">
+<span id="id1"></span><h1>Recursion<a class="headerlink" href="#recursion" title="Link to this heading"></a></h1>
+<p>Up to this point we have been focusing on a structured approach to programming. We have ensured that we can easily follow the flow of a program, even if we create functions to modulate out components that we use often. There is one more interesting way to solve programs, that uses modularity but in a strange method. We have become accustomed to calling a function, doing the action and then returning to the flow of the program. But what would happen if in a function we called the <em>exact same function?</em> If we do this it is called <a class="reference external" href="https://en.wikipedia.org/wiki/Recursion_(computer_science)">recursion</a>.</p>
+<p>The first question we need to ask ourselves is can we legally do this? This is a really good question, since in some programming languages, recursion is actually illegal and you will not be able to compile you program. Most modern languages actually let you do this. The second question you might be asking is, would I end up in an infinite loop? The answer is you might, just like you could in any looping structure if you do not write the code correctly. But if you write the code, “properly” you will not end up in an infinite loop.</p>
+<p>To prevent yourself from ending up in an infinite loop you will need a way to exit the continual process of being in a function and then calling the exact same function. To prevent this from happening, it is common to actually have a conditional statement that will exit the function. This is called the <a class="reference external" href="https://en.wikipedia.org/wiki/Recursion_(computer_science)#Recursion_versus_iteration">base case</a>. The goal of the base case is to exit the function and return to the previous function call. This is the key to recursion, you are calling the function, but only if a certain condition is met, else you return to the previous function call.</p>
+<p>As an example we can look at the problem of calculating the factorial (n!) of a number. The factorial of a number is the product of all the numbers from 1 to n. So 5! = 5 * 4 * 3 * 2 * 1 = 120. We can write a program to calculate the factorial of a number using a loop, but we can also write a program to calculate the factorial of a number using recursion. The first thing we need to do is to write the base case. In this case, we will say that if the number is 1, then the factorial is 1 and just return the answer. This is because 1! = 1. If the number is not 1, then we will call the function again, but this time with the number - 1. This will continue until we reach the base case.</p>
+<p>In most modern IDEs you can also watch your progress by looking at the stack. The stack is a data structure that is used to keep track of function calls. When you call a function, it is added to the stack, when you return from a function, it is removed from the stack.</p>
+<p>By using recursion, what you are trying to do is simplify out the problem to something very trivial to program. Remember that in our problem solving model, trying to simplify out the problem was really important. Here is the n! problem solved using recusion.</p>
+<section id="code-for-a-recursive-function">
+<h2>Code for a Recursive Function<a class="headerlink" href="#code-for-a-recursive-function" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-Qw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-Qw==" name="Qw==" role="tab" tabindex="0">C</button><button aria-controls="panel-0-Qysr" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-Qysr" name="Qysr" role="tab" tabindex="-1">C++</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button><button aria-controls="panel-0-R28=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-R28=" name="R28=" role="tab" tabindex="-1">Go</button><button aria-controls="panel-0-SmF2YQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YQ==" name="SmF2YQ==" role="tab" tabindex="-1">Java</button><button aria-controls="panel-0-SmF2YVNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tab" tabindex="-1">JavaScript</button><button aria-controls="panel-0-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-0-Qw==" class="sphinx-tabs-panel group-tab" id="panel-0-Qw==" name="Qw==" role="tabpanel" tabindex="0"><div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 Mr. Coxall All rights reserved.</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program calculates factorial</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<span class="linenos"> 8</span>
+<span class="hll"><span class="linenos"> 9</span><span class="kt">int</span><span class="w"> </span><span class="nf">factorial</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">10</span><span class="w">    </span><span class="c1">// recursive function calculating factorial</span>
+</span><span class="hll"><span class="linenos">11</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">12</span><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">13</span><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">14</span><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">factorial</span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">    </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">16</span><span class="p">}</span>
+</span><span class="linenos">17</span>
+<span class="linenos">18</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">19</span><span class="w">    </span><span class="c1">// this function gets user input</span>
+<span class="linenos">20</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">userInputInt</span><span class="p">;</span>
+<span class="linenos">21</span>
+<span class="linenos">22</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">23</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter a positive integer: &quot;</span><span class="p">);</span>
+<span class="linenos">24</span><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">userInputInt</span><span class="p">);</span>
+<span class="linenos">25</span>
+<span class="linenos">26</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">userInputInt</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">27</span><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;That was not a positive integer.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="linenos">28</span><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">29</span><span class="w">        </span><span class="c1">// call function</span>
+<span class="hll"><span class="linenos">30</span><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">factorialAnswer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">factorial</span><span class="p">(</span><span class="n">userInputInt</span><span class="p">);</span>
+</span><span class="linenos">31</span><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;The factorial of %d is %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">userInputInt</span><span class="p">,</span><span class="w"> </span><span class="n">factorialAnswer</span><span class="p">);</span>
+<span class="linenos">32</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">33</span>
+<span class="linenos">34</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Done.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="linenos">35</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">36</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-Qysr" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 Mr. Coxall All rights reserved.</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program calculates factorial</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="linenos"> 8</span>
+<span class="hll"><span class="linenos"> 9</span><span class="kt">int</span><span class="w"> </span><span class="nf">factorial</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">10</span><span class="w">    </span><span class="c1">// recursive function calculating factorial</span>
+</span><span class="hll"><span class="linenos">11</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">12</span><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">13</span><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">14</span><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">factorial</span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">    </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">16</span><span class="p">}</span>
+</span><span class="linenos">17</span>
+<span class="linenos">18</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">19</span><span class="w">    </span><span class="c1">// this function gets user input</span>
+<span class="linenos">20</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">userInputInt</span><span class="p">;</span>
+<span class="linenos">21</span>
+<span class="linenos">22</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">23</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Enter a positive integer: &quot;</span><span class="p">;</span>
+<span class="linenos">24</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">userInputInt</span><span class="p">;</span>
+<span class="linenos">25</span>
+<span class="linenos">26</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">userInputInt</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">27</span><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;That was not a positive integer.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">28</span><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">29</span><span class="w">        </span><span class="c1">// call function</span>
+<span class="hll"><span class="linenos">30</span><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">factorialAnswer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">factorial</span><span class="p">(</span><span class="n">userInputInt</span><span class="p">);</span>
+</span><span class="linenos">31</span><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;The factorial of &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">userInputInt</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; is &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">factorialAnswer</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">32</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">33</span>
+<span class="linenos">34</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Done.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">35</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">36</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-C# notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* Created by: Mr. Coxall</span>
+<span class="linenos"> 2</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 3</span><span class="cm"> * This program calculates factorial</span>
+<span class="linenos"> 4</span><span class="cm">*/</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="cm">/*</span>
+<span class="linenos"> 9</span><span class="cm"> * The Program class</span>
+<span class="linenos">10</span><span class="cm">*/</span>
+<span class="linenos">11</span><span class="k">class</span><span class="w"> </span><span class="nc">Program</span><span class="w"> </span><span class="p">{</span>
+<span class="hll"><span class="linenos">12</span><span class="w">        </span><span class="c1">// recursive function calculating factorial</span>
+</span><span class="hll"><span class="linenos">13</span><span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">Factorial</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">14</span><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">            </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">            </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">18</span><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Factorial</span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">19</span><span class="w">            </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">20</span><span class="w">        </span><span class="p">}</span>
+</span><span class="linenos">21</span>
+<span class="linenos">22</span><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">23</span><span class="w">        </span><span class="c1">// this function gets user input</span>
+<span class="linenos">24</span><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">userInputInt</span><span class="p">;</span>
+<span class="linenos">25</span>
+<span class="linenos">26</span><span class="w">        </span><span class="c1">// input</span>
+<span class="linenos">27</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Enter a positive integer: &quot;</span><span class="p">);</span>
+<span class="linenos">28</span><span class="w">        </span><span class="n">userInputInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+<span class="linenos">29</span>
+<span class="linenos">30</span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">userInputInt</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">31</span><span class="w">            </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;That was not a positive integer.&quot;</span><span class="p">);</span>
+<span class="linenos">32</span><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">33</span><span class="w">            </span><span class="c1">// call function</span>
+<span class="hll"><span class="linenos">34</span><span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">factorialAnswer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Factorial</span><span class="p">(</span><span class="n">userInputInt</span><span class="p">);</span>
+</span><span class="linenos">35</span><span class="w">            </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;The factorial of {userInputInt} is {factorialAnswer}&quot;</span><span class="p">);</span>
+<span class="linenos">36</span><span class="w">        </span><span class="p">}</span>
+<span class="linenos">37</span>
+<span class="linenos">38</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
+<span class="linenos">39</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">40</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-R28=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-R28=" name="R28=" role="tabpanel" tabindex="0"><div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * Created by: Mr. Coxall</span>
+<span class="linenos"> 3</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 4</span><span class="cm"> * This program calculates factorial</span>
+<span class="linenos"> 5</span><span class="cm"> */</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kn">import</span><span class="w"> </span><span class="s">&quot;fmt&quot;</span>
+<span class="linenos">10</span>
+<span class="hll"><span class="linenos">11</span><span class="kd">func</span><span class="w"> </span><span class="nx">factorial</span><span class="p">(</span><span class="nx">number</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">12</span><span class="w">	</span><span class="c1">// recursive function calculating factorial</span>
+</span><span class="hll"><span class="linenos">13</span><span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">14</span><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="mi">1</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">		</span><span class="k">return</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">factorial</span><span class="p">(</span><span class="nx">number</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">	</span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">18</span><span class="p">}</span>
+</span><span class="linenos">19</span>
+<span class="linenos">20</span><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">21</span><span class="w">	</span><span class="c1">// this function gets user input</span>
+<span class="linenos">22</span><span class="w">	</span><span class="kd">var</span><span class="w"> </span><span class="nx">userInputInt</span><span class="w"> </span><span class="kt">int</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span><span class="w">	</span><span class="c1">// input</span>
+<span class="linenos">25</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Print</span><span class="p">(</span><span class="s">&quot;Enter a positive integer: &quot;</span><span class="p">)</span>
+<span class="linenos">26</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Scanln</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">userInputInt</span><span class="p">)</span>
+<span class="linenos">27</span>
+<span class="linenos">28</span><span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="nx">userInputInt</span><span class="w"> </span><span class="p">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">29</span><span class="w">		</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;That was not a positive integer.&quot;</span><span class="p">)</span>
+<span class="linenos">30</span><span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">31</span><span class="w">		</span><span class="c1">// call function</span>
+<span class="hll"><span class="linenos">32</span><span class="w">		</span><span class="nx">factorialAnswer</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">factorial</span><span class="p">(</span><span class="nx">userInputInt</span><span class="p">)</span>
+</span><span class="linenos">33</span><span class="w">		</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;The factorial of %d is %d\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">userInputInt</span><span class="p">,</span><span class="w"> </span><span class="nx">factorialAnswer</span><span class="p">)</span>
+<span class="linenos">34</span><span class="w">	</span><span class="p">}</span>
+<span class="linenos">35</span>
+<span class="linenos">36</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">)</span>
+<span class="linenos">37</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YQ==" name="SmF2YQ==" role="tabpanel" tabindex="0"><div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/*</span>
+<span class="linenos"> 2</span><span class="cm"> * This program calculates factorial</span>
+<span class="linenos"> 3</span><span class="cm"> *</span>
+<span class="linenos"> 4</span><span class="cm"> * @author  Mr Coxall</span>
+<span class="linenos"> 5</span><span class="cm"> * @version 1.0</span>
+<span class="linenos"> 6</span><span class="cm"> * @since   2020-09-01</span>
+<span class="linenos"> 7</span><span class="cm"> */</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="hll"><span class="linenos">12</span><span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">factorial</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">13</span><span class="w">      </span><span class="c1">// recursive function calculating factorial</span>
+</span><span class="hll"><span class="linenos">14</span><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">          </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">          </span><span class="k">return</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">factorial</span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">18</span><span class="w">      </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">19</span><span class="w">    </span><span class="p">}</span>
+</span><span class="linenos">20</span>
+<span class="linenos">21</span><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">22</span><span class="w">    </span><span class="c1">// this function gets user input</span>
+<span class="linenos">23</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">userInputInt</span><span class="p">;</span>
+<span class="linenos">24</span>
+<span class="linenos">25</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">26</span><span class="w">    </span><span class="n">Scanner</span><span class="w"> </span><span class="n">scanner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+<span class="linenos">27</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter a positive integer: &quot;</span><span class="p">);</span>
+<span class="linenos">28</span><span class="w">    </span><span class="n">userInputInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+<span class="linenos">29</span>
+<span class="linenos">30</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">userInputInt</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">31</span><span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;That was not a positive integer.&quot;</span><span class="p">);</span>
+<span class="linenos">32</span><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">33</span><span class="w">      </span><span class="c1">// call function</span>
+<span class="hll"><span class="linenos">34</span><span class="w">      </span><span class="kt">int</span><span class="w"> </span><span class="n">factorialAnswer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">factorial</span><span class="p">(</span><span class="n">userInputInt</span><span class="p">);</span>
+</span><span class="linenos">35</span><span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;The factorial of %d is %d%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">userInputInt</span><span class="p">,</span><span class="w"> </span><span class="n">factorialAnswer</span><span class="p">);</span>
+<span class="linenos">36</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">37</span>
+<span class="linenos">38</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
+<span class="linenos">39</span><span class="w">  </span><span class="p">}</span>
+<span class="linenos">40</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YVNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* Created by: Mr. Coxall</span>
+<span class="linenos"> 2</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 3</span><span class="cm"> * This program calculates factorial</span>
+<span class="linenos"> 4</span><span class="cm">*/</span>
+<span class="linenos"> 5</span>
+<span class="hll"><span class="linenos"> 6</span><span class="kd">function</span><span class="w"> </span><span class="nx">factorial</span><span class="p">(</span><span class="nx">number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos"> 7</span><span class="w">  </span><span class="c1">// recursive function calculating factorial</span>
+</span><span class="hll"><span class="linenos"> 8</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">number</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos"> 9</span><span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">10</span><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">11</span><span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">factorial</span><span class="p">(</span><span class="nx">number</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">12</span><span class="w">  </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">13</span><span class="p">}</span>
+</span><span class="linenos">14</span>
+<span class="linenos">15</span><span class="kd">const</span><span class="w"> </span><span class="nx">prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;prompt-sync&#39;</span><span class="p">)()</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="c1">// input</span>
+<span class="linenos">18</span><span class="kd">const</span><span class="w"> </span><span class="nx">userInputInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Enter a positive integer: &quot;</span><span class="p">));</span>
+<span class="linenos">19</span>
+<span class="linenos">20</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">userInputInt</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">21</span><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;That was not a positive integer.&quot;</span><span class="p">);</span>
+<span class="linenos">22</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">23</span><span class="w">  </span><span class="c1">// call function</span>
+<span class="hll"><span class="linenos">24</span><span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">factorialAnswer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">factorial</span><span class="p">(</span><span class="nx">userInputInt</span><span class="p">);</span>
+</span><span class="linenos">25</span><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`The factorial of </span><span class="si">${</span><span class="nx">userInputInt</span><span class="si">}</span><span class="sb"> is </span><span class="si">${</span><span class="nx">factorialAnswer</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<span class="linenos">26</span><span class="p">}</span>
+<span class="linenos">27</span>
+<span class="linenos">28</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\nDone.&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="ch">#!/usr/bin/env python3</span>
+<span class="linenos"> 2</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 3</span><span class="sd">Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="sd">Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="sd">This module calculates factorial</span>
+<span class="linenos"> 6</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span>
+<span class="hll"><span class="linenos"> 9</span><span class="k">def</span><span class="w"> </span><span class="nf">factorial</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">10</span><span class="w">    </span><span class="sd">&quot;&quot;&quot; A recursive function that returns the factorial of a number&quot;&quot;&quot;</span>
+</span><span class="hll"><span class="linenos">11</span>    <span class="k">if</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">12</span>        <span class="k">return</span> <span class="mi">1</span>
+</span><span class="hll"><span class="linenos">13</span>    <span class="k">else</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">14</span>        <span class="k">return</span> <span class="n">number</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">number</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</span><span class="linenos">15</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+<span class="linenos">18</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;this function gets user input&quot;&quot;&quot;</span>
+<span class="linenos">19</span>
+<span class="linenos">20</span>    <span class="c1"># input</span>
+<span class="linenos">21</span>    <span class="n">user_input_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a positive integer: &quot;</span><span class="p">))</span>
+<span class="linenos">22</span>
+<span class="linenos">23</span>    <span class="k">if</span> <span class="n">user_input_int</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos">24</span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That was not a positive integer.&quot;</span><span class="p">)</span>
+<span class="linenos">25</span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos">26</span>        <span class="c1"># call function</span>
+<span class="hll"><span class="linenos">27</span>        <span class="n">factorial_answer</span> <span class="o">=</span> <span class="n">factorial</span><span class="p">(</span><span class="n">user_input_int</span><span class="p">)</span>
+</span><span class="linenos">28</span>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The factorial of </span><span class="si">{</span><span class="n">user_input_int</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">factorial_answer</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="linenos">29</span>
+<span class="linenos">30</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Done.&quot;</span><span class="p">)</span>
+<span class="linenos">31</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="linenos">34</span>    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="example-output">
+<h2>Example Output<a class="headerlink" href="#example-output" title="Link to this heading"></a></h2>
+<img alt="Code example output" class="align-left" src="../_images/vhs4.gif" />
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="by-value-or-by-reference.html" class="btn btn-neutral float-left" title="By Value or By Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../holding-data/index.html" class="btn btn-neutral float-right" title="Holding Data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Patrick Coxall.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

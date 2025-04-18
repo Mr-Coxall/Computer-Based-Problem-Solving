@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Default Values &mdash; Computer Based Problem Solving 1.0.5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=d55fa986"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="By Value or By Reference" href="by-value-or-by-reference.html" />
+    <link rel="prev" title="Functions with Multiple Parameters" href="functions-with-multiple-parameters.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Computer Based Problem Solving
+              <img src="../_static/cs-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computer Based Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem-solving/index.html">Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structured-problem-solving/index.html">Structured Problem Solving</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Functions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="understanding-functions.html">Understanding Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions-with-a-parameter.html">Functions with a Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="return-values.html">Return Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions-with-multiple-parameters.html">Functions with Multiple Parameters</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Default Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="by-value-or-by-reference.html">By Value or By Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recursion.html">Recursion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../holding-data/index.html">Holding Data</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computer Based Problem Solving</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Functions</a></li>
+      <li class="breadcrumb-item active">Default Values</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/functions/default-values.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="default-values">
+<span id="id1"></span><h1>Default Values<a class="headerlink" href="#default-values" title="Link to this heading"></a></h1>
+<p>All of the functions that we have looked at to this point, you had to ensure that you were sending the exact same number of parameters to the function as it was expecting. To help us do this a good IDE will have, “auto-complete” giving us a little pop out window to show us what should be passed over to the function.</p>
+<p>Some built in functions we have been using can be accessed in multiple different ways though. For example in Python there is a built in function called random.randrange(). It is kind of like random.ranint() that we have used in the past. Here is the definition for random.ranint():</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="o">//</span> <span class="n">Return</span> <span class="n">a</span> <span class="n">random</span> <span class="n">integer</span> <span class="n">N</span> <span class="n">such</span> <span class="n">that</span> <span class="n">a</span> <span class="o">&lt;=</span> <span class="n">N</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="o">.</span> <span class="n">Alias</span> <span class="k">for</span> <span class="n">randrange</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Notice that “a &amp; b” are our starting and ending points.</p>
+<p>Here is the definition for random.randrange():</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="p">[,</span> <span class="n">step</span><span class="p">])</span>
+<span class="o">//</span> <span class="n">The</span> <span class="n">positional</span> <span class="n">argument</span> <span class="n">pattern</span> <span class="n">matches</span> <span class="n">that</span> <span class="n">of</span> <span class="nb">range</span><span class="p">()</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>First off there is actually 2 seperate ways we could call this function:</p>
+<ul class="simple">
+<li><p>random.randrange(start, stop)</p></li>
+<li><p>random.randrange(start, stop, step)</p></li>
+</ul>
+<p>It seems that <em>step</em> is, “optional” which it is. By default, if you do not provide it, then python assumes the value is just 1. You can choose for example to place in a 2, and then only even numbers will be chosen. Here is how we would define the function random.randrange() to get this optional parameter:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">randrange</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="p">,</span> <span class="n">step</span> <span class="o">=</span> <span class="mi">1</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>Notice that right in the declaration of the function the, “default optional parameter” is being set. If it is not provided as a parameter, the default value is just used. Each programming language has its own syntax to make this kind of optional parameter work. Here is an example:</p>
+<section id="code-for-function-with-default-values">
+<h2>Code for Function with Default Values<a class="headerlink" href="#code-for-function-with-default-values" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-Qw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-Qw==" name="Qw==" role="tab" tabindex="0">C</button><button aria-controls="panel-0-Qysr" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-Qysr" name="Qysr" role="tab" tabindex="-1">C++</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button><button aria-controls="panel-0-R28=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-R28=" name="R28=" role="tab" tabindex="-1">Go</button><button aria-controls="panel-0-SmF2YQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YQ==" name="SmF2YQ==" role="tab" tabindex="-1">Java</button><button aria-controls="panel-0-SmF2YVNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tab" tabindex="-1">JavaScript</button><button aria-controls="panel-0-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-0-Qw==" class="sphinx-tabs-panel group-tab" id="panel-0-Qw==" name="Qw==" role="tabpanel" tabindex="0"><div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1">// No default values for functions in C</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-Qysr" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 St. Mother Teresa HS All rights reserved.</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program prints out your name, using default function parameters</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="linenos"> 8</span>
+<span class="hll"><span class="linenos"> 9</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">FullName</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">firstName</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">lastName</span><span class="p">,</span>
+</span><span class="hll"><span class="linenos">10</span><span class="w">                     </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">middleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">11</span><span class="w">    </span><span class="c1">// return the full formal name</span>
+</span><span class="hll"><span class="linenos">12</span>
+</span><span class="hll"><span class="linenos">13</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">fullName</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">14</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">    </span><span class="n">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">firstName</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">middleName</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">        </span><span class="n">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fullName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">middleName</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;.&quot;</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">18</span><span class="w">    </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">19</span><span class="w">    </span><span class="n">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fullName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">lastName</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">20</span>
+</span><span class="hll"><span class="linenos">21</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">fullName</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">22</span><span class="p">}</span>
+</span><span class="linenos">23</span>
+<span class="linenos">24</span>
+<span class="linenos">25</span><span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">26</span><span class="w">    </span><span class="c1">// gets a users name and prints out their formal name</span>
+<span class="linenos">27</span>
+<span class="linenos">28</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">firstName</span><span class="p">;</span>
+<span class="linenos">29</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">question</span><span class="p">;</span>
+<span class="linenos">30</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">middleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="linenos">31</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">lastName</span><span class="p">;</span>
+<span class="linenos">32</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">fullName</span><span class="p">;</span>
+<span class="linenos">33</span>
+<span class="linenos">34</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">35</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Enter your first name: &quot;</span><span class="p">;</span>
+<span class="linenos">36</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">firstName</span><span class="p">;</span>
+<span class="linenos">37</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Do you have a middle name? (y/n): &quot;</span><span class="p">;</span>
+<span class="linenos">38</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">question</span><span class="p">;</span>
+<span class="linenos">39</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">question</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;Y&quot;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">question</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;YES&quot;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">question</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;y&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">40</span><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Enter your middle name: &quot;</span><span class="p">;</span>
+<span class="linenos">41</span><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">middleName</span><span class="p">;</span>
+<span class="linenos">42</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">43</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Enter your last name: &quot;</span><span class="p">;</span>
+<span class="linenos">44</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">lastName</span><span class="p">;</span>
+<span class="linenos">45</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">46</span>
+<span class="linenos">47</span><span class="w">    </span><span class="c1">// call functions</span>
+<span class="linenos">48</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">middleName</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="hll"><span class="linenos">49</span><span class="w">        </span><span class="n">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FullName</span><span class="p">(</span><span class="n">firstName</span><span class="p">,</span><span class="w"> </span><span class="n">lastName</span><span class="p">,</span><span class="w"> </span><span class="n">middleName</span><span class="p">);</span>
+</span><span class="linenos">50</span><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="hll"><span class="linenos">51</span><span class="w">        </span><span class="n">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FullName</span><span class="p">(</span><span class="n">firstName</span><span class="p">,</span><span class="w"> </span><span class="n">lastName</span><span class="p">);</span>
+</span><span class="linenos">52</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">53</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Your formal name is &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">fullName</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">54</span>
+<span class="linenos">55</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Done.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">56</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">57</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-C# notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* Created by: Mr. Coxall</span>
+<span class="linenos"> 2</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 3</span><span class="cm"> * This program prints out your name, using default function parameters</span>
+<span class="linenos"> 4</span><span class="cm">*/</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="cm">/*</span>
+<span class="linenos"> 9</span><span class="cm"> * The Program class</span>
+<span class="linenos">10</span><span class="cm"> * Contains all methods for performing how local and global variables work</span>
+<span class="linenos">11</span><span class="cm">*/</span>
+<span class="linenos">12</span><span class="k">class</span><span class="w"> </span><span class="nc">Program</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">13</span>
+<span class="hll"><span class="linenos">14</span><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nf">FullName</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">firstName</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">lastName</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">middleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">        </span><span class="c1">// this function calculates the full name</span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">fullName</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">17</span>
+</span><span class="hll"><span class="linenos">18</span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">middleName</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">19</span><span class="w">            </span><span class="n">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">firstName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">lastName</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">20</span><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">21</span><span class="w">            </span><span class="n">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">firstName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">middleName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">lastName</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">22</span><span class="w">        </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">23</span><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">fullName</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">24</span><span class="w">    </span><span class="p">}</span>
+</span><span class="linenos">25</span>
+<span class="linenos">26</span><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="w"> </span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">27</span><span class="w">        </span><span class="c1">// this function gets a users name and prints out their formal name</span>
+<span class="linenos">28</span><span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">firstName</span><span class="p">;</span>
+<span class="linenos">29</span><span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">question</span><span class="p">;</span>
+<span class="linenos">30</span><span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">middleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="linenos">31</span><span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">lastName</span><span class="p">;</span>
+<span class="linenos">32</span><span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">fullName</span><span class="p">;</span>
+<span class="linenos">33</span>
+<span class="linenos">34</span><span class="w">        </span><span class="c1">//input</span>
+<span class="linenos">35</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Enter your first name: &quot;</span><span class="p">);</span>
+<span class="linenos">36</span><span class="w">        </span><span class="n">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+<span class="linenos">37</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Do you have a middle name? (y/n): &quot;</span><span class="p">);</span>
+<span class="linenos">38</span><span class="w">        </span><span class="n">question</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+<span class="linenos">39</span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">question</span><span class="p">.</span><span class="n">ToUpper</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;Y&quot;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">question</span><span class="p">.</span><span class="n">ToUpper</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;YES&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">40</span><span class="w">            </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Enter your middle name: &quot;</span><span class="p">);</span>
+<span class="linenos">41</span><span class="w">            </span><span class="n">middleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+<span class="linenos">42</span><span class="w">        </span><span class="p">}</span>
+<span class="linenos">43</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Enter your last name: &quot;</span><span class="p">);</span>
+<span class="linenos">44</span><span class="w">        </span><span class="n">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+<span class="linenos">45</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">();</span>
+<span class="linenos">46</span>
+<span class="linenos">47</span><span class="w">        </span><span class="c1">// process &amp; output</span>
+<span class="linenos">48</span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">middleName</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="hll"><span class="linenos">49</span><span class="w">            </span><span class="n">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FullName</span><span class="p">(</span><span class="n">firstName</span><span class="p">,</span><span class="w"> </span><span class="n">lastName</span><span class="p">,</span><span class="w"> </span><span class="n">middleName</span><span class="p">);</span>
+</span><span class="linenos">50</span><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="hll"><span class="linenos">51</span><span class="w">            </span><span class="n">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FullName</span><span class="p">(</span><span class="n">firstName</span><span class="p">,</span><span class="w"> </span><span class="n">lastName</span><span class="p">);</span>
+</span><span class="linenos">52</span><span class="w">        </span><span class="p">}</span>
+<span class="linenos">53</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Your formal name is {fullName}.&quot;</span><span class="p">);</span>
+<span class="linenos">54</span>
+<span class="linenos">55</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
+<span class="linenos">56</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">57</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-R28=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-R28=" name="R28=" role="tabpanel" tabindex="0"><div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1">// No default values for functions in Go</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YQ==" name="SmF2YQ==" role="tabpanel" tabindex="0"><div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/*</span>
+<span class="linenos"> 2</span><span class="cm"> * This program shows how local and global variables work</span>
+<span class="linenos"> 3</span><span class="cm"> *</span>
+<span class="linenos"> 4</span><span class="cm"> * @author  Mr Coxall</span>
+<span class="linenos"> 5</span><span class="cm"> * @version 1.0</span>
+<span class="linenos"> 6</span><span class="cm"> * @since   2020-09-01</span>
+<span class="linenos"> 7</span><span class="cm"> */</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w"> </span><span class="c1">// Import the Scanner class</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="kd">final</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="hll"><span class="linenos">12</span><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">13</span><span class="w">    </span><span class="c1">// Prevent instantiation</span>
+</span><span class="hll"><span class="linenos">14</span><span class="w">    </span><span class="c1">// Optional: throw an exception e.g. AssertionError</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">    </span><span class="c1">// if this ever *is* called</span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">    </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">IllegalStateException</span><span class="p">(</span><span class="s">&quot;Cannot be instantiated&quot;</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">  </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">18</span>
+</span><span class="hll"><span class="linenos">19</span><span class="w">  </span><span class="cm">/**</span>
+</span><span class="hll"><span class="linenos">20</span><span class="cm">   * Main entry point into program.</span>
+</span><span class="hll"><span class="linenos">21</span><span class="cm">   *</span>
+</span><span class="hll"><span class="linenos">22</span><span class="cm">   * @param args nothing passed in</span>
+</span><span class="linenos">23</span><span class="cm">   */</span>
+<span class="linenos">24</span><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">25</span><span class="w">    </span><span class="c1">// this function calculates total from subtotal and tax</span>
+<span class="linenos">26</span><span class="w">    </span><span class="kd">final</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">HST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.13f</span><span class="p">;</span>
+<span class="linenos">27</span><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">tax</span><span class="p">;</span>
+<span class="linenos">28</span><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">subTotal</span><span class="p">;</span>
+<span class="linenos">29</span><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">total</span><span class="p">;</span>
+<span class="linenos">30</span>
+<span class="linenos">31</span><span class="w">    </span><span class="n">Scanner</span><span class="w"> </span><span class="n">scanner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">34</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter the subtotal: $&quot;</span><span class="p">);</span>
+<span class="linenos">35</span><span class="w">    </span><span class="n">subTotal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextFloat</span><span class="p">();</span>
+<span class="linenos">36</span>
+<span class="linenos">37</span><span class="w">    </span><span class="c1">// process</span>
+<span class="linenos">38</span><span class="w">    </span><span class="n">tax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">subTotal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">HST</span><span class="p">;</span>
+<span class="linenos">39</span><span class="w">    </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">subTotal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tax</span><span class="p">;</span>
+<span class="linenos">40</span>
+<span class="linenos">41</span><span class="w">    </span><span class="c1">// output</span>
+<span class="linenos">42</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+<span class="linenos">43</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;The HST is: $%.2f.\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">tax</span><span class="p">);</span>
+<span class="linenos">44</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;The total cost is: $%.2f.\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">total</span><span class="p">);</span>
+<span class="linenos">45</span>
+<span class="linenos">46</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
+<span class="hll"><span class="linenos">47</span><span class="w">  </span><span class="p">}</span>
+</span><span class="linenos">48</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YVNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 Mr. Coxall All rights reserved</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program prints out your name, using default function parameters</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="kd">const</span><span class="w"> </span><span class="nx">prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;prompt-sync&#39;</span><span class="p">)()</span>
+<span class="linenos"> 8</span>
+<span class="hll"><span class="linenos"> 9</span><span class="kd">function</span><span class="w"> </span><span class="nx">FullName</span><span class="p">(</span><span class="nx">firstName</span><span class="p">,</span><span class="w"> </span><span class="nx">lastName</span><span class="p">,</span><span class="w"> </span><span class="nx">middleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">10</span><span class="w">    </span><span class="c1">// return the full formal name</span>
+</span><span class="hll"><span class="linenos">11</span><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">firstName</span>
+</span><span class="hll"><span class="linenos">12</span>
+</span><span class="hll"><span class="linenos">13</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">middleName</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">14</span><span class="w">        </span><span class="nx">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fullName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">middleName</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;.&quot;</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">    </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">    </span><span class="nx">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fullName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lastName</span>
+</span><span class="hll"><span class="linenos">17</span>
+</span><span class="hll"><span class="linenos">18</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">fullName</span>
+</span><span class="hll"><span class="linenos">19</span><span class="p">}</span>
+</span><span class="linenos">20</span>
+<span class="linenos">21</span><span class="c1">// this function function calculates the full name</span>
+<span class="linenos">22</span><span class="kd">let</span><span class="w"> </span><span class="nx">middleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span><span class="c1">// input</span>
+<span class="linenos">25</span><span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s1">&#39;Enter your first name: &#39;</span><span class="p">)</span>
+<span class="linenos">26</span><span class="kd">let</span><span class="w"> </span><span class="nx">question</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s1">&#39;Do you have a middle name? (y/n): &#39;</span><span class="p">)</span>
+<span class="linenos">27</span>
+<span class="linenos">28</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">question</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;Y&quot;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">question</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;YES&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">29</span><span class="w">    </span><span class="nx">middleName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s1">&#39;Enter your middle name: &#39;</span><span class="p">)</span>
+<span class="linenos">30</span><span class="p">}</span>
+<span class="linenos">31</span><span class="kd">let</span><span class="w"> </span><span class="nx">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s1">&#39;Enter your last name: &#39;</span><span class="p">)</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span><span class="c1">// call functions</span>
+<span class="linenos">34</span><span class="kd">let</span><span class="w"> </span><span class="nx">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="linenos">35</span>
+<span class="linenos">36</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">middleName</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="hll"><span class="linenos">37</span><span class="w">    </span><span class="nx">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">FullName</span><span class="p">(</span><span class="nx">firstName</span><span class="p">,</span><span class="w"> </span><span class="nx">lastName</span><span class="p">,</span><span class="w"> </span><span class="nx">middleName</span><span class="p">)</span>
+</span><span class="linenos">38</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="hll"><span class="linenos">39</span><span class="w">    </span><span class="nx">fullName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">FullName</span><span class="p">(</span><span class="nx">firstName</span><span class="p">,</span><span class="w"> </span><span class="nx">lastName</span><span class="p">)</span>
+</span><span class="linenos">40</span><span class="p">}</span>
+<span class="linenos">41</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`\nYour formal name is </span><span class="si">${</span><span class="nx">fullName</span><span class="si">}</span><span class="sb">.`</span><span class="p">)</span>
+<span class="linenos">42</span>
+<span class="linenos">43</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\nDone.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="ch">#!/usr/bin/env python3</span>
+<span class="linenos"> 2</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 3</span><span class="sd">Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="sd">Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="sd">This module prints out your name, using default function parameters</span>
+<span class="linenos"> 6</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span>
+<span class="hll"><span class="linenos"> 9</span><span class="k">def</span><span class="w"> </span><span class="nf">full_name</span><span class="p">(</span><span class="n">first_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">last_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">middle_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">10</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;The full_name() function calculates the full formal name, returns str.&quot;&quot;&quot;</span>
+</span><span class="hll"><span class="linenos">11</span>    <span class="c1"># return the full formal name</span>
+</span><span class="hll"><span class="linenos">12</span>
+</span><span class="hll"><span class="linenos">13</span>    <span class="n">full_name</span> <span class="o">=</span> <span class="n">first_name</span>
+</span><span class="hll"><span class="linenos">14</span>    <span class="k">if</span> <span class="n">middle_name</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">15</span>        <span class="n">full_name</span> <span class="o">=</span> <span class="n">full_name</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">middle_name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span>
+</span><span class="hll"><span class="linenos">16</span>    <span class="n">full_name</span> <span class="o">=</span> <span class="n">full_name</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">last_name</span>
+</span><span class="hll"><span class="linenos">17</span>
+</span><span class="hll"><span class="linenos">18</span>    <span class="k">return</span> <span class="n">full_name</span>
+</span><span class="linenos">19</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">22</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;The main() function gets a users name and prints out their formal name, returns None.&quot;&quot;&quot;</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span>    <span class="n">middle_name</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="linenos">25</span>
+<span class="linenos">26</span>    <span class="c1"># input &amp; process</span>
+<span class="linenos">27</span>    <span class="n">first_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your first name: &quot;</span><span class="p">)</span>
+<span class="linenos">28</span>    <span class="n">question</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Do you have a middle name? (y/n): &quot;</span><span class="p">)</span>
+<span class="linenos">29</span>    <span class="k">if</span> <span class="n">question</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Y&quot;</span> <span class="ow">or</span> <span class="n">question</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;YES&quot;</span><span class="p">:</span>
+<span class="linenos">30</span>        <span class="n">middle_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your middle name: &quot;</span><span class="p">)</span>
+<span class="linenos">31</span>    <span class="n">last_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your last name: &quot;</span><span class="p">)</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span>    <span class="k">if</span> <span class="n">middle_name</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="hll"><span class="linenos">34</span>        <span class="n">name</span> <span class="o">=</span> <span class="n">full_name</span><span class="p">(</span><span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">middle_name</span><span class="p">)</span>
+</span><span class="linenos">35</span>    <span class="k">else</span><span class="p">:</span>
+<span class="hll"><span class="linenos">36</span>        <span class="n">name</span> <span class="o">=</span> <span class="n">full_name</span><span class="p">(</span><span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">)</span>
+</span><span class="linenos">37</span>
+<span class="linenos">38</span>    <span class="c1"># output</span>
+<span class="linenos">39</span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Your formal name is </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="linenos">40</span>
+<span class="linenos">41</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Done.&quot;</span><span class="p">)</span>
+<span class="linenos">42</span>
+<span class="linenos">43</span>
+<span class="linenos">44</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="linenos">45</span>    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="example-output">
+<h2>Example Output<a class="headerlink" href="#example-output" title="Link to this heading"></a></h2>
+<img alt="Code example output" class="align-left" src="../_images/vhs1.gif" />
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="functions-with-multiple-parameters.html" class="btn btn-neutral float-left" title="Functions with Multiple Parameters" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="by-value-or-by-reference.html" class="btn btn-neutral float-right" title="By Value or By Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Patrick Coxall.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

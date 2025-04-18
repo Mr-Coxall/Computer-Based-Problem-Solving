@@ -1,0 +1,449 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Functions with a Parameter &mdash; Computer Based Problem Solving 1.0.5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=d55fa986"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Return Values" href="return-values.html" />
+    <link rel="prev" title="Understanding Functions" href="understanding-functions.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Computer Based Problem Solving
+              <img src="../_static/cs-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computer Based Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem-solving/index.html">Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structured-problem-solving/index.html">Structured Problem Solving</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Functions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="understanding-functions.html">Understanding Functions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Functions with a Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="return-values.html">Return Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions-with-multiple-parameters.html">Functions with Multiple Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="default-values.html">Default Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="by-value-or-by-reference.html">By Value or By Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recursion.html">Recursion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../holding-data/index.html">Holding Data</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computer Based Problem Solving</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Functions</a></li>
+      <li class="breadcrumb-item active">Functions with a Parameter</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/functions/functions-with-a-parameter.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="functions-with-a-parameter">
+<span id="id1"></span><h1>Functions with a Parameter<a class="headerlink" href="#functions-with-a-parameter" title="Link to this heading"></a></h1>
+<p>A function often needs pieces of information to be able to complete its work. In the last section you might have noticed that I had to ask for the length and width twice, once for each of the area and perimeter calculations; clearly not ideal. One method of doing this is to declare the variable as a <em>global variable</em> and then any code within that file can access it. This is a very brute force method and is <strong>very bad programming style</strong>. By doing it this way, the variable is created and held in memory for the entire time the file is running, even though the information may only be needed for a small fraction of the time. Also the function is no longer portable, since it relies on external global variables that might not exist in another program. A better, more elegant and more memory friendly way is to pass the information into the function using a <a class="reference external" href="https://en.wikipedia.org/wiki/Parameter_(computer_programming)">parameter</a>. There are three main ways to pass information to a function, by value, by reference and by object reference. For the time being we will just consider by value. (We will even assume python is doing by value, even though it is really doing it by <a class="reference external" href="https://www.python-course.eu/passing_arguments.php">object reference</a>.)</p>
+<section id="passing-by-value">
+<h2>Passing By Value<a class="headerlink" href="#passing-by-value" title="Link to this heading"></a></h2>
+<p>The first method of transferring information to a function is to pass it, <a class="reference external" href="https://www.mathwarehouse.com/programming/passing-by-value-vs-by-reference-visual-explanation.php">“By Value”</a>. This means that a copy of the data is made and it is passed over to the function to do with it what it pleases. Since it is a <strong>copy</strong> of the data, any changes to the data are not reflected in the original variable. From the animation below you can see that when the cup is passed “By Value” to the function and then filled up, the original cup is still empty. This is because the variable passed to the function is a copy, not the original variable. If the function changes this variable, nothing happens to the original one.</p>
+<img alt="Pass by value or reference" class="align-center" src="../_images/pass-by-reference-vs-pass-by-value-animation.gif" />
+<p>A variable or value passed along inside a function call is called an <a class="reference external" href="https://en.wikipedia.org/wiki/Parameter_(computer_programming)">parameter</a>. Parameter(s) are usually placed inside a bracket when you invoke the function. For example:</p>
+<section id="code-for-function-with-a-parameter">
+<h3>Code for Function with a Parameter<a class="headerlink" href="#code-for-function-with-a-parameter" title="Link to this heading"></a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-Qw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-Qw==" name="Qw==" role="tab" tabindex="0">C</button><button aria-controls="panel-0-Qysr" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-Qysr" name="Qysr" role="tab" tabindex="-1">C++</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button><button aria-controls="panel-0-R28=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-R28=" name="R28=" role="tab" tabindex="-1">Go</button><button aria-controls="panel-0-SmF2YQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YQ==" name="SmF2YQ==" role="tab" tabindex="-1">Java</button><button aria-controls="panel-0-SmF2YVNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tab" tabindex="-1">JavaScript</button><button aria-controls="panel-0-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-0-Qw==" class="sphinx-tabs-panel group-tab" id="panel-0-Qw==" name="Qw==" role="tabpanel" tabindex="0"><div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="w">    </span><span class="n">calculateArea</span><span class="p">(</span><span class="n">radius</span><span class="p">);</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-Qysr" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="w">    </span><span class="n">calculateArea</span><span class="p">(</span><span class="n">radius</span><span class="p">);</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-C# notranslate"><div class="highlight"><pre><span></span><span class="w">        </span><span class="n">calculateArea</span><span class="p">(</span><span class="n">radius</span><span class="p">);</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-R28=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-R28=" name="R28=" role="tabpanel" tabindex="0"><div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="w">	</span><span class="nx">calculateArea</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YQ==" name="SmF2YQ==" role="tabpanel" tabindex="0"><div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="w">    </span><span class="n">calculateArea</span><span class="p">(</span><span class="n">radius</span><span class="p">);</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YVNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">calculateArea</span><span class="p">(</span><span class="nx">radius</span><span class="p">);</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="c1"># call functions</span>
+</pre></div>
+</div>
+</div></div>
+<p>When you are creating your function, you must also tell the program that the function is expecting these two values. To do this after the function name declaration you place in brackets the two declaration statements declaring that the function must be passed in two variables (just like when a regular variable is being declared). If your programming language requires that you declare what type the variables will be normally, you will most like have to do that too.</p>
+<p>The following is the function declaration line for the examples above:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-Qw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-Qw==" name="Qw==" role="tab" tabindex="0">C</button><button aria-controls="panel-1-Qysr" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-Qysr" name="Qysr" role="tab" tabindex="-1">C++</button><button aria-controls="panel-1-QyM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button><button aria-controls="panel-1-R28=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-R28=" name="R28=" role="tab" tabindex="-1">Go</button><button aria-controls="panel-1-SmF2YQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-SmF2YQ==" name="SmF2YQ==" role="tab" tabindex="-1">Java</button><button aria-controls="panel-1-SmF2YVNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tab" tabindex="-1">JavaScript</button><button aria-controls="panel-1-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-1-Qw==" class="sphinx-tabs-panel group-tab" id="panel-1-Qw==" name="Qw==" role="tabpanel" tabindex="0"><div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">calculateArea</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-Qysr" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">calculateArea</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-QyM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-C# notranslate"><div class="highlight"><pre><span></span><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">calculateArea</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-R28=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-R28=" name="R28=" role="tabpanel" tabindex="0"><div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">func</span><span class="w"> </span><span class="nx">calculateArea</span><span class="p">(</span><span class="nx">radius</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-SmF2YQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-SmF2YQ==" name="SmF2YQ==" role="tabpanel" tabindex="0"><div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">calculateArea</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-SmF2YVNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span><span class="w"> </span><span class="nx">calculateArea</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-UHl0aG9u" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div></div>
+<p>Here is a full example of the previous sections program, but now the main function takes care of getting the radius. This way it only has to ask you the information once and it passes the radius to the function:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-Qw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-Qw==" name="Qw==" role="tab" tabindex="0">C</button><button aria-controls="panel-2-Qysr" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-Qysr" name="Qysr" role="tab" tabindex="-1">C++</button><button aria-controls="panel-2-QyM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button><button aria-controls="panel-2-R28=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-R28=" name="R28=" role="tab" tabindex="-1">Go</button><button aria-controls="panel-2-SmF2YQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-SmF2YQ==" name="SmF2YQ==" role="tab" tabindex="-1">Java</button><button aria-controls="panel-2-SmF2YVNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tab" tabindex="-1">JavaScript</button><button aria-controls="panel-2-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-2-Qw==" class="sphinx-tabs-panel group-tab" id="panel-2-Qw==" name="Qw==" role="tabpanel" tabindex="0"><div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 Mr. Coxall All rights reserved.</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program calculates the area of circle</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<span class="linenos"> 8</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;math.h&gt;</span>
+<span class="linenos"> 9</span>
+<span class="hll"><span class="linenos">10</span><span class="kt">void</span><span class="w"> </span><span class="nf">calculateArea</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">11</span><span class="w">    </span><span class="c1">// this function calculates the area of circle</span>
+</span><span class="hll"><span class="linenos">12</span>
+</span><span class="hll"><span class="linenos">13</span><span class="w">    </span><span class="c1">// process</span>
+</span><span class="hll"><span class="linenos">14</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">M_PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">pow</span><span class="p">(</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">15</span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">    </span><span class="c1">// output</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;The area is %d cm²</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">area</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">18</span><span class="p">}</span>
+</span><span class="linenos">19</span>
+<span class="linenos">20</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">21</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">22</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter the radius of a circle (cm): &quot;</span><span class="p">);</span>
+<span class="linenos">23</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">radius</span><span class="p">;</span>
+<span class="linenos">24</span><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">radius</span><span class="p">);</span>
+<span class="linenos">25</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="linenos">26</span>
+<span class="linenos">27</span><span class="w">    </span><span class="c1">// call functions</span>
+<span class="hll"><span class="linenos">28</span><span class="w">    </span><span class="n">calculateArea</span><span class="p">(</span><span class="n">radius</span><span class="p">);</span>
+</span><span class="linenos">29</span>
+<span class="linenos">30</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Done.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="linenos">31</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">32</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-Qysr" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 Mr. Coxall All rights reserved.</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program calculates the area of circle</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="linenos"> 8</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cmath&gt;</span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span>
+<span class="hll"><span class="linenos">11</span><span class="kt">void</span><span class="w"> </span><span class="nf">calculateArea</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">12</span><span class="w">    </span><span class="c1">// this function calculates the area of circle</span>
+</span><span class="hll"><span class="linenos">13</span>
+</span><span class="hll"><span class="linenos">14</span><span class="w">    </span><span class="c1">// process</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">M_PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">pow</span><span class="p">(</span><span class="n">radius</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">16</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">    </span><span class="c1">// output</span>
+</span><span class="hll"><span class="linenos">18</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;The area is &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; cm²</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">19</span><span class="p">}</span>
+</span><span class="linenos">20</span>
+<span class="linenos">21</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">22</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">radius</span><span class="p">;</span>
+<span class="linenos">23</span><span class="w">    </span>
+<span class="linenos">24</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">25</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Enter the radius of a circle (cm): &quot;</span><span class="p">;</span>
+<span class="linenos">26</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">radius</span><span class="p">;</span>
+<span class="linenos">27</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">28</span>
+<span class="linenos">29</span><span class="w">    </span><span class="c1">// call functions</span>
+<span class="hll"><span class="linenos">30</span><span class="w">    </span><span class="n">calculateArea</span><span class="p">(</span><span class="n">radius</span><span class="p">);</span>
+</span><span class="linenos">31</span>
+<span class="linenos">32</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Done.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">33</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">34</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-QyM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-C# notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* Created by: Mr. Coxall</span>
+<span class="linenos"> 2</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 3</span><span class="cm"> * This program calculates the area of circle</span>
+<span class="linenos"> 4</span><span class="cm">*/</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="cm">/*</span>
+<span class="linenos"> 9</span><span class="cm"> * The Program class</span>
+<span class="linenos">10</span><span class="cm"> * Contains all methods for performing basic variable usage</span>
+<span class="linenos">11</span><span class="cm">*/</span>
+<span class="hll"><span class="linenos">12</span><span class="k">class</span><span class="w"> </span><span class="nc">Program</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">13</span><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">calculateArea</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">14</span><span class="w">        </span><span class="c1">// this function calculates the area of circle</span>
+</span><span class="hll"><span class="linenos">15</span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">        </span><span class="c1">// process</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="n">Pi</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">18</span>
+</span><span class="hll"><span class="linenos">19</span><span class="w">        </span><span class="c1">// output</span>
+</span><span class="hll"><span class="linenos">20</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;The area is {area} cm²&quot;</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">21</span><span class="w">    </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">22</span><span class="w"> </span>
+</span><span class="hll"><span class="linenos">23</span><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="w"> </span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">24</span><span class="w">        </span><span class="c1">// input</span>
+</span><span class="hll"><span class="linenos">25</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Enter the radius of a circle (cm): &quot;</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">26</span><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+</span><span class="hll"><span class="linenos">27</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">28</span>
+</span><span class="hll"><span class="linenos">29</span><span class="w">        </span><span class="c1">// call functions</span>
+</span><span class="hll"><span class="linenos">30</span><span class="w">        </span><span class="n">calculateArea</span><span class="p">(</span><span class="n">radius</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">31</span>
+</span><span class="linenos">32</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
+<span class="linenos">33</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">34</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-R28=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-R28=" name="R28=" role="tabpanel" tabindex="0"><div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * Created by: Mr. Coxall</span>
+<span class="linenos"> 3</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 4</span><span class="cm"> * This program calculates the area of circle</span>
+<span class="linenos"> 5</span><span class="cm"> */</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
+<span class="linenos">10</span><span class="w">	</span><span class="s">&quot;fmt&quot;</span>
+<span class="linenos">11</span><span class="w">	</span><span class="s">&quot;math&quot;</span>
+<span class="linenos">12</span><span class="p">)</span>
+<span class="linenos">13</span>
+<span class="hll"><span class="linenos">14</span><span class="kd">func</span><span class="w"> </span><span class="nx">calculateArea</span><span class="p">(</span><span class="nx">radius</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">	</span><span class="c1">// this function calculates the area of circle</span>
+</span><span class="hll"><span class="linenos">16</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">	</span><span class="c1">// process</span>
+</span><span class="hll"><span class="linenos">18</span><span class="w">	</span><span class="nx">area</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">math</span><span class="p">.</span><span class="nx">Pi</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">radius</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mi">2</span>
+</span><span class="hll"><span class="linenos">19</span>
+</span><span class="hll"><span class="linenos">20</span><span class="w">	</span><span class="c1">// output</span>
+</span><span class="hll"><span class="linenos">21</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;The area is %d cm²\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">area</span><span class="p">)</span>
+</span><span class="linenos">22</span><span class="p">}</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">25</span><span class="w">	</span><span class="c1">// input</span>
+<span class="linenos">26</span><span class="w">	</span><span class="kd">var</span><span class="w"> </span><span class="nx">radius</span><span class="w"> </span><span class="kt">int</span>
+<span class="linenos">27</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Print</span><span class="p">(</span><span class="s">&quot;Enter the radius of a circle (cm): &quot;</span><span class="p">)</span>
+<span class="linenos">28</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Scanln</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">radius</span><span class="p">)</span>
+<span class="linenos">29</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="linenos">30</span>
+<span class="linenos">31</span><span class="w">	</span><span class="c1">// call functions</span>
+<span class="hll"><span class="linenos">32</span><span class="w">	</span><span class="nx">calculateArea</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
+</span><span class="linenos">33</span>
+<span class="linenos">34</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">)</span>
+<span class="linenos">35</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-SmF2YQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-SmF2YQ==" name="SmF2YQ==" role="tabpanel" tabindex="0"><div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/*</span>
+<span class="linenos"> 2</span><span class="cm"> * This program calculates the area of circle</span>
+<span class="linenos"> 3</span><span class="cm"> *</span>
+<span class="linenos"> 4</span><span class="cm"> * @author  Mr Coxall</span>
+<span class="linenos"> 5</span><span class="cm"> * @version 1.0</span>
+<span class="linenos"> 6</span><span class="cm"> * @since   2020-09-01</span>
+<span class="linenos"> 7</span><span class="cm"> */</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="kd">final</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="hll"><span class="linenos">12</span><span class="w">  </span><span class="cm">/**</span>
+</span><span class="hll"><span class="linenos">13</span><span class="cm">   * Calculates calculates the area of circle.</span>
+</span><span class="hll"><span class="linenos">14</span><span class="cm">   *</span>
+</span><span class="hll"><span class="linenos">15</span><span class="cm">   * @param args nothing passed in</span>
+</span><span class="hll"><span class="linenos">16</span><span class="cm">   */</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">calculateArea</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">18</span><span class="w">    </span><span class="c1">// process</span>
+</span><span class="hll"><span class="linenos">19</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="n">radius</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">20</span>
+</span><span class="hll"><span class="linenos">21</span><span class="w">    </span><span class="c1">// output</span>
+</span><span class="hll"><span class="linenos">22</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;The area is %d cm²%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">area</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">23</span><span class="w">  </span><span class="p">}</span>
+</span><span class="linenos">24</span>
+<span class="linenos">25</span><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">26</span><span class="w">    </span><span class="c1">// Prevent instantiation</span>
+<span class="linenos">27</span><span class="w">    </span><span class="c1">// Optional: throw an exception e.g. AssertionError</span>
+<span class="linenos">28</span><span class="w">    </span><span class="c1">// if this ever *is* called</span>
+<span class="linenos">29</span><span class="w">    </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">IllegalStateException</span><span class="p">(</span><span class="s">&quot;Cannot be instantiated&quot;</span><span class="p">);</span>
+<span class="linenos">30</span><span class="w">  </span><span class="p">}</span>
+<span class="linenos">31</span>
+<span class="linenos">32</span><span class="w">  </span><span class="cm">/**</span>
+<span class="linenos">33</span><span class="cm">   * Main entry point into program.</span>
+<span class="linenos">34</span><span class="cm">   *</span>
+<span class="linenos">35</span><span class="cm">   * @param args nothing passed in</span>
+<span class="linenos">36</span><span class="cm">   */</span>
+<span class="linenos">37</span><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">38</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">39</span><span class="w">    </span><span class="n">Scanner</span><span class="w"> </span><span class="n">scanner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+<span class="linenos">40</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter the radius of a circle (cm): &quot;</span><span class="p">);</span>
+<span class="linenos">41</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+<span class="linenos">42</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+<span class="linenos">43</span>
+<span class="linenos">44</span><span class="w">    </span><span class="c1">// call functions</span>
+<span class="hll"><span class="linenos">45</span><span class="w">    </span><span class="n">calculateArea</span><span class="p">(</span><span class="n">radius</span><span class="p">);</span>
+</span><span class="linenos">46</span>
+<span class="linenos">47</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
+<span class="linenos">48</span><span class="w">  </span><span class="p">}</span>
+<span class="linenos">49</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-SmF2YVNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * Created by: Mr. Coxall</span>
+<span class="linenos"> 3</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 4</span><span class="cm"> * This program calculates the area of circle</span>
+<span class="linenos"> 5</span><span class="cm"> */</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="kd">const</span><span class="w"> </span><span class="nx">prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;prompt-sync&#39;</span><span class="p">)();</span>
+<span class="linenos"> 8</span>
+<span class="hll"><span class="linenos"> 9</span><span class="kd">function</span><span class="w"> </span><span class="nx">calculateArea</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">10</span><span class="w">  </span><span class="c1">// this function calculates the area of circle</span>
+</span><span class="hll"><span class="linenos">11</span><span class="w">  </span>
+</span><span class="hll"><span class="linenos">12</span><span class="w">  </span><span class="c1">// process</span>
+</span><span class="hll"><span class="linenos">13</span><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">radius</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">14</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">  </span><span class="c1">// output</span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`The area is </span><span class="si">${</span><span class="nx">area</span><span class="si">}</span><span class="sb"> cm²`</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">17</span><span class="p">}</span>
+</span><span class="linenos">18</span>
+<span class="linenos">19</span><span class="c1">// input</span>
+<span class="linenos">20</span><span class="kd">const</span><span class="w"> </span><span class="nx">radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Enter the radius of a circle (cm): &quot;</span><span class="p">));</span>
+<span class="linenos">21</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">();</span>
+<span class="linenos">22</span>
+<span class="linenos">23</span><span class="c1">// call functions</span>
+<span class="hll"><span class="linenos">24</span><span class="nx">calculateArea</span><span class="p">(</span><span class="nx">radius</span><span class="p">);</span>
+</span><span class="linenos">25</span>
+<span class="linenos">26</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\nDone.&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-UHl0aG9u" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="ch">#!/usr/bin/env python3</span>
+<span class="linenos"> 2</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 3</span><span class="sd">Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="sd">Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="sd">This module calculates the area of circle</span>
+<span class="linenos"> 6</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="linenos"> 9</span>
+<span class="hll"><span class="linenos">10</span>
+</span><span class="hll"><span class="linenos">11</span><span class="k">def</span><span class="w"> </span><span class="nf">calculate_area</span><span class="p">(</span><span class="n">radius</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">12</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;The calculate_area() function calculates the area of circle, returns None.&quot;&quot;&quot;</span>
+</span><span class="hll"><span class="linenos">13</span>
+</span><span class="hll"><span class="linenos">14</span>    <span class="c1"># process</span>
+</span><span class="hll"><span class="linenos">15</span>    <span class="n">area</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">**</span> <span class="mi">2</span>
+</span><span class="hll"><span class="linenos">16</span>
+</span><span class="hll"><span class="linenos">17</span>    <span class="c1"># output</span>
+</span><span class="linenos">18</span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The area is </span><span class="si">{</span><span class="n">area</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> cm²&quot;</span><span class="p">)</span>
+<span class="linenos">19</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">22</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;The main() function just calls other functions, returns None.&quot;&quot;&quot;</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span>    <span class="c1"># input</span>
+<span class="linenos">25</span>    <span class="n">radius</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the radius of a circle (cm): &quot;</span><span class="p">))</span>
+<span class="linenos">26</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="linenos">27</span>
+<span class="hll"><span class="linenos">28</span>    <span class="c1"># call functions</span>
+</span><span class="linenos">29</span>    <span class="n">calculate_area</span><span class="p">(</span><span class="n">radius</span><span class="p">)</span>
+<span class="linenos">30</span>
+<span class="linenos">31</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Done.&quot;</span><span class="p">)</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span>
+<span class="linenos">34</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="linenos">35</span>    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="example-output">
+<h3>Example Output<a class="headerlink" href="#example-output" title="Link to this heading"></a></h3>
+<img alt="Code example output" class="align-left" src="../_images/vhs2.gif" />
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="understanding-functions.html" class="btn btn-neutral float-left" title="Understanding Functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="return-values.html" class="btn btn-neutral float-right" title="Return Values" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Patrick Coxall.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

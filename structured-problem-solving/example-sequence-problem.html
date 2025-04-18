@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Example Sequence Problem &mdash; Computer Based Problem Solving 1.0.5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=d55fa986"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Selection" href="selection.html" />
+    <link rel="prev" title="Sequence" href="sequence.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Computer Based Problem Solving
+              <img src="../_static/cs-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computer Based Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem-solving/index.html">Problem Solving</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Structured Problem Solving</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="top-down-design.html">Top-Down Design in Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html">Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assignment-statements.html">Assignment Statements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scope-of-variables.html">Scope of Variables</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="sequence.html">Sequence</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Example Sequence Problem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="selection.html">Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repetition.html">Repetition</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../holding-data/index.html">Holding Data</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computer Based Problem Solving</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Structured Problem Solving</a></li>
+          <li class="breadcrumb-item"><a href="sequence.html">Sequence</a></li>
+      <li class="breadcrumb-item active">Example Sequence Problem</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/structured-problem-solving/example-sequence-problem.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="example-sequence-problem">
+<span id="id1"></span><h1>Example Sequence Problem<a class="headerlink" href="#example-sequence-problem" title="Link to this heading"></a></h1>
+<p>The following is an example problem that has been solved using the six step computer based problem solving method mentioned above. The goal is to show you how a sequential program works and also to show how the six steps are used to develop a program from a given problem.</p>
+<section id="sequence-programming-example">
+<h2>Sequence Programming Example<a class="headerlink" href="#sequence-programming-example" title="Link to this heading"></a></h2>
+<p>Here is the problem:
+Write a program that will allow the user to enter a subtotal and the program will calculate the final total including tax.</p>
+<ol class="arabic simple">
+<li><p><strong>Top-Down Chart</strong></p></li>
+</ol>
+<p>The first thing we need to find out is how to calculate tax in your particular province. If the program is to be used anywhere in Canada, it could get really confusing since each province has a different tax rate and some even calculate taxes differently than other provinces. To help simplify the problem, we are just going to do it for Ontario. The Harmonized Sale Tax (HST) in Ontario is currently 13%. The following is a top-down design breaking the problem up into smaller manageable pieces:</p>
+<img alt="tax problem" class="align-center" src="../_images/tax-topdown.png" />
+<ol class="arabic simple" start="2">
+<li><p><strong>Flow Chart</strong></p></li>
+</ol>
+<p>The next step is to convert the top-down design into a flowchart. To help create the flow chart, use the bottom boxes of each of the arms, in order from left to right from the top-down design. This would mean Get subtotal, Calculate HST, Add 2 values together and Put final total. Remember that every flowchart has the “Start” oval at the top and the “Stop” oval at the bottom. This is so people know where to begin and end. The arrows are used so people can follow the flow. The words in the flow charts are not full sentences but simplified pieces of code. Ensure that you include any formulas and use the variable names that you will plan on using in your code.</p>
+<img alt="tax problem" class="align-center" src="../_images/tax-flowchart.png" />
+<ol class="arabic simple" start="3">
+<li><p><strong>Pseudo-code</strong></p></li>
+</ol>
+<p>Pseudo-code converts your flowchart into something that more resembles the final code you will write. Once again though it is not code (hence the name pseudo-code), so it is generically written so that it can be translated into any language. It should be understood by anyone that can write a computer program, not just people that use the same programming language that you do. The first word on each line should be a verb (an action word), since you want the computer to do something for you. By convention the first verb is also in all CAPS (capital letters). Here is the pseudo-code for the problem:</p>
+<div class="line-block">
+<div class="line"><strong>GET</strong> subtotal from user</div>
+<div class="line"><strong>CALCULATE</strong> tax ← subTotal * HST</div>
+<div class="line"><strong>CALCULATE</strong> total ← subTotal + tax</div>
+<div class="line"><strong>SHOW</strong> tax back to user</div>
+<div class="line"><strong>SHOW</strong> total back to user</div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p><strong>Code</strong></p></li>
+</ol>
+<p>Once you have the pseudo-code done, the hardest part of solving the problem should be finished. Now you just convert your pseudo-code into the specific programming language you have chosen:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-Qw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-Qw==" name="Qw==" role="tab" tabindex="0">C</button><button aria-controls="panel-0-Qysr" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-Qysr" name="Qysr" role="tab" tabindex="-1">C++</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button><button aria-controls="panel-0-R28=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-R28=" name="R28=" role="tab" tabindex="-1">Go</button><button aria-controls="panel-0-SmF2YQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YQ==" name="SmF2YQ==" role="tab" tabindex="-1">Java</button><button aria-controls="panel-0-SmF2YVNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tab" tabindex="-1">JavaScript</button><button aria-controls="panel-0-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-0-Qw==" class="sphinx-tabs-panel group-tab" id="panel-0-Qw==" name="Qw==" role="tabpanel" tabindex="0"><div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 Mr. Coxall All rights reserved</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program calculates total from subtotal and tax</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">10</span><span class="w">    </span><span class="c1">// this function calculates total from subtotal and tax</span>
+<span class="linenos">11</span><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">HST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.13</span><span class="p">;</span>
+<span class="linenos">12</span><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">tax</span><span class="p">;</span>
+<span class="linenos">13</span><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">subTotal</span><span class="p">;</span>
+<span class="linenos">14</span><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">total</span><span class="p">;</span>
+<span class="linenos">15</span>
+<span class="linenos">16</span><span class="w">    </span><span class="c1">//input</span>
+<span class="linenos">17</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter the subtotal: $&quot;</span><span class="p">);</span>
+<span class="linenos">18</span><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%f&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">subTotal</span><span class="p">);</span>
+<span class="linenos">19</span>
+<span class="linenos">20</span><span class="w">    </span><span class="c1">// process</span>
+<span class="linenos">21</span><span class="w">    </span><span class="n">tax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">subTotal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">HST</span><span class="p">;</span>
+<span class="linenos">22</span><span class="w">    </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">subTotal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tax</span><span class="p">;</span>
+<span class="linenos">23</span><span class="w">    </span>
+<span class="linenos">24</span><span class="w">    </span><span class="c1">// output</span>
+<span class="linenos">25</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="linenos">26</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;The HST is: $%.2f.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">tax</span><span class="p">);</span>
+<span class="linenos">27</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;The total cost is: $%.2f.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">total</span><span class="p">);</span>
+<span class="linenos">28</span>
+<span class="linenos">29</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Done.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="linenos">30</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">31</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-Qysr" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 St. Mother Teresa HS All rights reserved.</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program calculates total from subtotal and tax</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="linenos"> 8</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iomanip&gt;</span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">11</span><span class="w">    </span><span class="c1">// this function calculates total from subtotal and tax</span>
+<span class="linenos">12</span><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">HST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.13</span><span class="p">;</span>
+<span class="linenos">13</span><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">tax</span><span class="p">;</span>
+<span class="linenos">14</span><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">subTotal</span><span class="p">;</span>
+<span class="linenos">15</span><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">total</span><span class="p">;</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">18</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Enter the subtotal: $&quot;</span><span class="p">;</span>
+<span class="linenos">19</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">subTotal</span><span class="p">;</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span><span class="w">    </span><span class="c1">// process</span>
+<span class="linenos">22</span><span class="w">    </span><span class="n">tax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">subTotal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">HST</span><span class="p">;</span>
+<span class="linenos">23</span><span class="w">    </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">subTotal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tax</span><span class="p">;</span>
+<span class="linenos">24</span>
+<span class="linenos">25</span><span class="w">    </span><span class="c1">// output</span>
+<span class="linenos">26</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">27</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;The HST is: $&quot;</span>
+<span class="linenos">28</span><span class="w">                </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">fixed</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">setprecision</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">setfill</span><span class="p">(</span><span class="sc">&#39;0&#39;</span><span class="p">)</span>
+<span class="linenos">29</span><span class="w">                </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">tax</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">30</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;The total cost is: $&quot;</span>
+<span class="linenos">31</span><span class="w">                </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">fixed</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">setprecision</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">setfill</span><span class="p">(</span><span class="sc">&#39;0&#39;</span><span class="p">)</span>
+<span class="linenos">32</span><span class="w">                </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">33</span>
+<span class="linenos">34</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Done. &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">35</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-C# notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* Created by: Mr. Coxall</span>
+<span class="linenos"> 2</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 3</span><span class="cm"> * This program calculates total from subtotal and tax</span>
+<span class="linenos"> 4</span><span class="cm">*/</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="cm">/*</span>
+<span class="linenos"> 9</span><span class="cm"> * The Program class</span>
+<span class="linenos">10</span><span class="cm"> * Contains all methods for performing how local and global variables work</span>
+<span class="linenos">11</span><span class="cm">*/</span>
+<span class="linenos">12</span><span class="k">class</span><span class="w"> </span><span class="nc">Program</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="w"> </span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">15</span><span class="w">        </span><span class="c1">// this function calculates total from subtotal and tax</span>
+<span class="linenos">16</span><span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">HST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.13f</span><span class="p">;</span>
+<span class="linenos">17</span><span class="w">        </span><span class="kt">float</span><span class="w"> </span><span class="n">tax</span><span class="p">;</span>
+<span class="linenos">18</span><span class="w">        </span><span class="kt">float</span><span class="w"> </span><span class="n">subTotal</span><span class="p">;</span>
+<span class="linenos">19</span><span class="w">        </span><span class="kt">float</span><span class="w"> </span><span class="n">total</span><span class="p">;</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span><span class="w">        </span><span class="c1">//input</span>
+<span class="linenos">22</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Enter the subtotal: $&quot;</span><span class="p">);</span>
+<span class="linenos">23</span><span class="w">        </span><span class="n">subTotal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">float</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+<span class="linenos">24</span>
+<span class="linenos">25</span><span class="w">        </span><span class="c1">// process</span>
+<span class="linenos">26</span><span class="w">        </span><span class="n">tax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">subTotal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">HST</span><span class="p">;</span>
+<span class="linenos">27</span><span class="w">        </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">subTotal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tax</span><span class="p">;</span>
+<span class="linenos">28</span><span class="w">        </span>
+<span class="linenos">29</span><span class="w">        </span><span class="c1">// output</span>
+<span class="linenos">30</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;\n&quot;</span><span class="p">);</span>
+<span class="linenos">31</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;The HST is: ${0:0.00}.&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">tax</span><span class="p">);</span>
+<span class="linenos">32</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;The total cost is: ${0:0.00}.&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">total</span><span class="p">);</span>
+<span class="linenos">33</span>
+<span class="linenos">34</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
+<span class="linenos">35</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">36</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-R28=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-R28=" name="R28=" role="tabpanel" tabindex="0"><div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * Created by: Mr. Coxall</span>
+<span class="linenos"> 3</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 4</span><span class="cm"> * This program calculates total from subtotal and tax</span>
+<span class="linenos"> 5</span><span class="cm"> */</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
+<span class="linenos">10</span><span class="w">	</span><span class="s">&quot;fmt&quot;</span>
+<span class="linenos">11</span><span class="p">)</span>
+<span class="linenos">12</span>
+<span class="linenos">13</span><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">14</span><span class="w">	</span><span class="c1">// this function calculates total from subtotal and tax</span>
+<span class="linenos">15</span><span class="w">	</span><span class="kd">const</span><span class="w"> </span><span class="nx">HST</span><span class="w"> </span><span class="kt">float64</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.13</span>
+<span class="linenos">16</span><span class="w">	</span><span class="kd">var</span><span class="w"> </span><span class="nx">tax</span><span class="w"> </span><span class="kt">float64</span>
+<span class="linenos">17</span><span class="w">	</span><span class="kd">var</span><span class="w"> </span><span class="nx">subTotal</span><span class="w"> </span><span class="kt">float64</span>
+<span class="linenos">18</span><span class="w">	</span><span class="kd">var</span><span class="w"> </span><span class="nx">total</span><span class="w"> </span><span class="kt">float64</span>
+<span class="linenos">19</span>
+<span class="linenos">20</span><span class="w">	</span><span class="c1">// get user input</span>
+<span class="linenos">21</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Print</span><span class="p">(</span><span class="s">&quot;Enter the subtotal: $&quot;</span><span class="p">)</span>
+<span class="linenos">22</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Scanln</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">subTotal</span><span class="p">)</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span><span class="w">	</span><span class="c1">// process input</span>
+<span class="linenos">25</span><span class="w">	</span><span class="nx">tax</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">subTotal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">HST</span>
+<span class="linenos">26</span><span class="w">	</span><span class="nx">total</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">subTotal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">tax</span>
+<span class="linenos">27</span>
+<span class="linenos">28</span><span class="w">	</span><span class="c1">// output results</span>
+<span class="linenos">29</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="linenos">30</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;The HST is: $%.2f.\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">tax</span><span class="p">)</span>
+<span class="linenos">31</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;The total cost is: $%.2f.\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">total</span><span class="p">)</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">)</span>
+<span class="linenos">34</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YQ==" name="SmF2YQ==" role="tabpanel" tabindex="0"><div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/*</span>
+<span class="linenos"> 2</span><span class="cm"> * This program shows how local and global variables work</span>
+<span class="linenos"> 3</span><span class="cm"> *</span>
+<span class="linenos"> 4</span><span class="cm"> * @author  Mr Coxall</span>
+<span class="linenos"> 5</span><span class="cm"> * @version 1.0</span>
+<span class="linenos"> 6</span><span class="cm"> * @since   2020-09-01</span>
+<span class="linenos"> 7</span><span class="cm"> */</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w"> </span><span class="c1">// Import the Scanner class</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="kd">final</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">12</span><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">13</span><span class="w">    </span><span class="c1">// Prevent instantiation</span>
+<span class="linenos">14</span><span class="w">    </span><span class="c1">// Optional: throw an exception e.g. AssertionError</span>
+<span class="linenos">15</span><span class="w">    </span><span class="c1">// if this ever *is* called</span>
+<span class="linenos">16</span><span class="w">    </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">IllegalStateException</span><span class="p">(</span><span class="s">&quot;Cannot be instantiated&quot;</span><span class="p">);</span>
+<span class="linenos">17</span><span class="w">  </span><span class="p">}</span>
+<span class="linenos">18</span>
+<span class="linenos">19</span><span class="w">  </span><span class="cm">/**</span>
+<span class="linenos">20</span><span class="cm">   * Main entry point into program.</span>
+<span class="linenos">21</span><span class="cm">   *</span>
+<span class="linenos">22</span><span class="cm">   * @param args nothing passed in</span>
+<span class="linenos">23</span><span class="cm">   */</span>
+<span class="linenos">24</span><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">25</span><span class="w">    </span><span class="c1">// this function calculates total from subtotal and tax</span>
+<span class="linenos">26</span><span class="w">    </span><span class="kd">final</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">HST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.13f</span><span class="p">;</span>
+<span class="linenos">27</span><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">tax</span><span class="p">;</span>
+<span class="linenos">28</span><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">subTotal</span><span class="p">;</span>
+<span class="linenos">29</span><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">total</span><span class="p">;</span>
+<span class="linenos">30</span>
+<span class="linenos">31</span><span class="w">    </span><span class="n">Scanner</span><span class="w"> </span><span class="n">scanner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">34</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter the subtotal: $&quot;</span><span class="p">);</span>
+<span class="linenos">35</span><span class="w">    </span><span class="n">subTotal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextFloat</span><span class="p">();</span>
+<span class="linenos">36</span>
+<span class="linenos">37</span><span class="w">    </span><span class="c1">// process</span>
+<span class="linenos">38</span><span class="w">    </span><span class="n">tax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">subTotal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">HST</span><span class="p">;</span>
+<span class="linenos">39</span><span class="w">    </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">subTotal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tax</span><span class="p">;</span>
+<span class="linenos">40</span>
+<span class="linenos">41</span><span class="w">    </span><span class="c1">// output</span>
+<span class="linenos">42</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+<span class="linenos">43</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;The HST is: $%.2f.\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">tax</span><span class="p">);</span>
+<span class="linenos">44</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;The total cost is: $%.2f.\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">total</span><span class="p">);</span>
+<span class="linenos">45</span>
+<span class="linenos">46</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
+<span class="linenos">47</span><span class="w">  </span><span class="p">}</span>
+<span class="linenos">48</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YVNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 Mr. Coxall All rights reserved</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program calculates total from subtotal and tax</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="kd">const</span><span class="w"> </span><span class="nx">prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;prompt-sync&#39;</span><span class="p">)()</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="c1">// this function calculates total from subtotal and tax</span>
+<span class="linenos">10</span><span class="kd">const</span><span class="w"> </span><span class="nx">HST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.13</span>
+<span class="linenos">11</span><span class="kd">let</span><span class="w"> </span><span class="nx">tax</span>
+<span class="linenos">12</span><span class="kd">let</span><span class="w"> </span><span class="nx">subTotal</span>
+<span class="linenos">13</span><span class="kd">let</span><span class="w"> </span><span class="nx">total</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span><span class="c1">// get user input</span>
+<span class="linenos">16</span><span class="nx">subTotal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">parseFloat</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Enter the subtotal: $&quot;</span><span class="p">))</span>
+<span class="linenos">17</span>
+<span class="linenos">18</span><span class="c1">// process input</span>
+<span class="linenos">19</span><span class="nx">tax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">subTotal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">HST</span>
+<span class="linenos">20</span><span class="nx">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">subTotal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">tax</span>
+<span class="linenos">21</span>
+<span class="linenos">22</span><span class="c1">// output results</span>
+<span class="linenos">23</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">()</span>
+<span class="linenos">24</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`The HST is: $</span><span class="si">${</span><span class="nx">tax</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mf">2</span><span class="p">)</span><span class="si">}</span><span class="sb">.`</span><span class="p">)</span>
+<span class="linenos">25</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`The total cost is: $</span><span class="si">${</span><span class="nx">total</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mf">2</span><span class="p">)</span><span class="si">}</span><span class="sb">.`</span><span class="p">)</span>
+<span class="linenos">26</span>
+<span class="linenos">27</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\nDone.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><p>constants.py</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="ch">#!/usr/bin/env python3</span>
+<span class="linenos">2</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos">3</span><span class="sd">Created by: Mr. Coxall</span>
+<span class="linenos">4</span><span class="sd">Created on: Sept 2020</span>
+<span class="linenos">5</span><span class="sd">This module contains constants for the tax program</span>
+<span class="linenos">6</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos">7</span>
+<span class="linenos">8</span><span class="n">HST</span> <span class="o">=</span> <span class="mf">0.13</span>
+</pre></div>
+</div>
+<p>main.py</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="ch">#!/usr/bin/env python3</span>
+<span class="linenos"> 2</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 3</span><span class="sd">Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="sd">Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="sd">This module calculates total from subtotal and tax</span>
+<span class="linenos"> 6</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="kn">import</span><span class="w"> </span><span class="nn">constants</span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">12</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;The main() function calculates total and tax, returns None.&quot;&quot;&quot;</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span>    <span class="c1"># input</span>
+<span class="linenos">15</span>    <span class="n">sub_total</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the subtotal: $&quot;</span><span class="p">))</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span>    <span class="c1"># process</span>
+<span class="linenos">18</span>    <span class="n">tax</span> <span class="o">=</span> <span class="n">sub_total</span> <span class="o">*</span> <span class="n">constants</span><span class="o">.</span><span class="n">HST</span>
+<span class="linenos">19</span>    <span class="n">total</span> <span class="o">=</span> <span class="n">sub_total</span> <span class="o">+</span> <span class="n">tax</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span>    <span class="c1"># output</span>
+<span class="linenos">22</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="linenos">23</span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The HST is $</span><span class="si">{</span><span class="n">tax</span><span class="si">:</span><span class="s2">,.2f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="linenos">24</span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The total cost is $</span><span class="si">{</span><span class="n">total</span><span class="si">:</span><span class="s2">,.2f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="linenos">25</span>
+<span class="linenos">26</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Done.&quot;</span><span class="p">)</span>
+<span class="linenos">27</span>
+<span class="linenos">28</span>
+<span class="linenos">29</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="linenos">30</span>    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></div>
+<section id="example-output">
+<h3>Example Output<a class="headerlink" href="#example-output" title="Link to this heading"></a></h3>
+<img alt="Code example output" class="align-left" src="../_images/vhs19.gif" />
+<ol class="arabic simple" start="5">
+<li><p><strong>Debug</strong></p></li>
+</ol>
+<p>It is hard to show the debugging step, since I ensured that the program above worked correctly before I pasted it into the page. When programmers write code it is extremely unlikely that it will work right away the first time. This is why the development environment has tools to help the programmer fix simple mistakes. The two main kinds of mistakes are syntax errors and logical errors.</p>
+<p>In modern languages high level languages and IDEs, syntax errors are usually easy to see and fix. A syntax error is a piece of code that the compiler or interpreter does not understand. It would be like speaking to you and one of the sentences did not make any sense to you. A modern IDE will nicely place a squiggly line under the code (or some other way of showing you) it does not understand, so that you can fix the problem. A logical error is a lot harder to find. This is a problem with the way you solved the problem. The code will still compile or be interpreted and run but the program will give you the wrong answer (or maybe just the wrong answer some times!). There is no easy way to solve these problems other than to step though your code one line at a time.</p>
+<ol class="arabic simple" start="6">
+<li><p><strong>Document the code</strong></p></li>
+</ol>
+<p>This is hopefully not done just at the end of your programming but as you write your code. All the same it is good practice to go over you code at the end to ensure that someone else looking at it will understand what is going on. In the above example you can see that there is a comment at the start of the program and in the function as well. Also I have used a naming convention that is hopefully easy to understand what the variables are holding. In addition, the value of the HST is places in a constants, since they only change very infrequently.</p>
+<p>The above six steps are an example of how you should go about solving a computer based problem. Ensure when you are given a problem, you do not make the mistake that most people do and go directly to the computer and start coding. If you have not first been able to break the problem down into smaller pieces and solve the problem on paper, going to the computer and starting to code will not help you. You will just end up going in circles, wasting time, creating bad code and getting nowhere. Programming is just problem solving on a computer but you have to have solved the problem before you actually get to the computer to help you get the answer.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sequence.html" class="btn btn-neutral float-left" title="Sequence" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="selection.html" class="btn btn-neutral float-right" title="Selection" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Patrick Coxall.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,439 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Functions with Multiple Parameters &mdash; Computer Based Problem Solving 1.0.5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=d55fa986"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Default Values" href="default-values.html" />
+    <link rel="prev" title="Return Values" href="return-values.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Computer Based Problem Solving
+              <img src="../_static/cs-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computer Based Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem-solving/index.html">Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structured-problem-solving/index.html">Structured Problem Solving</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Functions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="understanding-functions.html">Understanding Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions-with-a-parameter.html">Functions with a Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="return-values.html">Return Values</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Functions with Multiple Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="default-values.html">Default Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="by-value-or-by-reference.html">By Value or By Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recursion.html">Recursion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../holding-data/index.html">Holding Data</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computer Based Problem Solving</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Functions</a></li>
+      <li class="breadcrumb-item active">Functions with Multiple Parameters</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/functions/functions-with-multiple-parameters.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="functions-with-multiple-parameters">
+<span id="id1"></span><h1>Functions with Multiple Parameters<a class="headerlink" href="#functions-with-multiple-parameters" title="Link to this heading"></a></h1>
+<p>All of the functions that we have looked at to this point, there has been one (1) parameter passed into the function. This is not always the case. There might be cases where you need to pass in two (2) or more peices of infomation. Suppose you have a function that calculates the area of a rectangle. In this case unless you are only going to do squares, you will need a length and a width.</p>
+<p>Fortunately you can pass multiple parameters into a function. The thing to remember is that, since you now have more than one (1) item, the order of the parameters is important, since this is how the computer is going to keep track of the different variables.</p>
+<p>Since people are not always great at keeping things in order, many programming languages (<a class="reference external" href="https://en.wikipedia.org/wiki/Named_parameter#:~:text=Named%20parameters%20are%20supported%20explicitly,Smalltalk%2C%20Swift%20and%20Visual%20Basic.">but not all</a>) let you pass multiple parameters to functions using “parameteres by keyword”. This means that you actually give each parameter a name and then refer to this name when you are passing the values to the function, so there is no confusion about what value is going where.</p>
+<p>In the example below, I have a function that can calculate the area of a rectangle. Is is important to keep all two (2) parameters organzied, or you will not get the correct answer. To do this each parameter will use named parameters (if possible):</p>
+<section id="code-for-function-with-multiple-parameters">
+<h2>Code for Function with Multiple Parameters<a class="headerlink" href="#code-for-function-with-multiple-parameters" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-Qw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-Qw==" name="Qw==" role="tab" tabindex="0">C</button><button aria-controls="panel-0-Qysr" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-Qysr" name="Qysr" role="tab" tabindex="-1">C++</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button><button aria-controls="panel-0-R28=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-R28=" name="R28=" role="tab" tabindex="-1">Go</button><button aria-controls="panel-0-SmF2YQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YQ==" name="SmF2YQ==" role="tab" tabindex="-1">Java</button><button aria-controls="panel-0-SmF2YVNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tab" tabindex="-1">JavaScript</button><button aria-controls="panel-0-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-0-Qw==" class="sphinx-tabs-panel group-tab" id="panel-0-Qw==" name="Qw==" role="tabpanel" tabindex="0"><div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 Mr. Coxall All rights reserved.</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program calculates the area of a rectangle</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<span class="linenos"> 8</span>
+<span class="hll"><span class="linenos"> 9</span><span class="kt">int</span><span class="w"> </span><span class="nf">calculateArea</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">length</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">10</span><span class="w">    </span><span class="c1">// this function calculates the area of a rectangle</span>
+</span><span class="hll"><span class="linenos">11</span>
+</span><span class="hll"><span class="linenos">12</span><span class="w">    </span><span class="c1">// process</span>
+</span><span class="hll"><span class="linenos">13</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">length</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">width</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">14</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">area</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">16</span><span class="p">}</span>
+</span><span class="linenos">17</span>
+<span class="linenos">18</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">19</span><span class="w">    </span><span class="c1">// this function does the input and output</span>
+<span class="linenos">20</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">21</span>
+<span class="linenos">22</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">23</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter the length of a rectangle (cm): &quot;</span><span class="p">);</span>
+<span class="linenos">24</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">lengthFromUser</span><span class="p">;</span>
+<span class="linenos">25</span><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">lengthFromUser</span><span class="p">);</span>
+<span class="linenos">26</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter the width of a rectangle (cm): &quot;</span><span class="p">);</span>
+<span class="linenos">27</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">widthFromUser</span><span class="p">;</span>
+<span class="linenos">28</span><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">widthFromUser</span><span class="p">);</span>
+<span class="linenos">29</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="linenos">30</span>
+<span class="linenos">31</span><span class="w">    </span><span class="c1">// call functions</span>
+<span class="hll"><span class="linenos">32</span><span class="w">    </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calculateArea</span><span class="p">(</span><span class="n">lengthFromUser</span><span class="p">,</span><span class="w"> </span><span class="n">widthFromUser</span><span class="p">);</span>
+</span><span class="linenos">33</span>
+<span class="linenos">34</span><span class="w">    </span><span class="c1">// output</span>
+<span class="linenos">35</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;The area is %d cm²</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">area</span><span class="p">);</span>
+<span class="linenos">36</span>
+<span class="linenos">37</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Done.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="linenos">38</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">39</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-Qysr" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 Mr. Coxall All rights reserved.</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program calculates the area of a rectangle</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span>
+<span class="hll"><span class="linenos">10</span><span class="kt">int</span><span class="w"> </span><span class="nf">calculateArea</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">length</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">11</span><span class="w">    </span><span class="c1">// this function calculates the area of a rectangle</span>
+</span><span class="hll"><span class="linenos">12</span>
+</span><span class="hll"><span class="linenos">13</span><span class="w">    </span><span class="c1">// process</span>
+</span><span class="hll"><span class="linenos">14</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">length</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">width</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">15</span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">area</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">17</span><span class="p">}</span>
+</span><span class="linenos">18</span>
+<span class="linenos">19</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">20</span><span class="w">    </span><span class="c1">// this function does the input and output</span>
+<span class="linenos">21</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">22</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">perimeter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">25</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Enter the length of a rectangle (cm): &quot;</span><span class="p">;</span>
+<span class="linenos">26</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">lengthFromUser</span><span class="p">;</span>
+<span class="linenos">27</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">lengthFromUser</span><span class="p">;</span>
+<span class="linenos">28</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Enter the width of a rectangle (cm): &quot;</span><span class="p">;</span>
+<span class="linenos">29</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">widthFromUser</span><span class="p">;</span>
+<span class="linenos">30</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">widthFromUser</span><span class="p">;</span>
+<span class="linenos">31</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span><span class="w">    </span><span class="c1">// call functions</span>
+<span class="hll"><span class="linenos">34</span><span class="w">    </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calculateArea</span><span class="p">(</span><span class="n">lengthFromUser</span><span class="p">,</span><span class="w"> </span><span class="n">widthFromUser</span><span class="p">);</span>
+</span><span class="linenos">35</span>
+<span class="linenos">36</span><span class="w">    </span><span class="c1">// output</span>
+<span class="linenos">37</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;The area is &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; cm²</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="linenos">38</span>
+<span class="linenos">39</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Done.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">40</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">41</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-C# notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* Created by: Mr. Coxall</span>
+<span class="linenos"> 2</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 3</span><span class="cm"> * This program calculates the area of a rectangle</span>
+<span class="linenos"> 4</span><span class="cm">*/</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="cm">/*</span>
+<span class="linenos"> 9</span><span class="cm"> * The Program class</span>
+<span class="linenos">10</span><span class="cm"> * Contains all methods for performing basic variable usage</span>
+<span class="linenos">11</span><span class="cm">*/</span>
+<span class="linenos">12</span><span class="k">class</span><span class="w"> </span><span class="nc">Program</span><span class="w"> </span><span class="p">{</span>
+<span class="hll"><span class="linenos">13</span><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">calculateArea</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">length</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">14</span><span class="w">        </span><span class="c1">// this function calculates the area of a rectangle</span>
+</span><span class="hll"><span class="linenos">15</span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">        </span><span class="c1">// process</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">length</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">width</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">18</span>
+</span><span class="hll"><span class="linenos">19</span><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">area</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">20</span><span class="w">    </span><span class="p">}</span>
+</span><span class="linenos">21</span><span class="w"> </span>
+<span class="linenos">22</span><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="w"> </span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">23</span><span class="w">        </span><span class="c1">// this function does the input and output</span>
+<span class="linenos">24</span><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">25</span>
+<span class="linenos">26</span><span class="w">        </span><span class="c1">// input</span>
+<span class="linenos">27</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Enter the length of a rectangle (cm): &quot;</span><span class="p">);</span>
+<span class="linenos">28</span><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">lengthFromUser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+<span class="linenos">29</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Enter the width of a rectangle (cm): &quot;</span><span class="p">);</span>
+<span class="linenos">30</span><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">widthFromUser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+<span class="linenos">31</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span><span class="w">        </span><span class="c1">// call functions</span>
+<span class="hll"><span class="linenos">34</span><span class="w">        </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calculateArea</span><span class="p">(</span><span class="n">width</span><span class="p">:</span><span class="w"> </span><span class="n">widthFromUser</span><span class="p">,</span><span class="w"> </span><span class="n">length</span><span class="p">:</span><span class="w"> </span><span class="n">lengthFromUser</span><span class="p">);</span>
+</span><span class="linenos">35</span>
+<span class="linenos">36</span><span class="w">        </span><span class="c1">// output</span>
+<span class="linenos">37</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;The area is {area} cm²&quot;</span><span class="p">);</span>
+<span class="linenos">38</span>
+<span class="linenos">39</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
+<span class="linenos">40</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">41</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-R28=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-R28=" name="R28=" role="tabpanel" tabindex="0"><div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * Created by: Mr. Coxall</span>
+<span class="linenos"> 3</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 4</span><span class="cm"> * This program uses user defined functions</span>
+<span class="linenos"> 5</span><span class="cm"> */</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="w"> </span><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="w"> </span><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
+<span class="linenos">10</span><span class="w">	 </span><span class="s">&quot;fmt&quot;</span>
+<span class="linenos">11</span><span class="w"> </span><span class="p">)</span>
+<span class="linenos">12</span><span class="w"> </span>
+<span class="hll"><span class="linenos">13</span><span class="w"> </span><span class="kd">func</span><span class="w"> </span><span class="nx">calculateArea</span><span class="p">(</span><span class="nx">length</span><span class="w"> </span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="nx">width</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">14</span><span class="w">	 </span><span class="c1">// this function calculates the area of a rectangle</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w"> </span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">	 </span><span class="c1">// process</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">	 </span><span class="nx">area</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">length</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">width</span>
+</span><span class="hll"><span class="linenos">18</span><span class="w"> </span>
+</span><span class="hll"><span class="linenos">19</span><span class="w">	 </span><span class="k">return</span><span class="w"> </span><span class="nx">area</span>
+</span><span class="hll"><span class="linenos">20</span><span class="w"> </span><span class="p">}</span>
+</span><span class="linenos">21</span><span class="w"> </span>
+<span class="linenos">22</span><span class="w"> </span><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">23</span><span class="w">	 </span><span class="c1">// this function does the input and output</span>
+<span class="linenos">24</span><span class="w">	 </span><span class="kd">var</span><span class="w"> </span><span class="nx">area</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">0</span>
+<span class="linenos">25</span><span class="w"> </span>
+<span class="linenos">26</span><span class="w">	 </span><span class="c1">// input</span>
+<span class="linenos">27</span><span class="w">	 </span><span class="kd">var</span><span class="w"> </span><span class="nx">length_from_user</span><span class="p">,</span><span class="w"> </span><span class="nx">width_from_user</span><span class="w"> </span><span class="kt">int</span>
+<span class="linenos">28</span><span class="w">	 </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Print</span><span class="p">(</span><span class="s">&quot;Enter the length of a rectangle (cm): &quot;</span><span class="p">)</span>
+<span class="linenos">29</span><span class="w">	 </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Scanln</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">length_from_user</span><span class="p">)</span>
+<span class="linenos">30</span><span class="w">	 </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Print</span><span class="p">(</span><span class="s">&quot;Enter the width of a rectangle (cm): &quot;</span><span class="p">)</span>
+<span class="linenos">31</span><span class="w">	 </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Scanln</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">width_from_user</span><span class="p">)</span>
+<span class="linenos">32</span><span class="w">	 </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="linenos">33</span><span class="w"> </span>
+<span class="linenos">34</span><span class="w">	 </span><span class="c1">// call functions</span>
+<span class="hll"><span class="linenos">35</span><span class="w">	 </span><span class="nx">area</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">calculateArea</span><span class="p">(</span><span class="nx">length_from_user</span><span class="p">,</span><span class="w"> </span><span class="nx">width_from_user</span><span class="p">)</span>
+</span><span class="linenos">36</span><span class="w"> </span>
+<span class="linenos">37</span><span class="w">	 </span><span class="c1">// output</span>
+<span class="linenos">38</span><span class="w">	 </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;The area is %d cm²\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">area</span><span class="p">)</span>
+<span class="linenos">39</span><span class="w"> </span>
+<span class="linenos">40</span><span class="w">	 </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">)</span>
+<span class="linenos">41</span><span class="w"> </span><span class="p">}</span>
+<span class="linenos">42</span><span class="w"> </span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YQ==" name="SmF2YQ==" role="tabpanel" tabindex="0"><div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/*</span>
+<span class="linenos"> 2</span><span class="cm"> * This program calculates area of rectangle</span>
+<span class="linenos"> 3</span><span class="cm"> *</span>
+<span class="linenos"> 4</span><span class="cm"> * @author  Mr Coxall</span>
+<span class="linenos"> 5</span><span class="cm"> * @version 1.0</span>
+<span class="linenos"> 6</span><span class="cm"> * @since   2020-09-01</span>
+<span class="linenos"> 7</span><span class="cm"> */</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="kd">final</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="hll"><span class="linenos">12</span><span class="w">  </span><span class="cm">/**</span>
+</span><span class="hll"><span class="linenos">13</span><span class="cm">   * Calculates area of rectangle.</span>
+</span><span class="hll"><span class="linenos">14</span><span class="cm">   *</span>
+</span><span class="hll"><span class="linenos">15</span><span class="cm">   * @param args nothing passed in</span>
+</span><span class="hll"><span class="linenos">16</span><span class="cm">   */</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">calculateArea</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">length</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">18</span><span class="w">    </span><span class="c1">// process</span>
+</span><span class="hll"><span class="linenos">19</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">length</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">width</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">20</span>
+</span><span class="hll"><span class="linenos">21</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">area</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">22</span><span class="w">  </span><span class="p">}</span>
+</span><span class="linenos">23</span>
+<span class="linenos">24</span><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">25</span><span class="w">    </span><span class="c1">// Prevent instantiation</span>
+<span class="linenos">26</span><span class="w">    </span><span class="c1">// Optional: throw an exception e.g. AssertionError</span>
+<span class="linenos">27</span><span class="w">    </span><span class="c1">// if this ever *is* called</span>
+<span class="linenos">28</span><span class="w">    </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">IllegalStateException</span><span class="p">(</span><span class="s">&quot;Cannot be instantiated&quot;</span><span class="p">);</span>
+<span class="linenos">29</span><span class="w">  </span><span class="p">}</span>
+<span class="linenos">30</span>
+<span class="linenos">31</span><span class="w">  </span><span class="cm">/**</span>
+<span class="linenos">32</span><span class="cm">   * Main entry point into program.</span>
+<span class="linenos">33</span><span class="cm">   *</span>
+<span class="linenos">34</span><span class="cm">   * @param args nothing passed in</span>
+<span class="linenos">35</span><span class="cm">   */</span>
+<span class="linenos">36</span><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">37</span><span class="w">    </span><span class="c1">// this function does the input and output</span>
+<span class="linenos">38</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">39</span>
+<span class="linenos">40</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">41</span><span class="w">    </span><span class="n">Scanner</span><span class="w"> </span><span class="n">scanner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+<span class="linenos">42</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter the length of a rectangle (cm): &quot;</span><span class="p">);</span>
+<span class="linenos">43</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">lengthFromUser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+<span class="linenos">44</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter the width of a rectangle (cm): &quot;</span><span class="p">);</span>
+<span class="linenos">45</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">widthFromUser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+<span class="linenos">46</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+<span class="linenos">47</span>
+<span class="linenos">48</span><span class="w">    </span><span class="c1">// call functions</span>
+<span class="hll"><span class="linenos">49</span><span class="w">    </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calculateArea</span><span class="p">(</span><span class="n">lengthFromUser</span><span class="p">,</span><span class="w"> </span><span class="n">widthFromUser</span><span class="p">);</span>
+</span><span class="linenos">50</span>
+<span class="linenos">51</span><span class="w">    </span><span class="c1">// output</span>
+<span class="linenos">52</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;The area is %d cm²%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">area</span><span class="p">);</span>
+<span class="linenos">53</span>
+<span class="linenos">54</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
+<span class="linenos">55</span><span class="w">  </span><span class="p">}</span>
+<span class="linenos">56</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YVNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * Created by: Mr. Coxall</span>
+<span class="linenos"> 3</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 4</span><span class="cm"> * This program calculates the area of a rectangle</span>
+<span class="linenos"> 5</span><span class="cm"> */</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="kd">const</span><span class="w"> </span><span class="nx">prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;prompt-sync&#39;</span><span class="p">)();</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kd">let</span><span class="w"> </span><span class="nx">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
+<span class="linenos">10</span>
+<span class="hll"><span class="linenos">11</span><span class="kd">function</span><span class="w"> </span><span class="nx">calculateArea</span><span class="p">(</span><span class="nx">length</span><span class="p">,</span><span class="w"> </span><span class="nx">width</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">12</span><span class="w">  </span><span class="c1">// this function calculates the area of a rectangle</span>
+</span><span class="hll"><span class="linenos">13</span><span class="w">  </span>
+</span><span class="hll"><span class="linenos">14</span><span class="w">  </span><span class="c1">// process</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">length</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">width</span>
+</span><span class="hll"><span class="linenos">16</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">area</span>
+</span><span class="hll"><span class="linenos">18</span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">19</span>
+</span><span class="linenos">20</span><span class="c1">// input</span>
+<span class="linenos">21</span><span class="kd">const</span><span class="w"> </span><span class="nx">lengthFromUser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Enter the length of a rectangle (cm): &quot;</span><span class="p">))</span>
+<span class="linenos">22</span><span class="kd">const</span><span class="w"> </span><span class="nx">widthFromUser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Enter the width of a rectangle (cm): &quot;</span><span class="p">))</span>
+<span class="linenos">23</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">();</span>
+<span class="linenos">24</span>
+<span class="linenos">25</span><span class="c1">// call functions</span>
+<span class="linenos">26</span><span class="nx">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">calculateArea</span><span class="p">(</span><span class="nx">lengthFromUser</span><span class="p">,</span><span class="w"> </span><span class="nx">widthFromUser</span><span class="p">)</span>
+<span class="hll"><span class="linenos">27</span>
+</span><span class="linenos">28</span><span class="c1">// output</span>
+<span class="linenos">29</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`The area is </span><span class="si">${</span><span class="nx">area</span><span class="si">}</span><span class="sb"> cm²`</span><span class="p">)</span>
+<span class="linenos">30</span>
+<span class="linenos">31</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\nDone.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="ch">#!/usr/bin/env python3</span>
+<span class="linenos"> 2</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 3</span><span class="sd">Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="sd">Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="sd">This module calculates area of a rectangle</span>
+<span class="linenos"> 6</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span>
+<span class="hll"><span class="linenos"> 9</span><span class="k">def</span><span class="w"> </span><span class="nf">calculate_area</span><span class="p">(</span><span class="n">length</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">width</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">10</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;The calculate_area() function calculates area of a rectangle, returns int.&quot;&quot;&quot;</span>
+</span><span class="hll"><span class="linenos">11</span>
+</span><span class="hll"><span class="linenos">12</span>    <span class="c1"># process</span>
+</span><span class="hll"><span class="linenos">13</span>    <span class="n">area</span> <span class="o">=</span> <span class="n">length</span> <span class="o">*</span> <span class="n">width</span>
+</span><span class="hll"><span class="linenos">14</span>
+</span><span class="hll"><span class="linenos">15</span>    <span class="c1"># output</span>
+</span><span class="hll"><span class="linenos">16</span>    <span class="k">return</span> <span class="n">area</span>
+</span><span class="linenos">17</span>
+<span class="linenos">18</span>
+<span class="linenos">19</span><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">20</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;The main() function just calls other functions, returns None.&quot;&quot;&quot;</span>
+<span class="linenos">21</span>
+<span class="linenos">22</span>    <span class="c1"># input</span>
+<span class="linenos">23</span>    <span class="n">length_from_user</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the length of a rectangle (cm): &quot;</span><span class="p">))</span>
+<span class="linenos">24</span>    <span class="n">width_from_user</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the width of a rectangle (cm): &quot;</span><span class="p">))</span>
+<span class="linenos">25</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="linenos">26</span>
+<span class="linenos">27</span>    <span class="c1"># call functions</span>
+<span class="hll"><span class="linenos">28</span>    <span class="n">area</span> <span class="o">=</span> <span class="n">calculate_area</span><span class="p">(</span><span class="n">width</span> <span class="o">=</span> <span class="n">width_from_user</span><span class="p">,</span> <span class="n">length</span> <span class="o">=</span> <span class="n">length_from_user</span><span class="p">)</span>
+</span><span class="linenos">29</span>
+<span class="linenos">30</span>    <span class="c1"># output</span>
+<span class="linenos">31</span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The area is </span><span class="si">{</span><span class="n">area</span><span class="si">}</span><span class="s2"> cm²&quot;</span><span class="p">)</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Done.&quot;</span><span class="p">)</span>
+<span class="linenos">34</span>
+<span class="linenos">35</span>
+<span class="linenos">36</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="linenos">37</span>    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="example-output">
+<h2>Example Output<a class="headerlink" href="#example-output" title="Link to this heading"></a></h2>
+<img alt="Code example output" class="align-left" src="../_images/vhs3.gif" />
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="return-values.html" class="btn btn-neutral float-left" title="Return Values" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="default-values.html" class="btn btn-neutral float-right" title="Default Values" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Patrick Coxall.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

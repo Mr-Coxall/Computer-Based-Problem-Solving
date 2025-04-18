@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Try Catch &mdash; Computer Based Problem Solving 1.0.5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=d55fa986"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Compound Boolean Expressions" href="compound-boolean-expressions.html" />
+    <link rel="prev" title="Select Case" href="select-case.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Computer Based Problem Solving
+              <img src="../_static/cs-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computer Based Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem-solving/index.html">Problem Solving</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Structured Problem Solving</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="top-down-design.html">Top-Down Design in Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html">Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assignment-statements.html">Assignment Statements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scope-of-variables.html">Scope of Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sequence.html">Sequence</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="selection.html">Selection</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="boolean-expressions.html">Boolean Expressions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="if-then.html">If…Then</a></li>
+<li class="toctree-l3"><a class="reference internal" href="if-then-else.html">If…Then…Else</a></li>
+<li class="toctree-l3"><a class="reference internal" href="if-then-elseif-else.html">If…Then…ElseIf…Else</a></li>
+<li class="toctree-l3"><a class="reference internal" href="select-case.html">Select Case</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Try…Catch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compound-boolean-expressions.html">Compound Boolean Expressions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nested-if-statements.html">Nested If Statements</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="repetition.html">Repetition</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../holding-data/index.html">Holding Data</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computer Based Problem Solving</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Structured Problem Solving</a></li>
+          <li class="breadcrumb-item"><a href="selection.html">Selection</a></li>
+      <li class="breadcrumb-item active">Try Catch</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/structured-problem-solving/try-catch.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="try-catch">
+<span id="id1"></span><h1>Try Catch<a class="headerlink" href="#try-catch" title="Link to this heading"></a></h1>
+<p>When a runtime error or exception occurs, the program will terminate and generate an error message. This is not exactly ideal for the user. What would be better is if we could catch these errors and then do what is necessary to fix the problem. A common example is when we ask the user to enter a number, but for some reason they entered text. Ideally we would not want the program just to crash, we would want to explain to the user they entered something incorrectly.</p>
+<p>To catch these runtime errors, a portion of code is enclosed in a try-catch block. When an exceptional circumstance arises within that block, an exception is thrown that transfers the control to the exception handler. If no exception is thrown, the code continues normally and all handlers are ignored. The try statement normally takes the generic form like:</p>
+<div class="line-block">
+<div class="line"><strong>TRY</strong></div>
+<div class="line-block">
+<div class="line">some statement(s) to be performed, which may raise an exception</div>
+</div>
+<div class="line"><strong>CATCH</strong> (type of error)</div>
+<div class="line-block">
+<div class="line">some statement(s) to be performed, if an exception is raised</div>
+</div>
+<div class="line"><strong>ELSE</strong></div>
+<div class="line-block">
+<div class="line">some statement(s) to be performed, if no exception is raised</div>
+</div>
+<div class="line"><strong>FINALLY</strong></div>
+<div class="line-block">
+<div class="line">some statement(s) to be performed, regardless of whether an exception is raised or not</div>
+</div>
+<div class="line"><strong>ENDTRY</strong></div>
+</div>
+<p>You can define as many exception blocks as you want (e.g. if you want to execute a special block of code for a special kind of error). You use the else keyword to define a block of code to be executed if no errors were raised (this is python only). The finally block, if specified, will be executed regardless if the try block raises an error or not.</p>
+<p>In this example program, the user is asked to enter an integer. The program then tries to convert the entered string into an integer. If the program fails to convert the string to an integer, instead of crashing the program will warn the user. If it succeeds, the program will continue as normal. The program will also print a message at the end, regardless of whether an error was raised or not.</p>
+<section id="top-down-design-for-try-catch-statement">
+<h2>Top-Down Design for Try Catch statement<a class="headerlink" href="#top-down-design-for-try-catch-statement" title="Link to this heading"></a></h2>
+<img alt="Top-Down Design for Try Catch statement" class="align-center" src="../_images/top-down-try-catch.png" />
+</section>
+<section id="flowchart-for-try-catch-statement">
+<h2>Flowchart for Try Catch statement<a class="headerlink" href="#flowchart-for-try-catch-statement" title="Link to this heading"></a></h2>
+<img alt="Try Catch flowchart" class="align-center" src="../_images/flowchart-try-catch.png" />
+</section>
+<section id="pseudocode-for-try-catch-statement">
+<h2>Pseudocode for Try Catch statement<a class="headerlink" href="#pseudocode-for-try-catch-statement" title="Link to this heading"></a></h2>
+<div class="line-block">
+<div class="line"><strong>GET</strong> integer_as_string</div>
+<div class="line"><strong>TRY</strong></div>
+<div class="line-block">
+<div class="line"><strong>CONVERT</strong> integer_as_number = int(integer_as_string)</div>
+</div>
+<div class="line"><strong>EXCEPT</strong> invalid_argument</div>
+<div class="line-block">
+<div class="line"><strong>SHOW</strong> “The error was …”</div>
+</div>
+<div class="line"><strong>ELSE</strong></div>
+<div class="line-block">
+<div class="line"><strong>SHOW</strong> “You entered: “ + integer_as_number</div>
+</div>
+<div class="line"><strong>FINALLY</strong></div>
+<div class="line-block">
+<div class="line"><strong>SHOW</strong> “Thanks for playing.”</div>
+</div>
+<div class="line"><strong>ENDTRY</strong></div>
+</div>
+</section>
+<section id="code-for-try-catch-statement">
+<h2>Code for Try Catch statement<a class="headerlink" href="#code-for-try-catch-statement" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-Qw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-Qw==" name="Qw==" role="tab" tabindex="0">C</button><button aria-controls="panel-0-Qysr" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-Qysr" name="Qysr" role="tab" tabindex="-1">C++</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button><button aria-controls="panel-0-R28=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-R28=" name="R28=" role="tab" tabindex="-1">Go</button><button aria-controls="panel-0-SmF2YQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YQ==" name="SmF2YQ==" role="tab" tabindex="-1">Java</button><button aria-controls="panel-0-SmF2YVNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tab" tabindex="-1">JavaScript</button><button aria-controls="panel-0-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-0-Qw==" class="sphinx-tabs-panel group-tab" id="panel-0-Qw==" name="Qw==" role="tabpanel" tabindex="0"><div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 Mr. Coxall All rights reserved.</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program checks for a runtime error</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">10</span><span class="w">    </span><span class="c1">// this function checks for a runtime error</span>
+<span class="linenos">11</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">integerValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">12</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">scanErrorCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">15</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter an integer: &quot;</span><span class="p">);</span>
+<span class="hll"><span class="linenos">16</span><span class="w">    </span><span class="n">scanErrorCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">integerValue</span><span class="p">);</span>
+</span><span class="linenos">17</span>
+<span class="linenos">18</span><span class="w">    </span><span class="c1">// process and output</span>
+<span class="hll"><span class="linenos">19</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">scanErrorCode</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">20</span><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;You entered: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">integerValue</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">21</span><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">22</span><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;You did not enter an integer.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">23</span><span class="w">    </span><span class="p">}</span>
+</span><span class="linenos">24</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Thanks for playing.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="linenos">25</span>
+<span class="linenos">26</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Done.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="linenos">27</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">28</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-Qysr" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 St. Mother Teresa HS All rights reserved.</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program checks for a runtime error</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="linenos"> 8</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">11</span><span class="w">    </span><span class="c1">// this function checks for a runtime error</span>
+<span class="linenos">12</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">integerAsString</span><span class="p">;</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="w">    </span><span class="c1">// Input</span>
+<span class="linenos">15</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Enter an integer: &quot;</span><span class="p">;</span>
+<span class="linenos">16</span><span class="w">    </span><span class="n">getline</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">,</span><span class="w"> </span><span class="n">integerAsString</span><span class="p">);</span>
+<span class="linenos">17</span>
+<span class="linenos">18</span><span class="w">    </span><span class="c1">// Process &amp; Output</span>
+<span class="hll"><span class="linenos">19</span><span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">20</span><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">integerAsNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stoi</span><span class="p">(</span><span class="n">integerAsString</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">21</span><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;You entered: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">integerAsNumber</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">22</span><span class="w">    </span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">23</span><span class="w">    </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">invalid_argument</span><span class="w"> </span><span class="o">&amp;</span><span class="n">err</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">24</span><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;The error was: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">err</span><span class="p">.</span><span class="n">what</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">25</span><span class="w">    </span><span class="p">}</span>
+</span><span class="linenos">26</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Thanks for playing.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">27</span>
+<span class="linenos">28</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Done.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">29</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-C# notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* Created by: Mr. Coxall</span>
+<span class="linenos"> 2</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 3</span><span class="cm"> * This program checks for a runtime error</span>
+<span class="linenos"> 4</span><span class="cm">*/</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="cm">/*</span>
+<span class="linenos"> 9</span><span class="cm"> * The Program class</span>
+<span class="linenos">10</span><span class="cm">*/</span>
+<span class="linenos">11</span><span class="k">class</span><span class="w"> </span><span class="nc">Program</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">12</span><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">13</span><span class="w">        </span><span class="c1">// this function checks a student&#39;s grade</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span><span class="w">        </span><span class="c1">// Input</span>
+<span class="linenos">16</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Enter an integer: &quot;</span><span class="p">);</span>
+<span class="linenos">17</span><span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">integerAsString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+<span class="linenos">18</span>
+<span class="linenos">19</span><span class="w">        </span><span class="c1">// Process &amp; Output</span>
+<span class="hll"><span class="linenos">20</span><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">21</span><span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">integerAsNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">integerAsString</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">22</span><span class="w">            </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;You entered: {integerAsNumber}.&quot;</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">23</span><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">FormatException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">24</span><span class="w">            </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;The error was: {e.Message}.&quot;</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">25</span><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">finally</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">26</span><span class="w">            </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Thanks for playing.&quot;</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">27</span><span class="w">        </span><span class="p">}</span>
+</span><span class="linenos">28</span>
+<span class="linenos">29</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
+<span class="linenos">30</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">31</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-R28=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-R28=" name="R28=" role="tabpanel" tabindex="0"><div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * Created by: Mr. Coxall</span>
+<span class="linenos"> 3</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 4</span><span class="cm"> * This program checks for a runtime error</span>
+<span class="linenos"> 5</span><span class="cm"> */</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
+<span class="linenos">10</span><span class="w">	</span><span class="s">&quot;fmt&quot;</span>
+<span class="linenos">11</span><span class="w">	</span><span class="s">&quot;strconv&quot;</span>
+<span class="linenos">12</span><span class="p">)</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">15</span><span class="w">	</span><span class="c1">// this function checks for a runtime error</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="w">	</span><span class="kd">var</span><span class="w"> </span><span class="nx">integerAsString</span><span class="w"> </span><span class="kt">string</span>
+<span class="linenos">18</span>
+<span class="linenos">19</span><span class="w">	</span><span class="c1">// input</span>
+<span class="linenos">20</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Print</span><span class="p">(</span><span class="s">&quot;Enter an integer: &quot;</span><span class="p">)</span>
+<span class="linenos">21</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Scanln</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">integerAsString</span><span class="p">)</span>
+<span class="linenos">22</span>
+<span class="linenos">23</span><span class="w">	</span><span class="c1">// process and output</span>
+<span class="linenos">24</span><span class="w">	</span><span class="nx">integerAsNumber</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">strconv</span><span class="p">.</span><span class="nx">Atoi</span><span class="p">(</span><span class="nx">integerAsString</span><span class="p">)</span>
+<span class="linenos">25</span>
+<span class="hll"><span class="linenos">26</span><span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">27</span><span class="w">		</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;You entered: &quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">integerAsNumber</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">28</span><span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">29</span><span class="w">		</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;The error was:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;.&quot;</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">30</span><span class="w">	</span><span class="p">}</span>
+</span><span class="linenos">31</span>
+<span class="linenos">32</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Thanks for playing.&quot;</span><span class="p">)</span>
+<span class="linenos">33</span>
+<span class="linenos">34</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">)</span>
+<span class="linenos">35</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YQ==" name="SmF2YQ==" role="tabpanel" tabindex="0"><div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/*</span>
+<span class="linenos"> 2</span><span class="cm"> * This program checks for a runtime error</span>
+<span class="linenos"> 3</span><span class="cm"> *</span>
+<span class="linenos"> 4</span><span class="cm"> * @author  Mr Coxall</span>
+<span class="linenos"> 5</span><span class="cm"> * @version 1.0</span>
+<span class="linenos"> 6</span><span class="cm"> * @since   2020-09-01</span>
+<span class="linenos"> 7</span><span class="cm"> */</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">12</span><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">13</span><span class="w">    </span><span class="c1">// this function checks for a runtime error</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span><span class="w">    </span><span class="c1">// create Scanner object for user input</span>
+<span class="linenos">16</span><span class="w">    </span><span class="n">Scanner</span><span class="w"> </span><span class="n">scanner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+<span class="linenos">17</span>
+<span class="linenos">18</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">19</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter an integer: &quot;</span><span class="p">);</span>
+<span class="linenos">20</span><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">integerAsString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+<span class="linenos">21</span>
+<span class="linenos">22</span><span class="w">    </span><span class="c1">// process &amp; output</span>
+<span class="hll"><span class="linenos">23</span><span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">24</span><span class="w">      </span><span class="kt">int</span><span class="w"> </span><span class="n">integerAsNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">integerAsString</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">25</span><span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;You entered: %d.%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">integerAsNumber</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">26</span><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">NumberFormatException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">27</span><span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&quot;The error was: %s.%n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+</span><span class="hll"><span class="linenos">28</span><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">finally</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">29</span><span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Thanks for playing.&quot;</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">30</span><span class="w">    </span><span class="p">}</span>
+</span><span class="linenos">31</span>
+<span class="linenos">32</span><span class="w">    </span><span class="c1">// close the Scanner object</span>
+<span class="linenos">33</span><span class="w">    </span><span class="n">scanner</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+<span class="linenos">34</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
+<span class="linenos">35</span><span class="w">  </span><span class="p">}</span>
+<span class="linenos">36</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YVNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* Created by: Mr. Coxall</span>
+<span class="linenos"> 2</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 3</span><span class="cm"> * This program checks for a runtime error</span>
+<span class="linenos"> 4</span><span class="cm"> */</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="kd">const</span><span class="w"> </span><span class="nx">prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;prompt-sync&quot;</span><span class="p">)()</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="c1">// input</span>
+<span class="linenos"> 9</span><span class="kd">const</span><span class="w"> </span><span class="nx">integerAsString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Enter an integer: &quot;</span><span class="p">)</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="c1">// process &amp; output</span>
+<span class="hll"><span class="linenos">12</span><span class="kd">const</span><span class="w"> </span><span class="nx">integerAsNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">integerAsString</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">13</span>
+</span><span class="hll"><span class="linenos">14</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">integerAsNumber</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">NaN</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`You entered: </span><span class="si">${</span><span class="nx">integerAsNumber</span><span class="si">}</span><span class="sb">.`</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">16</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">17</span><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Invalid input.&quot;</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">18</span><span class="p">}</span>
+</span><span class="hll"><span class="linenos">19</span>
+</span><span class="linenos">20</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\nDone.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="ch">#!/usr/bin/env python3</span>
+<span class="linenos"> 2</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 3</span><span class="sd">Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="sd">Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="sd">This module checks for a runtime error</span>
+<span class="linenos"> 6</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">10</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;The main() function checks for a runtime error, returns None.&quot;&quot;&quot;</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span>    <span class="c1"># input</span>
+<span class="linenos">13</span>    <span class="n">integer_as_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter an integer: &quot;</span><span class="p">)</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span>    <span class="c1"># process &amp; output</span>
+<span class="hll"><span class="linenos">16</span>    <span class="k">try</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">17</span>        <span class="n">integer_as_number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">integer_as_string</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">18</span>    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">19</span>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The error was </span><span class="si">{</span><span class="ne">ValueError</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">20</span>    <span class="k">else</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">21</span>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;You entered: </span><span class="si">{</span><span class="n">integer_as_number</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">22</span>    <span class="k">finally</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">23</span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Thanks for playing.&quot;</span><span class="p">)</span>
+</span><span class="linenos">24</span>
+<span class="linenos">25</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Done.&quot;</span><span class="p">)</span>
+<span class="linenos">26</span>
+<span class="linenos">27</span>
+<span class="linenos">28</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="linenos">29</span>    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="example-output">
+<h2>Example Output<a class="headerlink" href="#example-output" title="Link to this heading"></a></h2>
+<img alt="Code example output" class="align-left" src="../_images/vhs29.gif" />
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="select-case.html" class="btn btn-neutral float-left" title="Select Case" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="compound-boolean-expressions.html" class="btn btn-neutral float-right" title="Compound Boolean Expressions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Patrick Coxall.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

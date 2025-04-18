@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lists &mdash; Computer Based Problem Solving 1.0.5 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=d55fa986"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tuple" href="tuple.html" />
+    <link rel="prev" title="2D Arrays" href="2d-arrays.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Computer Based Problem Solving
+              <img src="../_static/cs-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computer Based Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/index.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../problem-solving/index.html">Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structured-problem-solving/index.html">Structured Problem Solving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Holding Data</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="arrays.html">Arrays</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tuple.html">Tuple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="associative_array.html">Associative Array</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_list.html">Linked List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sets.html">Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stacks.html">Stacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue.html">Queue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heap.html">Heap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphs.html">Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="binary-trees.html">Binary Trees</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computer Based Problem Solving</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Holding Data</a></li>
+      <li class="breadcrumb-item active">Lists</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/holding-data/lists.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="lists">
+<span id="id1"></span><h1>Lists<a class="headerlink" href="#lists" title="Link to this heading"></a></h1>
+<p>Since in many programming languages, when you create an array the size must be set during coding so that the memory can be allocated when it is compiled, there is no way to dynamically change the size of an array during run time. This can be a huge disadvantage. One great example of wanting to have dynamic arrays is the classic video game, Space Invaders. If you imagine that all the lazer you shoot are held in an array, then how big should the array be? You have no idea how fast the user can press the “A” button. You can not tell how many lazers might be on the screen at any given time! If you cannot change the size of the array, what can we do, just making a “huge” array is wasteful and not really practical. Fortunately in many programming languages there is a data structure called a list.</p>
+<p>A <a class="reference external" href="https://en.wikipedia.org/wiki/List_(abstract_data_type)">List</a> is similar to an array in that it is an ordered grouping of data. You still reference the items in the list using a positive integer index. The key difference is that the size of the list can shrink and grow, during run time as needed. As you need to add items, you just use an “Add” (or something similar like append). To remove an item you use “Remove” (or something similar like pop). The list usually has many useful methods for adding, sorting, clearing, finding the length an so on.</p>
+<p>Here is an example of creating a list of items:</p>
+<section id="code-for-creating-a-list">
+<h2>Code for Creating a List<a class="headerlink" href="#code-for-creating-a-list" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-Qw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-Qw==" name="Qw==" role="tab" tabindex="0">C</button><button aria-controls="panel-0-Qysr" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-Qysr" name="Qysr" role="tab" tabindex="-1">C++</button><button aria-controls="panel-0-QyM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-QyM=" name="QyM=" role="tab" tabindex="-1">C#</button><button aria-controls="panel-0-R28=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-R28=" name="R28=" role="tab" tabindex="-1">Go</button><button aria-controls="panel-0-SmF2YQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YQ==" name="SmF2YQ==" role="tab" tabindex="-1">Java</button><button aria-controls="panel-0-SmF2YVNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tab" tabindex="-1">JavaScript</button><button aria-controls="panel-0-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-0-Qw==" class="sphinx-tabs-panel group-tab" id="panel-0-Qw==" name="Qw==" role="tabpanel" tabindex="0"><div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="c1">// No list or Linked List standard in C.</span>
+<span class="c1">// You can create dynamic arrays by using maloc(), but that is beyond the scope of this book.</span>
+<span class="c1">// https://www.geeksforgeeks.org/dynamic-array-in-c/</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-Qysr" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">// Copyright (c) 2020 St. Mother Teresa HS All rights reserved.</span>
+<span class="linenos"> 2</span><span class="c1">//</span>
+<span class="linenos"> 3</span><span class="c1">// Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="c1">// Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="c1">// This program program uses a list</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="hll"><span class="linenos"> 8</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;list&gt;</span><span class="c1"> // need this for Lists</span>
+</span><span class="linenos"> 9</span>
+<span class="linenos">10</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">11</span><span class="w">    </span><span class="c1">// this function uses a list</span>
+<span class="hll"><span class="linenos">12</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">words</span><span class="p">;</span>
+</span><span class="linenos">13</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">tempWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Go&quot;</span><span class="p">;</span>
+<span class="hll"><span class="linenos">14</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">reversedWords</span><span class="p">;</span>
+</span><span class="linenos">15</span>
+<span class="linenos">16</span><span class="w">    </span><span class="c1">// input</span>
+<span class="linenos">17</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Please enter 1 word at a time. Enter &#39;S&#39; to end.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">18</span>
+<span class="hll"><span class="linenos">19</span><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">tempWord</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s">&quot;STOP&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">20</span><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Enter a word: &quot;</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">21</span><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">tempWord</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">22</span><span class="w">        </span><span class="n">words</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">tempWord</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">23</span><span class="w">    </span><span class="p">}</span>
+</span><span class="linenos">24</span>
+<span class="hll"><span class="linenos">25</span><span class="w">    </span><span class="n">words</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span><span class="w"> </span><span class="c1">// remove the &quot;Stop&quot; that was added</span>
+</span><span class="linenos">26</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">27</span>
+<span class="linenos">28</span><span class="w">    </span><span class="c1">// reversed words</span>
+<span class="linenos">29</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Here are the words reversed.:&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="hll"><span class="linenos">30</span><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">words</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">31</span><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">words</span><span class="p">.</span><span class="n">back</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">32</span><span class="w">        </span><span class="n">words</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
+</span><span class="hll"><span class="linenos">33</span><span class="w">    </span><span class="p">}</span>
+</span><span class="linenos">34</span>
+<span class="linenos">35</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Done.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">36</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-QyM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-QyM=" name="QyM=" role="tabpanel" tabindex="0"><div class="highlight-C# notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* Created by: Mr. Coxall</span>
+<span class="linenos"> 2</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 3</span><span class="cm"> * This program uses a list </span>
+<span class="linenos"> 4</span><span class="cm">*/</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
+<span class="hll"><span class="linenos"> 7</span><span class="k">using</span><span class="w"> </span><span class="nn">System.Collections.Generic</span><span class="p">;</span>
+</span><span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="cm">/*</span>
+<span class="linenos">10</span><span class="cm"> * The Program class</span>
+<span class="linenos">11</span><span class="cm">*/</span>
+<span class="linenos">12</span><span class="k">class</span><span class="w"> </span><span class="nc">Program</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">13</span><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">14</span><span class="w">        </span><span class="c1">// this function uses a list</span>
+<span class="hll"><span class="linenos">15</span><span class="w">        </span><span class="n">List</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">words</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="p">();</span>
+</span><span class="linenos">16</span><span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">temp_word</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Go&quot;</span><span class="p">;</span>
+<span class="linenos">17</span>
+<span class="linenos">18</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Please enter 1 word at a time. Enter STOP to end.&quot;</span><span class="p">);</span>
+<span class="linenos">19</span>
+<span class="hll"><span class="linenos">20</span><span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">temp_word</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s">&quot;STOP&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">21</span><span class="w">            </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Enter a word: &quot;</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">22</span><span class="w">            </span><span class="n">temp_word</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+</span><span class="hll"><span class="linenos">23</span><span class="w">            </span><span class="n">words</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">temp_word</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">24</span><span class="w">        </span><span class="p">}</span>
+</span><span class="linenos">25</span>
+<span class="hll"><span class="linenos">26</span><span class="w">        </span><span class="n">words</span><span class="p">.</span><span class="n">RemoveAt</span><span class="p">(</span><span class="n">words</span><span class="p">.</span><span class="n">Count</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// remove the &quot;STOP&quot; that was added</span>
+</span><span class="linenos">27</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">();</span>
+<span class="linenos">28</span>
+<span class="linenos">29</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Here are the words reversed:&quot;</span><span class="p">);</span>
+<span class="hll"><span class="linenos">30</span><span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">words</span><span class="p">.</span><span class="n">Count</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">31</span><span class="w">            </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">words</span><span class="p">[</span><span class="n">words</span><span class="p">.</span><span class="n">Count</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]);</span>
+</span><span class="hll"><span class="linenos">32</span><span class="w">            </span><span class="n">words</span><span class="p">.</span><span class="n">RemoveAt</span><span class="p">(</span><span class="n">words</span><span class="p">.</span><span class="n">Count</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">33</span><span class="w">        </span><span class="p">}</span>
+</span><span class="linenos">34</span>
+<span class="linenos">35</span><span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
+<span class="linenos">36</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">37</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-R28=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-R28=" name="R28=" role="tabpanel" tabindex="0"><div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * Created by: Mr. Coxall</span>
+<span class="linenos"> 3</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 4</span><span class="cm"> * This program uses a list</span>
+<span class="linenos"> 5</span><span class="cm"> */</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
+<span class="hll"><span class="linenos">10</span><span class="w">	</span><span class="s">&quot;container/list&quot;</span>
+</span><span class="linenos">11</span><span class="w">	</span><span class="s">&quot;fmt&quot;</span>
+<span class="linenos">12</span><span class="p">)</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">15</span><span class="w">	</span><span class="c1">// this function uses a list</span>
+<span class="hll"><span class="linenos">16</span><span class="w">	</span><span class="nx">words</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">list</span><span class="p">.</span><span class="nx">New</span><span class="p">()</span>
+</span><span class="linenos">17</span><span class="w">	</span><span class="nx">tempWord</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">&quot;Go&quot;</span>
+<span class="linenos">18</span>
+<span class="linenos">19</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Please enter 1 word at a time. Enter STOP to end.&quot;</span><span class="p">)</span>
+<span class="linenos">20</span>
+<span class="hll"><span class="linenos">21</span><span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="nx">tempWord</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s">&quot;STOP&quot;</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">22</span><span class="w">		</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Print</span><span class="p">(</span><span class="s">&quot;Enter a word: &quot;</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">23</span><span class="w">		</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Scan</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">tempWord</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">24</span><span class="w">		</span><span class="nx">words</span><span class="p">.</span><span class="nx">PushBack</span><span class="p">(</span><span class="nx">tempWord</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">25</span><span class="w">	</span><span class="p">}</span>
+</span><span class="linenos">26</span>
+<span class="hll"><span class="linenos">27</span><span class="w">	</span><span class="nx">words</span><span class="p">.</span><span class="nx">Remove</span><span class="p">(</span><span class="nx">words</span><span class="p">.</span><span class="nx">Back</span><span class="p">())</span><span class="w"> </span><span class="c1">// remove the &quot;STOP&quot; that was added</span>
+</span><span class="linenos">28</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+<span class="linenos">29</span>
+<span class="linenos">30</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Here are the words reversed:&quot;</span><span class="p">)</span>
+<span class="hll"><span class="linenos">31</span><span class="w">	</span><span class="k">for</span><span class="w"> </span><span class="nx">singleWord</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">words</span><span class="p">.</span><span class="nx">Back</span><span class="p">();</span><span class="w"> </span><span class="nx">singleWord</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="p">;</span><span class="w"> </span><span class="nx">singleWord</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">singleWord</span><span class="p">.</span><span class="nx">Prev</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">32</span><span class="w">		</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">singleWord</span><span class="p">.</span><span class="nx">Value</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">33</span><span class="w">	</span><span class="p">}</span>
+</span><span class="linenos">34</span>
+<span class="linenos">35</span><span class="w">	</span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">)</span>
+<span class="linenos">36</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YQ==" name="SmF2YQ==" role="tabpanel" tabindex="0"><div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/*</span>
+<span class="linenos"> 2</span><span class="cm"> * This program uses a list </span>
+<span class="linenos"> 3</span><span class="cm"> *</span>
+<span class="linenos"> 4</span><span class="cm"> * @author  Mr Coxall</span>
+<span class="linenos"> 5</span><span class="cm"> * @version 1.0</span>
+<span class="linenos"> 6</span><span class="cm"> * @since   2020-09-01</span>
+<span class="linenos"> 7</span><span class="cm"> */</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="hll"><span class="linenos">10</span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.ArrayList</span><span class="p">;</span>
+</span><span class="hll"><span class="linenos">11</span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.List</span><span class="p">;</span>
+</span><span class="linenos">12</span>
+<span class="linenos">13</span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">14</span><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">15</span><span class="w">    </span><span class="c1">// this function uses a list </span>
+<span class="hll"><span class="linenos">16</span><span class="w">    </span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">words</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+</span><span class="linenos">17</span><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">tempWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Go&quot;</span><span class="p">;</span>
+<span class="linenos">18</span>
+<span class="linenos">19</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Please enter 1 word at a time. Enter STOP to end.&quot;</span><span class="p">);</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span><span class="w">    </span><span class="n">Scanner</span><span class="w"> </span><span class="n">scanner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+<span class="hll"><span class="linenos">22</span><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">tempWord</span><span class="p">.</span><span class="na">equalsIgnoreCase</span><span class="p">(</span><span class="s">&quot;STOP&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">23</span><span class="w">      </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter a word: &quot;</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">24</span><span class="w">      </span><span class="n">tempWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+</span><span class="hll"><span class="linenos">25</span><span class="w">      </span><span class="n">words</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">tempWord</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">26</span><span class="w">    </span><span class="p">}</span>
+</span><span class="linenos">27</span>
+<span class="hll"><span class="linenos">28</span><span class="w">    </span><span class="n">words</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="n">words</span><span class="p">.</span><span class="na">size</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// remove the &quot;STOP&quot; that was added</span>
+</span><span class="linenos">29</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+<span class="linenos">30</span>
+<span class="linenos">31</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Here are the words reversed:&quot;</span><span class="p">);</span>
+<span class="hll"><span class="linenos">32</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">loopCounter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">words</span><span class="p">.</span><span class="na">size</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">loopCounter</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">loopCounter</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">33</span><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">words</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">loopCounter</span><span class="p">));</span>
+</span><span class="hll"><span class="linenos">34</span><span class="w">    </span><span class="p">}</span>
+</span><span class="linenos">35</span><span class="w">    </span>
+<span class="linenos">36</span><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\nDone.&quot;</span><span class="p">);</span>
+<span class="linenos">37</span><span class="w">  </span><span class="p">}</span>
+<span class="linenos">38</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-SmF2YVNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YVNjcmlwdA==" name="SmF2YVNjcmlwdA==" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* Created by: Mr. Coxall</span>
+<span class="linenos"> 2</span><span class="cm"> * Created on: Sep 2020</span>
+<span class="linenos"> 3</span><span class="cm"> * This program uses a list </span>
+<span class="linenos"> 4</span><span class="cm"> */</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="kd">const</span><span class="w"> </span><span class="nx">prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;prompt-sync&quot;</span><span class="p">)()</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="c1">// input</span>
+<span class="hll"><span class="linenos"> 9</span><span class="kd">const</span><span class="w"> </span><span class="nx">words</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
+</span><span class="linenos">10</span><span class="kd">let</span><span class="w"> </span><span class="nx">tempWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Go&#39;</span><span class="p">;</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Please enter 1 word at a time. Enter STOP to end.&#39;</span><span class="p">);</span>
+<span class="linenos">13</span>
+<span class="hll"><span class="linenos">14</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">tempWord</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">()</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s1">&#39;STOP&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">15</span><span class="w">  </span><span class="nx">tempWord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s1">&#39;Enter a word: &#39;</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">16</span><span class="w">  </span><span class="nx">words</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">tempWord</span><span class="p">);</span>
+</span><span class="hll"><span class="linenos">17</span><span class="p">}</span>
+</span><span class="linenos">18</span>
+<span class="hll"><span class="linenos">19</span><span class="nx">words</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span><span class="w"> </span><span class="c1">// remove the &quot;STOP&quot; that was added</span>
+</span><span class="linenos">20</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">();</span>
+<span class="linenos">21</span>
+<span class="linenos">22</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Here are the words reversed:&#39;</span><span class="p">);</span>
+<span class="hll"><span class="linenos">23</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">loopCounter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">words</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span><span class="w"> </span><span class="nx">loopCounter</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">loopCounter</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="linenos">24</span><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">words</span><span class="p">[</span><span class="nx">loopCounter</span><span class="p">]);</span>
+</span><span class="hll"><span class="linenos">25</span><span class="p">}</span>
+</span><span class="linenos">26</span>
+<span class="linenos">27</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\nDone.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="ch">#!/usr/bin/env python3</span>
+<span class="linenos"> 2</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 3</span><span class="sd">Created by: Mr. Coxall</span>
+<span class="linenos"> 4</span><span class="sd">Created on: Sep 2020</span>
+<span class="linenos"> 5</span><span class="sd">This module program uses a list</span>
+<span class="linenos"> 6</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">10</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;The main() this function uses a list, returns None.&quot;&quot;&quot;</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span>    <span class="c1"># input</span>
+<span class="hll"><span class="linenos">13</span>    <span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class="linenos">14</span>    <span class="n">temp_word</span> <span class="o">=</span> <span class="s2">&quot;Go&quot;</span>
+<span class="linenos">15</span>
+<span class="linenos">16</span>    <span class="c1"># input</span>
+<span class="linenos">17</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please enter 1 word at a time. Enter STOP to end.&quot;</span><span class="p">)</span>
+<span class="linenos">18</span>
+<span class="hll"><span class="linenos">19</span>    <span class="k">while</span> <span class="n">temp_word</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">!=</span> <span class="s2">&quot;STOP&quot;</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">20</span>        <span class="n">temp_word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a word: &quot;</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">21</span>        <span class="n">words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp_word</span><span class="p">)</span>
+</span><span class="linenos">22</span>
+<span class="hll"><span class="linenos">23</span>    <span class="n">words</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>  <span class="c1"># remove the &quot;Stop&quot; that was added</span>
+</span><span class="linenos">24</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="linenos">25</span>
+<span class="linenos">26</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here are the words reversed:&quot;</span><span class="p">)</span>
+<span class="hll"><span class="linenos">27</span>    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">)):</span>
+</span><span class="hll"><span class="linenos">28</span>        <span class="nb">print</span><span class="p">(</span><span class="n">words</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
+</span><span class="linenos">29</span>
+<span class="linenos">30</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Done.&quot;</span><span class="p">)</span>
+<span class="linenos">31</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="linenos">34</span>    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="example-output">
+<h2>Example Output<a class="headerlink" href="#example-output" title="Link to this heading"></a></h2>
+<img alt="Code example output" class="align-left" src="../_images/vhs12.gif" />
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="2d-arrays.html" class="btn btn-neutral float-left" title="2D Arrays" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tuple.html" class="btn btn-neutral float-right" title="Tuple" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Patrick Coxall.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
