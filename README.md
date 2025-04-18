@@ -23,7 +23,7 @@ You can run all the code examples in this book using GitHub Codespaces. Click th
 
 The online version can be found at:
 
-[https://cs-textbook.coxall.cloud](https://cs-textbook.coxall.cloud)
+[https://mr-coxall.github.io/Computer-Based-Problem-Solving/index.html](https://mr-coxall.github.io/Computer-Based-Problem-Solving/index.html)
 
 ## Repo Info
 
